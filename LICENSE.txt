@@ -1,0 +1,43 @@
+FPGA Development Boards
+
+Note: This is the standard 3-clause BSD license rephrased to reflect
+hardware rather than software ("binary form" replaced with "board form"
+and "this software" with "these designs"). This was done for the sake of
+avoiding ambiguity because "binary" form for a circuit board is not well
+defined.
+
+The term "source" is used in this context to mean CAD files or other edititable
+forms of a circuit board design. "Board form" means physical circuit boards,
+lithography masks, Gerber files, and other intermediates in the manufacturing
+process. The two categories combined are intended to encompass all possible
+uses of these designs.
+
+===============================================================================
+
+Copyright (c) 2012 Andrew D. Zonenberg                                      
+All rights reserved.                                                        
+
+Redistribution and use in source and board forms, with or without modifi- 
+cation, are permitted provided that the following conditions are met:       
+                                                                            
+   * Redistributions of source code must retain the above copyright notice,  
+     this list of conditions and the following disclaimer.                  
+
+   * Redistributions in board form must reproduce the above copyright      
+     notice, this list of conditions and the following disclaimer in the    
+     documentation and/or other materials provided with the distribution.   
+
+   * Neither the name of the author nor the names of any contributors may be
+     used to endorse or promote products derived from these designs without 
+     specific prior written permission.                                     
+                                                                            
+THESE DESIGNS ARE PROVIDED BY THE AUTHORS "AS IS" AND ANY EXPRESS OR IMPLIED 
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF        
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN     
+NO EVENT SHALL THE AUTHORS BE HELD LIABLE FOR ANY DIRECT, INDIRECT,         
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT    
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,   
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY       
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT         
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF    
+THESE DESIGNS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
