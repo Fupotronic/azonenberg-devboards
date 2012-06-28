@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Wed 27 Jun 2012 11:50:34 PM EDT
+Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Thu 28 Jun 2012 06:17:36 PM EDT
 
 BeginCmp
 TimeStamp = /4FEB9904/4FEB9F39;
@@ -355,6 +355,34 @@ TimeStamp = /4FEBC0AA;
 Reference = P2;
 ValeurCmp = CONN_10;
 IdModule  = HFS10CT-ND;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FECD7A2;
+Reference = P3;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FECD7A6;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FECD7A7;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FECD7A8;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
 EndCmp
 
 BeginCmp
