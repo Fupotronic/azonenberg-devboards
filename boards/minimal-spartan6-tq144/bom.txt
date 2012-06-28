@@ -1,0 +1,147 @@
+====================================================================================================
+MINIMAL CONFIGURATION
+These are the minimum components necessary to get a working board with minimal functionality.
+
+Component pricing assumes purchasing all components from Digikey in minimum quantities.
+Printed circuit board pricing assumes ordering three boards from OSHPark.com.
+
+Refdes		Name					Digikey P/N				Price (USD)
+N/A			Printed circuit board	N/A						 8.53
+C1    		Cap, tant, 220uF		399-5234-1-ND			 2.13
+C2 	        Cap, ceramic, 100uF		490-3390-1-ND			 1.45
+C3  	    Cap, ceramic, 100uF		490-3390-1-ND			 1.45
+C34     	Cap, ceramic, 100uF		490-3390-1-ND			 1.45
+J1			Mini USB-B port			H11671CT-ND				 0.95
+J2         	2x7mm JTAG header**		WM17469-ND				 1.64
+L1   		Ferrite chip, 330R		445-1569-1-ND			 0.12
+P2			FFC JTAG header**		HFS10CT-ND				 1.75
+U2			3.3V LDO regulator		ZLDO1117G33DICT-ND		 0.54
+U3			2.5V LDO regulator		ZLDO1117G25DICT-ND		 0.54
+U4			1.2V LDO regulator		ZLDO1117G12DICT-ND		 0.54
+U7			XC6SLX9-2TQG144C*		122-1745-ND				15.69
+
+| C6         4.7uF       ;             
+| C7         4.7uF       ;             
+| C8         4.7uF       ;             
+| C9         4.7uF       ;             
+| C10        4.7uF       ;             
+| C11        4.7uF       ;             
+| C12        4.7uF       ;             
+| C13        4.7uF       ;             
+| C14        4.7uF       ;             
+| C15        0.47 uF     ;             
+| C16        4.7uF       ;             
+| C17        4.7uF       ;             
+| C18        4.7uF       ;             
+| C19        0.47 uF     ;             
+| C20        4.7uF       ;             
+| C21        0.47 uF     ;             
+| C22        4.7uF       ;             
+| C23        0.47 uF     ;             
+| C24        0.47 uF     ;             
+| C25        0.47 uF     ;             
+| C26        0.47 uF     ;             
+| C27        0.47 uF     ;             
+| C28        0.47 uF     ;             
+| C29        0.47 uF     ;     
+
+| R7         10k         ;             
+| R8         10k         ;         
+
+* May be replaced with any Spartan-6 FPGA in TQ144/TQG144 package
+** Either P2 or J2 is required for JTAG.
+   J2 is physically larger but works with Xilinx programmers.
+   P2 is a high-density FFC ribbon that requires a custom adapter to work with most programmers but
+   reduces the overall height of the PCB significantly.
+====================================================================================================
+
+====================================================================================================
+CLOCK OSCILLATOR
+Provides a 20 MHz clock source. May optionally be replaced with another frequency.
+
+Refdes		Name					Digikey P/N				Price (USD)
+U6			Oscillator, 20.000 MHz	535-9316-1-ND			2.63
+| C5         0.01uF      ;             
+| R6         49.9        ;  
+====================================================================================================
+
+====================================================================================================
+USB-SERIAL ADAPTER
+Provides a serial port (with no flow control) for interfacing the FPGA to a PC.
+
+Refdes		Name					Digikey P/N				Price (USD)
+| C30        0.1uF       ;      
+| C31        0.01uF      ;             
+| C32        0.1uF       ;             
+| C33        4.7uF       ;    
+D1			Green LED 0805			160-1218-1-ND			 0.25
+D2			Green LED 0805			160-1218-1-ND			 0.25
+R1			Resistor 270R 0603		RMCF0603JT270RCT-ND		 0.02
+R2			Resistor 270R 0603		RMCF0603JT270RCT-ND		 0.02
+U1			FT232RQ					768-1008-1-ND			 4.50
+
+====================================================================================================
+
+====================================================================================================
+NOR FLASH
+Allows saving of the FPGA bitstream to nonvolatile memory so it can run without a JTAG cable
+attached. May also be used by a user design to store data.
+
+Refdes		Name					Digikey P/N				Price (USD)
+| C4         0.1uF       ;    
+| R4         100         ;             
+| R5         100         ;   
+| R17        10k         ;        
+SW1			6mm push button			450-1759-1-ND			 0.36
+U5         	W25Q80BV				W25Q80BVSSIG-ND			 0.61
+====================================================================================================
+
+====================================================================================================
+GPIO HEADER
+20-conductor FFC socket with ten GPIO lines, interstital grounds, and board-sense capability.
+
+Refdes		Name					Digikey P/N				Price (USD)
+
+| R18        10k         ;             
+| R19        49.9        ;             
+P1			20pin FFC ZIF socket	HFN520CT-ND				2.08
+====================================================================================================
+
+====================================================================================================
+INDICATOR LEDS
+Bank of eight LEDs connected to the FPGA for debugging, as well as indicators for power and
+configuration-complete status.
+
+Refdes		Name					Digikey P/N				Price (USD)
+D3			Green LED 0805			160-1218-1-ND			 0.25
+D4			Green LED 0805			160-1218-1-ND			 0.25
+D5			Green LED 0805			160-1218-1-ND			 0.25
+D6			Green LED 0805			160-1218-1-ND			 0.25
+D7			Green LED 0805			160-1218-1-ND			 0.25
+D8			Green LED 0805			160-1218-1-ND			 0.25
+D9			Green LED 0805			160-1218-1-ND			 0.25
+D10			Green LED 0805			160-1218-1-ND			 0.25
+D11			Green LED 0805			160-1218-1-ND			 0.25
+D12			Green LED 0805			160-1218-1-ND			 0.25
+R3			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R9			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R10			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R11			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R12			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R13			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R14			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R15			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R16			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+R20			Resistor 470R 0603		RMCF0603JT470RCT-ND		 0.02
+====================================================================================================
+
+====================================================================================================
+MOUNTING HARDWARE
+Required for screwing the board onto an enclosure.
+
+Refdes		Name					Digikey P/N				Price (USD)
+P3			Machine screw, 4-40		SR6005-ND				 0.22			
+P4			Machine screw, 4-40		SR6005-ND				 0.22
+P5			Machine screw, 4-40		SR6005-ND				 0.22
+P6			Machine screw, 4-40		SR6005-ND				 0.22
+====================================================================================================
