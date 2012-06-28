@@ -1,4 +1,4 @@
-update=Wed 27 Jun 2012 09:04:38 PM EDT
+update=Thu 28 Jun 2012 06:29:58 PM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -85,16 +85,16 @@ LibName37=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/special-az
 LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azonenberg
 [pcbnew]
 version=1
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=315
+PadDimH=433
+PadDimV=433
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
 TxtModV=600
 TxtModH=600
 TxtModW=120
-VEgarde=100
+VEgarde=20
 DrawLar=150
 EdgeLar=150
 TxtLar=120
@@ -113,3 +113,4 @@ LibName8=valves
 LibName9=led
 LibName10=dip_sockets
 LibName11=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/smt_azonenberg
+LibName12=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty/ohw-logo
