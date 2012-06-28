@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 27 Jun 2012 11:50:04 PM EDT
+EESchema Schematic File Version 2  date Thu 28 Jun 2012 12:15:47 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,32 +51,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L R R?
-U 1 1 4FEBD468
-P 13500 7950
-F 0 "R?" V 13580 7950 50  0000 C CNN
-F 1 "470" V 13500 7950 50  0000 C CNN
-	1    13500 7950
-	0    1    1    0   
-$EndComp
-$Comp
-L LED D?
-U 1 1 4FEBD467
-P 13950 7950
-F 0 "D?" H 13950 8050 50  0000 C CNN
-F 1 "GREEN" H 13950 7850 50  0000 C CNN
-	1    13950 7950
-	1    0    0    -1  
-$EndComp
-Text Label 14450 7950 0    60   ~ 0
-GND
-Text Label 13250 7950 2    60   ~ 0
-CONFIG_DONE
+Text Label 6850 5900 2    60   ~ 0
+SENSE_IN
+Connection ~ 6850 3900
+Wire Wire Line
+	6850 4150 6850 3750
 Wire Wire Line
 	14450 7950 14150 7950
-NoConn ~ 6850 5600
-NoConn ~ 6850 5500
 Wire Wire Line
 	6650 5800 6650 6000
 Wire Wire Line
@@ -115,8 +96,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 4500 5850 4600
 Connection ~ 6850 4150
-Wire Wire Line
-	6850 3900 6850 4500
 Wire Wire Line
 	2050 9550 2050 9800
 Wire Wire Line
@@ -315,6 +294,30 @@ Connection ~ 7800 2700
 Wire Wire Line
 	6600 6100 6600 5700
 $Comp
+L R R20
+U 1 1 4FEBD468
+P 13500 7950
+F 0 "R20" V 13580 7950 50  0000 C CNN
+F 1 "470" V 13500 7950 50  0000 C CNN
+	1    13500 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D12
+U 1 1 4FEBD467
+P 13950 7950
+F 0 "D12" H 13950 8050 50  0000 C CNN
+F 1 "GREEN" H 13950 7850 50  0000 C CNN
+	1    13950 7950
+	1    0    0    -1  
+$EndComp
+Text Label 14450 7950 0    60   ~ 0
+GND
+Text Label 13250 7950 2    60   ~ 0
+CONFIG_DONE
+NoConn ~ 6850 5600
+NoConn ~ 6850 5500
+$Comp
 L XC6SLXN-TQG144 U?
 U 2 1 4FEBCF39
 P 11050 6000
@@ -437,7 +440,7 @@ F 1 "49.9" V 6600 4150 50  0000 C CNN
 $EndComp
 Text Label 5850 4700 0    60   ~ 0
 GND
-Text Label 6850 4500 2    60   ~ 0
+Text Label 6850 3750 2    60   ~ 0
 SENSE_IN
 $Comp
 L CONN_20 P1

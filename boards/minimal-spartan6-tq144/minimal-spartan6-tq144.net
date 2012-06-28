@@ -1,675 +1,558 @@
-# EESchema Netlist Version 1.1 created  Wed 27 Jun 2012 11:50:34 PM EDT
+# EESchema Netlist Version 1.1 created  Thu 28 Jun 2012 12:15:49 AM EDT
 (
- ( /4FEB9904/4FEB9F39 SM2312_6032 C1 220uF
-  ( 1 /Power_supply/5V )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEB9F5C SM1210 C2 100uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEB9FCE SM1210 C3 100uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBA80F SM0402 C4 0.1uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBA905 SM0402 C5 0.01uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAB60 SM0603 C6 4.7uF
-  ( 1 /Power_supply/1V2 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC01 SM0603 C7 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC49 SM0603 C8 4.7uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAB66 SM0603 C9 4.7uF
-  ( 1 /Power_supply/1V2 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC03 SM0603 C10 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC58 SM0603 C11 4.7uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAB68 SM0603 C12 4.7uF
-  ( 1 /Power_supply/1V2 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC05 SM0603 C13 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC59 SM0603 C14 4.7uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBABEE SM0402 C15 0.47_uF
-  ( 1 /Power_supply/1V2 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC07 SM0603 C16 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC5B SM0603 C17 4.7uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC09 SM0603 C18 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC66 SM0402 C19 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC1F SM0603 C20 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC67 SM0402 C21 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC22 SM0603 C22 4.7uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC68 SM0402 C23 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC38 SM0402 C24 0.47_uF
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9904/4FEBAC6A SM0402 C25 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC6B SM0402 C26 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC6D SM0402 C27 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC6F SM0402 C28 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEB9904/4FEBAC71 SM0402 C29 0.47_uF
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND' )
- )
- ( /4FEBB02F SM0402 C30 0.1uF
-  ( 1 /3V3OUT )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBB088 SM0402 C31 0.01uF
-  ( 1 /Power_supply/GND )
-  ( 2 /Power_supply/5V )
- )
- ( /4FEBB19C SM0402 C32 0.1uF
-  ( 1 /Power_supply/GND )
-  ( 2 /Power_supply/5V )
- )
- ( /4FEBB1A2 SM0603 C33 4.7uF
-  ( 1 /Power_supply/GND )
-  ( 2 /Power_supply/5V )
- )
- ( /4FEB9904/4FEBD3DA SM1210 C34 100uF
-  ( 1 /Power_supply/1V2 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9E88 SM0805 D1 GREEN
-  ( 1 N-000052 )
-  ( 2 /TXLED_N )
- )
- ( /4FEB9EA7 SM0805 D2 GREEN
-  ( 1 N-000053 )
-  ( 2 /RXLED_N )
- )
- ( /4FEB9904/4FEB9F7E SM0805 D3 GREEN
-  ( 1 N-000131 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAF93 SM0805 D4 GREEN
-  ( 1 N-000002 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFAA SM0805 D5 GREEN
-  ( 1 N-000004 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFC7 SM0805 D6 GREEN
-  ( 1 N-000008 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFC6 SM0805 D7 GREEN
-  ( 1 N-000007 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFDD SM0805 D8 GREEN
-  ( 1 N-000040 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFDC SM0805 D9 GREEN
-  ( 1 N-000039 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFD8 SM0805 D10 GREEN
-  ( 1 N-000010 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFD9 SM0805 D11 GREEN
-  ( 1 N-000038 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBD467 SM0805 D12 GREEN
-  ( 1 N-000106 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEB9930 HRS_MINI_USB J1 HIROSE_UX60SX-MB-5ST_(MINI_USB)
-  ( 1 N-000061 )
-  ( 2 /USB_N )
-  ( 3 /USB_P )
-  ( 4 ? )
-  ( 5 /Power_supply/GND )
-  ( 6 /Power_supply/GND )
-  ( 7 /Power_supply/GND )
- )
- ( /4FEBA392 XILINX_JTAG_THRUHOLE J2 XILINX_JTAG
-  ( 1 ? )
-  ( 2 /Power_supply/2V5 )
-  ( 3 /Power_supply/GND )
-  ( 4 /Power_supply/TMS )
-  ( 5 /Power_supply/GND )
-  ( 6 /Power_supply/TCK )
-  ( 7 /Power_supply/GND )
-  ( 8 /Power_supply/TDO )
-  ( 9 /Power_supply/GND )
-  ( 10 /Power_supply/TDI )
-  ( 11 /Power_supply/GND )
-  ( 12 ? )
-  ( 13 ? )
-  ( 14 ? )
- )
- ( /4FEB992A SM0805 L1 FERRITE_CHIP
-  ( 1 /Power_supply/5V )
-  ( 2 N-000061 )
- )
- ( /4FEBB5A7 HFK120CT-ND P1 CONN_20
-  ( 1 /SENSE_RAW )
-  ( 2 /SENSE_RAW )
-  ( 3 /Power_supply/GND )
-  ( 4 /LVDS3_P )
-  ( 5 /LVDS3_N )
-  ( 6 /Power_supply/GND )
-  ( 7 /LVDS2_P )
-  ( 8 /LVDS2_N )
-  ( 9 /Power_supply/GND )
-  ( 10 /GPIO5 )
-  ( 11 /GPIO4 )
-  ( 12 /Power_supply/GND )
-  ( 13 /LVDS1_N )
-  ( 14 /LVDS1_P )
-  ( 15 /Power_supply/GND )
-  ( 16 /LVDS0_N )
-  ( 17 /LVDS0_P )
-  ( 18 /Power_supply/GND )
-  ( 19 /Power_supply/3V3 )
-  ( 20 /Power_supply/3V3 )
- )
- ( /4FEBC0AA HFS10CT-ND P2 CONN_10
-  ( 1 /Power_supply/2V5 )
-  ( 2 /Power_supply/GND )
-  ( 3 /Power_supply/TMS )
-  ( 4 /Power_supply/GND )
-  ( 5 /Power_supply/TCK )
-  ( 6 /Power_supply/GND )
-  ( 7 /Power_supply/TDO )
-  ( 8 /Power_supply/GND )
-  ( 9 /Power_supply/TDI )
-  ( 10 /Power_supply/GND )
- )
- ( /4FEB9EB8 SM0603 R1 270
-  ( 1 /Power_supply/3V3 )
-  ( 2 N-000052 )
- )
- ( /4FEB9EBC SM0603 R2 270
-  ( 1 /Power_supply/3V3 )
-  ( 2 N-000053 )
- )
- ( /4FEB9904/4FEB9F6F SM0603 R3 470
-  ( 1 N-000131 )
-  ( 2 ? )
- )
- ( /4FEBA7C2 SM0603 R4 100
-  ( 1 /SPI_SCK )
-  ( 2 /Power_supply/3V3 )
- )
- ( /4FEBA7CA SM0603 R5 100
-  ( 1 /SPI_SCK )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBA8F5 SM0603 R6 49.9
-  ( 1 /CLK_20MHZ )
-  ( 2 /CLK_20MHZ_RAW )
- )
- ( /4FEBA573 SM0603 R7 10k
-  ( 1 N-000083 )
-  ( 2 /Power_supply/3V3 )
- )
- ( /4FEBA5B7 SM0603 R8 10k
-  ( 1 N-000078 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAF8A SM0603 R9 470
-  ( 1 N-000002 )
-  ( 2 /LED0 )
- )
- ( /4FEBAFAB SM0603 R10 470
-  ( 1 N-000004 )
-  ( 2 /LED1 )
- )
- ( /4FEBAFC8 SM0603 R11 470
-  ( 1 N-000008 )
-  ( 2 /LED2 )
- )
- ( /4FEBAFC5 SM0603 R12 470
-  ( 1 N-000007 )
-  ( 2 /LED3 )
- )
- ( /4FEBAFDE SM0603 R13 470
-  ( 1 N-000040 )
-  ( 2 /LED4 )
- )
- ( /4FEBAFDB SM0603 R14 470
-  ( 1 N-000039 )
-  ( 2 /LED5 )
- )
- ( /4FEBAFD7 SM0603 R15 470
-  ( 1 N-000010 )
-  ( 2 /LED6 )
- )
- ( /4FEBAFDA SM0603 R16 470
-  ( 1 N-000038 )
-  ( 2 /LED7 )
- )
- ( /4FEBB405 SM0603 R17 10k
-  ( 1 /PROG_B_N )
-  ( 2 /Power_supply/3V3 )
- )
- ( /4FEBB703 SM0603 R18 10k
-  ( 1 /SENSE_IN )
-  ( 2 /Power_supply/3V3 )
- )
- ( /4FEBB6F4 SM0603 R19 49.9
-  ( 1 /SENSE_IN )
-  ( 2 /SENSE_RAW )
- )
- ( /4FEBD468 SM0603 R20 470
-  ( 1 N-000106 )
-  ( 2 /CONFIG_DONE )
- )
- ( /4FEBB400 SWITCH_6MM SW1 SW_PUSH
-  ( 1 /PROG_B_N )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBCB33 QFN32 U1 FT232RQ
-  ( 1 /3V3OUT )
-  ( 2 /UART_TX )
-  ( 3 ? )
-  ( 4 /Power_supply/GND )
-  ( 5 ? )
-  ( 6 ? )
-  ( 7 ? )
-  ( 8 ? )
-  ( 9 ? )
-  ( 10 ? )
-  ( 11 ? )
-  ( 12 ? )
-  ( 13 ? )
-  ( 14 /USB_P )
-  ( 15 /USB_N )
-  ( 16 /3V3OUT )
-  ( 17 /Power_supply/GND )
-  ( 18 ? )
-  ( 19 /Power_supply/5V )
-  ( 20 /Power_supply/GND )
-  ( 21 /RXLED_N )
-  ( 22 /TXLED_N )
-  ( 23 ? )
-  ( 24 /Power_supply/GND )
-  ( 25 ? )
-  ( 26 /Power_supply/GND )
-  ( 27 ? )
-  ( 28 ? )
-  ( 29 ? )
-  ( 30 /UART_RX )
-  ( 31 ? )
-  ( 32 ? )
- )
- ( /4FEB9904/4FEB9EEE SOT223 U2 LDO1117-33
-  ( 1 /Power_supply/GND )
-  ( 2 /Power_supply/3V3 )
-  ( 3 /Power_supply/5V )
- )
- ( /4FEB9904/4FEB9F9C SOT223 U3 LDO1117-25
-  ( 1 /Power_supply/GND )
-  ( 2 /Power_supply/2V5 )
-  ( 3 /Power_supply/5V )
- )
- ( /4FEB9904/4FEB9FE0 SOT223 U4 LDO1117-12
-  ( 1 /Power_supply/GND )
-  ( 2 /Power_supply/1V2 )
-  ( 3 /Power_supply/5V )
- )
- ( /4FEBA546 SO8E U5 W25Q80BV
-  ( 1 /SPI_CS_N )
-  ( 2 /SPI_D1 )
-  ( 3 /SPI_D2 )
-  ( 4 /Power_supply/GND )
-  ( 5 /SPI_D0 )
-  ( 6 /SPI_SCK )
-  ( 7 /SPI_D3 )
-  ( 8 /Power_supply/3V3 )
- )
- ( /4FEBA866 CRYSTAL_5x7MM U6 OSC
-  ( 1 /Power_supply/3V3 )
-  ( 2 /Power_supply/GND )
-  ( 3 /CLK_20MHZ_RAW )
-  ( 4 /Power_supply/3V3 )
- )
- ( /4FEBCF39 TQFP144 U7 XC6SLXN-TQG144
-  ( 3 /Power_supply/GND )
-  ( 4 /Power_supply/3V3 )
-  ( 13 /Power_supply/GND )
-  ( 18 /Power_supply/3V3 )
-  ( 19 /Power_supply/1V2 )
-  ( 20 /Power_supply/2V5 )
-  ( 25 /Power_supply/GND )
-  ( 28 /Power_supply/1V2 )
-  ( 31 /Power_supply/3V3 )
-  ( 36 /Power_supply/2V5 )
-  ( 37 /PROG_B_N )
-  ( 38 /SPI_CS_N )
-  ( 39 /UART_RX )
-  ( 40 /UART_TX )
-  ( 41 ? )
-  ( 42 /Power_supply/3V3 )
-  ( 43 ? )
-  ( 44 ? )
-  ( 45 ? )
-  ( 46 ? )
-  ( 47 ? )
-  ( 48 ? )
-  ( 49 /Power_supply/GND )
-  ( 50 ? )
-  ( 51 ? )
-  ( 52 /Power_supply/1V2 )
-  ( 53 /Power_supply/2V5 )
-  ( 54 /Power_supply/GND )
-  ( 55 /CLK_20MHZ )
-  ( 56 ? )
-  ( 57 ? )
-  ( 58 ? )
-  ( 59 ? )
-  ( 60 N-000078 )
-  ( 61 /SPI_D3 )
-  ( 62 /SPI_D2 )
-  ( 63 /Power_supply/3V3 )
-  ( 64 /SPI_D0 )
-  ( 65 /SPI_D1 )
-  ( 66 ? )
-  ( 67 ? )
-  ( 68 /Power_supply/GND )
-  ( 69 N-000083 )
-  ( 70 /SPI_SCK )
-  ( 71 /CONFIG_DONE )
-  ( 72 ? )
-  ( 73 /Power_supply/GND )
-  ( 74 /LED7 )
-  ( 75 /LED6 )
-  ( 76 /Power_supply/3V3 )
-  ( 77 /Power_supply/GND )
-  ( 78 /LED5 )
-  ( 79 /LED4 )
-  ( 80 /LED3 )
-  ( 81 /LED2 )
-  ( 82 /LED1 )
-  ( 83 /LED0 )
-  ( 84 ? )
-  ( 85 ? )
-  ( 86 /Power_supply/3V3 )
-  ( 87 ? )
-  ( 88 ? )
-  ( 89 /Power_supply/1V2 )
-  ( 90 /Power_supply/2V5 )
-  ( 91 /Power_supply/GND )
-  ( 92 ? )
-  ( 93 ? )
-  ( 94 ? )
-  ( 95 ? )
-  ( 96 /Power_supply/GND )
-  ( 97 ? )
-  ( 98 ? )
-  ( 99 ? )
-  ( 100 ? )
-  ( 101 ? )
-  ( 102 ? )
-  ( 103 /Power_supply/3V3 )
-  ( 104 ? )
-  ( 105 ? )
-  ( 106 /Power_supply/TDO )
-  ( 107 /Power_supply/TMS )
-  ( 108 /Power_supply/GND )
-  ( 109 /Power_supply/TCK )
-  ( 110 /Power_supply/TDI )
-  ( 111 ? )
-  ( 112 ? )
-  ( 113 /Power_supply/GND )
-  ( 114 ? )
-  ( 115 ? )
-  ( 116 ? )
-  ( 117 ? )
-  ( 118 ? )
-  ( 119 ? )
-  ( 120 ? )
-  ( 121 ? )
-  ( 122 /Power_supply/3V3 )
-  ( 123 ? )
-  ( 124 ? )
-  ( 125 /Power_supply/3V3 )
-  ( 126 /LVDS3_N )
-  ( 127 /LVDS3_P )
-  ( 128 /Power_supply/1V2 )
-  ( 129 /Power_supply/2V5 )
-  ( 130 /Power_supply/GND )
-  ( 131 ? )
-  ( 132 ? )
-  ( 133 /LVDS2_N )
-  ( 134 /LVDS2_P )
-  ( 135 /Power_supply/3V3 )
-  ( 136 /Power_supply/GND )
-  ( 137 /GPIO5 )
-  ( 138 /GPIO4 )
-  ( 139 /LVDS1_N )
-  ( 140 /LVDS1_P )
-  ( 141 /LVDS0_N )
-  ( 142 /LVDS0_P )
-  ( 143 ? )
-  ( 144 /SENSE_IN )
+ ( /4FEBD468 $noname  R20 470 {Lib=R}
+  (    1 N-000101 )
+  (    2 /CONFIG_DONE )
+ )
+ ( /4FEBD467 $noname  D12 GREEN {Lib=LED}
+  (    1 N-000101 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBCF39 $noname  U7 XC6SLXN-TQG144 {Lib=XC6SLXN-TQG144}
+  (    3 /Power_supply/GND )
+  (    4 /Power_supply/3V3 )
+  (   13 /Power_supply/GND )
+  (   18 /Power_supply/3V3 )
+  (   19 /Power_supply/1V2 )
+  (   20 /Power_supply/2V5 )
+  (   25 /Power_supply/GND )
+  (   28 /Power_supply/1V2 )
+  (   31 /Power_supply/3V3 )
+  (   36 /Power_supply/2V5 )
+  (   37 /PROG_B_N )
+  (   38 /SPI_CS_N )
+  (   39 /UART_RX )
+  (   40 /UART_TX )
+  (   41 ? )
+  (   42 /Power_supply/3V3 )
+  (   43 ? )
+  (   44 ? )
+  (   45 ? )
+  (   46 ? )
+  (   47 ? )
+  (   48 ? )
+  (   49 /Power_supply/GND )
+  (   50 ? )
+  (   51 ? )
+  (   52 /Power_supply/1V2 )
+  (   53 /Power_supply/2V5 )
+  (   54 /Power_supply/GND )
+  (   55 /CLK_20MHZ )
+  (   56 ? )
+  (   57 ? )
+  (   58 ? )
+  (   59 ? )
+  (   60 N-000078 )
+  (   61 /SPI_D3 )
+  (   62 /SPI_D2 )
+  (   63 /Power_supply/3V3 )
+  (   64 /SPI_D0 )
+  (   65 /SPI_D1 )
+  (   66 ? )
+  (   67 ? )
+  (   68 /Power_supply/GND )
+  (   69 N-000083 )
+  (   70 /SPI_SCK )
+  (   71 /CONFIG_DONE )
+  (   72 ? )
+  (   73 /Power_supply/GND )
+  (   74 /LED7 )
+  (   75 /LED6 )
+  (   76 /Power_supply/3V3 )
+  (   77 /Power_supply/GND )
+  (   78 /LED5 )
+  (   79 /LED4 )
+  (   80 /LED3 )
+  (   81 /LED2 )
+  (   82 /LED1 )
+  (   83 /LED0 )
+  (   84 ? )
+  (   85 ? )
+  (   86 /Power_supply/3V3 )
+  (   87 ? )
+  (   88 ? )
+  (   89 /Power_supply/1V2 )
+  (   90 /Power_supply/2V5 )
+  (   91 /Power_supply/GND )
+  (   92 ? )
+  (   93 ? )
+  (   94 ? )
+  (   95 ? )
+  (   96 /Power_supply/GND )
+  (   97 ? )
+  (   98 ? )
+  (   99 ? )
+  (  100 ? )
+  (  101 ? )
+  (  102 ? )
+  (  103 /Power_supply/3V3 )
+  (  104 ? )
+  (  105 ? )
+  (  106 /Power_supply/TDO )
+  (  107 /Power_supply/TMS )
+  (  108 /Power_supply/GND )
+  (  109 /Power_supply/TCK )
+  (  110 /Power_supply/TDI )
+  (  111 ? )
+  (  112 ? )
+  (  113 /Power_supply/GND )
+  (  114 ? )
+  (  115 ? )
+  (  116 ? )
+  (  117 ? )
+  (  118 ? )
+  (  119 ? )
+  (  120 ? )
+  (  121 ? )
+  (  122 /Power_supply/3V3 )
+  (  123 ? )
+  (  124 /SENSE_IN )
+  (  125 /Power_supply/3V3 )
+  (  126 /LVDS3_N )
+  (  127 /LVDS3_P )
+  (  128 /Power_supply/1V2 )
+  (  129 /Power_supply/2V5 )
+  (  130 /Power_supply/GND )
+  (  131 ? )
+  (  132 ? )
+  (  133 /LVDS2_N )
+  (  134 /LVDS2_P )
+  (  135 /Power_supply/3V3 )
+  (  136 /Power_supply/GND )
+  (  137 /GPIO5 )
+  (  138 /GPIO4 )
+  (  139 /LVDS1_N )
+  (  140 /LVDS1_P )
+  (  141 /LVDS0_N )
+  (  142 /LVDS0_P )
+  (  143 ? )
+  (  144 ? )
+ )
+ ( /4FEBCB33 $noname  U1 FT232RQ {Lib=FT232RQ}
+  (    1 /3V3OUT )
+  (    2 /UART_TX )
+  (    3 ? )
+  (    4 /Power_supply/GND )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 /USB_P )
+  (   15 /USB_N )
+  (   16 /3V3OUT )
+  (   17 /Power_supply/GND )
+  (   18 ? )
+  (   19 /Power_supply/5V )
+  (   20 /Power_supply/GND )
+  (   21 /RXLED_N )
+  (   22 /TXLED_N )
+  (   23 ? )
+  (   24 /Power_supply/GND )
+  (   25 ? )
+  (   26 /Power_supply/GND )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 /UART_RX )
+  (   31 ? )
+  (   32 ? )
+ )
+ ( /4FEBC0AA $noname  P2 CONN_10 {Lib=CONN_10}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+  (    3 /Power_supply/TMS )
+  (    4 /Power_supply/GND )
+  (    5 /Power_supply/TCK )
+  (    6 /Power_supply/GND )
+  (    7 /Power_supply/TDO )
+  (    8 /Power_supply/GND )
+  (    9 /Power_supply/TDI )
+  (   10 /Power_supply/GND )
+ )
+ ( /4FEBB703 $noname  R18 10k {Lib=R}
+  (    1 /SENSE_IN )
+  (    2 /Power_supply/3V3 )
+ )
+ ( /4FEBB6F4 $noname  R19 49.9 {Lib=R}
+  (    1 /SENSE_IN )
+  (    2 /SENSE_RAW )
+ )
+ ( /4FEBB5A7 $noname  P1 CONN_20 {Lib=CONN_20}
+  (    1 /SENSE_RAW )
+  (    2 /SENSE_RAW )
+  (    3 /Power_supply/GND )
+  (    4 /LVDS3_P )
+  (    5 /LVDS3_N )
+  (    6 /Power_supply/GND )
+  (    7 /LVDS2_P )
+  (    8 /LVDS2_N )
+  (    9 /Power_supply/GND )
+  (   10 /GPIO5 )
+  (   11 /GPIO4 )
+  (   12 /Power_supply/GND )
+  (   13 /LVDS1_N )
+  (   14 /LVDS1_P )
+  (   15 /Power_supply/GND )
+  (   16 /LVDS0_N )
+  (   17 /LVDS0_P )
+  (   18 /Power_supply/GND )
+  (   19 /Power_supply/3V3 )
+  (   20 /Power_supply/3V3 )
+ )
+ ( /4FEBB405 $noname  R17 10k {Lib=R}
+  (    1 /PROG_B_N )
+  (    2 /Power_supply/3V3 )
+ )
+ ( /4FEBB400 $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+  (    1 /PROG_B_N )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBB1A2 $noname  C33 4.7uF {Lib=C}
+  (    1 /Power_supply/GND )
+  (    2 /Power_supply/5V )
+ )
+ ( /4FEBB19C $noname  C32 0.1uF {Lib=C}
+  (    1 /Power_supply/GND )
+  (    2 /Power_supply/5V )
+ )
+ ( /4FEBB088 $noname  C31 0.01uF {Lib=C}
+  (    1 /Power_supply/GND )
+  (    2 /Power_supply/5V )
+ )
+ ( /4FEBB02F $noname  C30 0.1uF {Lib=C}
+  (    1 /3V3OUT )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFDE $noname  R13 470 {Lib=R}
+  (    1 N-000040 )
+  (    2 /LED4 )
+ )
+ ( /4FEBAFDD $noname  D8 GREEN {Lib=LED}
+  (    1 N-000040 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFDC $noname  D9 GREEN {Lib=LED}
+  (    1 N-000039 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFDB $noname  R14 470 {Lib=R}
+  (    1 N-000039 )
+  (    2 /LED5 )
+ )
+ ( /4FEBAFDA $noname  R16 470 {Lib=R}
+  (    1 N-000038 )
+  (    2 /LED7 )
+ )
+ ( /4FEBAFD9 $noname  D11 GREEN {Lib=LED}
+  (    1 N-000038 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFD8 $noname  D10 GREEN {Lib=LED}
+  (    1 N-000011 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFD7 $noname  R15 470 {Lib=R}
+  (    1 N-000011 )
+  (    2 /LED6 )
+ )
+ ( /4FEBAFC8 $noname  R11 470 {Lib=R}
+  (    1 N-000008 )
+  (    2 /LED2 )
+ )
+ ( /4FEBAFC7 $noname  D6 GREEN {Lib=LED}
+  (    1 N-000008 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFC6 $noname  D7 GREEN {Lib=LED}
+  (    1 N-000007 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAFC5 $noname  R12 470 {Lib=R}
+  (    1 N-000007 )
+  (    2 /LED3 )
+ )
+ ( /4FEBAFAB $noname  R10 470 {Lib=R}
+  (    1 N-000004 )
+  (    2 /LED1 )
+ )
+ ( /4FEBAFAA $noname  D5 GREEN {Lib=LED}
+  (    1 N-000004 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAF93 $noname  D4 GREEN {Lib=LED}
+  (    1 N-000002 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBAF8A $noname  R9 470 {Lib=R}
+  (    1 N-000002 )
+  (    2 /LED0 )
+ )
+ ( /4FEBA905 $noname  C5 0.01uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBA8F5 $noname  R6 49.9 {Lib=R}
+  (    1 /CLK_20MHZ )
+  (    2 /CLK_20MHZ_RAW )
+ )
+ ( /4FEBA866 $noname  U6 OSC {Lib=OSC}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND )
+  (    3 /CLK_20MHZ_RAW )
+  (    4 /Power_supply/3V3 )
+ )
+ ( /4FEBA80F $noname  C4 0.1uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBA7CA $noname  R5 100 {Lib=R}
+  (    1 /SPI_SCK )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBA7C2 $noname  R4 100 {Lib=R}
+  (    1 /SPI_SCK )
+  (    2 /Power_supply/3V3 )
+ )
+ ( /4FEBA5B7 $noname  R8 10k {Lib=R}
+  (    1 N-000078 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEBA573 $noname  R7 10k {Lib=R}
+  (    1 N-000083 )
+  (    2 /Power_supply/3V3 )
+ )
+ ( /4FEBA546 $noname  U5 W25Q80BV {Lib=W25Q80BV}
+  (    1 /SPI_CS_N )
+  (    2 /SPI_D1 )
+  (    3 /SPI_D2 )
+  (    4 /Power_supply/GND )
+  (    5 /SPI_D0 )
+  (    6 /SPI_SCK )
+  (    7 /SPI_D3 )
+  (    8 /Power_supply/3V3 )
+ )
+ ( /4FEBA392 $noname  J2 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 /Power_supply/2V5 )
+  (    3 /Power_supply/GND )
+  (    4 /Power_supply/TMS )
+  (    5 /Power_supply/GND )
+  (    6 /Power_supply/TCK )
+  (    7 /Power_supply/GND )
+  (    8 /Power_supply/TDO )
+  (    9 /Power_supply/GND )
+  (   10 /Power_supply/TDI )
+  (   11 /Power_supply/GND )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /4FEB9EBC $noname  R2 270 {Lib=R}
+  (    1 /Power_supply/3V3 )
+  (    2 N-000053 )
+ )
+ ( /4FEB9EB8 $noname  R1 270 {Lib=R}
+  (    1 /Power_supply/3V3 )
+  (    2 N-000052 )
+ )
+ ( /4FEB9EA7 $noname  D2 GREEN {Lib=LED}
+  (    1 N-000053 )
+  (    2 /RXLED_N )
+ )
+ ( /4FEB9E88 $noname  D1 GREEN {Lib=LED}
+  (    1 N-000052 )
+  (    2 /TXLED_N )
+ )
+ ( /4FEB9930 $noname  J1 HIROSE_UX60SX-MB-5ST_(MINI_USB) {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
+  (    1 N-000061 )
+  (    2 /USB_N )
+  (    3 /USB_P )
+  (    4 ? )
+  (    5 /Power_supply/GND )
+  (    6 /Power_supply/GND )
+  (    7 /Power_supply/GND )
+ )
+ ( /4FEB992A $noname  L1 FERRITE_CHIP {Lib=FERRITE_CHIP}
+  (    1 /Power_supply/5V )
+  (    2 N-000061 )
+ )
+ ( /4FEB9904/4FEBD3DA $noname  C34 100uF {Lib=C}
+  (    1 /Power_supply/1V2 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC71 $noname  C29 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC6F $noname  C28 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC6D $noname  C27 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC6B $noname  C26 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC6A $noname  C25 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC68 $noname  C23 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC67 $noname  C21 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC66 $noname  C19 0.47_uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC5B $noname  C17 4.7uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC59 $noname  C14 4.7uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC58 $noname  C11 4.7uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC49 $noname  C8 4.7uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND' )
+ )
+ ( /4FEB9904/4FEBAC38 $noname  C24 0.47_uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC22 $noname  C22 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC1F $noname  C20 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBABEE $noname  C15 0.47_uF {Lib=C}
+  (    1 /Power_supply/1V2 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC09 $noname  C18 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC07 $noname  C16 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC05 $noname  C13 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC03 $noname  C10 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAC01 $noname  C7 4.7uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAB68 $noname  C12 4.7uF {Lib=C}
+  (    1 /Power_supply/1V2 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAB66 $noname  C9 4.7uF {Lib=C}
+  (    1 /Power_supply/1V2 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEBAB60 $noname  C6 4.7uF {Lib=C}
+  (    1 /Power_supply/1V2 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEB9FE0 $noname  U4 LDO1117-12 {Lib=LDO1117-XX}
+  (    1 /Power_supply/GND )
+  (    2 /Power_supply/1V2 )
+  (    3 /Power_supply/5V )
+ )
+ ( /4FEB9904/4FEB9FCE $noname  C3 100uF {Lib=C}
+  (    1 /Power_supply/2V5 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEB9F9C $noname  U3 LDO1117-25 {Lib=LDO1117-XX}
+  (    1 /Power_supply/GND )
+  (    2 /Power_supply/2V5 )
+  (    3 /Power_supply/5V )
+ )
+ ( /4FEB9904/4FEB9F7E $noname  D3 GREEN {Lib=LED}
+  (    1 N-000131 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEB9F6F $noname  R3 470 {Lib=R}
+  (    1 N-000131 )
+  (    2 /Power_supply/3V3 )
+ )
+ ( /4FEB9904/4FEB9F5C $noname  C2 100uF {Lib=C}
+  (    1 /Power_supply/3V3 )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEB9F39 $noname  C1 220uF {Lib=C}
+  (    1 /Power_supply/5V )
+  (    2 /Power_supply/GND )
+ )
+ ( /4FEB9904/4FEB9EEE $noname  U2 LDO1117-33 {Lib=LDO1117-XX}
+  (    1 /Power_supply/GND )
+  (    2 /Power_supply/3V3 )
+  (    3 /Power_supply/5V )
  )
 )
 *
 { Allowed footprints by component:
-$component C1
- SM*
- C?
- C1-1
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
-$component C2
- SM*
- C?
- C1-1
+$component D12
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
 $endlist
-$component C3
- SM*
- C?
- C1-1
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
-$component C4
- SM*
- C?
- C1-1
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
-$component C5
- SM*
- C?
- C1-1
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
-$component C6
- SM*
- C?
- C1-1
-$endlist
-$component C7
- SM*
- C?
- C1-1
-$endlist
-$component C8
- SM*
- C?
- C1-1
-$endlist
-$component C9
- SM*
- C?
- C1-1
-$endlist
-$component C10
- SM*
- C?
- C1-1
-$endlist
-$component C11
- SM*
- C?
- C1-1
-$endlist
-$component C12
- SM*
- C?
- C1-1
-$endlist
-$component C13
- SM*
- C?
- C1-1
-$endlist
-$component C14
- SM*
- C?
- C1-1
-$endlist
-$component C15
- SM*
- C?
- C1-1
-$endlist
-$component C16
- SM*
- C?
- C1-1
-$endlist
-$component C17
- SM*
- C?
- C1-1
-$endlist
-$component C18
- SM*
- C?
- C1-1
-$endlist
-$component C19
- SM*
- C?
- C1-1
-$endlist
-$component C20
- SM*
- C?
- C1-1
-$endlist
-$component C21
- SM*
- C?
- C1-1
-$endlist
-$component C22
- SM*
- C?
- C1-1
-$endlist
-$component C23
- SM*
- C?
- C1-1
-$endlist
-$component C24
- SM*
- C?
- C1-1
-$endlist
-$component C25
- SM*
- C?
- C1-1
-$endlist
-$component C26
- SM*
- C?
- C1-1
-$endlist
-$component C27
- SM*
- C?
- C1-1
-$endlist
-$component C28
- SM*
- C?
- C1-1
-$endlist
-$component C29
- SM*
- C?
- C1-1
-$endlist
-$component C30
- SM*
- C?
- C1-1
-$endlist
-$component C31
+$component C33
  SM*
  C?
  C1-1
@@ -679,78 +562,21 @@ $component C32
  C?
  C1-1
 $endlist
-$component C33
+$component C31
  SM*
  C?
  C1-1
 $endlist
-$component C34
+$component C30
  SM*
  C?
  C1-1
 $endlist
-$component D1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D2
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D3
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D4
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D5
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D6
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D7
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
 $component D8
  LED-3MM
@@ -770,118 +596,7 @@ $component D9
  LED-1206
  LEDV
 $endlist
-$component D10
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D11
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D12
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R4
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R5
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R6
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R7
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R8
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R9
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R10
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R11
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R12
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R13
- R?
- SM0603
- SM0805
- R?-*
-$endlist
 $component R14
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R15
  R?
  SM0603
  SM0805
@@ -893,29 +608,667 @@ $component R16
  SM0805
  R?-*
 $endlist
-$component R17
+$component D11
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D10
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R15
  R?
  SM0603
  SM0805
  R?-*
 $endlist
-$component R18
+$component R11
  R?
  SM0603
  SM0805
  R?-*
 $endlist
-$component R19
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D7
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R12
  R?
  SM0603
  SM0805
  R?-*
 $endlist
-$component R20
+$component R10
  R?
  SM0603
  SM0805
  R?-*
+$endlist
+$component D5
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C34
+ SM*
+ C?
+ C1-1
+$endlist
+$component C29
+ SM*
+ C?
+ C1-1
+$endlist
+$component C28
+ SM*
+ C?
+ C1-1
+$endlist
+$component C27
+ SM*
+ C?
+ C1-1
+$endlist
+$component C26
+ SM*
+ C?
+ C1-1
+$endlist
+$component C25
+ SM*
+ C?
+ C1-1
+$endlist
+$component C23
+ SM*
+ C?
+ C1-1
+$endlist
+$component C21
+ SM*
+ C?
+ C1-1
+$endlist
+$component C19
+ SM*
+ C?
+ C1-1
+$endlist
+$component C17
+ SM*
+ C?
+ C1-1
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C24
+ SM*
+ C?
+ C1-1
+$endlist
+$component C22
+ SM*
+ C?
+ C1-1
+$endlist
+$component C20
+ SM*
+ C?
+ C1-1
+$endlist
+$component C15
+ SM*
+ C?
+ C1-1
+$endlist
+$component C18
+ SM*
+ C?
+ C1-1
+$endlist
+$component C16
+ SM*
+ C?
+ C1-1
+$endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C12
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "/LED0" "LED0"
+ R9 2
+ U7 83
+Net 2 "" ""
+ R9 1
+ D4 1
+Net 3 "/Power supply/GND" "GND"
+ C7 2
+ C10 2
+ U7 3
+ U7 91
+ J1 5
+ J1 6
+ J1 7
+ C24 2
+ C22 2
+ C12 2
+ C9 2
+ C6 2
+ U1 20
+ U1 4
+ U1 24
+ U1 26
+ U1 17
+ D12 2
+ C31 1
+ C30 2
+ U7 130
+ U7 49
+ U7 68
+ U7 77
+ U7 96
+ U7 25
+ U7 54
+ U7 73
+ U7 13
+ U2 1
+ C1 2
+ C2 2
+ D3 2
+ U3 1
+ C3 2
+ U4 1
+ U7 108
+ C13 2
+ C16 2
+ J2 11
+ C18 2
+ J2 9
+ C15 2
+ J2 7
+ C20 2
+ U5 4
+ R8 2
+ P1 3
+ P1 6
+ P1 9
+ P1 12
+ P1 15
+ J2 5
+ J2 3
+ P2 2
+ P2 4
+ P2 6
+ P2 8
+ P2 10
+ D10 2
+ P1 18
+ C34 2
+ U6 2
+ C5 2
+ C4 2
+ R5 2
+ U7 113
+ D4 2
+ C32 1
+ C33 1
+ U7 136
+ SW1 2
+ D5 2
+ D8 2
+ D11 2
+ D9 2
+ D6 2
+ D7 2
+Net 4 "" ""
+ D5 1
+ R10 1
+Net 5 "/LED1" "LED1"
+ R10 2
+ U7 82
+Net 6 "/LED3" "LED3"
+ R12 2
+ U7 80
+Net 7 "" ""
+ D7 1
+ R12 1
+Net 8 "" ""
+ D6 1
+ R11 1
+Net 9 "/LED2" "LED2"
+ U7 81
+ R11 2
+Net 10 "/LED6" "LED6"
+ U7 75
+ R15 2
+Net 11 "" ""
+ D10 1
+ R15 1
+Net 12 "/Power supply/3V3" "3V3"
+ C11 1
+ C14 1
+ C17 1
+ C8 1
+ R3 2
+ C2 1
+ U2 2
+ U7 63
+ U7 76
+ U7 86
+ U7 18
+ U7 135
+ U7 122
+ U7 103
+ U7 125
+ C21 1
+ C23 1
+ C25 1
+ C26 1
+ C27 1
+ C28 1
+ R18 2
+ C29 1
+ C19 1
+ U7 42
+ U7 31
+ U7 4
+ P1 20
+ R2 1
+ C5 1
+ U6 1
+ U6 4
+ R1 1
+ C4 1
+ R4 2
+ P1 19
+ U5 8
+ R17 2
+ R7 2
+Net 13 "/SPI_SCK" "SPI_SCK"
+ U7 70
+ U5 6
+ R5 1
+ R4 1
+Net 16 "/CLK_20MHZ_RAW" "CLK_20MHZ_RAW"
+ R6 2
+ U6 3
+Net 20 "/LVDS3_N" "LVDS3_N"
+ U7 126
+ P1 5
+Net 24 "/LVDS2_P" "LVDS2_P"
+ U7 134
+ P1 7
+Net 25 "/SENSE_IN" "SENSE_IN"
+ R19 1
+ U7 124
+ R18 1
+Net 28 "/LVDS2_N" "LVDS2_N"
+ P1 8
+ U7 133
+Net 35 "/LVDS1_P" "LVDS1_P"
+ U7 140
+ P1 14
+Net 37 "/LVDS0_P" "LVDS0_P"
+ P1 17
+ U7 142
+Net 38 "" ""
+ R16 1
+ D11 1
+Net 39 "" ""
+ D9 1
+ R14 1
+Net 40 "" ""
+ D8 1
+ R13 1
+Net 41 "/PROG_B_N" "PROG_B_N"
+ U7 37
+ SW1 1
+ R17 1
+Net 42 "/Power supply/5V" "5V"
+ C31 2
+ U4 3
+ C33 2
+ U1 19
+ U2 3
+ C32 2
+ C1 1
+ L1 1
+ U3 3
+Net 50 "/RXLED_N" "RXLED_N"
+ D2 2
+ U1 21
+Net 51 "/TXLED_N" "TXLED_N"
+ U1 22
+ D1 2
+Net 52 "" ""
+ D1 1
+ R1 2
+Net 53 "" ""
+ R2 2
+ D2 1
+Net 58 "/Power supply/TDO" "TDO"
+ U7 106
+ J2 8
+ P2 7
+Net 59 "/Power supply/2V5" "2V5"
+ C3 1
+ U3 2
+ U7 129
+ U7 90
+ U7 53
+ C13 1
+ C16 1
+ C18 1
+ U7 20
+ C20 1
+ C22 1
+ C10 1
+ C7 1
+ C24 1
+ P2 1
+ J2 2
+ U7 36
+Net 60 "/Power supply/1V2" "1V2"
+ C34 1
+ C6 1
+ C12 1
+ C9 1
+ U7 52
+ U7 128
+ U7 89
+ U7 19
+ U7 28
+ U4 2
+ C15 1
+Net 61 "" ""
+ J1 1
+ L1 2
+Net 72 "/CONFIG_DONE" "CONFIG_DONE"
+ R20 2
+ U7 71
+Net 73 "/SPI_D3" "SPI_D3"
+ U7 61
+ U5 7
+Net 77 "/UART_TX" "UART_TX"
+ U7 40
+ U1 2
+Net 78 "" ""
+ U7 60
+ R8 1
+Net 79 "/Power supply/TCK" "TCK"
+ U7 109
+ J2 6
+ P2 5
+Net 81 "/Power supply/TMS" "TMS"
+ U7 107
+ J2 4
+ P2 3
+Net 82 "/Power supply/TDI" "TDI"
+ J2 10
+ U7 110
+ P2 9
+Net 83 "" ""
+ U7 69
+ R7 1
+Net 85 "/UART_RX" "UART_RX"
+ U7 39
+ U1 30
+Net 87 "/SPI_D2" "SPI_D2"
+ U5 3
+ U7 62
+Net 91 "/SPI_D0" "SPI_D0"
+ U5 5
+ U7 64
+Net 93 "/CLK_20MHZ" "CLK_20MHZ"
+ U7 55
+ R6 1
+Net 94 "/SPI_D1" "SPI_D1"
+ U7 65
+ U5 2
+Net 99 "/SPI_CS_N" "SPI_CS_N"
+ U5 1
+ U7 38
+Net 101 "" ""
+ D12 1
+ R20 1
+Net 102 "/LVDS3_P" "LVDS3_P"
+ P1 4
+ U7 127
+Net 103 "/GPIO4" "GPIO4"
+ U7 138
+ P1 11
+Net 104 "/SENSE_RAW" "SENSE_RAW"
+ P1 2
+ R19 2
+ P1 1
+Net 105 "/3V3OUT" "3V3OUT"
+ U1 16
+ C30 1
+ U1 1
+Net 106 "/LVDS0_N" "LVDS0_N"
+ P1 16
+ U7 141
+Net 107 "/LVDS1_N" "LVDS1_N"
+ P1 13
+ U7 139
+Net 108 "/GPIO5" "GPIO5"
+ P1 10
+ U7 137
+Net 109 "/USB_N" "USB_N"
+ U1 15
+ J1 2
+Net 110 "/USB_P" "USB_P"
+ J1 3
+ U1 14
+Net 117 "/LED4" "LED4"
+ U7 79
+ R13 2
+Net 120 "/LED5" "LED5"
+ U7 78
+ R14 2
+Net 126 "/LED7" "LED7"
+ R16 2
+ U7 74
+Net 131 "" ""
+ R3 1
+ D3 1
+Net 132 "/Power supply/GND'" "GND'"
+ C8 2
+ C11 2
+ C14 2
+ C17 2
+ C19 2
+ C21 2
+ C29 2
+ C28 2
+ C27 2
+ C26 2
+ C25 2
+ C23 2
+}
+#End
