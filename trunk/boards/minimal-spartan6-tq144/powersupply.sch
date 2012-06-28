@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 27 Jun 2012 11:50:04 PM EDT
+EESchema Schematic File Version 2  date Thu 28 Jun 2012 12:15:47 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,6 +51,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 5200 1900
+Wire Wire Line
+	5300 1900 4800 1900
 Connection ~ 3950 4650
 Wire Wire Line
 	4800 4500 4800 4650
@@ -106,8 +109,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2400 5200 2600
 Connection ~ 3950 2450
-Wire Wire Line
-	4800 1900 5300 1900
 Wire Wire Line
 	4800 2300 4800 2600
 Connection ~ 4800 2450
