@@ -8,4 +8,4 @@ Peripherals / connectors:
 	Reset button
 	20 MHz CMOS oscillator
 	20-pin FFC for GPIO
-	Probe/test pads on all pins not brought out to GPIO headers
+	Probe/test pads on all possible pins not brought out to GPIO headers
