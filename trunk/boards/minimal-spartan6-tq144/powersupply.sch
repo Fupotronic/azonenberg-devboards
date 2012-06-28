@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 28 Jun 2012 12:15:47 AM EDT
+EESchema Schematic File Version 2  date Thu 28 Jun 2012 05:42:36 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -290,7 +290,7 @@ F 1 "4.7uF" H 3000 6900 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2600 7200 2    60   ~ 0
-GND'
+GND
 Text Label 2600 6600 2    60   ~ 0
 GND
 Text Label 2600 6800 2    60   ~ 0

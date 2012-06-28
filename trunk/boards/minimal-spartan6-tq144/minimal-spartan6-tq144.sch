@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 28 Jun 2012 12:15:47 AM EDT
+EESchema Schematic File Version 2  date Thu 28 Jun 2012 05:42:36 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,6 +51,46 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+NoConn ~ 6850 7000
+NoConn ~ 6850 6900
+NoConn ~ 6850 6800
+NoConn ~ 6850 6700
+NoConn ~ 6850 6600
+NoConn ~ 6850 6500
+NoConn ~ 6850 6400
+NoConn ~ 6850 6300
+NoConn ~ 6850 6200
+NoConn ~ 6850 6100
+NoConn ~ 6850 6000
+NoConn ~ 10750 6000
+NoConn ~ 10750 5900
+NoConn ~ 10750 5800
+NoConn ~ 10750 5700
+NoConn ~ 10750 5600
+NoConn ~ 10750 5500
+NoConn ~ 10750 5400
+NoConn ~ 10750 5300
+NoConn ~ 10750 5200
+NoConn ~ 10750 5100
+NoConn ~ 10750 5000
+NoConn ~ 10750 4900
+NoConn ~ 10750 4800
+NoConn ~ 10750 4700
+NoConn ~ 10750 4600
+NoConn ~ 10750 4500
+NoConn ~ 6850 10550
+NoConn ~ 6850 10450
+NoConn ~ 6850 10350
+NoConn ~ 6850 10250
+NoConn ~ 6850 10150
+NoConn ~ 6850 10050
+NoConn ~ 6850 9950
+NoConn ~ 6850 9850
+NoConn ~ 6850 9750
+NoConn ~ 6850 9550
+NoConn ~ 6850 9450
+NoConn ~ 6850 9350
+NoConn ~ 6850 9250
 Text Label 6850 5900 2    60   ~ 0
 SENSE_IN
 Connection ~ 6850 3900
