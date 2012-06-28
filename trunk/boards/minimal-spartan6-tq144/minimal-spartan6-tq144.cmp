@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Wed 27 Jun 2012 10:28:40 PM EDT
+Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Wed 27 Jun 2012 11:50:34 PM EDT
 
 BeginCmp
 TimeStamp = /4FEB9904/4FEB9F39;
@@ -232,6 +232,13 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /4FEB9904/4FEBD3DA;
+Reference = C34;
+ValeurCmp = 100uF;
+IdModule  = SM1210;
+EndCmp
+
+BeginCmp
 TimeStamp = /4FEB9E88;
 Reference = D1;
 ValeurCmp = GREEN;
@@ -304,6 +311,13 @@ EndCmp
 BeginCmp
 TimeStamp = /4FEBAFD9;
 Reference = D11;
+ValeurCmp = GREEN;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEBD467;
+Reference = D12;
 ValeurCmp = GREEN;
 IdModule  = SM0805;
 EndCmp
@@ -477,6 +491,13 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /4FEBD468;
+Reference = R20;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
 TimeStamp = /4FEBB400;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
@@ -484,10 +505,10 @@ IdModule  = SWITCH_6MM;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FEB9920;
+TimeStamp = /4FEBCB33;
 Reference = U1;
 ValeurCmp = FT232RQ;
-IdModule  = QFN28;
+IdModule  = QFN32;
 EndCmp
 
 BeginCmp
@@ -526,7 +547,7 @@ IdModule  = CRYSTAL_5x7MM;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FEBB515;
+TimeStamp = /4FEBCF39;
 Reference = U7;
 ValeurCmp = XC6SLXN-TQG144;
 IdModule  = TQFP144;

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 27 Jun 2012 10:28:15 PM EDT
+EESchema Schematic File Version 2  date Wed 27 Jun 2012 11:50:04 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,128 +51,140 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 2600 7350 0    60   ~ 0
-VCCIO decoupling
-Connection ~ 3550 7200
-Connection ~ 3850 7200
+Connection ~ 3950 4650
 Wire Wire Line
-	2600 7200 6300 7200
-Connection ~ 4550 7200
-Connection ~ 5250 7200
-Connection ~ 5950 7200
-Connection ~ 3550 6800
-Connection ~ 3850 6800
+	4800 4500 4800 4650
 Wire Wire Line
-	2600 6800 6300 6800
-Connection ~ 4550 6800
-Connection ~ 5250 6800
-Connection ~ 5950 6800
-Connection ~ 3250 7200
-Connection ~ 3250 6800
-Connection ~ 4450 6600
-Wire Wire Line
-	4750 6600 2600 6600
-Connection ~ 4150 6600
-Connection ~ 3550 6600
-Connection ~ 2950 6600
-Connection ~ 2950 6200
-Connection ~ 3550 6200
-Connection ~ 4150 6200
-Wire Wire Line
-	3550 5600 2600 5600
-Connection ~ 3250 6000
-Connection ~ 2950 6000
-Connection ~ 2950 5600
-Connection ~ 9550 3250
-Wire Wire Line
-	9550 2350 9550 3350
-Connection ~ 9550 3050
-Connection ~ 9550 2850
-Connection ~ 9550 2650
-Connection ~ 9550 2450
-Connection ~ 9550 2050
-Wire Wire Line
-	9550 1750 9550 2150
-Connection ~ 9550 1850
-Connection ~ 7200 4150
-Wire Wire Line
-	7200 3850 7200 4250
-Connection ~ 7200 3950
-Connection ~ 7200 3550
-Wire Wire Line
-	7200 2250 7200 3650
-Connection ~ 7200 3350
-Connection ~ 7200 3150
-Connection ~ 7200 2950
-Connection ~ 7200 2750
-Connection ~ 7200 2550
-Connection ~ 2700 3100
-Wire Wire Line
-	3150 4100 2700 4100
-Wire Wire Line
-	2700 4100 2700 1900
-Wire Wire Line
-	5300 3100 4800 3100
-Connection ~ 2800 2450
-Wire Wire Line
-	3150 1900 1850 1900
-Connection ~ 4800 2450
-Wire Wire Line
-	4800 2300 4800 2600
-Wire Wire Line
-	4800 1900 5300 1900
-Connection ~ 3950 2450
-Wire Wire Line
-	5200 2400 5200 2600
-Wire Wire Line
-	1850 2300 1850 2450
-Wire Wire Line
-	1850 2450 4800 2450
-Connection ~ 2700 1900
-Wire Wire Line
-	3150 3100 2700 3100
-Wire Wire Line
-	4800 3500 4800 3650
-Wire Wire Line
-	4800 3650 2800 3650
-Connection ~ 3950 3650
-Wire Wire Line
-	5300 4100 4800 4100
-Wire Wire Line
-	2800 2450 2800 4650
-Wire Wire Line
-	2800 4650 3950 4650
-Connection ~ 2800 3650
-Connection ~ 7200 2450
-Connection ~ 7200 2650
-Connection ~ 7200 2850
-Connection ~ 7200 3050
-Connection ~ 7200 3250
-Connection ~ 7200 3450
-Connection ~ 7200 4050
-Connection ~ 9550 1950
-Connection ~ 9550 2550
-Connection ~ 9550 2750
-Connection ~ 9550 2950
-Connection ~ 9550 3150
-Connection ~ 3250 5600
-Wire Wire Line
-	3550 6000 2600 6000
-Connection ~ 3850 6200
-Connection ~ 3250 6200
-Connection ~ 3250 6600
-Connection ~ 3850 6600
+	4800 4650 2800 4650
+Connection ~ 4200 7200
+Connection ~ 4900 7200
+Connection ~ 5600 7200
+Connection ~ 4200 6800
+Connection ~ 4900 6800
+Connection ~ 5600 6800
+Connection ~ 2950 7200
+Connection ~ 2950 6800
+Connection ~ 4450 6200
 Wire Wire Line
 	4750 6200 2600 6200
-Connection ~ 4450 6200
-Connection ~ 2950 6800
-Connection ~ 2950 7200
-Connection ~ 5600 6800
-Connection ~ 4900 6800
-Connection ~ 4200 6800
-Connection ~ 5600 7200
-Connection ~ 4900 7200
-Connection ~ 4200 7200
+Connection ~ 3850 6600
+Connection ~ 3250 6600
+Connection ~ 3250 6200
+Connection ~ 3850 6200
+Wire Wire Line
+	3550 6000 2600 6000
+Connection ~ 3250 5600
+Connection ~ 9550 3150
+Connection ~ 9550 2950
+Connection ~ 9550 2750
+Connection ~ 9550 2550
+Connection ~ 9550 1950
+Connection ~ 7200 4050
+Connection ~ 7200 3450
+Connection ~ 7200 3250
+Connection ~ 7200 3050
+Connection ~ 7200 2850
+Connection ~ 7200 2650
+Connection ~ 7200 2450
+Connection ~ 2800 3650
+Wire Wire Line
+	2800 4650 2800 2450
+Wire Wire Line
+	5300 4100 4800 4100
+Connection ~ 3950 3650
+Wire Wire Line
+	2800 3650 4800 3650
+Wire Wire Line
+	4800 3650 4800 3500
+Wire Wire Line
+	3150 3100 2700 3100
+Connection ~ 2700 1900
+Wire Wire Line
+	4800 2450 1850 2450
+Wire Wire Line
+	1850 2450 1850 2300
+Wire Wire Line
+	5200 2400 5200 2600
+Connection ~ 3950 2450
+Wire Wire Line
+	4800 1900 5300 1900
+Wire Wire Line
+	4800 2300 4800 2600
+Connection ~ 4800 2450
+Wire Wire Line
+	3150 1900 1850 1900
+Connection ~ 2800 2450
+Wire Wire Line
+	5300 3100 4800 3100
+Wire Wire Line
+	2700 1900 2700 4100
+Wire Wire Line
+	2700 4100 3150 4100
+Connection ~ 2700 3100
+Connection ~ 7200 2550
+Connection ~ 7200 2750
+Connection ~ 7200 2950
+Connection ~ 7200 3150
+Connection ~ 7200 3350
+Wire Wire Line
+	7200 2250 7200 3650
+Connection ~ 7200 3550
+Connection ~ 7200 3950
+Wire Wire Line
+	7200 3850 7200 4250
+Connection ~ 7200 4150
+Connection ~ 9550 1850
+Wire Wire Line
+	9550 1750 9550 2150
+Connection ~ 9550 2050
+Connection ~ 9550 2450
+Connection ~ 9550 2650
+Connection ~ 9550 2850
+Connection ~ 9550 3050
+Wire Wire Line
+	9550 2350 9550 3350
+Connection ~ 9550 3250
+Connection ~ 2950 5600
+Connection ~ 2950 6000
+Connection ~ 3250 6000
+Wire Wire Line
+	3550 5600 2600 5600
+Connection ~ 4150 6200
+Connection ~ 3550 6200
+Connection ~ 2950 6200
+Connection ~ 2950 6600
+Connection ~ 3550 6600
+Connection ~ 4150 6600
+Wire Wire Line
+	4750 6600 2600 6600
+Connection ~ 4450 6600
+Connection ~ 3250 6800
+Connection ~ 3250 7200
+Connection ~ 5950 6800
+Connection ~ 5250 6800
+Connection ~ 4550 6800
+Wire Wire Line
+	2600 6800 6300 6800
+Connection ~ 3850 6800
+Connection ~ 3550 6800
+Connection ~ 5950 7200
+Connection ~ 5250 7200
+Connection ~ 4550 7200
+Wire Wire Line
+	2600 7200 6300 7200
+Connection ~ 3850 7200
+Connection ~ 3550 7200
+$Comp
+L C C34
+U 1 1 4FEBD3DA
+P 4800 4300
+F 0 "C34" H 4850 4400 50  0000 L CNN
+F 1 "100uF" H 4850 4200 50  0000 L CNN
+	1    4800 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 2600 7350 0    60   ~ 0
+VCCIO decoupling
 Text Notes 2600 6700 0    60   ~ 0
 VCCAUX decoupling
 Text Notes 2600 6100 0    60   ~ 0
