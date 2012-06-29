@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 28 Jun 2012 06:16:21 PM EDT
+EESchema Schematic File Version 2  date Fri 29 Jun 2012 04:44:32 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,7 +43,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 2 2
 Title "Spartan-6 minimalist development board"
-Date "28 jun 2012"
+Date "29 jun 2012"
 Rev ""
 Comp "Andrew Zonenberg"
 Comment1 ""
@@ -506,7 +506,7 @@ L C C1
 U 1 1 4FEB9F39
 P 1850 2100
 F 0 "C1" H 1900 2200 50  0000 L CNN
-F 1 "220uF" H 1900 2000 50  0000 L CNN
+F 1 "47uF" H 1900 2000 50  0000 L CNN
 	1    1850 2100
 	1    0    0    -1  
 $EndComp

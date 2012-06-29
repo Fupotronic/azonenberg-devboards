@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 28 Jun 2012 06:16:21 PM EDT
+EESchema Schematic File Version 2  date Fri 29 Jun 2012 04:44:32 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,7 +43,7 @@ $Descr A3 16535 11700
 encoding utf-8
 Sheet 1 2
 Title "Spartan-6 minimalist development board"
-Date "28 jun 2012"
+Date "29 jun 2012"
 Rev "0.1"
 Comp "Andrew Zonenberg"
 Comment1 "Top-level layout"
@@ -300,37 +300,37 @@ Wire Wire Line
 Connection ~ 6850 3900
 Connection ~ 14250 900 
 $Comp
-L CONN_1 P?
+L CONN_1 P6
 U 1 1 4FECD7A8
 P 14400 1100
-F 0 "P?" H 14480 1100 40  0000 L CNN
+F 0 "P6" H 14480 1100 40  0000 L CNN
 F 1 "CONN_1" H 14400 1155 30  0001 C CNN
 	1    14400 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_1 P?
+L CONN_1 P5
 U 1 1 4FECD7A7
 P 14400 1000
-F 0 "P?" H 14480 1000 40  0000 L CNN
+F 0 "P5" H 14480 1000 40  0000 L CNN
 F 1 "CONN_1" H 14400 1055 30  0001 C CNN
 	1    14400 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_1 P?
+L CONN_1 P4
 U 1 1 4FECD7A6
 P 14400 900
-F 0 "P?" H 14480 900 40  0000 L CNN
+F 0 "P4" H 14480 900 40  0000 L CNN
 F 1 "CONN_1" H 14400 955 30  0001 C CNN
 	1    14400 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_1 P?
+L CONN_1 P3
 U 1 1 4FECD7A2
 P 14400 800
-F 0 "P?" H 14480 800 40  0000 L CNN
+F 0 "P3" H 14480 800 40  0000 L CNN
 F 1 "CONN_1" H 14400 855 30  0001 C CNN
 	1    14400 800 
 	1    0    0    -1  
