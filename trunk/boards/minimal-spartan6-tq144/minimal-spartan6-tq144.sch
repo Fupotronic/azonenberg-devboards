@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Jun 2012 05:36:48 PM EDT
+EESchema Schematic File Version 2  date Fri 29 Jun 2012 05:49:02 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,6 +51,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+NoConn ~ 14250 1100
+NoConn ~ 14250 1000
+NoConn ~ 14250 900 
+NoConn ~ 14250 800 
+NoConn ~ 10750 4600
+NoConn ~ 10750 4500
 Wire Wire Line
 	10150 4500 10050 4500
 Wire Wire Line
@@ -59,9 +65,6 @@ Wire Wire Line
 	10050 4900 10750 4900
 Wire Wire Line
 	10050 5100 10750 5100
-Connection ~ 14250 1000
-Wire Wire Line
-	14250 1100 14250 800 
 Wire Wire Line
 	6600 6100 6600 5700
 Connection ~ 7800 2700
@@ -302,7 +305,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 4150 6850 3750
 Connection ~ 6850 3900
-Connection ~ 14250 900 
 Wire Wire Line
 	10050 5200 10750 5200
 Wire Wire Line
@@ -410,8 +412,6 @@ F 1 "CONN_8" V 9750 4850 60  0000 C CNN
 $EndComp
 Text Notes 14700 850  0    60   ~ 0
 4-40 mounting holes
-Text Label 14250 800  2    60   ~ 0
-GND
 $Comp
 L CONN_1 P6
 U 1 1 4FECD7A8
