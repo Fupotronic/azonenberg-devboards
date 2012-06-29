@@ -3,14 +3,14 @@ SUMMARY
 Component pricing assumes purchasing all components from Digikey in minimum quantities without bulk discount.
 Printed circuit board pricing assumes ordering three boards from OSHPark.com.
 
-Minimal configuration                                       40.40
+Minimal configuration                                       38.91
 Clock oscillator                                             2.83
 USB-serial adapter                                           5.51
 NOR flash                                                    1.29
 GPIO header                                                  2.20
 Indicator LEDs                                               2.70
 Mounting hardware                                            0.88
-Total                                                       55.81
+Total                                                       54.32
 ====================================================================================================
 
 ====================================================================================================
@@ -19,7 +19,7 @@ These are the minimum components necessary to get a working board with minimal f
 
 Refdes      Name                    Digikey P/N             Price (USD)
 N/A         Printed circuit board   N/A                      8.53
-C1          Cap tant 220uF 6032     399-5234-1-ND            2.13
+C1          Cap tant 47uF 6032      478-3910-1-ND            0.64 2.13
 C2          Cap ceramic, 100uF 1210 490-3390-1-ND            1.45
 C3          Cap ceramic, 100uF 1210 490-3390-1-ND            1.45
 C6          Cap ceramic 4.7uF 0603  587-1255-1-ND            0.17
@@ -57,7 +57,7 @@ U2          3.3V LDO regulator      ZLDO1117G33DICT-ND       0.54
 U3          2.5V LDO regulator      ZLDO1117G25DICT-ND       0.54
 U4          1.2V LDO regulator      ZLDO1117G12DICT-ND       0.54
 U7          XC6SLX9-2TQG144C*       122-1745-ND             15.69
-Total price (USD)                                           40.40
+Total price (USD)                                           38.91
 
 * May be replaced with any Spartan-6 FPGA in TQ144/TQG144 package
 ** Either P2 or J2 is required for JTAG.
