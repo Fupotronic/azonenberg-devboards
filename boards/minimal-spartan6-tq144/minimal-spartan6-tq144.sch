@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Jun 2012 04:44:32 PM EDT
+EESchema Schematic File Version 2  date Fri 29 Jun 2012 05:18:36 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,10 +51,86 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 14700 850  0    60   ~ 0
-4-40 mounting holes
-Text Label 14250 800  2    60   ~ 0
+Text Label 14250 2100 2    60   ~ 0
+5V
+$Comp
+L CONN_1 TP?
+U 1 1 4FEE1BA9
+P 14400 2100
+F 0 "TP?" H 14480 2100 40  0000 L CNN
+F 1 "CONN_1" H 14400 2155 30  0001 C CNN
+	1    14400 2100
+	1    0    0    -1  
+$EndComp
+Text Label 14250 2000 2    60   ~ 0
+CLK_20MHZ_RAW
+$Comp
+L CONN_1 TP5
+U 1 1 4FEE1B07
+P 14400 2000
+F 0 "TP5" H 14480 2000 40  0000 L CNN
+F 1 "CONN_1" H 14400 2055 30  0001 C CNN
+	1    14400 2000
+	1    0    0    -1  
+$EndComp
+Text Label 14250 1900 2    60   ~ 0
+1V2
+$Comp
+L CONN_1 TP4
+U 1 1 4FEE1B03
+P 14400 1900
+F 0 "TP4" H 14480 1900 40  0000 L CNN
+F 1 "CONN_1" H 14400 1955 30  0001 C CNN
+	1    14400 1900
+	1    0    0    -1  
+$EndComp
+Text Label 14250 1800 2    60   ~ 0
+2V5
+$Comp
+L CONN_1 TP3
+U 1 1 4FEE1AFF
+P 14400 1800
+F 0 "TP3" H 14480 1800 40  0000 L CNN
+F 1 "CONN_1" H 14400 1855 30  0001 C CNN
+	1    14400 1800
+	1    0    0    -1  
+$EndComp
+Text Label 14250 1700 2    60   ~ 0
+3V3
+$Comp
+L CONN_1 TP2
+U 1 1 4FEE1AF8
+P 14400 1700
+F 0 "TP2" H 14480 1700 40  0000 L CNN
+F 1 "CONN_1" H 14400 1755 30  0001 C CNN
+	1    14400 1700
+	1    0    0    -1  
+$EndComp
+Text Notes 14700 1600 0    60   ~ 0
+Test pads
+Text Label 14250 1600 2    60   ~ 0
 GND
+$Comp
+L CONN_1 TP1
+U 1 1 4FEE1A54
+P 14400 1600
+F 0 "TP1" H 14480 1600 40  0000 L CNN
+F 1 "CONN_1" H 14400 1655 30  0001 C CNN
+	1    14400 1600
+	1    0    0    -1  
+$EndComp
+Text Label 6850 9150 2    60   ~ 0
+M1
+Text Label 6850 8450 2    60   ~ 0
+M0
+Wire Wire Line
+	10650 5200 10750 5200
+Wire Wire Line
+	10650 5000 10750 5000
+Wire Wire Line
+	10650 4800 10750 4800
+Wire Wire Line
+	10750 4600 10650 4600
 Connection ~ 14250 1000
 Wire Wire Line
 	14250 1100 14250 800 
@@ -299,6 +375,39 @@ Wire Wire Line
 	6850 4150 6850 3750
 Connection ~ 6850 3900
 Connection ~ 14250 900 
+Wire Wire Line
+	10650 4500 10750 4500
+Wire Wire Line
+	10650 4700 10750 4700
+Wire Wire Line
+	10750 4900 10650 4900
+Wire Wire Line
+	10750 5100 10650 5100
+$Comp
+L XC6SLXN-TQG144 U?
+U 2 1 4FEBCF39
+P 11050 6000
+AR Path="/4FEBA50B" Ref="U?"  Part="3" 
+AR Path="/4FEBB515" Ref="U?"  Part="1" 
+AR Path="/4FEBCF39" Ref="U7"  Part="2" 
+F 0 "U7" H 12650 5100 60  0000 C CNN
+F 1 "XC6SLXN-TQG144" H 12350 5000 60  0000 C CNN
+	2    11050 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P7
+U 1 1 4FEE1406
+P 10300 4850
+F 0 "P7" V 10250 4850 60  0000 C CNN
+F 1 "CONN_8" V 10350 4850 60  0000 C CNN
+	1    10300 4850
+	-1   0    0    -1  
+$EndComp
+Text Notes 14700 850  0    60   ~ 0
+4-40 mounting holes
+Text Label 14250 800  2    60   ~ 0
+GND
 $Comp
 L CONN_1 P6
 U 1 1 4FECD7A8
@@ -356,14 +465,6 @@ NoConn ~ 10750 5600
 NoConn ~ 10750 5500
 NoConn ~ 10750 5400
 NoConn ~ 10750 5300
-NoConn ~ 10750 5200
-NoConn ~ 10750 5100
-NoConn ~ 10750 5000
-NoConn ~ 10750 4900
-NoConn ~ 10750 4800
-NoConn ~ 10750 4700
-NoConn ~ 10750 4600
-NoConn ~ 10750 4500
 NoConn ~ 6850 10550
 NoConn ~ 6850 10450
 NoConn ~ 6850 10350
@@ -403,18 +504,6 @@ Text Label 13250 7950 2    60   ~ 0
 CONFIG_DONE
 NoConn ~ 6850 5600
 NoConn ~ 6850 5500
-$Comp
-L XC6SLXN-TQG144 U?
-U 2 1 4FEBCF39
-P 11050 6000
-AR Path="/4FEBA50B" Ref="U?"  Part="3" 
-AR Path="/4FEBB515" Ref="U?"  Part="1" 
-AR Path="/4FEBCF39" Ref="U7"  Part="2" 
-F 0 "U7" H 12650 5100 60  0000 C CNN
-F 1 "XC6SLXN-TQG144" H 12350 5000 60  0000 C CNN
-	2    11050 6000
-	1    0    0    -1  
-$EndComp
 $Comp
 L FT232RQ U1
 U 1 1 4FEBCB33
