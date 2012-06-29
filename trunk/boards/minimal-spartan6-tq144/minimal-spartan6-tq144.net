@@ -1,6 +1,6 @@
-# EESchema Netlist Version 1.1 created  Thu 28 Jun 2012 06:17:36 PM EDT
+# EESchema Netlist Version 1.1 created  Fri 29 Jun 2012 05:19:00 PM EDT
 (
- ( /4FEB9904/4FEB9F39 SM2312_6032 C1 220uF
+ ( /4FEB9904/4FEB9F39 SM2312_6032 C1 47uF
   ( 1 /Power_supply/5V )
   ( 2 /Power_supply/GND )
  )
@@ -137,11 +137,11 @@
   ( 2 /Power_supply/GND )
  )
  ( /4FEB9E88 SM0805 D1 GREEN
-  ( 1 N-000049 )
+  ( 1 N-000044 )
   ( 2 /TXLED_N )
  )
  ( /4FEB9EA7 SM0805 D2 GREEN
-  ( 1 N-000048 )
+  ( 1 N-000043 )
   ( 2 /RXLED_N )
  )
  ( /4FEB9904/4FEB9F7E SM0805 D3 GREEN
@@ -149,43 +149,43 @@
   ( 2 /Power_supply/GND )
  )
  ( /4FEBAF93 SM0805 D4 GREEN
-  ( 1 N-000018 )
+  ( 1 N-000012 )
   ( 2 /Power_supply/GND )
  )
  ( /4FEBAFAA SM0805 D5 GREEN
-  ( 1 N-000017 )
+  ( 1 N-000014 )
   ( 2 /Power_supply/GND )
  )
  ( /4FEBAFC7 SM0805 D6 GREEN
-  ( 1 N-000003 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFC6 SM0805 D7 GREEN
-  ( 1 N-000005 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFDD SM0805 D8 GREEN
-  ( 1 N-000006 )
-  ( 2 /Power_supply/GND )
- )
- ( /4FEBAFDC SM0805 D9 GREEN
   ( 1 N-000008 )
   ( 2 /Power_supply/GND )
  )
- ( /4FEBAFD8 SM0805 D10 GREEN
-  ( 1 N-000001 )
+ ( /4FEBAFC6 SM0805 D7 GREEN
+  ( 1 N-000013 )
   ( 2 /Power_supply/GND )
  )
- ( /4FEBAFD9 SM0805 D11 GREEN
+ ( /4FEBAFDD SM0805 D8 GREEN
   ( 1 N-000010 )
   ( 2 /Power_supply/GND )
  )
+ ( /4FEBAFDC SM0805 D9 GREEN
+  ( 1 N-000001 )
+  ( 2 /Power_supply/GND )
+ )
+ ( /4FEBAFD8 SM0805 D10 GREEN
+  ( 1 N-000006 )
+  ( 2 /Power_supply/GND )
+ )
+ ( /4FEBAFD9 SM0805 D11 GREEN
+  ( 1 N-000003 )
+  ( 2 /Power_supply/GND )
+ )
  ( /4FEBD467 SM0805 D12 GREEN
-  ( 1 N-000115 )
+  ( 1 N-000111 )
   ( 2 /Power_supply/GND )
  )
  ( /4FEB9930 HRS_MINI_USB J1 HIROSE_UX60SX-MB-5ST_(MINI_USB)
-  ( 1 N-000062 )
+  ( 1 N-000056 )
   ( 2 /USB_N )
   ( 3 /USB_P )
   ( 4 ? )
@@ -211,7 +211,7 @@
  )
  ( /4FEB992A SM0805 L1 FERRITE_CHIP
   ( 1 /Power_supply/5V )
-  ( 2 N-000062 )
+  ( 2 N-000056 )
  )
  ( /4FEBB5A7 HFK120CT-ND P1 CONN_20
   ( 1 /SENSE_RAW )
@@ -259,13 +259,23 @@
  ( /4FECD7A8 SCREW_HOLE_4_40 P6 CONN_1
   ( 1 /Power_supply/GND )
  )
+ ( /4FEE1406 pin_array_4x2 P7 CONN_8
+  ( 1 N-000116 )
+  ( 2 N-000110 )
+  ( 3 N-000117 )
+  ( 4 N-000109 )
+  ( 5 N-000118 )
+  ( 6 N-000108 )
+  ( 7 N-000119 )
+  ( 8 N-000107 )
+ )
  ( /4FEB9EB8 SM0603 R1 270
   ( 1 /Power_supply/3V3 )
-  ( 2 N-000049 )
+  ( 2 N-000044 )
  )
  ( /4FEB9EBC SM0603 R2 270
   ( 1 /Power_supply/3V3 )
-  ( 2 N-000048 )
+  ( 2 N-000043 )
  )
  ( /4FEB9904/4FEB9F6F SM0603 R3 470
   ( 1 N-000131 )
@@ -284,43 +294,43 @@
   ( 2 /CLK_20MHZ_RAW )
  )
  ( /4FEBA573 SM0603 R7 10k
-  ( 1 N-000088 )
+  ( 1 /M0 )
   ( 2 /Power_supply/3V3 )
  )
  ( /4FEBA5B7 SM0603 R8 10k
-  ( 1 N-000095 )
+  ( 1 /M1 )
   ( 2 /Power_supply/GND )
  )
  ( /4FEBAF8A SM0603 R9 470
-  ( 1 N-000018 )
+  ( 1 N-000012 )
   ( 2 /LED0 )
  )
  ( /4FEBAFAB SM0603 R10 470
-  ( 1 N-000017 )
+  ( 1 N-000014 )
   ( 2 /LED1 )
  )
  ( /4FEBAFC8 SM0603 R11 470
-  ( 1 N-000003 )
+  ( 1 N-000008 )
   ( 2 /LED2 )
  )
  ( /4FEBAFC5 SM0603 R12 470
-  ( 1 N-000005 )
+  ( 1 N-000013 )
   ( 2 /LED3 )
  )
  ( /4FEBAFDE SM0603 R13 470
-  ( 1 N-000006 )
+  ( 1 N-000010 )
   ( 2 /LED4 )
  )
  ( /4FEBAFDB SM0603 R14 470
-  ( 1 N-000008 )
+  ( 1 N-000001 )
   ( 2 /LED5 )
  )
  ( /4FEBAFD7 SM0603 R15 470
-  ( 1 N-000001 )
+  ( 1 N-000006 )
   ( 2 /LED6 )
  )
  ( /4FEBAFDA SM0603 R16 470
-  ( 1 N-000010 )
+  ( 1 N-000003 )
   ( 2 /LED7 )
  )
  ( /4FEBB405 SM0603 R17 10k
@@ -336,12 +346,30 @@
   ( 2 /SENSE_RAW )
  )
  ( /4FEBD468 SM0603 R20 470
-  ( 1 N-000115 )
+  ( 1 N-000111 )
   ( 2 /CONFIG_DONE )
  )
  ( /4FEBB400 SWITCH_6MM SW1 SW_PUSH
   ( 1 /PROG_B_N )
   ( 2 /Power_supply/GND )
+ )
+ ( /4FEE1A54 PINTST TP1 CONN_1
+  ( 1 /Power_supply/GND )
+ )
+ ( /4FEE1AF8 PROBEPAD TP2 CONN_1
+  ( 1 /Power_supply/3V3 )
+ )
+ ( /4FEE1AFF PROBEPAD TP3 CONN_1
+  ( 1 /Power_supply/2V5 )
+ )
+ ( /4FEE1B03 PROBEPAD TP4 CONN_1
+  ( 1 /Power_supply/1V2 )
+ )
+ ( /4FEE1B07 PROBEPAD TP5 CONN_1
+  ( 1 /CLK_20MHZ_RAW )
+ )
+ ( /4FEE1BA9 PROBEPAD TP6 CONN_1
+  ( 1 /Power_supply/5V )
  )
  ( /4FEBCB33 QFN32 U1 FT232RQ
   ( 1 /3V3OUT )
@@ -442,7 +470,7 @@
   ( 57 ? )
   ( 58 ? )
   ( 59 ? )
-  ( 60 N-000095 )
+  ( 60 /M1 )
   ( 61 /SPI_D3 )
   ( 62 /SPI_D2 )
   ( 63 /Power_supply/3V3 )
@@ -451,7 +479,7 @@
   ( 66 ? )
   ( 67 ? )
   ( 68 /Power_supply/GND )
-  ( 69 N-000088 )
+  ( 69 /M0 )
   ( 70 /SPI_SCK )
   ( 71 /CONFIG_DONE )
   ( 72 ? )
@@ -479,15 +507,15 @@
   ( 94 ? )
   ( 95 ? )
   ( 96 /Power_supply/GND )
-  ( 97 ? )
-  ( 98 ? )
-  ( 99 ? )
-  ( 100 ? )
-  ( 101 ? )
-  ( 102 ? )
+  ( 97 N-000107 )
+  ( 98 N-000119 )
+  ( 99 N-000108 )
+  ( 100 N-000118 )
+  ( 101 N-000109 )
+  ( 102 N-000117 )
   ( 103 /Power_supply/3V3 )
-  ( 104 ? )
-  ( 105 ? )
+  ( 104 N-000110 )
+  ( 105 N-000116 )
   ( 106 /Power_supply/TDO )
   ( 107 /Power_supply/TMS )
   ( 108 /Power_supply/GND )

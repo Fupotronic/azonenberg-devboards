@@ -1,9 +1,9 @@
-Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Thu 28 Jun 2012 06:17:36 PM EDT
+Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Fri 29 Jun 2012 05:19:00 PM EDT
 
 BeginCmp
 TimeStamp = /4FEB9904/4FEB9F39;
 Reference = C1;
-ValeurCmp = 220uF;
+ValeurCmp = 47uF;
 IdModule  = SM2312_6032;
 EndCmp
 
@@ -386,6 +386,13 @@ IdModule  = SCREW_HOLE_4_40;
 EndCmp
 
 BeginCmp
+TimeStamp = /4FEE1406;
+Reference = P7;
+ValeurCmp = CONN_8;
+IdModule  = pin_array_4x2;
+EndCmp
+
+BeginCmp
 TimeStamp = /4FEB9EB8;
 Reference = R1;
 ValeurCmp = 270;
@@ -530,6 +537,48 @@ TimeStamp = /4FEBB400;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
 IdModule  = SWITCH_6MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEE1A54;
+Reference = TP1;
+ValeurCmp = CONN_1;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEE1AF8;
+Reference = TP2;
+ValeurCmp = CONN_1;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEE1AFF;
+Reference = TP3;
+ValeurCmp = CONN_1;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEE1B03;
+Reference = TP4;
+ValeurCmp = CONN_1;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEE1B07;
+Reference = TP5;
+ValeurCmp = CONN_1;
+IdModule  = PROBEPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FEE1BA9;
+Reference = TP6;
+ValeurCmp = CONN_1;
+IdModule  = PROBEPAD;
 EndCmp
 
 BeginCmp
