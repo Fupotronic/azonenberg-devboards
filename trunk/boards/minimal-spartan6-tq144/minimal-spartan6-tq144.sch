@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Jun 2012 05:49:02 PM EDT
+EESchema Schematic File Version 2  date Sat 30 Jun 2012 07:37:49 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,7 +43,7 @@ $Descr A3 16535 11700
 encoding utf-8
 Sheet 1 2
 Title "Spartan-6 minimalist development board"
-Date "29 jun 2012"
+Date "30 jun 2012"
 Rev "0.1"
 Comp "Andrew Zonenberg"
 Comment1 "Top-level layout"
@@ -51,14 +51,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 14250 1100
-NoConn ~ 14250 1000
-NoConn ~ 14250 900 
-NoConn ~ 14250 800 
-NoConn ~ 10750 4600
-NoConn ~ 10750 4500
 Wire Wire Line
-	10150 4500 10050 4500
+	10750 4600 10050 4600
 Wire Wire Line
 	10050 4700 10750 4700
 Wire Wire Line
@@ -312,10 +306,23 @@ Wire Wire Line
 Wire Wire Line
 	10050 4800 10750 4800
 Wire Wire Line
-	10150 4600 10050 4600
-Text Label 10150 4500 0    60   ~ 0
+	10750 4500 10050 4500
+$Comp
+L CONN_10 P?
+U 1 1 4FEF8DBD
+P 9700 4750
+F 0 "P?" V 9650 4750 60  0000 C CNN
+F 1 "CONN_10" V 9750 4750 60  0000 C CNN
+	1    9700 4750
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 14250 1100
+NoConn ~ 14250 1000
+NoConn ~ 14250 900 
+NoConn ~ 14250 800 
+Text Label 10050 4300 0    60   ~ 0
 3V3
-Text Label 10150 4600 0    60   ~ 0
+Text Label 10050 4400 0    60   ~ 0
 GND
 Text Label 14250 2100 2    60   ~ 0
 5V
@@ -400,15 +407,6 @@ F 0 "U7" H 12650 5100 60  0000 C CNN
 F 1 "XC6SLXN-TQG144" H 12350 5000 60  0000 C CNN
 	2    11050 6000
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_8 P7
-U 1 1 4FEE1406
-P 9700 4850
-F 0 "P7" V 9650 4850 60  0000 C CNN
-F 1 "CONN_8" V 9750 4850 60  0000 C CNN
-	1    9700 4850
-	-1   0    0    -1  
 $EndComp
 Text Notes 14700 850  0    60   ~ 0
 4-40 mounting holes

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Fri 29 Jun 2012 05:19:00 PM EDT
+Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Sat 30 Jun 2012 07:38:27 PM EDT
 
 BeginCmp
 TimeStamp = /4FEB9904/4FEB9F39;
@@ -386,10 +386,10 @@ IdModule  = SCREW_HOLE_4_40;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FEE1406;
+TimeStamp = /4FEF8DBD;
 Reference = P7;
-ValeurCmp = CONN_8;
-IdModule  = pin_array_4x2;
+ValeurCmp = CONN_10;
+IdModule  = PIN_ARRAY_5x2;
 EndCmp
 
 BeginCmp
