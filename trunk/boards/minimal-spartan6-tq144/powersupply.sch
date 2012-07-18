@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 30 Jun 2012 08:13:34 PM EDT
+EESchema Schematic File Version 2  date Tue 17 Jul 2012 10:54:34 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,13 +37,14 @@ LIBS:passive-azonenberg
 LIBS:power-azonenberg
 LIBS:special-azonenberg
 LIBS:xilinx-azonenberg
-EELAYER 43  0
+LIBS:minimal-spartan6-tq144-cache
+EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 2 2
 Title "Spartan-6 minimalist development board"
-Date "1 jul 2012"
+Date "18 jul 2012"
 Rev ""
 Comp "Andrew Zonenberg"
 Comment1 ""
