@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Sat 15 Sep 2012 06:55:36 PM EDT
+
+BeginCmp
+TimeStamp = /5055070D;
+Reference = U1;
+ValeurCmp = FT256-DUMMY;
+IdModule  = FTG256;
+EndCmp
+
+EndListe
