@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sat 15 Sep 2012 07:37:48 PM EDT
+PCBNEW-BOARD Version 1 date Sat 15 Sep 2012 07:43:48 PM EDT
 
 # Created by Pcbnew(2011-aug-04)-testing
 
@@ -67,7 +67,7 @@ PadSize 600 600
 PadDrill 320
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 284196871) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (pscolor true) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory output/))
 $EndSETUP
 
 $EQUIPOT
@@ -5058,4 +5058,55 @@ De 15 0 128 0 400000
 $EndTRACK
 $ZONE
 $EndZONE
+$CZONE_OUTLINE
+ZInfo 5055124F 0 ""
+ZLayer 0
+ZAux 4 E
+ZClearance 200 T
+ZMinThickness 100
+ZOptions 0 16 F 100 200
+ZSmoothing 0 0
+ZCorner 26968 14567 0
+ZCorner 26968 14370 0
+ZCorner 26377 14370 0
+ZCorner 26377 14567 1
+$endCZONE_OUTLINE
+$CZONE_OUTLINE
+ZInfo 50551265 0 ""
+ZLayer 22
+ZAux 4 E
+ZClearance 200 T
+ZMinThickness 100
+ZOptions 0 16 F 100 200
+ZSmoothing 0 0
+ZCorner 26968 14567 0
+ZCorner 26968 14370 0
+ZCorner 26377 14370 0
+ZCorner 26377 14567 1
+$POLYSCORNERS
+26968 14567 0 0
+26968 14370 0 0
+26377 14370 0 0
+26377 14567 1 0
+$endPOLYSCORNERS
+$endCZONE_OUTLINE
+$CZONE_OUTLINE
+ZInfo 50551276 0 ""
+ZLayer 20
+ZAux 4 E
+ZClearance 200 T
+ZMinThickness 100
+ZOptions 0 16 F 100 200
+ZSmoothing 0 0
+ZCorner 27756 14764 0
+ZCorner 27756 14567 0
+ZCorner 27362 14567 0
+ZCorner 27362 14764 1
+$POLYSCORNERS
+27756 14764 0 0
+27756 14567 0 0
+27362 14567 0 0
+27362 14764 1 0
+$endPOLYSCORNERS
+$endCZONE_OUTLINE
 $EndBOARD
