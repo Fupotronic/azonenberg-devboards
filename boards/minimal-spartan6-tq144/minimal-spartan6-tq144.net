@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sat 30 Jun 2012 08:13:37 PM EDT
+# EESchema Netlist Version 1.1 created  Tue 17 Jul 2012 10:55:01 PM EDT
 (
  ( /4FEF8DBD $noname  P7 CONN_10 {Lib=CONN_10}
   (    1 /Power_supply/3V3 )
@@ -361,11 +361,11 @@
   (    1 /SPI_SCK )
   (    2 /Power_supply/3V3 )
  )
- ( /4FEBA5B7 $noname  R8 10k {Lib=R}
+ ( /4FEBA5B7 $noname  R8 0 {Lib=R}
   (    1 /M1 )
   (    2 /Power_supply/GND )
  )
- ( /4FEBA573 $noname  R7 10k {Lib=R}
+ ( /4FEBA573 $noname  R7 0 {Lib=R}
   (    1 /M0 )
   (    2 /Power_supply/3V3 )
  )
