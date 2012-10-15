@@ -1,0 +1,1193 @@
+EESchema Schematic File Version 2  date Sun 16 Sep 2012 05:18:52 PM EDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hirose-azonenberg
+LIBS:memory-azonenberg
+LIBS:microchip-azonenberg
+LIBS:osc-azonenberg
+LIBS:passive-azonenberg
+LIBS:power-azonenberg
+LIBS:special-azonenberg
+LIBS:xilinx-azonenberg
+EELAYER 43  0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "16 sep 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_1 P3
+U 1 1 50563E69
+P 10400 3250
+F 0 "P3" H 10480 3250 40  0000 L CNN
+F 1 "CONN_1" H 10400 3305 30  0001 C CNN
+	1    10400 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P4
+U 1 1 50563E68
+P 10400 3350
+F 0 "P4" H 10480 3350 40  0000 L CNN
+F 1 "CONN_1" H 10400 3405 30  0001 C CNN
+	1    10400 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10550 850  10450 850 
+Wire Wire Line
+	10450 850  10450 700 
+Wire Wire Line
+	10450 700  11600 700 
+Wire Wire Line
+	11600 700  11600 2900
+Wire Wire Line
+	11600 2900 950  2900
+Wire Wire Line
+	950  2900 950  3350
+Wire Wire Line
+	950  3350 1050 3350
+Wire Wire Line
+	10550 950  10400 950 
+Wire Wire Line
+	10400 950  10400 650 
+Wire Wire Line
+	10400 650  11650 650 
+Wire Wire Line
+	11650 650  11650 2950
+Wire Wire Line
+	11650 2950 1000 2950
+Wire Wire Line
+	1000 2950 1000 3250
+Wire Wire Line
+	1000 3250 1050 3250
+Wire Wire Line
+	10500 1950 10500 2150
+Wire Wire Line
+	10500 1950 10550 1950
+Wire Wire Line
+	10550 1750 10500 1750
+Wire Wire Line
+	10500 1750 10500 1550
+Wire Wire Line
+	10500 1550 10550 1550
+Wire Wire Line
+	10550 1350 10500 1350
+Wire Wire Line
+	10500 1350 10500 1150
+Wire Wire Line
+	10500 1150 10550 1150
+Wire Wire Line
+	9200 2250 9100 2250
+Wire Wire Line
+	9100 2250 9100 2800
+Wire Wire Line
+	9100 2800 10500 2800
+Wire Wire Line
+	10500 2800 10500 2350
+Wire Wire Line
+	10500 2350 10550 2350
+Wire Wire Line
+	9200 2150 9150 2150
+Wire Wire Line
+	9150 2150 9150 1950
+Wire Wire Line
+	9150 1950 9200 1950
+Wire Wire Line
+	9200 1750 9150 1750
+Wire Wire Line
+	9150 1750 9150 1550
+Wire Wire Line
+	9150 1550 9200 1550
+Wire Wire Line
+	9200 1350 9150 1350
+Wire Wire Line
+	9150 1350 9150 1150
+Wire Wire Line
+	9150 1150 9200 1150
+Wire Wire Line
+	7800 2150 7750 2150
+Wire Wire Line
+	7750 2150 7750 1950
+Wire Wire Line
+	7750 1950 7800 1950
+Wire Wire Line
+	7800 1750 7750 1750
+Wire Wire Line
+	7750 1750 7750 1550
+Wire Wire Line
+	7750 1550 7800 1550
+Wire Wire Line
+	7800 1250 7700 1250
+Wire Wire Line
+	7700 1250 7700 1050
+Wire Wire Line
+	7700 1050 7800 1050
+Wire Wire Line
+	7800 950  7650 950 
+Wire Wire Line
+	7650 950  7650 650 
+Wire Wire Line
+	7650 650  9150 650 
+Wire Wire Line
+	9150 650  9150 850 
+Wire Wire Line
+	6350 2250 6350 2800
+Wire Wire Line
+	6350 2250 6450 2250
+Wire Wire Line
+	7800 2250 7700 2250
+Wire Wire Line
+	6400 2750 7700 2750
+Wire Wire Line
+	6400 2750 6400 2350
+Wire Wire Line
+	6400 2350 6450 2350
+Wire Wire Line
+	6450 2050 6350 2050
+Wire Wire Line
+	6350 2050 6350 1850
+Wire Wire Line
+	6350 1850 6450 1850
+Wire Wire Line
+	6450 1650 6350 1650
+Wire Wire Line
+	6350 1650 6350 1450
+Wire Wire Line
+	6350 1450 6450 1450
+Wire Wire Line
+	6450 1250 6350 1250
+Wire Wire Line
+	6350 1250 6350 1050
+Wire Wire Line
+	6350 1050 6450 1050
+Wire Wire Line
+	5100 2050 5000 2050
+Wire Wire Line
+	5000 2050 5000 1850
+Wire Wire Line
+	5000 1850 5100 1850
+Wire Wire Line
+	5100 1650 5000 1650
+Wire Wire Line
+	5000 1650 5000 1450
+Wire Wire Line
+	5000 1450 5100 1450
+Wire Wire Line
+	5100 1250 5000 1250
+Wire Wire Line
+	5000 1250 5000 1050
+Wire Wire Line
+	5000 1050 5100 1050
+Wire Wire Line
+	5100 950  4950 950 
+Wire Wire Line
+	4950 950  4950 650 
+Wire Wire Line
+	4950 650  6300 650 
+Wire Wire Line
+	6300 650  6300 850 
+Wire Wire Line
+	6300 850  6450 850 
+Wire Wire Line
+	3750 2250 3650 2250
+Wire Wire Line
+	3650 2250 3650 2800
+Wire Wire Line
+	3650 2800 5050 2800
+Wire Wire Line
+	5050 2800 5050 2350
+Wire Wire Line
+	5050 2350 5100 2350
+Wire Wire Line
+	3750 2150 3700 2150
+Wire Wire Line
+	3700 2150 3700 1950
+Wire Wire Line
+	3700 1950 3750 1950
+Wire Wire Line
+	3750 1750 3700 1750
+Wire Wire Line
+	3700 1750 3700 1550
+Wire Wire Line
+	3700 1550 3750 1550
+Wire Wire Line
+	3750 1350 3700 1350
+Wire Wire Line
+	3700 1350 3700 1150
+Wire Wire Line
+	3700 1150 3750 1150
+Wire Wire Line
+	2400 950  2300 950 
+Wire Wire Line
+	2300 950  2300 600 
+Wire Wire Line
+	2300 600  3600 600 
+Wire Wire Line
+	3600 600  3600 850 
+Wire Wire Line
+	3600 850  3750 850 
+Wire Wire Line
+	2400 1050 2300 1050
+Wire Wire Line
+	2300 1050 2300 1250
+Wire Wire Line
+	2300 1250 2400 1250
+Wire Wire Line
+	2400 1450 2300 1450
+Wire Wire Line
+	2300 1450 2300 1650
+Wire Wire Line
+	2300 1650 2400 1650
+Wire Wire Line
+	2400 1850 2300 1850
+Wire Wire Line
+	2300 1850 2300 2050
+Wire Wire Line
+	2300 2050 2400 2050
+Wire Wire Line
+	2400 2250 2350 2250
+Wire Wire Line
+	2350 2250 2350 2700
+Wire Wire Line
+	1050 2150 1000 2150
+Wire Wire Line
+	1000 2150 1000 1950
+Wire Wire Line
+	1000 1950 1050 1950
+Wire Wire Line
+	1050 1750 1000 1750
+Wire Wire Line
+	1000 1750 1000 1550
+Wire Wire Line
+	1000 1550 1050 1550
+Wire Wire Line
+	1050 1350 1000 1350
+Wire Wire Line
+	1000 1350 1000 1150
+Wire Wire Line
+	1000 1150 1050 1150
+Wire Wire Line
+	1050 1050 950  1050
+Wire Wire Line
+	950  1050 950  1250
+Wire Wire Line
+	950  1250 1050 1250
+Wire Wire Line
+	1050 1450 950  1450
+Wire Wire Line
+	950  1450 950  1650
+Wire Wire Line
+	950  1650 1050 1650
+Wire Wire Line
+	1050 1850 950  1850
+Wire Wire Line
+	950  1850 950  2050
+Wire Wire Line
+	950  2050 1050 2050
+Wire Wire Line
+	1050 2250 950  2250
+Wire Wire Line
+	950  2250 950  2750
+Wire Wire Line
+	950  2750 2400 2750
+Wire Wire Line
+	2400 2750 2400 2350
+Wire Wire Line
+	2400 2150 2350 2150
+Wire Wire Line
+	2350 2150 2350 1950
+Wire Wire Line
+	2350 1950 2400 1950
+Wire Wire Line
+	2400 1750 2350 1750
+Wire Wire Line
+	2350 1750 2350 1550
+Wire Wire Line
+	2350 1550 2400 1550
+Wire Wire Line
+	2400 1350 2350 1350
+Wire Wire Line
+	2350 1350 2350 1150
+Wire Wire Line
+	2350 1150 2400 1150
+Wire Wire Line
+	2400 850  2350 850 
+Wire Wire Line
+	2350 850  2350 650 
+Wire Wire Line
+	2350 650  3550 650 
+Wire Wire Line
+	3550 650  3550 950 
+Wire Wire Line
+	3550 950  3750 950 
+Wire Wire Line
+	3750 1050 3650 1050
+Wire Wire Line
+	3650 1050 3650 1250
+Wire Wire Line
+	3650 1250 3750 1250
+Wire Wire Line
+	3750 1450 3650 1450
+Wire Wire Line
+	3650 1450 3650 1650
+Wire Wire Line
+	3650 1650 3750 1650
+Wire Wire Line
+	3750 1850 3650 1850
+Wire Wire Line
+	3650 1850 3650 2050
+Wire Wire Line
+	3650 2050 3750 2050
+Wire Wire Line
+	3750 2350 3700 2350
+Wire Wire Line
+	3700 2350 3700 2750
+Wire Wire Line
+	3700 2750 5000 2750
+Wire Wire Line
+	5000 2750 5000 2250
+Wire Wire Line
+	5000 2250 5100 2250
+Wire Wire Line
+	1050 2350 1000 2350
+Wire Wire Line
+	1000 2350 1000 2700
+Wire Wire Line
+	1000 2700 2350 2700
+Wire Wire Line
+	6450 950  6250 950 
+Wire Wire Line
+	6250 950  6250 700 
+Wire Wire Line
+	6250 700  5000 700 
+Wire Wire Line
+	5000 700  5000 850 
+Wire Wire Line
+	5000 850  5100 850 
+Wire Wire Line
+	5100 1150 5050 1150
+Wire Wire Line
+	5050 1150 5050 1350
+Wire Wire Line
+	5050 1350 5100 1350
+Wire Wire Line
+	5100 1550 5050 1550
+Wire Wire Line
+	5050 1550 5050 1750
+Wire Wire Line
+	5050 1750 5100 1750
+Wire Wire Line
+	5100 1950 5050 1950
+Wire Wire Line
+	5050 1950 5050 2150
+Wire Wire Line
+	5050 2150 5100 2150
+Wire Wire Line
+	6450 1150 6400 1150
+Wire Wire Line
+	6400 1150 6400 1350
+Wire Wire Line
+	6400 1350 6450 1350
+Wire Wire Line
+	6450 1550 6400 1550
+Wire Wire Line
+	6400 1550 6400 1750
+Wire Wire Line
+	6400 1750 6450 1750
+Wire Wire Line
+	6450 1950 6400 1950
+Wire Wire Line
+	6400 1950 6400 2150
+Wire Wire Line
+	6400 2150 6450 2150
+Wire Wire Line
+	7700 2750 7700 2250
+Wire Wire Line
+	7800 2350 7750 2350
+Wire Wire Line
+	7750 2350 7750 2800
+Wire Wire Line
+	7750 2800 6350 2800
+Wire Wire Line
+	7800 850  7700 850 
+Wire Wire Line
+	7700 850  7700 700 
+Wire Wire Line
+	7700 700  9100 700 
+Wire Wire Line
+	9100 700  9100 950 
+Wire Wire Line
+	9100 950  9200 950 
+Wire Wire Line
+	9150 850  9200 850 
+Wire Wire Line
+	7800 1150 7750 1150
+Wire Wire Line
+	7750 1150 7750 1350
+Wire Wire Line
+	7750 1350 7800 1350
+Wire Wire Line
+	7800 1450 7700 1450
+Wire Wire Line
+	7700 1450 7700 1650
+Wire Wire Line
+	7700 1650 7800 1650
+Wire Wire Line
+	7800 1850 7700 1850
+Wire Wire Line
+	7700 1850 7700 2050
+Wire Wire Line
+	7700 2050 7800 2050
+Wire Wire Line
+	9200 1050 9100 1050
+Wire Wire Line
+	9100 1050 9100 1250
+Wire Wire Line
+	9100 1250 9200 1250
+Wire Wire Line
+	9200 1450 9100 1450
+Wire Wire Line
+	9100 1450 9100 1650
+Wire Wire Line
+	9100 1650 9200 1650
+Wire Wire Line
+	9200 1850 9100 1850
+Wire Wire Line
+	9100 1850 9100 2050
+Wire Wire Line
+	9100 2050 9200 2050
+Wire Wire Line
+	9200 2350 9150 2350
+Wire Wire Line
+	9150 2350 9150 2750
+Wire Wire Line
+	9150 2750 10450 2750
+Wire Wire Line
+	10450 2750 10450 2250
+Wire Wire Line
+	10450 2250 10550 2250
+Wire Wire Line
+	10550 1050 10450 1050
+Wire Wire Line
+	10450 1050 10450 1250
+Wire Wire Line
+	10450 1250 10550 1250
+Wire Wire Line
+	10550 1450 10450 1450
+Wire Wire Line
+	10450 1450 10450 1650
+Wire Wire Line
+	10450 1650 10550 1650
+Wire Wire Line
+	10550 1850 10450 1850
+Wire Wire Line
+	10450 1850 10450 2050
+Wire Wire Line
+	10450 2050 10550 2050
+Wire Wire Line
+	10500 2150 10550 2150
+Wire Wire Line
+	10550 4550 10500 4550
+Wire Wire Line
+	10550 4450 10450 4450
+Wire Wire Line
+	10450 4450 10450 4250
+Wire Wire Line
+	10450 4250 10550 4250
+Wire Wire Line
+	10550 4050 10450 4050
+Wire Wire Line
+	10450 4050 10450 3850
+Wire Wire Line
+	10450 3850 10550 3850
+Wire Wire Line
+	10550 3650 10450 3650
+Wire Wire Line
+	10450 3650 10450 3450
+Wire Wire Line
+	10450 3450 10550 3450
+Wire Wire Line
+	10550 4650 10450 4650
+Wire Wire Line
+	10450 4650 10450 5150
+Wire Wire Line
+	10450 5150 9150 5150
+Wire Wire Line
+	9150 5150 9150 4750
+Wire Wire Line
+	9150 4750 9200 4750
+Wire Wire Line
+	9200 4450 9100 4450
+Wire Wire Line
+	9100 4450 9100 4250
+Wire Wire Line
+	9100 4250 9200 4250
+Wire Wire Line
+	9200 4050 9100 4050
+Wire Wire Line
+	9100 4050 9100 3850
+Wire Wire Line
+	9100 3850 9200 3850
+Wire Wire Line
+	9200 3650 9100 3650
+Wire Wire Line
+	9100 3650 9100 3450
+Wire Wire Line
+	9100 3450 9200 3450
+Wire Wire Line
+	7800 4450 7700 4450
+Wire Wire Line
+	7700 4450 7700 4250
+Wire Wire Line
+	7700 4250 7800 4250
+Wire Wire Line
+	7800 4050 7700 4050
+Wire Wire Line
+	7700 4050 7700 3850
+Wire Wire Line
+	7700 3850 7800 3850
+Wire Wire Line
+	7800 3750 7750 3750
+Wire Wire Line
+	7750 3750 7750 3550
+Wire Wire Line
+	7750 3550 7800 3550
+Wire Wire Line
+	9200 3250 9150 3250
+Wire Wire Line
+	9200 3350 9100 3350
+Wire Wire Line
+	9100 3350 9100 3100
+Wire Wire Line
+	9100 3100 7700 3100
+Wire Wire Line
+	7700 3100 7700 3250
+Wire Wire Line
+	7700 3250 7800 3250
+Wire Wire Line
+	7750 5200 6350 5200
+Wire Wire Line
+	7750 5200 7750 4750
+Wire Wire Line
+	7750 4750 7800 4750
+Wire Wire Line
+	7700 5150 7700 4650
+Wire Wire Line
+	6450 4550 6400 4550
+Wire Wire Line
+	6400 4550 6400 4350
+Wire Wire Line
+	6400 4350 6450 4350
+Wire Wire Line
+	6450 4150 6400 4150
+Wire Wire Line
+	6400 4150 6400 3950
+Wire Wire Line
+	6400 3950 6450 3950
+Wire Wire Line
+	6450 3750 6400 3750
+Wire Wire Line
+	6400 3750 6400 3550
+Wire Wire Line
+	6400 3550 6450 3550
+Wire Wire Line
+	5100 4550 5050 4550
+Wire Wire Line
+	5050 4550 5050 4350
+Wire Wire Line
+	5050 4350 5100 4350
+Wire Wire Line
+	5100 4150 5050 4150
+Wire Wire Line
+	5050 4150 5050 3950
+Wire Wire Line
+	5050 3950 5100 3950
+Wire Wire Line
+	5100 3750 5050 3750
+Wire Wire Line
+	5050 3750 5050 3550
+Wire Wire Line
+	5050 3550 5100 3550
+Wire Wire Line
+	5100 3250 5000 3250
+Wire Wire Line
+	5000 3250 5000 3100
+Wire Wire Line
+	5000 3100 6250 3100
+Wire Wire Line
+	6250 3100 6250 3350
+Wire Wire Line
+	6250 3350 6450 3350
+Wire Wire Line
+	1000 5100 2350 5100
+Wire Wire Line
+	1000 5100 1000 4750
+Wire Wire Line
+	1000 4750 1050 4750
+Wire Wire Line
+	5100 4650 5000 4650
+Wire Wire Line
+	5000 4650 5000 5150
+Wire Wire Line
+	5000 5150 3700 5150
+Wire Wire Line
+	3700 5150 3700 4750
+Wire Wire Line
+	3700 4750 3750 4750
+Wire Wire Line
+	3750 4450 3650 4450
+Wire Wire Line
+	3650 4450 3650 4250
+Wire Wire Line
+	3650 4250 3750 4250
+Wire Wire Line
+	3750 4050 3650 4050
+Wire Wire Line
+	3650 4050 3650 3850
+Wire Wire Line
+	3650 3850 3750 3850
+Wire Wire Line
+	3750 3650 3650 3650
+Wire Wire Line
+	3650 3650 3650 3450
+Wire Wire Line
+	3650 3450 3750 3450
+Wire Wire Line
+	3750 3350 3550 3350
+Wire Wire Line
+	3550 3350 3550 3050
+Wire Wire Line
+	3550 3050 2350 3050
+Wire Wire Line
+	2350 3050 2350 3250
+Wire Wire Line
+	2350 3250 2400 3250
+Wire Wire Line
+	2400 3550 2350 3550
+Wire Wire Line
+	2350 3550 2350 3750
+Wire Wire Line
+	2350 3750 2400 3750
+Wire Wire Line
+	2400 3950 2350 3950
+Wire Wire Line
+	2350 3950 2350 4150
+Wire Wire Line
+	2350 4150 2400 4150
+Wire Wire Line
+	2400 4350 2350 4350
+Wire Wire Line
+	2350 4350 2350 4550
+Wire Wire Line
+	2350 4550 2400 4550
+Wire Wire Line
+	2400 4750 2400 5150
+Wire Wire Line
+	2400 5150 950  5150
+Wire Wire Line
+	950  5150 950  4650
+Wire Wire Line
+	950  4650 1050 4650
+Wire Wire Line
+	1050 4450 950  4450
+Wire Wire Line
+	950  4450 950  4250
+Wire Wire Line
+	950  4250 1050 4250
+Wire Wire Line
+	1050 4050 950  4050
+Wire Wire Line
+	950  4050 950  3850
+Wire Wire Line
+	950  3850 1050 3850
+Wire Wire Line
+	1050 3650 950  3650
+Wire Wire Line
+	950  3650 950  3450
+Wire Wire Line
+	950  3450 1050 3450
+Wire Wire Line
+	1050 3550 1000 3550
+Wire Wire Line
+	1000 3550 1000 3750
+Wire Wire Line
+	1000 3750 1050 3750
+Wire Wire Line
+	1050 3950 1000 3950
+Wire Wire Line
+	1000 3950 1000 4150
+Wire Wire Line
+	1000 4150 1050 4150
+Wire Wire Line
+	1050 4350 1000 4350
+Wire Wire Line
+	1000 4350 1000 4550
+Wire Wire Line
+	1000 4550 1050 4550
+Wire Wire Line
+	2350 5100 2350 4650
+Wire Wire Line
+	2350 4650 2400 4650
+Wire Wire Line
+	2400 4450 2300 4450
+Wire Wire Line
+	2300 4450 2300 4250
+Wire Wire Line
+	2300 4250 2400 4250
+Wire Wire Line
+	2400 4050 2300 4050
+Wire Wire Line
+	2300 4050 2300 3850
+Wire Wire Line
+	2300 3850 2400 3850
+Wire Wire Line
+	2400 3650 2300 3650
+Wire Wire Line
+	2300 3650 2300 3450
+Wire Wire Line
+	2300 3450 2400 3450
+Wire Wire Line
+	3750 3250 3600 3250
+Wire Wire Line
+	3600 3250 3600 3000
+Wire Wire Line
+	3600 3000 2300 3000
+Wire Wire Line
+	2300 3000 2300 3350
+Wire Wire Line
+	2300 3350 2400 3350
+Wire Wire Line
+	3750 3550 3700 3550
+Wire Wire Line
+	3700 3550 3700 3750
+Wire Wire Line
+	3700 3750 3750 3750
+Wire Wire Line
+	3750 3950 3700 3950
+Wire Wire Line
+	3700 3950 3700 4150
+Wire Wire Line
+	3700 4150 3750 4150
+Wire Wire Line
+	3750 4350 3700 4350
+Wire Wire Line
+	3700 4350 3700 4550
+Wire Wire Line
+	3700 4550 3750 4550
+Wire Wire Line
+	5100 4750 5050 4750
+Wire Wire Line
+	5050 4750 5050 5200
+Wire Wire Line
+	5050 5200 3650 5200
+Wire Wire Line
+	3650 5200 3650 4650
+Wire Wire Line
+	3650 4650 3750 4650
+Wire Wire Line
+	6450 3250 6300 3250
+Wire Wire Line
+	6300 3250 6300 3050
+Wire Wire Line
+	6300 3050 4950 3050
+Wire Wire Line
+	4950 3050 4950 3350
+Wire Wire Line
+	4950 3350 5100 3350
+Wire Wire Line
+	5100 3450 5000 3450
+Wire Wire Line
+	5000 3450 5000 3650
+Wire Wire Line
+	5000 3650 5100 3650
+Wire Wire Line
+	5100 3850 5000 3850
+Wire Wire Line
+	5000 3850 5000 4050
+Wire Wire Line
+	5000 4050 5100 4050
+Wire Wire Line
+	5100 4250 5000 4250
+Wire Wire Line
+	5000 4250 5000 4450
+Wire Wire Line
+	5000 4450 5100 4450
+Wire Wire Line
+	6450 3450 6350 3450
+Wire Wire Line
+	6350 3450 6350 3650
+Wire Wire Line
+	6350 3650 6450 3650
+Wire Wire Line
+	6450 3850 6350 3850
+Wire Wire Line
+	6350 3850 6350 4050
+Wire Wire Line
+	6350 4050 6450 4050
+Wire Wire Line
+	6450 4250 6350 4250
+Wire Wire Line
+	6350 4250 6350 4450
+Wire Wire Line
+	6350 4450 6450 4450
+Wire Wire Line
+	6450 4750 6400 4750
+Wire Wire Line
+	6400 4750 6400 5150
+Wire Wire Line
+	6400 5150 7700 5150
+Wire Wire Line
+	7700 4650 7800 4650
+Wire Wire Line
+	6450 4650 6350 4650
+Wire Wire Line
+	6350 4650 6350 5200
+Wire Wire Line
+	9150 3250 9150 3050
+Wire Wire Line
+	9150 3050 7650 3050
+Wire Wire Line
+	7650 3050 7650 3350
+Wire Wire Line
+	7650 3350 7800 3350
+Wire Wire Line
+	7800 3450 7700 3450
+Wire Wire Line
+	7700 3450 7700 3650
+Wire Wire Line
+	7700 3650 7800 3650
+Wire Wire Line
+	7800 3950 7750 3950
+Wire Wire Line
+	7750 3950 7750 4150
+Wire Wire Line
+	7750 4150 7800 4150
+Wire Wire Line
+	7800 4350 7750 4350
+Wire Wire Line
+	7750 4350 7750 4550
+Wire Wire Line
+	7750 4550 7800 4550
+Wire Wire Line
+	9200 3550 9150 3550
+Wire Wire Line
+	9150 3550 9150 3750
+Wire Wire Line
+	9150 3750 9200 3750
+Wire Wire Line
+	9200 3950 9150 3950
+Wire Wire Line
+	9150 3950 9150 4150
+Wire Wire Line
+	9150 4150 9200 4150
+Wire Wire Line
+	9200 4350 9150 4350
+Wire Wire Line
+	9150 4350 9150 4550
+Wire Wire Line
+	9150 4550 9200 4550
+Wire Wire Line
+	10550 4750 10500 4750
+Wire Wire Line
+	10500 4750 10500 5200
+Wire Wire Line
+	10500 5200 9100 5200
+Wire Wire Line
+	9100 5200 9100 4650
+Wire Wire Line
+	9100 4650 9200 4650
+Wire Wire Line
+	10550 3550 10500 3550
+Wire Wire Line
+	10500 3550 10500 3750
+Wire Wire Line
+	10500 3750 10550 3750
+Wire Wire Line
+	10550 3950 10500 3950
+Wire Wire Line
+	10500 3950 10500 4150
+Wire Wire Line
+	10500 4150 10550 4150
+Wire Wire Line
+	10550 4350 10500 4350
+Wire Wire Line
+	10500 4350 10500 4550
+$Comp
+L FT256-DUMMY U?
+U 9 1 50563E00
+P 1350 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50563E00" Ref="U1"  Part="9" 
+F 0 "U1" H 1500 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 1750 4700 60  0000 C CNN
+	9    1350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 10 1 50563DFD
+P 2700 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/50563DFD" Ref="U1"  Part="10" 
+F 0 "U1" H 2850 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 3100 4700 60  0000 C CNN
+	10   2700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 11 1 50563DFC
+P 4050 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50563DFC" Ref="U1"  Part="11" 
+F 0 "U1" H 4200 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 4450 4700 60  0000 C CNN
+	11   4050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 12 1 50563DFB
+P 5400 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50563DFB" Ref="U1"  Part="12" 
+F 0 "U1" H 5550 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 5800 4700 60  0000 C CNN
+	12   5400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 13 1 50563DFA
+P 6750 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563DFA" Ref="U1"  Part="13" 
+F 0 "U1" H 6900 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 7150 4700 60  0000 C CNN
+	13   6750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 14 1 50563DF9
+P 8100 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563D00" Ref="U?"  Part="6" 
+AR Path="/50563DF9" Ref="U1"  Part="14" 
+F 0 "U1" H 8250 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 8500 4700 60  0000 C CNN
+	14   8100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 15 1 50563DF8
+P 9500 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563D00" Ref="U?"  Part="6" 
+AR Path="/50563D35" Ref="U?"  Part="7" 
+AR Path="/50563DF8" Ref="U1"  Part="15" 
+F 0 "U1" H 9650 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 9900 4700 60  0000 C CNN
+	15   9500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 16 1 50563DF7
+P 10850 4850
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563D00" Ref="U?"  Part="6" 
+AR Path="/50563D35" Ref="U?"  Part="7" 
+AR Path="/50563DA6" Ref="U?"  Part="8" 
+AR Path="/50563DF7" Ref="U1"  Part="16" 
+F 0 "U1" H 11000 4800 60  0000 C CNN
+F 1 "FT256-DUMMY" H 11250 4700 60  0000 C CNN
+	16   10850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 8 1 50563DA6
+P 10850 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563D00" Ref="U?"  Part="6" 
+AR Path="/50563D35" Ref="U?"  Part="7" 
+AR Path="/50563DA6" Ref="U1"  Part="8" 
+F 0 "U1" H 11000 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 11250 2300 60  0000 C CNN
+	8    10850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 7 1 50563D35
+P 9500 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563D00" Ref="U?"  Part="6" 
+AR Path="/50563D35" Ref="U1"  Part="7" 
+F 0 "U1" H 9650 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 9900 2300 60  0000 C CNN
+	7    9500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 6 1 50563D00
+P 8100 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U?"  Part="5" 
+AR Path="/50563D00" Ref="U1"  Part="6" 
+F 0 "U1" H 8250 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 8500 2300 60  0000 C CNN
+	6    8100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 5 1 50557459
+P 6750 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U?"  Part="4" 
+AR Path="/50557459" Ref="U1"  Part="5" 
+F 0 "U1" H 6900 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 7150 2300 60  0000 C CNN
+	5    6750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 4 1 50553105
+P 5400 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U?"  Part="3" 
+AR Path="/50553105" Ref="U1"  Part="4" 
+F 0 "U1" H 5550 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 5800 2300 60  0000 C CNN
+	4    5400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 3 1 505530BA
+P 4050 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U?"  Part="2" 
+AR Path="/505530BA" Ref="U1"  Part="3" 
+F 0 "U1" H 4200 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 4450 2300 60  0000 C CNN
+	3    4050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT256-DUMMY U?
+U 2 1 50553058
+P 2700 2450
+AR Path="/50552DC4" Ref="U?"  Part="1" 
+AR Path="/50553058" Ref="U1"  Part="2" 
+F 0 "U1" H 2850 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 3100 2300 60  0000 C CNN
+	2    2700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P2
+U 1 1 50552F77
+P 900 950
+F 0 "P2" H 980 950 40  0000 L CNN
+F 1 "CONN_1" H 900 1005 30  0001 C CNN
+	1    900  950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P1
+U 1 1 50552F72
+P 900 850
+F 0 "P1" H 980 850 40  0000 L CNN
+F 1 "CONN_1" H 900 905 30  0001 C CNN
+	1    900  850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L FT256-DUMMY U1
+U 1 1 50552DC4
+P 1350 2450
+F 0 "U1" H 1500 2400 60  0000 C CNN
+F 1 "FT256-DUMMY" H 1750 2300 60  0000 C CNN
+	1    1350 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
