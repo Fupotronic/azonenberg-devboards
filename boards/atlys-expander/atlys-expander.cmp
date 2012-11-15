@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Thu 15 Nov 2012 01:38:36 AM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Thu 15 Nov 2012 02:23:17 AM EST
 
 BeginCmp
 TimeStamp = /50A49A3D;
@@ -43,6 +43,13 @@ IdModule  = SM0402;
 EndCmp
 
 BeginCmp
+TimeStamp = /50A4B493;
+Reference = C7;
+ValeurCmp = 47uF;
+IdModule  = SM2312_6032;
+EndCmp
+
+BeginCmp
 TimeStamp = /50A49B7B;
 Reference = D1;
 ValeurCmp = GREEN;
@@ -52,6 +59,62 @@ EndCmp
 BeginCmp
 TimeStamp = /50A4A477;
 Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B62D;
+Reference = D3;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B855;
+Reference = D4;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B867;
+Reference = D5;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B878;
+Reference = D6;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B88B;
+Reference = D7;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B89C;
+Reference = D8;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B8AD;
+Reference = D9;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B8BE;
+Reference = D10;
 ValeurCmp = GREEN;
 IdModule  = SM0603;
 EndCmp
@@ -67,7 +130,7 @@ BeginCmp
 TimeStamp = /50A189A3;
 Reference = P1;
 ValeurCmp = CONN_20;
-IdModule  = ;
+IdModule  = HFK120CT-ND;
 EndCmp
 
 BeginCmp
@@ -106,9 +169,79 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /50A4AE88;
+Reference = R6;
+ValeurCmp = 4.7K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4AE8F;
+Reference = R7;
+ValeurCmp = 4.7K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B678;
+Reference = R8;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B85C;
+Reference = R9;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B86E;
+Reference = R10;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B87F;
+Reference = R11;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B892;
+Reference = R12;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B8A3;
+Reference = R13;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B8B4;
+Reference = R14;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4B8C5;
+Reference = R15;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
 TimeStamp = /50A18752;
 Reference = U1;
-ValeurCmp = NAND_FLASH_8BIT;
+ValeurCmp = MT29F1G08ABA*WP;
 IdModule  = TSOP48;
 EndCmp
 
