@@ -1,0 +1,122 @@
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Thu 15 Nov 2012 01:38:36 AM EST
+
+BeginCmp
+TimeStamp = /50A49A3D;
+Reference = C1;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A49A4A;
+Reference = C2;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A49A50;
+Reference = C3;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A49A56;
+Reference = C4;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4A32C;
+Reference = C5;
+ValeurCmp = C;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4AB3C;
+Reference = C6;
+ValeurCmp = 0.1uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A49B7B;
+Reference = D1;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4A477;
+Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A495C0;
+Reference = J1;
+ValeurCmp = VHDCI;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A189A3;
+Reference = P1;
+ValeurCmp = CONN_20;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A49B5E;
+Reference = R1;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4A313;
+Reference = R2;
+ValeurCmp = 1M;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4A471;
+Reference = R3;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4A5D9;
+Reference = R4;
+ValeurCmp = 4.7K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4A618;
+Reference = R5;
+ValeurCmp = 4.7K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A18752;
+Reference = U1;
+ValeurCmp = NAND_FLASH_8BIT;
+IdModule  = TSOP48;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A4AAD2;
+Reference = U2;
+ValeurCmp = 24AA02E48;
+IdModule  = SOT23-5;
+EndCmp
+
+EndListe
