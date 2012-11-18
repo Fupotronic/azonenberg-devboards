@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 18 Nov 2012 02:49:37 AM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 18 Nov 2012 03:33:59 AM EST
 
 BeginCmp
 TimeStamp = /50A49A3D;
@@ -29,13 +29,6 @@ IdModule  = SM0402;
 EndCmp
 
 BeginCmp
-TimeStamp = /50A4A32C;
-Reference = C5;
-ValeurCmp = C;
-IdModule  = ;
-EndCmp
-
-BeginCmp
 TimeStamp = /50A4AB3C;
 Reference = C6;
 ValeurCmp = 0.1uF;
@@ -47,6 +40,13 @@ TimeStamp = /50A4B493;
 Reference = C7;
 ValeurCmp = 47uF;
 IdModule  = SM2312_6032;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A8B3C7;
+Reference = C8;
+ValeurCmp = 0.1uF;
+IdModule  = SM0402;
 EndCmp
 
 BeginCmp
@@ -144,7 +144,7 @@ BeginCmp
 TimeStamp = /50A4A313;
 Reference = R2;
 ValeurCmp = 1M;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -264,6 +264,13 @@ TimeStamp = /50A896FA;
 Reference = U3;
 ValeurCmp = TXB0108;
 IdModule  = SSOP20;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A8B2E2;
+Reference = U4;
+ValeurCmp = MCP9801_MSOP;
+IdModule  = MSOP_8;
 EndCmp
 
 EndListe
