@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 18 Nov 2012 03:15:30 AM EST
+EESchema Schematic File Version 2  date Sun 18 Nov 2012 03:33:43 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -295,16 +295,8 @@ U 1 1 50A4A313
 P 1500 5100
 F 0 "R2" V 1580 5100 50  0000 C CNN
 F 1 "1M" V 1500 5100 50  0000 C CNN
+F 2 "SM0805" V 1700 4950 60  0000 C CNN
 	1    1500 5100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C C5
-U 1 1 50A4A32C
-P 1450 5350
-F 0 "C5" H 1500 5450 50  0000 L CNN
-F 1 "C" H 1500 5250 50  0000 L CNN
-	1    1450 5350
 	0    -1   -1   0   
 $EndComp
 Text Label 1900 5100 0    60   ~ 0
@@ -420,27 +412,21 @@ F 2 "SM0603" V 14050 5400 60  0000 C CNN
 $EndComp
 Text Label 14650 5450 0    60   ~ 0
 3V3
-Text Label -1250 3550 2    60   ~ 0
+Text Label 1250 3050 2    60   ~ 0
 HEALTH_I2C_SDA
-Text Label -1250 3650 2    60   ~ 0
+Text Label 1250 2650 2    60   ~ 0
 HEALTH_I2C_SCL
-Text Notes 12100 7000 0    197  ~ 39
-TODO: Board health monitor
-Text Label -500 750  0    60   ~ 0
-LCD_D0
-Text Label -500 850  0    60   ~ 0
-LCD_D1
-Text Label -500 1150 0    60   ~ 0
+Text Notes 12400 6350 0    197  ~ 39
+Board health monitor
+Text Label 1250 2450 2    60   ~ 0
 LCD_D2
-Text Label -500 1250 0    60   ~ 0
+Text Label 1250 2050 2    60   ~ 0
 LCD_D3
-Text Label -500 1350 0    60   ~ 0
-LCD_CS1
 Text Label 1250 850  2    60   ~ 0
 LCD_CS2
-Text Label -500 1750 0    60   ~ 0
+Text Label 1250 1850 2    60   ~ 0
 LCD_RW
-Text Label -500 1850 0    60   ~ 0
+Text Label 1250 1250 2    60   ~ 0
 LCD_RS
 Text Label 11150 1450 2    60   ~ 0
 LCD_D0
@@ -472,22 +458,6 @@ Text Label 5300 7250 2    60   ~ 0
 GND
 Text Label 5300 6850 2    60   ~ 0
 3V3
-Text Label -500 2150 0    60   ~ 0
-LED0
-Text Label -500 2250 0    60   ~ 0
-LED1
-Text Label -500 2350 0    60   ~ 0
-LED2
-Text Label -500 2450 0    60   ~ 0
-LED3
-Text Label -500 2750 0    60   ~ 0
-LED4
-Text Label -500 2850 0    60   ~ 0
-LED5
-Text Label -500 2950 0    60   ~ 0
-LED6
-Text Label -500 3050 0    60   ~ 0
-LED7
 Text Label 6450 900  2    60   ~ 0
 LED0
 $Comp
@@ -754,12 +724,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 9300 6800 9300
 Wire Wire Line
-	1250 5100 1250 5350
-Wire Wire Line
-	1650 5350 1900 5350
-Wire Wire Line
-	1900 5350 1900 5100
-Wire Wire Line
 	1900 5100 1750 5100
 Wire Wire Line
 	6400 9750 6300 9750
@@ -937,4 +901,44 @@ Text Label 2850 2450 0    60   ~ 0
 LED5
 Text Label 2850 2650 0    60   ~ 0
 LED4
+Text Label 1250 1450 2    60   ~ 0
+LCD_CS1
+$Comp
+L MCP9801_MSOP U4
+U 1 1 50A8B2E2
+P 14800 7600
+F 0 "U4" H 14900 7700 60  0000 C CNN
+F 1 "MCP9801_MSOP" H 14900 7600 60  0000 C CNN
+F 2 "MSOP_8" H 14750 7050 60  0000 C CNN
+	1    14800 7600
+	1    0    0    -1  
+$EndComp
+Text Notes 14200 7100 0    60   ~ 0
+Address: 7'b1001000
+Text Label 13900 7250 2    60   ~ 0
+HEALTH_I2C_SDA
+Text Label 13900 7350 2    60   ~ 0
+HEALTH_I2C_SCL
+NoConn ~ 13900 7450
+Text Label 13900 7550 2    60   ~ 0
+GND
+Wire Wire Line
+	13900 7550 13900 7850
+Connection ~ 13900 7750
+Text Label 13900 7950 2    60   ~ 0
+3V3
+$Comp
+L C C8
+U 1 1 50A8B3C7
+P 12950 7700
+F 0 "C8" H 13400 7600 50  0000 L CNN
+F 1 "0.1uF" H 13300 7800 50  0000 L CNN
+F 2 "SM0402" H 13300 7700 60  0000 C CNN
+	1    12950 7700
+	-1   0    0    1   
+$EndComp
+Text Label 12950 7500 2    60   ~ 0
+3V3
+Text Label 12950 7900 2    60   ~ 0
+GND
 $EndSCHEMATC
