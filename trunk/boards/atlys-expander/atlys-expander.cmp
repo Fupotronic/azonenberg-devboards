@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Thu 15 Nov 2012 02:23:17 AM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 18 Nov 2012 02:49:37 AM EST
 
 BeginCmp
 TimeStamp = /50A49A3D;
@@ -123,7 +123,7 @@ BeginCmp
 TimeStamp = /50A495C0;
 Reference = J1;
 ValeurCmp = VHDCI;
-IdModule  = ;
+IdModule  = VHDCI;
 EndCmp
 
 BeginCmp
@@ -239,6 +239,13 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /50A89D21;
+Reference = RV1;
+ValeurCmp = 10K;
+IdModule  = BOURNS_3303_TRIMPOT;
+EndCmp
+
+BeginCmp
 TimeStamp = /50A18752;
 Reference = U1;
 ValeurCmp = MT29F1G08ABA*WP;
@@ -250,6 +257,13 @@ TimeStamp = /50A4AAD2;
 Reference = U2;
 ValeurCmp = 24AA02E48;
 IdModule  = SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /50A896FA;
+Reference = U3;
+ValeurCmp = TXB0108;
+IdModule  = SSOP20;
 EndCmp
 
 EndListe
