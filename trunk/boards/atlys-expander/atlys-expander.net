@@ -1,0 +1,822 @@
+# EESchema Netlist Version 1.1 created  Sun 18 Nov 2012 03:33:53 AM EST
+(
+ ( /50A18752 TSOP48  U1 MT29F1G08ABA*WP {Lib=NAND_FLASH_8BIT}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 /FLASH_RB_N )
+  (    8 /FLASH_RE_N )
+  (    9 /FLASH_CE_N )
+  (   10 ? )
+  (   11 ? )
+  (   12 /3V3 )
+  (   13 /GND )
+  (   14 ? )
+  (   15 ? )
+  (   16 /FLASH_CLE )
+  (   17 /FLASH_ALE )
+  (   18 /FLASH_WE_N )
+  (   19 /FLASH_WP_N )
+  (   20 ? )
+  (   21 ? )
+  (   22 ? )
+  (   23 ? )
+  (   24 ? )
+  (   25 /GND )
+  (   26 ? )
+  (   27 ? )
+  (   28 ? )
+  (   29 /FLASH_IO0 )
+  (   30 /FLASH_IO1 )
+  (   31 /FLASH_IO2 )
+  (   32 /FLASH_IO3 )
+  (   33 ? )
+  (   34 /3V3 )
+  (   35 ? )
+  (   36 /GND )
+  (   37 /3V3 )
+  (   38 ? )
+  (   39 /3V3 )
+  (   40 ? )
+  (   41 /FLASH_IO4 )
+  (   42 /FLASH_IO5 )
+  (   43 /FLASH_IO6 )
+  (   44 /FLASH_IO7 )
+  (   45 ? )
+  (   46 ? )
+  (   47 ? )
+  (   48 /GND )
+ )
+ ( /50A189A3 HFK120CT-ND  P1 CONN_20 {Lib=CONN_20}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 N-000039 )
+  (    6 ? )
+  (    7 /GND )
+  (    8 /5VUNREG )
+  (    9 N-000041 )
+  (   10 /VCONTR )
+  (   11 N-000042 )
+  (   12 N-000043 )
+  (   13 ? )
+  (   14 ? )
+  (   15 ? )
+  (   16 ? )
+  (   17 N-000025 )
+  (   18 N-000050 )
+  (   19 N-000044 )
+  (   20 N-000045 )
+ )
+ ( /50A495C0 VHDCI  J1 VHDCI {Lib=VHDCI}
+  (    1 /MAC_I2C_SDA )
+  (    2 /GND )
+  (    3 /MAC_I2C_SCL )
+  (    4 /LCD_D1 )
+  (    5 /GND )
+  (    6 /LCD_D0 )
+  (    7 /FLASH_RB_N )
+  (    8 /GND )
+  (    9 /FLASH_RE_N )
+  (   10 /FLASH_CE_N )
+  (   11 /GND )
+  (   12 /FLASH_CLE )
+  (   13 /FLASH_ALE )
+  (   14 /GND )
+  (   15 /FLASH_WE_N )
+  (   16 /3V3 )
+  (   17 /5VUNREG )
+  (   18 /5VUNREG )
+  (   19 /3V3 )
+  (   20 /FLASH_WP_N )
+  (   21 /GND )
+  (   22 /FLASH_IO0 )
+  (   23 /FLASH_IO1 )
+  (   24 /GND )
+  (   25 /FLASH_IO2 )
+  (   26 /FLASH_IO3 )
+  (   27 /GND )
+  (   28 /FLASH_IO4 )
+  (   29 /FLASH_IO5 )
+  (   30 /GND )
+  (   31 /FLASH_IO6 )
+  (   32 /FLASH_IO7 )
+  (   33 /GND )
+  (   34 /LED0 )
+  (   35 /LCD_CS2 )
+  (   36 /GND )
+  (   37 /LCD_RS )
+  (   38 /LCD_CS1 )
+  (   39 /GND )
+  (   40 /LCD_RW )
+  (   41 /LCD_D3 )
+  (   42 /GND )
+  (   43 /LCD_D2 )
+  (   44 /HEALTH_I2C_SCL )
+  (   45 /GND )
+  (   46 /HEALTH_I2C_SDA )
+  (   47 ? )
+  (   48 /GND )
+  (   49 ? )
+  (   50 /3V3 )
+  (   51 /5VUNREG )
+  (   52 /5VUNREG )
+  (   53 /3V3 )
+  (   54 ? )
+  (   55 /GND )
+  (   56 ? )
+  (   57 ? )
+  (   58 /GND )
+  (   59 /LED4 )
+  (   60 /LED5 )
+  (   61 /GND )
+  (   62 /LED6 )
+  (   63 /LED7 )
+  (   64 /GND )
+  (   65 /LED3 )
+  (   66 /LED2 )
+  (   67 /GND )
+  (   68 /LED1 )
+  (  SH1 /VHDCI_SHIELD )
+  (  SH2 /VHDCI_SHIELD )
+  (  SH3 /VHDCI_SHIELD )
+  (  SH4 /VHDCI_SHIELD )
+ )
+ ( /50A49A3D SM0402  C1 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /50A49A4A SM0402  C2 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /50A49A50 SM0402  C3 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /50A49A56 SM0402  C4 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /50A49B5E SM0603  R1 270 {Lib=R}
+  (    1 /5VUNREG )
+  (    2 N-000049 )
+ )
+ ( /50A49B7B SM0603  D1 GREEN {Lib=LED}
+  (    1 N-000049 )
+  (    2 /GND )
+ )
+ ( /50A4A313 SM0805  R2 1M {Lib=R}
+  (    1 /VHDCI_SHIELD )
+  (    2 /GND )
+ )
+ ( /50A4A471 SM0603  R3 270 {Lib=R}
+  (    1 /3V3 )
+  (    2 N-000048 )
+ )
+ ( /50A4A477 SM0603  D2 GREEN {Lib=LED}
+  (    1 N-000048 )
+  (    2 /GND )
+ )
+ ( /50A4A5D9 SM0603  R4 4.7K {Lib=R}
+  (    1 /MAC_I2C_SDA )
+  (    2 /3V3 )
+ )
+ ( /50A4A618 SM0603  R5 4.7K {Lib=R}
+  (    1 /MAC_I2C_SCL )
+  (    2 /3V3 )
+ )
+ ( /50A4AAD2 SOT23-5  U2 24AA02E48 {Lib=24AA02E48}
+  (    1 /MAC_I2C_SCL )
+  (    2 /GND )
+  (    3 /MAC_I2C_SDA )
+  (    4 /3V3 )
+  (    5 ? )
+ )
+ ( /50A4AB3C SM0402  C6 0.1uF {Lib=C}
+  (    1 /GND )
+  (    2 /3V3 )
+ )
+ ( /50A4AE88 SM0603  R6 4.7K {Lib=R}
+  (    1 /HEALTH_I2C_SDA )
+  (    2 /3V3 )
+ )
+ ( /50A4AE8F SM0603  R7 4.7K {Lib=R}
+  (    1 /HEALTH_I2C_SCL )
+  (    2 /3V3 )
+ )
+ ( /50A4B493 SM2312_6032  C7 47uF {Lib=CP1}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /50A4B62D SM0603  D3 GREEN {Lib=LED}
+  (    1 N-000037 )
+  (    2 /GND )
+ )
+ ( /50A4B678 SM0603  R8 270 {Lib=R}
+  (    1 /LED0 )
+  (    2 N-000037 )
+ )
+ ( /50A4B855 SM0603  D4 GREEN {Lib=LED}
+  (    1 N-000035 )
+  (    2 /GND )
+ )
+ ( /50A4B85C SM0603  R9 270 {Lib=R}
+  (    1 /LED1 )
+  (    2 N-000035 )
+ )
+ ( /50A4B867 SM0603  D5 GREEN {Lib=LED}
+  (    1 N-000033 )
+  (    2 /GND )
+ )
+ ( /50A4B86E SM0603  R10 270 {Lib=R}
+  (    1 /LED2 )
+  (    2 N-000033 )
+ )
+ ( /50A4B878 SM0603  D6 GREEN {Lib=LED}
+  (    1 N-000031 )
+  (    2 /GND )
+ )
+ ( /50A4B87F SM0603  R11 270 {Lib=R}
+  (    1 /LED3 )
+  (    2 N-000031 )
+ )
+ ( /50A4B88B SM0603  D7 GREEN {Lib=LED}
+  (    1 N-000029 )
+  (    2 /GND )
+ )
+ ( /50A4B892 SM0603  R12 270 {Lib=R}
+  (    1 /LED4 )
+  (    2 N-000029 )
+ )
+ ( /50A4B89C SM0603  D8 GREEN {Lib=LED}
+  (    1 N-000014 )
+  (    2 /GND )
+ )
+ ( /50A4B8A3 SM0603  R13 270 {Lib=R}
+  (    1 /LED5 )
+  (    2 N-000014 )
+ )
+ ( /50A4B8AD SM0603  D9 GREEN {Lib=LED}
+  (    1 N-000012 )
+  (    2 /GND )
+ )
+ ( /50A4B8B4 SM0603  R14 270 {Lib=R}
+  (    1 /LED6 )
+  (    2 N-000012 )
+ )
+ ( /50A4B8BE SM0603  D10 GREEN {Lib=LED}
+  (    1 N-000010 )
+  (    2 /GND )
+ )
+ ( /50A4B8C5 SM0603  R15 270 {Lib=R}
+  (    1 /LED7 )
+  (    2 N-000010 )
+ )
+ ( /50A896FA $noname  U3 TXB0108 {Lib=TXB0108}
+  (    1 /LCD_D0 )
+  (    2 /3V3 )
+  (    3 /LCD_D1 )
+  (    4 /LCD_D2 )
+  (    5 /LCD_D3 )
+  (    6 /LCD_RW )
+  (    7 /LCD_CS1 )
+  (    8 /LCD_RS )
+  (    9 /LCD_CS2 )
+  (   10 /3V3 )
+  (   11 /GND )
+  (   12 N-000039 )
+  (   13 N-000041 )
+  (   14 N-000042 )
+  (   15 N-000043 )
+  (   16 N-000044 )
+  (   17 N-000045 )
+  (   18 N-000025 )
+  (   19 /5VUNREG )
+  (   20 N-000050 )
+ )
+ ( /50A89D21 $noname  RV1 10K {Lib=POT}
+  (    1 /5VUNREG )
+  (    2 /VCONTR )
+  (    3 /GND )
+ )
+ ( /50A8B2E2 MSOP_8  U4 MCP9801_MSOP {Lib=MCP9801_MSOP}
+  (    1 /HEALTH_I2C_SDA )
+  (    2 /HEALTH_I2C_SCL )
+  (    3 ? )
+  (    4 /GND )
+  (    5 ? )
+  (    6 /GND )
+  (    7 /GND )
+  (    8 /3V3 )
+ )
+ ( /50A8B3C7 SM0402  C8 0.1uF {Lib=C}
+  (    1 /GND )
+  (    2 /3V3 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component U2
+ SOT23-5
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C7
+ CP*
+ SM*
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D5
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D7
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D8
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D9
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D10
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component U3
+ SSOP20
+$endlist
+$component U4
+ MSOP_8
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/3V3" "3V3"
+ R3 1
+ J1 50
+ J1 19
+ J1 53
+ C6 2
+ R6 2
+ R7 2
+ R5 2
+ U3 10
+ U1 12
+ C4 1
+ U1 37
+ C3 1
+ U3 2
+ U1 39
+ R4 2
+ C2 1
+ C1 1
+ J1 16
+ U2 4
+ U4 8
+ U1 34
+ C7 1
+ C8 2
+Net 2 "/LCD_CS2" "LCD_CS2"
+ J1 35
+ U3 9
+Net 3 "/LCD_CS1" "LCD_CS1"
+ J1 38
+ U3 7
+Net 4 "/LCD_RW" "LCD_RW"
+ J1 40
+ U3 6
+Net 5 "/LCD_D3" "LCD_D3"
+ J1 41
+ U3 5
+Net 6 "/LCD_D2" "LCD_D2"
+ J1 43
+ U3 4
+Net 7 "/LCD_D1" "LCD_D1"
+ J1 4
+ U3 3
+Net 8 "/LCD_D0" "LCD_D0"
+ J1 6
+ U3 1
+Net 9 "/GND" "GND"
+ J1 5
+ U4 4
+ U4 6
+ U4 7
+ J1 2
+ J1 64
+ C4 2
+ C3 2
+ U1 13
+ C2 2
+ J1 45
+ C1 2
+ J1 55
+ J1 36
+ J1 27
+ D2 2
+ J1 67
+ C8 1
+ J1 24
+ J1 14
+ J1 42
+ J1 33
+ J1 8
+ U1 25
+ U2 2
+ R2 2
+ J1 30
+ J1 11
+ J1 21
+ J1 61
+ D4 2
+ D9 2
+ D8 2
+ D5 2
+ J1 48
+ J1 58
+ J1 39
+ D6 2
+ D7 2
+ C6 1
+ U3 11
+ P1 7
+ D1 2
+ U1 36
+ U1 48
+ RV1 3
+ D10 2
+ C7 2
+ D3 2
+Net 10 "" ""
+ D10 1
+ R15 2
+Net 11 "/LED7" "LED7"
+ R15 1
+ J1 63
+Net 12 "" ""
+ D9 1
+ R14 2
+Net 13 "/LED6" "LED6"
+ R14 1
+ J1 62
+Net 14 "" ""
+ R13 2
+ D8 1
+Net 15 "/LED5" "LED5"
+ J1 60
+ R13 1
+Net 24 "/5VUNREG" "5VUNREG"
+ P1 8
+ U3 19
+ J1 52
+ J1 51
+ J1 18
+ J1 17
+ R1 1
+ RV1 1
+Net 25 "" ""
+ U3 18
+ P1 17
+Net 27 "/MAC_I2C_SCL" "MAC_I2C_SCL"
+ J1 3
+ U2 1
+ R5 1
+Net 28 "/MAC_I2C_SDA" "MAC_I2C_SDA"
+ U2 3
+ J1 1
+ R4 1
+Net 29 "" ""
+ R12 2
+ D7 1
+Net 30 "/LED4" "LED4"
+ R12 1
+ J1 59
+Net 31 "" ""
+ D6 1
+ R11 2
+Net 32 "/LED3" "LED3"
+ R11 1
+ J1 65
+Net 33 "" ""
+ D5 1
+ R10 2
+Net 34 "/LED2" "LED2"
+ R10 1
+ J1 66
+Net 35 "" ""
+ D4 1
+ R9 2
+Net 36 "/LED1" "LED1"
+ R9 1
+ J1 68
+Net 37 "" ""
+ R8 2
+ D3 1
+Net 38 "/LED0" "LED0"
+ R8 1
+ J1 34
+Net 39 "" ""
+ P1 5
+ U3 12
+Net 41 "" ""
+ P1 9
+ U3 13
+Net 42 "" ""
+ P1 11
+ U3 14
+Net 43 "" ""
+ P1 12
+ U3 15
+Net 44 "" ""
+ U3 16
+ P1 19
+Net 45 "" ""
+ P1 20
+ U3 17
+Net 48 "" ""
+ R3 2
+ D2 1
+Net 49 "" ""
+ D1 1
+ R1 2
+Net 50 "" ""
+ P1 18
+ U3 20
+Net 51 "/FLASH_ALE" "FLASH_ALE"
+ U1 17
+ J1 13
+Net 52 "/FLASH_IO7" "FLASH_IO7"
+ J1 32
+ U1 44
+Net 53 "/FLASH_IO0" "FLASH_IO0"
+ U1 29
+ J1 22
+Net 54 "/FLASH_CLE" "FLASH_CLE"
+ U1 16
+ J1 12
+Net 55 "/FLASH_IO6" "FLASH_IO6"
+ J1 31
+ U1 43
+Net 56 "/FLASH_WP_N" "FLASH_WP_N"
+ U1 19
+ J1 20
+Net 57 "/FLASH_CE_N" "FLASH_CE_N"
+ J1 10
+ U1 9
+Net 58 "/FLASH_RE_N" "FLASH_RE_N"
+ J1 9
+ U1 8
+Net 59 "/FLASH_RB_N" "FLASH_RB_N"
+ J1 7
+ U1 7
+Net 60 "/FLASH_IO4" "FLASH_IO4"
+ U1 41
+ J1 28
+Net 63 "/LCD_RS" "LCD_RS"
+ J1 37
+ U3 8
+Net 65 "/HEALTH_I2C_SDA" "HEALTH_I2C_SDA"
+ J1 46
+ R6 1
+ U4 1
+Net 66 "/FLASH_IO3" "FLASH_IO3"
+ U1 32
+ J1 26
+Net 67 "/FLASH_IO2" "FLASH_IO2"
+ U1 31
+ J1 25
+Net 68 "/FLASH_WE_N" "FLASH_WE_N"
+ J1 15
+ U1 18
+Net 70 "/HEALTH_I2C_SCL" "HEALTH_I2C_SCL"
+ U4 2
+ J1 44
+ R7 1
+Net 71 "/FLASH_IO1" "FLASH_IO1"
+ J1 23
+ U1 30
+Net 90 "/VCONTR" "VCONTR"
+ RV1 2
+ P1 10
+Net 98 "/VHDCI_SHIELD" "VHDCI_SHIELD"
+ R2 1
+ J1 SH4
+ J1 SH3
+ J1 SH2
+ J1 SH1
+Net 100 "/FLASH_IO5" "FLASH_IO5"
+ J1 29
+ U1 42
+}
+#End
