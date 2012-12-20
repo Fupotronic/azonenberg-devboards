@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 20 Dec 2012 04:47:05 PM EST
+EESchema Schematic File Version 2  date Thu 20 Dec 2012 05:24:01 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -73,16 +73,16 @@ $EndComp
 $Comp
 L INDUCTOR_PWROUT L3
 U 1 1 50D29B8C
-P 2400 750
-F 0 "L3" V 2550 450 40  0000 C CNN
-F 1 "Ferrite chip" V 2500 750 40  0000 C CNN
-	1    2400 750 
-	0    -1   -1   0   
+P 2850 750
+F 0 "L3" V 2800 550 40  0000 C CNN
+F 1 "Ferrite chip" V 2750 850 40  0000 C CNN
+	1    2850 750 
+	0    1    1    0   
 $EndComp
 NoConn ~ 1850 1150
 Text Label 2100 1050 0    60   ~ 0
 GND
-Text Label 2700 750  0    60   ~ 0
+Text Label 3150 750  0    60   ~ 0
 5V
 Text Label 6300 1650 0    60   ~ 0
 JTAG_TCK
@@ -307,7 +307,7 @@ F 1 "0.1 uF" H 2600 5050 50  0000 L CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1850 750  2100 750 
+	1850 750  2550 750 
 Wire Wire Line
 	1850 1250 1850 1350
 Wire Wire Line
@@ -432,7 +432,7 @@ P 1450 6000
 F 0 "L1" V 1650 6050 40  0000 C CNN
 F 1 "600R" V 1550 6000 40  0000 C CNN
 	1    1450 6000
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Text Label 1150 6000 2    60   ~ 0
 FTDI_VCC_D
@@ -472,7 +472,7 @@ P 1450 6750
 F 0 "L2" V 1650 6800 40  0000 C CNN
 F 1 "600R" V 1550 6750 40  0000 C CNN
 	1    1450 6750
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Text Label 1150 6750 2    60   ~ 0
 FTDI_VCC_D
@@ -806,4 +806,5 @@ Text Label 14800 4750 0    60   ~ 0
 3V3
 Text Label 14650 5250 2    60   ~ 0
 GND
+Connection ~ 2100 750 
 $EndSCHEMATC
