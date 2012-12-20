@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 20 Dec 2012 02:47:50 PM EST
+EESchema Schematic File Version 2  date Thu 20 Dec 2012 04:47:05 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -802,4 +802,8 @@ Wire Wire Line
 	5550 6200 5550 6700
 Connection ~ 5550 6500
 Connection ~ 3650 5400
+Text Label 14800 4750 0    60   ~ 0
+3V3
+Text Label 14650 5250 2    60   ~ 0
+GND
 $EndSCHEMATC
