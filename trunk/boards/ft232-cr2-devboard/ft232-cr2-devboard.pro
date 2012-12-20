@@ -1,4 +1,4 @@
-update=Thu 20 Dec 2012 01:09:41 AM EST
+update=Thu 20 Dec 2012 02:21:54 PM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,22 +58,22 @@ LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azo
 [pcbnew]
 version=1
 LastNetListRead=ft232-cr2-devboard.net
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=0
+PadDimH=2165
+PadDimV=591
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
 TxtModV=600
 TxtModH=600
 TxtModW=120
-VEgarde=100
+VEgarde=20
 DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
 [pcbnew/libraries]
-LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty
+LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d/smd
 LibName1=sockets
 LibName2=connect
 LibName3=discret
