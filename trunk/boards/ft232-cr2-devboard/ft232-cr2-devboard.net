@@ -1,11 +1,11 @@
-# EESchema Netlist Version 1.1 created  Thu 20 Dec 2012 02:47:54 PM EST
+# EESchema Netlist Version 1.1 created  Thu 20 Dec 2012 04:47:38 PM EST
 (
  ( /50D29B5A $noname  U2 FT232H {Lib=FT232H}
   (    1 /FTDI_XTAL_IN )
   (    2 /FTDI_XTAL_OUT )
   (    3 /FTDI_VPHY )
   (    4 /GND )
-  (    5 N-000078 )
+  (    5 N-000076 )
   (    6 /USB_N )
   (    7 /USB_P )
   (    8 /FTDI_VPLL )
@@ -56,8 +56,8 @@
   (    3 /USB_P )
   (    4 ? )
   (    5 /GND )
-  (    6 N-000069 )
-  (    7 N-000069 )
+  (    6 N-000067 )
+  (    7 N-000067 )
  )
  ( /50D29B8C $noname  L3 Ferrite_chip {Lib=INDUCTOR_PWROUT}
   (    1 /5V_RAW )
@@ -65,7 +65,7 @@
  )
  ( /50D2A020 $noname  R1 12K_1% {Lib=R}
   (    1 /GND )
-  (    2 N-000078 )
+  (    2 N-000076 )
  )
  ( /50D2A10E $noname  R2 39K {Lib=R}
   (    1 /PWRSAV_N )
@@ -211,18 +211,18 @@
  )
  ( /50D2C1D8 $noname  R8 270 {Lib=R}
   (    1 /5V )
-  (    2 N-000027 )
+  (    2 N-000025 )
  )
  ( /50D2C1F9 $noname  R9 270 {Lib=R}
   (    1 /3V3 )
-  (    2 N-000026 )
+  (    2 N-000024 )
  )
  ( /50D2C201 $noname  D1 GREEN {Lib=LED}
-  (    1 N-000027 )
+  (    1 N-000025 )
   (    2 /GND )
  )
  ( /50D2C26A $noname  D2 GREEN {Lib=LED}
-  (    1 N-000026 )
+  (    1 N-000024 )
   (    2 /GND )
  )
  ( /50D2CCE2 $noname  U6 XC2C32A-VQG44 {Lib=XC2CXXA-VQG44}
@@ -271,14 +271,14 @@
   (   44 ? )
  )
  ( /50D2B5DE $noname  U7 2.048_MHz {Lib=OSC}
-  (    1 N-000024 )
-  (    2 N-000023 )
+  (    1 /3V3 )
+  (    2 /GND )
   (    3 /CLK_2048_KHZ )
-  (    4 N-000024 )
+  (    4 /3V3 )
  )
  ( /50D2B6CD $noname  C20 0.01_uF {Lib=C}
-  (    1 N-000024 )
-  (    2 N-000023 )
+  (    1 /3V3 )
+  (    2 /GND )
  )
 )
 *
@@ -468,177 +468,175 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "/GND" "GND"
- C13 2
+ U2 35
  C6 2
- C14 2
  C17 1
- C7 2
  C15 2
- D1 2
+ C7 2
+ C14 2
  U6 4
- D2 2
  J1 5
  C2 2
+ D1 2
  C1 2
+ D2 2
  R1 1
  U2 23
- U2 42
- U2 35
+ U7 2
  U2 36
  U2 47
- U6 25
  U2 48
  U2 4
  U2 9
  U2 10
  U2 11
+ U6 25
+ C20 2
  U2 41
  U2 22
- C5 2
- U5 2
- C8 2
+ U2 42
+ C13 2
  C16 2
- C10 1
- C12 2
- U4 1
  C19 2
- C3 1
+ C12 2
  C9 2
- C4 2
- C18 2
- C11 2
- U3 1
  U1 8
+ C10 1
+ C3 1
+ U4 1
+ U3 1
+ C8 2
+ C11 2
+ C4 2
+ U5 2
+ C5 2
+ C18 2
 Net 2 "/3V3" "3V3"
+ U7 1
+ U7 4
  U2 12
- C9 1
- U6 35
- R6 1
+ C20 1
  R9 1
- R5 1
- R4 1
  C16 1
  C12 1
+ C9 1
+ R5 1
+ R6 1
+ R3 2
  U5 6
  C19 1
- U3 2
  U2 24
- U6 26
  U2 46
+ U6 35
+ R4 1
+ U6 26
+ U3 2
  U6 17
- R3 2
 Net 3 "/FTDI_VCC_CORE" "FTDI_VCC_CORE"
  C8 1
  U2 38
 Net 4 "" ""
  U5 1
  R7 2
-Net 5 "/FTDI_EEPROM_CLK" "FTDI_EEPROM_CLK"
- R5 2
- U5 4
- U2 44
-Net 6 "/FTDI_VPHY" "FTDI_VPHY"
- C13 1
- C5 1
+Net 5 "/FTDI_VPHY" "FTDI_VPHY"
  L1 2
+ C5 1
+ C13 1
  U2 3
-Net 7 "/FTDI_VCC_D" "FTDI_VCC_D"
+Net 6 "/FTDI_VCC_D" "FTDI_VCC_D"
  U2 39
  L2 1
+ C7 1
  C15 1
  L1 1
- C7 1
-Net 8 "/FTDI_XTAL_OUT" "FTDI_XTAL_OUT"
+Net 7 "/FTDI_XTAL_OUT" "FTDI_XTAL_OUT"
  C3 2
  X1 1
  U2 2
-Net 9 "/FTDI_XTAL_IN" "FTDI_XTAL_IN"
+Net 8 "/FTDI_XTAL_IN" "FTDI_XTAL_IN"
+ U2 1
  C10 2
  X1 2
- U2 1
-Net 10 "/FTDI_VPLL" "FTDI_VPLL"
+Net 9 "/FTDI_VPLL" "FTDI_VPLL"
+ U2 8
  C14 1
  C6 1
  L2 2
- U2 8
-Net 21 "/1V8" "1V8"
+Net 10 "/1V8" "1V8"
  U4 2
  U6 15
-Net 23 "" ""
- U7 2
- C20 2
-Net 24 "" ""
- U7 4
- C20 1
- U7 1
-Net 25 "/CLK_2048_KHZ" "CLK_2048_KHZ"
+Net 21 "/CLK_2048_KHZ" "CLK_2048_KHZ"
  U7 3
  U6 1
-Net 26 "" ""
- R9 2
+Net 24 "" ""
  D2 1
-Net 27 "" ""
+ R9 2
+Net 25 "" ""
  D1 1
  R8 2
-Net 28 "/5V" "5V"
- U2 40
- U3 3
- U4 3
- R8 1
- L3 2
- U1 3
- C2 1
- C1 1
- C4 1
- R2 2
+Net 26 "/5V" "5V"
  C11 1
-Net 29 "/FTDI_EEPROM_DATA" "FTDI_EEPROM_DATA"
+ R8 1
+ U2 40
+ R2 2
+ C4 1
+ C1 1
+ C2 1
+ U3 3
+ U1 3
+ L3 2
+ U4 3
+Net 27 "/FTDI_EEPROM_DATA" "FTDI_EEPROM_DATA"
  R7 1
  U5 3
  R6 2
  U2 43
-Net 30 "/FTDI_EEPROM_CS" "FTDI_EEPROM_CS"
+Net 28 "/FTDI_EEPROM_CLK" "FTDI_EEPROM_CLK"
+ U5 4
+ U2 44
+ R5 2
+Net 29 "/FTDI_EEPROM_CS" "FTDI_EEPROM_CS"
  U5 5
- U2 45
  R4 2
+ U2 45
 Net 32 "/JTAG_TDO" "JTAG_TDO"
- U2 15
  U6 24
+ U2 15
 Net 45 "/JTAG_TCK" "JTAG_TCK"
- U2 13
  U6 11
+ U2 13
 Net 49 "/JTAG_TMS" "JTAG_TMS"
  U6 10
  U2 16
 Net 50 "/JTAG_TDI" "JTAG_TDI"
- U6 9
  U2 14
-Net 69 "" ""
- J1 6
+ U6 9
+Net 67 "" ""
  J1 7
-Net 74 "/USB_P" "USB_P"
- U1 2
+ J1 6
+Net 72 "/USB_P" "USB_P"
  U1 9
- J1 3
  U2 7
-Net 75 "/USB_N" "USB_N"
+ J1 3
+ U1 2
+Net 73 "/USB_N" "USB_N"
+ U2 6
  U1 1
  U1 10
  J1 2
- U2 6
-Net 77 "/PWRSAV_N" "PWRSAV_N"
+Net 75 "/PWRSAV_N" "PWRSAV_N"
  U2 31
  R2 1
-Net 78 "" ""
+Net 76 "" ""
  U2 5
  R1 2
-Net 79 "/5V_RAW" "5V_RAW"
+Net 77 "/5V_RAW" "5V_RAW"
  J1 1
  L3 1
-Net 80 "/FTDI_VCC_A" "FTDI_VCC_A"
+Net 78 "/FTDI_VCC_A" "FTDI_VCC_A"
  U2 37
  C17 2
-Net 81 "/FTDI_RESET_N" "FTDI_RESET_N"
+Net 79 "/FTDI_RESET_N" "FTDI_RESET_N"
  U2 34
  C18 1
  R3 1
