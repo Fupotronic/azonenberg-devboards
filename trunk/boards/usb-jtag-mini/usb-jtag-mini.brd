@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Tue 26 Feb 2013 04:55:07 PM EST
+PCBNEW-BOARD Version 1 date Tue 26 Feb 2013 04:55:38 PM EST
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -7,10 +7,9 @@ encoding utf-8
 Units deci-mils
 LayerCount 2
 EnabledLayers 1FFF8001
-VisibleLayers 1FFFFFFF
 Links 0
 NoConn 0
-Di 82868 19567 87015 20927
+Di 83382 19567 86501 20927
 Ndraw 1
 Ntrack 0
 Nzone 0
@@ -80,7 +79,7 @@ uViaDrill 50
 AddNet ""
 $EndNCLASS
 $TEXTPCB
-Te "$Rev: 0$"
+Te "$Rev$"
 Po 84941 20307 600 800 120 0
 De 21 1 0 Normal
 $EndTEXTPCB
