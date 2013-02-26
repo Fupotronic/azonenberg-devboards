@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Feb 2013 04:47:52 PM EST
+
+BeginCmp
+TimeStamp = /512D28FC;
+Reference = J1;
+ValeurCmp = HIROSE_UX60SX-MB-5ST_;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /512D28EB;
+Reference = U1;
+ValeurCmp = FT232H;
+IdModule  = ;
+EndCmp
+
+EndListe
