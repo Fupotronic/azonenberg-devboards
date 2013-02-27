@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Feb 2013 05:50:09 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Feb 2013 06:22:29 PM EST
 
 BeginCmp
 TimeStamp = /512D2D6B;
@@ -180,6 +180,34 @@ TimeStamp = /512D28FC;
 Reference = J1;
 ValeurCmp = HIROSE_UX60SX-MB-5ST;
 IdModule  = HRS_MINI_USB;
+EndCmp
+
+BeginCmp
+TimeStamp = /512DA45F;
+Reference = J2;
+ValeurCmp = JUMPER_0402_SPDT;
+IdModule  = JUMPER_0402_SPDT;
+EndCmp
+
+BeginCmp
+TimeStamp = /512DA46C;
+Reference = J3;
+ValeurCmp = JUMPER_0402_SPDT;
+IdModule  = JUMPER_0402_SPDT;
+EndCmp
+
+BeginCmp
+TimeStamp = /512DA472;
+Reference = J4;
+ValeurCmp = JUMPER_0402_SPDT;
+IdModule  = JUMPER_0402_SPDT;
+EndCmp
+
+BeginCmp
+TimeStamp = /512DA478;
+Reference = J5;
+ValeurCmp = JUMPER_0402_SPDT;
+IdModule  = JUMPER_0402_SPDT;
 EndCmp
 
 BeginCmp

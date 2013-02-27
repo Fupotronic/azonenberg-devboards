@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 26 Feb 2013 05:48:12 PM EST
+# EESchema Netlist Version 1.1 created  Tue 26 Feb 2013 06:51:59 PM EST
 (
  ( /512D28FC $noname  J1 HIROSE_UX60SX-MB-5ST {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
   (    1 /5V_RAW )
@@ -6,8 +6,8 @@
   (    3 /USB_D_P )
   (    4 ? )
   (    5 /GND )
-  (    6 N-000048 )
-  (    7 N-000048 )
+  (    6 /SHIELD )
+  (    7 /SHIELD )
  )
  ( /512D2B9B SOT23-5  U2 FT531JA {Lib=FT531XA}
   (    1 /5V )
@@ -32,8 +32,8 @@
   (    2 /GND )
  )
  ( /512D2D4C SM0805  L1 600R/0.5A {Lib=INDUCTOR_PWROUT}
-  (    1 /5V_RAW )
-  (    2 /5V )
+  (    1 /5V )
+  (    2 /5V_RAW )
  )
  ( /512D2D6B SM0805  C1 4.7_uF {Lib=C}
   (    1 /5V )
@@ -56,33 +56,33 @@
   (    4 /3V3 )
   (    5 /STATUS )
   (    6 /CLK_12MHZ )
-  (    7 /JTAG_TCK_RAW )
-  (    8 /JTAG_TDO_RAW )
-  (    9 /JTAG_TDI_RAW )
-  (   10 /JTAG_TMS_RAW )
-  (   11 N-000057 )
+  (    7 /JTAG_TCK_SW )
+  (    8 /JTAG_TDO_SW )
+  (    9 /JTAG_TDI_SW )
+  (   10 /JTAG_TMS_SW )
+  (   11 /GND )
   (   12 /VJTAG )
-  (   13 /GPIO0 )
-  (   14 ? )
-  (   15 ? )
-  (   16 ? )
-  (   17 /GPIO1 )
-  (   18 /GPIO2 )
-  (   19 /GPIO3 )
+  (   13 /GPIO3 )
+  (   14 /CPLD_TDI )
+  (   15 /CPLD_TMS )
+  (   16 /CPLD_TCK )
+  (   17 /GPIO2 )
+  (   18 /GPIO1 )
+  (   19 /GPIO0 )
   (   20 /1V8 )
-  (   21 N-000057 )
-  (   22 ? )
+  (   21 /GND )
+  (   22 /JTAG_OBUF_EN )
   (   23 ? )
   (   24 ? )
-  (   25 ? )
-  (   26 N-000057 )
+  (   25 /CPLD_TDO )
+  (   26 /GND )
   (   27 /3V3 )
   (   28 ? )
   (   29 ? )
   (   30 ? )
   (   31 ? )
   (   32 ? )
-  (   33 N-000057 )
+  (   33 /GND )
  )
  ( /512D28EB lqfp48  U1 FT232H {Lib=FT232H}
   (    1 /CLK_12MHZ )
@@ -104,7 +104,7 @@
   (   17 ? )
   (   18 ? )
   (   19 ? )
-  (   20 ? )
+  (   20 /JTAG_OBUF_EN )
   (   21 /GPIO0 )
   (   22 /GND )
   (   23 /GND )
@@ -115,7 +115,7 @@
   (   28 ? )
   (   29 ? )
   (   30 ? )
-  (   31 N-000047 )
+  (   31 /FTDI_SUSPEND )
   (   32 ? )
   (   33 ? )
   (   34 /FTDI_RESET_N )
@@ -139,8 +139,8 @@
   (    2 /GND )
  )
  ( /512D3C89 SOT23_6  U6 93LC56BT-OT {Lib=93LC56BT-OT}
-  (    1 N-000046 )
-  (    2 N-000045 )
+  (    1 /FTDI_EEDO )
+  (    2 /GND )
   (    3 /FTDI_EEDATA )
   (    4 /FTDI_EECLK )
   (    5 /FTDI_EECS )
@@ -159,16 +159,16 @@
   (   10 /USB_D_N )
  )
  ( /512D416C SM0402  R8 39K {Lib=R}
-  (    1 N-000047 )
+  (    1 /FTDI_SUSPEND )
   (    2 /5V )
  )
  ( /512D447F SM0603  R4 2K {Lib=R}
-  (    1 N-000046 )
+  (    1 /FTDI_EEDO )
   (    2 /FTDI_EEDATA )
  )
  ( /512D465A SM0402  C5 0.1_uF {Lib=C}
   (    1 /3V3 )
-  (    2 N-000045 )
+  (    2 /GND )
  )
  ( /512D4C88 SM0603  R1 10K {Lib=R}
   (    1 /3V3 )
@@ -183,8 +183,8 @@
   (    2 /FTDI_EEDATA )
  )
  ( /512D4F92 SM0805  L2 600R/0.5A {Lib=INDUCTOR_PWROUT}
-  (    1 /3V3 )
-  (    2 /FTDI_VPHY )
+  (    1 /FTDI_VPHY )
+  (    2 /3V3 )
  )
  ( /512D4F9A SM0805  C22 0.1_uF {Lib=C}
   (    1 /5V )
@@ -199,8 +199,8 @@
   (    2 /GND )
  )
  ( /512D53BB SM0805  L3 600R/0.5A {Lib=INDUCTOR_PWROUT}
-  (    1 /3V3 )
-  (    2 /FTDI_VPLL )
+  (    1 /FTDI_VPLL )
+  (    2 /3V3 )
  )
  ( /512D53C3 SM0603  C7 4.7_uF {Lib=C}
   (    1 /FTDI_VPLL )
@@ -212,7 +212,7 @@
  )
  ( /512D54CF SM0805  L4 600R/0.5A {Lib=INDUCTOR_SMALL}
   (    1 /GND )
-  (    2 N-000048 )
+  (    2 /SHIELD )
  )
  ( /512D5896 SM0603  C8 4.7_uF {Lib=C}
   (    1 /FTDI_VCC_D )
@@ -285,6 +285,26 @@
  ( /512D8C51 SM0603  D2 GREEN {Lib=LED}
   (    1 /PWR_LED )
   (    2 /GND )
+ )
+ ( /512DA45F $noname  J2 JUMPER_0402_SPDT {Lib=JUMPER_0402_SPDT}
+  (    1 /JTAG_TCK_SW )
+  (    2 /JTAG_TCK_RAW )
+  (    3 /CPLD_TCK )
+ )
+ ( /512DA46C $noname  J3 JUMPER_0402_SPDT {Lib=JUMPER_0402_SPDT}
+  (    1 /JTAG_TDI_SW )
+  (    2 /JTAG_TDI_RAW )
+  (    3 /CPLD_TDI )
+ )
+ ( /512DA472 $noname  J4 JUMPER_0402_SPDT {Lib=JUMPER_0402_SPDT}
+  (    1 /JTAG_TDO_SW )
+  (    2 /JTAG_TDO_RAW )
+  (    3 /CPLD_TDO )
+ )
+ ( /512DA478 $noname  J5 JUMPER_0402_SPDT {Lib=JUMPER_0402_SPDT}
+  (    1 /JTAG_TMS_SW )
+  (    2 /JTAG_TMS_RAW )
+  (    3 /CPLD_TMS )
  )
 )
 *
@@ -494,202 +514,227 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/5V_RAW" "5V_RAW"
- L1 1
+Net 1 "/FTDI_VPLL" "FTDI_VPLL"
+ U1 8
+ L3 1
+ C7 1
+ C10 1
+Net 2 "/CLK_12MHZ" "CLK_12MHZ"
+ U1 1
+ U4 6
+ U5 3
+Net 3 "/FTDI_VREF" "FTDI_VREF"
+ R7 1
+ U1 5
+Net 4 "/FTDI_EECS" "FTDI_EECS"
+ U6 5
+ R1 2
+ U1 45
+Net 5 "/FTDI_EECLK" "FTDI_EECLK"
+ R2 2
+ U1 44
+ U6 4
+Net 6 "/FTDI_EEDATA" "FTDI_EEDATA"
+ U1 43
+ U6 3
+ R3 2
+ R4 2
+Net 7 "/FTDI_EEDO" "FTDI_EEDO"
+ R4 1
+ U6 1
+Net 8 "/FTDI_RESET_N" "FTDI_RESET_N"
+ C23 1
+ U1 34
+ R9 1
+Net 9 "/STATUS" "STATUS"
+ R5 1
+ U4 5
+Net 10 "/JTAG_TDI_SW" "JTAG_TDI_SW"
+ J3 1
+ U4 9
+Net 11 "/JTAG_TDO_SW" "JTAG_TDO_SW"
+ J4 1
+ U4 8
+Net 12 "/JTAG_TCK_SW" "JTAG_TCK_SW"
+ J2 1
+ U4 7
+Net 23 "/VJTAG" "VJTAG"
+ C21 1
+ C19 1
+ U4 12
+Net 24 "/GPIO0" "GPIO0"
+ U1 21
+ U4 19
+Net 25 "/GPIO1" "GPIO1"
+ U4 18
+ U1 25
+Net 26 "/GPIO2" "GPIO2"
+ U4 17
+ U1 26
+Net 27 "/GPIO3" "GPIO3"
+ U4 13
+ U1 27
+Net 28 "/JTAG_TMS_SW" "JTAG_TMS_SW"
+ J5 1
+ U4 10
+Net 29 "/5V_RAW" "5V_RAW"
  J1 1
-Net 2 "/USB_D_N" "USB_D_N"
- U7 1
- U1 6
- U7 10
- J1 2
-Net 3 "/USB_D_P" "USB_D_P"
+ L1 2
+Net 30 "/USB_D_P" "USB_D_P"
  U7 2
  J1 3
  U7 9
  U1 7
-Net 4 "/FTDI_VREF" "FTDI_VREF"
- R7 1
- U1 5
-Net 5 "/FTDI_VPLL" "FTDI_VPLL"
- L3 2
- U1 8
- C7 1
- C10 1
-Net 7 "/GPIO0" "GPIO0"
- U1 21
- U4 13
-Net 8 "/VJTAG" "VJTAG"
- C19 1
- C21 1
- U4 12
-Net 9 "/3V3" "3V3"
- C3 1
- R6 1
- L2 1
- R9 2
- C2 1
- U5 4
- U4 4
- U5 1
- L3 1
- U2 5
- R2 1
- U6 6
- R1 1
+Net 31 "/USB_D_N" "USB_D_N"
+ U7 10
+ U7 1
+ U1 6
+ J1 2
+Net 32 "/1V8" "1V8"
+ U3 5
+ C4 1
+ C17 1
+ U4 20
+Net 33 "/3V3" "3V3"
  C18 1
  C20 1
- C16 1
- C13 1
- C12 1
- U1 12
- U4 27
- C5 1
+ L3 2
  U1 24
- U1 46
+ U2 5
+ U6 6
+ R9 2
  R3 1
-Net 10 "/CLK_12MHZ" "CLK_12MHZ"
- U5 3
- U1 1
- U4 6
-Net 11 "/1V8" "1V8"
- U3 5
- C17 1
- C4 1
- U4 20
-Net 16 "/FTDI_RESET_N" "FTDI_RESET_N"
- R9 1
- C23 1
- U1 34
-Net 17 "/STATUS" "STATUS"
- U4 5
- R5 1
-Net 29 "/JTAG_TCK_RAW" "JTAG_TCK_RAW"
- U4 7
- U1 13
-Net 30 "/JTAG_TDO_RAW" "JTAG_TDO_RAW"
- U4 8
- U1 15
-Net 31 "/JTAG_TDI_RAW" "JTAG_TDI_RAW"
- U1 14
- U4 9
-Net 32 "/JTAG_TMS_RAW" "JTAG_TMS_RAW"
- U1 16
- U4 10
-Net 33 "/GPIO3" "GPIO3"
- U4 19
- U1 27
-Net 34 "/GPIO2" "GPIO2"
- U4 18
- U1 26
-Net 35 "/GPIO1" "GPIO1"
- U1 25
- U4 17
-Net 36 "/PWR_LED" "PWR_LED"
- D2 1
- R6 2
-Net 37 "/STATUS_LED" "STATUS_LED"
- R5 2
+ L2 2
+ U4 4
+ R6 1
+ U4 27
+ U1 46
+ C5 1
+ U5 4
+ C16 1
+ C2 1
+ C12 1
+ R1 1
+ C13 1
+ C3 1
+ U5 1
+ R2 1
+ U1 12
+Net 34 "/STATUS_LED" "STATUS_LED"
  D1 1
-Net 38 "/GND" "GND"
- C11 2
- U1 42
- L4 1
+ R5 2
+Net 35 "/PWR_LED" "PWR_LED"
+ R6 2
+ D2 1
+Net 36 "/JTAG_OBUF_EN" "JTAG_OBUF_EN"
+ U1 20
+ U4 22
+Net 37 "/CPLD_TCK" "CPLD_TCK"
+ U4 16
+ J2 3
+Net 38 "/CPLD_TDI" "CPLD_TDI"
+ J3 3
+ U4 14
+Net 39 "/CPLD_TDO" "CPLD_TDO"
+ U4 25
+ J4 3
+Net 40 "/CPLD_TMS" "CPLD_TMS"
+ U4 15
+ J5 3
+Net 41 "/FTDI_SUSPEND" "FTDI_SUSPEND"
+ R8 1
+ U1 31
+Net 42 "/JTAG_TCK_RAW" "JTAG_TCK_RAW"
+ U1 13
+ J2 2
+Net 43 "/JTAG_TDI_RAW" "JTAG_TDI_RAW"
+ J3 2
+ U1 14
+Net 44 "/JTAG_TDO_RAW" "JTAG_TDO_RAW"
+ U1 15
+ J4 2
+Net 45 "/JTAG_TMS_RAW" "JTAG_TMS_RAW"
+ J5 2
+ U1 16
+Net 46 "/FTDI_VCC_A" "FTDI_VCC_A"
+ U1 37
+ C14 1
+Net 47 "/FTDI_VCC_C" "FTDI_VCC_C"
+ U1 38
+ C15 1
+Net 48 "/SHIELD" "SHIELD"
+ L4 2
+ J1 6
+ J1 7
+Net 49 "/GND" "GND"
  C8 2
- C10 2
- U1 23
- R7 2
- U1 48
- U1 47
+ U4 33
+ C16 2
+ C23 2
  U7 8
- C2 2
- U5 2
- C1 2
- C7 2
- C9 2
- J1 5
- U2 2
+ R7 2
+ U6 2
+ U4 21
+ U4 11
+ L4 1
+ C5 2
  C6 2
- U3 2
+ C2 2
+ C9 2
+ C7 2
+ C10 2
+ C17 2
+ C18 2
+ C20 2
+ C15 2
  C22 2
- C3 2
- C4 2
+ C12 2
+ C13 2
+ U5 2
+ C14 2
+ C11 2
+ D1 2
+ D2 2
+ C19 2
+ C21 2
+ U1 4
  U1 9
  U1 10
  U1 11
- C16 2
- C13 2
- C12 2
- U1 41
- C15 2
- C14 2
- U1 22
- C18 2
- C20 2
- C19 2
- C21 2
- D1 2
- C23 2
- C17 2
- U1 4
- U1 36
+ U4 26
  U1 35
- D2 2
-Net 39 "/FTDI_EEDATA" "FTDI_EEDATA"
- U1 43
- R4 2
- U6 3
- R3 2
-Net 40 "/FTDI_EECLK" "FTDI_EECLK"
- U6 4
- R2 2
- U1 44
-Net 41 "/FTDI_EECS" "FTDI_EECS"
- U1 45
- U6 5
- R1 2
-Net 42 "/FTDI_VCC_A" "FTDI_VCC_A"
- C14 1
- U1 37
-Net 43 "/FTDI_VCC_C" "FTDI_VCC_C"
- U1 38
- C15 1
-Net 44 "/FTDI_VCC_D" "FTDI_VCC_D"
- C8 1
- U1 39
- C11 1
-Net 45 "" ""
- C5 2
- U6 2
-Net 46 "" ""
- R4 1
- U6 1
-Net 47 "" ""
- U1 31
- R8 1
-Net 48 "" ""
- J1 7
- L4 2
- J1 6
-Net 49 "/FTDI_VPHY" "FTDI_VPHY"
+ U1 36
+ U1 47
+ U1 48
+ U1 41
+ U1 22
+ U1 42
+ U1 23
+ C3 2
+ C4 2
+ C1 2
+ J1 5
+ U2 2
+ U3 2
+Net 51 "/FTDI_VPHY" "FTDI_VPHY"
+ L2 1
  C9 1
  C6 1
  U1 3
- L2 2
-Net 57 "" ""
- U4 11
- U4 21
- U4 26
- U4 33
-Net 58 "/5V" "5V"
- R8 2
- U2 3
- U2 1
- U3 1
+Net 63 "/FTDI_VCC_D" "FTDI_VCC_D"
+ C11 1
+ C8 1
+ U1 39
+Net 64 "/5V" "5V"
  U3 3
- C22 1
+ U3 1
+ U2 3
+ R8 2
+ U2 1
  U7 3
- L1 2
- C1 1
  U1 40
+ L1 1
+ C1 1
+ C22 1
 }
 #End
