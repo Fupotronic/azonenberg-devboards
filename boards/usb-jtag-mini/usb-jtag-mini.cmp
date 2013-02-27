@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Feb 2013 08:57:02 PM EST
+Cmp-Mod V01 Created by PcbNew date = Wed 27 Feb 2013 01:29:46 AM EST
 
 BeginCmp
 TimeStamp = /512D2D6B;
@@ -162,6 +162,13 @@ IdModule  = SM0402;
 EndCmp
 
 BeginCmp
+TimeStamp = /512DD356;
+Reference = C24;
+ValeurCmp = 1_uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
 TimeStamp = /512D8C28;
 Reference = D1;
 ValeurCmp = GREEN;
@@ -171,6 +178,13 @@ EndCmp
 BeginCmp
 TimeStamp = /512D8C51;
 Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /512DC022;
+Reference = D3;
 ValeurCmp = GREEN;
 IdModule  = SM0603;
 EndCmp
@@ -316,6 +330,13 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /512DBE7D;
+Reference = R11;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
 TimeStamp = /512D28EB;
 Reference = U1;
 ValeurCmp = FT232H;
@@ -340,7 +361,7 @@ BeginCmp
 TimeStamp = /512D3136;
 Reference = U4;
 ValeurCmp = XC2C32A-QFG32;
-IdModule  = QFN32-5x5;
+IdModule  = QFN32-5x5-PASTEFIX;
 EndCmp
 
 BeginCmp
