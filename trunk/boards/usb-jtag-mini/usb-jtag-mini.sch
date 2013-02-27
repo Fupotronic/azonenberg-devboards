@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 26 Feb 2013 10:37:05 PM EST
+EESchema Schematic File Version 2  date Wed 27 Feb 2013 12:32:11 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -276,7 +276,6 @@ $EndComp
 NoConn ~ 13150 1700
 NoConn ~ 13150 1800
 NoConn ~ 13150 1900
-NoConn ~ 13150 2600
 NoConn ~ 13150 2700
 NoConn ~ 13150 2800
 NoConn ~ 13150 3000
@@ -656,45 +655,40 @@ F 2 "SM0603" H 7250 9200 60  0000 C CNN
 	1    7000 9400
 	1    0    0    -1  
 $EndComp
-Text Label 13350 2200 0    60   ~ 0
-GPIO0
 Text Label 13350 2300 0    60   ~ 0
-GPIO1
-Text Label 13350 2400 0    60   ~ 0
-GPIO2
-Text Label 13350 2500 0    60   ~ 0
-GPIO3
-Text Label 10000 10050 2    60   ~ 0
 GPIO0
-Text Label 10000 9950 2    60   ~ 0
+Text Label 13350 2400 0    60   ~ 0
 GPIO1
-Text Label 10000 9850 2    60   ~ 0
+Text Label 13350 2500 0    60   ~ 0
 GPIO2
-Text Label 10000 9750 2    60   ~ 0
+Text Label 13350 2600 0    60   ~ 0
 GPIO3
-Text Label 10000 9650 2    60   ~ 0
-JTAG_TMS_SW
-Text Label 10000 9150 2    60   ~ 0
-STATUS
-Text Label 10000 9550 2    60   ~ 0
-JTAG_TDI_SW
 Text Label 10000 9450 2    60   ~ 0
-JTAG_TDO_SW
+GPIO0
 Text Label 10000 9350 2    60   ~ 0
+GPIO1
+Text Label 10000 9250 2    60   ~ 0
+GPIO2
+Text Label 10000 9150 2    60   ~ 0
+GPIO3
+Text Label 10000 9750 2    60   ~ 0
+JTAG_TMS_SW
+Text Label 10000 10050 2    60   ~ 0
+STATUS
+Text Label 10000 9950 2    60   ~ 0
+JTAG_TDI_SW
+Text Label 10000 9550 2    60   ~ 0
+JTAG_TDO_SW
+Text Label 10000 9850 2    60   ~ 0
 JTAG_TCK_SW
-Text Label 10000 8150 2    60   ~ 0
+Text Label 10150 8450 2    60   ~ 0
 JTAG_TCK
-Text Label 10000 8250 2    60   ~ 0
+Text Label 10150 8650 2    60   ~ 0
 JTAG_TDI
-Text Label 10000 8350 2    60   ~ 0
+Text Label 10150 8550 2    60   ~ 0
 JTAG_TDO
-Text Label 10000 8450 2    60   ~ 0
+Text Label 10150 8750 2    60   ~ 0
 JTAG_TMS
-NoConn ~ 10150 8650
-NoConn ~ 10150 8750
-NoConn ~ 10150 8850
-NoConn ~ 10150 8950
-NoConn ~ 10150 9050
 Text Label 7450 5300 2    60   ~ 0
 STATUS
 $Comp
@@ -748,15 +742,10 @@ PWR_LED
 Wire Wire Line
 	1950 5850 4200 5850
 Wire Wire Line
-	1950 6750 4200 6750
-Wire Wire Line
 	4200 6200 4000 6200
 Wire Wire Line
 	4200 5300 4000 5300
-Wire Wire Line
-	2350 5300 2350 6350
 Connection ~ 2350 5450
-Connection ~ 2350 6200
 Wire Wire Line
 	1950 5300 2350 5300
 Wire Wire Line
@@ -937,7 +926,7 @@ Wire Notes Line
 Wire Notes Line
 	450  4750 16050 4750
 Wire Notes Line
-	9150 450  9150 11250
+	8650 350  8650 11150
 Wire Notes Line
 	500  7200 16100 7200
 Wire Wire Line
@@ -1018,8 +1007,6 @@ Wire Wire Line
 	6500 9600 6500 9750
 Connection ~ 6500 9750
 Wire Wire Line
-	13350 2200 13150 2200
-Wire Wire Line
 	13350 2300 13150 2300
 Wire Wire Line
 	13350 2400 13150 2400
@@ -1042,15 +1029,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 9850 10150 9850
 Wire Wire Line
-	10000 8150 10150 8150
-Wire Wire Line
 	10150 9750 10000 9750
-Wire Wire Line
-	10000 8250 10150 8250
-Wire Wire Line
-	10000 8350 10150 8350
-Wire Wire Line
-	10000 8450 10150 8450
 Wire Wire Line
 	7450 5300 7650 5300
 Wire Wire Line
@@ -1080,10 +1059,8 @@ Text Label 6400 1500 0    60   ~ 0
 SHIELD
 Text Label 950  1300 2    60   ~ 0
 GND
-Text Label 10000 10150 2    60   ~ 0
+Text Label 10000 9650 2    60   ~ 0
 JTAG_OBUF_EN
-Wire Wire Line
-	10000 10150 10150 10150
 Text Label 10900 10600 2    60   ~ 0
 GND
 Connection ~ 11150 10600
@@ -1183,10 +1160,8 @@ Text Label 13350 2700 0    60   ~ 0
 FTDI_SUSPEND
 Wire Wire Line
 	13350 2900 13350 2700
-Text Label 10000 8550 2    60   ~ 0
+Text Label 10150 8350 2    60   ~ 0
 VJTAG
-Wire Wire Line
-	10000 8550 10150 8550
 Text Label 13850 7850 2    60   ~ 0
 VJTAG
 $Comp
@@ -1259,5 +1234,38 @@ Wire Wire Line
 Wire Wire Line
 	6650 6400 6650 6550
 Connection ~ 6650 6550
-NoConn ~ 10150 9250
+Wire Wire Line
+	13150 2600 13350 2600
+NoConn ~ 13150 2200
+Wire Wire Line
+	10150 9250 10000 9250
+NoConn ~ 10150 8150
+NoConn ~ 10150 8250
+NoConn ~ 10150 8850
+NoConn ~ 10150 8950
+NoConn ~ 10150 9050
+Wire Wire Line
+	2350 5300 2350 5450
+$Comp
+L C C24
+U 1 1 512DD356
+P 2150 6550
+F 0 "C24" H 2200 6650 50  0000 L CNN
+F 1 "1 uF" H 2200 6450 50  0000 L CNN
+F 2 "SM0603" H 2400 6350 60  0000 C CNN
+	1    2150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6350 2350 6350
+Wire Wire Line
+	2350 6200 2150 6200
+Wire Wire Line
+	2150 6200 2150 6350
+Text Label 2150 6200 2    60   ~ 0
+3V3
+Wire Wire Line
+	1950 6750 4200 6750
+Connection ~ 2150 6750
+NoConn ~ 10150 10150
 $EndSCHEMATC
