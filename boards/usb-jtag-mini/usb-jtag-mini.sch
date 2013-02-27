@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 26 Feb 2013 06:51:54 PM EST
+EESchema Schematic File Version 2  date Tue 26 Feb 2013 09:03:16 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,7 +43,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "26 feb 2013"
+Date "27 feb 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -692,7 +692,6 @@ Text Label 10000 8350 2    60   ~ 0
 JTAG_TDO
 Text Label 10000 8450 2    60   ~ 0
 JTAG_TMS
-NoConn ~ 10150 8550
 NoConn ~ 10150 8650
 NoConn ~ 10150 8750
 NoConn ~ 10150 8850
@@ -742,7 +741,7 @@ F 2 "SM0603" H 8000 6400 60  0000 C CNN
 	1    8000 6200
 	0    1    1    0   
 $EndComp
-Text Label 7550 6550 2    60   ~ 0
+Text Label 6500 6550 2    60   ~ 0
 GND
 Text Label 7550 5900 2    60   ~ 0
 STATUS_LED
@@ -1067,7 +1066,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 6550 8000 6400
 Wire Wire Line
-	7550 6550 8000 6550
+	6500 6550 8000 6550
 Wire Wire Line
 	7650 6550 7650 6400
 Connection ~ 7650 6550
@@ -1188,4 +1187,80 @@ Text Label 13350 2700 0    60   ~ 0
 FTDI_SUSPEND
 Wire Wire Line
 	13350 2900 13350 2700
+Text Label 10000 8550 2    60   ~ 0
+VJTAG
+Wire Wire Line
+	10000 8550 10150 8550
+Text Label 13850 7850 2    60   ~ 0
+VJTAG
+$Comp
+L R R10
+U 1 1 512DB95F
+P 13950 8100
+F 0 "R10" V 14030 8100 50  0000 C CNN
+F 1 "10K" V 13950 8100 50  0000 C CNN
+F 2 "SM0603" V 13850 8050 60  0000 C CNN
+	1    13950 8100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13850 7850 13950 7850
+Text Label 13850 8350 2    60   ~ 0
+GND
+Wire Wire Line
+	13850 8350 13950 8350
+$Comp
+L CONN_6 P1
+U 1 1 512DBC16
+P 10800 5800
+F 0 "P1" V 10750 5800 60  0000 C CNN
+F 1 "CONN_6" V 10850 5800 60  0000 C CNN
+	1    10800 5800
+	1    0    0    -1  
+$EndComp
+Text Label 10450 5750 2    60   ~ 0
+JTAG_TCK
+Text Label 10450 5950 2    60   ~ 0
+JTAG_TDI
+Text Label 10450 5850 2    60   ~ 0
+JTAG_TDO
+Text Label 10450 6050 2    60   ~ 0
+JTAG_TMS
+Text Label 10450 5550 2    60   ~ 0
+VJTAG
+Text Label 10450 5650 2    60   ~ 0
+GND
+$Comp
+L R R?
+U 1 1 512DBE7D
+P 6650 5550
+F 0 "R?" V 6730 5550 50  0000 C CNN
+F 1 "270" V 6650 5550 50  0000 C CNN
+F 2 "SM0603" V 6550 5550 60  0000 C CNN
+	1    6650 5550
+	1    0    0    -1  
+$EndComp
+Text Label 6500 5300 2    60   ~ 0
+VJTAG
+Wire Wire Line
+	6500 5300 6650 5300
+Text Label 6500 5800 2    60   ~ 0
+TARGET_LED
+Wire Wire Line
+	6500 5800 6650 5800
+$Comp
+L LED D?
+U 1 1 512DC022
+P 6650 6200
+F 0 "D?" H 6650 6300 50  0000 C CNN
+F 1 "GREEN" H 6650 6100 50  0000 C CNN
+F 2 "SM0603" H 6650 6000 60  0000 C CNN
+	1    6650 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 5800 6650 6000
+Wire Wire Line
+	6650 6400 6650 6550
+Connection ~ 6650 6550
 $EndSCHEMATC
