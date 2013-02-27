@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Feb 2013 06:22:29 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Feb 2013 08:57:02 PM EST
 
 BeginCmp
 TimeStamp = /512D2D6B;
@@ -239,6 +239,13 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /512DBC16;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = TE_RA_HEADER_5535676_5;
+EndCmp
+
+BeginCmp
 TimeStamp = /512D4C88;
 Reference = R1;
 ValeurCmp = 10K;
@@ -297,6 +304,13 @@ EndCmp
 BeginCmp
 TimeStamp = /512D6830;
 Reference = R9;
+ValeurCmp = 10K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /512DB95F;
+Reference = R10;
 ValeurCmp = 10K;
 IdModule  = SM0603;
 EndCmp
