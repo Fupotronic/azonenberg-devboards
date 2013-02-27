@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 26 Feb 2013 09:03:16 PM EST
+EESchema Schematic File Version 2  date Tue 26 Feb 2013 10:37:05 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -606,8 +606,6 @@ Text Label 6250 7850 2    60   ~ 0
 1V8
 Text Label 6250 8250 2    60   ~ 0
 GND
-Text Label 10000 9250 2    60   ~ 0
-CLK_12MHZ
 $Comp
 L C C18
 U 1 1 512D7361
@@ -996,8 +994,6 @@ Wire Wire Line
 	6250 7850 6500 7850
 Wire Wire Line
 	6250 8250 6500 8250
-Wire Wire Line
-	10000 9250 10150 9250
 Connection ~ 11450 7550
 Wire Wire Line
 	6250 8950 7000 8950
@@ -1231,10 +1227,10 @@ VJTAG
 Text Label 10450 5650 2    60   ~ 0
 GND
 $Comp
-L R R?
+L R R11
 U 1 1 512DBE7D
 P 6650 5550
-F 0 "R?" V 6730 5550 50  0000 C CNN
+F 0 "R11" V 6730 5550 50  0000 C CNN
 F 1 "270" V 6650 5550 50  0000 C CNN
 F 2 "SM0603" V 6550 5550 60  0000 C CNN
 	1    6650 5550
@@ -1249,10 +1245,10 @@ TARGET_LED
 Wire Wire Line
 	6500 5800 6650 5800
 $Comp
-L LED D?
+L LED D3
 U 1 1 512DC022
 P 6650 6200
-F 0 "D?" H 6650 6300 50  0000 C CNN
+F 0 "D3" H 6650 6300 50  0000 C CNN
 F 1 "GREEN" H 6650 6100 50  0000 C CNN
 F 2 "SM0603" H 6650 6000 60  0000 C CNN
 	1    6650 6200
@@ -1263,4 +1259,5 @@ Wire Wire Line
 Wire Wire Line
 	6650 6400 6650 6550
 Connection ~ 6650 6550
+NoConn ~ 10150 9250
 $EndSCHEMATC

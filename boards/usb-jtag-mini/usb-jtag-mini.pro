@@ -1,4 +1,4 @@
-update=Tue 26 Feb 2013 04:51:18 PM EST
+update=Tue 26 Feb 2013 09:12:25 PM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,9 +58,9 @@ LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azo
 [pcbnew]
 version=1
 LastNetListRead=usb-jtag-mini.net
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=350
+PadDimH=500
+PadDimV=500
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -71,9 +71,9 @@ VEgarde=100
 DrawLar=150
 EdgeLar=150
 TxtLar=120
-MSegLar=150
+MSegLar=60
 [pcbnew/libraries]
-LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules
+LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d
 LibName1=sockets
 LibName2=connect
 LibName3=discret
