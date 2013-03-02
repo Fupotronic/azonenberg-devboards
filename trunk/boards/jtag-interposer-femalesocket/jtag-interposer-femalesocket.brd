@@ -1,0 +1,331 @@
+PCBNEW-BOARD Version 1 date Sat 02 Mar 2013 02:49:11 AM EST
+
+# Created by Pcbnew(2012-10-01 BZR 3747)-testing
+
+$GENERAL
+encoding utf-8
+Units deci-mils
+LayerCount 2
+EnabledLayers 1FFF8001
+VisibleLayers 1FFFFFFF
+Links 11
+NoConn 11
+Di 16414 15547 25520 21730
+Ndraw 10
+Ntrack 0
+Nzone 0
+BoardThickness 630
+Nmodule 2
+Nnets 7
+$EndGENERAL
+
+$SHEETDESCR
+Sheet A3 16535 11693
+Title ""
+Date "2 mar 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndSHEETDESCR
+
+$SETUP
+Layers 2
+Layer[0] Back signal
+Layer[15] Front signal
+TrackWidth 60
+TrackClearence 60
+ZoneClearence 200
+Zone_45_Only 0
+TrackMinWidth 60
+DrawSegmWidth 150
+EdgeSegmWidth 150
+ViaSize 256
+ViaDrill 130
+ViaMinSize 256
+ViaMinDrill 130
+MicroViaSize 200
+MicroViaDrill 50
+MicroViasAllowed 0
+MicroViaMinSize 200
+MicroViaMinDrill 50
+TextPcbWidth 120
+TextPcbSize 600 800
+EdgeModWidth 150
+TextModSize 600 600
+TextModWidth 120
+PadSize 500 1000
+PadDrill 0
+Pad2MaskClearance 20
+AuxiliaryAxisOrg 0 0
+VisibleElements FFFF7FBF
+PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+$EndSETUP
+
+$EQUIPOT
+Na 0 ""
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 1 "/GND"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 2 "/JTAG_TCK"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 3 "/JTAG_TDI"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 4 "/JTAG_TDO"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 5 "/JTAG_TMS"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 6 "/VREF"
+St ~
+$EndEQUIPOT
+$NCLASS
+Name "Default"
+Desc "This is the default net class."
+Clearance 60
+TrackWidth 60
+ViaDia 256
+ViaDrill 130
+uViaDia 200
+uViaDrill 50
+AddNet ""
+AddNet "/GND"
+AddNet "/JTAG_TCK"
+AddNet "/JTAG_TDI"
+AddNet "/JTAG_TDO"
+AddNet "/JTAG_TMS"
+AddNet "/VREF"
+$EndNCLASS
+$MODULE XILINX_JTAG_THRUHOLE
+Po 17800 18000 2700 15 4EE192C2 5131AC89 ~~
+Li XILINX_JTAG_THRUHOLE
+Sc 5131AC89
+AR /5131AAA3
+Op 0 0 0
+T0 0 787 600 600 2700 120 N I 21 N "P2"
+T1 0 -7087 600 600 2700 120 N V 21 N "CONN_14"
+DS 1181 -3937 1181 -6299 150 21
+DS 1181 -6299 -1181 -6299 150 21
+DS -1181 -6299 -1181 0 150 21
+DS -1181 0 1181 0 150 21
+DS 1181 0 1181 -2362 150 21
+$PAD
+Sh "1" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 394 -787
+$EndPAD
+$PAD
+Sh "2" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 6 "/VREF"
+Po -393 -787
+$EndPAD
+$PAD
+Sh "3" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 1 "/GND"
+Po 394 -1575
+$EndPAD
+$PAD
+Sh "4" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 5 "/JTAG_TMS"
+Po -393 -1575
+$EndPAD
+$PAD
+Sh "5" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 1 "/GND"
+Po 394 -2362
+$EndPAD
+$PAD
+Sh "6" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 2 "/JTAG_TCK"
+Po -393 -2362
+$EndPAD
+$PAD
+Sh "7" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 1 "/GND"
+Po 394 -3150
+$EndPAD
+$PAD
+Sh "8" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 4 "/JTAG_TDO"
+Po -393 -3150
+$EndPAD
+$PAD
+Sh "9" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 1 "/GND"
+Po 394 -3937
+$EndPAD
+$PAD
+Sh "10" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 3 "/JTAG_TDI"
+Po -393 -3937
+$EndPAD
+$PAD
+Sh "11" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 1 "/GND"
+Po 394 -4724
+$EndPAD
+$PAD
+Sh "12" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -393 -4724
+$EndPAD
+$PAD
+Sh "13" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 1 "/GND"
+Po 394 -5512
+$EndPAD
+$PAD
+Sh "14" C 650 650 0 0 2700
+Dr 390 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -393 -5512
+$EndPAD
+$EndMODULE XILINX_JTAG_THRUHOLE
+$MODULE HEADER_SMT_6PIN
+Po 23400 20800 1800 15 5131AEF0 5131ADF9 ~~
+Li HEADER_SMT_6PIN
+Sc 5131ADF9
+AR /5131AA94
+Op 0 0 0
+T0 6200 3700 600 600 1800 120 N I 21 N "P1"
+T1 0 2000 600 600 1800 120 N V 21 N "CONN_6"
+DS 5800 700 6600 700 150 21
+DS 6600 700 6200 200 150 21
+DS 6200 200 5800 700 150 21
+DS -400 0 -400 700 150 21
+DS -400 700 5400 700 150 21
+DS 5400 700 5400 0 150 21
+$PAD
+Sh "1" R 500 1000 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 5 "/JTAG_TMS"
+Po 0 0
+$EndPAD
+$PAD
+Sh "2" R 500 1000 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 3 "/JTAG_TDI"
+Po 1000 0
+$EndPAD
+$PAD
+Sh "3" R 500 1000 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 4 "/JTAG_TDO"
+Po 2000 0
+$EndPAD
+$PAD
+Sh "4" R 500 1000 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 2 "/JTAG_TCK"
+Po 3000 0
+$EndPAD
+$PAD
+Sh "5" R 500 1000 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 1 "/GND"
+Po 4000 0
+$EndPAD
+$PAD
+Sh "6" R 500 1000 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 6 "/VREF"
+Po 5000 0
+$EndPAD
+$EndMODULE HEADER_SMT_6PIN
+$TEXTPCB
+Te "VREF"
+Po 18400 20000 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
+$TEXTPCB
+Te "GND"
+Po 19400 20000 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
+$TEXTPCB
+Te "TCK"
+Po 20400 20000 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
+$TEXTPCB
+Te "TDO"
+Po 21400 20000 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
+$TEXTPCB
+Te "TDI"
+Po 22400 20000 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
+$TEXTPCB
+Te "TMS"
+Po 23400 20000 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
+$DRAWSEGMENT
+Po 0 24803 16142 16535 16142 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 24803 21654 24803 16142 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 16535 21654 24803 21654 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 16535 16142 16535 21654 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$TRACK
+$EndTRACK
+$ZONE
+$EndZONE
+$EndBOARD

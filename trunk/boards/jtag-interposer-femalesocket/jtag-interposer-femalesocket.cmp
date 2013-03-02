@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sat 02 Mar 2013 02:44:25 AM EST
+
+BeginCmp
+TimeStamp = /5131AA94;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = HEADER_SMT_6PIN;
+EndCmp
+
+BeginCmp
+TimeStamp = /5131AAA3;
+Reference = P2;
+ValeurCmp = CONN_14;
+IdModule  = XILINX_JTAG_THRUHOLE;
+EndCmp
+
+EndListe
