@@ -1,0 +1,54 @@
+# EESchema Netlist Version 1.1 created  Sat 02 Mar 2013 02:40:22 AM EST
+(
+ ( /5131AA94 $noname  P1 CONN_6 {Lib=CONN_6}
+  (    1 /JTAG_TMS )
+  (    2 /JTAG_TDI )
+  (    3 /JTAG_TDO )
+  (    4 /JTAG_TCK )
+  (    5 /GND )
+  (    6 /VREF )
+ )
+ ( /5131AAA3 $noname  P2 CONN_14 {Lib=CONN_14}
+  (    1 ? )
+  (    2 /VREF )
+  (    3 /GND )
+  (    4 /JTAG_TMS )
+  (    5 /GND )
+  (    6 /JTAG_TCK )
+  (    7 /GND )
+  (    8 /JTAG_TDO )
+  (    9 /GND )
+  (   10 /JTAG_TDI )
+  (   11 /GND )
+  (   12 ? )
+  (   13 /GND )
+  (   14 ? )
+ )
+)
+*
+{ Pin List by Nets
+Net 2 "/VREF" "VREF"
+ P2 2
+ P1 6
+Net 3 "/GND" "GND"
+ P2 7
+ P2 5
+ P2 3
+ P1 5
+ P2 11
+ P2 9
+ P2 13
+Net 4 "/JTAG_TMS" "JTAG_TMS"
+ P1 1
+ P2 4
+Net 5 "/JTAG_TCK" "JTAG_TCK"
+ P1 4
+ P2 6
+Net 8 "/JTAG_TDI" "JTAG_TDI"
+ P2 10
+ P1 2
+Net 9 "/JTAG_TDO" "JTAG_TDO"
+ P2 8
+ P1 3
+}
+#End
