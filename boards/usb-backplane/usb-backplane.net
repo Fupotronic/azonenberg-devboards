@@ -1,0 +1,813 @@
+# EESchema Netlist Version 1.1 created  Tue 05 Mar 2013 07:03:21 AM EST
+(
+ ( /5135C130 $noname  J1 HIROSE_UX60SX-MB-5ST_(MINI_USB) {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
+  (    1 /VBUS_UNFILTERED )
+  (    2 /USB_D_N )
+  (    3 /USB_D_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /GND )
+  (    7 /GND )
+ )
+ ( /5135C165 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 /5V_UNFILTERED )
+  (    2 /GND )
+  (    3 ? )
+ )
+ ( /5135DDBB $noname  U4 CY7C65631 {Lib=CY7C65631}
+  (    1 /USB_4_N )
+  (    2 /USB_4_P )
+  (    3 /3V3 )
+  (    4 /GND )
+  (    5 /USB_3_N )
+  (    6 /USB_3_P )
+  (    7 /3V3 )
+  (    8 /GND )
+  (    9 /USB_2_N )
+  (   10 /USB_2_P )
+  (   11 /3V3 )
+  (   12 /GND )
+  (   13 /USB_1_N )
+  (   14 /USB_1_P )
+  (   15 /3V3 )
+  (   16 /GND )
+  (   17 /USB_D_N )
+  (   18 /USB_D_P )
+  (   19 /3V3 )
+  (   20 /GND )
+  (   21 /CLK_24MHZ )
+  (   22 ? )
+  (   23 /3V3 )
+  (   24 /GND )
+  (   25 /SPI_CS_N )
+  (   26 /VBUS )
+  (   27 /3V3 )
+  (   28 /GND )
+  (   29 ? )
+  (   30 ? )
+  (   31 ? )
+  (   32 ? )
+  (   33 /3V3 )
+  (   34 /GND )
+  (   35 /GREEN_1_N )
+  (   36 /AMBER_1_N )
+  (   37 /GREEN_2_N )
+  (   38 /AMBER_2_N )
+  (   39 /3V3 )
+  (   40 /GND )
+  (   41 /GREEN_3_N )
+  (   42 /AMBER_3_N )
+  (   43 /GREEN_4_N )
+  (   44 /AMBER_4_N )
+  (   45 /3V3 )
+  (   46 /HUB_RESET_N )
+  (   47 /GND )
+  (   48 /SPI_SCK )
+  (   49 /SPI_DATA )
+  (   50 /GND )
+  (   51 ? )
+  (   52 ? )
+  (   53 ? )
+  (   54 ? )
+  (   55 /3V3 )
+  (   56 /GND )
+ )
+ ( /5135DDCA $noname  L2 600R {Lib=INDUCTOR_PWROUT}
+  (    1 /5V )
+  (    2 /5V_UNFILTERED )
+ )
+ ( /5135E080 $noname  U2 24_MHz {Lib=OSC}
+  (    1 /3V3 )
+  (    2 /GND )
+  (    3 /CLK_24MHZ )
+  (    4 /3V3 )
+ )
+ ( /5135E120 $noname  C12 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /5135E236 $noname  R9 100K {Lib=R}
+  (    1 /3V3 )
+  (    2 /HUB_RESET_N )
+ )
+ ( /5135E1C1 $noname  C14 0.1_uF {Lib=C}
+  (    1 /GND )
+  (    2 /HUB_RESET_N )
+ )
+ ( /5135E35D $noname  L1 600R {Lib=INDUCTOR_PWROUT}
+  (    1 /VBUS )
+  (    2 /VBUS_UNFILTERED )
+ )
+ ( /5135EFF5 $noname  U3 25LC080 {Lib=25LC080}
+  (    1 /SPI_CS_N )
+  (    2 /SPI_MISO )
+  (    3 /3V3 )
+  (    4 /GND )
+  (    5 /SPI_DATA )
+  (    6 /SPI_SCK )
+  (    7 /3V3 )
+  (    8 /3V3 )
+ )
+ ( /5135F002 $noname  C13 0.1_uF {Lib=C}
+  (    1 /GND )
+  (    2 /3V3 )
+ )
+ ( /5135F580 $noname  C9 2.2_uF {Lib=C}
+  (    1 /VBUS )
+  (    2 /GND )
+ )
+ ( /5135F715 $noname  R10 100K {Lib=R}
+  (    1 /VBUS )
+  (    2 /GND )
+ )
+ ( /5135F850 $noname  C1 150_uF {Lib=C}
+  (    1 /VBUS_1 )
+  (    2 /GND )
+ )
+ ( /5135F8CD $noname  C5 0.01_uF {Lib=C}
+  (    1 /VBUS_1 )
+  (    2 /GND )
+ )
+ ( /5135FACD $noname  C2 150_uF {Lib=C}
+  (    1 /VBUS_2 )
+  (    2 /GND )
+ )
+ ( /5135FAD5 $noname  C6 0.01_uF {Lib=C}
+  (    1 /VBUS_2 )
+  (    2 /GND )
+ )
+ ( /5135FAE0 $noname  C3 150_uF {Lib=C}
+  (    1 /VBUS_3 )
+  (    2 /GND )
+ )
+ ( /5135FAE8 $noname  C7 0.01_uF {Lib=C}
+  (    1 /VBUS_3 )
+  (    2 /GND )
+ )
+ ( /5135FAF2 $noname  C4 150_uF {Lib=C}
+  (    1 /VBUS_4 )
+  (    2 /GND )
+ )
+ ( /5135FAFA $noname  C8 0.01_uF {Lib=C}
+  (    1 /VBUS_4 )
+  (    2 /GND )
+ )
+ ( /5135FBB1 $noname  R1 470 {Lib=R}
+  (    1 N-000005 )
+  (    2 /AMBER_1_N )
+ )
+ ( /5135FC3B $noname  D1 AMBER {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000005 )
+ )
+ ( /5135FD46 $noname  R2 470 {Lib=R}
+  (    1 N-000004 )
+  (    2 /GREEN_1_N )
+ )
+ ( /5135FD4E $noname  D2 GREEN {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000004 )
+ )
+ ( /5135FDD4 $noname  R3 470 {Lib=R}
+  (    1 N-000003 )
+  (    2 /AMBER_2_N )
+ )
+ ( /5135FDDC $noname  D3 AMBER {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000003 )
+ )
+ ( /5135FDE5 $noname  R4 470 {Lib=R}
+  (    1 N-000002 )
+  (    2 /GREEN_2_N )
+ )
+ ( /5135FDED $noname  D4 GREEN {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000002 )
+ )
+ ( /5135FEF8 $noname  R5 470 {Lib=R}
+  (    1 N-000001 )
+  (    2 /AMBER_3_N )
+ )
+ ( /5135FF00 $noname  D5 AMBER {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000001 )
+ )
+ ( /5135FF09 $noname  R6 470 {Lib=R}
+  (    1 N-000009 )
+  (    2 /GREEN_3_N )
+ )
+ ( /5135FF11 $noname  D6 GREEN {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000009 )
+ )
+ ( /5135FF1A $noname  R7 470 {Lib=R}
+  (    1 N-000008 )
+  (    2 /AMBER_4_N )
+ )
+ ( /5135FF22 $noname  D7 AMBER {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000008 )
+ )
+ ( /5135FF2A $noname  R8 470 {Lib=R}
+  (    1 N-000007 )
+  (    2 /GREEN_4_N )
+ )
+ ( /5135FF32 $noname  D8 GREEN {Lib=LED}
+  (    1 /3V3 )
+  (    2 N-000007 )
+ )
+ ( /513601AB $noname  U1 LDO1117-33 {Lib=LDO1117-XX}
+  (    1 /GND )
+  (    2 /3V3 )
+  (    3 /5V )
+ )
+ ( /513602E3 $noname  C11 47_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /513605EE $noname  C10 47_uF {Lib=C}
+  (    1 /5V )
+  (    2 /GND )
+ )
+ ( /51360A0F $noname  C15 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A15 $noname  C16 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A1B $noname  C17 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A21 $noname  C18 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A27 $noname  C19 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A2D $noname  C20 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A3D $noname  C21 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A43 $noname  C22 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 ? )
+ )
+ ( /51360A49 $noname  C23 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51360A4F $noname  C24 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51361EB9 $noname  R11 1K {Lib=R}
+  (    1 /SPI_DATA )
+  (    2 /SPI_MISO )
+ )
+ ( /5136213C $noname  J2 USB_MINI_B_MALE_OUTPUT {Lib=USB_MINI_B_MALE_OUTPUT}
+  (    1 /VBUS_1 )
+  (    2 /USB_1_N )
+  (    3 /USB_1_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /GND )
+  (    7 /GND )
+ )
+ ( /51362656 $noname  J3 USB_MINI_B_MALE_OUTPUT {Lib=USB_MINI_B_MALE_OUTPUT}
+  (    1 /VBUS_2 )
+  (    2 /USB_2_N )
+  (    3 /USB_2_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /GND )
+  (    7 /GND )
+ )
+ ( /51362681 $noname  J4 USB_MINI_B_MALE_OUTPUT {Lib=USB_MINI_B_MALE_OUTPUT}
+  (    1 /VBUS_3 )
+  (    2 /USB_3_N )
+  (    3 /USB_3_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /GND )
+  (    7 /GND )
+ )
+ ( /51362695 $noname  J5 USB_MINI_B_MALE_OUTPUT {Lib=USB_MINI_B_MALE_OUTPUT}
+  (    1 /VBUS_4 )
+  (    2 /USB_4_N )
+  (    3 /USB_4_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /GND )
+  (    7 /GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C12
+ SM*
+ C?
+ C1-1
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D5
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D7
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D8
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C15
+ SM*
+ C?
+ C1-1
+$endlist
+$component C16
+ SM*
+ C?
+ C1-1
+$endlist
+$component C17
+ SM*
+ C?
+ C1-1
+$endlist
+$component C18
+ SM*
+ C?
+ C1-1
+$endlist
+$component C19
+ SM*
+ C?
+ C1-1
+$endlist
+$component C20
+ SM*
+ C?
+ C1-1
+$endlist
+$component C21
+ SM*
+ C?
+ C1-1
+$endlist
+$component C22
+ SM*
+ C?
+ C1-1
+$endlist
+$component C23
+ SM*
+ C?
+ C1-1
+$endlist
+$component C24
+ SM*
+ C?
+ C1-1
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ R5 1
+ D5 2
+Net 2 "" ""
+ D4 2
+ R4 1
+Net 3 "" ""
+ D3 2
+ R3 1
+Net 4 "" ""
+ D2 2
+ R2 1
+Net 5 "" ""
+ D1 2
+ R1 1
+Net 6 "/5V" "5V"
+ C10 1
+ U1 3
+ L2 1
+Net 7 "" ""
+ D8 2
+ R8 1
+Net 8 "" ""
+ D7 2
+ R7 1
+Net 9 "" ""
+ R6 1
+ D6 2
+Net 12 "/GREEN_2_N" "GREEN_2_N"
+ U4 37
+ R4 2
+Net 13 "/AMBER_2_N" "AMBER_2_N"
+ R3 2
+ U4 38
+Net 16 "/GREEN_1_N" "GREEN_1_N"
+ R2 2
+ U4 35
+Net 17 "/AMBER_1_N" "AMBER_1_N"
+ U4 36
+ R1 2
+Net 18 "/SPI_SCK" "SPI_SCK"
+ U4 48
+ U3 6
+Net 19 "/SPI_CS_N" "SPI_CS_N"
+ U4 25
+ U3 1
+Net 20 "/USB_D_P" "USB_D_P"
+ J1 3
+ U4 18
+Net 21 "/USB_D_N" "USB_D_N"
+ U4 17
+ J1 2
+Net 22 "/VBUS" "VBUS"
+ U4 26
+ R10 1
+ C9 1
+ L1 1
+Net 23 "/VBUS_UNFILTERED" "VBUS_UNFILTERED"
+ L1 2
+ J1 1
+Net 24 "/5V_UNFILTERED" "5V_UNFILTERED"
+ L2 2
+ K1 1
+Net 27 "/AMBER_4_N" "AMBER_4_N"
+ U4 44
+ R7 2
+Net 28 "/GREEN_4_N" "GREEN_4_N"
+ U4 43
+ R8 2
+Net 29 "/GREEN_3_N" "GREEN_3_N"
+ R6 2
+ U4 41
+Net 30 "/AMBER_3_N" "AMBER_3_N"
+ U4 42
+ R5 2
+Net 33 "/VBUS_3" "VBUS_3"
+ J4 1
+ C7 1
+ C3 1
+Net 35 "/USB_3_P" "USB_3_P"
+ U4 6
+ J4 3
+Net 36 "/USB_3_N" "USB_3_N"
+ U4 5
+ J4 2
+Net 37 "/GND" "GND"
+ J1 5
+ J4 6
+ J4 7
+ U4 28
+ U4 47
+ U4 56
+ U4 16
+ C10 2
+ U4 34
+ U4 24
+ U4 12
+ C11 2
+ U1 1
+ C15 2
+ U2 2
+ J3 5
+ J3 6
+ J3 7
+ U4 50
+ U4 40
+ U4 20
+ U4 8
+ U4 4
+ K1 2
+ J4 5
+ J1 7
+ J1 6
+ R10 2
+ C9 2
+ C13 1
+ U3 4
+ C8 2
+ C4 2
+ C7 2
+ C3 2
+ C6 2
+ C16 2
+ C2 2
+ C5 2
+ C1 2
+ J5 7
+ J5 5
+ C19 2
+ J2 7
+ J2 6
+ C20 2
+ J2 5
+ C18 2
+ C21 2
+ C17 2
+ C23 2
+ C24 2
+ J5 6
+ C14 1
+ C12 2
+Net 39 "/USB_2_P" "USB_2_P"
+ J3 3
+ U4 10
+Net 40 "/USB_2_N" "USB_2_N"
+ J3 2
+ U4 9
+Net 41 "/VBUS_2" "VBUS_2"
+ J3 1
+ C2 1
+ C6 1
+Net 43 "/USB_4_P" "USB_4_P"
+ J5 3
+ U4 2
+Net 44 "/USB_4_N" "USB_4_N"
+ U4 1
+ J5 2
+Net 45 "/VBUS_4" "VBUS_4"
+ C4 1
+ C8 1
+ J5 1
+Net 48 "/USB_1_P" "USB_1_P"
+ J2 3
+ U4 14
+Net 49 "/USB_1_N" "USB_1_N"
+ U4 13
+ J2 2
+Net 50 "/VBUS_1" "VBUS_1"
+ C1 1
+ C5 1
+ J2 1
+Net 51 "/SPI_MISO" "SPI_MISO"
+ R11 2
+ U3 2
+Net 52 "/SPI_DATA" "SPI_DATA"
+ U3 5
+ U4 49
+ R11 1
+Net 54 "/CLK_24MHZ" "CLK_24MHZ"
+ U2 3
+ U4 21
+Net 57 "/HUB_RESET_N" "HUB_RESET_N"
+ C14 2
+ R9 2
+ U4 46
+Net 58 "/3V3" "3V3"
+ D3 1
+ D2 1
+ U3 3
+ U3 7
+ U3 8
+ C13 2
+ D1 1
+ U4 27
+ U4 55
+ U4 45
+ U4 15
+ U4 33
+ U4 23
+ C17 1
+ C18 1
+ C11 1
+ C12 1
+ U2 4
+ U2 1
+ R9 1
+ U4 39
+ U4 19
+ U4 11
+ U4 7
+ U4 3
+ U1 2
+ D8 1
+ C19 1
+ C15 1
+ D7 1
+ C20 1
+ C16 1
+ C21 1
+ D6 1
+ C22 1
+ D5 1
+ C23 1
+ C24 1
+ D4 1
+}
+#End
