@@ -1,4 +1,4 @@
-update=Tue 05 Mar 2013 05:56:07 AM EST
+update=Tue 05 Mar 2013 07:38:02 AM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -57,10 +57,10 @@ LibName37=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/special-az
 LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azonenberg
 [pcbnew]
 version=1
-LastNetListRead=
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+LastNetListRead=usb-backplane.net
+PadDrlX=0
+PadDimH=236
+PadDimV=98
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -71,9 +71,9 @@ VEgarde=100
 DrawLar=150
 EdgeLar=150
 TxtLar=120
-MSegLar=150
+MSegLar=60
 [pcbnew/libraries]
-LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules
+LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty
 LibName1=sockets
 LibName2=connect
 LibName3=discret

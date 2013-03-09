@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 05 Mar 2013 07:03:13 AM EST
+EESchema Schematic File Version 2  date Sat 09 Mar 2013 10:27:27 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,13 +37,14 @@ LIBS:passive-azonenberg
 LIBS:power-azonenberg
 LIBS:special-azonenberg
 LIBS:xilinx-azonenberg
+LIBS:usb-backplane-cache
 EELAYER 27 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "5 mar 2013"
+Date "9 mar 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -551,6 +552,303 @@ F 1 "47 uF" H 7500 1250 50  0000 L CNN
 $EndComp
 Text Label 6300 1550 2    60   ~ 0
 GND
+Text Label 5450 1000 2    60   ~ 0
+5V
+$Comp
+L C C10
+U 1 1 513605EE
+P 5700 1350
+F 0 "C10" H 5750 1450 50  0000 L CNN
+F 1 "47 uF" H 5750 1250 50  0000 L CNN
+	1    5700 1350
+	1    0    0    -1  
+$EndComp
+Text Label 12800 900  2    60   ~ 0
+3V3
+$Comp
+L C C15
+U 1 1 51360A0F
+P 8450 4050
+F 0 "C15" H 8500 4150 50  0000 L CNN
+F 1 "0.1 uF" H 8500 3950 50  0000 L CNN
+	1    8450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C16
+U 1 1 51360A15
+P 8750 4050
+F 0 "C16" H 8800 4150 50  0000 L CNN
+F 1 "0.1 uF" H 8800 3950 50  0000 L CNN
+	1    8750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 51360A1B
+P 9050 4050
+F 0 "C17" H 9100 4150 50  0000 L CNN
+F 1 "0.1 uF" H 9100 3950 50  0000 L CNN
+	1    9050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 51360A21
+P 9350 4050
+F 0 "C18" H 9400 4150 50  0000 L CNN
+F 1 "0.1 uF" H 9400 3950 50  0000 L CNN
+	1    9350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C19
+U 1 1 51360A27
+P 9650 4050
+F 0 "C19" H 9700 4150 50  0000 L CNN
+F 1 "0.1 uF" H 9700 3950 50  0000 L CNN
+	1    9650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C20
+U 1 1 51360A2D
+P 9950 4050
+F 0 "C20" H 10000 4150 50  0000 L CNN
+F 1 "0.1 uF" H 10000 3950 50  0000 L CNN
+	1    9950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C21
+U 1 1 51360A3D
+P 10250 4050
+F 0 "C21" H 10300 4150 50  0000 L CNN
+F 1 "0.1 uF" H 10300 3950 50  0000 L CNN
+	1    10250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C22
+U 1 1 51360A43
+P 10550 4050
+F 0 "C22" H 10600 4150 50  0000 L CNN
+F 1 "0.1 uF" H 10600 3950 50  0000 L CNN
+	1    10550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C23
+U 1 1 51360A49
+P 10850 4050
+F 0 "C23" H 10900 4150 50  0000 L CNN
+F 1 "0.1 uF" H 10900 3950 50  0000 L CNN
+	1    10850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C24
+U 1 1 51360A4F
+P 11150 4050
+F 0 "C24" H 11200 4150 50  0000 L CNN
+F 1 "0.1 uF" H 11200 3950 50  0000 L CNN
+	1    11150 4050
+	1    0    0    -1  
+$EndComp
+Text Label 8350 3850 2    60   ~ 0
+3V3
+Text Label 8350 4250 2    60   ~ 0
+GND
+Text Label 10550 1700 0    60   ~ 0
+SPI_MISO
+Text Label 10050 1700 2    60   ~ 0
+SPI_DATA
+$Comp
+L R R11
+U 1 1 51361EB9
+P 10300 1700
+F 0 "R11" V 10380 1700 50  0000 C CNN
+F 1 "1K" V 10300 1700 50  0000 C CNN
+	1    10300 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 10550 2300 0    60   ~ 0
+SPI_MISO
+$Comp
+L USB_MINI_B_MALE_OUTPUT J2
+U 1 1 5136213C
+P 1700 6800
+F 0 "J2" H 2200 7800 60  0000 C CNN
+F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 6950 60  0000 C CNN
+	1    1700 6800
+	1    0    0    -1  
+$EndComp
+Text Label 1500 5950 2    60   ~ 0
+VBUS_1
+Text Label 1500 6050 2    60   ~ 0
+USB_1_N
+Text Label 1500 6150 2    60   ~ 0
+USB_1_P
+Text Label 1500 6250 2    60   ~ 0
+GND
+NoConn ~ 1750 6350
+$Comp
+L USB_MINI_B_MALE_OUTPUT J3
+U 1 1 51362656
+P 1700 7750
+F 0 "J3" H 2200 8750 60  0000 C CNN
+F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 7900 60  0000 C CNN
+	1    1700 7750
+	1    0    0    -1  
+$EndComp
+Text Label 1500 6900 2    60   ~ 0
+VBUS_2
+Text Label 1500 7000 2    60   ~ 0
+USB_2_N
+Text Label 1500 7100 2    60   ~ 0
+USB_2_P
+Text Label 1500 7200 2    60   ~ 0
+GND
+NoConn ~ 1750 7300
+Text Label 1500 8000 2    60   ~ 0
+VBUS_3
+Text Label 1500 8100 2    60   ~ 0
+USB_3_N
+Text Label 1500 8200 2    60   ~ 0
+USB_3_P
+Text Label 1500 8300 2    60   ~ 0
+GND
+NoConn ~ 1750 8400
+$Comp
+L USB_MINI_B_MALE_OUTPUT J5
+U 1 1 51362695
+P 1700 9800
+F 0 "J5" H 2200 10800 60  0000 C CNN
+F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 9950 60  0000 C CNN
+	1    1700 9800
+	1    0    0    -1  
+$EndComp
+Text Label 1500 8950 2    60   ~ 0
+VBUS_4
+Text Label 1500 9050 2    60   ~ 0
+USB_4_N
+Text Label 1500 9150 2    60   ~ 0
+USB_4_P
+Text Label 1500 9250 2    60   ~ 0
+GND
+NoConn ~ 1750 9350
+$Comp
+L CONN_1 SCREW1
+U 1 1 5136293D
+P 15550 4800
+F 0 "SCREW1" H 15630 4800 40  0000 L CNN
+F 1 "CONN_1" H 15550 4855 30  0001 C CNN
+	1    15550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 SCREW2
+U 1 1 5136294A
+P 15550 4900
+F 0 "SCREW2" H 15630 4900 40  0000 L CNN
+F 1 "CONN_1" H 15550 4955 30  0001 C CNN
+	1    15550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 SCREW3
+U 1 1 51362950
+P 15550 5000
+F 0 "SCREW3" H 15630 5000 40  0000 L CNN
+F 1 "CONN_1" H 15550 5055 30  0001 C CNN
+	1    15550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 SCREW4
+U 1 1 51362956
+P 15550 5100
+F 0 "SCREW4" H 15630 5100 40  0000 L CNN
+F 1 "CONN_1" H 15550 5155 30  0001 C CNN
+	1    15550 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 15400 5100
+NoConn ~ 15400 5000
+NoConn ~ 15400 4900
+NoConn ~ 15400 4800
+Text Notes 15200 4650 0    60   ~ 0
+Mounting screws
+$Comp
+L CONN_1 SCREW5
+U 1 1 51362B34
+P 15550 5200
+F 0 "SCREW5" H 15630 5200 40  0000 L CNN
+F 1 "CONN_1" H 15550 5255 30  0001 C CNN
+	1    15550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 SCREW6
+U 1 1 51362B3A
+P 15550 5300
+F 0 "SCREW6" H 15630 5300 40  0000 L CNN
+F 1 "CONN_1" H 15550 5355 30  0001 C CNN
+	1    15550 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 15400 5200
+NoConn ~ 15400 5300
+$Comp
+L TPS2044BD U5
+U 1 1 51367215
+P 13250 6100
+F 0 "U5" H 13250 6150 60  0000 C CNN
+F 1 "TPS2044BD" H 13300 6000 60  0000 C CNN
+	1    13250 6100
+	1    0    0    -1  
+$EndComp
+Text Label 12150 6400 2    60   ~ 0
+GND
+Text Label 12150 6100 2    60   ~ 0
+5V
+Text Label 12150 5600 2    60   ~ 0
+PWR_1_N
+Text Label 12150 5700 2    60   ~ 0
+PWR_2_N
+Text Label 12150 5800 2    60   ~ 0
+PWR_3_N
+Text Label 12150 5900 2    60   ~ 0
+PWR_4_N
+Text Label 14350 6400 0    60   ~ 0
+OVR_4_N
+Text Label 14350 6300 0    60   ~ 0
+OVR_3_N
+Text Label 14350 6200 0    60   ~ 0
+OVR_2_N
+Text Label 14350 6100 0    60   ~ 0
+OVR_1_N
+Text Label 14350 5600 0    60   ~ 0
+VBUS_1
+Text Label 14350 5700 0    60   ~ 0
+VBUS_2
+Text Label 14350 5800 0    60   ~ 0
+VBUS_3
+Text Label 14350 5900 0    60   ~ 0
+VBUS_4
+Text Notes 5750 5900 0    60   ~ 0
+TODO: add RCLAMP0514s\nConsider replacing tantalums with MLCCs or aluminum
+$Comp
+L USB_MINI_B_MALE_OUTPUT J4
+U 1 1 51362681
+P 1700 8850
+F 0 "J4" H 2200 9850 60  0000 C CNN
+F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 9000 60  0000 C CNN
+	1    1700 8850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 1250
+NoConn ~ 1800 1350
 Wire Wire Line
 	14750 1400 15150 1400
 Connection ~ 13850 900 
@@ -698,15 +996,7 @@ Wire Wire Line
 	10550 2200 10450 2200
 Wire Wire Line
 	3850 700  4350 700 
-Wire Wire Line
-	1800 1250 1950 1250
-Wire Wire Line
-	1950 1250 1950 1050
 Connection ~ 1950 1050
-Wire Wire Line
-	1800 1350 2050 1350
-Wire Wire Line
-	2050 1350 2050 1050
 Connection ~ 2050 1050
 Wire Wire Line
 	3850 1200 4350 1200
@@ -802,126 +1092,19 @@ Connection ~ 7450 1000
 Wire Wire Line
 	5700 1550 7450 1550
 Connection ~ 6500 1550
-Text Label 5450 1000 2    60   ~ 0
-5V
 Wire Wire Line
 	5450 1000 5700 1000
-$Comp
-L C C10
-U 1 1 513605EE
-P 5700 1350
-F 0 "C10" H 5750 1450 50  0000 L CNN
-F 1 "47 uF" H 5750 1250 50  0000 L CNN
-	1    5700 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 1550 6500 1550
 Wire Wire Line
 	5700 1000 5700 1150
 Wire Wire Line
 	13650 900  13750 900 
-Text Label 12800 900  2    60   ~ 0
-3V3
 Connection ~ 12950 900 
-$Comp
-L C C15
-U 1 1 51360A0F
-P 8450 4050
-F 0 "C15" H 8500 4150 50  0000 L CNN
-F 1 "0.1 uF" H 8500 3950 50  0000 L CNN
-	1    8450 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C16
-U 1 1 51360A15
-P 8750 4050
-F 0 "C16" H 8800 4150 50  0000 L CNN
-F 1 "0.1 uF" H 8800 3950 50  0000 L CNN
-	1    8750 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C17
-U 1 1 51360A1B
-P 9050 4050
-F 0 "C17" H 9100 4150 50  0000 L CNN
-F 1 "0.1 uF" H 9100 3950 50  0000 L CNN
-	1    9050 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C18
-U 1 1 51360A21
-P 9350 4050
-F 0 "C18" H 9400 4150 50  0000 L CNN
-F 1 "0.1 uF" H 9400 3950 50  0000 L CNN
-	1    9350 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C19
-U 1 1 51360A27
-P 9650 4050
-F 0 "C19" H 9700 4150 50  0000 L CNN
-F 1 "0.1 uF" H 9700 3950 50  0000 L CNN
-	1    9650 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C20
-U 1 1 51360A2D
-P 9950 4050
-F 0 "C20" H 10000 4150 50  0000 L CNN
-F 1 "0.1 uF" H 10000 3950 50  0000 L CNN
-	1    9950 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C21
-U 1 1 51360A3D
-P 10250 4050
-F 0 "C21" H 10300 4150 50  0000 L CNN
-F 1 "0.1 uF" H 10300 3950 50  0000 L CNN
-	1    10250 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C22
-U 1 1 51360A43
-P 10550 4050
-F 0 "C22" H 10600 4150 50  0000 L CNN
-F 1 "0.1 uF" H 10600 3950 50  0000 L CNN
-	1    10550 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C23
-U 1 1 51360A49
-P 10850 4050
-F 0 "C23" H 10900 4150 50  0000 L CNN
-F 1 "0.1 uF" H 10900 3950 50  0000 L CNN
-	1    10850 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C24
-U 1 1 51360A4F
-P 11150 4050
-F 0 "C24" H 11200 4150 50  0000 L CNN
-F 1 "0.1 uF" H 11200 3950 50  0000 L CNN
-	1    11150 4050
-	1    0    0    -1  
-$EndComp
-Text Label 8350 3850 2    60   ~ 0
-3V3
 Wire Wire Line
 	8350 3850 11150 3850
 Connection ~ 8750 3850
 Connection ~ 8450 3850
-Text Label 8350 4250 2    60   ~ 0
-GND
 Wire Wire Line
 	8350 4250 11150 4250
 Connection ~ 8450 4250
@@ -943,149 +1126,41 @@ Wire Wire Line
 	10550 2400 10450 2400
 Wire Wire Line
 	10550 2300 10450 2300
-Text Label 10550 1700 0    60   ~ 0
-SPI_MISO
-Text Label 10050 1700 2    60   ~ 0
-SPI_DATA
-$Comp
-L R R11
-U 1 1 51361EB9
-P 10300 1700
-F 0 "R11" V 10380 1700 50  0000 C CNN
-F 1 "1K" V 10300 1700 50  0000 C CNN
-	1    10300 1700
-	0    -1   -1   0   
-$EndComp
-Text Label 10550 2300 0    60   ~ 0
-SPI_MISO
-$Comp
-L USB_MINI_B_MALE_OUTPUT J2
-U 1 1 5136213C
-P 1700 6800
-F 0 "J2" H 2200 7800 60  0000 C CNN
-F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 6950 60  0000 C CNN
-	1    1700 6800
-	1    0    0    -1  
-$EndComp
-Text Label 1500 5950 2    60   ~ 0
-VBUS_1
 Wire Wire Line
 	1500 5950 1750 5950
-Text Label 1500 6050 2    60   ~ 0
-USB_1_N
 Wire Wire Line
 	1500 6050 1750 6050
-Text Label 1500 6150 2    60   ~ 0
-USB_1_P
 Wire Wire Line
 	1500 6150 1750 6150
-Text Label 1500 6250 2    60   ~ 0
-GND
 Wire Wire Line
 	1500 6250 1750 6250
-NoConn ~ 1750 6350
-Wire Wire Line
-	1650 6250 1650 6550
-Wire Wire Line
-	1650 6450 1750 6450
 Connection ~ 1650 6250
 Wire Wire Line
-	1650 6550 1750 6550
-Connection ~ 1650 6450
-$Comp
-L USB_MINI_B_MALE_OUTPUT J?
-U 1 1 51362656
-P 1700 7750
-F 0 "J?" H 2200 8750 60  0000 C CNN
-F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 7900 60  0000 C CNN
-	1    1700 7750
-	1    0    0    -1  
-$EndComp
-Text Label 1500 6900 2    60   ~ 0
-VBUS_2
-Wire Wire Line
 	1500 6900 1750 6900
-Text Label 1500 7000 2    60   ~ 0
-USB_2_N
 Wire Wire Line
 	1500 7000 1750 7000
-Text Label 1500 7100 2    60   ~ 0
-USB_2_P
 Wire Wire Line
 	1500 7100 1750 7100
-Text Label 1500 7200 2    60   ~ 0
-GND
 Wire Wire Line
 	1500 7200 1750 7200
-NoConn ~ 1750 7300
-Wire Wire Line
-	1650 7200 1650 7500
-Wire Wire Line
-	1650 7400 1750 7400
 Connection ~ 1650 7200
 Wire Wire Line
-	1650 7500 1750 7500
-Connection ~ 1650 7400
-$Comp
-L USB_MINI_B_MALE_OUTPUT J?
-U 1 1 51362681
-P 1700 8850
-F 0 "J?" H 2200 9850 60  0000 C CNN
-F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 9000 60  0000 C CNN
-	1    1700 8850
-	1    0    0    -1  
-$EndComp
-Text Label 1500 8000 2    60   ~ 0
-VBUS_3
-Wire Wire Line
 	1500 8000 1750 8000
-Text Label 1500 8100 2    60   ~ 0
-USB_3_N
 Wire Wire Line
 	1500 8100 1750 8100
-Text Label 1500 8200 2    60   ~ 0
-USB_3_P
 Wire Wire Line
 	1500 8200 1750 8200
-Text Label 1500 8300 2    60   ~ 0
-GND
 Wire Wire Line
 	1500 8300 1750 8300
-NoConn ~ 1750 8400
-Wire Wire Line
-	1650 8300 1650 8600
-Wire Wire Line
-	1650 8500 1750 8500
 Connection ~ 1650 8300
 Wire Wire Line
-	1650 8600 1750 8600
-Connection ~ 1650 8500
-$Comp
-L USB_MINI_B_MALE_OUTPUT J?
-U 1 1 51362695
-P 1700 9800
-F 0 "J?" H 2200 10800 60  0000 C CNN
-F 1 "USB_MINI_B_MALE_OUTPUT" H 2200 9950 60  0000 C CNN
-	1    1700 9800
-	1    0    0    -1  
-$EndComp
-Text Label 1500 8950 2    60   ~ 0
-VBUS_4
-Wire Wire Line
 	1500 8950 1750 8950
-Text Label 1500 9050 2    60   ~ 0
-USB_4_N
 Wire Wire Line
 	1500 9050 1750 9050
-Text Label 1500 9150 2    60   ~ 0
-USB_4_P
 Wire Wire Line
 	1500 9150 1750 9150
-Text Label 1500 9250 2    60   ~ 0
-GND
 Wire Wire Line
 	1500 9250 1750 9250
-NoConn ~ 1750 9350
 Wire Wire Line
 	1650 9250 1650 9550
 Wire Wire Line
@@ -1094,4 +1169,61 @@ Connection ~ 1650 9250
 Wire Wire Line
 	1650 9550 1750 9550
 Connection ~ 1650 9450
+Wire Wire Line
+	10250 4250 10550 4250
+Connection ~ 10550 4250
+Wire Wire Line
+	12350 6400 12350 6500
+Wire Wire Line
+	12150 6400 12350 6400
+Wire Wire Line
+	12150 6100 12350 6100
+Wire Wire Line
+	12350 6100 12350 6200
+Wire Wire Line
+	12150 5600 12350 5600
+Wire Wire Line
+	12150 5900 12350 5900
+Wire Wire Line
+	12350 5800 12150 5800
+Wire Wire Line
+	12150 5700 12350 5700
+Wire Wire Line
+	14350 6400 14200 6400
+Wire Wire Line
+	14350 6100 14200 6100
+Wire Wire Line
+	14200 6200 14350 6200
+Wire Wire Line
+	14350 6300 14200 6300
+Wire Wire Line
+	14350 5600 14200 5600
+Wire Wire Line
+	14350 5900 14200 5900
+Wire Wire Line
+	14200 5800 14350 5800
+Wire Wire Line
+	14350 5700 14200 5700
+Connection ~ 1650 6450
+Connection ~ 1650 7400
+Wire Wire Line
+	1650 7500 1750 7500
+Wire Wire Line
+	1650 8300 1650 8600
+Wire Wire Line
+	1650 8600 1750 8600
+Wire Wire Line
+	1750 8500 1650 8500
+Connection ~ 1650 8500
+Wire Wire Line
+	1650 7200 1650 7500
+Wire Wire Line
+	1650 7400 1750 7400
+Wire Wire Line
+	1650 6250 1650 6550
+Wire Wire Line
+	1650 6450 1750 6450
+Wire Wire Line
+	1650 6550 1750 6550
+Connection ~ 12800 4050
 $EndSCHEMATC

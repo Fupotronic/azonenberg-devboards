@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 05 Mar 2013 07:03:39 AM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sat 09 Mar 2013 08:27:18 AM EST
 
 BeginCmp
 TimeStamp = /5135F850;
@@ -235,28 +235,28 @@ BeginCmp
 TimeStamp = /5136213C;
 Reference = J2;
 ValeurCmp = USB_MINI_B_MALE_OUTPUT;
-IdModule  = HRS_MINI_USB;
+IdModule  = UNKNOWN_USB_MINI_B_MALE;
 EndCmp
 
 BeginCmp
 TimeStamp = /51362656;
 Reference = J3;
 ValeurCmp = USB_MINI_B_MALE_OUTPUT;
-IdModule  = HRS_MINI_USB;
+IdModule  = UNKNOWN_USB_MINI_B_MALE;
 EndCmp
 
 BeginCmp
 TimeStamp = /51362681;
 Reference = J4;
 ValeurCmp = USB_MINI_B_MALE_OUTPUT;
-IdModule  = HRS_MINI_USB;
+IdModule  = UNKNOWN_USB_MINI_B_MALE;
 EndCmp
 
 BeginCmp
 TimeStamp = /51362695;
 Reference = J5;
 ValeurCmp = USB_MINI_B_MALE_OUTPUT;
-IdModule  = HRS_MINI_USB;
+IdModule  = UNKNOWN_USB_MINI_B_MALE;
 EndCmp
 
 BeginCmp
@@ -358,6 +358,48 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /5136293D;
+Reference = SCREW1;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /5136294A;
+Reference = SCREW2;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /51362950;
+Reference = SCREW3;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /51362956;
+Reference = SCREW4;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /51362B34;
+Reference = SCREW5;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /51362B3A;
+Reference = SCREW6;
+ValeurCmp = CONN_1;
+IdModule  = SCREW_HOLE_4_40;
+EndCmp
+
+BeginCmp
 TimeStamp = /513601AB;
 Reference = U1;
 ValeurCmp = LDO1117-33;
@@ -383,6 +425,13 @@ TimeStamp = /5135DDBB;
 Reference = U4;
 ValeurCmp = CY7C65631;
 IdModule  = QFN56_0.5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /51367215;
+Reference = U5;
+ValeurCmp = TPS2044BD;
+IdModule  = SO16E;
 EndCmp
 
 EndListe
