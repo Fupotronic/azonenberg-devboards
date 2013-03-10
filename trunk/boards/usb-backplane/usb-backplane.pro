@@ -1,4 +1,4 @@
-update=Tue 05 Mar 2013 07:38:02 AM EST
+update=Sat 09 Mar 2013 02:20:42 PM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -86,3 +86,4 @@ LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
 LibName12=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/smt_azonenberg
+LibName13=ohw-logo
