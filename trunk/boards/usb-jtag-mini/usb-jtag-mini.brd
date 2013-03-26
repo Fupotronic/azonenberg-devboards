@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Wed 27 Feb 2013 01:56:44 AM EST
+PCBNEW-BOARD Version 1 date Thu 21 Mar 2013 01:01:56 AM EDT
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -7,6 +7,7 @@ encoding utf-8
 Units deci-mils
 LayerCount 4
 EnabledLayers 10FF8007
+VisibleLayers 00000004
 Links 151
 NoConn 0
 Di 378 4539 21473 13856
@@ -21,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A3 16535 11693
 Title ""
-Date "27 feb 2013"
+Date "21 mar 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -66,7 +67,7 @@ PadDrill 0
 Pad2MaskClearance 20
 Pad2PasteClearanceRatio -0.2
 AuxiliaryAxisOrg 0 0
-VisibleElements FFFF7FBF
+VisibleElements FFFF7EBF
 PcbPlotParams (pcbplotparams (layerselection 284983303) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory output/))
 $EndSETUP
 
@@ -6347,44 +6348,25 @@ $POLYSCORNERS
 18862 12917 0 0
 18804 12778 0 0
 18698 12672 0 0
-18559 12614 0 0
-18508 12614 0 0
-18508 11640 0 0
-18508 11490 0 0
-18450 11351 0 0
-18344 11245 0 0
-18205 11187 0 0
-18055 11187 0 0
-17932 11238 0 0
-17889 11134 0 0
-17849 11094 0 0
-17849 10955 0 0
-17828 10848 0 0
-17828 10847 0 0
-17767 10757 0 0
-17614 10604 0 0
-17753 10546 0 0
-17859 10440 0 0
-17900 10341 0 0
-17917 10348 0 0
-18067 10348 0 0
-18206 10290 0 0
-18312 10184 0 0
-18370 10045 0 0
-18370 9895 0 0
-18312 9756 0 0
-18206 9650 0 0
-18067 9592 0 0
-17917 9592 0 0
-17778 9650 0 0
-17672 9756 0 0
-17630 9854 0 0
-17614 9848 0 0
-17464 9848 0 0
-17325 9906 0 0
-17298 9933 0 0
-17298 9872 0 0
-17297 9871 0 0
+18646 12650 0 0
+18646 10154 0 0
+18646 10004 0 0
+18588 9865 0 0
+18482 9759 0 0
+18343 9701 0 0
+18252 9701 0 0
+18252 9610 0 0
+18194 9471 0 0
+18088 9365 0 0
+17949 9307 0 0
+17799 9307 0 0
+17660 9365 0 0
+17554 9471 0 0
+17496 9610 0 0
+17496 9701 0 0
+17425 9701 0 0
+17286 9759 0 0
+17277 9767 0 0
 17277 9765 0 0
 17276 9764 0 0
 17216 9674 0 0
@@ -6431,7 +6413,27 @@ $POLYSCORNERS
 18344 11885 0 0
 18450 11779 0 0
 18508 11640 0 0
-18508 12614 0 0
+18508 11490 0 0
+18450 11351 0 0
+18344 11245 0 0
+18205 11187 0 0
+18055 11187 0 0
+17932 11238 0 0
+17889 11134 0 0
+17849 11094 0 0
+17849 10955 0 0
+17832 10870 0 0
+17949 10870 0 0
+18088 10812 0 0
+18194 10706 0 0
+18252 10567 0 0
+18252 10457 0 0
+18343 10457 0 0
+18482 10399 0 0
+18588 10293 0 0
+18646 10154 0 0
+18646 12650 0 0
+18559 12614 0 0
 18409 12614 0 0
 18270 12672 0 0
 18164 12778 0 0
