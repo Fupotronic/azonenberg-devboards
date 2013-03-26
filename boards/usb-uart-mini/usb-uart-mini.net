@@ -1,0 +1,239 @@
+# EESchema Netlist Version 1.1 created  Tue 26 Mar 2013 06:11:11 PM EDT
+(
+ ( /515216DA $noname  J1 HIROSE_UX60SX-MB-5ST_(MINI_USB) {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
+  (    1 /5V_UNFILTERED )
+  (    2 /USB_DATA_N )
+  (    3 /USB_DATA_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 ? )
+  (    7 ? )
+ )
+ ( /515216EE $noname  U1 FT232RQ {Lib=FT232RQ}
+  (    1 /VCCIO )
+  (    2 /RX_DATA )
+  (    3 ? )
+  (    4 /GND )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 /USB_DATA_P )
+  (   15 /USB_DATA_N )
+  (   16 /3V3 )
+  (   17 /GND )
+  (   18 ? )
+  (   19 /5V )
+  (   20 /GND )
+  (   21 /RXLED_N )
+  (   22 /TXLED_N )
+  (   23 ? )
+  (   24 /GND )
+  (   25 ? )
+  (   26 /GND )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 /TX_DATA )
+  (   31 ? )
+  (   32 ? )
+  (   33 /GND )
+ )
+ ( /51521707 $noname  J2 JUMPER_0402_SPDT {Lib=JUMPER_0402_SPDT}
+  (    1 /3V3 )
+  (    2 /VCCIO )
+  (    3 /5V )
+ )
+ ( /515218D2 $noname  L1 600R {Lib=INDUCTOR_PWROUT}
+  (    1 /5V )
+  (    2 /5V_UNFILTERED )
+ )
+ ( /51521948 $noname  C1 10_nF {Lib=C}
+  (    1 /5V_UNFILTERED )
+  (    2 /GND )
+ )
+ ( /515219D2 $noname  C2 100_nF {Lib=C}
+  (    1 /5V )
+  (    2 /GND )
+ )
+ ( /51521A10 $noname  C3 4.7_uF {Lib=C}
+  (    1 /5V )
+  (    2 /GND )
+ )
+ ( /51521A59 $noname  C4 100_nF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /51521ABF $noname  R1 270 {Lib=R}
+  (    1 N-000007 )
+  (    2 /3V3 )
+ )
+ ( /51521ADE $noname  D1 GREEN {Lib=LED}
+  (    1 N-000007 )
+  (    2 /TXLED_N )
+ )
+ ( /51521B7B $noname  R2 270 {Lib=R}
+  (    1 N-000013 )
+  (    2 /3V3 )
+ )
+ ( /51521B82 $noname  D2 GREEN {Lib=LED}
+  (    1 N-000013 )
+  (    2 /RXLED_N )
+ )
+ ( /51521C17 $noname  P1 CONN_4 {Lib=CONN_4}
+  (    1 /VCCIO )
+  (    2 /GND )
+  (    3 /TX_DATA )
+  (    4 /RX_DATA )
+ )
+ ( /51521D57 $noname  D3 GREEN {Lib=LED}
+  (    1 N-000012 )
+  (    2 /GND )
+ )
+ ( /51521D5D $noname  R3 270 {Lib=R}
+  (    1 N-000012 )
+  (    2 /3V3 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/USB_DATA_N" "USB_DATA_N"
+ J1 2
+ U1 15
+Net 2 "/USB_DATA_P" "USB_DATA_P"
+ U1 14
+ J1 3
+Net 3 "/5V_UNFILTERED" "5V_UNFILTERED"
+ L1 2
+ C1 1
+ J1 1
+Net 4 "/5V" "5V"
+ J2 3
+ C3 1
+ C2 1
+ L1 1
+ U1 19
+Net 5 "/GND" "GND"
+ D3 2
+ U1 17
+ U1 26
+ J1 5
+ U1 24
+ U1 33
+ U1 4
+ U1 20
+ C4 2
+ C3 2
+ C2 2
+ C1 2
+ P1 2
+Net 6 "/3V3" "3V3"
+ U1 16
+ J2 1
+ C4 1
+ R2 2
+ R3 2
+ R1 2
+Net 7 "" ""
+ D1 1
+ R1 1
+Net 8 "/TXLED_N" "TXLED_N"
+ U1 22
+ D1 2
+Net 9 "/VCCIO" "VCCIO"
+ P1 1
+ U1 1
+ J2 2
+Net 10 "/TX_DATA" "TX_DATA"
+ U1 30
+ P1 3
+Net 11 "/RX_DATA" "RX_DATA"
+ U1 2
+ P1 4
+Net 12 "" ""
+ D3 1
+ R3 1
+Net 13 "" ""
+ R2 1
+ D2 1
+Net 14 "/RXLED_N" "RXLED_N"
+ D2 2
+ U1 21
+}
+#End

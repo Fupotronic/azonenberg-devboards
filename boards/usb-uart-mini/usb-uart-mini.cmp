@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 26 Mar 2013 06:07:46 PM EDT
+
+BeginCmp
+TimeStamp = /51521948;
+Reference = C1;
+ValeurCmp = 10_nF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /515219D2;
+Reference = C2;
+ValeurCmp = 100_nF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521A10;
+Reference = C3;
+ValeurCmp = 4.7_uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521A59;
+Reference = C4;
+ValeurCmp = 100_nF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521ADE;
+Reference = D1;
+ValeurCmp = GREEN;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521B82;
+Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521D57;
+Reference = D3;
+ValeurCmp = GREEN;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /515216DA;
+Reference = J1;
+ValeurCmp = HIROSE_UX60SX-MB-5ST_;
+IdModule  = HRS_MINI_USB;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521707;
+Reference = J2;
+ValeurCmp = JUMPER_0402_SPDT;
+IdModule  = JUMPER_0402_SPDT;
+EndCmp
+
+BeginCmp
+TimeStamp = /515218D2;
+Reference = L1;
+ValeurCmp = 600R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521C17;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = HEADER_SMT_4PIN;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521ABF;
+Reference = R1;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521B7B;
+Reference = R2;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51521D5D;
+Reference = R3;
+ValeurCmp = 270;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /515216EE;
+Reference = U1;
+ValeurCmp = FT232RQ;
+IdModule  = QFN32-5x5-PASTEFIX;
+EndCmp
+
+EndListe
