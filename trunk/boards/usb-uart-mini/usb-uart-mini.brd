@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Tue 26 Mar 2013 06:57:52 PM EDT
+PCBNEW-BOARD Version 1 date Tue 26 Mar 2013 07:16:43 PM EDT
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -58,10 +58,10 @@ TextModSize 600 600
 TextModWidth 120
 PadSize 600 600
 PadDrill 320
-Pad2MaskClearance 100
+Pad2MaskClearance 20
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFF7FBF
-PcbPlotParams (pcbplotparams (layerselection 15761409) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory output/))
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory output/))
 $EndSETUP
 
 $EQUIPOT
