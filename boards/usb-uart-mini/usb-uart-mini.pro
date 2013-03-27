@@ -1,4 +1,4 @@
-update=Tue 26 Mar 2013 06:01:47 PM EDT
+update=Tue 26 Mar 2013 10:56:44 PM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -67,13 +67,13 @@ TxtPcbH=600
 TxtModV=600
 TxtModH=600
 TxtModW=120
-VEgarde=100
-DrawLar=150
+VEgarde=20
+DrawLar=60
 EdgeLar=150
 TxtLar=120
 MSegLar=150
 [pcbnew/libraries]
-LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules
+LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d
 LibName1=sockets
 LibName2=connect
 LibName3=discret
