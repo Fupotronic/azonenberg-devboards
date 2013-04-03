@@ -44,7 +44,7 @@ encoding utf-8
 Sheet 1 1
 Title "5V 20A Power Distribution Unit"
 Date "3 apr 2013"
-Rev "$Rev: $"
+Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 ""
 Comment2 ""
