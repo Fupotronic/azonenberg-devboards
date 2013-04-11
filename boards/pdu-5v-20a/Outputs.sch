@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Apr 2013 06:07:37 PM EDT
+EESchema Schematic File Version 2  date Sun 07 Apr 2013 11:24:22 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -42,9 +42,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A2 16535 23386 portrait
 encoding utf-8
-Sheet 3 3
+Sheet 2 4
 Title "5V 20A Power Distribution Unit"
-Date "3 apr 2013"
+Date "7 apr 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Output ports"
@@ -83,7 +83,7 @@ L MOS_P Q?
 U 1 1 515BEF7B
 P 12550 950
 F 0 "Q?" H 12550 1140 60  0000 R CNN
-F 1 "MOS_P" H 12550 770 60  0000 R CNN
+F 1 "SI4413ADY-T1-E3" H 12750 750 60  0000 L CNN
 	1    12550 950 
 	1    0    0    1   
 $EndComp
@@ -98,13 +98,13 @@ GND
 Text Label 1400 22350 0    60   ~ 0
 GND
 Text Label 12050 950  2    60   ~ 0
-SWITCH_0_RAW
+CH0_OE_RAW
 $Comp
 L R R?
 U 1 1 515BF01D
 P 12350 650
 F 0 "R?" V 12430 650 50  0000 C CNN
-F 1 "R" V 12350 650 50  0000 C CNN
+F 1 "1K" V 12350 650 50  0000 C CNN
 	1    12350 650 
 	0    -1   -1   0   
 $EndComp
@@ -113,14 +113,12 @@ L MOS_N Q?
 U 1 1 515BF03F
 P 12000 1350
 F 0 "Q?" H 12010 1520 60  0000 R CNN
-F 1 "MOS_N" H 12010 1200 60  0000 R CNN
+F 1 "SI2304DDS-T1-GE3" H 12150 1050 60  0000 L CNN
 	1    12000 1350
 	1    0    0    -1  
 $EndComp
-Text Label 12100 1700 2    60   ~ 0
+Text Label 11400 1850 2    60   ~ 0
 GND
-Text Label 11600 1350 2    60   ~ 0
-SWITCH_0
 $Comp
 L INDUCTOR L?
 U 1 1 515BF13E
@@ -142,7 +140,7 @@ F 1 "100 uF" H 15200 1900 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 Text Label 15100 1800 2    60   ~ 0
-VOUT_0
+VOUT_0_FILTERED
 Text Label 15100 2200 2    60   ~ 0
 GND
 $Comp
@@ -253,7 +251,7 @@ L INA199AX-DCK U?
 U 1 1 515C992B
 P 1450 2000
 F 0 "U?" H 2050 1950 60  0000 C CNN
-F 1 "INA199AX-DCK" H 1800 1850 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 1850 60  0000 C CNN
 	1    1450 2000
 	-1   0    0    -1  
 $EndComp
@@ -458,9 +456,7 @@ Wire Wire Line
 Wire Wire Line
 	12650 1150 12800 1150
 Wire Wire Line
-	11600 1350 11800 1350
-Wire Wire Line
-	12100 1700 12100 1550
+	12100 1850 12100 1550
 Connection ~ 12100 950 
 Wire Wire Line
 	12100 650  12100 1150
@@ -513,10 +509,6 @@ Text Label 6150 1650 0    60   ~ 0
 3V3
 Wire Wire Line
 	6000 1650 6150 1650
-Text Label 6650 1950 0    60   ~ 0
-CH0_OVERCURRENT
-Wire Wire Line
-	6650 1950 6500 1950
 Text Label 6150 2250 0    60   ~ 0
 GND
 Wire Wire Line
@@ -526,4 +518,48 @@ Wire Wire Line
 Wire Wire Line
 	5350 2000 5550 2000
 Connection ~ 5350 1050
+Text HLabel 7450 1650 0    60   Output ~ 0
+CH0_OVERCURRENT
+Wire Wire Line
+	6500 1950 6650 1950
+Text HLabel 11500 1350 0    60   Input ~ 0
+CH0_OE
+Wire Wire Line
+	11500 1350 11800 1350
+Text Notes 5450 1300 0    60   ~ 0
+1 tap on pot = (2.5V / 256)\n= 9.76 mV at Vref\n= 19.52 mA at load
+$Comp
+L R R?
+U 1 1 515CCA95
+P 11550 1600
+F 0 "R?" V 11630 1600 50  0000 C CNN
+F 1 "1K" V 11550 1600 50  0000 C CNN
+	1    11550 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 11550 1350
+Wire Wire Line
+	11400 1850 12100 1850
+Connection ~ 11550 1850
+Text Notes 8100 1500 0    60   ~ 0
+Can read Vshunt up to 81.92 mV with 15-bit precision\nbut we max out scale at 25 mV\n5000 steps from 0 to 5A\n= 1mA per LSB
+Text Notes 12550 2550 0    60   ~ 0
+Push-pull PMOS driver instead?
+$Comp
+L R R?
+U 1 1 515D6B11
+P 6900 1950
+F 0 "R?" V 6980 1950 50  0000 C CNN
+F 1 "49.9" V 6900 1950 50  0000 C CNN
+	1    6900 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 1950 7500 1950
+Wire Wire Line
+	7450 1650 7500 1650
+Wire Wire Line
+	7500 1650 7500 1950
+Text Notes 8800 1950 0    60   ~ 0
+TODO: Replace with MCP3301\n13 bit precision so 8192 steps
 $EndSCHEMATC

@@ -42,50 +42,34 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 4 4
 Title "5V 20A Power Distribution Unit"
 Date "7 apr 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
-Comment1 "Top level"
+Comment1 "Control module"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2050 650  2050 3800
-U 515BECF6
-F0 "Outputs" 60
-F1 "Outputs.sch" 60
-F2 "5V" I L 2050 750 60 
-F3 "GND" I L 2050 950 60 
-F4 "INA_I2C_SDA" B L 2050 1150 60 
-F5 "3V3" I L 2050 850 60 
-F6 "INA_I2C_SCL" I L 2050 1250 60 
-F7 "CH0_POT_SCL" I L 2050 1550 60 
-F8 "CH0_POT_SDA" B L 2050 1450 60 
-F9 "CH0_OVERCURRENT" O L 2050 1650 60 
-F10 "CH0_OE" I L 2050 1750 60 
-$EndSheet
-$Sheet
-S 650  650  550  400 
-U 515BE6C3
-F0 "Power Ingress" 60
-F1 "PowerIngress.sch" 60
-F2 "5V" O R 1200 750 60 
-F3 "GND" O R 1200 950 60 
-F4 "3V3" O R 1200 850 60 
-$EndSheet
-Wire Wire Line
-	1200 750  2050 750 
-Wire Wire Line
-	1200 850  2050 850 
-Wire Wire Line
-	1200 950  2050 950 
-$Sheet
-S 650  1350 550  3100
-U 515D219D
-F0 "Control" 60
-F1 "Control.sch" 60
-$EndSheet
+$Comp
+L MCP9801_MSOP U?
+U 1 1 515D2587
+P 2500 1200
+F 0 "U?" H 2600 1300 60  0000 C CNN
+F 1 "MCP9801_MSOP" H 2600 1200 60  0000 C CNN
+	1    2500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP9801_MSOP U?
+U 1 1 515D2594
+P 5050 1200
+F 0 "U?" H 5150 1300 60  0000 C CNN
+F 1 "MCP9801_MSOP" H 5150 1200 60  0000 C CNN
+	1    5050 1200
+	1    0    0    -1  
+$EndComp
+Text Notes 5700 850  0    60   ~ 0
+TODO: Address assignment\nOne sensor at each end of main board
 $EndSCHEMATC

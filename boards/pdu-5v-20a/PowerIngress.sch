@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Apr 2013 06:07:37 PM EDT
+EESchema Schematic File Version 2  date Sun 07 Apr 2013 11:24:22 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -42,9 +42,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 4
 Title "5V 20A Power Distribution Unit"
-Date "3 apr 2013"
+Date "7 apr 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Power input and reverse voltage protection"
