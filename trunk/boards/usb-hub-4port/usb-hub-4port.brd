@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Fri 12 Apr 2013 06:34:05 PM EDT
+PCBNEW-BOARD Version 1 date Fri 12 Apr 2013 06:41:18 PM EDT
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -9,8 +9,8 @@ LayerCount 2
 EnabledLayers 1FFF8001
 Links 177
 NoConn 0
-Di 4982 5990 34572 36355
-Ndraw 7
+Di -6651 5990 34572 36355
+Ndraw 8
 Ntrack 978
 Nzone 0
 BoardThickness 630
@@ -112484,6 +112484,12 @@ Dl 390 2560
 Dl 380 2560
 Dl 380 2550
 $EndMODULE OSHWLOGO0.3IN
+$TEXTPCB
+Te "I love you too, DRC. But can you please just be"
+nl "quiet and let me leave my bottom silk layer blank?"
+Po 9055 13780 394 394 60 900
+De 20 0 0 Normal L C
+$EndTEXTPCB
 $TEXTPCB
 Te "http://tinyurl.com/azboard003"
 Po 29134 24016 394 394 60 900
