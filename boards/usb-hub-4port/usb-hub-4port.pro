@@ -1,4 +1,4 @@
-update=Thu 11 Apr 2013 02:33:09 PM EDT
+update=Fri 12 Apr 2013 06:22:16 PM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,9 +58,9 @@ LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azo
 [pcbnew]
 version=1
 LastNetListRead=usb-hub-4port.net
-PadDrlX=531
-PadDimH=689
-PadDimV=689
+PadDrlX=362
+PadDimH=591
+PadDimV=591
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -86,3 +86,4 @@ LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
 LibName12=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/smt_azonenberg
+LibName13=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty/ohw-logo
