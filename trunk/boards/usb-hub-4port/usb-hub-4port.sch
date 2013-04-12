@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 11 Apr 2013 02:40:48 PM EDT
+EESchema Schematic File Version 2  date Fri 12 Apr 2013 06:12:27 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1185,10 +1185,10 @@ F 7 "GND" H 2275 7600 50  0001 C CNN "Ground"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_3 K?
+L CONN_3 K2
 U 1 1 51670416
 P 4250 2100
-F 0 "K?" V 4200 2100 50  0000 C CNN
+F 0 "K2" V 4200 2100 50  0000 C CNN
 F 1 "CONN_3" V 4300 2100 40  0000 C CNN
 	1    4250 2100
 	1    0    0    -1  
