@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 17 May 2013 05:37:28 PM EDT
+EESchema Schematic File Version 2  date Fri 17 May 2013 05:39:05 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,6 +37,7 @@ LIBS:passive-azonenberg
 LIBS:power-azonenberg
 LIBS:special-azonenberg
 LIBS:xilinx-azonenberg
+LIBS:usb-uart-4xrj45-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,7 +45,7 @@ encoding utf-8
 Sheet 1 1
 Title "USB to 4x RS232 RJ45"
 Date "17 may 2013"
-Rev "$Rev: 107$"
+Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
 Comment2 ""
