@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Wed 27 Mar 2013 03:37:08 AM EDT
+PCBNEW-BOARD Version 1 date Sun 14 Apr 2013 09:20:36 PM EDT
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A3 16535 11693
 Title ""
-Date "27 mar 2013"
+Date "15 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -59,9 +59,10 @@ TextModWidth 120
 PadSize 600 600
 PadDrill 320
 Pad2MaskClearance 20
+Pad2PasteClearanceRatio -0.2
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFE7FBF
-PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory output/))
+PcbPlotParams (pcbplotparams (layerselection 284983297) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory output/))
 $EndSETUP
 
 $EQUIPOT
@@ -1285,7 +1286,7 @@ De 0 0 5 515230D8 0
 Po 0 10768 9980 10807 9980 60 -1
 De 0 0 6 0 0
 Po 0 11882 9929 12500 9929 60 -1
-De 15 0 6 5152A12D 800000
+De 15 0 6 5152A12D 0
 Po 0 11713 10098 11882 9929 60 -1
 De 15 0 6 5152A12C 0
 Po 3 11713 10098 11713 10098 256 -1
@@ -1353,7 +1354,7 @@ De 15 1 10 0 0
 Po 0 8769 8397 8760 8406 60 -1
 De 15 0 10 51522F81 0
 Po 0 11033 9508 11033 9263 60 -1
-De 15 0 11 0 400000
+De 15 0 11 0 0
 Po 0 12835 7441 12500 7106 60 -1
 De 15 0 11 51526157 0
 Po 0 12500 7106 12500 6929 60 -1
@@ -1367,9 +1368,9 @@ De 15 0 11 5152A0E8 0
 Po 0 11398 7441 12835 7441 60 -1
 De 15 0 11 5152A0EC 0
 Po 0 11042 9517 11042 9782 60 -1
-De 0 0 11 0 400000
+De 0 0 11 0 0
 Po 0 11033 9773 11033 9508 60 -1
-De 15 0 11 5152A115 800000
+De 15 0 11 5152A115 0
 Po 0 11083 9823 11033 9773 60 -1
 De 15 0 11 5152A114 0
 Po 3 11083 9823 11083 9823 256 -1
@@ -1389,9 +1390,9 @@ De 15 1 12 0 0
 Po 0 11761 8317 11791 8287 60 -1
 De 15 0 12 51525F25 0
 Po 0 10590 10039 10964 10039 60 -1
-De 15 0 13 0 400000
+De 15 0 13 0 0
 Po 0 11635 9665 11983 9665 60 -1
-De 0 0 13 5152A123 800000
+De 0 0 13 5152A123 0
 Po 0 11457 9843 11635 9665 60 -1
 De 0 0 13 5152A122 0
 Po 3 11457 9843 11457 9843 256 -1
