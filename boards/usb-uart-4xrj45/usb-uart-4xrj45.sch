@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 17 May 2013 08:27:25 PM EDT
+EESchema Schematic File Version 2  date Fri 17 May 2013 08:33:56 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -460,7 +460,7 @@ L OSC U1
 U 1 1 5196C29E
 P 20100 1400
 F 0 "U1" H 20100 1400 60  0000 C CNN
-F 1 "OSC" H 20100 1300 60  0000 C CNN
+F 1 "12.000 MHz" H 20100 1050 60  0000 C CNN
 	1    20100 1400
 	1    0    0    -1  
 $EndComp
@@ -1812,7 +1812,7 @@ L LED D1
 U 1 1 5196E90C
 P 13950 4150
 F 0 "D1" H 13950 4250 50  0000 C CNN
-F 1 "LED" H 13950 4050 50  0000 C CNN
+F 1 "GREEN" H 13950 4050 50  0000 C CNN
 	1    13950 4150
 	1    0    0    -1  
 $EndComp
