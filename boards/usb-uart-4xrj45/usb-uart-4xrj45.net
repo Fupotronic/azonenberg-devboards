@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Fri 17 May 2013 08:27:56 PM EDT
+# EESchema Netlist Version 1.1 created  Fri 17 May 2013 10:24:36 PM EDT
 (
  ( /51969F03 $noname  J1 UX60SX-MB-5ST {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
   (    1 /5V_RAW )
@@ -188,7 +188,7 @@
   (    1 VCC )
   (    2 /EEPROM_CLK )
  )
- ( /5196C29E $noname  U1 OSC {Lib=OSC}
+ ( /5196C29E $noname  U1 12.000_MHz {Lib=OSC}
   (    1 VCC )
   (    2 GND )
   (    3 /CLK_12MHZ )
@@ -261,26 +261,26 @@
   (    2 GND )
   (    3 N-000023 )
   (    4 N-000025 )
-  (    5 /CH0_TXD_RAW )
-  (    6 /CH0_RTS_N_RAW )
-  (    7 /CH0_DTR_N_RAW )
+  (    5 /CH0_RTS_N_RAW )
+  (    6 /CH0_DTR_N_RAW )
+  (    7 /CH0_TXD_RAW )
   (    8 /CH0_RXD_BUF )
-  (    9 /CH0_CTS_N_BUF )
+  (    9 /CH0_DSR_N_BUF )
   (   10 ? )
-  (   11 /CH0_DSR_N_BUF )
+  (   11 /CH0_CTS_N_BUF )
   (   12 ? )
   (   13 VCC )
   (   14 VCC )
   (   15 ? )
   (   16 ? )
   (   17 GND )
-  (   18 /CH0_DSR_N )
+  (   18 /CH0_CTS_N )
   (   19 GND )
-  (   20 /CH0_CTS_N )
+  (   20 /CH0_DSR_N )
   (   21 /CH0_RXD )
-  (   22 /CH0_DTR_N )
-  (   23 /CH0_RTS_N )
-  (   24 /CH0_TXD )
+  (   22 /CH0_TXD )
+  (   23 /CH0_DTR_N )
+  (   24 /CH0_RTS_N )
   (   25 N-000021 )
   (   26 VCC )
   (   27 N-000024 )
@@ -311,26 +311,26 @@
   (    2 GND )
   (    3 N-000017 )
   (    4 N-000019 )
-  (    5 /CH1_TXD_RAW )
-  (    6 /CH1_RTS_N_RAW )
-  (    7 /CH1_DTR_N_RAW )
+  (    5 /CH1_RTS_N_RAW )
+  (    6 /CH1_DTR_N_RAW )
+  (    7 /CH1_TXD_RAW )
   (    8 /CH1_RXD_BUF )
-  (    9 /CH1_CTS_N_BUF )
+  (    9 /CH1_DSR_N_BUF )
   (   10 ? )
-  (   11 /CH1_DSR_N_BUF )
+  (   11 /CH1_CTS_N_BUF )
   (   12 ? )
   (   13 VCC )
   (   14 VCC )
   (   15 ? )
   (   16 ? )
   (   17 GND )
-  (   18 /CH1_DSR_N )
+  (   18 /CH1_CTS_N )
   (   19 GND )
-  (   20 /CH1_CTS_N )
+  (   20 /CH1_DSR_N )
   (   21 /CH1_RXD )
-  (   22 /CH1_DTR_N )
-  (   23 /CH1_RTS_N )
-  (   24 /CH1_TXD )
+  (   22 /CH1_TXD )
+  (   23 /CH1_DTR_N )
+  (   24 /CH1_RTS_N )
   (   25 N-000015 )
   (   26 VCC )
   (   27 N-000018 )
@@ -361,26 +361,26 @@
   (    2 GND )
   (    3 N-000099 )
   (    4 N-000101 )
-  (    5 /CH2_TXD_RAW )
-  (    6 /CH2_RTS_N_RAW )
-  (    7 /CH2_DTR_N_RAW )
+  (    5 /CH2_RTS_N_RAW )
+  (    6 /CH2_DTR_N_RAW )
+  (    7 /CH2_TXD_RAW )
   (    8 /CH2_RXD_BUF )
-  (    9 /CH2_CTS_N_BUF )
+  (    9 /CH2_DSR_N_BUF )
   (   10 ? )
-  (   11 /CH2_DSR_N_BUF )
+  (   11 /CH2_CTS_N_BUF )
   (   12 ? )
   (   13 VCC )
   (   14 VCC )
   (   15 ? )
   (   16 ? )
   (   17 GND )
-  (   18 /CH2_DSR_N )
+  (   18 /CH2_CTS_N )
   (   19 GND )
-  (   20 /CH2_CTS_N )
+  (   20 /CH2_DSR_N )
   (   21 /CH2_RXD )
-  (   22 /CH2_DTR_N )
-  (   23 /CH2_RTS_N )
-  (   24 /CH2_TXD )
+  (   22 /CH2_TXD )
+  (   23 /CH2_DTR_N )
+  (   24 /CH2_RTS_N )
   (   25 N-000097 )
   (   26 VCC )
   (   27 N-000100 )
@@ -411,26 +411,26 @@
   (    2 GND )
   (    3 N-000039 )
   (    4 N-000041 )
-  (    5 /CH3_TXD_RAW )
-  (    6 /CH3_RTS_N_RAW )
-  (    7 /CH3_DTR_N_RAW )
+  (    5 /CH3_RTS_N_RAW )
+  (    6 /CH3_DTR_N_RAW )
+  (    7 /CH3_TXD_RAW )
   (    8 /CH3_RXD_BUF )
-  (    9 /CH3_CTS_N_BUF )
+  (    9 /CH3_DSR_N_BUF )
   (   10 ? )
-  (   11 /CH3_DSR_N_BUF )
+  (   11 /CH3_CTS_N_BUF )
   (   12 ? )
   (   13 VCC )
   (   14 VCC )
   (   15 ? )
   (   16 ? )
   (   17 GND )
-  (   18 /CH3_DSR_N )
+  (   18 /CH3_CTS_N )
   (   19 GND )
-  (   20 /CH3_CTS_N )
+  (   20 /CH3_DSR_N )
   (   21 /CH3_RXD )
-  (   22 /CH3_DTR_N )
-  (   23 /CH3_RTS_N )
-  (   24 /CH3_TXD )
+  (   22 /CH3_TXD )
+  (   23 /CH3_DTR_N )
+  (   24 /CH3_RTS_N )
   (   25 N-000095 )
   (   26 VCC )
   (   27 N-000040 )
@@ -510,7 +510,7 @@
   (    1 VCC )
   (    2 N-000092 )
  )
- ( /5196E90C $noname  D1 LED {Lib=LED}
+ ( /5196E90C $noname  D1 GREEN {Lib=LED}
   (    1 N-000092 )
   (    2 GND )
  )
@@ -861,14 +861,14 @@ Net 9 "/CH3_RX_LED" "CH3_RX_LED"
  U2 7
  R16 2
 Net 10 "/CH2_DTR_N" "CH2_DTR_N"
- U9 22
+ U9 23
  U5 43
 Net 11 "/CH2_CTS_N" "CH2_CTS_N"
- U9 20
+ U9 18
  U5 41
 Net 12 "/CH2_RTS_N" "CH2_RTS_N"
  U5 40
- U9 23
+ U9 24
 Net 13 "/CLK_12MHZ" "CLK_12MHZ"
  U5 2
  U1 3
@@ -923,22 +923,22 @@ Net 29 "/3V3_PLL" "3V3_PLL"
  C8 1
  L2 1
 Net 30 "/CH3_TXD" "CH3_TXD"
- U10 24
  U5 48
+ U10 22
 Net 31 "/CH3_RXD" "CH3_RXD"
  U10 21
  U5 52
 Net 32 "/CH3_DSR_N" "CH3_DSR_N"
- U10 18
+ U10 20
  U5 57
 Net 33 "/CH3_DTR_N" "CH3_DTR_N"
- U10 22
  U5 55
+ U10 23
 Net 34 "/CH3_CTS_N" "CH3_CTS_N"
- U10 20
+ U10 18
  U5 54
 Net 35 "/CH3_RTS_N" "CH3_RTS_N"
- U10 23
+ U10 24
  U5 53
 Net 36 "VCC" "VCC"
  U2 10
@@ -947,8 +947,8 @@ Net 36 "VCC" "VCC"
  C16 1
  C14 1
  C3 1
- R7 1
  U4 6
+ R7 1
  C15 1
  L2 2
  U9 13
@@ -997,84 +997,84 @@ Net 40 "" ""
  C36 2
  U10 27
 Net 41 "" ""
- U10 4
  C37 2
+ U10 4
 Net 46 "/CH3_RXD_BUF" "CH3_RXD_BUF"
- U7 D3
  U10 8
+ U7 D3
 Net 47 "/CH3_CTS_N_BUF" "CH3_CTS_N_BUF"
- U10 9
+ U10 11
  U7 D1
 Net 48 "/CH3_DSR_N_BUF" "CH3_DSR_N_BUF"
- U10 11
+ U10 9
  U7 D2
 Net 49 "/CH3_TXD_RAW" "CH3_TXD_RAW"
- U10 5
+ U10 7
  U7 D6
 Net 50 "/CH3_RTS_N_RAW" "CH3_RTS_N_RAW"
- U10 6
+ U10 5
  U7 D8
 Net 51 "/CH3_DTR_N_RAW" "CH3_DTR_N_RAW"
- U10 7
+ U10 6
  U7 D7
 Net 52 "/EEPROM_DO" "EEPROM_DO"
  U4 1
  R6 1
 Net 53 "/CH0_TXD" "CH0_TXD"
- U6 24
+ U6 22
  U5 16
 Net 54 "/CH0_RXD" "CH0_RXD"
  U5 17
  U6 21
 Net 55 "/CH0_DSR_N" "CH0_DSR_N"
- U6 18
+ U6 20
  U5 22
 Net 56 "/CH0_DTR_N" "CH0_DTR_N"
- U6 22
+ U6 23
  U5 21
 Net 57 "/CH0_CTS_N" "CH0_CTS_N"
  U5 19
- U6 20
+ U6 18
 Net 58 "/CH0_RTS_N" "CH0_RTS_N"
  U5 18
- U6 23
+ U6 24
 Net 59 "/CH1_TXD" "CH1_TXD"
+ U8 22
  U5 26
- U8 24
 Net 60 "/CH1_RXD" "CH1_RXD"
  U8 21
  U5 27
 Net 61 "/CH1_DSR_N" "CH1_DSR_N"
+ U8 20
  U5 32
- U8 18
 Net 62 "/CH1_DTR_N" "CH1_DTR_N"
- U8 22
  U5 30
+ U8 23
 Net 63 "/CH1_CTS_N" "CH1_CTS_N"
  U5 29
- U8 20
+ U8 18
 Net 64 "/CH1_RTS_N" "CH1_RTS_N"
  U5 28
- U8 23
+ U8 24
 Net 65 "/CH2_TXD" "CH2_TXD"
  U5 38
- U9 24
+ U9 22
 Net 66 "/CH2_RXD" "CH2_RXD"
- U9 21
  U5 39
+ U9 21
 Net 67 "/CH2_DSR_N" "CH2_DSR_N"
+ U9 20
  U5 44
- U9 18
 Net 68 "/VREF" "VREF"
  U5 6
  R8 2
 Net 69 "/RESET_N" "RESET_N"
- R1 2
  R2 1
  U5 14
+ R1 2
 Net 70 "/EEPROM_CS" "EEPROM_CS"
- R3 2
  U2 12
+ R3 2
  U5 63
  U4 5
 Net 71 "/EEPROM_CLK" "EEPROM_CLK"
@@ -1083,77 +1083,77 @@ Net 71 "/EEPROM_CLK" "EEPROM_CLK"
  U5 62
  U4 4
 Net 72 "/EEPROM_DATA" "EEPROM_DATA"
- R6 2
- U5 61
  R7 2
  U4 3
+ U5 61
+ R6 2
  U2 14
 Net 73 "/CH1_TX_LED_R" "CH1_TX_LED_R"
- U7 B10
  R11 1
+ U7 B10
 Net 74 "/CH1_RX_LED_R" "CH1_RX_LED_R"
- R12 1
  U7 B12
+ R12 1
 Net 75 "/CH1_CTS_N_BUF" "CH1_CTS_N_BUF"
+ U8 11
  U7 B1
- U8 9
 Net 76 "/CH1_DSR_N_BUF" "CH1_DSR_N_BUF"
  U7 B2
- U8 11
+ U8 9
 Net 77 "/CH1_RXD_BUF" "CH1_RXD_BUF"
  U7 B3
  U8 8
 Net 78 "/CH1_TXD_RAW" "CH1_TXD_RAW"
- U7 B6
- U8 5
-Net 79 "/CH1_DTR_N_RAW" "CH1_DTR_N_RAW"
  U8 7
+ U7 B6
+Net 79 "/CH1_DTR_N_RAW" "CH1_DTR_N_RAW"
+ U8 6
  U7 B7
 Net 80 "/CH1_RTS_N_RAW" "CH1_RTS_N_RAW"
- U8 6
  U7 B8
+ U8 5
 Net 81 "/CH2_RXD_BUF" "CH2_RXD_BUF"
  U9 8
  U7 C3
 Net 82 "/CH2_CTS_N_BUF" "CH2_CTS_N_BUF"
  U7 C1
- U9 9
+ U9 11
 Net 83 "/CH2_DSR_N_BUF" "CH2_DSR_N_BUF"
  U7 C2
- U9 11
+ U9 9
 Net 84 "/CH2_TXD_RAW" "CH2_TXD_RAW"
- U9 5
+ U9 7
  U7 C6
 Net 85 "/CH2_RTS_N_RAW" "CH2_RTS_N_RAW"
- U9 6
+ U9 5
  U7 C8
 Net 86 "/CH2_DTR_N_RAW" "CH2_DTR_N_RAW"
- U9 7
+ U9 6
  U7 C7
 Net 87 "/CH0_TXD_RAW" "CH0_TXD_RAW"
- U6 5
  U7 A6
-Net 88 "/CH0_DTR_N_RAW" "CH0_DTR_N_RAW"
  U6 7
+Net 88 "/CH0_DTR_N_RAW" "CH0_DTR_N_RAW"
+ U6 6
  U7 A7
 Net 89 "/CH0_RTS_N_RAW" "CH0_RTS_N_RAW"
- U6 6
+ U6 5
  U7 A8
 Net 90 "/CH3_TX_LED_R" "CH3_TX_LED_R"
  R15 1
  U7 D10
 Net 91 "/CH3_RX_LED_R" "CH3_RX_LED_R"
- U7 D12
  R16 1
+ U7 D12
 Net 92 "" ""
  R17 2
  D1 1
 Net 93 "/CH2_TX_LED_R" "CH2_TX_LED_R"
- U7 C10
  R13 1
+ U7 C10
 Net 94 "/CH2_RX_LED_R" "CH2_RX_LED_R"
- U7 C12
  R14 1
+ U7 C12
 Net 95 "" ""
  C34 1
  U10 25
@@ -1161,8 +1161,8 @@ Net 96 "" ""
  C29 2
  U9 28
 Net 97 "" ""
- C29 1
  U9 25
+ C29 1
 Net 98 "" ""
  U9 1
  C28 1
@@ -1179,11 +1179,11 @@ Net 102 "/CH0_RXD_BUF" "CH0_RXD_BUF"
  U7 A3
  U6 8
 Net 103 "/CH0_CTS_N_BUF" "CH0_CTS_N_BUF"
- U6 9
+ U6 11
  U7 A1
 Net 104 "/CH0_DSR_N_BUF" "CH0_DSR_N_BUF"
+ U6 9
  U7 A2
- U6 11
 Net 105 "/CH0_TX_LED_R" "CH0_TX_LED_R"
  U7 A10
  R9 1
@@ -1192,29 +1192,29 @@ Net 106 "/CH0_RX_LED_R" "CH0_RX_LED_R"
  R10 1
 Net 107 "GND" "GND"
  C26 1
- C25 1
+ C27 1
  U8 19
  U8 17
+ C25 1
+ C31 1
  C32 1
  U6 2
  C1 2
  U7 C11
  U7 C9
- C27 1
  U10 2
  U7 A11
+ U7 A9
  U7 B11
  U7 B9
- U7 A9
+ U7 A5
  U7 B5
  U7 B4
- U7 A5
  U7 A4
  U10 17
  U9 17
  U9 19
  C30 1
- C31 1
  J1 5
  U7 C5
  D1 2
@@ -1248,12 +1248,12 @@ Net 107 "GND" "GND"
  U7 C4
  C20 1
  C2 2
+ C4 2
  U3 1
  U8 2
  U5 47
  U9 2
  C5 2
- C4 2
  U10 19
  C35 1
  C9 1
@@ -1272,8 +1272,8 @@ Net 112 "/1V8" "1V8"
  U5 49
  U5 64
  U5 37
- C10 1
  U5 12
+ C10 1
  C13 1
  C12 1
  C11 1

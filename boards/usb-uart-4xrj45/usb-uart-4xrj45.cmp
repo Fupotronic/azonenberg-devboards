@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Fri 17 May 2013 08:42:28 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Fri 17 May 2013 10:12:27 PM EDT
 
 BeginCmp
 TimeStamp = /5196D052;
@@ -459,7 +459,7 @@ BeginCmp
 TimeStamp = /5196CDAD;
 Reference = U7;
 ValeurCmp = RJHSE538504;
-IdModule  = ;
+IdModule  = RJHSE538504;
 EndCmp
 
 BeginCmp
