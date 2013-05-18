@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 17 May 2013 08:33:56 PM EDT
+EESchema Schematic File Version 2  date Fri 17 May 2013 10:24:33 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -655,17 +655,17 @@ F 1 "MAX3238" H 3300 9600 60  0000 C CNN
 	1    3250 9650
 	1    0    0    -1  
 $EndComp
-Text Label 4300 9400 0    60   ~ 0
+Text Label 4300 9600 0    60   ~ 0
 CH0_TXD
 Text Label 4300 10000 0    60   ~ 0
 CH0_RXD
-Text Label 4300 10200 0    60   ~ 0
-CH0_DSR_N
-Text Label 4300 9600 0    60   ~ 0
-CH0_DTR_N
 Text Label 4300 10100 0    60   ~ 0
-CH0_CTS_N
+CH0_DSR_N
 Text Label 4300 9500 0    60   ~ 0
+CH0_DTR_N
+Text Label 4300 10200 0    60   ~ 0
+CH0_CTS_N
+Text Label 4300 9400 0    60   ~ 0
 CH0_RTS_N
 $Comp
 L C C20
@@ -724,15 +724,15 @@ NoConn ~ 2250 9700
 NoConn ~ 2250 9800
 Text Label 2100 10000 2    60   ~ 0
 CH0_RXD_BUF
-Text Label 2100 10100 2    60   ~ 0
-CH0_CTS_N_BUF
 Text Label 2100 10200 2    60   ~ 0
+CH0_CTS_N_BUF
+Text Label 2100 10100 2    60   ~ 0
 CH0_DSR_N_BUF
-Text Label 2100 9400 2    60   ~ 0
-CH0_TXD_RAW
-Text Label 2100 9500 2    60   ~ 0
-CH0_RTS_N_RAW
 Text Label 2100 9600 2    60   ~ 0
+CH0_TXD_RAW
+Text Label 2100 9400 2    60   ~ 0
+CH0_RTS_N_RAW
+Text Label 2100 9500 2    60   ~ 0
 CH0_DTR_N_RAW
 NoConn ~ 10550 4600
 NoConn ~ 10550 3750
@@ -749,17 +749,17 @@ F 1 "MAX3238" H 7300 9600 60  0000 C CNN
 	1    7250 9650
 	1    0    0    -1  
 $EndComp
-Text Label 8300 9400 0    60   ~ 0
+Text Label 8300 9600 0    60   ~ 0
 CH1_TXD
 Text Label 8300 10000 0    60   ~ 0
 CH1_RXD
-Text Label 8300 10200 0    60   ~ 0
-CH1_DSR_N
-Text Label 8300 9600 0    60   ~ 0
-CH1_DTR_N
 Text Label 8300 10100 0    60   ~ 0
-CH1_CTS_N
+CH1_DSR_N
 Text Label 8300 9500 0    60   ~ 0
+CH1_DTR_N
+Text Label 8300 10200 0    60   ~ 0
+CH1_CTS_N
+Text Label 8300 9400 0    60   ~ 0
 CH1_RTS_N
 $Comp
 L C C25
@@ -818,15 +818,15 @@ NoConn ~ 6250 9700
 NoConn ~ 6250 9800
 Text Label 6100 10000 2    60   ~ 0
 CH1_RXD_BUF
-Text Label 6100 10100 2    60   ~ 0
-CH1_CTS_N_BUF
 Text Label 6100 10200 2    60   ~ 0
+CH1_CTS_N_BUF
+Text Label 6100 10100 2    60   ~ 0
 CH1_DSR_N_BUF
-Text Label 6100 9400 2    60   ~ 0
-CH1_TXD_RAW
-Text Label 6100 9500 2    60   ~ 0
-CH1_RTS_N_RAW
 Text Label 6100 9600 2    60   ~ 0
+CH1_TXD_RAW
+Text Label 6100 9400 2    60   ~ 0
+CH1_RTS_N_RAW
+Text Label 6100 9500 2    60   ~ 0
 CH1_DTR_N_RAW
 $Comp
 L MAX3238 U9
@@ -837,17 +837,17 @@ F 1 "MAX3238" H 11100 9600 60  0000 C CNN
 	1    11050 9650
 	1    0    0    -1  
 $EndComp
-Text Label 12100 9400 0    60   ~ 0
+Text Label 12100 9600 0    60   ~ 0
 CH2_TXD
 Text Label 12100 10000 0    60   ~ 0
 CH2_RXD
-Text Label 12100 10200 0    60   ~ 0
-CH2_DSR_N
-Text Label 12100 9600 0    60   ~ 0
-CH2_DTR_N
 Text Label 12100 10100 0    60   ~ 0
-CH2_CTS_N
+CH2_DSR_N
 Text Label 12100 9500 0    60   ~ 0
+CH2_DTR_N
+Text Label 12100 10200 0    60   ~ 0
+CH2_CTS_N
+Text Label 12100 9400 0    60   ~ 0
 CH2_RTS_N
 $Comp
 L C C30
@@ -906,15 +906,15 @@ NoConn ~ 10050 9700
 NoConn ~ 10050 9800
 Text Label 9900 10000 2    60   ~ 0
 CH2_RXD_BUF
-Text Label 9900 10100 2    60   ~ 0
-CH2_CTS_N_BUF
 Text Label 9900 10200 2    60   ~ 0
+CH2_CTS_N_BUF
+Text Label 9900 10100 2    60   ~ 0
 CH2_DSR_N_BUF
-Text Label 9900 9400 2    60   ~ 0
-CH2_TXD_RAW
-Text Label 9900 9500 2    60   ~ 0
-CH2_RTS_N_RAW
 Text Label 9900 9600 2    60   ~ 0
+CH2_TXD_RAW
+Text Label 9900 9400 2    60   ~ 0
+CH2_RTS_N_RAW
+Text Label 9900 9500 2    60   ~ 0
 CH2_DTR_N_RAW
 $Comp
 L MAX3238 U10
@@ -925,17 +925,17 @@ F 1 "MAX3238" H 14800 9600 60  0000 C CNN
 	1    14750 9650
 	1    0    0    -1  
 $EndComp
-Text Label 15800 9400 0    60   ~ 0
+Text Label 15800 9600 0    60   ~ 0
 CH3_TXD
 Text Label 15800 10000 0    60   ~ 0
 CH3_RXD
-Text Label 15800 10200 0    60   ~ 0
-CH3_DSR_N
-Text Label 15800 9600 0    60   ~ 0
-CH3_DTR_N
 Text Label 15800 10100 0    60   ~ 0
-CH3_CTS_N
+CH3_DSR_N
 Text Label 15800 9500 0    60   ~ 0
+CH3_DTR_N
+Text Label 15800 10200 0    60   ~ 0
+CH3_CTS_N
+Text Label 15800 9400 0    60   ~ 0
 CH3_RTS_N
 $Comp
 L C C35
@@ -994,15 +994,15 @@ NoConn ~ 13750 9700
 NoConn ~ 13750 9800
 Text Label 13600 10000 2    60   ~ 0
 CH3_RXD_BUF
-Text Label 13600 10100 2    60   ~ 0
-CH3_CTS_N_BUF
 Text Label 13600 10200 2    60   ~ 0
+CH3_CTS_N_BUF
+Text Label 13600 10100 2    60   ~ 0
 CH3_DSR_N_BUF
-Text Label 13600 9400 2    60   ~ 0
-CH3_TXD_RAW
-Text Label 13600 9500 2    60   ~ 0
-CH3_RTS_N_RAW
 Text Label 13600 9600 2    60   ~ 0
+CH3_TXD_RAW
+Text Label 13600 9400 2    60   ~ 0
+CH3_RTS_N_RAW
+Text Label 13600 9500 2    60   ~ 0
 CH3_DTR_N_RAW
 Wire Wire Line
 	1450 750  1550 750 
