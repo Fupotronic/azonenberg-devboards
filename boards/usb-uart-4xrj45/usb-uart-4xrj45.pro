@@ -1,4 +1,4 @@
-update=Fri 17 May 2013 08:59:24 PM EDT
+update=Sat 18 May 2013 12:38:21 AM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,9 +58,9 @@ LibName38=xilinx-azonenberg
 [pcbnew]
 version=1
 LastNetListRead=usb-uart-4xrj45.net
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=350
+PadDimH=472
+PadDimV=472
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -71,7 +71,7 @@ VEgarde=100
 DrawLar=150
 EdgeLar=150
 TxtLar=120
-MSegLar=150
+MSegLar=60
 [pcbnew/libraries]
 LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs
 LibName1=sockets
@@ -89,3 +89,4 @@ LibName12=smt_azonenberg
 LibName13=esd_sensitive_small
 LibName14=recycle_logo
 LibName15=pb_free
+LibName16=3rdparty/ohw-logo
