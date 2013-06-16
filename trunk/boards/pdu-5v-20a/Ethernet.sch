@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 14 Apr 2013 07:35:26 PM EDT
+EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:50:29 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -42,9 +42,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title "5V 20A Power Distribution Unit"
-Date "14 apr 2013"
+Date "16 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Ethernet interface"
@@ -53,10 +53,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L KSZ9021RN U16
+L KSZ9021RN U1
 U 1 1 516BA4C8
 P 4850 5500
-F 0 "U16" H 5600 5400 60  0000 C CNN
+F 0 "U1" H 5600 5400 60  0000 C CNN
 F 1 "KSZ9021RN" H 5600 5300 60  0000 C CNN
 	1    4850 5500
 	1    0    0    -1  

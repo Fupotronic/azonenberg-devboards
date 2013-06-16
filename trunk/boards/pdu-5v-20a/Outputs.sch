@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 14 Apr 2013 07:35:26 PM EDT
+EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:50:29 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A2 16535 23386 portrait
 encoding utf-8
 Sheet 5 5
 Title "5V 20A Power Distribution Unit"
-Date "14 apr 2013"
+Date "16 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Output ports"
@@ -59,10 +59,10 @@ VOUT_0
 Text Label 13300 1400 2    60   ~ 0
 VOUT_0_FUSED
 $Comp
-L R-4TERM R15
+L R-4TERM R42
 U 1 1 515BEEC1
 P 14500 1200
-F 0 "R15" V 14580 1200 50  0000 C CNN
+F 0 "R42" V 14580 1200 50  0000 C CNN
 F 1 "0.005" V 14400 1200 50  0000 C CNN
 	1    14500 1200
 	0    1    -1   0   
@@ -79,20 +79,20 @@ $EndComp
 Text Label 12800 1050 0    60   ~ 0
 VOUT_0_RAW
 $Comp
-L MOS_P Q4
+L MOS_P Q13
 U 1 1 515BEF7B
 P 12550 950
-F 0 "Q4" H 12550 1140 60  0000 R CNN
+F 0 "Q13" H 12550 1140 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 750 60  0000 L CNN
 	1    12550 950 
 	1    0    0    1   
 $EndComp
 Text Label 12650 650  0    60   ~ 0
-5V
+VOUT
 Text HLabel 1000 22300 0    60   Input ~ 0
-5V
+VOUT
 Text Label 1100 22300 0    60   ~ 0
-5V
+VOUT
 Text HLabel 1000 22500 0    60   Input ~ 0
 GND
 Text Label 1100 22500 0    60   ~ 0
@@ -100,19 +100,19 @@ GND
 Text Label 12050 950  2    60   ~ 0
 CH0_OE_RAW
 $Comp
-L R R13
+L R R32
 U 1 1 515BF01D
 P 12350 650
-F 0 "R13" V 12430 650 50  0000 C CNN
+F 0 "R32" V 12430 650 50  0000 C CNN
 F 1 "1K" V 12350 650 50  0000 C CNN
 	1    12350 650 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q2
+L MOS_N Q3
 U 1 1 515BF03F
 P 12000 1350
-F 0 "Q2" H 12010 1520 60  0000 R CNN
+F 0 "Q3" H 12010 1520 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 1050 60  0000 L CNN
 	1    12000 1350
 	1    0    0    -1  
@@ -131,10 +131,10 @@ $EndComp
 Text Label 14100 950  0    60   ~ 0
 VOUT_0_FILTERED
 $Comp
-L CP1 C12
+L CP1 C45
 U 1 1 515BF44A
 P 15150 2000
-F 0 "C12" H 15200 2100 50  0000 L CNN
+F 0 "C45" H 15200 2100 50  0000 L CNN
 F 1 "150 uF" H 15200 1900 50  0000 L CNN
 	1    15150 2000
 	1    0    0    -1  
@@ -144,10 +144,10 @@ VOUT_0_FILTERED
 Text Label 15100 2200 2    60   ~ 0
 GND
 $Comp
-L C C14
+L C C55
 U 1 1 515BF49A
 P 15600 2000
-F 0 "C14" H 15650 2100 50  0000 L CNN
+F 0 "C55" H 15650 2100 50  0000 L CNN
 F 1 "10 uF" H 15650 1900 50  0000 L CNN
 	1    15600 2000
 	1    0    0    -1  
@@ -172,10 +172,10 @@ Output stage
 Text Notes 550  2300 0    60   ~ 0
 Overcurrent detection
 $Comp
-L C C11
+L C C44
 U 1 1 515C93CF
 P 10750 1950
-F 0 "C11" H 10800 2050 50  0000 L CNN
+F 0 "C44" H 10800 2050 50  0000 L CNN
 F 1 "0.1 uF" H 10800 1850 50  0000 L CNN
 	1    10750 1950
 	1    0    0    -1  
@@ -190,159 +190,93 @@ Text Label 1100 22400 0    60   ~ 0
 3V3
 Text Notes 13650 1650 0    60   ~ 0
 5 mΩ = 5mV per A = 25mV full scale
-Text Notes 700  1050 0    60   ~ 0
+Text Notes 550  2000 0    60   ~ 0
 100x gain for A2 * 5 mΩ shunt\n= 0.5V per A\n= 2.5V full scale
 $Comp
-L INA199AX-DCK U7
+L INA199AX-DCK U2
 U 1 1 515C992B
-P 1450 2000
-F 0 "U7" H 2050 1950 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 1850 60  0000 C CNN
-	1    1450 2000
+P 1450 1600
+F 0 "U2" H 2050 1550 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 1450 60  0000 C CNN
+	1    1450 1600
 	-1   0    0    -1  
 $EndComp
-Text Label 1950 1400 0    60   ~ 0
+Text Label 1950 1000 0    60   ~ 0
 GND
-Text Label 1950 1600 0    60   ~ 0
+Text Label 1950 1200 0    60   ~ 0
 3V3
 $Comp
-L C C7
+L C C13
 U 1 1 515C9A9E
-P 4500 1450
-F 0 "C7" H 4550 1550 50  0000 L CNN
-F 1 "0.1 uF" H 4550 1350 50  0000 L CNN
-	1    4500 1450
+P 2600 2050
+F 0 "C13" H 2650 2150 50  0000 L CNN
+F 1 "0.1 uF" H 2650 1950 50  0000 L CNN
+	1    2600 2050
 	1    0    0    -1  
 $EndComp
-Text Label 1950 1700 0    60   ~ 0
+Text Label 1950 1300 0    60   ~ 0
 VOUT_0_SENSE_HI
-Text Label 1950 1800 0    60   ~ 0
+Text Label 1950 1400 0    60   ~ 0
 VOUT_0_SENSE_LO
-Text Label 1950 1900 0    60   ~ 0
+Text Label 1950 1500 0    60   ~ 0
 VOUT_0_SENSE_AMP
 Text Notes 7900 2300 0    60   ~ 0
 Current/voltage metering
+Text Label 2950 1600 2    60   ~ 0
+VOUT_0_REF
 $Comp
-L ISL90810 U9
-U 1 1 515C9F9E
-P 4050 1100
-F 0 "U9" H 4550 1350 60  0000 C CNN
-F 1 "ISL90810" H 4550 1250 60  0000 C CNN
-	1    4050 1100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 750 
-$Comp
-L R R57
-U 1 1 515CA0A8
-P 2900 750
-F 0 "R57" V 2980 750 50  0000 C CNN
-F 1 "4.7K" V 2900 750 50  0000 C CNN
-	1    2900 750 
-	0    -1   -1   0   
-$EndComp
-Text Label 2650 750  2    60   ~ 0
-3V3
-Text Label 3650 1050 2    60   ~ 0
-GND
-Text Label 5500 950  0    60   ~ 0
-GND
-Text HLabel 3150 650  2    60   Input ~ 0
-CH0_POT_SCL
-Text HLabel 3150 900  2    60   BiDi ~ 0
-CH0_POT_SDA
-Text Label 5500 1050 0    60   ~ 0
-VOUT_0_SENSE_COMPARE
-$Comp
-L C C5
+L C C3
 U 1 1 515CA71C
-P 4150 1450
-F 0 "C5" H 4200 1550 50  0000 L CNN
-F 1 "0.1 uF" H 4200 1350 50  0000 L CNN
-	1    4150 1450
+P 2250 2050
+F 0 "C3" H 2300 2150 50  0000 L CNN
+F 1 "0.1 uF" H 2300 1950 50  0000 L CNN
+	1    2250 2050
 	1    0    0    -1  
 $EndComp
-Text Label 4050 1650 2    60   ~ 0
-GND
-Text Label 4050 1250 2    60   ~ 0
+Text Label 2150 1850 2    60   ~ 0
 3V3
-Text Label 5500 750  0    60   ~ 0
-3V3
-Text Label 5500 850  0    60   ~ 0
-2V5_CH0
 $Comp
-L LM4040-X-SOT23 U13
-U 1 1 515CB07B
-P 7050 950
-F 0 "U13" H 7600 1300 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 900 60  0000 C CNN
-	1    7050 950 
-	1    0    0    -1  
-$EndComp
-Text Label 6650 650  2    60   ~ 0
-GND
-$Comp
-L R R7
-U 1 1 515CB25A
-P 6150 750
-F 0 "R7" V 6250 750 50  0000 C CNN
-F 1 "1K" V 6150 750 50  0000 C CNN
-	1    6150 750 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U11
+L MCP6541-SOT23-5 U12
 U 1 1 515CBC03
-P 5850 1950
-F 0 "U11" H 6250 2100 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 1850 60  0000 C CNN
-	1    5850 1950
+P 3250 1550
+F 0 "U12" H 3650 1700 60  0000 C CNN
+F 1 "TLV3201" H 3700 1400 60  0000 C CNN
+	1    3250 1550
 	1    0    0    -1  
 $EndComp
-$Comp
-L C C9
-U 1 1 515CBC1A
-P 4850 1450
-F 0 "C9" H 4900 1550 50  0000 L CNN
-F 1 "0.1 uF" H 4900 1350 50  0000 L CNN
-	1    4850 1450
-	1    0    0    -1  
-$EndComp
-Text Label 6150 1650 0    60   ~ 0
+Text Label 3200 1250 2    60   ~ 0
 3V3
-Text Label 6150 2250 0    60   ~ 0
+Text Label 3400 2250 0    60   ~ 0
 GND
-Text HLabel 7450 1650 0    60   Output ~ 0
+Text HLabel 3900 850  0    60   Output ~ 0
 CH0_OVERCURRENT
 Text HLabel 11500 1350 0    60   Input ~ 0
 CH0_OE
-Text Notes 5450 1300 0    60   ~ 0
-1 tap on pot = (2.5V / 256)\n= 9.76 mV at Vref\n= 19.52 mA at load
 $Comp
-L R R11
+L R R22
 U 1 1 515CCA95
 P 11550 1600
-F 0 "R11" V 11630 1600 50  0000 C CNN
+F 0 "R22" V 11630 1600 50  0000 C CNN
 F 1 "1K" V 11550 1600 50  0000 C CNN
 	1    11550 1600
 	1    0    0    -1  
 $EndComp
-Text Notes 7900 1850 0    60   ~ 0
+Text Notes 7900 1800 0    60   ~ 0
 Vref = 2.5V\n12 bits, 4096 steps\n2.5V / 4096 = 0.61 mV per LSB\n= 1.22 mA per LSB
 $Comp
-L R R9
+L R R7
 U 1 1 515D6B11
-P 6900 1950
-F 0 "R9" V 6980 1950 50  0000 C CNN
-F 1 "49.9" V 6900 1950 50  0000 C CNN
-	1    6900 1950
-	0    -1   -1   0   
+P 3900 1100
+F 0 "R7" V 3980 1100 50  0000 C CNN
+F 1 "49.9" V 3900 1100 50  0000 C CNN
+	1    3900 1100
+	-1   0    0    1   
 $EndComp
 $Comp
-L MCP3204 U15
+L MCP3204 U30
 U 1 1 516B185C
 P 9600 1000
-F 0 "U15" H 9600 1050 60  0000 C CNN
+F 0 "U30" H 9600 1050 60  0000 C CNN
 F 1 "MCP3204" H 9600 950 60  0000 C CNN
 	1    9600 1000
 	1    0    0    -1  
@@ -359,8 +293,6 @@ Text Label 8750 650  2    60   ~ 0
 VDD_TOP_DIV
 Text Label 8750 1150 2    60   ~ 0
 3V3
-Text Label 8750 1250 2    60   ~ 0
-2V5_CH0
 Text Label 8750 1350 2    60   ~ 0
 GND
 Text Label 8750 1450 2    60   ~ 0
@@ -368,49 +300,49 @@ GND
 Text Label 3600 22200 2    60   ~ 0
 VDD_TOP_DIV
 $Comp
-L R R3
+L R R5
 U 1 1 516B1CDA
 P 3750 21950
-F 0 "R3" V 3830 21950 50  0000 C CNN
-F 1 "10K" V 3750 21950 50  0000 C CNN
+F 0 "R5" V 3830 21950 50  0000 C CNN
+F 1 "30k 0.1%" V 3650 21950 50  0000 C CNN
 	1    3750 21950
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L R R6
 U 1 1 516B1D29
 P 3750 22450
-F 0 "R4" V 3830 22450 50  0000 C CNN
-F 1 "10K" V 3750 22450 50  0000 C CNN
+F 0 "R6" V 3830 22450 50  0000 C CNN
+F 1 "10K 0.1%" V 3650 22450 50  0000 C CNN
 	1    3750 22450
 	1    0    0    -1  
 $EndComp
 Text Label 3600 21700 2    60   ~ 0
-5V
+VOUT
 Text Label 3650 22700 2    60   ~ 0
 GND
 $Comp
-L R R5
+L R R17
 U 1 1 516B1DDA
 P 4050 21950
-F 0 "R5" V 4130 21950 50  0000 C CNN
-F 1 "10K" V 4050 21950 50  0000 C CNN
+F 0 "R17" V 4130 21950 50  0000 C CNN
+F 1 "30k 0.1%" V 3950 21950 50  0000 C CNN
 	1    4050 21950
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R6
+L R R18
 U 1 1 516B1E2C
 P 4050 22450
-F 0 "R6" V 4130 22450 50  0000 C CNN
-F 1 "10K" V 4050 22450 50  0000 C CNN
+F 0 "R18" V 4130 22450 50  0000 C CNN
+F 1 "10K 0.1%" V 3950 22450 50  0000 C CNN
 	1    4050 22450
 	1    0    0    -1  
 $EndComp
 Text Label 4200 22200 0    60   ~ 0
 VDD_BOT_DIV
 Text Notes 4200 22700 0    60   ~ 0
-Place voltage dividers at opposite ends of power bus
+Place voltage dividers at opposite ends of power bus\nOutput is Vdd/4, so 1.25V nominal for 5V and 3.00V nominal for 12V
 Text HLabel 10450 950  2    60   Input ~ 0
 ADC0_SCK
 Text HLabel 10450 1050 2    60   Output ~ 0
@@ -419,33 +351,25 @@ Text HLabel 10450 1250 2    60   Input ~ 0
 ADC0_CS_N
 Text HLabel 10450 1150 2    60   Input ~ 0
 ADC0_MOSI
-Wire Wire Line
-	3150 950  3750 950 
-Wire Wire Line
-	3150 850  3750 850 
 Wire Notes Line
 	11050 500  11050 7900
 Wire Wire Line
-	1750 1900 5550 1900
+	1950 1400 1750 1400
 Wire Wire Line
-	1950 1800 1750 1800
+	1950 1300 1750 1300
 Wire Wire Line
-	1950 1700 1750 1700
+	1950 1200 1750 1200
+Connection ~ 1850 1000
 Wire Wire Line
-	1950 1600 1750 1600
-Connection ~ 1850 1400
+	1850 1100 1750 1100
 Wire Wire Line
-	1850 1500 1750 1500
+	1850 1000 1850 1100
 Wire Wire Line
-	1850 1400 1850 1500
-Wire Wire Line
-	1750 1400 1950 1400
+	1750 1000 1950 1000
 Wire Wire Line
 	10650 1750 10750 1750
 Wire Wire Line
 	10650 2150 10750 2150
-Wire Notes Line
-	500  2350 16050 2350
 Wire Wire Line
 	15250 1350 15350 1350
 Wire Wire Line
@@ -487,52 +411,9 @@ Wire Wire Line
 	1100 22300 1000 22300
 Wire Wire Line
 	12650 650  12650 750 
-Wire Wire Line
-	3650 1050 3750 1050
-Wire Wire Line
-	5500 950  5300 950 
-Wire Wire Line
-	5300 750  5900 750 
-Wire Wire Line
-	5300 1050 5500 1050
-Wire Wire Line
-	4050 1250 4850 1250
-Wire Wire Line
-	4050 1650 4850 1650
-Connection ~ 4150 1250
-Connection ~ 4150 1650
-Wire Wire Line
-	3150 900  3150 950 
-Wire Wire Line
-	2650 750  2650 950 
-Wire Wire Line
-	3150 650  3150 850 
-Connection ~ 3150 750 
-Connection ~ 4500 1250
-Connection ~ 4500 1650
-Wire Wire Line
-	5300 850  6750 850 
-Wire Wire Line
-	6650 650  6750 650 
-Wire Wire Line
-	6700 650  6700 750 
-Wire Wire Line
-	6700 750  6750 750 
-Connection ~ 6700 650 
-Connection ~ 6400 850 
-Wire Wire Line
-	6400 750  6400 850 
-Wire Wire Line
-	6000 1650 6150 1650
-Wire Wire Line
-	6150 2250 6000 2250
-Wire Wire Line
-	5350 1050 5350 2000
-Wire Wire Line
-	5350 2000 5550 2000
-Connection ~ 5350 1050
-Wire Wire Line
-	6500 1950 6650 1950
+Connection ~ 2250 1850
+Connection ~ 2600 1850
+Connection ~ 2600 2250
 Wire Wire Line
 	11500 1350 11800 1350
 Connection ~ 11550 1350
@@ -540,15 +421,7 @@ Wire Wire Line
 	11400 1850 12100 1850
 Connection ~ 11550 1850
 Wire Wire Line
-	7150 1950 7500 1950
-Wire Wire Line
-	7450 1650 7500 1650
-Wire Wire Line
-	7500 1650 7500 1950
-Wire Wire Line
 	1000 22400 1100 22400
-Wire Notes Line
-	7800 500  7800 7900
 Wire Wire Line
 	3600 22200 3750 22200
 Wire Wire Line
@@ -566,10 +439,10 @@ VOUT_1
 Text Label 13300 3250 2    60   ~ 0
 VOUT_1_FUSED
 $Comp
-L R-4TERM R16
+L R-4TERM R43
 U 1 1 516BC2BB
 P 14500 3050
-F 0 "R16" V 14580 3050 50  0000 C CNN
+F 0 "R43" V 14580 3050 50  0000 C CNN
 F 1 "0.005" V 14400 3050 50  0000 C CNN
 	1    14500 3050
 	0    1    -1   0   
@@ -586,32 +459,32 @@ $EndComp
 Text Label 12800 2900 0    60   ~ 0
 VOUT_1_RAW
 $Comp
-L MOS_P Q5
+L MOS_P Q14
 U 1 1 516BC2C8
 P 12550 2800
-F 0 "Q5" H 12550 2990 60  0000 R CNN
+F 0 "Q14" H 12550 2990 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 2600 60  0000 L CNN
 	1    12550 2800
 	1    0    0    1   
 $EndComp
 Text Label 12650 2500 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 2800 2    60   ~ 0
 CH1_OE_RAW
 $Comp
-L R R14
+L R R33
 U 1 1 516BC2D0
 P 12350 2500
-F 0 "R14" V 12430 2500 50  0000 C CNN
+F 0 "R33" V 12430 2500 50  0000 C CNN
 F 1 "1K" V 12350 2500 50  0000 C CNN
 	1    12350 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q3
+L MOS_N Q4
 U 1 1 516BC2D6
 P 12000 3200
-F 0 "Q3" H 12010 3370 60  0000 R CNN
+F 0 "Q4" H 12010 3370 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 2900 60  0000 L CNN
 	1    12000 3200
 	1    0    0    -1  
@@ -630,10 +503,10 @@ $EndComp
 Text Label 14100 2800 0    60   ~ 0
 VOUT_1_FILTERED
 $Comp
-L CP1 C13
+L CP1 C46
 U 1 1 516BC2E4
 P 15150 3850
-F 0 "C13" H 15200 3950 50  0000 L CNN
+F 0 "C46" H 15200 3950 50  0000 L CNN
 F 1 "150 uF" H 15200 3750 50  0000 L CNN
 	1    15150 3850
 	1    0    0    -1  
@@ -643,10 +516,10 @@ VOUT_1_FILTERED
 Text Label 15100 4050 2    60   ~ 0
 GND
 $Comp
-L C C15
+L C C56
 U 1 1 516BC2EC
 P 15600 3850
-F 0 "C15" H 15650 3950 50  0000 L CNN
+F 0 "C56" H 15650 3950 50  0000 L CNN
 F 1 "10 uF" H 15650 3750 50  0000 L CNN
 	1    15600 3850
 	1    0    0    -1  
@@ -664,164 +537,19 @@ F 1 "CONN_2" V 15750 3100 40  0000 C CNN
 	1    15700 3100
 	1    0    0    -1  
 $EndComp
-Text Notes 550  2650 0    197  ~ 39
-Channel 1
 Text Notes 11100 4150 0    60   ~ 0
 Output stage
-Text Notes 550  4150 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U8
-U 1 1 516BC307
-P 1450 3850
-F 0 "U8" H 2050 3800 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 3700 60  0000 C CNN
-	1    1450 3850
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 3250 0    60   ~ 0
-GND
-Text Label 1950 3450 0    60   ~ 0
-3V3
-$Comp
-L C C8
-U 1 1 516BC30F
-P 4500 3300
-F 0 "C8" H 4550 3400 50  0000 L CNN
-F 1 "0.1 uF" H 4550 3200 50  0000 L CNN
-	1    4500 3300
-	1    0    0    -1  
-$EndComp
-Text Label 1950 3550 0    60   ~ 0
-VOUT_1_SENSE_HI
-Text Label 1950 3650 0    60   ~ 0
-VOUT_1_SENSE_LO
-Text Label 1950 3750 0    60   ~ 0
-VOUT_1_SENSE_AMP
-$Comp
-L ISL90810 U10
-U 1 1 516BC319
-P 4050 2950
-F 0 "U10" H 4550 3200 60  0000 C CNN
-F 1 "ISL90810" H 4550 3100 60  0000 C CNN
-	1    4050 2950
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 2600
-Text Label 2650 2600 2    60   ~ 0
-3V3
-Text Label 3650 2900 2    60   ~ 0
-GND
-Text Label 5500 2800 0    60   ~ 0
-GND
-Text HLabel 3150 2500 2    60   Input ~ 0
-CH1_POT_SCL
-Text HLabel 3150 2750 2    60   BiDi ~ 0
-CH1_POT_SDA
-Text Label 5500 2900 0    60   ~ 0
-VOUT_1_SENSE_COMPARE
-$Comp
-L C C6
-U 1 1 516BC332
-P 4150 3300
-F 0 "C6" H 4200 3400 50  0000 L CNN
-F 1 "0.1 uF" H 4200 3200 50  0000 L CNN
-	1    4150 3300
-	1    0    0    -1  
-$EndComp
-Text Label 4050 3500 2    60   ~ 0
-GND
-Text Label 4050 3100 2    60   ~ 0
-3V3
-Text Label 5500 2600 0    60   ~ 0
-3V3
-Text Label 5500 2700 0    60   ~ 0
-2V5_CH1
-$Comp
-L LM4040-X-SOT23 U14
-U 1 1 516BC33C
-P 7050 2800
-F 0 "U14" H 7600 3150 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 2750 60  0000 C CNN
-	1    7050 2800
-	1    0    0    -1  
-$EndComp
-Text Label 6650 2500 2    60   ~ 0
-GND
-$Comp
-L R R8
-U 1 1 516BC343
-P 6150 2600
-F 0 "R8" V 6250 2600 50  0000 C CNN
-F 1 "1K" V 6150 2600 50  0000 C CNN
-	1    6150 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U12
-U 1 1 516BC349
-P 5850 3800
-F 0 "U12" H 6250 3950 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 3700 60  0000 C CNN
-	1    5850 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C10
-U 1 1 516BC34F
-P 4850 3300
-F 0 "C10" H 4900 3400 50  0000 L CNN
-F 1 "0.1 uF" H 4900 3200 50  0000 L CNN
-	1    4850 3300
-	1    0    0    -1  
-$EndComp
-Text Label 6150 3500 0    60   ~ 0
-3V3
-Text Label 6150 4100 0    60   ~ 0
-GND
-Text HLabel 7450 3500 0    60   Output ~ 0
-CH1_OVERCURRENT
 Text HLabel 11500 3200 0    60   Input ~ 0
 CH1_OE
 $Comp
-L R R12
+L R R23
 U 1 1 516BC35A
 P 11550 3450
-F 0 "R12" V 11630 3450 50  0000 C CNN
+F 0 "R23" V 11630 3450 50  0000 C CNN
 F 1 "1K" V 11550 3450 50  0000 C CNN
 	1    11550 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R10
-U 1 1 516BC361
-P 6900 3800
-F 0 "R10" V 6980 3800 50  0000 C CNN
-F 1 "49.9" V 6900 3800 50  0000 C CNN
-	1    6900 3800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 2800 3750 2800
-Wire Wire Line
-	3150 2700 3750 2700
-Wire Wire Line
-	1750 3750 5550 3750
-Wire Wire Line
-	1950 3650 1750 3650
-Wire Wire Line
-	1950 3550 1750 3550
-Wire Wire Line
-	1950 3450 1750 3450
-Connection ~ 1850 3250
-Wire Wire Line
-	1850 3350 1750 3350
-Wire Wire Line
-	1850 3250 1850 3350
-Wire Wire Line
-	1750 3250 1950 3250
-Wire Notes Line
-	500  4200 16050 4200
 Wire Wire Line
 	15250 3200 15350 3200
 Wire Wire Line
@@ -860,65 +588,13 @@ Wire Wire Line
 Wire Wire Line
 	12650 2500 12650 2600
 Wire Wire Line
-	3650 2900 3750 2900
-Wire Wire Line
-	5500 2800 5300 2800
-Wire Wire Line
-	5300 2600 5900 2600
-Wire Wire Line
-	5300 2900 5500 2900
-Wire Wire Line
-	4050 3100 4850 3100
-Wire Wire Line
-	4050 3500 4850 3500
-Connection ~ 4150 3100
-Connection ~ 4150 3500
-Wire Wire Line
-	3150 2750 3150 2800
-Wire Wire Line
-	2650 2600 2650 2800
-Wire Wire Line
-	3150 2500 3150 2700
-Connection ~ 3150 2600
-Connection ~ 4500 3100
-Connection ~ 4500 3500
-Wire Wire Line
-	5300 2700 6750 2700
-Wire Wire Line
-	6650 2500 6750 2500
-Wire Wire Line
-	6700 2500 6700 2600
-Wire Wire Line
-	6700 2600 6750 2600
-Connection ~ 6700 2500
-Connection ~ 6400 2700
-Wire Wire Line
-	6400 2600 6400 2700
-Wire Wire Line
-	6000 3500 6150 3500
-Wire Wire Line
-	6150 4100 6000 4100
-Wire Wire Line
-	5350 2900 5350 3850
-Wire Wire Line
-	5350 3850 5550 3850
-Connection ~ 5350 2900
-Wire Wire Line
-	6500 3800 6650 3800
-Wire Wire Line
 	11500 3200 11800 3200
 Connection ~ 11550 3200
 Wire Wire Line
 	11400 3700 12100 3700
 Connection ~ 11550 3700
-Wire Wire Line
-	7150 3800 7500 3800
-Wire Wire Line
-	7450 3500 7500 3500
-Wire Wire Line
-	7500 3500 7500 3800
 Wire Notes Line
-	7800 2350 7800 9750
+	7800 500  7800 9750
 Text Label 15250 5050 2    60   ~ 0
 GND
 Text Label 15250 4850 2    60   ~ 0
@@ -926,10 +602,10 @@ VOUT_2
 Text Label 13300 5100 2    60   ~ 0
 VOUT_2_FUSED
 $Comp
-L R-4TERM R21
+L R-4TERM R44
 U 1 1 516BE2CC
 P 14500 4900
-F 0 "R21" V 14580 4900 50  0000 C CNN
+F 0 "R44" V 14580 4900 50  0000 C CNN
 F 1 "0.005" V 14400 4900 50  0000 C CNN
 	1    14500 4900
 	0    1    -1   0   
@@ -946,32 +622,32 @@ $EndComp
 Text Label 12800 4750 0    60   ~ 0
 VOUT_2_RAW
 $Comp
-L MOS_P Q7
+L MOS_P Q15
 U 1 1 516BE2D9
 P 12550 4650
-F 0 "Q7" H 12550 4840 60  0000 R CNN
+F 0 "Q15" H 12550 4840 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 4450 60  0000 L CNN
 	1    12550 4650
 	1    0    0    1   
 $EndComp
 Text Label 12650 4350 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 4650 2    60   ~ 0
 CH2_OE_RAW
 $Comp
-L R R20
+L R R34
 U 1 1 516BE2E1
 P 12350 4350
-F 0 "R20" V 12430 4350 50  0000 C CNN
+F 0 "R34" V 12430 4350 50  0000 C CNN
 F 1 "1K" V 12350 4350 50  0000 C CNN
 	1    12350 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q6
+L MOS_N Q5
 U 1 1 516BE2E7
 P 12000 5050
-F 0 "Q6" H 12010 5220 60  0000 R CNN
+F 0 "Q5" H 12010 5220 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 4750 60  0000 L CNN
 	1    12000 5050
 	1    0    0    -1  
@@ -990,10 +666,10 @@ $EndComp
 Text Label 14100 4650 0    60   ~ 0
 VOUT_2_FILTERED
 $Comp
-L CP1 C19
+L CP1 C47
 U 1 1 516BE2F5
 P 15150 5700
-F 0 "C19" H 15200 5800 50  0000 L CNN
+F 0 "C47" H 15200 5800 50  0000 L CNN
 F 1 "150 uF" H 15200 5600 50  0000 L CNN
 	1    15150 5700
 	1    0    0    -1  
@@ -1003,10 +679,10 @@ VOUT_2_FILTERED
 Text Label 15100 5900 2    60   ~ 0
 GND
 $Comp
-L C C20
+L C C57
 U 1 1 516BE2FD
 P 15600 5700
-F 0 "C20" H 15650 5800 50  0000 L CNN
+F 0 "C57" H 15650 5800 50  0000 L CNN
 F 1 "10 uF" H 15650 5600 50  0000 L CNN
 	1    15600 5700
 	1    0    0    -1  
@@ -1024,164 +700,19 @@ F 1 "CONN_2" V 15750 4950 40  0000 C CNN
 	1    15700 4950
 	1    0    0    -1  
 $EndComp
-Text Notes 550  4500 0    197  ~ 39
-Channel 2
 Text Notes 11100 6000 0    60   ~ 0
 Output stage
-Text Notes 550  6000 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U17
-U 1 1 516BE30E
-P 1450 5700
-F 0 "U17" H 2050 5650 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 5550 60  0000 C CNN
-	1    1450 5700
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 5100 0    60   ~ 0
-GND
-Text Label 1950 5300 0    60   ~ 0
-3V3
-$Comp
-L C C17
-U 1 1 516BE316
-P 4500 5150
-F 0 "C17" H 4550 5250 50  0000 L CNN
-F 1 "0.1 uF" H 4550 5050 50  0000 L CNN
-	1    4500 5150
-	1    0    0    -1  
-$EndComp
-Text Label 1950 5400 0    60   ~ 0
-VOUT_2_SENSE_HI
-Text Label 1950 5500 0    60   ~ 0
-VOUT_2_SENSE_LO
-Text Label 1950 5600 0    60   ~ 0
-VOUT_2_SENSE_AMP
-$Comp
-L ISL90810 U18
-U 1 1 516BE31F
-P 4050 4800
-F 0 "U18" H 4550 5050 60  0000 C CNN
-F 1 "ISL90810" H 4550 4950 60  0000 C CNN
-	1    4050 4800
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 4450
-Text Label 2650 4450 2    60   ~ 0
-3V3
-Text Label 3650 4750 2    60   ~ 0
-GND
-Text Label 5500 4650 0    60   ~ 0
-GND
-Text HLabel 3150 4350 2    60   Input ~ 0
-CH2_POT_SCL
-Text HLabel 3150 4600 2    60   BiDi ~ 0
-CH2_POT_SDA
-Text Label 5500 4750 0    60   ~ 0
-VOUT_2_SENSE_COMPARE
-$Comp
-L C C16
-U 1 1 516BE338
-P 4150 5150
-F 0 "C16" H 4200 5250 50  0000 L CNN
-F 1 "0.1 uF" H 4200 5050 50  0000 L CNN
-	1    4150 5150
-	1    0    0    -1  
-$EndComp
-Text Label 4050 5350 2    60   ~ 0
-GND
-Text Label 4050 4950 2    60   ~ 0
-3V3
-Text Label 5500 4450 0    60   ~ 0
-3V3
-Text Label 5500 4550 0    60   ~ 0
-2V5_CH2
-$Comp
-L LM4040-X-SOT23 U20
-U 1 1 516BE342
-P 7050 4650
-F 0 "U20" H 7600 5000 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 4600 60  0000 C CNN
-	1    7050 4650
-	1    0    0    -1  
-$EndComp
-Text Label 6650 4350 2    60   ~ 0
-GND
-$Comp
-L R R17
-U 1 1 516BE349
-P 6150 4450
-F 0 "R17" V 6250 4450 50  0000 C CNN
-F 1 "1K" V 6150 4450 50  0000 C CNN
-	1    6150 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U19
-U 1 1 516BE34F
-P 5850 5650
-F 0 "U19" H 6250 5800 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 5550 60  0000 C CNN
-	1    5850 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C18
-U 1 1 516BE355
-P 4850 5150
-F 0 "C18" H 4900 5250 50  0000 L CNN
-F 1 "0.1 uF" H 4900 5050 50  0000 L CNN
-	1    4850 5150
-	1    0    0    -1  
-$EndComp
-Text Label 6150 5350 0    60   ~ 0
-3V3
-Text Label 6150 5950 0    60   ~ 0
-GND
-Text HLabel 7450 5350 0    60   Output ~ 0
-CH2_OVERCURRENT
 Text HLabel 11500 5050 0    60   Input ~ 0
 CH2_OE
 $Comp
-L R R19
+L R R24
 U 1 1 516BE35F
 P 11550 5300
-F 0 "R19" V 11630 5300 50  0000 C CNN
+F 0 "R24" V 11630 5300 50  0000 C CNN
 F 1 "1K" V 11550 5300 50  0000 C CNN
 	1    11550 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R18
-U 1 1 516BE365
-P 6900 5650
-F 0 "R18" V 6980 5650 50  0000 C CNN
-F 1 "49.9" V 6900 5650 50  0000 C CNN
-	1    6900 5650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 4650 3750 4650
-Wire Wire Line
-	3150 4550 3750 4550
-Wire Wire Line
-	1750 5600 5550 5600
-Wire Wire Line
-	1950 5500 1750 5500
-Wire Wire Line
-	1950 5400 1750 5400
-Wire Wire Line
-	1950 5300 1750 5300
-Connection ~ 1850 5100
-Wire Wire Line
-	1850 5200 1750 5200
-Wire Wire Line
-	1850 5100 1850 5200
-Wire Wire Line
-	1750 5100 1950 5100
-Wire Notes Line
-	500  6050 16050 6050
 Wire Wire Line
 	15250 5050 15350 5050
 Wire Wire Line
@@ -1220,63 +751,11 @@ Wire Wire Line
 Wire Wire Line
 	12650 4350 12650 4450
 Wire Wire Line
-	3650 4750 3750 4750
-Wire Wire Line
-	5500 4650 5300 4650
-Wire Wire Line
-	5300 4450 5900 4450
-Wire Wire Line
-	5300 4750 5500 4750
-Wire Wire Line
-	4050 4950 4850 4950
-Wire Wire Line
-	4050 5350 4850 5350
-Connection ~ 4150 4950
-Connection ~ 4150 5350
-Wire Wire Line
-	3150 4600 3150 4650
-Wire Wire Line
-	2650 4450 2650 4650
-Wire Wire Line
-	3150 4350 3150 4550
-Connection ~ 3150 4450
-Connection ~ 4500 4950
-Connection ~ 4500 5350
-Wire Wire Line
-	5300 4550 6750 4550
-Wire Wire Line
-	6650 4350 6750 4350
-Wire Wire Line
-	6700 4350 6700 4450
-Wire Wire Line
-	6700 4450 6750 4450
-Connection ~ 6700 4350
-Connection ~ 6400 4550
-Wire Wire Line
-	6400 4450 6400 4550
-Wire Wire Line
-	6000 5350 6150 5350
-Wire Wire Line
-	6150 5950 6000 5950
-Wire Wire Line
-	5350 4750 5350 5700
-Wire Wire Line
-	5350 5700 5550 5700
-Connection ~ 5350 4750
-Wire Wire Line
-	6500 5650 6650 5650
-Wire Wire Line
 	11500 5050 11800 5050
 Connection ~ 11550 5050
 Wire Wire Line
 	11400 5550 12100 5550
 Connection ~ 11550 5550
-Wire Wire Line
-	7150 5650 7500 5650
-Wire Wire Line
-	7450 5350 7500 5350
-Wire Wire Line
-	7500 5350 7500 5650
 Wire Notes Line
 	11050 2350 11050 9750
 Text Label 15250 6900 2    60   ~ 0
@@ -1286,10 +765,10 @@ VOUT_3
 Text Label 13300 6950 2    60   ~ 0
 VOUT_3_FUSED
 $Comp
-L R-4TERM R26
+L R-4TERM R45
 U 1 1 516BE8D2
 P 14500 6750
-F 0 "R26" V 14580 6750 50  0000 C CNN
+F 0 "R45" V 14580 6750 50  0000 C CNN
 F 1 "0.005" V 14400 6750 50  0000 C CNN
 	1    14500 6750
 	0    1    -1   0   
@@ -1306,32 +785,32 @@ $EndComp
 Text Label 12800 6600 0    60   ~ 0
 VOUT_3_RAW
 $Comp
-L MOS_P Q9
+L MOS_P Q16
 U 1 1 516BE8DF
 P 12550 6500
-F 0 "Q9" H 12550 6690 60  0000 R CNN
+F 0 "Q16" H 12550 6690 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 6300 60  0000 L CNN
 	1    12550 6500
 	1    0    0    1   
 $EndComp
 Text Label 12650 6200 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 6500 2    60   ~ 0
 CH3_OE_RAW
 $Comp
-L R R25
+L R R35
 U 1 1 516BE8E7
 P 12350 6200
-F 0 "R25" V 12430 6200 50  0000 C CNN
+F 0 "R35" V 12430 6200 50  0000 C CNN
 F 1 "1K" V 12350 6200 50  0000 C CNN
 	1    12350 6200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q8
+L MOS_N Q6
 U 1 1 516BE8ED
 P 12000 6900
-F 0 "Q8" H 12010 7070 60  0000 R CNN
+F 0 "Q6" H 12010 7070 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 6600 60  0000 L CNN
 	1    12000 6900
 	1    0    0    -1  
@@ -1350,10 +829,10 @@ $EndComp
 Text Label 14100 6500 0    60   ~ 0
 VOUT_3_FILTERED
 $Comp
-L CP1 C25
+L CP1 C48
 U 1 1 516BE8FB
 P 15150 7550
-F 0 "C25" H 15200 7650 50  0000 L CNN
+F 0 "C48" H 15200 7650 50  0000 L CNN
 F 1 "150 uF" H 15200 7450 50  0000 L CNN
 	1    15150 7550
 	1    0    0    -1  
@@ -1363,10 +842,10 @@ VOUT_3_FILTERED
 Text Label 15100 7750 2    60   ~ 0
 GND
 $Comp
-L C C26
+L C C58
 U 1 1 516BE903
 P 15600 7550
-F 0 "C26" H 15650 7650 50  0000 L CNN
+F 0 "C58" H 15650 7650 50  0000 L CNN
 F 1 "10 uF" H 15650 7450 50  0000 L CNN
 	1    15600 7550
 	1    0    0    -1  
@@ -1384,164 +863,19 @@ F 1 "CONN_2" V 15750 6800 40  0000 C CNN
 	1    15700 6800
 	1    0    0    -1  
 $EndComp
-Text Notes 550  6350 0    197  ~ 39
-Channel 3
 Text Notes 11100 7850 0    60   ~ 0
 Output stage
-Text Notes 550  7850 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U21
-U 1 1 516BE914
-P 1450 7550
-F 0 "U21" H 2050 7500 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 7400 60  0000 C CNN
-	1    1450 7550
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 6950 0    60   ~ 0
-GND
-Text Label 1950 7150 0    60   ~ 0
-3V3
-$Comp
-L C C22
-U 1 1 516BE91C
-P 4500 7000
-F 0 "C22" H 4550 7100 50  0000 L CNN
-F 1 "0.1 uF" H 4550 6900 50  0000 L CNN
-	1    4500 7000
-	1    0    0    -1  
-$EndComp
-Text Label 1950 7250 0    60   ~ 0
-VOUT_3_SENSE_HI
-Text Label 1950 7350 0    60   ~ 0
-VOUT_3_SENSE_LO
-Text Label 1950 7450 0    60   ~ 0
-VOUT_3_SENSE_AMP
-$Comp
-L ISL90810 U22
-U 1 1 516BE925
-P 4050 6650
-F 0 "U22" H 4550 6900 60  0000 C CNN
-F 1 "ISL90810" H 4550 6800 60  0000 C CNN
-	1    4050 6650
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 6300
-Text Label 2650 6300 2    60   ~ 0
-3V3
-Text Label 3650 6600 2    60   ~ 0
-GND
-Text Label 5500 6500 0    60   ~ 0
-GND
-Text HLabel 3150 6200 2    60   Input ~ 0
-CH3_POT_SCL
-Text HLabel 3150 6450 2    60   BiDi ~ 0
-CH3_POT_SDA
-Text Label 5500 6600 0    60   ~ 0
-VOUT_3_SENSE_COMPARE
-$Comp
-L C C21
-U 1 1 516BE93E
-P 4150 7000
-F 0 "C21" H 4200 7100 50  0000 L CNN
-F 1 "0.1 uF" H 4200 6900 50  0000 L CNN
-	1    4150 7000
-	1    0    0    -1  
-$EndComp
-Text Label 4050 7200 2    60   ~ 0
-GND
-Text Label 4050 6800 2    60   ~ 0
-3V3
-Text Label 5500 6300 0    60   ~ 0
-3V3
-Text Label 5500 6400 0    60   ~ 0
-2V5_CH3
-$Comp
-L LM4040-X-SOT23 U24
-U 1 1 516BE948
-P 7050 6500
-F 0 "U24" H 7600 6850 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 6450 60  0000 C CNN
-	1    7050 6500
-	1    0    0    -1  
-$EndComp
-Text Label 6650 6200 2    60   ~ 0
-GND
-$Comp
-L R R22
-U 1 1 516BE94F
-P 6150 6300
-F 0 "R22" V 6250 6300 50  0000 C CNN
-F 1 "1K" V 6150 6300 50  0000 C CNN
-	1    6150 6300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U23
-U 1 1 516BE955
-P 5850 7500
-F 0 "U23" H 6250 7650 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 7400 60  0000 C CNN
-	1    5850 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C23
-U 1 1 516BE95B
-P 4850 7000
-F 0 "C23" H 4900 7100 50  0000 L CNN
-F 1 "0.1 uF" H 4900 6900 50  0000 L CNN
-	1    4850 7000
-	1    0    0    -1  
-$EndComp
-Text Label 6150 7200 0    60   ~ 0
-3V3
-Text Label 6150 7800 0    60   ~ 0
-GND
-Text HLabel 7450 7200 0    60   Output ~ 0
-CH3_OVERCURRENT
 Text HLabel 11500 6900 0    60   Input ~ 0
 CH3_OE
 $Comp
-L R R24
+L R R25
 U 1 1 516BE965
 P 11550 7150
-F 0 "R24" V 11630 7150 50  0000 C CNN
+F 0 "R25" V 11630 7150 50  0000 C CNN
 F 1 "1K" V 11550 7150 50  0000 C CNN
 	1    11550 7150
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R23
-U 1 1 516BE96B
-P 6900 7500
-F 0 "R23" V 6980 7500 50  0000 C CNN
-F 1 "49.9" V 6900 7500 50  0000 C CNN
-	1    6900 7500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 6500 3750 6500
-Wire Wire Line
-	3150 6400 3750 6400
-Wire Wire Line
-	1750 7450 5550 7450
-Wire Wire Line
-	1950 7350 1750 7350
-Wire Wire Line
-	1950 7250 1750 7250
-Wire Wire Line
-	1950 7150 1750 7150
-Connection ~ 1850 6950
-Wire Wire Line
-	1850 7050 1750 7050
-Wire Wire Line
-	1850 6950 1850 7050
-Wire Wire Line
-	1750 6950 1950 6950
-Wire Notes Line
-	500  7900 16050 7900
 Wire Wire Line
 	15250 6900 15350 6900
 Wire Wire Line
@@ -1580,115 +914,63 @@ Wire Wire Line
 Wire Wire Line
 	12650 6200 12650 6300
 Wire Wire Line
-	3650 6600 3750 6600
-Wire Wire Line
-	5500 6500 5300 6500
-Wire Wire Line
-	5300 6300 5900 6300
-Wire Wire Line
-	5300 6600 5500 6600
-Wire Wire Line
-	4050 6800 4850 6800
-Wire Wire Line
-	4050 7200 4850 7200
-Connection ~ 4150 6800
-Connection ~ 4150 7200
-Wire Wire Line
-	3150 6450 3150 6500
-Wire Wire Line
-	2650 6300 2650 6500
-Wire Wire Line
-	3150 6200 3150 6400
-Connection ~ 3150 6300
-Connection ~ 4500 6800
-Connection ~ 4500 7200
-Wire Wire Line
-	5300 6400 6750 6400
-Wire Wire Line
-	6650 6200 6750 6200
-Wire Wire Line
-	6700 6200 6700 6300
-Wire Wire Line
-	6700 6300 6750 6300
-Connection ~ 6700 6200
-Connection ~ 6400 6400
-Wire Wire Line
-	6400 6300 6400 6400
-Wire Wire Line
-	6000 7200 6150 7200
-Wire Wire Line
-	6150 7800 6000 7800
-Wire Wire Line
-	5350 6600 5350 7550
-Wire Wire Line
-	5350 7550 5550 7550
-Connection ~ 5350 6600
-Wire Wire Line
-	6500 7500 6650 7500
-Wire Wire Line
 	11500 6900 11800 6900
 Connection ~ 11550 6900
 Wire Wire Line
 	11400 7400 12100 7400
 Connection ~ 11550 7400
-Wire Wire Line
-	7150 7500 7500 7500
-Wire Wire Line
-	7450 7200 7500 7200
-Wire Wire Line
-	7500 7200 7500 7500
 $Comp
-L C C24
+L C C42
 U 1 1 516BE9C5
-P 10700 7500
-F 0 "C24" H 10750 7600 50  0000 L CNN
-F 1 "0.1 uF" H 10750 7400 50  0000 L CNN
-	1    10700 7500
+P 10700 9350
+F 0 "C42" H 10750 9450 50  0000 L CNN
+F 1 "0.1 uF" H 10750 9250 50  0000 L CNN
+	1    10700 9350
 	1    0    0    -1  
 $EndComp
-Text Label 10600 7700 2    60   ~ 0
+Text Label 10600 9550 2    60   ~ 0
 GND
-Text Label 10600 7300 2    60   ~ 0
+Text Label 10600 9150 2    60   ~ 0
 3V3
-Text Notes 7850 7850 0    60   ~ 0
+Text Notes 7850 9700 0    60   ~ 0
 Current/voltage metering
 $Comp
-L MCP3204 U25
+L MCP3204 U28
 U 1 1 516BE9CF
-P 9550 6550
-F 0 "U25" H 9550 6600 60  0000 C CNN
-F 1 "MCP3204" H 9550 6500 60  0000 C CNN
-	1    9550 6550
+P 9550 8400
+F 0 "U28" H 9550 8450 60  0000 C CNN
+F 1 "MCP3204" H 9550 8350 60  0000 C CNN
+	1    9550 8400
 	1    0    0    -1  
 $EndComp
-Text Label 8700 6200 2    60   ~ 0
+Text Label 8700 8050 2    60   ~ 0
 VOUT_3_SENSE_AMP
-NoConn ~ 10400 6300
-NoConn ~ 10400 6200
-Text Label 8700 6300 2    60   ~ 0
+NoConn ~ 10400 8150
+NoConn ~ 10400 8050
+Text Label 8700 8150 2    60   ~ 0
 VOUT_4_SENSE_AMP
-Text Label 8700 6400 2    60   ~ 0
+Text Label 8700 8250 2    60   ~ 0
 VOUT_5_SENSE_AMP
-Text Label 8700 6700 2    60   ~ 0
+Text Label 8700 8550 2    60   ~ 0
 3V3
-Text Label 8700 6800 2    60   ~ 0
-2V5_CH3
-Text Label 8700 6900 2    60   ~ 0
+Text Label 8700 8650 2    60   ~ 0
+VREF_4
+Text Label 8700 8750 2    60   ~ 0
 GND
-Text Label 8700 7000 2    60   ~ 0
+Text Label 8700 8850 2    60   ~ 0
 GND
-Text HLabel 10400 6500 2    60   Input ~ 0
+Text HLabel 10400 8350 2    60   Input ~ 0
 ADC1_SCK
-Text HLabel 10400 6600 2    60   Output ~ 0
+Text HLabel 10400 8450 2    60   Output ~ 0
 ADC1_MISO
-Text HLabel 10400 6800 2    60   Input ~ 0
+Text HLabel 10400 8650 2    60   Input ~ 0
 ADC1_CS_N
-Text HLabel 10400 6700 2    60   Input ~ 0
+Text HLabel 10400 8550 2    60   Input ~ 0
 ADC1_MOSI
 Wire Wire Line
-	10600 7300 10700 7300
+	10600 9150 10700 9150
 Wire Wire Line
-	10600 7700 10700 7700
+	10600 9550 10700 9550
 Text Label 15250 8750 2    60   ~ 0
 GND
 Text Label 15250 8550 2    60   ~ 0
@@ -1696,10 +978,10 @@ VOUT_4
 Text Label 13300 8800 2    60   ~ 0
 VOUT_4_FUSED
 $Comp
-L R-4TERM R35
+L R-4TERM R46
 U 1 1 516C1D5F
 P 14500 8600
-F 0 "R35" V 14580 8600 50  0000 C CNN
+F 0 "R46" V 14580 8600 50  0000 C CNN
 F 1 "0.005" V 14400 8600 50  0000 C CNN
 	1    14500 8600
 	0    1    -1   0   
@@ -1716,32 +998,32 @@ $EndComp
 Text Label 12800 8450 0    60   ~ 0
 VOUT_4_RAW
 $Comp
-L MOS_P Q12
+L MOS_P Q17
 U 1 1 516C1D6C
 P 12550 8350
-F 0 "Q12" H 12550 8540 60  0000 R CNN
+F 0 "Q17" H 12550 8540 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 8150 60  0000 L CNN
 	1    12550 8350
 	1    0    0    1   
 $EndComp
 Text Label 12650 8050 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 8350 2    60   ~ 0
 CH4_OE_RAW
 $Comp
-L R R33
+L R R36
 U 1 1 516C1D74
 P 12350 8050
-F 0 "R33" V 12430 8050 50  0000 C CNN
+F 0 "R36" V 12430 8050 50  0000 C CNN
 F 1 "1K" V 12350 8050 50  0000 C CNN
 	1    12350 8050
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q10
+L MOS_N Q7
 U 1 1 516C1D7A
 P 12000 8750
-F 0 "Q10" H 12010 8920 60  0000 R CNN
+F 0 "Q7" H 12010 8920 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 8450 60  0000 L CNN
 	1    12000 8750
 	1    0    0    -1  
@@ -1760,10 +1042,10 @@ $EndComp
 Text Label 14100 8350 0    60   ~ 0
 VOUT_4_FILTERED
 $Comp
-L CP1 C33
+L CP1 C49
 U 1 1 516C1D88
 P 15150 9400
-F 0 "C33" H 15200 9500 50  0000 L CNN
+F 0 "C49" H 15200 9500 50  0000 L CNN
 F 1 "150 uF" H 15200 9300 50  0000 L CNN
 	1    15150 9400
 	1    0    0    -1  
@@ -1773,10 +1055,10 @@ VOUT_4_FILTERED
 Text Label 15100 9600 2    60   ~ 0
 GND
 $Comp
-L C C35
+L C C59
 U 1 1 516C1D90
 P 15600 9400
-F 0 "C35" H 15650 9500 50  0000 L CNN
+F 0 "C59" H 15650 9500 50  0000 L CNN
 F 1 "10 uF" H 15650 9300 50  0000 L CNN
 	1    15600 9400
 	1    0    0    -1  
@@ -1794,164 +1076,19 @@ F 1 "CONN_2" V 15750 8650 40  0000 C CNN
 	1    15700 8650
 	1    0    0    -1  
 $EndComp
-Text Notes 550  8200 0    197  ~ 39
-Channel 4
 Text Notes 11100 9700 0    60   ~ 0
 Output stage
-Text Notes 550  9700 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U26
-U 1 1 516C1DA1
-P 1450 9400
-F 0 "U26" H 2050 9350 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 9250 60  0000 C CNN
-	1    1450 9400
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 8800 0    60   ~ 0
-GND
-Text Label 1950 9000 0    60   ~ 0
-3V3
-$Comp
-L C C29
-U 1 1 516C1DA9
-P 4500 8850
-F 0 "C29" H 4550 8950 50  0000 L CNN
-F 1 "0.1 uF" H 4550 8750 50  0000 L CNN
-	1    4500 8850
-	1    0    0    -1  
-$EndComp
-Text Label 1950 9100 0    60   ~ 0
-VOUT_4_SENSE_HI
-Text Label 1950 9200 0    60   ~ 0
-VOUT_4_SENSE_LO
-Text Label 1950 9300 0    60   ~ 0
-VOUT_4_SENSE_AMP
-$Comp
-L ISL90810 U28
-U 1 1 516C1DB2
-P 4050 8500
-F 0 "U28" H 4550 8750 60  0000 C CNN
-F 1 "ISL90810" H 4550 8650 60  0000 C CNN
-	1    4050 8500
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 8150
-Text Label 2650 8150 2    60   ~ 0
-3V3
-Text Label 3650 8450 2    60   ~ 0
-GND
-Text Label 5500 8350 0    60   ~ 0
-GND
-Text HLabel 3150 8050 2    60   Input ~ 0
-CH4_POT_SCL
-Text HLabel 3150 8300 2    60   BiDi ~ 0
-CH4_POT_SDA
-Text Label 5500 8450 0    60   ~ 0
-VOUT_4_SENSE_COMPARE
-$Comp
-L C C27
-U 1 1 516C1DCB
-P 4150 8850
-F 0 "C27" H 4200 8950 50  0000 L CNN
-F 1 "0.1 uF" H 4200 8750 50  0000 L CNN
-	1    4150 8850
-	1    0    0    -1  
-$EndComp
-Text Label 4050 9050 2    60   ~ 0
-GND
-Text Label 4050 8650 2    60   ~ 0
-3V3
-Text Label 5500 8150 0    60   ~ 0
-3V3
-Text Label 5500 8250 0    60   ~ 0
-2V5_CH4
-$Comp
-L LM4040-X-SOT23 U32
-U 1 1 516C1DD5
-P 7050 8350
-F 0 "U32" H 7600 8700 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 8300 60  0000 C CNN
-	1    7050 8350
-	1    0    0    -1  
-$EndComp
-Text Label 6650 8050 2    60   ~ 0
-GND
-$Comp
-L R R27
-U 1 1 516C1DDC
-P 6150 8150
-F 0 "R27" V 6250 8150 50  0000 C CNN
-F 1 "1K" V 6150 8150 50  0000 C CNN
-	1    6150 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U30
-U 1 1 516C1DE2
-P 5850 9350
-F 0 "U30" H 6250 9500 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 9250 60  0000 C CNN
-	1    5850 9350
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C31
-U 1 1 516C1DE8
-P 4850 8850
-F 0 "C31" H 4900 8950 50  0000 L CNN
-F 1 "0.1 uF" H 4900 8750 50  0000 L CNN
-	1    4850 8850
-	1    0    0    -1  
-$EndComp
-Text Label 6150 9050 0    60   ~ 0
-3V3
-Text Label 6150 9650 0    60   ~ 0
-GND
-Text HLabel 7450 9050 0    60   Output ~ 0
-CH4_OVERCURRENT
 Text HLabel 11500 8750 0    60   Input ~ 0
 CH4_OE
 $Comp
-L R R31
+L R R26
 U 1 1 516C1DF2
 P 11550 9000
-F 0 "R31" V 11630 9000 50  0000 C CNN
+F 0 "R26" V 11630 9000 50  0000 C CNN
 F 1 "1K" V 11550 9000 50  0000 C CNN
 	1    11550 9000
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R29
-U 1 1 516C1DF8
-P 6900 9350
-F 0 "R29" V 6980 9350 50  0000 C CNN
-F 1 "49.9" V 6900 9350 50  0000 C CNN
-	1    6900 9350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 8350 3750 8350
-Wire Wire Line
-	3150 8250 3750 8250
-Wire Wire Line
-	1750 9300 5550 9300
-Wire Wire Line
-	1950 9200 1750 9200
-Wire Wire Line
-	1950 9100 1750 9100
-Wire Wire Line
-	1950 9000 1750 9000
-Connection ~ 1850 8800
-Wire Wire Line
-	1850 8900 1750 8900
-Wire Wire Line
-	1850 8800 1850 8900
-Wire Wire Line
-	1750 8800 1950 8800
-Wire Notes Line
-	500  9750 16050 9750
 Wire Wire Line
 	15250 8750 15350 8750
 Wire Wire Line
@@ -1990,63 +1127,11 @@ Wire Wire Line
 Wire Wire Line
 	12650 8050 12650 8150
 Wire Wire Line
-	3650 8450 3750 8450
-Wire Wire Line
-	5500 8350 5300 8350
-Wire Wire Line
-	5300 8150 5900 8150
-Wire Wire Line
-	5300 8450 5500 8450
-Wire Wire Line
-	4050 8650 4850 8650
-Wire Wire Line
-	4050 9050 4850 9050
-Connection ~ 4150 8650
-Connection ~ 4150 9050
-Wire Wire Line
-	3150 8300 3150 8350
-Wire Wire Line
-	2650 8150 2650 8350
-Wire Wire Line
-	3150 8050 3150 8250
-Connection ~ 3150 8150
-Connection ~ 4500 8650
-Connection ~ 4500 9050
-Wire Wire Line
-	5300 8250 6750 8250
-Wire Wire Line
-	6650 8050 6750 8050
-Wire Wire Line
-	6700 8050 6700 8150
-Wire Wire Line
-	6700 8150 6750 8150
-Connection ~ 6700 8050
-Connection ~ 6400 8250
-Wire Wire Line
-	6400 8150 6400 8250
-Wire Wire Line
-	6000 9050 6150 9050
-Wire Wire Line
-	6150 9650 6000 9650
-Wire Wire Line
-	5350 8450 5350 9400
-Wire Wire Line
-	5350 9400 5550 9400
-Connection ~ 5350 8450
-Wire Wire Line
-	6500 9350 6650 9350
-Wire Wire Line
 	11500 8750 11800 8750
 Connection ~ 11550 8750
 Wire Wire Line
 	11400 9250 12100 9250
 Connection ~ 11550 9250
-Wire Wire Line
-	7150 9350 7500 9350
-Wire Wire Line
-	7450 9050 7500 9050
-Wire Wire Line
-	7500 9050 7500 9350
 Wire Notes Line
 	11050 4200 11050 19000
 Wire Notes Line
@@ -2058,10 +1143,10 @@ VOUT_5
 Text Label 13300 10650 2    60   ~ 0
 VOUT_5_FUSED
 $Comp
-L R-4TERM R36
+L R-4TERM R47
 U 1 1 516C20FC
 P 14500 10450
-F 0 "R36" V 14580 10450 50  0000 C CNN
+F 0 "R47" V 14580 10450 50  0000 C CNN
 F 1 "0.005" V 14400 10450 50  0000 C CNN
 	1    14500 10450
 	0    1    -1   0   
@@ -2078,32 +1163,32 @@ $EndComp
 Text Label 12800 10300 0    60   ~ 0
 VOUT_5_RAW
 $Comp
-L MOS_P Q13
+L MOS_P Q18
 U 1 1 516C2109
 P 12550 10200
-F 0 "Q13" H 12550 10390 60  0000 R CNN
+F 0 "Q18" H 12550 10390 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 10000 60  0000 L CNN
 	1    12550 10200
 	1    0    0    1   
 $EndComp
 Text Label 12650 9900 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 10200 2    60   ~ 0
 CH5_OE_RAW
 $Comp
-L R R34
+L R R37
 U 1 1 516C2111
 P 12350 9900
-F 0 "R34" V 12430 9900 50  0000 C CNN
+F 0 "R37" V 12430 9900 50  0000 C CNN
 F 1 "1K" V 12350 9900 50  0000 C CNN
 	1    12350 9900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q11
+L MOS_N Q8
 U 1 1 516C2117
 P 12000 10600
-F 0 "Q11" H 12010 10770 60  0000 R CNN
+F 0 "Q8" H 12010 10770 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 10300 60  0000 L CNN
 	1    12000 10600
 	1    0    0    -1  
@@ -2122,10 +1207,10 @@ $EndComp
 Text Label 14100 10200 0    60   ~ 0
 VOUT_5_FILTERED
 $Comp
-L CP1 C34
+L CP1 C50
 U 1 1 516C2125
 P 15150 11250
-F 0 "C34" H 15200 11350 50  0000 L CNN
+F 0 "C50" H 15200 11350 50  0000 L CNN
 F 1 "150 uF" H 15200 11150 50  0000 L CNN
 	1    15150 11250
 	1    0    0    -1  
@@ -2135,10 +1220,10 @@ VOUT_5_FILTERED
 Text Label 15100 11450 2    60   ~ 0
 GND
 $Comp
-L C C36
+L C C60
 U 1 1 516C212D
 P 15600 11250
-F 0 "C36" H 15650 11350 50  0000 L CNN
+F 0 "C60" H 15650 11350 50  0000 L CNN
 F 1 "10 uF" H 15650 11150 50  0000 L CNN
 	1    15600 11250
 	1    0    0    -1  
@@ -2156,164 +1241,19 @@ F 1 "CONN_2" V 15750 10500 40  0000 C CNN
 	1    15700 10500
 	1    0    0    -1  
 $EndComp
-Text Notes 550  10050 0    197  ~ 39
-Channel 5
 Text Notes 11100 11550 0    60   ~ 0
 Output stage
-Text Notes 550  11550 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U27
-U 1 1 516C213E
-P 1450 11250
-F 0 "U27" H 2050 11200 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 11100 60  0000 C CNN
-	1    1450 11250
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 10650 0    60   ~ 0
-GND
-Text Label 1950 10850 0    60   ~ 0
-3V3
-$Comp
-L C C30
-U 1 1 516C2146
-P 4500 10700
-F 0 "C30" H 4550 10800 50  0000 L CNN
-F 1 "0.1 uF" H 4550 10600 50  0000 L CNN
-	1    4500 10700
-	1    0    0    -1  
-$EndComp
-Text Label 1950 10950 0    60   ~ 0
-VOUT_5_SENSE_HI
-Text Label 1950 11050 0    60   ~ 0
-VOUT_5_SENSE_LO
-Text Label 1950 11150 0    60   ~ 0
-VOUT_5_SENSE_AMP
-$Comp
-L ISL90810 U29
-U 1 1 516C214F
-P 4050 10350
-F 0 "U29" H 4550 10600 60  0000 C CNN
-F 1 "ISL90810" H 4550 10500 60  0000 C CNN
-	1    4050 10350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 10000
-Text Label 2650 10000 2    60   ~ 0
-3V3
-Text Label 3650 10300 2    60   ~ 0
-GND
-Text Label 5500 10200 0    60   ~ 0
-GND
-Text HLabel 3150 9900 2    60   Input ~ 0
-CH5_POT_SCL
-Text HLabel 3150 10150 2    60   BiDi ~ 0
-CH5_POT_SDA
-Text Label 5500 10300 0    60   ~ 0
-VOUT_5_SENSE_COMPARE
-$Comp
-L C C28
-U 1 1 516C2168
-P 4150 10700
-F 0 "C28" H 4200 10800 50  0000 L CNN
-F 1 "0.1 uF" H 4200 10600 50  0000 L CNN
-	1    4150 10700
-	1    0    0    -1  
-$EndComp
-Text Label 4050 10900 2    60   ~ 0
-GND
-Text Label 4050 10500 2    60   ~ 0
-3V3
-Text Label 5500 10000 0    60   ~ 0
-3V3
-Text Label 5500 10100 0    60   ~ 0
-2V5_CH5
-$Comp
-L LM4040-X-SOT23 U33
-U 1 1 516C2172
-P 7050 10200
-F 0 "U33" H 7600 10550 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 10150 60  0000 C CNN
-	1    7050 10200
-	1    0    0    -1  
-$EndComp
-Text Label 6650 9900 2    60   ~ 0
-GND
-$Comp
-L R R28
-U 1 1 516C2179
-P 6150 10000
-F 0 "R28" V 6250 10000 50  0000 C CNN
-F 1 "1K" V 6150 10000 50  0000 C CNN
-	1    6150 10000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U31
-U 1 1 516C217F
-P 5850 11200
-F 0 "U31" H 6250 11350 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 11100 60  0000 C CNN
-	1    5850 11200
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C32
-U 1 1 516C2185
-P 4850 10700
-F 0 "C32" H 4900 10800 50  0000 L CNN
-F 1 "0.1 uF" H 4900 10600 50  0000 L CNN
-	1    4850 10700
-	1    0    0    -1  
-$EndComp
-Text Label 6150 10900 0    60   ~ 0
-3V3
-Text Label 6150 11500 0    60   ~ 0
-GND
-Text HLabel 7450 10900 0    60   Output ~ 0
-CH5_OVERCURRENT
 Text HLabel 11500 10600 0    60   Input ~ 0
 CH5_OE
 $Comp
-L R R32
+L R R27
 U 1 1 516C218F
 P 11550 10850
-F 0 "R32" V 11630 10850 50  0000 C CNN
+F 0 "R27" V 11630 10850 50  0000 C CNN
 F 1 "1K" V 11550 10850 50  0000 C CNN
 	1    11550 10850
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R30
-U 1 1 516C2195
-P 6900 11200
-F 0 "R30" V 6980 11200 50  0000 C CNN
-F 1 "49.9" V 6900 11200 50  0000 C CNN
-	1    6900 11200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 10200 3750 10200
-Wire Wire Line
-	3150 10100 3750 10100
-Wire Wire Line
-	1750 11150 5550 11150
-Wire Wire Line
-	1950 11050 1750 11050
-Wire Wire Line
-	1950 10950 1750 10950
-Wire Wire Line
-	1950 10850 1750 10850
-Connection ~ 1850 10650
-Wire Wire Line
-	1850 10750 1750 10750
-Wire Wire Line
-	1850 10650 1850 10750
-Wire Wire Line
-	1750 10650 1950 10650
-Wire Notes Line
-	500  11600 16050 11600
 Wire Wire Line
 	15250 10600 15350 10600
 Wire Wire Line
@@ -2352,63 +1292,11 @@ Wire Wire Line
 Wire Wire Line
 	12650 9900 12650 10000
 Wire Wire Line
-	3650 10300 3750 10300
-Wire Wire Line
-	5500 10200 5300 10200
-Wire Wire Line
-	5300 10000 5900 10000
-Wire Wire Line
-	5300 10300 5500 10300
-Wire Wire Line
-	4050 10500 4850 10500
-Wire Wire Line
-	4050 10900 4850 10900
-Connection ~ 4150 10500
-Connection ~ 4150 10900
-Wire Wire Line
-	3150 10150 3150 10200
-Wire Wire Line
-	2650 10000 2650 10200
-Wire Wire Line
-	3150 9900 3150 10100
-Connection ~ 3150 10000
-Connection ~ 4500 10500
-Connection ~ 4500 10900
-Wire Wire Line
-	5300 10100 6750 10100
-Wire Wire Line
-	6650 9900 6750 9900
-Wire Wire Line
-	6700 9900 6700 10000
-Wire Wire Line
-	6700 10000 6750 10000
-Connection ~ 6700 9900
-Connection ~ 6400 10100
-Wire Wire Line
-	6400 10000 6400 10100
-Wire Wire Line
-	6000 10900 6150 10900
-Wire Wire Line
-	6150 11500 6000 11500
-Wire Wire Line
-	5350 10300 5350 11250
-Wire Wire Line
-	5350 11250 5550 11250
-Connection ~ 5350 10300
-Wire Wire Line
-	6500 11200 6650 11200
-Wire Wire Line
 	11500 10600 11800 10600
 Connection ~ 11550 10600
 Wire Wire Line
 	11400 11100 12100 11100
 Connection ~ 11550 11100
-Wire Wire Line
-	7150 11200 7500 11200
-Wire Wire Line
-	7450 10900 7500 10900
-Wire Wire Line
-	7500 10900 7500 11200
 Text Label 15250 12450 2    60   ~ 0
 GND
 Text Label 15250 12250 2    60   ~ 0
@@ -2416,10 +1304,10 @@ VOUT_0
 Text Label 13300 12500 2    60   ~ 0
 VOUT_6_FUSED
 $Comp
-L R-4TERM R53
+L R-4TERM R48
 U 1 1 516C24D5
 P 14500 12300
-F 0 "R53" V 14580 12300 50  0000 C CNN
+F 0 "R48" V 14580 12300 50  0000 C CNN
 F 1 "0.005" V 14400 12300 50  0000 C CNN
 	1    14500 12300
 	0    1    -1   0   
@@ -2436,32 +1324,32 @@ $EndComp
 Text Label 12800 12150 0    60   ~ 0
 VOUT_6_RAW
 $Comp
-L MOS_P Q18
+L MOS_P Q19
 U 1 1 516C24E2
 P 12550 12050
-F 0 "Q18" H 12550 12240 60  0000 R CNN
+F 0 "Q19" H 12550 12240 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 11850 60  0000 L CNN
 	1    12550 12050
 	1    0    0    1   
 $EndComp
 Text Label 12650 11750 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 12050 2    60   ~ 0
 CH6_OE_RAW
 $Comp
-L R R49
+L R R38
 U 1 1 516C24EA
 P 12350 11750
-F 0 "R49" V 12430 11750 50  0000 C CNN
+F 0 "R38" V 12430 11750 50  0000 C CNN
 F 1 "1K" V 12350 11750 50  0000 C CNN
 	1    12350 11750
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q14
+L MOS_N Q9
 U 1 1 516C24F0
 P 12000 12450
-F 0 "Q14" H 12010 12620 60  0000 R CNN
+F 0 "Q9" H 12010 12620 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 12150 60  0000 L CNN
 	1    12000 12450
 	1    0    0    -1  
@@ -2480,10 +1368,10 @@ $EndComp
 Text Label 14100 12050 0    60   ~ 0
 VOUT_6_FILTERED
 $Comp
-L CP1 C50
+L CP1 C51
 U 1 1 516C24FE
 P 15150 13100
-F 0 "C50" H 15200 13200 50  0000 L CNN
+F 0 "C51" H 15200 13200 50  0000 L CNN
 F 1 "150 uF" H 15200 13000 50  0000 L CNN
 	1    15150 13100
 	1    0    0    -1  
@@ -2493,10 +1381,10 @@ VOUT_6_FILTERED
 Text Label 15100 13300 2    60   ~ 0
 GND
 $Comp
-L C C54
+L C C61
 U 1 1 516C2506
 P 15600 13100
-F 0 "C54" H 15650 13200 50  0000 L CNN
+F 0 "C61" H 15650 13200 50  0000 L CNN
 F 1 "10 uF" H 15650 13000 50  0000 L CNN
 	1    15600 13100
 	1    0    0    -1  
@@ -2514,216 +1402,71 @@ F 1 "CONN_2" V 15750 12350 40  0000 C CNN
 	1    15700 12350
 	1    0    0    -1  
 $EndComp
-Text Notes 550  11900 0    197  ~ 39
-Channel 6
 Text Notes 11100 13400 0    60   ~ 0
 Output stage
-Text Notes 550  13400 0    60   ~ 0
-Overcurrent detection
 $Comp
-L C C49
+L C C43
 U 1 1 516C2517
-P 10750 14900
-F 0 "C49" H 10800 15000 50  0000 L CNN
-F 1 "0.1 uF" H 10800 14800 50  0000 L CNN
-	1    10750 14900
+P 10700 16750
+F 0 "C43" H 10750 16850 50  0000 L CNN
+F 1 "0.1 uF" H 10750 16650 50  0000 L CNN
+	1    10700 16750
 	1    0    0    -1  
 $EndComp
-Text Label 10650 15100 2    60   ~ 0
+Text Label 10600 16950 2    60   ~ 0
 GND
-Text Label 10650 14700 2    60   ~ 0
+Text Label 10600 16550 2    60   ~ 0
 3V3
-$Comp
-L INA199AX-DCK U34
-U 1 1 516C2521
-P 1450 13100
-F 0 "U34" H 2050 13050 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 12950 60  0000 C CNN
-	1    1450 13100
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 12500 0    60   ~ 0
-GND
-Text Label 1950 12700 0    60   ~ 0
-3V3
-$Comp
-L C C41
-U 1 1 516C2529
-P 4500 12550
-F 0 "C41" H 4550 12650 50  0000 L CNN
-F 1 "0.1 uF" H 4550 12450 50  0000 L CNN
-	1    4500 12550
-	1    0    0    -1  
-$EndComp
-Text Label 1950 12800 0    60   ~ 0
-VOUT_6_SENSE_HI
-Text Label 1950 12900 0    60   ~ 0
-VOUT_6_SENSE_LO
-Text Label 1950 13000 0    60   ~ 0
-VOUT_6_SENSE_AMP
-Text Notes 7900 15250 0    60   ~ 0
+Text Notes 7850 17100 0    60   ~ 0
 Current/voltage metering
-$Comp
-L ISL90810 U38
-U 1 1 516C2533
-P 4050 12200
-F 0 "U38" H 4550 12450 60  0000 C CNN
-F 1 "ISL90810" H 4550 12350 60  0000 C CNN
-	1    4050 12200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 11850
-Text Label 2650 11850 2    60   ~ 0
-3V3
-Text Label 3650 12150 2    60   ~ 0
-GND
-Text Label 5500 12050 0    60   ~ 0
-GND
-Text HLabel 3150 11750 2    60   Input ~ 0
-CH6_POT_SCL
-Text HLabel 3150 12000 2    60   BiDi ~ 0
-CH6_POT_SDA
-Text Label 5500 12150 0    60   ~ 0
-VOUT_6_SENSE_COMPARE
-$Comp
-L C C37
-U 1 1 516C254C
-P 4150 12550
-F 0 "C37" H 4200 12650 50  0000 L CNN
-F 1 "0.1 uF" H 4200 12450 50  0000 L CNN
-	1    4150 12550
-	1    0    0    -1  
-$EndComp
-Text Label 4050 12750 2    60   ~ 0
-GND
-Text Label 4050 12350 2    60   ~ 0
-3V3
-Text Label 5500 11850 0    60   ~ 0
-3V3
-Text Label 5500 11950 0    60   ~ 0
-2V5_CH6
-$Comp
-L LM4040-X-SOT23 U46
-U 1 1 516C2556
-P 7050 12050
-F 0 "U46" H 7600 12400 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 12000 60  0000 C CNN
-	1    7050 12050
-	1    0    0    -1  
-$EndComp
-Text Label 6650 11750 2    60   ~ 0
-GND
-$Comp
-L R R37
-U 1 1 516C255D
-P 6150 11850
-F 0 "R37" V 6250 11850 50  0000 C CNN
-F 1 "1K" V 6150 11850 50  0000 C CNN
-	1    6150 11850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U42
-U 1 1 516C2563
-P 5850 13050
-F 0 "U42" H 6250 13200 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 12950 60  0000 C CNN
-	1    5850 13050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C45
-U 1 1 516C2569
-P 4850 12550
-F 0 "C45" H 4900 12650 50  0000 L CNN
-F 1 "0.1 uF" H 4900 12450 50  0000 L CNN
-	1    4850 12550
-	1    0    0    -1  
-$EndComp
-Text Label 6150 12750 0    60   ~ 0
-3V3
-Text Label 6150 13350 0    60   ~ 0
-GND
-Text HLabel 7450 12750 0    60   Output ~ 0
-CH6_OVERCURRENT
 Text HLabel 11500 12450 0    60   Input ~ 0
 CH6_OE
 $Comp
-L R R45
+L R R28
 U 1 1 516C2574
 P 11550 12700
-F 0 "R45" V 11630 12700 50  0000 C CNN
+F 0 "R28" V 11630 12700 50  0000 C CNN
 F 1 "1K" V 11550 12700 50  0000 C CNN
 	1    11550 12700
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R41
-U 1 1 516C257B
-P 6900 13050
-F 0 "R41" V 6980 13050 50  0000 C CNN
-F 1 "49.9" V 6900 13050 50  0000 C CNN
-	1    6900 13050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP3204 U50
+L MCP3204 U29
 U 1 1 516C2581
-P 9600 13950
-F 0 "U50" H 9600 14000 60  0000 C CNN
-F 1 "MCP3204" H 9600 13900 60  0000 C CNN
-	1    9600 13950
+P 9550 15800
+F 0 "U29" H 9550 15850 60  0000 C CNN
+F 1 "MCP3204" H 9550 15750 60  0000 C CNN
+	1    9550 15800
 	1    0    0    -1  
 $EndComp
-Text Label 8750 13600 2    60   ~ 0
+Text Label 8700 15450 2    60   ~ 0
 VOUT_7_SENSE_AMP
-NoConn ~ 10450 13700
-NoConn ~ 10450 13600
-Text Label 8750 13700 2    60   ~ 0
+NoConn ~ 10400 15550
+NoConn ~ 10400 15450
+Text Label 8700 15550 2    60   ~ 0
 VOUT_8_SENSE_AMP
-Text Label 8750 13800 2    60   ~ 0
+Text Label 8700 15650 2    60   ~ 0
 VOUT_9_SENSE_AMP
-Text Label 8750 14100 2    60   ~ 0
+Text Label 8700 15950 2    60   ~ 0
 3V3
-Text Label 8750 14200 2    60   ~ 0
-2V5_CH7
-Text Label 8750 14300 2    60   ~ 0
+Text Label 8700 16050 2    60   ~ 0
+VREF_8
+Text Label 8700 16150 2    60   ~ 0
 GND
-Text Label 8750 14400 2    60   ~ 0
+Text Label 8700 16250 2    60   ~ 0
 GND
-Text HLabel 10450 13900 2    60   Input ~ 0
+Text HLabel 10400 15750 2    60   Input ~ 0
 ADC2_SCK
-Text HLabel 10450 14000 2    60   Output ~ 0
+Text HLabel 10400 15850 2    60   Output ~ 0
 ADC2_MISO
-Text HLabel 10450 14200 2    60   Input ~ 0
+Text HLabel 10400 16050 2    60   Input ~ 0
 ADC2_CS_N
-Text HLabel 10450 14100 2    60   Input ~ 0
+Text HLabel 10400 15950 2    60   Input ~ 0
 ADC2_MOSI
 Wire Wire Line
-	3150 12050 3750 12050
+	10600 16550 10700 16550
 Wire Wire Line
-	3150 11950 3750 11950
-Wire Wire Line
-	1750 13000 5550 13000
-Wire Wire Line
-	1950 12900 1750 12900
-Wire Wire Line
-	1950 12800 1750 12800
-Wire Wire Line
-	1950 12700 1750 12700
-Connection ~ 1850 12500
-Wire Wire Line
-	1850 12600 1750 12600
-Wire Wire Line
-	1850 12500 1850 12600
-Wire Wire Line
-	1750 12500 1950 12500
-Wire Wire Line
-	10650 14700 10750 14700
-Wire Wire Line
-	10650 15100 10750 15100
-Wire Notes Line
-	500  13450 16050 13450
+	10600 16950 10700 16950
 Wire Wire Line
 	15250 12450 15350 12450
 Wire Wire Line
@@ -2762,63 +1505,11 @@ Wire Wire Line
 Wire Wire Line
 	12650 11750 12650 11850
 Wire Wire Line
-	3650 12150 3750 12150
-Wire Wire Line
-	5500 12050 5300 12050
-Wire Wire Line
-	5300 11850 5900 11850
-Wire Wire Line
-	5300 12150 5500 12150
-Wire Wire Line
-	4050 12350 4850 12350
-Wire Wire Line
-	4050 12750 4850 12750
-Connection ~ 4150 12350
-Connection ~ 4150 12750
-Wire Wire Line
-	3150 12000 3150 12050
-Wire Wire Line
-	2650 11850 2650 12050
-Wire Wire Line
-	3150 11750 3150 11950
-Connection ~ 3150 11850
-Connection ~ 4500 12350
-Connection ~ 4500 12750
-Wire Wire Line
-	5300 11950 6750 11950
-Wire Wire Line
-	6650 11750 6750 11750
-Wire Wire Line
-	6700 11750 6700 11850
-Wire Wire Line
-	6700 11850 6750 11850
-Connection ~ 6700 11750
-Connection ~ 6400 11950
-Wire Wire Line
-	6400 11850 6400 11950
-Wire Wire Line
-	6000 12750 6150 12750
-Wire Wire Line
-	6150 13350 6000 13350
-Wire Wire Line
-	5350 12150 5350 13100
-Wire Wire Line
-	5350 13100 5550 13100
-Connection ~ 5350 12150
-Wire Wire Line
-	6500 13050 6650 13050
-Wire Wire Line
 	11500 12450 11800 12450
 Connection ~ 11550 12450
 Wire Wire Line
 	11400 12950 12100 12950
 Connection ~ 11550 12950
-Wire Wire Line
-	7150 13050 7500 13050
-Wire Wire Line
-	7450 12750 7500 12750
-Wire Wire Line
-	7500 12750 7500 13050
 Text Label 15250 14300 2    60   ~ 0
 GND
 Text Label 15250 14100 2    60   ~ 0
@@ -2826,10 +1517,10 @@ VOUT_7
 Text Label 13300 14350 2    60   ~ 0
 VOUT_7_FUSED
 $Comp
-L R-4TERM R54
+L R-4TERM R49
 U 1 1 516C25EC
 P 14500 14150
-F 0 "R54" V 14580 14150 50  0000 C CNN
+F 0 "R49" V 14580 14150 50  0000 C CNN
 F 1 "0.005" V 14400 14150 50  0000 C CNN
 	1    14500 14150
 	0    1    -1   0   
@@ -2846,32 +1537,32 @@ $EndComp
 Text Label 12800 14000 0    60   ~ 0
 VOUT_7_RAW
 $Comp
-L MOS_P Q19
+L MOS_P Q20
 U 1 1 516C25F9
 P 12550 13900
-F 0 "Q19" H 12550 14090 60  0000 R CNN
+F 0 "Q20" H 12550 14090 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 13700 60  0000 L CNN
 	1    12550 13900
 	1    0    0    1   
 $EndComp
 Text Label 12650 13600 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 13900 2    60   ~ 0
 CH7_OE_RAW
 $Comp
-L R R50
+L R R39
 U 1 1 516C2601
 P 12350 13600
-F 0 "R50" V 12430 13600 50  0000 C CNN
+F 0 "R39" V 12430 13600 50  0000 C CNN
 F 1 "1K" V 12350 13600 50  0000 C CNN
 	1    12350 13600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q15
+L MOS_N Q10
 U 1 1 516C2607
 P 12000 14300
-F 0 "Q15" H 12010 14470 60  0000 R CNN
+F 0 "Q10" H 12010 14470 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 14000 60  0000 L CNN
 	1    12000 14300
 	1    0    0    -1  
@@ -2890,10 +1581,10 @@ $EndComp
 Text Label 14100 13900 0    60   ~ 0
 VOUT_7_FILTERED
 $Comp
-L CP1 C51
+L CP1 C52
 U 1 1 516C2615
 P 15150 14950
-F 0 "C51" H 15200 15050 50  0000 L CNN
+F 0 "C52" H 15200 15050 50  0000 L CNN
 F 1 "150 uF" H 15200 14850 50  0000 L CNN
 	1    15150 14950
 	1    0    0    -1  
@@ -2903,10 +1594,10 @@ VOUT_7_FILTERED
 Text Label 15100 15150 2    60   ~ 0
 GND
 $Comp
-L C C55
+L C C62
 U 1 1 516C261D
 P 15600 14950
-F 0 "C55" H 15650 15050 50  0000 L CNN
+F 0 "C62" H 15650 15050 50  0000 L CNN
 F 1 "10 uF" H 15650 14850 50  0000 L CNN
 	1    15600 14950
 	1    0    0    -1  
@@ -2924,164 +1615,19 @@ F 1 "CONN_2" V 15750 14200 40  0000 C CNN
 	1    15700 14200
 	1    0    0    -1  
 $EndComp
-Text Notes 550  13750 0    197  ~ 39
-Channel 7
 Text Notes 11100 15250 0    60   ~ 0
 Output stage
-Text Notes 550  15250 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U35
-U 1 1 516C262E
-P 1450 14950
-F 0 "U35" H 2050 14900 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 14800 60  0000 C CNN
-	1    1450 14950
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 14350 0    60   ~ 0
-GND
-Text Label 1950 14550 0    60   ~ 0
-3V3
-$Comp
-L C C42
-U 1 1 516C2636
-P 4500 14400
-F 0 "C42" H 4550 14500 50  0000 L CNN
-F 1 "0.1 uF" H 4550 14300 50  0000 L CNN
-	1    4500 14400
-	1    0    0    -1  
-$EndComp
-Text Label 1950 14650 0    60   ~ 0
-VOUT_7_SENSE_HI
-Text Label 1950 14750 0    60   ~ 0
-VOUT_7_SENSE_LO
-Text Label 1950 14850 0    60   ~ 0
-VOUT_7_SENSE_AMP
-$Comp
-L ISL90810 U39
-U 1 1 516C263F
-P 4050 14050
-F 0 "U39" H 4550 14300 60  0000 C CNN
-F 1 "ISL90810" H 4550 14200 60  0000 C CNN
-	1    4050 14050
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 13700
-Text Label 2650 13700 2    60   ~ 0
-3V3
-Text Label 3650 14000 2    60   ~ 0
-GND
-Text Label 5500 13900 0    60   ~ 0
-GND
-Text HLabel 3150 13600 2    60   Input ~ 0
-CH7_POT_SCL
-Text HLabel 3150 13850 2    60   BiDi ~ 0
-CH7_POT_SDA
-Text Label 5500 14000 0    60   ~ 0
-VOUT_7_SENSE_COMPARE
-$Comp
-L C C38
-U 1 1 516C2658
-P 4150 14400
-F 0 "C38" H 4200 14500 50  0000 L CNN
-F 1 "0.1 uF" H 4200 14300 50  0000 L CNN
-	1    4150 14400
-	1    0    0    -1  
-$EndComp
-Text Label 4050 14600 2    60   ~ 0
-GND
-Text Label 4050 14200 2    60   ~ 0
-3V3
-Text Label 5500 13700 0    60   ~ 0
-3V3
-Text Label 5500 13800 0    60   ~ 0
-2V5_CH7
-$Comp
-L LM4040-X-SOT23 U47
-U 1 1 516C2662
-P 7050 13900
-F 0 "U47" H 7600 14250 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 13850 60  0000 C CNN
-	1    7050 13900
-	1    0    0    -1  
-$EndComp
-Text Label 6650 13600 2    60   ~ 0
-GND
-$Comp
-L R R38
-U 1 1 516C2669
-P 6150 13700
-F 0 "R38" V 6250 13700 50  0000 C CNN
-F 1 "1K" V 6150 13700 50  0000 C CNN
-	1    6150 13700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U43
-U 1 1 516C266F
-P 5850 14900
-F 0 "U43" H 6250 15050 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 14800 60  0000 C CNN
-	1    5850 14900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C46
-U 1 1 516C2675
-P 4850 14400
-F 0 "C46" H 4900 14500 50  0000 L CNN
-F 1 "0.1 uF" H 4900 14300 50  0000 L CNN
-	1    4850 14400
-	1    0    0    -1  
-$EndComp
-Text Label 6150 14600 0    60   ~ 0
-3V3
-Text Label 6150 15200 0    60   ~ 0
-GND
-Text HLabel 7450 14600 0    60   Output ~ 0
-CH7_OVERCURRENT
 Text HLabel 11500 14300 0    60   Input ~ 0
 CH7_OE
 $Comp
-L R R46
+L R R29
 U 1 1 516C267F
 P 11550 14550
-F 0 "R46" V 11630 14550 50  0000 C CNN
+F 0 "R29" V 11630 14550 50  0000 C CNN
 F 1 "1K" V 11550 14550 50  0000 C CNN
 	1    11550 14550
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R42
-U 1 1 516C2685
-P 6900 14900
-F 0 "R42" V 6980 14900 50  0000 C CNN
-F 1 "49.9" V 6900 14900 50  0000 C CNN
-	1    6900 14900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 13900 3750 13900
-Wire Wire Line
-	3150 13800 3750 13800
-Wire Wire Line
-	1750 14850 5550 14850
-Wire Wire Line
-	1950 14750 1750 14750
-Wire Wire Line
-	1950 14650 1750 14650
-Wire Wire Line
-	1950 14550 1750 14550
-Connection ~ 1850 14350
-Wire Wire Line
-	1850 14450 1750 14450
-Wire Wire Line
-	1850 14350 1850 14450
-Wire Wire Line
-	1750 14350 1950 14350
-Wire Notes Line
-	500  15300 16050 15300
 Wire Wire Line
 	15250 14300 15350 14300
 Wire Wire Line
@@ -3120,63 +1666,11 @@ Wire Wire Line
 Wire Wire Line
 	12650 13600 12650 13700
 Wire Wire Line
-	3650 14000 3750 14000
-Wire Wire Line
-	5500 13900 5300 13900
-Wire Wire Line
-	5300 13700 5900 13700
-Wire Wire Line
-	5300 14000 5500 14000
-Wire Wire Line
-	4050 14200 4850 14200
-Wire Wire Line
-	4050 14600 4850 14600
-Connection ~ 4150 14200
-Connection ~ 4150 14600
-Wire Wire Line
-	3150 13850 3150 13900
-Wire Wire Line
-	2650 13700 2650 13900
-Wire Wire Line
-	3150 13600 3150 13800
-Connection ~ 3150 13700
-Connection ~ 4500 14200
-Connection ~ 4500 14600
-Wire Wire Line
-	5300 13800 6750 13800
-Wire Wire Line
-	6650 13600 6750 13600
-Wire Wire Line
-	6700 13600 6700 13700
-Wire Wire Line
-	6700 13700 6750 13700
-Connection ~ 6700 13600
-Connection ~ 6400 13800
-Wire Wire Line
-	6400 13700 6400 13800
-Wire Wire Line
-	6000 14600 6150 14600
-Wire Wire Line
-	6150 15200 6000 15200
-Wire Wire Line
-	5350 14000 5350 14950
-Wire Wire Line
-	5350 14950 5550 14950
-Connection ~ 5350 14000
-Wire Wire Line
-	6500 14900 6650 14900
-Wire Wire Line
 	11500 14300 11800 14300
 Connection ~ 11550 14300
 Wire Wire Line
 	11400 14800 12100 14800
 Connection ~ 11550 14800
-Wire Wire Line
-	7150 14900 7500 14900
-Wire Wire Line
-	7450 14600 7500 14600
-Wire Wire Line
-	7500 14600 7500 14900
 Text Label 15250 16150 2    60   ~ 0
 GND
 Text Label 15250 15950 2    60   ~ 0
@@ -3184,10 +1678,10 @@ VOUT_8
 Text Label 13300 16200 2    60   ~ 0
 VOUT_8_FUSED
 $Comp
-L R-4TERM R55
+L R-4TERM R50
 U 1 1 516C26DF
 P 14500 16000
-F 0 "R55" V 14580 16000 50  0000 C CNN
+F 0 "R50" V 14580 16000 50  0000 C CNN
 F 1 "0.005" V 14400 16000 50  0000 C CNN
 	1    14500 16000
 	0    1    -1   0   
@@ -3204,32 +1698,32 @@ $EndComp
 Text Label 12800 15850 0    60   ~ 0
 VOUT_8_RAW
 $Comp
-L MOS_P Q20
+L MOS_P Q21
 U 1 1 516C26EC
 P 12550 15750
-F 0 "Q20" H 12550 15940 60  0000 R CNN
+F 0 "Q21" H 12550 15940 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 15550 60  0000 L CNN
 	1    12550 15750
 	1    0    0    1   
 $EndComp
 Text Label 12650 15450 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 15750 2    60   ~ 0
 CH8_OE_RAW
 $Comp
-L R R51
+L R R40
 U 1 1 516C26F4
 P 12350 15450
-F 0 "R51" V 12430 15450 50  0000 C CNN
+F 0 "R40" V 12430 15450 50  0000 C CNN
 F 1 "1K" V 12350 15450 50  0000 C CNN
 	1    12350 15450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q16
+L MOS_N Q11
 U 1 1 516C26FA
 P 12000 16150
-F 0 "Q16" H 12010 16320 60  0000 R CNN
+F 0 "Q11" H 12010 16320 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 15850 60  0000 L CNN
 	1    12000 16150
 	1    0    0    -1  
@@ -3248,10 +1742,10 @@ $EndComp
 Text Label 14100 15750 0    60   ~ 0
 VOUT_8_FILTERED
 $Comp
-L CP1 C52
+L CP1 C53
 U 1 1 516C2708
 P 15150 16800
-F 0 "C52" H 15200 16900 50  0000 L CNN
+F 0 "C53" H 15200 16900 50  0000 L CNN
 F 1 "150 uF" H 15200 16700 50  0000 L CNN
 	1    15150 16800
 	1    0    0    -1  
@@ -3261,10 +1755,10 @@ VOUT_8_FILTERED
 Text Label 15100 17000 2    60   ~ 0
 GND
 $Comp
-L C C56
+L C C63
 U 1 1 516C2710
 P 15600 16800
-F 0 "C56" H 15650 16900 50  0000 L CNN
+F 0 "C63" H 15650 16900 50  0000 L CNN
 F 1 "10 uF" H 15650 16700 50  0000 L CNN
 	1    15600 16800
 	1    0    0    -1  
@@ -3282,164 +1776,19 @@ F 1 "CONN_2" V 15750 16050 40  0000 C CNN
 	1    15700 16050
 	1    0    0    -1  
 $EndComp
-Text Notes 550  15600 0    197  ~ 39
-Channel 8
 Text Notes 11100 17100 0    60   ~ 0
 Output stage
-Text Notes 550  17100 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U36
-U 1 1 516C2721
-P 1450 16800
-F 0 "U36" H 2050 16750 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 16650 60  0000 C CNN
-	1    1450 16800
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 16200 0    60   ~ 0
-GND
-Text Label 1950 16400 0    60   ~ 0
-3V3
-$Comp
-L C C43
-U 1 1 516C2729
-P 4500 16250
-F 0 "C43" H 4550 16350 50  0000 L CNN
-F 1 "0.1 uF" H 4550 16150 50  0000 L CNN
-	1    4500 16250
-	1    0    0    -1  
-$EndComp
-Text Label 1950 16500 0    60   ~ 0
-VOUT_8_SENSE_HI
-Text Label 1950 16600 0    60   ~ 0
-VOUT_8_SENSE_LO
-Text Label 1950 16700 0    60   ~ 0
-VOUT_8_SENSE_AMP
-$Comp
-L ISL90810 U40
-U 1 1 516C2732
-P 4050 15900
-F 0 "U40" H 4550 16150 60  0000 C CNN
-F 1 "ISL90810" H 4550 16050 60  0000 C CNN
-	1    4050 15900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 15550
-Text Label 2650 15550 2    60   ~ 0
-3V3
-Text Label 3650 15850 2    60   ~ 0
-GND
-Text Label 5500 15750 0    60   ~ 0
-GND
-Text HLabel 3150 15450 2    60   Input ~ 0
-CH8_POT_SCL
-Text HLabel 3150 15700 2    60   BiDi ~ 0
-CH8_POT_SDA
-Text Label 5500 15850 0    60   ~ 0
-VOUT_8_SENSE_COMPARE
-$Comp
-L C C39
-U 1 1 516C274B
-P 4150 16250
-F 0 "C39" H 4200 16350 50  0000 L CNN
-F 1 "0.1 uF" H 4200 16150 50  0000 L CNN
-	1    4150 16250
-	1    0    0    -1  
-$EndComp
-Text Label 4050 16450 2    60   ~ 0
-GND
-Text Label 4050 16050 2    60   ~ 0
-3V3
-Text Label 5500 15550 0    60   ~ 0
-3V3
-Text Label 5500 15650 0    60   ~ 0
-2V5_CH8
-$Comp
-L LM4040-X-SOT23 U48
-U 1 1 516C2755
-P 7050 15750
-F 0 "U48" H 7600 16100 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 15700 60  0000 C CNN
-	1    7050 15750
-	1    0    0    -1  
-$EndComp
-Text Label 6650 15450 2    60   ~ 0
-GND
-$Comp
-L R R39
-U 1 1 516C275C
-P 6150 15550
-F 0 "R39" V 6250 15550 50  0000 C CNN
-F 1 "1K" V 6150 15550 50  0000 C CNN
-	1    6150 15550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U44
-U 1 1 516C2762
-P 5850 16750
-F 0 "U44" H 6250 16900 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 16650 60  0000 C CNN
-	1    5850 16750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C47
-U 1 1 516C2768
-P 4850 16250
-F 0 "C47" H 4900 16350 50  0000 L CNN
-F 1 "0.1 uF" H 4900 16150 50  0000 L CNN
-	1    4850 16250
-	1    0    0    -1  
-$EndComp
-Text Label 6150 16450 0    60   ~ 0
-3V3
-Text Label 6150 17050 0    60   ~ 0
-GND
-Text HLabel 7450 16450 0    60   Output ~ 0
-CH8_OVERCURRENT
 Text HLabel 11500 16150 0    60   Input ~ 0
 CH8_OE
 $Comp
-L R R47
+L R R30
 U 1 1 516C2772
 P 11550 16400
-F 0 "R47" V 11630 16400 50  0000 C CNN
+F 0 "R30" V 11630 16400 50  0000 C CNN
 F 1 "1K" V 11550 16400 50  0000 C CNN
 	1    11550 16400
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R43
-U 1 1 516C2778
-P 6900 16750
-F 0 "R43" V 6980 16750 50  0000 C CNN
-F 1 "49.9" V 6900 16750 50  0000 C CNN
-	1    6900 16750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 15750 3750 15750
-Wire Wire Line
-	3150 15650 3750 15650
-Wire Wire Line
-	1750 16700 5550 16700
-Wire Wire Line
-	1950 16600 1750 16600
-Wire Wire Line
-	1950 16500 1750 16500
-Wire Wire Line
-	1950 16400 1750 16400
-Connection ~ 1850 16200
-Wire Wire Line
-	1850 16300 1750 16300
-Wire Wire Line
-	1850 16200 1850 16300
-Wire Wire Line
-	1750 16200 1950 16200
-Wire Notes Line
-	500  17150 16050 17150
 Wire Wire Line
 	15250 16150 15350 16150
 Wire Wire Line
@@ -3478,63 +1827,11 @@ Wire Wire Line
 Wire Wire Line
 	12650 15450 12650 15550
 Wire Wire Line
-	3650 15850 3750 15850
-Wire Wire Line
-	5500 15750 5300 15750
-Wire Wire Line
-	5300 15550 5900 15550
-Wire Wire Line
-	5300 15850 5500 15850
-Wire Wire Line
-	4050 16050 4850 16050
-Wire Wire Line
-	4050 16450 4850 16450
-Connection ~ 4150 16050
-Connection ~ 4150 16450
-Wire Wire Line
-	3150 15700 3150 15750
-Wire Wire Line
-	2650 15550 2650 15750
-Wire Wire Line
-	3150 15450 3150 15650
-Connection ~ 3150 15550
-Connection ~ 4500 16050
-Connection ~ 4500 16450
-Wire Wire Line
-	5300 15650 6750 15650
-Wire Wire Line
-	6650 15450 6750 15450
-Wire Wire Line
-	6700 15450 6700 15550
-Wire Wire Line
-	6700 15550 6750 15550
-Connection ~ 6700 15450
-Connection ~ 6400 15650
-Wire Wire Line
-	6400 15550 6400 15650
-Wire Wire Line
-	6000 16450 6150 16450
-Wire Wire Line
-	6150 17050 6000 17050
-Wire Wire Line
-	5350 15850 5350 16800
-Wire Wire Line
-	5350 16800 5550 16800
-Connection ~ 5350 15850
-Wire Wire Line
-	6500 16750 6650 16750
-Wire Wire Line
 	11500 16150 11800 16150
 Connection ~ 11550 16150
 Wire Wire Line
 	11400 16650 12100 16650
 Connection ~ 11550 16650
-Wire Wire Line
-	7150 16750 7500 16750
-Wire Wire Line
-	7450 16450 7500 16450
-Wire Wire Line
-	7500 16450 7500 16750
 Text Label 15250 18000 2    60   ~ 0
 GND
 Text Label 15250 17800 2    60   ~ 0
@@ -3542,10 +1839,10 @@ VOUT_9
 Text Label 13300 18050 2    60   ~ 0
 VOUT_9_FUSED
 $Comp
-L R-4TERM R56
+L R-4TERM R51
 U 1 1 516C27D2
 P 14500 17850
-F 0 "R56" V 14580 17850 50  0000 C CNN
+F 0 "R51" V 14580 17850 50  0000 C CNN
 F 1 "0.005" V 14400 17850 50  0000 C CNN
 	1    14500 17850
 	0    1    -1   0   
@@ -3562,32 +1859,32 @@ $EndComp
 Text Label 12800 17700 0    60   ~ 0
 VOUT_9_RAW
 $Comp
-L MOS_P Q21
+L MOS_P Q22
 U 1 1 516C27DF
 P 12550 17600
-F 0 "Q21" H 12550 17790 60  0000 R CNN
+F 0 "Q22" H 12550 17790 60  0000 R CNN
 F 1 "SI4413ADY-T1-E3" H 12750 17400 60  0000 L CNN
 	1    12550 17600
 	1    0    0    1   
 $EndComp
 Text Label 12650 17300 0    60   ~ 0
-5V
+VOUT
 Text Label 12050 17600 2    60   ~ 0
 CH9_OE_RAW
 $Comp
-L R R52
+L R R41
 U 1 1 516C27E7
 P 12350 17300
-F 0 "R52" V 12430 17300 50  0000 C CNN
+F 0 "R41" V 12430 17300 50  0000 C CNN
 F 1 "1K" V 12350 17300 50  0000 C CNN
 	1    12350 17300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MOS_N Q17
+L MOS_N Q12
 U 1 1 516C27ED
 P 12000 18000
-F 0 "Q17" H 12010 18170 60  0000 R CNN
+F 0 "Q12" H 12010 18170 60  0000 R CNN
 F 1 "SI2304DDS-T1-GE3" H 12150 17700 60  0000 L CNN
 	1    12000 18000
 	1    0    0    -1  
@@ -3606,10 +1903,10 @@ $EndComp
 Text Label 14100 17600 0    60   ~ 0
 VOUT_9_FILTERED
 $Comp
-L CP1 C53
+L CP1 C54
 U 1 1 516C27FB
 P 15150 18650
-F 0 "C53" H 15200 18750 50  0000 L CNN
+F 0 "C54" H 15200 18750 50  0000 L CNN
 F 1 "150 uF" H 15200 18550 50  0000 L CNN
 	1    15150 18650
 	1    0    0    -1  
@@ -3619,10 +1916,10 @@ VOUT_9_FILTERED
 Text Label 15100 18850 2    60   ~ 0
 GND
 $Comp
-L C C57
+L C C64
 U 1 1 516C2803
 P 15600 18650
-F 0 "C57" H 15650 18750 50  0000 L CNN
+F 0 "C64" H 15650 18750 50  0000 L CNN
 F 1 "10 uF" H 15650 18550 50  0000 L CNN
 	1    15600 18650
 	1    0    0    -1  
@@ -3640,164 +1937,19 @@ F 1 "CONN_2" V 15750 17900 40  0000 C CNN
 	1    15700 17900
 	1    0    0    -1  
 $EndComp
-Text Notes 550  17450 0    197  ~ 39
-Channel 9
 Text Notes 11100 18950 0    60   ~ 0
 Output stage
-Text Notes 550  18950 0    60   ~ 0
-Overcurrent detection
-$Comp
-L INA199AX-DCK U37
-U 1 1 516C2814
-P 1450 18650
-F 0 "U37" H 2050 18600 60  0000 C CNN
-F 1 "INA199A2-DCK" H 1800 18500 60  0000 C CNN
-	1    1450 18650
-	-1   0    0    -1  
-$EndComp
-Text Label 1950 18050 0    60   ~ 0
-GND
-Text Label 1950 18250 0    60   ~ 0
-3V3
-$Comp
-L C C44
-U 1 1 516C281C
-P 4500 18100
-F 0 "C44" H 4550 18200 50  0000 L CNN
-F 1 "0.1 uF" H 4550 18000 50  0000 L CNN
-	1    4500 18100
-	1    0    0    -1  
-$EndComp
-Text Label 1950 18350 0    60   ~ 0
-VOUT_9_SENSE_HI
-Text Label 1950 18450 0    60   ~ 0
-VOUT_9_SENSE_LO
-Text Label 1950 18550 0    60   ~ 0
-VOUT_9_SENSE_AMP
-$Comp
-L ISL90810 U41
-U 1 1 516C2825
-P 4050 17750
-F 0 "U41" H 4550 18000 60  0000 C CNN
-F 1 "ISL90810" H 4550 17900 60  0000 C CNN
-	1    4050 17750
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3750 17400
-Text Label 2650 17400 2    60   ~ 0
-3V3
-Text Label 3650 17700 2    60   ~ 0
-GND
-Text Label 5500 17600 0    60   ~ 0
-GND
-Text HLabel 3150 17300 2    60   Input ~ 0
-CH9_POT_SCL
-Text HLabel 3150 17550 2    60   BiDi ~ 0
-CH9_POT_SDA
-Text Label 5500 17700 0    60   ~ 0
-VOUT_9_SENSE_COMPARE
-$Comp
-L C C40
-U 1 1 516C283E
-P 4150 18100
-F 0 "C40" H 4200 18200 50  0000 L CNN
-F 1 "0.1 uF" H 4200 18000 50  0000 L CNN
-	1    4150 18100
-	1    0    0    -1  
-$EndComp
-Text Label 4050 18300 2    60   ~ 0
-GND
-Text Label 4050 17900 2    60   ~ 0
-3V3
-Text Label 5500 17400 0    60   ~ 0
-3V3
-Text Label 5500 17500 0    60   ~ 0
-2V5_CH9
-$Comp
-L LM4040-X-SOT23 U49
-U 1 1 516C2848
-P 7050 17600
-F 0 "U49" H 7600 17950 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 7300 17550 60  0000 C CNN
-	1    7050 17600
-	1    0    0    -1  
-$EndComp
-Text Label 6650 17300 2    60   ~ 0
-GND
-$Comp
-L R R40
-U 1 1 516C284F
-P 6150 17400
-F 0 "R40" V 6250 17400 50  0000 C CNN
-F 1 "1K" V 6150 17400 50  0000 C CNN
-	1    6150 17400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCP6541-SOT23-5 U45
-U 1 1 516C2855
-P 5850 18600
-F 0 "U45" H 6250 18750 60  0000 C CNN
-F 1 "MCP6541-SOT23-5" H 6600 18500 60  0000 C CNN
-	1    5850 18600
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C48
-U 1 1 516C285B
-P 4850 18100
-F 0 "C48" H 4900 18200 50  0000 L CNN
-F 1 "0.1 uF" H 4900 18000 50  0000 L CNN
-	1    4850 18100
-	1    0    0    -1  
-$EndComp
-Text Label 6150 18300 0    60   ~ 0
-3V3
-Text Label 6150 18900 0    60   ~ 0
-GND
-Text HLabel 7450 18300 0    60   Output ~ 0
-CH9_OVERCURRENT
 Text HLabel 11500 18000 0    60   Input ~ 0
 CH9_OE
 $Comp
-L R R48
+L R R31
 U 1 1 516C2865
 P 11550 18250
-F 0 "R48" V 11630 18250 50  0000 C CNN
+F 0 "R31" V 11630 18250 50  0000 C CNN
 F 1 "1K" V 11550 18250 50  0000 C CNN
 	1    11550 18250
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R44
-U 1 1 516C286B
-P 6900 18600
-F 0 "R44" V 6980 18600 50  0000 C CNN
-F 1 "49.9" V 6900 18600 50  0000 C CNN
-	1    6900 18600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3150 17600 3750 17600
-Wire Wire Line
-	3150 17500 3750 17500
-Wire Wire Line
-	1750 18550 5550 18550
-Wire Wire Line
-	1950 18450 1750 18450
-Wire Wire Line
-	1950 18350 1750 18350
-Wire Wire Line
-	1950 18250 1750 18250
-Connection ~ 1850 18050
-Wire Wire Line
-	1850 18150 1750 18150
-Wire Wire Line
-	1850 18050 1850 18150
-Wire Wire Line
-	1750 18050 1950 18050
-Wire Notes Line
-	500  19000 16050 19000
 Wire Wire Line
 	15250 18000 15350 18000
 Wire Wire Line
@@ -3836,242 +1988,1460 @@ Wire Wire Line
 Wire Wire Line
 	12650 17300 12650 17400
 Wire Wire Line
-	3650 17700 3750 17700
-Wire Wire Line
-	5500 17600 5300 17600
-Wire Wire Line
-	5300 17400 5900 17400
-Wire Wire Line
-	5300 17700 5500 17700
-Wire Wire Line
-	4050 17900 4850 17900
-Wire Wire Line
-	4050 18300 4850 18300
-Connection ~ 4150 17900
-Connection ~ 4150 18300
-Wire Wire Line
-	3150 17550 3150 17600
-Wire Wire Line
-	2650 17400 2650 17600
-Wire Wire Line
-	3150 17300 3150 17500
-Connection ~ 3150 17400
-Connection ~ 4500 17900
-Connection ~ 4500 18300
-Wire Wire Line
-	5300 17500 6750 17500
-Wire Wire Line
-	6650 17300 6750 17300
-Wire Wire Line
-	6700 17300 6700 17400
-Wire Wire Line
-	6700 17400 6750 17400
-Connection ~ 6700 17300
-Connection ~ 6400 17500
-Wire Wire Line
-	6400 17400 6400 17500
-Wire Wire Line
-	6000 18300 6150 18300
-Wire Wire Line
-	6150 18900 6000 18900
-Wire Wire Line
-	5350 17700 5350 18650
-Wire Wire Line
-	5350 18650 5550 18650
-Connection ~ 5350 17700
-Wire Wire Line
-	6500 18600 6650 18600
-Wire Wire Line
 	11500 18000 11800 18000
 Connection ~ 11550 18000
 Wire Wire Line
 	11400 18500 12100 18500
 Connection ~ 11550 18500
-Wire Wire Line
-	7150 18600 7500 18600
-Wire Wire Line
-	7450 18300 7500 18300
-Wire Wire Line
-	7500 18300 7500 18600
-Text Label 8700 6500 2    60   ~ 0
+Text Label 8700 8350 2    60   ~ 0
 VOUT_6_SENSE_AMP
-Text Label 8750 13900 2    60   ~ 0
+Text Label 8700 15750 2    60   ~ 0
 VDD_BOT_DIV
 Wire Notes Line
 	16050 19000 16050 500 
 Wire Notes Line
-	16050 500  500  500 
-Wire Notes Line
 	500  500  500  19000
+Wire Wire Line
+	1750 1500 2950 1500
+Wire Wire Line
+	2150 1850 2600 1850
+Text Label 8750 1250 2    60   ~ 0
+VREF_0
+Wire Wire Line
+	3900 1350 3900 1550
+Wire Wire Line
+	3200 1250 3400 1250
+Text Label 2200 22050 2    60   ~ 0
+I2C_SDA
+Text Label 2200 22250 2    60   ~ 0
+I2C_SCL
 $Comp
-L R R58
-U 1 1 516D5E3D
-P 2900 950
-F 0 "R58" V 2980 950 50  0000 C CNN
-F 1 "4.7K" V 2900 950 50  0000 C CNN
-	1    2900 950 
+L R R3
+U 1 1 51BE0B9F
+P 2450 22050
+F 0 "R3" V 2550 22050 50  0000 C CNN
+F 1 "4.7K" V 2450 22050 50  0000 C CNN
+	1    2450 22050
 	0    -1   -1   0   
 $EndComp
+Text Label 2700 22050 0    60   ~ 0
+3V3
 $Comp
-L R R59
-U 1 1 516D5E43
-P 2900 2600
-F 0 "R59" V 2980 2600 50  0000 C CNN
-F 1 "4.7K" V 2900 2600 50  0000 C CNN
-	1    2900 2600
+L R R4
+U 1 1 51BE0BAC
+P 2450 22250
+F 0 "R4" V 2550 22250 50  0000 C CNN
+F 1 "4.7K" V 2450 22250 50  0000 C CNN
+	1    2450 22250
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2700 22050 2700 22250
+Wire Notes Line
+	500  2350 16050 2350
+Wire Notes Line
+	16050 4200 500  4200
+Wire Notes Line
+	4000 500  4000 19000
+Wire Notes Line
+	500  19000 16050 19000
+Wire Notes Line
+	16050 17150 500  17150
+Wire Notes Line
+	16050 15300 500  15300
+Wire Notes Line
+	16050 13450 500  13450
+Wire Notes Line
+	16050 11600 500  11600
+Wire Notes Line
+	16050 9750 500  9750
+Wire Notes Line
+	16050 7900 500  7900
+Wire Notes Line
+	16050 6050 500  6050
 $Comp
-L R R60
-U 1 1 516D5E49
-P 2900 2800
-F 0 "R60" V 2980 2800 50  0000 C CNN
-F 1 "4.7K" V 2900 2800 50  0000 C CNN
-	1    2900 2800
-	0    -1   -1   0   
+L C C23
+U 1 1 51BE2060
+P 2950 2050
+F 0 "C23" H 2800 1950 50  0000 L CNN
+F 1 "0.1 uF" H 2650 2150 50  0000 L CNN
+	1    2950 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1600 2950 1850
+Wire Wire Line
+	2250 2250 3400 2250
+Wire Wire Line
+	3400 2250 3400 1850
+Connection ~ 2950 2250
+Wire Wire Line
+	7250 1000 7250 900 
+Wire Wire Line
+	7150 1000 7250 1000
+Wire Wire Line
+	7250 900  7150 900 
+Text Label 7250 900  0    60   ~ 0
+3V3
+Connection ~ 7150 2300
+Wire Wire Line
+	7150 1900 7500 1900
+$Comp
+L C C39
+U 1 1 51BE30B6
+P 7500 2100
+F 0 "C39" H 7350 2000 50  0000 L CNN
+F 1 "0.1 uF" H 7200 2200 50  0000 L CNN
+	1    7500 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 2300 7500 2300
+Text Label 7050 2300 2    60   ~ 0
+3V3
+$Comp
+L C C36
+U 1 1 51BE2F6F
+P 7150 2100
+F 0 "C36" H 7000 2000 50  0000 L CNN
+F 1 "0.1 uF" H 6850 2200 50  0000 L CNN
+	1    7150 2100
+	-1   0    0    1   
+$EndComp
+Text Label 7500 1900 0    60   ~ 0
+GND
+Text Label 7150 1500 0    60   ~ 0
+VOUT_3_REF
+Text Label 7150 1400 0    60   ~ 0
+VOUT_2_REF
+Text Label 7150 1300 0    60   ~ 0
+VOUT_1_REF
+Wire Wire Line
+	5600 1800 5700 1800
+Text Label 5600 1800 2    60   ~ 0
+I2C_SCL
+Wire Wire Line
+	5600 1700 5700 1700
+Text Label 5600 1700 2    60   ~ 0
+I2C_SDA
+Connection ~ 5600 1200
+Wire Wire Line
+	5700 1200 5600 1200
+Connection ~ 5600 1300
+Wire Wire Line
+	5700 1300 5600 1300
+Connection ~ 5600 1400
+Wire Wire Line
+	5600 1500 5700 1500
+NoConn ~ 5700 1900
+Wire Wire Line
+	5250 1400 5700 1400
+Wire Wire Line
+	5600 1000 5600 1500
+Wire Wire Line
+	5700 1000 5600 1000
+$Comp
+L DAC5573 U25
+U 1 1 51BDF6BE
+P 6400 1400
+F 0 "U25" H 6950 750 60  0000 C CNN
+F 1 "DAC5573" H 6400 750 60  0000 C CNN
+	1    6400 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 4050 1900 0    60   ~ 0
+Vref = 2.5V\n8 bits, 256 steps\n2.5V / 256 = 9.76 mV per step\n= 19.53 mA per LSB
+Text Notes 4050 2300 0    60   ~ 0
+Reference voltage generation
+Text Label 7150 1200 0    60   ~ 0
+VOUT_0_REF
+Connection ~ 5250 900 
+Wire Wire Line
+	5250 1400 5250 1300
+Wire Wire Line
+	5000 900  5700 900 
+Wire Wire Line
+	4900 1400 5000 1400
+Wire Wire Line
+	5050 700  5000 700 
+Wire Wire Line
+	5000 700  5000 800 
+Text Label 5050 700  0    60   ~ 0
+GND
+Text Label 4900 1400 2    60   ~ 0
+3V3
+Text Label 5350 900  0    60   ~ 0
+VREF_0
+$Comp
+L R R19
+U 1 1 51BDAF27
+P 5000 1150
+F 0 "R19" V 5100 1150 50  0000 C CNN
+F 1 "1K" V 5000 1150 50  0000 C CNN
+	1    5000 1150
+	-1   0    0    1   
 $EndComp
 $Comp
-L R R61
-U 1 1 516D5E4F
-P 2900 4450
-F 0 "R61" V 2980 4450 50  0000 C CNN
-F 1 "4.7K" V 2900 4450 50  0000 C CNN
-	1    2900 4450
-	0    -1   -1   0   
+L C C33
+U 1 1 51BD6E7C
+P 5250 1100
+F 0 "C33" H 5300 1200 50  0000 L CNN
+F 1 "0.1 uF" H 5300 1000 50  0000 L CNN
+	1    5250 1100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	16050 500  500  500 
+Text Label 5250 1400 2    60   ~ 0
+GND
+$Comp
+L LM4040-X-SOT23 U22
+U 1 1 515CB07B
+P 4700 1000
+F 0 "U22" H 5250 1350 60  0000 C CNN
+F 1 "LM4040-25-SOT23" H 4950 950 60  0000 C CNN
+	1    4700 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 15800 7250 15700
+Wire Wire Line
+	7150 15800 7250 15800
+Wire Wire Line
+	7250 15700 7150 15700
+Text Label 7250 15700 0    60   ~ 0
+3V3
+Connection ~ 7150 17100
+Wire Wire Line
+	7150 16700 7500 16700
+$Comp
+L C C41
+U 1 1 51BE3831
+P 7500 16900
+F 0 "C41" H 7350 16800 50  0000 L CNN
+F 1 "0.1 uF" H 7200 17000 50  0000 L CNN
+	1    7500 16900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 17100 7500 17100
+Text Label 7050 17100 2    60   ~ 0
+3V3
+$Comp
+L C C38
+U 1 1 51BE3839
+P 7150 16900
+F 0 "C38" H 7000 16800 50  0000 L CNN
+F 1 "0.1 uF" H 6850 17000 50  0000 L CNN
+	1    7150 16900
+	-1   0    0    1   
+$EndComp
+Text Label 7500 16700 0    60   ~ 0
+GND
+Text Label 7150 16100 0    60   ~ 0
+VOUT_9_REF
+Wire Wire Line
+	5600 16600 5700 16600
+Text Label 5600 16600 2    60   ~ 0
+I2C_SCL
+Wire Wire Line
+	5600 16500 5700 16500
+Text Label 5600 16500 2    60   ~ 0
+I2C_SDA
+Connection ~ 5600 16000
+Wire Wire Line
+	5700 16000 5600 16000
+Connection ~ 5600 16200
+Wire Wire Line
+	5600 16300 5700 16300
+NoConn ~ 5700 16700
+Wire Wire Line
+	5250 16200 5700 16200
+Wire Wire Line
+	5600 15800 5600 16300
+Wire Wire Line
+	5700 15800 5600 15800
+$Comp
+L DAC5573 U27
+U 1 1 51BE3851
+P 6400 16200
+F 0 "U27" H 6950 15550 60  0000 C CNN
+F 1 "DAC5573" H 6400 15550 60  0000 C CNN
+	1    6400 16200
+	1    0    0    -1  
+$EndComp
+Text Notes 4050 17100 0    60   ~ 0
+Reference voltage generation
+Text Label 7150 16000 0    60   ~ 0
+VOUT_8_REF
+Connection ~ 5250 15700
+Wire Wire Line
+	5250 16200 5250 16100
+Wire Wire Line
+	5000 15700 5700 15700
+Wire Wire Line
+	4900 16200 5000 16200
+Wire Wire Line
+	5050 15500 5000 15500
+Wire Wire Line
+	5000 15500 5000 15600
+Text Label 5050 15500 0    60   ~ 0
+GND
+Text Label 4900 16200 2    60   ~ 0
+3V3
+Text Label 5250 15700 0    60   ~ 0
+VREF_0
+$Comp
+L R R21
+U 1 1 51BE3863
+P 5000 15950
+F 0 "R21" V 5100 15950 50  0000 C CNN
+F 1 "1K" V 5000 15950 50  0000 C CNN
+	1    5000 15950
+	-1   0    0    1   
 $EndComp
 $Comp
-L R R62
-U 1 1 516D5E55
-P 2900 4650
-F 0 "R62" V 2980 4650 50  0000 C CNN
-F 1 "4.7K" V 2900 4650 50  0000 C CNN
-	1    2900 4650
-	0    -1   -1   0   
+L C C35
+U 1 1 51BE3869
+P 5250 15900
+F 0 "C35" H 5300 16000 50  0000 L CNN
+F 1 "0.1 uF" H 5300 15800 50  0000 L CNN
+	1    5250 15900
+	1    0    0    -1  
+$EndComp
+Text Label 5250 16200 2    60   ~ 0
+GND
+$Comp
+L LM4040-X-SOT23 U24
+U 1 1 51BE3871
+P 4700 15800
+F 0 "U24" H 5250 16150 60  0000 C CNN
+F 1 "LM4040-25-SOT23" H 4950 15750 60  0000 C CNN
+	1    4700 15800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 8400 7250 8300
+Wire Wire Line
+	7150 8400 7250 8400
+Wire Wire Line
+	7250 8300 7150 8300
+Text Label 7250 8300 0    60   ~ 0
+3V3
+Connection ~ 7150 9700
+Wire Wire Line
+	7150 9300 7500 9300
+$Comp
+L C C40
+U 1 1 51BE387D
+P 7500 9500
+F 0 "C40" H 7350 9400 50  0000 L CNN
+F 1 "0.1 uF" H 7200 9600 50  0000 L CNN
+	1    7500 9500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 9700 7500 9700
+Text Label 7050 9700 2    60   ~ 0
+3V3
+$Comp
+L C C37
+U 1 1 51BE3885
+P 7150 9500
+F 0 "C37" H 7000 9400 50  0000 L CNN
+F 1 "0.1 uF" H 6850 9600 50  0000 L CNN
+	1    7150 9500
+	-1   0    0    1   
+$EndComp
+Text Label 7500 9300 0    60   ~ 0
+GND
+Text Label 7150 8900 0    60   ~ 0
+VOUT_7_REF
+Text Label 7150 8800 0    60   ~ 0
+VOUT_6_REF
+Text Label 7150 8700 0    60   ~ 0
+VOUT_5_REF
+Wire Wire Line
+	5600 9200 5700 9200
+Text Label 5600 9200 2    60   ~ 0
+I2C_SCL
+Wire Wire Line
+	5600 9100 5700 9100
+Text Label 5600 9100 2    60   ~ 0
+I2C_SDA
+Connection ~ 5600 8700
+Wire Wire Line
+	5700 8700 5600 8700
+Connection ~ 5600 8800
+Wire Wire Line
+	5600 8900 5700 8900
+NoConn ~ 5700 9300
+Wire Wire Line
+	5250 8800 5700 8800
+Wire Wire Line
+	5600 8400 5600 8900
+Wire Wire Line
+	5700 8400 5600 8400
+$Comp
+L DAC5573 U26
+U 1 1 51BE389D
+P 6400 8800
+F 0 "U26" H 6950 8150 60  0000 C CNN
+F 1 "DAC5573" H 6400 8150 60  0000 C CNN
+	1    6400 8800
+	1    0    0    -1  
+$EndComp
+Text Notes 4050 9700 0    60   ~ 0
+Reference voltage generation
+Text Label 7150 8600 0    60   ~ 0
+VOUT_4_REF
+Connection ~ 5250 8300
+Wire Wire Line
+	5250 8800 5250 8700
+Wire Wire Line
+	5000 8300 5700 8300
+Wire Wire Line
+	4900 8800 5000 8800
+Wire Wire Line
+	5050 8100 5000 8100
+Wire Wire Line
+	5000 8100 5000 8200
+Text Label 5050 8100 0    60   ~ 0
+GND
+Text Label 4900 8800 2    60   ~ 0
+3V3
+Text Label 5250 8300 0    60   ~ 0
+VREF_4
+$Comp
+L R R20
+U 1 1 51BE38AE
+P 5000 8550
+F 0 "R20" V 5100 8550 50  0000 C CNN
+F 1 "1K" V 5000 8550 50  0000 C CNN
+	1    5000 8550
+	-1   0    0    1   
 $EndComp
 $Comp
-L R R63
-U 1 1 516D5E5B
-P 2900 6300
-F 0 "R63" V 2980 6300 50  0000 C CNN
-F 1 "4.7K" V 2900 6300 50  0000 C CNN
-	1    2900 6300
-	0    -1   -1   0   
+L C C34
+U 1 1 51BE38B4
+P 5250 8500
+F 0 "C34" H 5300 8600 50  0000 L CNN
+F 1 "0.1 uF" H 5300 8400 50  0000 L CNN
+	1    5250 8500
+	1    0    0    -1  
 $EndComp
+Text Label 5250 8800 2    60   ~ 0
+GND
 $Comp
-L R R64
-U 1 1 516D5E61
-P 2900 6500
-F 0 "R64" V 2980 6500 50  0000 C CNN
-F 1 "4.7K" V 2900 6500 50  0000 C CNN
-	1    2900 6500
-	0    -1   -1   0   
+L LM4040-X-SOT23 U23
+U 1 1 51BE38BB
+P 4700 8400
+F 0 "U23" H 5250 8750 60  0000 C CNN
+F 1 "LM4040-25-SOT23" H 4950 8350 60  0000 C CNN
+	1    4700 8400
+	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	5700 8600 5650 8600
+Wire Wire Line
+	5650 8600 5650 8100
+Text Label 5650 8100 0    60   ~ 0
+3V3
+NoConn ~ 7150 16200
+NoConn ~ 7150 16300
+Wire Wire Line
+	5700 16100 5650 16100
+Wire Wire Line
+	5650 16100 5650 15500
+Text Label 5650 15500 2    60   ~ 0
+3V3
+Text Notes 550  17450 0    197  ~ 39
+Channel 9
+Text Notes 550  18950 0    60   ~ 0
+Overcurrent detection
 $Comp
-L R R65
-U 1 1 516D5E67
-P 2900 8150
-F 0 "R65" V 2980 8150 50  0000 C CNN
-F 1 "4.7K" V 2900 8150 50  0000 C CNN
-	1    2900 8150
-	0    -1   -1   0   
+L INA199AX-DCK U11
+U 1 1 51BE3F93
+P 1450 18250
+F 0 "U11" H 2050 18200 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 18100 60  0000 C CNN
+	1    1450 18250
+	-1   0    0    -1  
 $EndComp
+Text Label 1950 17650 0    60   ~ 0
+GND
+Text Label 1950 17850 0    60   ~ 0
+3V3
 $Comp
-L R R66
-U 1 1 516D5E6D
-P 2900 8350
-F 0 "R66" V 2980 8350 50  0000 C CNN
-F 1 "4.7K" V 2900 8350 50  0000 C CNN
-	1    2900 8350
-	0    -1   -1   0   
+L C C22
+U 1 1 51BE3F9B
+P 2600 18700
+F 0 "C22" H 2650 18800 50  0000 L CNN
+F 1 "0.1 uF" H 2650 18600 50  0000 L CNN
+	1    2600 18700
+	1    0    0    -1  
 $EndComp
+Text Label 1950 17950 0    60   ~ 0
+VOUT_9_SENSE_HI
+Text Label 1950 18050 0    60   ~ 0
+VOUT_9_SENSE_LO
+Text Label 1950 18150 0    60   ~ 0
+VOUT_9_SENSE_AMP
+Text Label 2950 18250 2    60   ~ 0
+VOUT_9_REF
 $Comp
-L R R67
-U 1 1 516D5E73
-P 2900 10000
-F 0 "R67" V 2980 10000 50  0000 C CNN
-F 1 "4.7K" V 2900 10000 50  0000 C CNN
-	1    2900 10000
-	0    -1   -1   0   
+L C C12
+U 1 1 51BE3FA5
+P 2250 18700
+F 0 "C12" H 2300 18800 50  0000 L CNN
+F 1 "0.1 uF" H 2300 18600 50  0000 L CNN
+	1    2250 18700
+	1    0    0    -1  
 $EndComp
+Text Label 2150 18500 2    60   ~ 0
+3V3
 $Comp
-L R R68
-U 1 1 516D5E79
-P 2900 10200
-F 0 "R68" V 2980 10200 50  0000 C CNN
-F 1 "4.7K" V 2900 10200 50  0000 C CNN
-	1    2900 10200
-	0    -1   -1   0   
+L MCP6541-SOT23-5 U21
+U 1 1 51BE3FAC
+P 3250 18200
+F 0 "U21" H 3650 18350 60  0000 C CNN
+F 1 "TLV3201" H 3700 18050 60  0000 C CNN
+	1    3250 18200
+	1    0    0    -1  
 $EndComp
+Text Label 3200 17900 2    60   ~ 0
+3V3
+Text Label 3400 18900 0    60   ~ 0
+GND
+Text HLabel 3900 17500 0    60   Output ~ 0
+CH9_OVERCURRENT
 $Comp
-L R R69
-U 1 1 516D5E7F
-P 2900 11850
-F 0 "R69" V 2980 11850 50  0000 C CNN
-F 1 "4.7K" V 2900 11850 50  0000 C CNN
-	1    2900 11850
-	0    -1   -1   0   
+L R R16
+U 1 1 51BE3FB5
+P 3900 17750
+F 0 "R16" V 3980 17750 50  0000 C CNN
+F 1 "49.9" V 3900 17750 50  0000 C CNN
+	1    3900 17750
+	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1950 18050 1750 18050
+Wire Wire Line
+	1950 17950 1750 17950
+Wire Wire Line
+	1950 17850 1750 17850
+Connection ~ 1850 17650
+Wire Wire Line
+	1850 17750 1750 17750
+Wire Wire Line
+	1850 17650 1850 17750
+Wire Wire Line
+	1750 17650 1950 17650
+Connection ~ 2250 18500
+Connection ~ 2600 18500
+Connection ~ 2600 18900
+Wire Wire Line
+	1750 18150 2950 18150
+Wire Wire Line
+	2150 18500 2600 18500
+Wire Wire Line
+	3900 18000 3900 18200
+Wire Wire Line
+	3200 17900 3400 17900
 $Comp
-L R R70
-U 1 1 516D5E85
-P 2900 12050
-F 0 "R70" V 2980 12050 50  0000 C CNN
-F 1 "4.7K" V 2900 12050 50  0000 C CNN
-	1    2900 12050
-	0    -1   -1   0   
+L C C32
+U 1 1 51BE3FC9
+P 2950 18700
+F 0 "C32" H 2800 18600 50  0000 L CNN
+F 1 "0.1 uF" H 2650 18800 50  0000 L CNN
+	1    2950 18700
+	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2950 18250 2950 18500
+Wire Wire Line
+	2250 18900 3400 18900
+Wire Wire Line
+	3400 18900 3400 18500
+Connection ~ 2950 18900
+Text Notes 550  2650 0    197  ~ 39
+Channel 1
+Text Notes 550  4150 0    60   ~ 0
+Overcurrent detection
 $Comp
-L R R71
-U 1 1 516D5E8B
-P 2900 13700
-F 0 "R71" V 2980 13700 50  0000 C CNN
-F 1 "4.7K" V 2900 13700 50  0000 C CNN
-	1    2900 13700
-	0    -1   -1   0   
+L INA199AX-DCK U3
+U 1 1 51BE3FD5
+P 1450 3450
+F 0 "U3" H 2050 3400 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 3300 60  0000 C CNN
+	1    1450 3450
+	-1   0    0    -1  
 $EndComp
+Text Label 1950 2850 0    60   ~ 0
+GND
+Text Label 1950 3050 0    60   ~ 0
+3V3
 $Comp
-L R R72
-U 1 1 516D5E91
-P 2900 13900
-F 0 "R72" V 2980 13900 50  0000 C CNN
-F 1 "4.7K" V 2900 13900 50  0000 C CNN
-	1    2900 13900
-	0    -1   -1   0   
+L C C14
+U 1 1 51BE3FDD
+P 2600 3900
+F 0 "C14" H 2650 4000 50  0000 L CNN
+F 1 "0.1 uF" H 2650 3800 50  0000 L CNN
+	1    2600 3900
+	1    0    0    -1  
 $EndComp
+Text Label 1950 3150 0    60   ~ 0
+VOUT_1_SENSE_HI
+Text Label 1950 3250 0    60   ~ 0
+VOUT_1_SENSE_LO
+Text Label 1950 3350 0    60   ~ 0
+VOUT_1_SENSE_AMP
+Text Label 2950 3450 2    60   ~ 0
+VOUT_1_REF
 $Comp
-L R R73
-U 1 1 516D5E97
-P 2900 15550
-F 0 "R73" V 2980 15550 50  0000 C CNN
-F 1 "4.7K" V 2900 15550 50  0000 C CNN
-	1    2900 15550
-	0    -1   -1   0   
+L C C4
+U 1 1 51BE3FE7
+P 2250 3900
+F 0 "C4" H 2300 4000 50  0000 L CNN
+F 1 "0.1 uF" H 2300 3800 50  0000 L CNN
+	1    2250 3900
+	1    0    0    -1  
 $EndComp
+Text Label 2150 3700 2    60   ~ 0
+3V3
 $Comp
-L R R74
-U 1 1 516D5E9D
-P 2900 15750
-F 0 "R74" V 2980 15750 50  0000 C CNN
-F 1 "4.7K" V 2900 15750 50  0000 C CNN
-	1    2900 15750
-	0    -1   -1   0   
+L MCP6541-SOT23-5 U13
+U 1 1 51BE3FEE
+P 3250 3400
+F 0 "U13" H 3650 3550 60  0000 C CNN
+F 1 "TLV3201" H 3700 3250 60  0000 C CNN
+	1    3250 3400
+	1    0    0    -1  
 $EndComp
+Text Label 3200 3100 2    60   ~ 0
+3V3
+Text Label 3400 4100 0    60   ~ 0
+GND
+Text HLabel 3900 2700 0    60   Output ~ 0
+CH1_OVERCURRENT
 $Comp
-L R R75
-U 1 1 516D5EA3
-P 2900 17400
-F 0 "R75" V 2980 17400 50  0000 C CNN
-F 1 "4.7K" V 2900 17400 50  0000 C CNN
-	1    2900 17400
-	0    -1   -1   0   
+L R R8
+U 1 1 51BE3FF7
+P 3900 2950
+F 0 "R8" V 3980 2950 50  0000 C CNN
+F 1 "49.9" V 3900 2950 50  0000 C CNN
+	1    3900 2950
+	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1950 3250 1750 3250
+Wire Wire Line
+	1950 3150 1750 3150
+Wire Wire Line
+	1950 3050 1750 3050
+Connection ~ 1850 2850
+Wire Wire Line
+	1850 2950 1750 2950
+Wire Wire Line
+	1850 2850 1850 2950
+Wire Wire Line
+	1750 2850 1950 2850
+Connection ~ 2250 3700
+Connection ~ 2600 3700
+Connection ~ 2600 4100
+Wire Wire Line
+	1750 3350 2950 3350
+Wire Wire Line
+	2150 3700 2600 3700
+Wire Wire Line
+	3900 3200 3900 3400
+Wire Wire Line
+	3200 3100 3400 3100
 $Comp
-L R R76
-U 1 1 516D5EA9
-P 2900 17600
-F 0 "R76" V 2980 17600 50  0000 C CNN
-F 1 "4.7K" V 2900 17600 50  0000 C CNN
-	1    2900 17600
-	0    -1   -1   0   
+L C C24
+U 1 1 51BE400B
+P 2950 3900
+F 0 "C24" H 2800 3800 50  0000 L CNN
+F 1 "0.1 uF" H 2650 4000 50  0000 L CNN
+	1    2950 3900
+	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2950 3450 2950 3700
+Wire Wire Line
+	2250 4100 3400 4100
+Wire Wire Line
+	3400 4100 3400 3700
+Connection ~ 2950 4100
+Text Notes 550  4500 0    197  ~ 39
+Channel 2
+Text Notes 550  6000 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U4
+U 1 1 51BE401D
+P 1450 5300
+F 0 "U4" H 2050 5250 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 5150 60  0000 C CNN
+	1    1450 5300
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 4700 0    60   ~ 0
+GND
+Text Label 1950 4900 0    60   ~ 0
+3V3
+$Comp
+L C C15
+U 1 1 51BE4025
+P 2600 5750
+F 0 "C15" H 2650 5850 50  0000 L CNN
+F 1 "0.1 uF" H 2650 5650 50  0000 L CNN
+	1    2600 5750
+	1    0    0    -1  
+$EndComp
+Text Label 1950 5000 0    60   ~ 0
+VOUT_2_SENSE_HI
+Text Label 1950 5100 0    60   ~ 0
+VOUT_2_SENSE_LO
+Text Label 1950 5200 0    60   ~ 0
+VOUT_2_SENSE_AMP
+Text Label 2950 5300 2    60   ~ 0
+VOUT_2_REF
+$Comp
+L C C5
+U 1 1 51BE402F
+P 2250 5750
+F 0 "C5" H 2300 5850 50  0000 L CNN
+F 1 "0.1 uF" H 2300 5650 50  0000 L CNN
+	1    2250 5750
+	1    0    0    -1  
+$EndComp
+Text Label 2150 5550 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U14
+U 1 1 51BE4036
+P 3250 5250
+F 0 "U14" H 3650 5400 60  0000 C CNN
+F 1 "TLV3201" H 3700 5100 60  0000 C CNN
+	1    3250 5250
+	1    0    0    -1  
+$EndComp
+Text Label 3200 4950 2    60   ~ 0
+3V3
+Text Label 3400 5950 0    60   ~ 0
+GND
+Text HLabel 3900 4550 0    60   Output ~ 0
+CH2_OVERCURRENT
+$Comp
+L R R9
+U 1 1 51BE403F
+P 3900 4800
+F 0 "R9" V 3980 4800 50  0000 C CNN
+F 1 "49.9" V 3900 4800 50  0000 C CNN
+	1    3900 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 5100 1750 5100
+Wire Wire Line
+	1950 5000 1750 5000
+Wire Wire Line
+	1950 4900 1750 4900
+Connection ~ 1850 4700
+Wire Wire Line
+	1850 4800 1750 4800
+Wire Wire Line
+	1850 4700 1850 4800
+Wire Wire Line
+	1750 4700 1950 4700
+Connection ~ 2250 5550
+Connection ~ 2600 5550
+Connection ~ 2600 5950
+Wire Wire Line
+	1750 5200 2950 5200
+Wire Wire Line
+	2150 5550 2600 5550
+Wire Wire Line
+	3900 5050 3900 5250
+Wire Wire Line
+	3200 4950 3400 4950
+$Comp
+L C C25
+U 1 1 51BE4053
+P 2950 5750
+F 0 "C25" H 2800 5650 50  0000 L CNN
+F 1 "0.1 uF" H 2650 5850 50  0000 L CNN
+	1    2950 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 5300 2950 5550
+Wire Wire Line
+	2250 5950 3400 5950
+Wire Wire Line
+	3400 5950 3400 5550
+Connection ~ 2950 5950
+Text Notes 550  6350 0    197  ~ 39
+Channel 3
+Text Notes 550  7850 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U5
+U 1 1 51BE4065
+P 1450 7150
+F 0 "U5" H 2050 7100 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 7000 60  0000 C CNN
+	1    1450 7150
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 6550 0    60   ~ 0
+GND
+Text Label 1950 6750 0    60   ~ 0
+3V3
+$Comp
+L C C16
+U 1 1 51BE406D
+P 2600 7600
+F 0 "C16" H 2650 7700 50  0000 L CNN
+F 1 "0.1 uF" H 2650 7500 50  0000 L CNN
+	1    2600 7600
+	1    0    0    -1  
+$EndComp
+Text Label 1950 6850 0    60   ~ 0
+VOUT_3_SENSE_HI
+Text Label 1950 6950 0    60   ~ 0
+VOUT_3_SENSE_LO
+Text Label 1950 7050 0    60   ~ 0
+VOUT_3_SENSE_AMP
+Text Label 2950 7150 2    60   ~ 0
+VOUT_3_REF
+$Comp
+L C C6
+U 1 1 51BE4077
+P 2250 7600
+F 0 "C6" H 2300 7700 50  0000 L CNN
+F 1 "0.1 uF" H 2300 7500 50  0000 L CNN
+	1    2250 7600
+	1    0    0    -1  
+$EndComp
+Text Label 2150 7400 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U15
+U 1 1 51BE407E
+P 3250 7100
+F 0 "U15" H 3650 7250 60  0000 C CNN
+F 1 "TLV3201" H 3700 6950 60  0000 C CNN
+	1    3250 7100
+	1    0    0    -1  
+$EndComp
+Text Label 3200 6800 2    60   ~ 0
+3V3
+Text Label 3400 7800 0    60   ~ 0
+GND
+Text HLabel 3900 6400 0    60   Output ~ 0
+CH3_OVERCURRENT
+$Comp
+L R R10
+U 1 1 51BE4087
+P 3900 6650
+F 0 "R10" V 3980 6650 50  0000 C CNN
+F 1 "49.9" V 3900 6650 50  0000 C CNN
+	1    3900 6650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 6950 1750 6950
+Wire Wire Line
+	1950 6850 1750 6850
+Wire Wire Line
+	1950 6750 1750 6750
+Connection ~ 1850 6550
+Wire Wire Line
+	1850 6650 1750 6650
+Wire Wire Line
+	1850 6550 1850 6650
+Wire Wire Line
+	1750 6550 1950 6550
+Connection ~ 2250 7400
+Connection ~ 2600 7400
+Connection ~ 2600 7800
+Wire Wire Line
+	1750 7050 2950 7050
+Wire Wire Line
+	2150 7400 2600 7400
+Wire Wire Line
+	3900 6900 3900 7100
+Wire Wire Line
+	3200 6800 3400 6800
+$Comp
+L C C26
+U 1 1 51BE409B
+P 2950 7600
+F 0 "C26" H 2800 7500 50  0000 L CNN
+F 1 "0.1 uF" H 2650 7700 50  0000 L CNN
+	1    2950 7600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 7150 2950 7400
+Wire Wire Line
+	2250 7800 3400 7800
+Wire Wire Line
+	3400 7800 3400 7400
+Connection ~ 2950 7800
+Text Notes 550  8200 0    197  ~ 39
+Channel 4
+Text Notes 550  9700 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U6
+U 1 1 51BE40AD
+P 1450 9000
+F 0 "U6" H 2050 8950 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 8850 60  0000 C CNN
+	1    1450 9000
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 8400 0    60   ~ 0
+GND
+Text Label 1950 8600 0    60   ~ 0
+3V3
+$Comp
+L C C17
+U 1 1 51BE40B5
+P 2600 9450
+F 0 "C17" H 2650 9550 50  0000 L CNN
+F 1 "0.1 uF" H 2650 9350 50  0000 L CNN
+	1    2600 9450
+	1    0    0    -1  
+$EndComp
+Text Label 1950 8700 0    60   ~ 0
+VOUT_4_SENSE_HI
+Text Label 1950 8800 0    60   ~ 0
+VOUT_4_SENSE_LO
+Text Label 1950 8900 0    60   ~ 0
+VOUT_4_SENSE_AMP
+Text Label 2950 9000 2    60   ~ 0
+VOUT_4_REF
+$Comp
+L C C7
+U 1 1 51BE40BF
+P 2250 9450
+F 0 "C7" H 2300 9550 50  0000 L CNN
+F 1 "0.1 uF" H 2300 9350 50  0000 L CNN
+	1    2250 9450
+	1    0    0    -1  
+$EndComp
+Text Label 2150 9250 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U16
+U 1 1 51BE40C6
+P 3250 8950
+F 0 "U16" H 3650 9100 60  0000 C CNN
+F 1 "TLV3201" H 3700 8800 60  0000 C CNN
+	1    3250 8950
+	1    0    0    -1  
+$EndComp
+Text Label 3200 8650 2    60   ~ 0
+3V3
+Text Label 3400 9650 0    60   ~ 0
+GND
+Text HLabel 3900 8250 0    60   Output ~ 0
+CH4_OVERCURRENT
+$Comp
+L R R11
+U 1 1 51BE40CF
+P 3900 8500
+F 0 "R11" V 3980 8500 50  0000 C CNN
+F 1 "49.9" V 3900 8500 50  0000 C CNN
+	1    3900 8500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 8800 1750 8800
+Wire Wire Line
+	1950 8700 1750 8700
+Wire Wire Line
+	1950 8600 1750 8600
+Connection ~ 1850 8400
+Wire Wire Line
+	1850 8500 1750 8500
+Wire Wire Line
+	1850 8400 1850 8500
+Wire Wire Line
+	1750 8400 1950 8400
+Connection ~ 2250 9250
+Connection ~ 2600 9250
+Connection ~ 2600 9650
+Wire Wire Line
+	1750 8900 2950 8900
+Wire Wire Line
+	2150 9250 2600 9250
+Wire Wire Line
+	3900 8750 3900 8950
+Wire Wire Line
+	3200 8650 3400 8650
+$Comp
+L C C27
+U 1 1 51BE40E3
+P 2950 9450
+F 0 "C27" H 2800 9350 50  0000 L CNN
+F 1 "0.1 uF" H 2650 9550 50  0000 L CNN
+	1    2950 9450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 9000 2950 9250
+Wire Wire Line
+	2250 9650 3400 9650
+Wire Wire Line
+	3400 9650 3400 9250
+Connection ~ 2950 9650
+Text Notes 550  10050 0    197  ~ 39
+Channel 5
+Text Notes 550  11550 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U7
+U 1 1 51BE40F6
+P 1450 10850
+F 0 "U7" H 2050 10800 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 10700 60  0000 C CNN
+	1    1450 10850
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 10250 0    60   ~ 0
+GND
+Text Label 1950 10450 0    60   ~ 0
+3V3
+$Comp
+L C C18
+U 1 1 51BE40FE
+P 2600 11300
+F 0 "C18" H 2650 11400 50  0000 L CNN
+F 1 "0.1 uF" H 2650 11200 50  0000 L CNN
+	1    2600 11300
+	1    0    0    -1  
+$EndComp
+Text Label 1950 10550 0    60   ~ 0
+VOUT_5_SENSE_HI
+Text Label 1950 10650 0    60   ~ 0
+VOUT_5_SENSE_LO
+Text Label 1950 10750 0    60   ~ 0
+VOUT_5_SENSE_AMP
+Text Label 2950 10850 2    60   ~ 0
+VOUT_5_REF
+$Comp
+L C C8
+U 1 1 51BE4108
+P 2250 11300
+F 0 "C8" H 2300 11400 50  0000 L CNN
+F 1 "0.1 uF" H 2300 11200 50  0000 L CNN
+	1    2250 11300
+	1    0    0    -1  
+$EndComp
+Text Label 2150 11100 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U17
+U 1 1 51BE410F
+P 3250 10800
+F 0 "U17" H 3650 10950 60  0000 C CNN
+F 1 "TLV3201" H 3700 10650 60  0000 C CNN
+	1    3250 10800
+	1    0    0    -1  
+$EndComp
+Text Label 3200 10500 2    60   ~ 0
+3V3
+Text Label 3400 11500 0    60   ~ 0
+GND
+Text HLabel 3900 10100 0    60   Output ~ 0
+CH5_OVERCURRENT
+$Comp
+L R R12
+U 1 1 51BE4118
+P 3900 10350
+F 0 "R12" V 3980 10350 50  0000 C CNN
+F 1 "49.9" V 3900 10350 50  0000 C CNN
+	1    3900 10350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 10650 1750 10650
+Wire Wire Line
+	1950 10550 1750 10550
+Wire Wire Line
+	1950 10450 1750 10450
+Connection ~ 1850 10250
+Wire Wire Line
+	1850 10350 1750 10350
+Wire Wire Line
+	1850 10250 1850 10350
+Wire Wire Line
+	1750 10250 1950 10250
+Connection ~ 2250 11100
+Connection ~ 2600 11100
+Connection ~ 2600 11500
+Wire Wire Line
+	1750 10750 2950 10750
+Wire Wire Line
+	2150 11100 2600 11100
+Wire Wire Line
+	3900 10600 3900 10800
+Wire Wire Line
+	3200 10500 3400 10500
+$Comp
+L C C28
+U 1 1 51BE412C
+P 2950 11300
+F 0 "C28" H 2800 11200 50  0000 L CNN
+F 1 "0.1 uF" H 2650 11400 50  0000 L CNN
+	1    2950 11300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 10850 2950 11100
+Wire Wire Line
+	2250 11500 3400 11500
+Wire Wire Line
+	3400 11500 3400 11100
+Connection ~ 2950 11500
+Text Notes 550  11900 0    197  ~ 39
+Channel 6
+Text Notes 550  13400 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U8
+U 1 1 51BE413E
+P 1450 12700
+F 0 "U8" H 2050 12650 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 12550 60  0000 C CNN
+	1    1450 12700
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 12100 0    60   ~ 0
+GND
+Text Label 1950 12300 0    60   ~ 0
+3V3
+$Comp
+L C C19
+U 1 1 51BE4146
+P 2600 13150
+F 0 "C19" H 2650 13250 50  0000 L CNN
+F 1 "0.1 uF" H 2650 13050 50  0000 L CNN
+	1    2600 13150
+	1    0    0    -1  
+$EndComp
+Text Label 1950 12400 0    60   ~ 0
+VOUT_6_SENSE_HI
+Text Label 1950 12500 0    60   ~ 0
+VOUT_6_SENSE_LO
+Text Label 1950 12600 0    60   ~ 0
+VOUT_6_SENSE_AMP
+Text Label 2950 12700 2    60   ~ 0
+VOUT_6_REF
+$Comp
+L C C9
+U 1 1 51BE4150
+P 2250 13150
+F 0 "C9" H 2300 13250 50  0000 L CNN
+F 1 "0.1 uF" H 2300 13050 50  0000 L CNN
+	1    2250 13150
+	1    0    0    -1  
+$EndComp
+Text Label 2150 12950 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U18
+U 1 1 51BE4157
+P 3250 12650
+F 0 "U18" H 3650 12800 60  0000 C CNN
+F 1 "TLV3201" H 3700 12500 60  0000 C CNN
+	1    3250 12650
+	1    0    0    -1  
+$EndComp
+Text Label 3200 12350 2    60   ~ 0
+3V3
+Text Label 3400 13350 0    60   ~ 0
+GND
+Text HLabel 3900 11950 0    60   Output ~ 0
+CH6_OVERCURRENT
+$Comp
+L R R13
+U 1 1 51BE4160
+P 3900 12200
+F 0 "R13" V 3980 12200 50  0000 C CNN
+F 1 "49.9" V 3900 12200 50  0000 C CNN
+	1    3900 12200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 12500 1750 12500
+Wire Wire Line
+	1950 12400 1750 12400
+Wire Wire Line
+	1950 12300 1750 12300
+Connection ~ 1850 12100
+Wire Wire Line
+	1850 12200 1750 12200
+Wire Wire Line
+	1850 12100 1850 12200
+Wire Wire Line
+	1750 12100 1950 12100
+Connection ~ 2250 12950
+Connection ~ 2600 12950
+Connection ~ 2600 13350
+Wire Wire Line
+	1750 12600 2950 12600
+Wire Wire Line
+	2150 12950 2600 12950
+Wire Wire Line
+	3900 12450 3900 12650
+Wire Wire Line
+	3200 12350 3400 12350
+$Comp
+L C C29
+U 1 1 51BE4174
+P 2950 13150
+F 0 "C29" H 2800 13050 50  0000 L CNN
+F 1 "0.1 uF" H 2650 13250 50  0000 L CNN
+	1    2950 13150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 12700 2950 12950
+Wire Wire Line
+	2250 13350 3400 13350
+Wire Wire Line
+	3400 13350 3400 12950
+Connection ~ 2950 13350
+Text Notes 550  13750 0    197  ~ 39
+Channel 7
+Text Notes 550  15250 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U9
+U 1 1 51BE4188
+P 1450 14550
+F 0 "U9" H 2050 14500 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 14400 60  0000 C CNN
+	1    1450 14550
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 13950 0    60   ~ 0
+GND
+Text Label 1950 14150 0    60   ~ 0
+3V3
+$Comp
+L C C20
+U 1 1 51BE4190
+P 2600 15000
+F 0 "C20" H 2650 15100 50  0000 L CNN
+F 1 "0.1 uF" H 2650 14900 50  0000 L CNN
+	1    2600 15000
+	1    0    0    -1  
+$EndComp
+Text Label 1950 14250 0    60   ~ 0
+VOUT_7_SENSE_HI
+Text Label 1950 14350 0    60   ~ 0
+VOUT_7_SENSE_LO
+Text Label 1950 14450 0    60   ~ 0
+VOUT_7_SENSE_AMP
+Text Label 2950 14550 2    60   ~ 0
+VOUT_7_REF
+$Comp
+L C C10
+U 1 1 51BE419A
+P 2250 15000
+F 0 "C10" H 2300 15100 50  0000 L CNN
+F 1 "0.1 uF" H 2300 14900 50  0000 L CNN
+	1    2250 15000
+	1    0    0    -1  
+$EndComp
+Text Label 2150 14800 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U19
+U 1 1 51BE41A1
+P 3250 14500
+F 0 "U19" H 3650 14650 60  0000 C CNN
+F 1 "TLV3201" H 3700 14350 60  0000 C CNN
+	1    3250 14500
+	1    0    0    -1  
+$EndComp
+Text Label 3200 14200 2    60   ~ 0
+3V3
+Text Label 3400 15200 0    60   ~ 0
+GND
+Text HLabel 3900 13800 0    60   Output ~ 0
+CH7_OVERCURRENT
+$Comp
+L R R14
+U 1 1 51BE41AA
+P 3900 14050
+F 0 "R14" V 3980 14050 50  0000 C CNN
+F 1 "49.9" V 3900 14050 50  0000 C CNN
+	1    3900 14050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 14350 1750 14350
+Wire Wire Line
+	1950 14250 1750 14250
+Wire Wire Line
+	1950 14150 1750 14150
+Connection ~ 1850 13950
+Wire Wire Line
+	1850 14050 1750 14050
+Wire Wire Line
+	1850 13950 1850 14050
+Wire Wire Line
+	1750 13950 1950 13950
+Connection ~ 2250 14800
+Connection ~ 2600 14800
+Connection ~ 2600 15200
+Wire Wire Line
+	1750 14450 2950 14450
+Wire Wire Line
+	2150 14800 2600 14800
+Wire Wire Line
+	3900 14300 3900 14500
+Wire Wire Line
+	3200 14200 3400 14200
+$Comp
+L C C30
+U 1 1 51BE41BE
+P 2950 15000
+F 0 "C30" H 2800 14900 50  0000 L CNN
+F 1 "0.1 uF" H 2650 15100 50  0000 L CNN
+	1    2950 15000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 14550 2950 14800
+Wire Wire Line
+	2250 15200 3400 15200
+Wire Wire Line
+	3400 15200 3400 14800
+Connection ~ 2950 15200
+Text Notes 550  15600 0    197  ~ 39
+Channel 8
+Text Notes 550  17100 0    60   ~ 0
+Overcurrent detection
+$Comp
+L INA199AX-DCK U10
+U 1 1 51BE41D0
+P 1450 16400
+F 0 "U10" H 2050 16350 60  0000 C CNN
+F 1 "INA199A2-DCK" H 1800 16250 60  0000 C CNN
+	1    1450 16400
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 15800 0    60   ~ 0
+GND
+Text Label 1950 16000 0    60   ~ 0
+3V3
+$Comp
+L C C21
+U 1 1 51BE41D8
+P 2600 16850
+F 0 "C21" H 2650 16950 50  0000 L CNN
+F 1 "0.1 uF" H 2650 16750 50  0000 L CNN
+	1    2600 16850
+	1    0    0    -1  
+$EndComp
+Text Label 1950 16100 0    60   ~ 0
+VOUT_8_SENSE_HI
+Text Label 1950 16200 0    60   ~ 0
+VOUT_8_SENSE_LO
+Text Label 1950 16300 0    60   ~ 0
+VOUT_8_SENSE_AMP
+Text Label 2950 16400 2    60   ~ 0
+VOUT_8_REF
+$Comp
+L C C11
+U 1 1 51BE41E2
+P 2250 16850
+F 0 "C11" H 2300 16950 50  0000 L CNN
+F 1 "0.1 uF" H 2300 16750 50  0000 L CNN
+	1    2250 16850
+	1    0    0    -1  
+$EndComp
+Text Label 2150 16650 2    60   ~ 0
+3V3
+$Comp
+L MCP6541-SOT23-5 U20
+U 1 1 51BE41E9
+P 3250 16350
+F 0 "U20" H 3650 16500 60  0000 C CNN
+F 1 "TLV3201" H 3700 16200 60  0000 C CNN
+	1    3250 16350
+	1    0    0    -1  
+$EndComp
+Text Label 3200 16050 2    60   ~ 0
+3V3
+Text Label 3400 17050 0    60   ~ 0
+GND
+Text HLabel 3900 15650 0    60   Output ~ 0
+CH8_OVERCURRENT
+$Comp
+L R R15
+U 1 1 51BE41F2
+P 3900 15900
+F 0 "R15" V 3980 15900 50  0000 C CNN
+F 1 "49.9" V 3900 15900 50  0000 C CNN
+	1    3900 15900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 16200 1750 16200
+Wire Wire Line
+	1950 16100 1750 16100
+Wire Wire Line
+	1950 16000 1750 16000
+Connection ~ 1850 15800
+Wire Wire Line
+	1850 15900 1750 15900
+Wire Wire Line
+	1850 15800 1850 15900
+Wire Wire Line
+	1750 15800 1950 15800
+Connection ~ 2250 16650
+Connection ~ 2600 16650
+Connection ~ 2600 17050
+Wire Wire Line
+	1750 16300 2950 16300
+Wire Wire Line
+	2150 16650 2600 16650
+Wire Wire Line
+	3900 16150 3900 16350
+Wire Wire Line
+	3200 16050 3400 16050
+$Comp
+L C C31
+U 1 1 51BE4206
+P 2950 16850
+F 0 "C31" H 2800 16750 50  0000 L CNN
+F 1 "0.1 uF" H 2650 16950 50  0000 L CNN
+	1    2950 16850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 16400 2950 16650
+Wire Wire Line
+	2250 17050 3400 17050
+Wire Wire Line
+	3400 17050 3400 16650
+Connection ~ 2950 17050
+Text HLabel 2200 21850 0    60   BiDi ~ 0
+I2C_SDA
+Wire Wire Line
+	2200 21850 2200 22050
+Text HLabel 2200 22400 0    60   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	2200 22400 2200 22250
 $EndSCHEMATC
