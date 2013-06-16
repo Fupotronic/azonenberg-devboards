@@ -1,309 +1,207 @@
-# EESchema Netlist Version 1.1 created  Sun 14 Apr 2013 07:35:05 PM EDT
+# EESchema Netlist Version 1.1 created  Sun 16 Jun 2013 04:33:13 PM EDT
 (
  ( /515BE6C3/515BE74E $noname  P1 CONN_2 {Lib=CONN_2}
-  (    1 /Power_Ingress/5V_RAW )
-  (    2 /Outputs/GND )
+  (    1 /Power_Ingress/VIN )
+  (    2 /Control/GND )
  )
  ( /515BE6C3/515BE7A5 $noname  Q1 AON6411 {Lib=MOS_P}
-  (    D /Power_Ingress/5V_FUSED )
-  (    G /Outputs/GND )
-  (    S /Outputs/5V )
+  (    D /Power_Ingress/VIN_FUSED )
+  (    G /Control/GND )
+  (    S /Outputs/VOUT )
  )
  ( /515BE6C3/515BE819 $noname  R2 470 {Lib=R}
-  (    1 /Power_Ingress/5V_FUSED )
-  (    2 N-000065 )
+  (    1 /Power_Ingress/VIN_FUSED )
+  (    2 N-000060 )
  )
  ( /515BE6C3/515BE82D $noname  D2 RED {Lib=LED}
-  (    1 /Outputs/GND )
-  (    2 N-000065 )
+  (    1 /Control/GND )
+  (    2 N-000060 )
  )
  ( /515BE6C3/515BE8B4 $noname  R1 470 {Lib=R}
-  (    1 N-000066 )
-  (    2 /Outputs/5V )
+  (    1 N-000061 )
+  (    2 /Outputs/VOUT )
  )
  ( /515BE6C3/515BE8E4 $noname  D1 GREEN {Lib=LED}
-  (    1 N-000066 )
-  (    2 /Outputs/GND )
+  (    1 N-000061 )
+  (    2 /Control/GND )
  )
- ( /515BE6C3/515BE997 $noname  C2 4700_uF {Lib=CP1}
-  (    1 /Outputs/5V )
-  (    2 /Outputs/GND )
+ ( /515BE6C3/515BE997 $noname  C1 4700_uF {Lib=CP1}
+  (    1 /Outputs/VOUT )
+  (    2 /Control/GND )
  )
- ( /515BE6C3/515BE9AE $noname  C3 4700_uF {Lib=CP1}
-  (    1 /Outputs/5V )
-  (    2 /Outputs/GND )
+ ( /515BE6C3/515BE9AE $noname  C2 4700_uF {Lib=CP1}
+  (    1 /Outputs/VOUT )
+  (    2 /Control/GND )
  )
  ( /515BE6C3/515BEB36 $noname  F1 20A {Lib=FUSE}
-  (    1 /Power_Ingress/5V_RAW )
-  (    2 /Power_Ingress/5V_FUSED )
+  (    1 /Power_Ingress/VIN )
+  (    2 /Power_Ingress/VIN_FUSED )
  )
- ( /515BE6C3/515C8FB8 $noname  U1 LDO1117-33 {Lib=LDO1117-XX}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/3V3 )
-  (    3 /Outputs/5V )
+ ( /515BE6C3/51BA06F9 $noname  Q2 AON6411 {Lib=MOS_P}
+  (    D /Power_Ingress/VIN_FUSED )
+  (    G /Control/GND )
+  (    S /Outputs/VOUT )
  )
- ( /515BE6C3/515C902B $noname  C4 100_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BE6C3/515C9075 $noname  C1 C {Lib=C}
-  (    1 /Outputs/5V )
-  (    2 ? )
- )
- ( /515D219D/515D2587 $noname  U3 MCP9801_MSOP {Lib=MCP9801_MSOP}
-  (    1 N-000277 )
-  (    2 N-000276 )
-  (    3 ? )
-  (    4 N-000274 )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
-  (    8 N-000270 )
- )
- ( /515D219D/515D2594 $noname  U4 MCP9801_MSOP {Lib=MCP9801_MSOP}
-  (    1 N-000277 )
-  (    2 N-000276 )
-  (    3 ? )
-  (    4 N-000274 )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
-  (    8 N-000270 )
- )
- ( /515D219D/516B66ED $noname  U2 XC6SLX25-2FTG256C {Lib=XC6SLX25-XFTG256-SEG}
-  (   A1 ? )
-  (   A4 ? )
-  (   A5 ? )
-  (   A6 ? )
-  (   A7 ? )
-  (   A8 ? )
-  (   A9 ? )
-  (  A10 ? )
-  (  A11 ? )
-  (  A12 ? )
-  (  A13 ? )
-  (  A14 ? )
-  (  A15 ? )
-  (  A16 ? )
-  (   B4 ? )
-  (   B5 ? )
-  (   B6 ? )
-  (   B7 ? )
-  (   B8 ? )
-  (   B9 ? )
-  (  B10 ? )
-  (  B11 ? )
-  (  B12 ? )
-  (  B13 ? )
-  (  B14 ? )
-  (   C4 ? )
-  (   C5 ? )
-  (   C6 ? )
-  (   C7 ? )
-  (   C8 ? )
-  (   C9 ? )
-  (  C10 ? )
-  (  C11 ? )
-  (  C12 ? )
-  (  C13 ? )
-  (  C14 ? )
-  (   D2 ? )
-  (   D4 ? )
-  (   D5 ? )
-  (   D6 ? )
-  (   D7 ? )
-  (   D8 ? )
-  (   D9 ? )
-  (  D10 ? )
-  (  D11 ? )
-  (  D12 ? )
-  (  D13 ? )
-  (  D15 ? )
-  (   E5 ? )
-  (   E6 ? )
-  (   E7 ? )
-  (   E8 ? )
-  (   E9 ? )
-  (  E10 ? )
-  (  E11 ? )
-  (  E14 ? )
-  (   F7 ? )
-  (   F8 ? )
-  (   F9 ? )
-  (  F10 ? )
-  (  F11 ? )
-  (   G2 ? )
-  (   G4 ? )
-  (   G7 ? )
-  (   G8 ? )
-  (   G9 ? )
-  (  G10 ? )
-  (  G13 ? )
-  (  G15 ? )
-  (   H6 ? )
-  (   H7 ? )
-  (   H8 ? )
-  (   H9 ? )
-  (  H10 ? )
-  (  H12 ? )
-  (   J2 ? )
-  (   J5 ? )
-  (   J7 ? )
-  (   J8 ? )
-  (   J9 ? )
-  (  J10 ? )
-  (  J15 ? )
-  (   K4 ? )
-  (   K7 ? )
-  (   K8 ? )
-  (   K9 ? )
-  (  K10 ? )
-  (  K13 ? )
-  (   L2 ? )
-  (   L6 ? )
-  (   L7 ? )
-  (   L8 ? )
-  (   L9 ? )
-  (  L10 ? )
-  (  L11 ? )
-  (  L15 ? )
-  (   M6 ? )
-  (   M7 ? )
-  (   M8 ? )
-  (   M9 ? )
-  (  M10 ? )
-  (  M11 ? )
-  (  M12 ? )
-  (   N2 ? )
-  (   N5 ? )
-  (   N6 ? )
-  (   N7 ? )
-  (   N8 ? )
-  (   N9 ? )
-  (  N10 ? )
-  (  N11 ? )
-  (  N12 ? )
-  (  N13 ? )
-  (  N15 ? )
-  (   P3 ? )
-  (   P4 ? )
-  (   P5 ? )
-  (   P6 ? )
-  (   P7 ? )
-  (   P8 ? )
-  (   P9 ? )
-  (  P10 ? )
-  (  P11 ? )
-  (  P12 ? )
-  (  P13 ? )
-  (  P14 ? )
-  (   R3 ? )
-  (   R4 ? )
-  (   R5 ? )
-  (   R6 ? )
-  (   R7 ? )
-  (   R8 ? )
-  (   R9 ? )
-  (  R10 ? )
-  (  R11 ? )
-  (  R13 ? )
-  (   T1 ? )
-  (   T2 ? )
-  (   T3 ? )
-  (   T4 ? )
-  (   T5 ? )
-  (   T6 ? )
-  (   T7 ? )
-  (   T8 ? )
-  (   T9 ? )
-  (  T10 ? )
-  (  T11 ? )
-  (  T16 ? )
- )
- ( /515D219D/516B6758 $noname  U6 W25Q80BV {Lib=W25Q80BV}
-  (    1 ? )
+ ( /516B9F26/516BA4C8 $noname  U1 KSZ9021RN {Lib=KSZ9021RN}
+  (    1 /Ethernet/A3V3_ETH )
   (    2 ? )
   (    3 ? )
-  (    4 ? )
+  (    4 /Ethernet/A1V2_ETH )
   (    5 ? )
   (    6 ? )
   (    7 ? )
   (    8 ? )
- )
- ( /515D219D/516B6767 $noname  U5 OSC {Lib=OSC}
-  (    1 ? )
-  (    2 ? )
-  (    3 ? )
-  (    4 ? )
- )
- ( /515D219D/516B6776 $noname  J1 XILINX_JTAG {Lib=XILINX_JTAG}
-  (    1 ? )
-  (    2 ? )
-  (    3 ? )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
-  (    8 ? )
-  (    9 ? )
+  (    9 /Ethernet/A1V2_ETH )
   (   10 ? )
   (   11 ? )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
- )
- ( /516B9F26/516BA4C8 $noname  U16 KSZ9021RN {Lib=KSZ9021RN}
-  (    1 ? )
-  (    2 ? )
-  (    3 ? )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
-  (    8 ? )
-  (    9 ? )
-  (   10 ? )
-  (   11 ? )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
+  (   12 /Ethernet/A3V3_ETH )
+  (   13 /Control/GND )
+  (   14 /Control/1V2 )
   (   15 ? )
-  (   16 ? )
+  (   16 /Control/2V5 )
   (   17 ? )
-  (   18 ? )
-  (   19 ? )
-  (   20 ? )
-  (   21 ? )
-  (   22 ? )
-  (   23 ? )
-  (   24 ? )
-  (   25 ? )
-  (   26 ? )
-  (   27 ? )
-  (   28 ? )
-  (   29 ? )
-  (   30 ? )
-  (   31 ? )
-  (   32 ? )
-  (   33 ? )
-  (   34 ? )
-  (   35 ? )
-  (   36 ? )
-  (   37 ? )
-  (   38 ? )
-  (   39 ? )
-  (   40 ? )
-  (   41 ? )
-  (   42 ? )
+  (   18 /Control/1V2 )
+  (   19 /Control/RGMII_TXD0 )
+  (   20 /Control/RGMII_TXD1 )
+  (   21 /Control/RGMII_TXD2 )
+  (   22 /Control/RGMII_TXD3 )
+  (   23 /Control/1V2 )
+  (   24 /Control/RGMII_TXC )
+  (   25 /Control/RGMII_TX_CTL )
+  (   26 /Control/1V2 )
+  (   27 N-000337 )
+  (   28 N-000349 )
+  (   29 /Control/GND )
+  (   30 /Control/1V2 )
+  (   31 N-000350 )
+  (   32 N-000351 )
+  (   33 N-000352 )
+  (   34 /Control/2V5 )
+  (   35 N-000353 )
+  (   36 /Control/ETH_MDC )
+  (   37 N-000354 )
+  (   38 N-000347 )
+  (   39 /Control/1V2 )
+  (   40 /Control/2V5 )
+  (   41 /Control/ETH_CLK125 )
+  (   42 /Control/ETH_RESET_N )
   (   43 ? )
-  (   44 ? )
+  (   44 /Ethernet/PLL1V2_ETH )
   (   45 ? )
-  (   46 ? )
-  (   47 ? )
-  (   48 ? )
-  (  PAD ? )
+  (   46 /Control/ETH_CLK_25MHZ )
+  (   47 /Ethernet/A3V3_ETH )
+  (   48 /Ethernet/RBIAS_ETH )
+  (  PAD /Control/GND )
  )
- ( /515BECF6/515BEEC1 $noname  R15 0.005 {Lib=R-4TERM}
+ ( /516B9F26/51C0EFF8 $noname  R4 49.9 {Lib=R}
+  (    1 N-000337 )
+  (    2 /Control/RGMII_RXD3 )
+ )
+ ( /516B9F26/51C0F00D $noname  R5 49.9 {Lib=R}
+  (    1 N-000349 )
+  (    2 /Control/RGMII_RXD2 )
+ )
+ ( /516B9F26/51C0F021 $noname  R6 49.9 {Lib=R}
+  (    1 N-000350 )
+  (    2 /Control/RGMII_RXD1 )
+ )
+ ( /516B9F26/51C0F02E $noname  R7 49.9 {Lib=R}
+  (    1 N-000351 )
+  (    2 /Control/RGMII_RXD0 )
+ )
+ ( /516B9F26/51C0F039 $noname  R8 49.9 {Lib=R}
+  (    1 N-000352 )
+  (    2 /Control/RGMII_RX_CTL )
+ )
+ ( /516B9F26/51C0F06C $noname  R9 49.9 {Lib=R}
+  (    1 N-000353 )
+  (    2 /Control/RGMII_RXC )
+ )
+ ( /516B9F26/51C0F08A $noname  R10 49.9 {Lib=R}
+  (    1 N-000354 )
+  (    2 /Control/ETH_MDIO )
+ )
+ ( /516B9F26/51C0F0E9 $noname  R11 49.9 {Lib=R}
+  (    1 N-000347 )
+  (    2 /Control/ETH_INT_N )
+ )
+ ( /516B9F26/51C0F14D $noname  R3 4.99K {Lib=R}
+  (    1 /Control/GND )
+  (    2 /Ethernet/RBIAS_ETH )
+ )
+ ( /516B9F26/51C120D1 $noname  C3 0.1_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C12148 $noname  C7 0.1_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C1214E $noname  C11 0.1_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C12154 $noname  C15 0.01_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C1215F $noname  C16 0.01_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C12165 $noname  C17 0.01_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C12411 $noname  C4 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Control/2V5 )
+ )
+ ( /516B9F26/51C12417 $noname  C8 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Control/2V5 )
+ )
+ ( /516B9F26/51C12427 $noname  C12 0.01_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Control/2V5 )
+ )
+ ( /516B9F26/51C12533 $noname  C5 0.1_uF {Lib=C}
+  (    1 /Ethernet/A3V3_ETH )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C12539 $noname  C9 0.01_uF {Lib=C}
+  (    1 /Ethernet/A3V3_ETH )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C1253F $noname  C13 0.01_uF {Lib=C}
+  (    1 /Ethernet/A3V3_ETH )
+  (    2 /Control/GND )
+ )
+ ( /516B9F26/51C12709 $noname  C6 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Ethernet/A1V2_ETH )
+ )
+ ( /516B9F26/51C1270F $noname  C10 0.01_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Ethernet/A1V2_ETH )
+ )
+ ( /516B9F26/51C12725 $noname  C14 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Ethernet/PLL1V2_ETH )
+ )
+ ( /516B9F26/51C12A8E $noname  L1 INDUCTOR_PWROUT {Lib=INDUCTOR_PWROUT}
+  (    1 /Ethernet/A3V3_ETH )
+  (    2 /Control/3V3 )
+ )
+ ( /516B9F26/51C12B37 $noname  L2 INDUCTOR_PWROUT {Lib=INDUCTOR_PWROUT}
+  (    1 /Ethernet/A1V2_ETH )
+  (    2 /Control/1V2 )
+ )
+ ( /516B9F26/51C12BDF $noname  L3 INDUCTOR_PWROUT {Lib=INDUCTOR_PWROUT}
+  (    1 /Ethernet/PLL1V2_ETH )
+  (    2 /Control/1V2 )
+ )
+ ( /515BECF6/515BEEC1 $noname  R51 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_0_SENSE_LO )
   (    2 /Outputs/VOUT_0 )
   (    3 /Outputs/VOUT_0_SENSE_HI )
@@ -313,131 +211,104 @@
   (    1 /Outputs/VOUT_0_RAW )
   (    2 /Outputs/VOUT_0_FUSED )
  )
- ( /515BECF6/515BEF7B $noname  Q4 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/515BEF7B $noname  Q13 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_0_RAW )
   (    G /Outputs/CH0_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/515BF01D $noname  R13 1K {Lib=R}
+ ( /515BECF6/515BF01D $noname  R41 1K {Lib=R}
   (    1 /Outputs/CH0_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/515BF03F $noname  Q2 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/515BF03F $noname  Q3 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH0_OE_RAW )
-  (    G /Outputs/CH0_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH0_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/515BF13E $noname  L1 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/515BF13E $noname  L4 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_0_FUSED )
   (    2 /Outputs/VOUT_0_FILTERED )
  )
- ( /515BECF6/515BF44A $noname  C12 150_uF {Lib=CP1}
+ ( /515BECF6/515BF44A $noname  C60 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_0_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/515BF49A $noname  C14 10_uF {Lib=C}
+ ( /515BECF6/515BF49A $noname  C70 10_uF {Lib=C}
   (    1 /Outputs/VOUT_0_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/515BF852 $noname  P2 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_0 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/515C93CF $noname  C11 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/515C93CF $noname  C59 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/515C992B $noname  U7 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
+ ( /515BECF6/515C992B $noname  U2 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
   (    4 /Outputs/VOUT_0_SENSE_HI )
   (    5 /Outputs/VOUT_0_SENSE_LO )
   (    6 /Outputs/VOUT_0_SENSE_AMP )
  )
- ( /515BECF6/515C9A9E $noname  C7 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/515C9A9E $noname  C28 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/515C9F9E $noname  U9 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH0_POT_SCL )
-  (    3 /Outputs/CH0_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_0_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH0 )
-  (    8 /Outputs/3V3 )
+ ( /515BECF6/515CA71C $noname  C18 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/515CA0A8 $noname  R57 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH0_POT_SCL )
- )
- ( /515BECF6/515CA71C $noname  C5 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/515CB07B $noname  U13 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH0 )
- )
- ( /515BECF6/515CB25A $noname  R7 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH0 )
- )
- ( /515BECF6/515CBC03 $noname  U11 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000143 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/515CBC03 $noname  U12 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000097 )
+  (    2 /Control/GND )
   (    3 /Outputs/VOUT_0_SENSE_AMP )
-  (    4 /Outputs/VOUT_0_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
+  (    4 /Outputs/VOUT_0_REF )
+  (    5 /Control/3V3 )
  )
- ( /515BECF6/515CBC1A $noname  C9 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/515CCA95 $noname  R31 1K {Lib=R}
+  (    1 /Control/CH0_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/515CCA95 $noname  R11 1K {Lib=R}
-  (    1 /Outputs/CH0_OE )
-  (    2 /Outputs/GND )
+ ( /515BECF6/515D6B11 $noname  R16 49.9 {Lib=R}
+  (    1 N-000097 )
+  (    2 /Control/CH0_OVERCURRENT )
  )
- ( /515BECF6/515D6B11 $noname  R9 49.9 {Lib=R}
-  (    1 N-000143 )
-  (    2 ? )
- )
- ( /515BECF6/516B185C $noname  U15 MCP3204 {Lib=MCP3204}
+ ( /515BECF6/516B185C $noname  U30 MCP3204 {Lib=MCP3204}
   (    1 /Outputs/VDD_TOP_DIV )
   (    2 /Outputs/VOUT_0_SENSE_AMP )
   (    3 /Outputs/VOUT_1_SENSE_AMP )
   (    4 /Outputs/VOUT_2_SENSE_AMP )
   (    5 ? )
   (    6 ? )
-  (    7 /Outputs/GND )
-  (    8 ? )
-  (    9 ? )
-  (   10 ? )
-  (   11 ? )
-  (   12 /Outputs/GND )
-  (   13 /Outputs/2V5_CH0 )
-  (   14 /Outputs/3V3 )
+  (    7 /Control/GND )
+  (    8 /Control/ADC0_CS_N )
+  (    9 /Control/ADC0_MOSI )
+  (   10 /Control/ADC0_MISO )
+  (   11 /Control/ADC0_SCK )
+  (   12 /Control/GND )
+  (   13 /Outputs/VREF_0 )
+  (   14 /Control/3V3 )
  )
- ( /515BECF6/516B1CDA $noname  R3 10K {Lib=R}
-  (    1 /Outputs/5V )
+ ( /515BECF6/516B1CDA $noname  R14 30k_0.1% {Lib=R}
+  (    1 /Outputs/VOUT )
   (    2 /Outputs/VDD_TOP_DIV )
  )
- ( /515BECF6/516B1D29 $noname  R4 10K {Lib=R}
+ ( /515BECF6/516B1D29 $noname  R15 10K_0.1% {Lib=R}
   (    1 /Outputs/VDD_TOP_DIV )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516B1DDA $noname  R5 10K {Lib=R}
-  (    1 /Outputs/5V )
+ ( /515BECF6/516B1DDA $noname  R26 30k_0.1% {Lib=R}
+  (    1 /Outputs/VOUT )
   (    2 /Outputs/VDD_BOT_DIV )
  )
- ( /515BECF6/516B1E2C $noname  R6 10K {Lib=R}
+ ( /515BECF6/516B1E2C $noname  R27 10K_0.1% {Lib=R}
   (    1 /Outputs/VDD_BOT_DIV )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BC2BB $noname  R16 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516BC2BB $noname  R52 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_1_SENSE_LO )
   (    2 /Outputs/VOUT_1 )
   (    3 /Outputs/VOUT_1_SENSE_HI )
@@ -447,91 +318,41 @@
   (    1 /Outputs/VOUT_1_RAW )
   (    2 /Outputs/VOUT_1_FUSED )
  )
- ( /515BECF6/516BC2C8 $noname  Q5 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516BC2C8 $noname  Q14 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_1_RAW )
   (    G /Outputs/CH1_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516BC2D0 $noname  R14 1K {Lib=R}
+ ( /515BECF6/516BC2D0 $noname  R42 1K {Lib=R}
   (    1 /Outputs/CH1_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516BC2D6 $noname  Q3 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516BC2D6 $noname  Q4 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH1_OE_RAW )
-  (    G /Outputs/CH1_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH1_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516BC2DD $noname  L2 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516BC2DD $noname  L5 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_1_FUSED )
   (    2 /Outputs/VOUT_1_FILTERED )
  )
- ( /515BECF6/516BC2E4 $noname  C13 150_uF {Lib=CP1}
+ ( /515BECF6/516BC2E4 $noname  C61 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_1_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BC2EC $noname  C15 10_uF {Lib=C}
+ ( /515BECF6/516BC2EC $noname  C71 10_uF {Lib=C}
   (    1 /Outputs/VOUT_1_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516BC2F4 $noname  P3 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_1 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BC307 $noname  U8 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_1_SENSE_HI )
-  (    5 /Outputs/VOUT_1_SENSE_LO )
-  (    6 /Outputs/VOUT_1_SENSE_AMP )
+ ( /515BECF6/516BC35A $noname  R32 1K {Lib=R}
+  (    1 /Control/CH1_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BC30F $noname  C8 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BC319 $noname  U10 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH1_POT_SCL )
-  (    3 /Outputs/CH1_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_1_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH1 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516BC332 $noname  C6 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BC33C $noname  U14 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH1 )
- )
- ( /515BECF6/516BC343 $noname  R8 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH1 )
- )
- ( /515BECF6/516BC349 $noname  U12 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000151 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_1_SENSE_AMP )
-  (    4 /Outputs/VOUT_1_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516BC34F $noname  C10 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BC35A $noname  R12 1K {Lib=R}
-  (    1 /Outputs/CH1_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BC361 $noname  R10 49.9 {Lib=R}
-  (    1 N-000151 )
-  (    2 ? )
- )
- ( /515BECF6/516BE2CC $noname  R21 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516BE2CC $noname  R53 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_2_SENSE_LO )
   (    2 /Outputs/VOUT_2 )
   (    3 /Outputs/VOUT_2_SENSE_HI )
@@ -541,91 +362,41 @@
   (    1 /Outputs/VOUT_2_RAW )
   (    2 /Outputs/VOUT_2_FUSED )
  )
- ( /515BECF6/516BE2D9 $noname  Q7 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516BE2D9 $noname  Q15 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_2_RAW )
   (    G /Outputs/CH2_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516BE2E1 $noname  R20 1K {Lib=R}
+ ( /515BECF6/516BE2E1 $noname  R43 1K {Lib=R}
   (    1 /Outputs/CH2_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516BE2E7 $noname  Q6 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516BE2E7 $noname  Q5 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH2_OE_RAW )
-  (    G /Outputs/CH2_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH2_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516BE2EE $noname  L3 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516BE2EE $noname  L6 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_2_FUSED )
   (    2 /Outputs/VOUT_2_FILTERED )
  )
- ( /515BECF6/516BE2F5 $noname  C19 150_uF {Lib=CP1}
+ ( /515BECF6/516BE2F5 $noname  C62 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_2_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE2FD $noname  C20 10_uF {Lib=C}
+ ( /515BECF6/516BE2FD $noname  C72 10_uF {Lib=C}
   (    1 /Outputs/VOUT_2_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516BE305 $noname  P4 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_2 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE30E $noname  U17 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_2_SENSE_HI )
-  (    5 /Outputs/VOUT_2_SENSE_LO )
-  (    6 /Outputs/VOUT_2_SENSE_AMP )
+ ( /515BECF6/516BE35F $noname  R33 1K {Lib=R}
+  (    1 /Control/CH2_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE316 $noname  C17 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE31F $noname  U18 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH2_POT_SCL )
-  (    3 /Outputs/CH2_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_2_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH2 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516BE338 $noname  C16 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE342 $noname  U20 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH2 )
- )
- ( /515BECF6/516BE349 $noname  R17 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH2 )
- )
- ( /515BECF6/516BE34F $noname  U19 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000184 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_2_SENSE_AMP )
-  (    4 /Outputs/VOUT_2_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516BE355 $noname  C18 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE35F $noname  R19 1K {Lib=R}
-  (    1 /Outputs/CH2_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE365 $noname  R18 49.9 {Lib=R}
-  (    1 N-000184 )
-  (    2 ? )
- )
- ( /515BECF6/516BE8D2 $noname  R26 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516BE8D2 $noname  R54 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_3_SENSE_LO )
   (    2 /Outputs/VOUT_3 )
   (    3 /Outputs/VOUT_3_SENSE_HI )
@@ -635,111 +406,61 @@
   (    1 /Outputs/VOUT_3_RAW )
   (    2 /Outputs/VOUT_3_FUSED )
  )
- ( /515BECF6/516BE8DF $noname  Q9 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516BE8DF $noname  Q16 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_3_RAW )
   (    G /Outputs/CH3_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516BE8E7 $noname  R25 1K {Lib=R}
+ ( /515BECF6/516BE8E7 $noname  R44 1K {Lib=R}
   (    1 /Outputs/CH3_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516BE8ED $noname  Q8 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516BE8ED $noname  Q6 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH3_OE_RAW )
-  (    G /Outputs/CH3_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH3_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516BE8F4 $noname  L4 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516BE8F4 $noname  L7 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_3_FUSED )
   (    2 /Outputs/VOUT_3_FILTERED )
  )
- ( /515BECF6/516BE8FB $noname  C25 150_uF {Lib=CP1}
+ ( /515BECF6/516BE8FB $noname  C63 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_3_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE903 $noname  C26 10_uF {Lib=C}
+ ( /515BECF6/516BE903 $noname  C73 10_uF {Lib=C}
   (    1 /Outputs/VOUT_3_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516BE90B $noname  P5 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_3 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE914 $noname  U21 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_3_SENSE_HI )
-  (    5 /Outputs/VOUT_3_SENSE_LO )
-  (    6 /Outputs/VOUT_3_SENSE_AMP )
+ ( /515BECF6/516BE965 $noname  R34 1K {Lib=R}
+  (    1 /Control/CH3_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE91C $noname  C22 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/516BE9C5 $noname  C57 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516BE925 $noname  U22 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH3_POT_SCL )
-  (    3 /Outputs/CH3_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_3_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH3 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516BE93E $noname  C21 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE948 $noname  U24 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH3 )
- )
- ( /515BECF6/516BE94F $noname  R22 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH3 )
- )
- ( /515BECF6/516BE955 $noname  U23 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000169 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_3_SENSE_AMP )
-  (    4 /Outputs/VOUT_3_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516BE95B $noname  C23 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE965 $noname  R24 1K {Lib=R}
-  (    1 /Outputs/CH3_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE96B $noname  R23 49.9 {Lib=R}
-  (    1 N-000169 )
-  (    2 ? )
- )
- ( /515BECF6/516BE9C5 $noname  C24 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516BE9CF $noname  U25 MCP3204 {Lib=MCP3204}
+ ( /515BECF6/516BE9CF $noname  U28 MCP3204 {Lib=MCP3204}
   (    1 /Outputs/VOUT_3_SENSE_AMP )
   (    2 /Outputs/VOUT_4_SENSE_AMP )
   (    3 /Outputs/VOUT_5_SENSE_AMP )
   (    4 /Outputs/VOUT_6_SENSE_AMP )
   (    5 ? )
   (    6 ? )
-  (    7 /Outputs/GND )
-  (    8 ? )
-  (    9 ? )
-  (   10 ? )
-  (   11 ? )
-  (   12 /Outputs/GND )
-  (   13 /Outputs/2V5_CH3 )
-  (   14 /Outputs/3V3 )
+  (    7 /Control/GND )
+  (    8 /Control/ADC1_CS_N )
+  (    9 /Control/ADC1_MOSI )
+  (   10 /Control/ADC1_MISO )
+  (   11 /Control/ADC1_SCK )
+  (   12 /Control/GND )
+  (   13 /Outputs/VREF_4 )
+  (   14 /Control/3V3 )
  )
- ( /515BECF6/516C1D5F $noname  R35 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516C1D5F $noname  R55 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_4_SENSE_LO )
   (    2 /Outputs/VOUT_4 )
   (    3 /Outputs/VOUT_4_SENSE_HI )
@@ -749,91 +470,41 @@
   (    1 /Outputs/VOUT_4_RAW )
   (    2 /Outputs/VOUT_4_FUSED )
  )
- ( /515BECF6/516C1D6C $noname  Q12 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516C1D6C $noname  Q17 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_4_RAW )
   (    G /Outputs/CH4_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516C1D74 $noname  R33 1K {Lib=R}
+ ( /515BECF6/516C1D74 $noname  R45 1K {Lib=R}
   (    1 /Outputs/CH4_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516C1D7A $noname  Q10 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516C1D7A $noname  Q7 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH4_OE_RAW )
-  (    G /Outputs/CH4_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH4_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516C1D81 $noname  L5 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516C1D81 $noname  L8 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_4_FUSED )
   (    2 /Outputs/VOUT_4_FILTERED )
  )
- ( /515BECF6/516C1D88 $noname  C33 150_uF {Lib=CP1}
+ ( /515BECF6/516C1D88 $noname  C64 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_4_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C1D90 $noname  C35 10_uF {Lib=C}
+ ( /515BECF6/516C1D90 $noname  C74 10_uF {Lib=C}
   (    1 /Outputs/VOUT_4_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516C1D98 $noname  P6 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_4 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C1DA1 $noname  U26 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_4_SENSE_HI )
-  (    5 /Outputs/VOUT_4_SENSE_LO )
-  (    6 /Outputs/VOUT_4_SENSE_AMP )
+ ( /515BECF6/516C1DF2 $noname  R35 1K {Lib=R}
+  (    1 /Control/CH4_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C1DA9 $noname  C29 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C1DB2 $noname  U28 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH4_POT_SCL )
-  (    3 /Outputs/CH4_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_4_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH4 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516C1DCB $noname  C27 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C1DD5 $noname  U32 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH4 )
- )
- ( /515BECF6/516C1DDC $noname  R27 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH4 )
- )
- ( /515BECF6/516C1DE2 $noname  U30 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000105 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_4_SENSE_AMP )
-  (    4 /Outputs/VOUT_4_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516C1DE8 $noname  C31 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C1DF2 $noname  R31 1K {Lib=R}
-  (    1 /Outputs/CH4_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C1DF8 $noname  R29 49.9 {Lib=R}
-  (    1 N-000105 )
-  (    2 ? )
- )
- ( /515BECF6/516C20FC $noname  R36 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516C20FC $noname  R56 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_5_SENSE_LO )
   (    2 /Outputs/VOUT_5 )
   (    3 /Outputs/VOUT_5_SENSE_HI )
@@ -843,91 +514,41 @@
   (    1 /Outputs/VOUT_5_RAW )
   (    2 /Outputs/VOUT_5_FUSED )
  )
- ( /515BECF6/516C2109 $noname  Q13 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516C2109 $noname  Q18 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_5_RAW )
   (    G /Outputs/CH5_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516C2111 $noname  R34 1K {Lib=R}
+ ( /515BECF6/516C2111 $noname  R46 1K {Lib=R}
   (    1 /Outputs/CH5_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516C2117 $noname  Q11 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516C2117 $noname  Q8 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH5_OE_RAW )
-  (    G /Outputs/CH5_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH5_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516C211E $noname  L6 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516C211E $noname  L9 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_5_FUSED )
   (    2 /Outputs/VOUT_5_FILTERED )
  )
- ( /515BECF6/516C2125 $noname  C34 150_uF {Lib=CP1}
+ ( /515BECF6/516C2125 $noname  C65 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_5_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C212D $noname  C36 10_uF {Lib=C}
+ ( /515BECF6/516C212D $noname  C75 10_uF {Lib=C}
   (    1 /Outputs/VOUT_5_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516C2135 $noname  P7 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_5 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C213E $noname  U27 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_5_SENSE_HI )
-  (    5 /Outputs/VOUT_5_SENSE_LO )
-  (    6 /Outputs/VOUT_5_SENSE_AMP )
+ ( /515BECF6/516C218F $noname  R36 1K {Lib=R}
+  (    1 /Control/CH5_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2146 $noname  C30 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C214F $noname  U29 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH5_POT_SCL )
-  (    3 /Outputs/CH5_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_5_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH5 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516C2168 $noname  C28 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2172 $noname  U33 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH5 )
- )
- ( /515BECF6/516C2179 $noname  R28 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH5 )
- )
- ( /515BECF6/516C217F $noname  U31 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000077 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_5_SENSE_AMP )
-  (    4 /Outputs/VOUT_5_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516C2185 $noname  C32 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C218F $noname  R32 1K {Lib=R}
-  (    1 /Outputs/CH5_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2195 $noname  R30 49.9 {Lib=R}
-  (    1 N-000077 )
-  (    2 ? )
- )
- ( /515BECF6/516C24D5 $noname  R53 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516C24D5 $noname  R57 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_6_SENSE_LO )
   (    2 /Outputs/VOUT_0 )
   (    3 /Outputs/VOUT_6_SENSE_HI )
@@ -937,111 +558,61 @@
   (    1 /Outputs/VOUT_6_RAW )
   (    2 /Outputs/VOUT_6_FUSED )
  )
- ( /515BECF6/516C24E2 $noname  Q18 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516C24E2 $noname  Q19 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_6_RAW )
   (    G /Outputs/CH6_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516C24EA $noname  R49 1K {Lib=R}
+ ( /515BECF6/516C24EA $noname  R47 1K {Lib=R}
   (    1 /Outputs/CH6_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516C24F0 $noname  Q14 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516C24F0 $noname  Q9 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH6_OE_RAW )
-  (    G /Outputs/CH6_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH6_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516C24F7 $noname  L7 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516C24F7 $noname  L10 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_6_FUSED )
   (    2 /Outputs/VOUT_6_FILTERED )
  )
- ( /515BECF6/516C24FE $noname  C50 150_uF {Lib=CP1}
+ ( /515BECF6/516C24FE $noname  C66 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_6_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2506 $noname  C54 10_uF {Lib=C}
+ ( /515BECF6/516C2506 $noname  C76 10_uF {Lib=C}
   (    1 /Outputs/VOUT_6_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516C250E $noname  P8 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_0 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2517 $noname  C49 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/516C2517 $noname  C58 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2521 $noname  U34 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_6_SENSE_HI )
-  (    5 /Outputs/VOUT_6_SENSE_LO )
-  (    6 /Outputs/VOUT_6_SENSE_AMP )
+ ( /515BECF6/516C2574 $noname  R37 1K {Lib=R}
+  (    1 /Control/CH6_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2529 $noname  C41 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2533 $noname  U38 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH6_POT_SCL )
-  (    3 /Outputs/CH6_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_6_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH6 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516C254C $noname  C37 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2556 $noname  U46 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH6 )
- )
- ( /515BECF6/516C255D $noname  R37 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH6 )
- )
- ( /515BECF6/516C2563 $noname  U42 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000085 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_6_SENSE_AMP )
-  (    4 /Outputs/VOUT_6_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516C2569 $noname  C45 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2574 $noname  R45 1K {Lib=R}
-  (    1 /Outputs/CH6_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C257B $noname  R41 49.9 {Lib=R}
-  (    1 N-000085 )
-  (    2 ? )
- )
- ( /515BECF6/516C2581 $noname  U50 MCP3204 {Lib=MCP3204}
+ ( /515BECF6/516C2581 $noname  U29 MCP3204 {Lib=MCP3204}
   (    1 /Outputs/VOUT_7_SENSE_AMP )
   (    2 /Outputs/VOUT_8_SENSE_AMP )
   (    3 /Outputs/VOUT_9_SENSE_AMP )
   (    4 /Outputs/VDD_BOT_DIV )
   (    5 ? )
   (    6 ? )
-  (    7 /Outputs/GND )
-  (    8 ? )
-  (    9 ? )
-  (   10 ? )
-  (   11 ? )
-  (   12 /Outputs/GND )
-  (   13 /Outputs/2V5_CH7 )
-  (   14 /Outputs/3V3 )
+  (    7 /Control/GND )
+  (    8 /Control/ADC2_CS_N )
+  (    9 /Control/ADC2_MOSI )
+  (   10 /Control/ADC2_MISO )
+  (   11 /Control/ADC2_SCK )
+  (   12 /Control/GND )
+  (   13 ? )
+  (   14 /Control/3V3 )
  )
- ( /515BECF6/516C25EC $noname  R54 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516C25EC $noname  R58 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_7_SENSE_LO )
   (    2 /Outputs/VOUT_7 )
   (    3 /Outputs/VOUT_7_SENSE_HI )
@@ -1051,91 +622,41 @@
   (    1 /Outputs/VOUT_7_RAW )
   (    2 /Outputs/VOUT_7_FUSED )
  )
- ( /515BECF6/516C25F9 $noname  Q19 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516C25F9 $noname  Q20 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_7_RAW )
   (    G /Outputs/CH7_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516C2601 $noname  R50 1K {Lib=R}
+ ( /515BECF6/516C2601 $noname  R48 1K {Lib=R}
   (    1 /Outputs/CH7_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516C2607 $noname  Q15 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516C2607 $noname  Q10 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH7_OE_RAW )
-  (    G /Outputs/CH7_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH7_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516C260E $noname  L8 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516C260E $noname  L11 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_7_FUSED )
   (    2 /Outputs/VOUT_7_FILTERED )
  )
- ( /515BECF6/516C2615 $noname  C51 150_uF {Lib=CP1}
+ ( /515BECF6/516C2615 $noname  C67 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_7_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C261D $noname  C55 10_uF {Lib=C}
+ ( /515BECF6/516C261D $noname  C77 10_uF {Lib=C}
   (    1 /Outputs/VOUT_7_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516C2625 $noname  P9 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_7 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C262E $noname  U35 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_7_SENSE_HI )
-  (    5 /Outputs/VOUT_7_SENSE_LO )
-  (    6 /Outputs/VOUT_7_SENSE_AMP )
+ ( /515BECF6/516C267F $noname  R38 1K {Lib=R}
+  (    1 /Control/CH7_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2636 $noname  C42 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C263F $noname  U39 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH7_POT_SCL )
-  (    3 /Outputs/CH7_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_7_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH7 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516C2658 $noname  C38 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2662 $noname  U47 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH7 )
- )
- ( /515BECF6/516C2669 $noname  R38 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH7 )
- )
- ( /515BECF6/516C266F $noname  U43 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000131 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_7_SENSE_AMP )
-  (    4 /Outputs/VOUT_7_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516C2675 $noname  C46 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C267F $noname  R46 1K {Lib=R}
-  (    1 /Outputs/CH7_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2685 $noname  R42 49.9 {Lib=R}
-  (    1 N-000131 )
-  (    2 ? )
- )
- ( /515BECF6/516C26DF $noname  R55 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516C26DF $noname  R59 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_8_SENSE_LO )
   (    2 /Outputs/VOUT_8 )
   (    3 /Outputs/VOUT_8_SENSE_HI )
@@ -1145,91 +666,41 @@
   (    1 /Outputs/VOUT_8_RAW )
   (    2 /Outputs/VOUT_8_FUSED )
  )
- ( /515BECF6/516C26EC $noname  Q20 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516C26EC $noname  Q21 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_8_RAW )
   (    G /Outputs/CH8_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516C26F4 $noname  R51 1K {Lib=R}
+ ( /515BECF6/516C26F4 $noname  R49 1K {Lib=R}
   (    1 /Outputs/CH8_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516C26FA $noname  Q16 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516C26FA $noname  Q11 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH8_OE_RAW )
-  (    G /Outputs/CH8_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH8_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516C2701 $noname  L9 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516C2701 $noname  L12 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_8_FUSED )
   (    2 /Outputs/VOUT_8_FILTERED )
  )
- ( /515BECF6/516C2708 $noname  C52 150_uF {Lib=CP1}
+ ( /515BECF6/516C2708 $noname  C68 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_8_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2710 $noname  C56 10_uF {Lib=C}
+ ( /515BECF6/516C2710 $noname  C78 10_uF {Lib=C}
   (    1 /Outputs/VOUT_8_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516C2718 $noname  P10 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_8 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2721 $noname  U36 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
-  (    4 /Outputs/VOUT_8_SENSE_HI )
-  (    5 /Outputs/VOUT_8_SENSE_LO )
-  (    6 /Outputs/VOUT_8_SENSE_AMP )
+ ( /515BECF6/516C2772 $noname  R39 1K {Lib=R}
+  (    1 /Control/CH8_OE )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2729 $noname  C43 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2732 $noname  U40 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH8_POT_SCL )
-  (    3 /Outputs/CH8_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_8_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH8 )
-  (    8 /Outputs/3V3 )
- )
- ( /515BECF6/516C274B $noname  C39 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2755 $noname  U48 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH8 )
- )
- ( /515BECF6/516C275C $noname  R39 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH8 )
- )
- ( /515BECF6/516C2762 $noname  U44 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000124 )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/VOUT_8_SENSE_AMP )
-  (    4 /Outputs/VOUT_8_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
- )
- ( /515BECF6/516C2768 $noname  C47 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2772 $noname  R47 1K {Lib=R}
-  (    1 /Outputs/CH8_OE )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2778 $noname  R43 49.9 {Lib=R}
-  (    1 N-000124 )
-  (    2 ? )
- )
- ( /515BECF6/516C27D2 $noname  R56 0.005 {Lib=R-4TERM}
+ ( /515BECF6/516C27D2 $noname  R60 0.005 {Lib=R-4TERM}
   (    1 /Outputs/VOUT_9_SENSE_LO )
   (    2 /Outputs/VOUT_9 )
   (    3 /Outputs/VOUT_9_SENSE_HI )
@@ -1239,165 +710,889 @@
   (    1 /Outputs/VOUT_9_RAW )
   (    2 /Outputs/VOUT_9_FUSED )
  )
- ( /515BECF6/516C27DF $noname  Q21 SI4413ADY-T1-E3 {Lib=MOS_P}
+ ( /515BECF6/516C27DF $noname  Q22 SI4413ADY-T1-E3 {Lib=MOS_P}
   (    D /Outputs/VOUT_9_RAW )
   (    G /Outputs/CH9_OE_RAW )
-  (    S /Outputs/5V )
+  (    S /Outputs/VOUT )
  )
- ( /515BECF6/516C27E7 $noname  R52 1K {Lib=R}
+ ( /515BECF6/516C27E7 $noname  R50 1K {Lib=R}
   (    1 /Outputs/CH9_OE_RAW )
-  (    2 /Outputs/5V )
+  (    2 /Outputs/VOUT )
  )
- ( /515BECF6/516C27ED $noname  Q17 SI2304DDS-T1-GE3 {Lib=MOS_N}
+ ( /515BECF6/516C27ED $noname  Q12 SI2304DDS-T1-GE3 {Lib=MOS_N}
   (    D /Outputs/CH9_OE_RAW )
-  (    G /Outputs/CH9_OE )
-  (    S /Outputs/GND )
+  (    G /Control/CH9_OE )
+  (    S /Control/GND )
  )
- ( /515BECF6/516C27F4 $noname  L10 300R_5A {Lib=INDUCTOR}
+ ( /515BECF6/516C27F4 $noname  L13 300R_5A {Lib=INDUCTOR}
   (    1 /Outputs/VOUT_9_FUSED )
   (    2 /Outputs/VOUT_9_FILTERED )
  )
- ( /515BECF6/516C27FB $noname  C53 150_uF {Lib=CP1}
+ ( /515BECF6/516C27FB $noname  C69 150_uF {Lib=CP1}
   (    1 /Outputs/VOUT_9_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2803 $noname  C57 10_uF {Lib=C}
+ ( /515BECF6/516C2803 $noname  C79 10_uF {Lib=C}
   (    1 /Outputs/VOUT_9_FILTERED )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
  ( /515BECF6/516C280B $noname  P11 CONN_2 {Lib=CONN_2}
   (    1 /Outputs/VOUT_9 )
-  (    2 /Outputs/GND )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2814 $noname  U37 INA199A2-DCK {Lib=INA199AX-DCK}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/3V3 )
+ ( /515BECF6/516C2865 $noname  R40 1K {Lib=R}
+  (    1 /Control/CH9_OE )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE0B9F $noname  R12 4.7K {Lib=R}
+  (    1 /Control/I2C_SDA )
+  (    2 /Control/3V3 )
+ )
+ ( /515BECF6/51BE0BAC $noname  R13 4.7K {Lib=R}
+  (    1 /Control/I2C_SCL )
+  (    2 /Control/3V3 )
+ )
+ ( /515BECF6/51BE2060 $noname  C38 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_0_REF )
+ )
+ ( /515BECF6/51BE30B6 $noname  C54 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE2F6F $noname  C51 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BDF6BE $noname  U25 DAC5573 {Lib=DAC5573}
+  (    1 /Outputs/VOUT_0_REF )
+  (    2 /Outputs/VOUT_1_REF )
+  (    3 /Outputs/VREF_0 )
+  (    4 /Control/3V3 )
+  (    5 /Control/GND )
+  (    6 /Control/GND )
+  (    7 /Outputs/VOUT_2_REF )
+  (    8 /Outputs/VOUT_3_REF )
+  (    9 ? )
+  (   10 /Control/I2C_SCL )
+  (   11 /Control/I2C_SDA )
+  (   12 /Control/3V3 )
+  (   13 /Control/GND )
+  (   14 /Control/GND )
+  (   15 /Control/GND )
+  (   16 /Control/GND )
+ )
+ ( /515BECF6/51BDAF27 $noname  R28 1K {Lib=R}
+  (    1 /Control/3V3 )
+  (    2 /Outputs/VREF_0 )
+ )
+ ( /515BECF6/51BD6E7C $noname  C48 0.1_uF {Lib=C}
+  (    1 /Outputs/VREF_0 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/515CB07B $noname  U22 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Outputs/VREF_0 )
+ )
+ ( /515BECF6/51BE3831 $noname  C56 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE3839 $noname  C53 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE3851 $noname  U27 DAC5573 {Lib=DAC5573}
+  (    1 /Outputs/VOUT_8_REF )
+  (    2 /Outputs/VOUT_9_REF )
+  (    3 /Outputs/VREF_0 )
+  (    4 /Control/3V3 )
+  (    5 /Control/GND )
+  (    6 /Control/GND )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 /Control/I2C_SCL )
+  (   11 /Control/I2C_SDA )
+  (   12 /Control/3V3 )
+  (   13 /Control/GND )
+  (   14 /Control/3V3 )
+  (   15 /Control/GND )
+  (   16 /Control/GND )
+ )
+ ( /515BECF6/51BE3863 $noname  R30 1K {Lib=R}
+  (    1 /Control/3V3 )
+  (    2 /Outputs/VREF_0 )
+ )
+ ( /515BECF6/51BE3869 $noname  C50 0.1_uF {Lib=C}
+  (    1 /Outputs/VREF_0 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE3871 $noname  U24 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Outputs/VREF_0 )
+ )
+ ( /515BECF6/51BE387D $noname  C55 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE3885 $noname  C52 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE389D $noname  U26 DAC5573 {Lib=DAC5573}
+  (    1 /Outputs/VOUT_4_REF )
+  (    2 /Outputs/VOUT_5_REF )
+  (    3 /Outputs/VREF_4 )
+  (    4 /Control/3V3 )
+  (    5 /Control/GND )
+  (    6 /Control/GND )
+  (    7 /Outputs/VOUT_6_REF )
+  (    8 /Outputs/VOUT_7_REF )
+  (    9 ? )
+  (   10 /Control/I2C_SCL )
+  (   11 /Control/I2C_SDA )
+  (   12 /Control/3V3 )
+  (   13 /Control/3V3 )
+  (   14 /Control/GND )
+  (   15 /Control/GND )
+  (   16 /Control/GND )
+ )
+ ( /515BECF6/51BE38AE $noname  R29 1K {Lib=R}
+  (    1 /Control/3V3 )
+  (    2 /Outputs/VREF_4 )
+ )
+ ( /515BECF6/51BE38B4 $noname  C49 0.1_uF {Lib=C}
+  (    1 /Outputs/VREF_4 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE38BB $noname  U23 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Outputs/VREF_4 )
+ )
+ ( /515BECF6/51BE3F93 $noname  U11 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
   (    4 /Outputs/VOUT_9_SENSE_HI )
   (    5 /Outputs/VOUT_9_SENSE_LO )
   (    6 /Outputs/VOUT_9_SENSE_AMP )
  )
- ( /515BECF6/516C281C $noname  C44 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/51BE3F9B $noname  C37 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C2825 $noname  U41 ISL90810 {Lib=ISL90810}
-  (    1 ? )
-  (    2 /Outputs/CH9_POT_SCL )
-  (    3 /Outputs/CH9_POT_SDA )
-  (    4 /Outputs/GND )
-  (    5 /Outputs/VOUT_9_SENSE_COMPARE )
-  (    6 /Outputs/GND )
-  (    7 /Outputs/2V5_CH9 )
-  (    8 /Outputs/3V3 )
+ ( /515BECF6/51BE3FA5 $noname  C27 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516C283E $noname  C40 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
- )
- ( /515BECF6/516C2848 $noname  U49 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Outputs/GND )
-  (    2 /Outputs/GND )
-  (    3 /Outputs/2V5_CH9 )
- )
- ( /515BECF6/516C284F $noname  R40 1K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/2V5_CH9 )
- )
- ( /515BECF6/516C2855 $noname  U45 MCP6541-SOT23-5 {Lib=MCP6541-SOT23-5}
-  (    1 N-000126 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/51BE3FAC $noname  U21 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000120 )
+  (    2 /Control/GND )
   (    3 /Outputs/VOUT_9_SENSE_AMP )
-  (    4 /Outputs/VOUT_9_SENSE_COMPARE )
-  (    5 /Outputs/3V3 )
+  (    4 /Outputs/VOUT_9_REF )
+  (    5 /Control/3V3 )
  )
- ( /515BECF6/516C285B $noname  C48 0.1_uF {Lib=C}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/GND )
+ ( /515BECF6/51BE3FB5 $noname  R25 49.9 {Lib=R}
+  (    1 N-000120 )
+  (    2 /Control/CH9_OVERCURRENT )
  )
- ( /515BECF6/516C2865 $noname  R48 1K {Lib=R}
-  (    1 /Outputs/CH9_OE )
-  (    2 /Outputs/GND )
+ ( /515BECF6/51BE3FC9 $noname  C47 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_9_REF )
  )
- ( /515BECF6/516C286B $noname  R44 49.9 {Lib=R}
-  (    1 N-000126 )
-  (    2 ? )
+ ( /515BECF6/51BE3FD5 $noname  U3 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_1_SENSE_HI )
+  (    5 /Outputs/VOUT_1_SENSE_LO )
+  (    6 /Outputs/VOUT_1_SENSE_AMP )
  )
- ( /515BECF6/516D5E3D $noname  R58 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH0_POT_SDA )
+ ( /515BECF6/51BE3FDD $noname  C29 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516D5E43 $noname  R59 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH1_POT_SCL )
+ ( /515BECF6/51BE3FE7 $noname  C19 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516D5E49 $noname  R60 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH1_POT_SDA )
+ ( /515BECF6/51BE3FEE $noname  U13 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000113 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_1_SENSE_AMP )
+  (    4 /Outputs/VOUT_1_REF )
+  (    5 /Control/3V3 )
  )
- ( /515BECF6/516D5E4F $noname  R61 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH2_POT_SCL )
+ ( /515BECF6/51BE3FF7 $noname  R17 49.9 {Lib=R}
+  (    1 N-000113 )
+  (    2 /Control/CH1_OVERCURRENT )
  )
- ( /515BECF6/516D5E55 $noname  R62 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH2_POT_SDA )
+ ( /515BECF6/51BE400B $noname  C39 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_1_REF )
  )
- ( /515BECF6/516D5E5B $noname  R63 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH3_POT_SCL )
+ ( /515BECF6/51BE401D $noname  U4 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_2_SENSE_HI )
+  (    5 /Outputs/VOUT_2_SENSE_LO )
+  (    6 /Outputs/VOUT_2_SENSE_AMP )
  )
- ( /515BECF6/516D5E61 $noname  R64 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH3_POT_SDA )
+ ( /515BECF6/51BE4025 $noname  C30 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516D5E67 $noname  R65 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH4_POT_SCL )
+ ( /515BECF6/51BE402F $noname  C20 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516D5E6D $noname  R66 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH4_POT_SDA )
+ ( /515BECF6/51BE4036 $noname  U14 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000116 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_2_SENSE_AMP )
+  (    4 /Outputs/VOUT_2_REF )
+  (    5 /Control/3V3 )
  )
- ( /515BECF6/516D5E73 $noname  R67 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH5_POT_SCL )
+ ( /515BECF6/51BE403F $noname  R18 49.9 {Lib=R}
+  (    1 N-000116 )
+  (    2 /Control/CH2_OVERCURRENT )
  )
- ( /515BECF6/516D5E79 $noname  R68 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH5_POT_SDA )
+ ( /515BECF6/51BE4053 $noname  C40 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_2_REF )
  )
- ( /515BECF6/516D5E7F $noname  R69 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH6_POT_SCL )
+ ( /515BECF6/51BE4065 $noname  U5 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_3_SENSE_HI )
+  (    5 /Outputs/VOUT_3_SENSE_LO )
+  (    6 /Outputs/VOUT_3_SENSE_AMP )
  )
- ( /515BECF6/516D5E85 $noname  R70 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH6_POT_SDA )
+ ( /515BECF6/51BE406D $noname  C31 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516D5E8B $noname  R71 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH7_POT_SCL )
+ ( /515BECF6/51BE4077 $noname  C21 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
  )
- ( /515BECF6/516D5E91 $noname  R72 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH7_POT_SDA )
+ ( /515BECF6/51BE407E $noname  U15 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000124 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_3_SENSE_AMP )
+  (    4 /Outputs/VOUT_3_REF )
+  (    5 /Control/3V3 )
  )
- ( /515BECF6/516D5E97 $noname  R73 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH8_POT_SCL )
+ ( /515BECF6/51BE4087 $noname  R19 49.9 {Lib=R}
+  (    1 N-000124 )
+  (    2 /Control/CH3_OVERCURRENT )
  )
- ( /515BECF6/516D5E9D $noname  R74 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH8_POT_SDA )
+ ( /515BECF6/51BE409B $noname  C41 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_3_REF )
  )
- ( /515BECF6/516D5EA3 $noname  R75 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH9_POT_SCL )
+ ( /515BECF6/51BE40AD $noname  U6 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_4_SENSE_HI )
+  (    5 /Outputs/VOUT_4_SENSE_LO )
+  (    6 /Outputs/VOUT_4_SENSE_AMP )
  )
- ( /515BECF6/516D5EA9 $noname  R76 4.7K {Lib=R}
-  (    1 /Outputs/3V3 )
-  (    2 /Outputs/CH9_POT_SDA )
+ ( /515BECF6/51BE40B5 $noname  C32 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE40BF $noname  C22 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE40C6 $noname  U16 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000107 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_4_SENSE_AMP )
+  (    4 /Outputs/VOUT_4_REF )
+  (    5 /Control/3V3 )
+ )
+ ( /515BECF6/51BE40CF $noname  R20 49.9 {Lib=R}
+  (    1 N-000107 )
+  (    2 /Control/CH4_OVERCURRENT )
+ )
+ ( /515BECF6/51BE40E3 $noname  C42 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_4_REF )
+ )
+ ( /515BECF6/51BE40F6 $noname  U7 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_5_SENSE_HI )
+  (    5 /Outputs/VOUT_5_SENSE_LO )
+  (    6 /Outputs/VOUT_5_SENSE_AMP )
+ )
+ ( /515BECF6/51BE40FE $noname  C33 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE4108 $noname  C23 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE410F $noname  U17 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000103 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_5_SENSE_AMP )
+  (    4 /Outputs/VOUT_5_REF )
+  (    5 /Control/3V3 )
+ )
+ ( /515BECF6/51BE4118 $noname  R21 49.9 {Lib=R}
+  (    1 N-000103 )
+  (    2 /Control/CH5_OVERCURRENT )
+ )
+ ( /515BECF6/51BE412C $noname  C43 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_5_REF )
+ )
+ ( /515BECF6/51BE413E $noname  U8 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_6_SENSE_HI )
+  (    5 /Outputs/VOUT_6_SENSE_LO )
+  (    6 /Outputs/VOUT_6_SENSE_AMP )
+ )
+ ( /515BECF6/51BE4146 $noname  C34 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE4150 $noname  C24 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE4157 $noname  U18 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000104 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_6_SENSE_AMP )
+  (    4 /Outputs/VOUT_6_REF )
+  (    5 /Control/3V3 )
+ )
+ ( /515BECF6/51BE4160 $noname  R22 49.9 {Lib=R}
+  (    1 N-000104 )
+  (    2 /Control/CH6_OVERCURRENT )
+ )
+ ( /515BECF6/51BE4174 $noname  C44 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_6_REF )
+ )
+ ( /515BECF6/51BE4188 $noname  U9 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_7_SENSE_HI )
+  (    5 /Outputs/VOUT_7_SENSE_LO )
+  (    6 /Outputs/VOUT_7_SENSE_AMP )
+ )
+ ( /515BECF6/51BE4190 $noname  C35 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE419A $noname  C25 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE41A1 $noname  U19 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000111 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_7_SENSE_AMP )
+  (    4 /Outputs/VOUT_7_REF )
+  (    5 /Control/3V3 )
+ )
+ ( /515BECF6/51BE41AA $noname  R23 49.9 {Lib=R}
+  (    1 N-000111 )
+  (    2 /Control/CH7_OVERCURRENT )
+ )
+ ( /515BECF6/51BE41BE $noname  C45 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_7_REF )
+ )
+ ( /515BECF6/51BE41D0 $noname  U10 INA199A2-DCK {Lib=INA199AX-DCK}
+  (    1 /Control/GND )
+  (    2 /Control/GND )
+  (    3 /Control/3V3 )
+  (    4 /Outputs/VOUT_8_SENSE_HI )
+  (    5 /Outputs/VOUT_8_SENSE_LO )
+  (    6 /Outputs/VOUT_8_SENSE_AMP )
+ )
+ ( /515BECF6/51BE41D8 $noname  C36 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE41E2 $noname  C26 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515BECF6/51BE41E9 $noname  U20 TLV3201 {Lib=MCP6541-SOT23-5}
+  (    1 N-000109 )
+  (    2 /Control/GND )
+  (    3 /Outputs/VOUT_8_SENSE_AMP )
+  (    4 /Outputs/VOUT_8_REF )
+  (    5 /Control/3V3 )
+ )
+ ( /515BECF6/51BE41F2 $noname  R24 49.9 {Lib=R}
+  (    1 N-000109 )
+  (    2 /Control/CH8_OVERCURRENT )
+ )
+ ( /515BECF6/51BE4206 $noname  C46 0.1_uF {Lib=C}
+  (    1 /Control/GND )
+  (    2 /Outputs/VOUT_8_REF )
+ )
+ ( /515D219D/515D2587 $noname  U32 MCP9801_MSOP {Lib=MCP9801_MSOP}
+  (    1 /Control/I2C_SDA )
+  (    2 /Control/I2C_SCL )
+  (    3 /Control/TEMP_ALERT_0 )
+  (    4 /Control/GND )
+  (    5 /Control/GND )
+  (    6 /Control/GND )
+  (    7 /Control/GND )
+  (    8 /Control/3V3 )
+ )
+ ( /515D219D/515D2594 $noname  U33 MCP9801_MSOP {Lib=MCP9801_MSOP}
+  (    1 /Control/I2C_SDA )
+  (    2 /Control/I2C_SCL )
+  (    3 /Control/TEMP_ALERT_1 )
+  (    4 /Control/GND )
+  (    5 /Control/GND )
+  (    6 /Control/GND )
+  (    7 /Control/3V3 )
+  (    8 /Control/3V3 )
+ )
+ ( /515D219D/516B66ED $noname  U31 XC6SLX25-2FTG256C {Lib=XC6SLX25-XFTG256-SEG}
+  (   A1 /Control/GND )
+  (   A2 ? )
+  (   A3 ? )
+  (   A4 /Control/I2C_SDA )
+  (   A5 /Control/ADC0_CS_N )
+  (   A6 /Control/ADC1_CS_N )
+  (   A7 /Control/ADC2_CS_N )
+  (   A8 ? )
+  (   A9 /Control/CLK_25MHZ )
+  (  A10 /Control/CH0_OE )
+  (  A11 /Control/CH4_OE )
+  (  A12 /Control/CH6_OE )
+  (  A13 /Control/CH7_OE )
+  (  A14 /Control/CH9_OE )
+  (  A15 /Control/JTAG_TMS )
+  (  A16 /Control/GND )
+  (   B1 ? )
+  (   B2 ? )
+  (   B3 ? )
+  (   B4 /Control/3V3 )
+  (   B5 /Control/I2C_SCL )
+  (   B6 /Control/ADC0_MISO )
+  (   B7 /Control/GND )
+  (   B8 /Control/ADC2_MISO )
+  (   B9 /Control/3V3 )
+  (  B10 /Control/CH0_OVERCURRENT )
+  (  B11 /Control/GND )
+  (  B12 /Control/CH6_OVERCURRENT )
+  (  B13 /Control/3V3 )
+  (  B14 /Control/CH9_OVERCURRENT )
+  (  B15 ? )
+  (  B16 ? )
+  (   C1 ? )
+  (   C2 ? )
+  (   C3 ? )
+  (   C4 ? )
+  (   C5 /Control/ADC0_MOSI )
+  (   C6 /Control/ADC2_MOSI )
+  (   C7 /Control/ADC1_MISO )
+  (   C8 /Control/CH3_OE )
+  (   C9 ? )
+  (  C10 /Control/CH2_OE )
+  (  C11 /Control/CH4_OVERCURRENT )
+  (  C12 /Control/JTAG_TDI )
+  (  C13 /Control/CH7_OVERCURRENT )
+  (  C14 /Control/JTAG_TCK )
+  (  C15 ? )
+  (  C16 ? )
+  (   D1 ? )
+  (   D2 /Control/2V5 )
+  (   D3 ? )
+  (   D4 /Control/GND )
+  (   D5 /Control/ADC0_SCK )
+  (   D6 /Control/ADC2_SCK )
+  (   D7 /Control/3V3 )
+  (   D8 /Control/CH3_OVERCURRENT )
+  (   D9 /Control/CH5_OE )
+  (  D10 /Control/3V3 )
+  (  D11 /Control/TEMP_ALERT_0 )
+  (  D12 /Control/TEMP_ALERT_1 )
+  (  D13 /Control/GND )
+  (  D14 ? )
+  (  D15 /Control/2V5 )
+  (  D16 ? )
+  (   E1 ? )
+  (   E2 ? )
+  (   E3 ? )
+  (   E4 ? )
+  (   E5 /Control/3V3 )
+  (   E6 /Control/ADC1_MOSI )
+  (   E7 /Control/CH1_OVERCURRENT )
+  (   E8 /Control/CH1_OE )
+  (   E9 /Control/GND )
+  (  E10 /Control/CH2_OVERCURRENT )
+  (  E11 /Control/CH8_OE )
+  (  E12 ? )
+  (  E13 ? )
+  (  E14 /Control/JTAG_TDO )
+  (  E15 ? )
+  (  E16 ? )
+  (   F1 ? )
+  (   F2 ? )
+  (   F3 ? )
+  (   F4 ? )
+  (   F5 ? )
+  (   F6 ? )
+  (   F7 /Control/ADC1_SCK )
+  (   F8 /Control/3V3 )
+  (   F9 /Control/CH5_OVERCURRENT )
+  (  F10 /Control/CH8_OVERCURRENT )
+  (  F11 /Control/3V3 )
+  (  F12 ? )
+  (  F13 ? )
+  (  F14 ? )
+  (  F15 ? )
+  (  F16 ? )
+  (   G1 ? )
+  (   G2 /Control/GND )
+  (   G3 ? )
+  (   G4 /Control/2V5 )
+  (   G5 ? )
+  (   G6 ? )
+  (   G7 /Control/1V2 )
+  (   G8 /Control/GND )
+  (   G9 /Control/1V2 )
+  (  G10 /Control/3V3 )
+  (  G11 ? )
+  (  G12 /Control/RGMII_RXD1 )
+  (  G13 /Control/2V5 )
+  (  G14 ? )
+  (  G15 /Control/GND )
+  (  G16 /Control/RGMII_RXD0 )
+  (   H1 ? )
+  (   H2 ? )
+  (   H3 ? )
+  (   H4 ? )
+  (   H5 ? )
+  (   H6 /Control/3V3 )
+  (   H7 /Control/GND )
+  (   H8 /Control/1V2 )
+  (   H9 /Control/GND )
+  (  H10 /Control/1V2 )
+  (  H11 /Control/RGMII_RXD2 )
+  (  H12 /Control/GND )
+  (  H13 /Control/RGMII_RXD3 )
+  (  H14 /Control/RGMII_RX_CTL )
+  (  H15 ? )
+  (  H16 ? )
+  (   J1 ? )
+  (   J2 /Control/2V5 )
+  (   J3 ? )
+  (   J4 ? )
+  (   J5 /Control/GND )
+  (   J6 ? )
+  (   J7 /Control/1V2 )
+  (   J8 /Control/GND )
+  (   J9 /Control/1V2 )
+  (  J10 /Control/3V3 )
+  (  J11 /Control/RGMII_RXC )
+  (  J12 /Control/RGMII_TXD0 )
+  (  J13 /Control/RGMII_TXD1 )
+  (  J14 /Control/RGMII_TXC )
+  (  J15 /Control/2V5 )
+  (  J16 /Control/ETH_CLK125 )
+  (   K1 ? )
+  (   K2 ? )
+  (   K3 ? )
+  (   K4 /Control/2V5 )
+  (   K5 ? )
+  (   K6 ? )
+  (   K7 /Control/GND )
+  (   K8 /Control/1V2 )
+  (   K9 /Control/GND )
+  (  K10 /Control/1V2 )
+  (  K11 /Control/RGMII_TX_CTL )
+  (  K12 /Control/RGMII_TXD3 )
+  (  K13 /Control/2V5 )
+  (  K14 /Control/RGMII_TXD2 )
+  (  K15 /Control/ETH_MDIO )
+  (  K16 /Control/ETH_MDC )
+  (   L1 ? )
+  (   L2 /Control/GND )
+  (   L3 ? )
+  (   L4 ? )
+  (   L5 ? )
+  (   L6 /Control/3V3 )
+  (   L7 ? )
+  (   L8 ? )
+  (   L9 /Control/3V3 )
+  (  L10 ? )
+  (  L11 ? )
+  (  L12 ? )
+  (  L13 ? )
+  (  L14 ? )
+  (  L15 /Control/GND )
+  (  L16 ? )
+  (   M1 ? )
+  (   M2 ? )
+  (   M3 ? )
+  (   M4 ? )
+  (   M5 ? )
+  (   M6 ? )
+  (   M7 ? )
+  (   M8 /Control/GND )
+  (   M9 ? )
+  (  M10 ? )
+  (  M11 ? )
+  (  M12 ? )
+  (  M13 ? )
+  (  M14 ? )
+  (  M15 /Control/ETH_INT_N )
+  (  M16 ? )
+  (   N1 ? )
+  (   N2 /Control/2V5 )
+  (   N3 ? )
+  (   N4 ? )
+  (   N5 ? )
+  (   N6 ? )
+  (   N7 /Control/3V3 )
+  (   N8 ? )
+  (   N9 ? )
+  (  N10 /Control/3V3 )
+  (  N11 ? )
+  (  N12 N-000316 )
+  (  N13 /Control/GND )
+  (  N14 /Control/ETH_CLK_25MHZ )
+  (  N15 /Control/2V5 )
+  (  N16 /Control/ETH_RESET_N )
+  (   P1 ? )
+  (   P2 ? )
+  (   P3 /Control/GND )
+  (   P4 ? )
+  (   P5 ? )
+  (   P6 ? )
+  (   P7 ? )
+  (   P8 ? )
+  (   P9 ? )
+  (  P10 N-000318 )
+  (  P11 ? )
+  (  P12 N-000323 )
+  (  P13 /Control/FPGA_DONE )
+  (  P14 /Control/GND )
+  (  P15 ? )
+  (  P16 ? )
+  (   R1 ? )
+  (   R2 ? )
+  (   R3 ? )
+  (   R4 /Control/3V3 )
+  (   R5 ? )
+  (   R6 /Control/GND )
+  (   R7 ? )
+  (   R8 /Control/3V3 )
+  (   R9 ? )
+  (  R10 /Control/GND )
+  (  R11 N-000248 )
+  (  R12 ? )
+  (  R13 /Control/2V5 )
+  (  R14 ? )
+  (  R15 ? )
+  (  R16 ? )
+  (   T1 /Control/GND )
+  (   T2 /Control/PROG_B_N )
+  (   T3 N-000322 )
+  (   T4 ? )
+  (   T5 ? )
+  (   T6 ? )
+  (   T7 ? )
+  (   T8 ? )
+  (   T9 ? )
+  (  T10 N-000319 )
+  (  T11 ? )
+  (  T12 ? )
+  (  T13 ? )
+  (  T14 ? )
+  (  T15 ? )
+  (  T16 /Control/GND )
+ )
+ ( /515D219D/516B6758 $noname  U34 W25Q80BV {Lib=W25Q80BV}
+  (    1 /Control/FLASH_CS_N )
+  (    2 /Control/FLASH_D1 )
+  (    3 /Control/FLASH_D2 )
+  (    4 /Control/GND )
+  (    5 /Control/FLASH_D0 )
+  (    6 /Control/FLASH_SCK )
+  (    7 /Control/FLASH_D3 )
+  (    8 /Control/3V3 )
+ )
+ ( /515D219D/516B6767 $noname  U35 25.000_MHz {Lib=OSC}
+  (    1 /Control/3V3 )
+  (    2 N-000277 )
+  (    3 N-000274 )
+  (    4 /Control/3V3 )
+ )
+ ( /515D219D/516B6776 $noname  J1 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 /Control/3V3 )
+  (    3 /Control/GND )
+  (    4 /Control/JTAG_TMS )
+  (    5 /Control/GND )
+  (    6 /Control/JTAG_TCK )
+  (    7 /Control/GND )
+  (    8 /Control/JTAG_TDO )
+  (    9 /Control/GND )
+  (   10 /Control/JTAG_TDI )
+  (   11 /Control/GND )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /515D219D/51C2BC3E $noname  C80 100_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2BC64 $noname  C83 4.7_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2BC6F $noname  C86 0.47_uF {Lib=C}
+  (    1 /Control/1V2 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2BFEE $noname  C81 100_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2BFF4 $noname  C84 4.7_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2BFFA $noname  C87 4.7_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2C00A $noname  C89 0.47_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2C7E6 $noname  C91 4.7_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2C7EC $noname  C93 4.7_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2C7F2 $noname  C95 0.47_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D36F $noname  C97 4.7_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D375 $noname  C98 4.7_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D37B $noname  C99 0.47_uF {Lib=C}
+  (    1 /Control/2V5 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D60A $noname  C82 100_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D610 $noname  C85 4.7_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D616 $noname  C88 0.47_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D61C $noname  C90 0.47_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D622 $noname  C92 4.7_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D628 $noname  C94 0.47_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C2D62E $noname  C96 0.47_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C32D40 $noname  R61 49.9 {Lib=R}
+  (    1 /Control/FLASH_SCK )
+  (    2 N-000248 )
+ )
+ ( /515D219D/51C3315B $noname  R63 49.9 {Lib=R}
+  (    1 /Control/FLASH_D0 )
+  (    2 N-000319 )
+ )
+ ( /515D219D/51C33377 $noname  R62 49.9 {Lib=R}
+  (    1 /Control/FLASH_D1 )
+  (    2 N-000318 )
+ )
+ ( /515D219D/51C33584 $noname  R64 49.9 {Lib=R}
+  (    1 /Control/FLASH_D2 )
+  (    2 N-000316 )
+ )
+ ( /515D219D/51C3358A $noname  R65 49.9 {Lib=R}
+  (    1 /Control/FLASH_D3 )
+  (    2 N-000323 )
+ )
+ ( /515D219D/51C33AB0 $noname  R66 49.9 {Lib=R}
+  (    1 /Control/FLASH_CS_N )
+  (    2 N-000322 )
+ )
+ ( /515D219D/51C34543 $noname  C100 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C34678 $noname  R67 49.9 {Lib=R}
+  (    1 N-000274 )
+  (    2 /Control/CLK_25MHZ )
+ )
+ ( /515D219D/51C348A4 $noname  C101 0.1_uF {Lib=C}
+  (    1 /Control/3V3 )
+  (    2 N-000277 )
+ )
+ ( /515D219D/51C367A9 $noname  R68 10K {Lib=R}
+  (    1 /Control/PROG_B_N )
+  (    2 /Control/3V3 )
+ )
+ ( /515D219D/51C367C9 $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+  (    1 /Control/PROG_B_N )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C36CB3 $noname  D3 LED {Lib=LED}
+  (    1 N-000288 )
+  (    2 /Control/GND )
+ )
+ ( /515D219D/51C36CC0 $noname  R69 270 {Lib=R}
+  (    1 /Control/FPGA_DONE )
+  (    2 N-000288 )
  )
 )
 *
@@ -1434,112 +1629,13 @@ $component D1
  LED-1206
  LEDV
 $endlist
+$component C1
+ CP*
+ SM*
+$endlist
 $component C2
  CP*
  SM*
-$endlist
-$component C3
- CP*
- SM*
-$endlist
-$component C4
- SM*
- C?
- C1-1
-$endlist
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component U3
- MSOP_8
-$endlist
-$component U4
- MSOP_8
-$endlist
-$component U2
- BGA256
-$endlist
-$component R15
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R13
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C12
- CP*
- SM*
-$endlist
-$component C14
- SM*
- C?
- C1-1
-$endlist
-$component C11
- SM*
- C?
- C1-1
-$endlist
-$component U7
- SC70
-$endlist
-$component C7
- SM*
- C?
- C1-1
-$endlist
-$component R57
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C5
- SM*
- C?
- C1-1
-$endlist
-$component R7
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C9
- SM*
- C?
- C1-1
-$endlist
-$component R11
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R9
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
 $endlist
 $component R4
  R?
@@ -1562,40 +1658,12 @@ $component R6
  R?-*
  SM1206
 $endlist
-$component R16
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R14
+$component R7
  R?
  SM0603
  SM0805
  R?-*
  SM1206
-$endlist
-$component C13
- CP*
- SM*
-$endlist
-$component C15
- SM*
- C?
- C1-1
-$endlist
-$component U8
- SC70
-$endlist
-$component C8
- SM*
- C?
- C1-1
-$endlist
-$component C6
- SM*
- C?
- C1-1
 $endlist
 $component R8
  R?
@@ -1604,12 +1672,7 @@ $component R8
  R?-*
  SM1206
 $endlist
-$component C10
- SM*
- C?
- C1-1
-$endlist
-$component R12
+$component R9
  R?
  SM0603
  SM0805
@@ -1623,32 +1686,36 @@ $component R10
  R?-*
  SM1206
 $endlist
-$component R21
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R20
+$component R11
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C19
- CP*
- SM*
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
 $endlist
-$component C20
+$component C3
  SM*
  C?
  C1-1
 $endlist
-$component U17
- SC70
+$component C7
+ SM*
+ C?
+ C1-1
 $endlist
-$component C17
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C15
  SM*
  C?
  C1-1
@@ -1658,141 +1725,92 @@ $component C16
  C?
  C1-1
 $endlist
-$component R17
+$component C17
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C12
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component R51
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R41
  R?
  SM0603
  SM0805
  R?-*
  SM1206
+$endlist
+$component C60
+ CP*
+ SM*
+$endlist
+$component C70
+ SM*
+ C?
+ C1-1
+$endlist
+$component C59
+ SM*
+ C?
+ C1-1
+$endlist
+$component U2
+ SC70
+$endlist
+$component C28
+ SM*
+ C?
+ C1-1
 $endlist
 $component C18
- SM*
- C?
- C1-1
-$endlist
-$component R19
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R18
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R26
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R25
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C25
- CP*
- SM*
-$endlist
-$component C26
- SM*
- C?
- C1-1
-$endlist
-$component U21
- SC70
-$endlist
-$component C22
- SM*
- C?
- C1-1
-$endlist
-$component C21
- SM*
- C?
- C1-1
-$endlist
-$component R22
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C23
- SM*
- C?
- C1-1
-$endlist
-$component R24
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R23
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C24
- SM*
- C?
- C1-1
-$endlist
-$component R35
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R33
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C33
- CP*
- SM*
-$endlist
-$component C35
- SM*
- C?
- C1-1
-$endlist
-$component U26
- SC70
-$endlist
-$component C29
- SM*
- C?
- C1-1
-$endlist
-$component C27
- SM*
- C?
- C1-1
-$endlist
-$component R27
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C31
  SM*
  C?
  C1-1
@@ -1804,68 +1822,64 @@ $component R31
  R?-*
  SM1206
 $endlist
-$component R29
+$component R16
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component R36
- R?
- SM0603
- SM0805
- R?-*
-$endlist
-$component R34
+$component R14
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C34
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R26
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R27
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R52
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R42
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C61
  CP*
  SM*
 $endlist
-$component C36
- SM*
- C?
- C1-1
-$endlist
-$component U27
- SC70
-$endlist
-$component C30
- SM*
- C?
- C1-1
-$endlist
-$component C28
- SM*
- C?
- C1-1
-$endlist
-$component R28
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C32
+$component C71
  SM*
  C?
  C1-1
 $endlist
 $component R32
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R30
  R?
  SM0603
  SM0805
@@ -1878,60 +1892,23 @@ $component R53
  SM0805
  R?-*
 $endlist
-$component R49
+$component R43
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C50
+$component C62
  CP*
  SM*
 $endlist
-$component C54
+$component C72
  SM*
  C?
  C1-1
 $endlist
-$component C49
- SM*
- C?
- C1-1
-$endlist
-$component U34
- SC70
-$endlist
-$component C41
- SM*
- C?
- C1-1
-$endlist
-$component C37
- SM*
- C?
- C1-1
-$endlist
-$component R37
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C45
- SM*
- C?
- C1-1
-$endlist
-$component R45
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R41
+$component R33
  R?
  SM0603
  SM0805
@@ -1944,60 +1921,33 @@ $component R54
  SM0805
  R?-*
 $endlist
-$component R50
+$component R44
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C51
+$component C63
  CP*
  SM*
 $endlist
-$component C55
+$component C73
  SM*
  C?
  C1-1
 $endlist
-$component U35
- SC70
-$endlist
-$component C42
- SM*
- C?
- C1-1
-$endlist
-$component C38
- SM*
- C?
- C1-1
-$endlist
-$component R38
+$component R34
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C46
+$component C57
  SM*
  C?
  C1-1
-$endlist
-$component R46
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R42
- R?
- SM0603
- SM0805
- R?-*
- SM1206
 $endlist
 $component R55
  R?
@@ -2005,55 +1955,23 @@ $component R55
  SM0805
  R?-*
 $endlist
-$component R51
+$component R45
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C52
+$component C64
  CP*
  SM*
 $endlist
-$component C56
+$component C74
  SM*
  C?
  C1-1
 $endlist
-$component U36
- SC70
-$endlist
-$component C43
- SM*
- C?
- C1-1
-$endlist
-$component C39
- SM*
- C?
- C1-1
-$endlist
-$component R39
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C47
- SM*
- C?
- C1-1
-$endlist
-$component R47
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R43
+$component R35
  R?
  SM0603
  SM0805
@@ -2066,55 +1984,57 @@ $component R56
  SM0805
  R?-*
 $endlist
-$component R52
+$component R46
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C53
+$component C65
  CP*
  SM*
 $endlist
-$component C57
+$component C75
  SM*
  C?
  C1-1
 $endlist
-$component U37
- SC70
-$endlist
-$component C44
- SM*
- C?
- C1-1
-$endlist
-$component C40
- SM*
- C?
- C1-1
-$endlist
-$component R40
+$component R36
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component C48
- SM*
- C?
- C1-1
+$component R57
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
-$component R48
+$component R47
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component R44
+$component C66
+ CP*
+ SM*
+$endlist
+$component C76
+ SM*
+ C?
+ C1-1
+$endlist
+$component C58
+ SM*
+ C?
+ C1-1
+$endlist
+$component R37
  R?
  SM0603
  SM0805
@@ -2126,9 +2046,53 @@ $component R58
  SM0603
  SM0805
  R?-*
+$endlist
+$component R48
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C67
+ CP*
+ SM*
+$endlist
+$component C77
+ SM*
+ C?
+ C1-1
+$endlist
+$component R38
+ R?
+ SM0603
+ SM0805
+ R?-*
  SM1206
 $endlist
 $component R59
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R49
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C68
+ CP*
+ SM*
+$endlist
+$component C78
+ SM*
+ C?
+ C1-1
+$endlist
+$component R39
  R?
  SM0603
  SM0805
@@ -2140,7 +2104,448 @@ $component R60
  SM0603
  SM0805
  R?-*
+$endlist
+$component R50
+ R?
+ SM0603
+ SM0805
+ R?-*
  SM1206
+$endlist
+$component C69
+ CP*
+ SM*
+$endlist
+$component C79
+ SM*
+ C?
+ C1-1
+$endlist
+$component R40
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C38
+ SM*
+ C?
+ C1-1
+$endlist
+$component C54
+ SM*
+ C?
+ C1-1
+$endlist
+$component C51
+ SM*
+ C?
+ C1-1
+$endlist
+$component R28
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C48
+ SM*
+ C?
+ C1-1
+$endlist
+$component C56
+ SM*
+ C?
+ C1-1
+$endlist
+$component C53
+ SM*
+ C?
+ C1-1
+$endlist
+$component R30
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C50
+ SM*
+ C?
+ C1-1
+$endlist
+$component C55
+ SM*
+ C?
+ C1-1
+$endlist
+$component C52
+ SM*
+ C?
+ C1-1
+$endlist
+$component R29
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C49
+ SM*
+ C?
+ C1-1
+$endlist
+$component U11
+ SC70
+$endlist
+$component C37
+ SM*
+ C?
+ C1-1
+$endlist
+$component C27
+ SM*
+ C?
+ C1-1
+$endlist
+$component R25
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C47
+ SM*
+ C?
+ C1-1
+$endlist
+$component U3
+ SC70
+$endlist
+$component C29
+ SM*
+ C?
+ C1-1
+$endlist
+$component C19
+ SM*
+ C?
+ C1-1
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C39
+ SM*
+ C?
+ C1-1
+$endlist
+$component U4
+ SC70
+$endlist
+$component C30
+ SM*
+ C?
+ C1-1
+$endlist
+$component C20
+ SM*
+ C?
+ C1-1
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C40
+ SM*
+ C?
+ C1-1
+$endlist
+$component U5
+ SC70
+$endlist
+$component C31
+ SM*
+ C?
+ C1-1
+$endlist
+$component C21
+ SM*
+ C?
+ C1-1
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C41
+ SM*
+ C?
+ C1-1
+$endlist
+$component U6
+ SC70
+$endlist
+$component C32
+ SM*
+ C?
+ C1-1
+$endlist
+$component C22
+ SM*
+ C?
+ C1-1
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C42
+ SM*
+ C?
+ C1-1
+$endlist
+$component U7
+ SC70
+$endlist
+$component C33
+ SM*
+ C?
+ C1-1
+$endlist
+$component C23
+ SM*
+ C?
+ C1-1
+$endlist
+$component R21
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C43
+ SM*
+ C?
+ C1-1
+$endlist
+$component U8
+ SC70
+$endlist
+$component C34
+ SM*
+ C?
+ C1-1
+$endlist
+$component C24
+ SM*
+ C?
+ C1-1
+$endlist
+$component R22
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C44
+ SM*
+ C?
+ C1-1
+$endlist
+$component U9
+ SC70
+$endlist
+$component C35
+ SM*
+ C?
+ C1-1
+$endlist
+$component C25
+ SM*
+ C?
+ C1-1
+$endlist
+$component R23
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C45
+ SM*
+ C?
+ C1-1
+$endlist
+$component U10
+ SC70
+$endlist
+$component C36
+ SM*
+ C?
+ C1-1
+$endlist
+$component C26
+ SM*
+ C?
+ C1-1
+$endlist
+$component R24
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C46
+ SM*
+ C?
+ C1-1
+$endlist
+$component U32
+ MSOP_8
+$endlist
+$component U33
+ MSOP_8
+$endlist
+$component U31
+ BGA256
+$endlist
+$component C80
+ SM*
+ C?
+ C1-1
+$endlist
+$component C83
+ SM*
+ C?
+ C1-1
+$endlist
+$component C86
+ SM*
+ C?
+ C1-1
+$endlist
+$component C81
+ SM*
+ C?
+ C1-1
+$endlist
+$component C84
+ SM*
+ C?
+ C1-1
+$endlist
+$component C87
+ SM*
+ C?
+ C1-1
+$endlist
+$component C89
+ SM*
+ C?
+ C1-1
+$endlist
+$component C91
+ SM*
+ C?
+ C1-1
+$endlist
+$component C93
+ SM*
+ C?
+ C1-1
+$endlist
+$component C95
+ SM*
+ C?
+ C1-1
+$endlist
+$component C97
+ SM*
+ C?
+ C1-1
+$endlist
+$component C98
+ SM*
+ C?
+ C1-1
+$endlist
+$component C99
+ SM*
+ C?
+ C1-1
+$endlist
+$component C82
+ SM*
+ C?
+ C1-1
+$endlist
+$component C85
+ SM*
+ C?
+ C1-1
+$endlist
+$component C88
+ SM*
+ C?
+ C1-1
+$endlist
+$component C90
+ SM*
+ C?
+ C1-1
+$endlist
+$component C92
+ SM*
+ C?
+ C1-1
+$endlist
+$component C94
+ SM*
+ C?
+ C1-1
+$endlist
+$component C96
+ SM*
+ C?
+ C1-1
 $endlist
 $component R61
  R?
@@ -2149,14 +2554,14 @@ $component R61
  R?-*
  SM1206
 $endlist
-$component R62
+$component R63
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component R63
+$component R62
  R?
  SM0603
  SM0805
@@ -2184,12 +2589,22 @@ $component R66
  R?-*
  SM1206
 $endlist
+$component C100
+ SM*
+ C?
+ C1-1
+$endlist
 $component R67
  R?
  SM0603
  SM0805
  R?-*
  SM1206
+$endlist
+$component C101
+ SM*
+ C?
+ C1-1
 $endlist
 $component R68
  R?
@@ -2198,56 +2613,16 @@ $component R68
  R?-*
  SM1206
 $endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
 $component R69
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R70
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R71
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R72
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R73
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R74
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R75
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R76
  R?
  SM0603
  SM0805
@@ -2257,808 +2632,1111 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/Outputs/CH5_OE" "CH5_OE"
- R32 1
- Q11 G
-Net 3 "/Outputs/CH5_POT_SDA" "CH5_POT_SDA"
- R68 2
- U29 3
-Net 4 "/Outputs/CH5_POT_SCL" "CH5_POT_SCL"
- R67 2
- U29 2
-Net 5 "/Outputs/CH4_OE" "CH4_OE"
+Net 1 "/Control/ADC0_CS_N" "ADC0_CS_N"
+ U31 A5
+ U30 8
+Net 2 "/Control/ADC0_SCK" "ADC0_SCK"
+ U30 11
+ U31 D5
+Net 3 "/Control/ADC0_MISO" "ADC0_MISO"
+ U31 B6
+ U30 10
+Net 4 "/Control/ADC0_MOSI" "ADC0_MOSI"
+ U30 9
+ U31 C5
+Net 5 "/Control/CH0_OVERCURRENT" "CH0_OVERCURRENT"
+ U31 B10
+ R16 2
+Net 6 "/Control/CH0_OE" "CH0_OE"
+ U31 A10
  R31 1
- Q10 G
-Net 7 "/Outputs/CH4_POT_SDA" "CH4_POT_SDA"
- U28 3
- R66 2
-Net 8 "/Outputs/CH4_POT_SCL" "CH4_POT_SCL"
- U28 2
- R65 2
-Net 13 "/Outputs/CH3_OE" "CH3_OE"
- Q8 G
- R24 1
-Net 15 "/Outputs/CH3_POT_SDA" "CH3_POT_SDA"
- U22 3
- R64 2
-Net 16 "/Outputs/CH3_POT_SCL" "CH3_POT_SCL"
- U22 2
- R63 2
-Net 17 "/Outputs/CH2_OE" "CH2_OE"
- R19 1
- Q6 G
-Net 19 "/Outputs/CH2_POT_SDA" "CH2_POT_SDA"
- R62 2
- U18 3
-Net 20 "/Outputs/CH9_OE" "CH9_OE"
- Q17 G
- R48 1
-Net 22 "/Outputs/CH9_POT_SDA" "CH9_POT_SDA"
- R76 2
- U41 3
-Net 23 "/Outputs/CH9_POT_SCL" "CH9_POT_SCL"
- R75 2
- U41 2
-Net 24 "/Outputs/CH8_OE" "CH8_OE"
- R47 1
- Q16 G
-Net 26 "/Outputs/CH8_POT_SDA" "CH8_POT_SDA"
- R74 2
- U40 3
-Net 27 "/Outputs/CH8_POT_SCL" "CH8_POT_SCL"
- U40 2
- R73 2
-Net 28 "/Outputs/CH7_OE" "CH7_OE"
- Q15 G
- R46 1
-Net 30 "/Outputs/CH7_POT_SDA" "CH7_POT_SDA"
- R72 2
- U39 3
-Net 31 "/Outputs/CH7_POT_SCL" "CH7_POT_SCL"
- R71 2
- U39 2
-Net 36 "/Outputs/CH6_OE" "CH6_OE"
- R45 1
- Q14 G
-Net 38 "/Outputs/CH6_POT_SDA" "CH6_POT_SDA"
- R70 2
- U38 3
-Net 39 "/Outputs/CH6_POT_SCL" "CH6_POT_SCL"
- R69 2
- U38 2
-Net 40 "/Outputs/GND" "GND"
- C48 2
- U45 2
- U25 12
- R48 2
- Q8 S
- U25 7
- C25 2
- C46 2
- U43 2
- C26 2
- P5 2
- U21 1
- U35 2
- U35 1
- P9 2
- U22 4
- U22 6
- R46 2
- C21 2
- C34 2
- Q11 S
- C20 2
- P4 2
- U17 1
- U37 2
- U37 1
- P11 2
- C57 2
- C53 2
- U17 2
- Q17 S
- U49 2
- U49 1
- C40 2
- C32 2
- Q6 S
- C19 2
- C30 2
- U27 2
- U27 1
- P7 2
- C36 2
- U18 6
- C24 2
- C16 2
- U41 6
- U41 4
- U20 1
- C44 2
- U20 2
- U19 2
- C18 2
- C17 2
- U18 4
- R19 2
- U12 2
- U14 2
- U14 1
- C6 2
- U10 4
- C8 2
- U8 2
- U8 1
- P3 2
- U7 2
- U7 1
- C11 2
- P2 2
- C14 2
- C12 2
- Q2 S
- R12 2
- C10 2
- U9 6
- U9 4
- C7 2
- U11 2
- U13 2
- U13 1
- C5 2
- C42 2
- U48 2
- U48 1
- C39 2
- U24 1
- U40 6
- U40 4
- U24 2
- C43 2
- U23 2
- C55 2
- C51 2
- Q15 S
- U21 2
- U47 2
- U47 1
- C38 2
- C22 2
- U39 6
- U39 4
- U36 2
- U36 1
- P10 2
- C56 2
- C52 2
- Q16 S
- C15 2
- C13 2
- Q3 S
- U10 6
- C23 2
- R24 2
- R47 2
- R4 2
- R6 2
- C47 2
- U44 2
- C9 2
- R11 2
- U15 7
- U15 12
- U31 2
- P1 2
- U28 4
- U28 6
- Q1 G
- D2 1
- R31 2
- C28 2
- C31 2
- U33 1
- U33 2
- C4 2
- U34 1
- U34 2
- C35 2
- C37 2
- C33 2
- U46 1
- C54 2
- U30 2
- C50 2
- U46 2
- Q10 S
- Q14 S
- C41 2
- C3 2
- C29 2
- C2 2
- U38 4
- D1 2
- U38 6
- C27 2
- U26 2
- U32 1
- P8 2
- U26 1
- C49 2
- P6 2
- U32 2
- U29 4
- C45 2
- U50 12
- U50 7
- R45 2
- U29 6
- U1 1
- R32 2
- U42 2
-Net 47 "/Outputs/5V" "5V"
- R3 1
- R5 1
- R49 2
- Q18 S
- R13 2
- Q5 S
- Q19 S
- R50 2
- R51 2
- Q4 S
- Q20 S
- R14 2
- C3 1
- C1 1
- Q21 S
- Q1 S
- R1 2
- C2 1
- Q9 S
- U1 3
- Q13 S
- R52 2
- R20 2
- Q12 S
- R34 2
- Q7 S
- R33 2
- R25 2
-Net 48 "/Outputs/CH2_POT_SCL" "CH2_POT_SCL"
- R61 2
- U18 2
-Net 49 "/Outputs/CH1_OE" "CH1_OE"
  Q3 G
- R12 1
-Net 51 "/Outputs/CH1_POT_SDA" "CH1_POT_SDA"
- R60 2
- U10 3
-Net 52 "/Outputs/CH1_POT_SCL" "CH1_POT_SCL"
- U10 2
- R59 2
-Net 57 "/Outputs/CH0_OE" "CH0_OE"
- R11 1
- Q2 G
-Net 58 "/Outputs/3V3" "3V3"
- C16 1
- U1 2
- U17 3
- U44 5
- C47 1
- C43 1
- C45 1
- U42 5
- U40 8
- R37 1
- C39 1
- U8 3
- C8 1
- U10 8
- U36 3
- R39 1
- U38 8
- U22 8
- U25 14
- C41 1
- C11 1
- C23 1
- U23 5
- R22 1
- U15 14
- C22 1
- U21 3
- U34 3
- C37 1
- C9 1
- C21 1
- C49 1
- U18 8
- C17 1
- C6 1
- R8 1
- U12 5
- C18 1
- U19 5
- R17 1
- C24 1
- C5 1
- C4 1
- R7 1
- U11 5
- U7 3
- C7 1
- U9 8
- R57 1
- C10 1
- R62 1
- R63 1
- R64 1
- R65 1
- R66 1
- R67 1
- U26 3
- R68 1
- R69 1
- R70 1
- R71 1
- C32 1
- R72 1
- R73 1
- R74 1
- R75 1
- R76 1
- U31 5
- U30 5
- R38 1
- R58 1
- R59 1
- R60 1
- R61 1
- R27 1
- U43 5
- C46 1
- C31 1
- U35 3
- U50 14
- R40 1
- U45 5
- C48 1
- C29 1
- C30 1
- C40 1
- U39 8
- C28 1
- C38 1
+Net 7 "/Control/ADC1_CS_N" "ADC1_CS_N"
+ U31 A6
  U28 8
- R28 1
- C27 1
- C44 1
- U41 8
- C42 1
- U37 3
+Net 8 "/Control/ADC1_SCK" "ADC1_SCK"
+ U31 F7
+ U28 11
+Net 9 "/Control/ADC1_MISO" "ADC1_MISO"
+ U31 C7
+ U28 10
+Net 10 "/Control/ADC1_MOSI" "ADC1_MOSI"
+ U28 9
+ U31 E6
+Net 11 "/Control/ADC2_CS_N" "ADC2_CS_N"
  U29 8
- U27 3
-Net 59 "/Outputs/CH0_POT_SCL" "CH0_POT_SCL"
+ U31 A7
+Net 12 "/Control/ADC2_SCK" "ADC2_SCK"
+ U29 11
+ U31 D6
+Net 13 "/Control/ADC2_MISO" "ADC2_MISO"
+ U31 B8
+ U29 10
+Net 14 "/Control/ADC2_MOSI" "ADC2_MOSI"
+ U29 9
+ U31 C6
+Net 15 "/Control/I2C_SCL" "I2C_SCL"
+ U26 10
+ U27 10
+ U25 10
+ U31 B5
+ U32 2
+ U33 2
+ R13 1
+Net 16 "/Control/CH9_OVERCURRENT" "CH9_OVERCURRENT"
+ R25 2
+ U31 B14
+Net 17 "/Control/2V5" "2V5"
+ C95 1
+ C93 1
+ C91 1
+ C89 1
+ C87 1
+ C84 1
+ C81 1
+ U1 40
+ U31 K4
+ U31 G4
+ U31 N2
+ U31 J2
+ U1 34
+ U31 D2
+ U31 N15
+ U31 J15
+ C4 2
+ C8 2
+ C12 2
+ U1 16
+ C99 1
+ C98 1
+ C97 1
+ U31 D15
+ U31 G13
+ U31 K13
+ U31 R13
+Net 18 "/Control/RGMII_RXD0" "RGMII_RXD0"
+ R7 2
+ U31 G16
+Net 19 "/Control/RGMII_RXD1" "RGMII_RXD1"
+ R6 2
+ U31 G12
+Net 20 "/Control/RGMII_RXC" "RGMII_RXC"
+ U31 J11
+ R9 2
+Net 21 "/Control/RGMII_RXD2" "RGMII_RXD2"
+ R5 2
+ U31 H11
+Net 22 "/Control/RGMII_RXD3" "RGMII_RXD3"
+ U31 H13
+ R4 2
+Net 23 "/Control/RGMII_RX_CTL" "RGMII_RX_CTL"
+ U31 H14
+ R8 2
+Net 24 "/Control/RGMII_TXD3" "RGMII_TXD3"
+ U1 22
+ U31 K12
+Net 25 "/Control/RGMII_TX_CTL" "RGMII_TX_CTL"
+ U1 25
+ U31 K11
+Net 26 "/Control/RGMII_TXC" "RGMII_TXC"
+ U31 J14
+ U1 24
+Net 27 "/Control/RGMII_TXD2" "RGMII_TXD2"
+ U1 21
+ U31 K14
+Net 28 "/Control/RGMII_TXD0" "RGMII_TXD0"
+ U31 J12
+ U1 19
+Net 29 "/Control/RGMII_TXD1" "RGMII_TXD1"
+ U1 20
+ U31 J13
+Net 30 "/Control/ETH_MDC" "ETH_MDC"
+ U31 K16
+ U1 36
+Net 31 "/Control/ETH_CLK_25MHZ" "ETH_CLK_25MHZ"
+ U31 N14
+ U1 46
+Net 32 "/Control/ETH_RESET_N" "ETH_RESET_N"
+ U1 42
+ U31 N16
+Net 33 "/Control/ETH_MDIO" "ETH_MDIO"
+ R10 2
+ U31 K15
+Net 34 "/Control/ETH_INT_N" "ETH_INT_N"
+ R11 2
+ U31 M15
+Net 35 "/Control/ETH_CLK125" "ETH_CLK125"
+ U1 41
+ U31 J16
+Net 36 "/Outputs/VOUT" "VOUT"
+ R26 1
+ R14 1
+ Q21 S
+ R47 2
+ R49 2
+ Q19 S
+ R46 2
+ Q18 S
+ Q20 S
+ R48 2
+ R50 2
+ Q22 S
+ R42 2
+ Q14 S
+ Q16 S
+ R43 2
+ Q15 S
+ Q13 S
+ R41 2
+ R1 2
+ R45 2
+ C1 1
+ Q17 S
+ Q2 S
+ R44 2
+ C2 1
+ Q1 S
+Net 37 "/Control/1V2" "1V2"
+ C11 1
+ C7 1
+ C3 1
+ C16 1
+ C17 1
+ C15 1
+ C86 1
+ C83 1
+ C80 1
+ U31 H10
+ U31 J9
+ U31 G9
+ U31 K8
+ U31 H8
+ U31 J7
+ U31 K10
+ U31 G7
+ U1 18
+ U1 26
+ L3 2
+ L2 2
+ U1 14
+ U1 23
+ U1 30
+ U1 39
+Net 38 "/Control/GND" "GND"
+ Q6 S
+ R34 2
+ R35 2
+ C63 2
+ U26 5
+ U26 6
+ P6 2
+ C74 2
+ C64 2
+ Q7 S
+ R37 2
+ C58 2
+ P8 2
+ C76 2
+ C66 2
+ U29 12
+ U29 7
+ C57 2
+ U28 12
+ U28 7
+ P5 2
+ C73 2
+ C50 2
+ U24 1
+ U24 2
+ C61 2
+ Q4 S
+ C68 2
+ C78 2
+ Q5 S
+ P10 2
+ R33 2
+ P4 2
+ C72 2
+ C62 2
+ C28 2
+ U2 2
+ U2 1
+ C59 2
+ P2 2
+ U5 2
+ U5 1
+ C40 1
+ U15 2
+ C21 2
+ C31 2
+ R32 2
+ P3 2
+ C71 2
+ U30 7
+ R27 2
+ R15 2
+ Q9 S
+ C65 2
+ Q8 S
+ R36 2
+ P7 2
+ C75 2
+ C52 2
+ R31 2
+ R39 2
+ U12 2
+ C18 2
+ C70 2
+ C60 2
+ Q3 S
+ U30 12
+ U27 5
+ U31 H9
+ U27 6
+ U31 K9
+ U27 13
+ U27 15
+ U27 16
+ C48 2
+ U22 1
+ U22 2
+ C53 2
+ C56 2
+ C80 2
+ C83 2
+ D1 2
+ C1 2
+ C2 2
+ D2 1
+ Q1 G
+ U31 B7
+ U32 4
+ U32 5
+ U32 6
+ U32 7
+ U33 4
+ U33 5
+ U33 6
+ U31 A1
+ U31 T1
+ U31 R10
+ U31 B11
+ U31 H12
+ U31 D13
+ U31 N13
+ U31 P14
+ U31 G15
+ U31 H7
+ U31 K7
+ U31 G8
+ U31 J8
+ U31 M8
+ U31 E9
+ C4 1
+ C8 1
+ C12 1
+ C5 2
+ C9 2
+ C13 2
+ U1 29
+ U1 PAD
+ U1 13
+ R3 1
+ P1 2
+ C11 2
+ C7 2
+ C3 2
+ Q2 G
+ C15 2
+ C16 2
+ C17 2
+ C6 1
+ C10 1
+ C14 1
+ C96 2
+ C94 2
+ C92 2
+ C90 2
+ C100 2
+ D3 2
+ SW1 2
+ U26 14
+ U26 15
+ U26 16
+ C49 2
+ C55 2
+ U23 2
+ U11 1
+ U11 2
+ C93 2
+ C91 2
+ C89 2
+ C37 2
+ C87 2
+ C84 2
+ C81 2
+ C86 2
+ C95 2
+ C27 2
+ C88 2
+ C85 2
+ C82 2
+ C99 2
+ C98 2
+ C97 2
+ C54 2
+ U31 L15
+ U31 A16
+ U31 T16
+ C51 2
+ J1 7
+ J1 9
+ J1 11
+ U34 4
+ J1 3
+ J1 5
+ U31 G2
+ U31 L2
+ U31 P3
+ U31 D4
+ U31 J5
+ U31 R6
+ U23 1
+ U25 5
+ U25 6
+ U25 13
+ U25 14
+ U25 15
+ U25 16
+ C45 1
+ U7 1
+ U7 2
+ C33 2
+ U18 2
+ U3 1
+ U3 2
+ R40 2
+ C29 2
+ R38 2
+ P9 2
+ C42 1
+ C77 2
+ U19 2
+ C25 2
+ U6 1
+ U6 2
+ C35 2
  U9 2
- R57 2
-Net 60 "/Outputs/CH0_POT_SDA" "CH0_POT_SDA"
+ U9 1
+ C34 2
+ C24 2
+ C67 2
+ U14 2
+ C20 2
+ Q12 S
+ C69 2
+ C30 2
+ C79 2
+ P11 2
+ U4 2
+ U4 1
+ C47 1
+ C44 1
+ C19 2
+ C38 1
+ C43 1
+ Q10 S
+ C39 1
+ U13 2
+ U21 2
+ U8 1
+ U8 2
+ Q11 S
+ U10 1
+ U10 2
+ U16 2
+ C26 2
+ U17 2
+ C36 2
+ C22 2
+ C23 2
+ C41 1
+ U20 2
+ C32 2
+ C46 1
+Net 39 "/Control/3V3" "3V3"
+ U8 3
+ C94 1
+ C34 1
+ C92 1
+ U13 5
+ C58 1
+ U29 14
+ C96 1
+ U34 8
+ U19 5
+ U26 12
+ C54 1
+ C101 1
+ U28 14
+ C57 1
+ C51 1
+ C100 1
+ C85 1
+ U33 8
+ C88 1
+ U31 J10
+ U31 N10
+ C52 1
+ U31 F11
+ C90 1
+ U31 B13
+ U4 3
+ U17 5
+ U31 N7
+ U31 F8
+ U27 4
+ U31 R8
+ U31 B9
+ C27 1
+ U31 L9
+ U31 D10
+ U31 G10
+ U35 1
+ U35 4
+ J1 2
+ C24 1
+ U14 5
+ U31 B4
+ U31 R4
+ C20 1
+ U31 E5
+ U31 H6
+ U31 L6
+ U31 D7
+ C37 1
+ C23 1
+ U32 8
+ C30 1
+ U33 7
+ C82 1
+ C25 1
+ C35 1
  U9 3
- R58 2
-Net 62 "/Power Ingress/5V_RAW" "5V_RAW"
+ C36 1
+ C26 1
+ R29 1
+ U26 13
+ U10 3
+ R30 1
+ R68 2
+ U26 4
+ U7 3
+ C55 1
+ C33 1
+ U25 4
+ U25 12
+ U18 5
+ U20 5
+ U11 3
+ C59 1
+ C31 1
+ U3 3
+ U2 3
+ C56 1
+ U30 14
+ C21 1
+ U16 5
+ C28 1
+ C53 1
+ U15 5
+ R13 2
+ U21 5
+ C19 1
+ C18 1
+ R12 2
+ U12 5
+ C29 1
+ L1 2
+ U6 3
+ R28 1
+ C22 1
+ U27 14
+ U5 3
+ U27 12
+ C32 1
+Net 40 "/Control/I2C_SDA" "I2C_SDA"
+ U32 1
+ U31 A4
+ U33 1
+ U27 11
+ R12 1
+ U26 11
+ U25 11
+Net 41 "/Control/CH1_OVERCURRENT" "CH1_OVERCURRENT"
+ R17 2
+ U31 E7
+Net 42 "/Control/CH1_OE" "CH1_OE"
+ Q4 G
+ U31 E8
+ R32 1
+Net 43 "/Control/CH2_OVERCURRENT" "CH2_OVERCURRENT"
+ U31 E10
+ R18 2
+Net 44 "/Control/CH3_OVERCURRENT" "CH3_OVERCURRENT"
+ R19 2
+ U31 D8
+Net 45 "/Control/CH2_OE" "CH2_OE"
+ R33 1
+ U31 C10
+ Q5 G
+Net 46 "/Control/CH3_OE" "CH3_OE"
+ Q6 G
+ U31 C8
+ R34 1
+Net 47 "/Control/CH4_OVERCURRENT" "CH4_OVERCURRENT"
+ R20 2
+ U31 C11
+Net 48 "/Control/CH4_OE" "CH4_OE"
+ R35 1
+ U31 A11
+ Q7 G
+Net 49 "/Control/CH5_OE" "CH5_OE"
+ Q8 G
+ U31 D9
+ R36 1
+Net 50 "/Control/CH5_OVERCURRENT" "CH5_OVERCURRENT"
+ U31 F9
+ R21 2
+Net 51 "/Control/CH6_OVERCURRENT" "CH6_OVERCURRENT"
+ U31 B12
+ R22 2
+Net 52 "/Control/CH6_OE" "CH6_OE"
+ U31 A12
+ R37 1
+ Q9 G
+Net 53 "/Control/CH7_OVERCURRENT" "CH7_OVERCURRENT"
+ U31 C13
+ R23 2
+Net 54 "/Control/CH7_OE" "CH7_OE"
+ R38 1
+ Q10 G
+ U31 A13
+Net 55 "/Control/CH9_OE" "CH9_OE"
+ U31 A14
+ R40 1
+ Q12 G
+Net 56 "/Control/CH8_OE" "CH8_OE"
+ Q11 G
+ R39 1
+ U31 E11
+Net 57 "/Control/CH8_OVERCURRENT" "CH8_OVERCURRENT"
+ U31 F10
+ R24 2
+Net 58 "/Power Ingress/VIN" "VIN"
  P1 1
  F1 1
-Net 64 "/Power Ingress/5V_FUSED" "5V_FUSED"
+Net 59 "/Power Ingress/VIN_FUSED" "VIN_FUSED"
  F1 2
- Q1 D
+ Q2 D
  R2 1
-Net 65 "" ""
+ Q1 D
+Net 60 "" ""
  R2 2
  D2 2
-Net 66 "" ""
- D1 1
+Net 61 "" ""
  R1 1
-Net 67 "/Outputs/VOUT_6_FILTERED" "VOUT_6_FILTERED"
- R53 4
- L7 2
- C54 1
- C50 1
-Net 69 "/Outputs/CH5_OE_RAW" "CH5_OE_RAW"
- Q13 G
- R34 1
- Q11 D
-Net 70 "/Outputs/VOUT_5_RAW" "VOUT_5_RAW"
- Q13 D
- F7 1
-Net 71 "/Outputs/VOUT_5_FUSED" "VOUT_5_FUSED"
- F7 2
- L6 1
-Net 72 "/Outputs/VOUT_6_RAW" "VOUT_6_RAW"
- F8 1
- Q18 D
-Net 73 "/Outputs/VOUT_6_SENSE_HI" "VOUT_6_SENSE_HI"
- U34 4
- R53 3
-Net 74 "/Outputs/VOUT_6_SENSE_LO" "VOUT_6_SENSE_LO"
- R53 1
- U34 5
-Net 75 "/Outputs/VOUT_6_FUSED" "VOUT_6_FUSED"
- L7 1
- F8 2
-Net 76 "/Outputs/VOUT_0" "VOUT_0"
- R15 2
- P8 1
- R53 2
- P2 1
-Net 77 "" ""
- U31 1
- R30 1
-Net 78 "/Outputs/VOUT_5_SENSE_COMPARE" "VOUT_5_SENSE_COMPARE"
- U31 4
- U29 5
-Net 79 "/Outputs/CH6_OE_RAW" "CH6_OE_RAW"
- Q18 G
- R49 1
- Q14 D
-Net 80 "/Outputs/VOUT_7_RAW" "VOUT_7_RAW"
- Q19 D
- F9 1
-Net 81 "/Outputs/VOUT_7_SENSE_HI" "VOUT_7_SENSE_HI"
- U35 4
- R54 3
-Net 82 "/Outputs/VOUT_7_SENSE_LO" "VOUT_7_SENSE_LO"
- U35 5
- R54 1
-Net 83 "/Outputs/VOUT_7_FUSED" "VOUT_7_FUSED"
- L8 1
- F9 2
-Net 84 "/Outputs/VOUT_7" "VOUT_7"
- P9 1
- R54 2
-Net 85 "" ""
- R41 1
- U42 1
-Net 86 "/Outputs/VOUT_6_SENSE_COMPARE" "VOUT_6_SENSE_COMPARE"
- U38 5
- U42 4
-Net 87 "/Outputs/2V5_CH6" "2V5_CH6"
- U38 7
- U46 3
- R37 2
-Net 88 "/Outputs/2V5_CH7" "2V5_CH7"
- U47 3
- R38 2
- U50 13
- U39 7
-Net 91 "/Outputs/VDD_BOT_DIV" "VDD_BOT_DIV"
- U50 4
- R6 1
- R5 2
-Net 92 "/Outputs/VOUT_9_SENSE_AMP" "VOUT_9_SENSE_AMP"
- U37 6
- U45 3
- U50 3
-Net 93 "/Outputs/VOUT_8_SENSE_AMP" "VOUT_8_SENSE_AMP"
- U50 2
- U44 3
- U36 6
-Net 94 "/Outputs/VOUT_7_SENSE_AMP" "VOUT_7_SENSE_AMP"
- U35 6
- U50 1
- U43 3
-Net 95 "/Outputs/VOUT_6_SENSE_AMP" "VOUT_6_SENSE_AMP"
- U25 4
- U34 6
- U42 3
-Net 96 "/Outputs/VOUT_4_SENSE_HI" "VOUT_4_SENSE_HI"
- R35 3
- U26 4
-Net 97 "/Outputs/VOUT_4_SENSE_LO" "VOUT_4_SENSE_LO"
- R35 1
- U26 5
-Net 98 "/Outputs/CH4_OE_RAW" "CH4_OE_RAW"
- Q12 G
- Q10 D
- R33 1
-Net 99 "/Outputs/VOUT_4_RAW" "VOUT_4_RAW"
- Q12 D
- F6 1
-Net 100 "/Outputs/VOUT_4_FUSED" "VOUT_4_FUSED"
- F6 2
- L5 1
-Net 102 "/Outputs/VOUT_4_SENSE_AMP" "VOUT_4_SENSE_AMP"
- U25 2
- U26 6
- U30 3
-Net 103 "/Outputs/VOUT_4_FILTERED" "VOUT_4_FILTERED"
- R35 4
- C33 1
- L5 2
- C35 1
-Net 104 "/Outputs/VOUT_4_SENSE_COMPARE" "VOUT_4_SENSE_COMPARE"
- U30 4
- U28 5
-Net 105 "" ""
- R29 1
- U30 1
-Net 106 "/Outputs/2V5_CH4" "2V5_CH4"
- U28 7
- R27 2
- U32 3
-Net 107 "/Outputs/2V5_CH5" "2V5_CH5"
- U29 7
- U33 3
- R28 2
-Net 109 "/Outputs/VOUT_5_SENSE_HI" "VOUT_5_SENSE_HI"
- R36 3
- U27 4
-Net 110 "/Outputs/VOUT_5_SENSE_LO" "VOUT_5_SENSE_LO"
- U27 5
- R36 1
-Net 111 "/Outputs/VOUT_5" "VOUT_5"
- P7 1
- R36 2
-Net 112 "/Outputs/VOUT_5_SENSE_AMP" "VOUT_5_SENSE_AMP"
- U27 6
+ D1 1
+Net 62 "/Outputs/VREF_0" "VREF_0"
+ U30 13
  U25 3
- U31 3
-Net 113 "/Outputs/VOUT_5_FILTERED" "VOUT_5_FILTERED"
- C34 1
- R36 4
- C36 1
- L6 2
-Net 114 "/Outputs/VOUT_9_FILTERED" "VOUT_9_FILTERED"
- L10 2
- C53 1
- C57 1
- R56 4
-Net 116 "/Outputs/CH8_OE_RAW" "CH8_OE_RAW"
- Q16 D
- R51 1
- Q20 G
-Net 117 "/Outputs/VOUT_8_RAW" "VOUT_8_RAW"
- Q20 D
- F10 1
-Net 118 "/Outputs/VOUT_8_FUSED" "VOUT_8_FUSED"
- L9 1
- F10 2
-Net 119 "/Outputs/VOUT_9_RAW" "VOUT_9_RAW"
- F11 1
- Q21 D
-Net 120 "/Outputs/VOUT_9_SENSE_HI" "VOUT_9_SENSE_HI"
- U37 4
- R56 3
-Net 121 "/Outputs/VOUT_9_SENSE_LO" "VOUT_9_SENSE_LO"
- U37 5
- R56 1
-Net 122 "/Outputs/VOUT_9_FUSED" "VOUT_9_FUSED"
- L10 1
- F11 2
-Net 123 "/Outputs/VOUT_9" "VOUT_9"
- P11 1
- R56 2
-Net 124 "" ""
- U44 1
- R43 1
-Net 125 "/Outputs/VOUT_8_SENSE_COMPARE" "VOUT_8_SENSE_COMPARE"
- U40 5
- U44 4
-Net 126 "" ""
- R44 1
- U45 1
-Net 127 "/Outputs/VOUT_9_SENSE_COMPARE" "VOUT_9_SENSE_COMPARE"
- U41 5
- U45 4
-Net 128 "/Outputs/2V5_CH9" "2V5_CH9"
- U41 7
- U49 3
- R40 2
-Net 129 "/Outputs/CH9_OE_RAW" "CH9_OE_RAW"
- Q21 G
- R52 1
- Q17 D
-Net 130 "/Outputs/VOUT_7_SENSE_COMPARE" "VOUT_7_SENSE_COMPARE"
- U43 4
- U39 5
-Net 131 "" ""
- U43 1
- R42 1
-Net 132 "/Outputs/CH7_OE_RAW" "CH7_OE_RAW"
- R50 1
- Q15 D
- Q19 G
-Net 133 "/Outputs/VOUT_7_FILTERED" "VOUT_7_FILTERED"
- R54 4
- C51 1
- L8 2
- C55 1
-Net 135 "/Outputs/2V5_CH8" "2V5_CH8"
- U40 7
- U48 3
- R39 2
-Net 137 "/Outputs/VOUT_8_SENSE_LO" "VOUT_8_SENSE_LO"
- U36 5
- R55 1
-Net 138 "/Outputs/VOUT_8_SENSE_HI" "VOUT_8_SENSE_HI"
- R55 3
- U36 4
-Net 139 "/Outputs/VOUT_8" "VOUT_8"
- R55 2
- P10 1
-Net 140 "/Outputs/VOUT_8_FILTERED" "VOUT_8_FILTERED"
- R55 4
- C52 1
- C56 1
- L9 2
-Net 141 "/Outputs/VOUT_1_FILTERED" "VOUT_1_FILTERED"
- L2 2
- C13 1
- R16 4
- C15 1
-Net 143 "" ""
- R9 1
- U11 1
-Net 144 "/Outputs/VOUT_1_RAW" "VOUT_1_RAW"
- Q5 D
- F3 1
-Net 145 "/Outputs/VOUT_1_SENSE_HI" "VOUT_1_SENSE_HI"
- R16 3
- U8 4
-Net 146 "/Outputs/VOUT_1_SENSE_LO" "VOUT_1_SENSE_LO"
- R16 1
- U8 5
-Net 147 "/Outputs/VOUT_1_FUSED" "VOUT_1_FUSED"
- F3 2
- L2 1
-Net 148 "/Outputs/VOUT_1" "VOUT_1"
- R16 2
- P3 1
-Net 149 "/Outputs/VDD_TOP_DIV" "VDD_TOP_DIV"
- U15 1
- R4 1
- R3 2
-Net 150 "/Outputs/CH1_OE_RAW" "CH1_OE_RAW"
- Q5 G
- Q3 D
- R14 1
-Net 151 "" ""
- R10 1
- U12 1
-Net 152 "/Outputs/VOUT_1_SENSE_COMPARE" "VOUT_1_SENSE_COMPARE"
- U12 4
- U10 5
-Net 153 "/Outputs/VOUT_1_SENSE_AMP" "VOUT_1_SENSE_AMP"
- U8 6
- U12 3
- U15 3
-Net 154 "/Outputs/2V5_CH1" "2V5_CH1"
- U10 7
- U14 3
- R8 2
-Net 156 "/Outputs/VOUT_0_SENSE_LO" "VOUT_0_SENSE_LO"
- U7 5
- R15 1
-Net 157 "/Outputs/VOUT_0_SENSE_HI" "VOUT_0_SENSE_HI"
- R15 3
- U7 4
-Net 158 "/Outputs/VOUT_0_SENSE_AMP" "VOUT_0_SENSE_AMP"
- U15 2
- U11 3
- U7 6
-Net 159 "/Outputs/2V5_CH0" "2V5_CH0"
- U13 3
- R7 2
- U9 7
- U15 13
-Net 160 "/Outputs/VOUT_0_SENSE_COMPARE" "VOUT_0_SENSE_COMPARE"
- U9 5
- U11 4
-Net 161 "/Outputs/VOUT_0_RAW" "VOUT_0_RAW"
- F2 1
- Q4 D
-Net 162 "/Outputs/VOUT_0_FILTERED" "VOUT_0_FILTERED"
- R15 4
- C12 1
- L1 2
- C14 1
-Net 163 "/Outputs/VOUT_0_FUSED" "VOUT_0_FUSED"
- F2 2
- L1 1
-Net 164 "/Outputs/CH0_OE_RAW" "CH0_OE_RAW"
- Q2 D
- R13 1
- Q4 G
-Net 167 "/Outputs/VOUT_2_SENSE_AMP" "VOUT_2_SENSE_AMP"
- U17 6
- U15 4
- U19 3
-Net 168 "/Outputs/VOUT_3_SENSE_COMPARE" "VOUT_3_SENSE_COMPARE"
- U22 5
- U23 4
-Net 169 "" ""
- R23 1
- U23 1
-Net 170 "/Outputs/2V5_CH3" "2V5_CH3"
+ U22 3
+ C48 1
  U24 3
- R22 2
- U25 13
- U22 7
-Net 171 "/Outputs/VOUT_3_RAW" "VOUT_3_RAW"
- F5 1
- Q9 D
-Net 172 "/Outputs/VOUT_3_FUSED" "VOUT_3_FUSED"
- L4 1
- F5 2
-Net 173 "/Outputs/VOUT_3_SENSE_LO" "VOUT_3_SENSE_LO"
- U21 5
- R26 1
-Net 174 "/Outputs/VOUT_3_SENSE_HI" "VOUT_3_SENSE_HI"
- R26 3
+ C50 1
+ R30 2
+ R28 2
+ U27 3
+Net 66 "/Outputs/VOUT_9_REF" "VOUT_9_REF"
+ C47 2
  U21 4
-Net 175 "/Outputs/VOUT_3_FILTERED" "VOUT_3_FILTERED"
- L4 2
- R26 4
- C26 1
- C25 1
-Net 177 "/Outputs/VOUT_3_SENSE_AMP" "VOUT_3_SENSE_AMP"
- U23 3
- U21 6
+ U27 2
+Net 67 "/Outputs/VOUT_8_REF" "VOUT_8_REF"
+ U20 4
+ C46 2
+ U27 1
+Net 69 "/Outputs/VOUT_3_REF" "VOUT_3_REF"
+ C41 2
+ U15 4
+ U25 8
+Net 70 "/Outputs/VOUT_2_REF" "VOUT_2_REF"
+ C40 2
+ U25 7
+ U14 4
+Net 71 "/Outputs/VOUT_1_REF" "VOUT_1_REF"
+ C39 2
+ U25 2
+ U13 4
+Net 72 "/Outputs/VOUT_0_REF" "VOUT_0_REF"
  U25 1
-Net 180 "/Outputs/VOUT_4" "VOUT_4"
- R35 2
- P6 1
-Net 181 "/Outputs/CH3_OE_RAW" "CH3_OE_RAW"
- Q9 G
- R25 1
- Q8 D
-Net 183 "/Outputs/VOUT_2_SENSE_COMPARE" "VOUT_2_SENSE_COMPARE"
- U18 5
+ U12 4
+ C38 2
+Net 73 "/Outputs/VREF_4" "VREF_4"
+ U23 3
+ U26 3
+ U28 13
+ C49 1
+ R29 2
+Net 75 "/Outputs/VOUT_7_REF" "VOUT_7_REF"
  U19 4
-Net 184 "" ""
- R18 1
- U19 1
-Net 185 "/Outputs/2V5_CH2" "2V5_CH2"
- U18 7
- U20 3
- R17 2
-Net 186 "/Outputs/VOUT_2_RAW" "VOUT_2_RAW"
- Q7 D
- F4 1
-Net 187 "/Outputs/VOUT_2_SENSE_LO" "VOUT_2_SENSE_LO"
- U17 5
- R21 1
-Net 188 "/Outputs/VOUT_2_SENSE_HI" "VOUT_2_SENSE_HI"
+ C45 2
+ U26 8
+Net 76 "/Outputs/VOUT_9_SENSE_AMP" "VOUT_9_SENSE_AMP"
+ U11 6
+ U29 3
+ U21 3
+Net 77 "/Outputs/VOUT_9_SENSE_LO" "VOUT_9_SENSE_LO"
+ U11 5
+ R60 1
+Net 78 "/Outputs/VOUT_9_SENSE_HI" "VOUT_9_SENSE_HI"
+ R60 3
+ U11 4
+Net 79 "/Outputs/VOUT_6_REF" "VOUT_6_REF"
+ C44 2
+ U18 4
+ U26 7
+Net 80 "/Outputs/VOUT_5_REF" "VOUT_5_REF"
+ C43 2
+ U26 2
  U17 4
- R21 3
-Net 189 "/Outputs/VOUT_2" "VOUT_2"
- P4 1
- R21 2
-Net 190 "/Outputs/VOUT_2_FILTERED" "VOUT_2_FILTERED"
- R21 4
- C20 1
- C19 1
- L3 2
-Net 191 "/Outputs/VOUT_2_FUSED" "VOUT_2_FUSED"
- F4 2
- L3 1
-Net 192 "/Outputs/VOUT_3" "VOUT_3"
- P5 1
- R26 2
-Net 193 "/Outputs/CH2_OE_RAW" "CH2_OE_RAW"
+Net 81 "/Outputs/VOUT_4_REF" "VOUT_4_REF"
+ U16 4
+ C42 2
+ U26 1
+Net 82 "/Outputs/VOUT_8_RAW" "VOUT_8_RAW"
+ Q21 D
+ F10 1
+Net 83 "/Outputs/VOUT_8_SENSE_HI" "VOUT_8_SENSE_HI"
+ R59 3
+ U10 4
+Net 84 "/Outputs/VOUT_8_SENSE_LO" "VOUT_8_SENSE_LO"
+ U10 5
+ R59 1
+Net 85 "/Outputs/VOUT_8" "VOUT_8"
+ R59 2
+ P10 1
+Net 86 "/Outputs/VOUT_8_FILTERED" "VOUT_8_FILTERED"
+ C78 1
+ R59 4
+ L12 2
+ C68 1
+Net 87 "/Outputs/VOUT_8_FUSED" "VOUT_8_FUSED"
+ L12 1
+ F10 2
+Net 88 "/Outputs/VOUT_7_FILTERED" "VOUT_7_FILTERED"
+ L11 2
+ C77 1
+ R58 4
+ C67 1
+Net 89 "/Outputs/VOUT_7_FUSED" "VOUT_7_FUSED"
+ F9 2
+ L11 1
+Net 90 "/Outputs/VOUT_7_RAW" "VOUT_7_RAW"
+ Q20 D
+ F9 1
+Net 91 "/Outputs/VOUT_7_SENSE_HI" "VOUT_7_SENSE_HI"
+ U9 4
+ R58 3
+Net 92 "/Outputs/VOUT_7_SENSE_LO" "VOUT_7_SENSE_LO"
+ R58 1
+ U9 5
+Net 93 "/Outputs/CH7_OE_RAW" "CH7_OE_RAW"
+ R48 1
+ Q10 D
+ Q20 G
+Net 94 "/Outputs/CH9_OE_RAW" "CH9_OE_RAW"
+ R50 1
+ Q22 G
+ Q12 D
+Net 95 "/Outputs/VOUT_9_RAW" "VOUT_9_RAW"
+ F11 1
+ Q22 D
+Net 96 "/Outputs/VOUT_9_FUSED" "VOUT_9_FUSED"
+ F11 2
+ L13 1
+Net 97 "" ""
+ U12 1
+ R16 1
+Net 98 "/Outputs/VOUT_9" "VOUT_9"
+ R60 2
+ P11 1
+Net 99 "/Outputs/CH8_OE_RAW" "CH8_OE_RAW"
+ Q21 G
+ R49 1
+ Q11 D
+Net 100 "/Outputs/VOUT_9_FILTERED" "VOUT_9_FILTERED"
+ C79 1
+ C69 1
+ L13 2
+ R60 4
+Net 101 "/Outputs/VOUT_6_SENSE_LO" "VOUT_6_SENSE_LO"
+ R57 1
+ U8 5
+Net 102 "/Outputs/VOUT_6_SENSE_HI" "VOUT_6_SENSE_HI"
+ U8 4
+ R57 3
+Net 103 "" ""
+ R21 1
+ U17 1
+Net 104 "" ""
+ R22 1
+ U18 1
+Net 105 "/Outputs/VOUT_5_SENSE_LO" "VOUT_5_SENSE_LO"
+ R56 1
+ U7 5
+Net 106 "/Outputs/VOUT_5_SENSE_HI" "VOUT_5_SENSE_HI"
+ U7 4
+ R56 3
+Net 107 "" ""
  R20 1
- Q6 D
- Q7 G
-Net 270 "" ""
- U3 8
- U4 8
-Net 274 "" ""
- U4 4
+ U16 1
+Net 108 "/Outputs/VOUT_5_SENSE_AMP" "VOUT_5_SENSE_AMP"
+ U17 3
+ U28 3
+ U7 6
+Net 109 "" ""
+ R24 1
+ U20 1
+Net 110 "/Outputs/VOUT_8_SENSE_AMP" "VOUT_8_SENSE_AMP"
+ U29 2
+ U10 6
+ U20 3
+Net 111 "" ""
+ U19 1
+ R23 1
+Net 112 "/Outputs/VOUT_7_SENSE_AMP" "VOUT_7_SENSE_AMP"
+ U19 3
+ U29 1
+ U9 6
+Net 113 "" ""
+ U13 1
+ R17 1
+Net 114 "/Outputs/VOUT_1_SENSE_HI" "VOUT_1_SENSE_HI"
+ R52 3
  U3 4
-Net 276 "" ""
- U4 2
- U3 2
+Net 115 "/Outputs/VOUT_1_SENSE_LO" "VOUT_1_SENSE_LO"
+ R52 1
+ U3 5
+Net 116 "" ""
+ U14 1
+ R18 1
+Net 117 "/Outputs/VOUT_2_SENSE_AMP" "VOUT_2_SENSE_AMP"
+ U30 4
+ U14 3
+ U4 6
+Net 118 "/Outputs/VOUT_2_SENSE_LO" "VOUT_2_SENSE_LO"
+ U4 5
+ R53 1
+Net 119 "/Outputs/VOUT_2_SENSE_HI" "VOUT_2_SENSE_HI"
+ R53 3
+ U4 4
+Net 120 "" ""
+ U21 1
+ R25 1
+Net 121 "/Outputs/VOUT_1_SENSE_AMP" "VOUT_1_SENSE_AMP"
+ U30 3
+ U3 6
+ U13 3
+Net 122 "/Outputs/VOUT_4_SENSE_LO" "VOUT_4_SENSE_LO"
+ R55 1
+ U6 5
+Net 123 "/Outputs/VOUT_4_SENSE_HI" "VOUT_4_SENSE_HI"
+ U6 4
+ R55 3
+Net 124 "" ""
+ R19 1
+ U15 1
+Net 125 "/Outputs/VOUT_4_SENSE_AMP" "VOUT_4_SENSE_AMP"
+ U16 3
+ U28 2
+ U6 6
+Net 126 "/Outputs/VOUT_3_SENSE_HI" "VOUT_3_SENSE_HI"
+ R54 3
+ U5 4
+Net 127 "/Outputs/VOUT_3_SENSE_LO" "VOUT_3_SENSE_LO"
+ U5 5
+ R54 1
+Net 128 "/Outputs/VOUT_3_SENSE_AMP" "VOUT_3_SENSE_AMP"
+ U5 6
+ U15 3
+ U28 1
+Net 129 "/Outputs/VOUT_2_FUSED" "VOUT_2_FUSED"
+ L6 1
+ F4 2
+Net 130 "/Outputs/VOUT_2" "VOUT_2"
+ P4 1
+ R53 2
+Net 131 "/Outputs/CH1_OE_RAW" "CH1_OE_RAW"
+ Q14 G
+ R42 1
+ Q4 D
+Net 132 "/Outputs/VOUT_1_RAW" "VOUT_1_RAW"
+ Q14 D
+ F3 1
+Net 133 "/Outputs/VOUT_1_FUSED" "VOUT_1_FUSED"
+ F3 2
+ L5 1
+Net 134 "/Outputs/VOUT_1" "VOUT_1"
+ P3 1
+ R52 2
+Net 135 "/Outputs/VDD_TOP_DIV" "VDD_TOP_DIV"
+ U30 1
+ R15 1
+ R14 2
+Net 136 "/Outputs/VOUT_1_FILTERED" "VOUT_1_FILTERED"
+ L5 2
+ C61 1
+ C71 1
+ R52 4
+Net 137 "/Outputs/CH2_OE_RAW" "CH2_OE_RAW"
+ R43 1
+ Q5 D
+ Q15 G
+Net 138 "/Outputs/VOUT_2_RAW" "VOUT_2_RAW"
+ Q15 D
+ F4 1
+Net 139 "/Outputs/VOUT_3_RAW" "VOUT_3_RAW"
+ Q16 D
+ F5 1
+Net 140 "/Outputs/VOUT_2_FILTERED" "VOUT_2_FILTERED"
+ C72 1
+ L6 2
+ C62 1
+ R53 4
+Net 141 "/Outputs/VOUT_0_SENSE_HI" "VOUT_0_SENSE_HI"
+ U2 4
+ R51 3
+Net 142 "/Outputs/VOUT_0_SENSE_AMP" "VOUT_0_SENSE_AMP"
+ U12 3
+ U30 2
+ U2 6
+Net 143 "/Outputs/VOUT_0_SENSE_LO" "VOUT_0_SENSE_LO"
+ U2 5
+ R51 1
+Net 144 "/Outputs/VOUT_0_RAW" "VOUT_0_RAW"
+ Q13 D
+ F2 1
+Net 145 "/Outputs/VOUT_0" "VOUT_0"
+ P8 1
+ R57 2
+ R51 2
+ P2 1
+Net 146 "/Outputs/VOUT_0_FILTERED" "VOUT_0_FILTERED"
+ R51 4
+ C70 1
+ C60 1
+ L4 2
+Net 147 "/Outputs/VOUT_0_FUSED" "VOUT_0_FUSED"
+ F2 2
+ L4 1
+Net 148 "/Outputs/CH0_OE_RAW" "CH0_OE_RAW"
+ Q13 G
+ R41 1
+ Q3 D
+Net 151 "/Outputs/CH5_OE_RAW" "CH5_OE_RAW"
+ Q18 G
+ Q8 D
+ R46 1
+Net 152 "/Outputs/VOUT_5_RAW" "VOUT_5_RAW"
+ Q18 D
+ F7 1
+Net 153 "/Outputs/VOUT_5_FUSED" "VOUT_5_FUSED"
+ L9 1
+ F7 2
+Net 154 "/Outputs/VOUT_6_FUSED" "VOUT_6_FUSED"
+ L10 1
+ F8 2
+Net 155 "/Outputs/VOUT_6_RAW" "VOUT_6_RAW"
+ F8 1
+ Q19 D
+Net 156 "/Outputs/VOUT_5_FILTERED" "VOUT_5_FILTERED"
+ R56 4
+ L9 2
+ C75 1
+ C65 1
+Net 157 "/Outputs/VOUT_7" "VOUT_7"
+ R58 2
+ P9 1
+Net 158 "/Outputs/CH6_OE_RAW" "CH6_OE_RAW"
+ Q19 G
+ R47 1
+ Q9 D
+Net 159 "/Outputs/VOUT_6_FILTERED" "VOUT_6_FILTERED"
+ L10 2
+ C76 1
+ C66 1
+ R57 4
+Net 163 "/Outputs/VDD_BOT_DIV" "VDD_BOT_DIV"
+ R26 2
+ U29 4
+ R27 1
+Net 166 "/Outputs/VOUT_6_SENSE_AMP" "VOUT_6_SENSE_AMP"
+ U8 6
+ U18 3
+ U28 4
+Net 167 "/Outputs/VOUT_3" "VOUT_3"
+ R54 2
+ P5 1
+Net 168 "/Outputs/VOUT_3_FILTERED" "VOUT_3_FILTERED"
+ C73 1
+ R54 4
+ C63 1
+ L7 2
+Net 169 "/Outputs/VOUT_3_FUSED" "VOUT_3_FUSED"
+ L7 1
+ F5 2
+Net 170 "/Outputs/CH3_OE_RAW" "CH3_OE_RAW"
+ Q6 D
+ Q16 G
+ R44 1
+Net 171 "/Outputs/VOUT_4_RAW" "VOUT_4_RAW"
+ F6 1
+ Q17 D
+Net 172 "/Outputs/VOUT_4_FUSED" "VOUT_4_FUSED"
+ F6 2
+ L8 1
+Net 173 "/Outputs/VOUT_5" "VOUT_5"
+ P7 1
+ R56 2
+Net 174 "/Outputs/CH4_OE_RAW" "CH4_OE_RAW"
+ Q17 G
+ Q7 D
+ R45 1
+Net 175 "/Outputs/VOUT_4" "VOUT_4"
+ R55 2
+ P6 1
+Net 176 "/Outputs/VOUT_4_FILTERED" "VOUT_4_FILTERED"
+ C64 1
+ R55 4
+ L8 2
+ C74 1
+Net 177 "/Control/JTAG_TDI" "JTAG_TDI"
+ J1 10
+ U31 C12
+Net 178 "/Control/JTAG_TDO" "JTAG_TDO"
+ J1 8
+ U31 E14
+Net 179 "/Control/JTAG_TCK" "JTAG_TCK"
+ J1 6
+ U31 C14
+Net 180 "/Control/JTAG_TMS" "JTAG_TMS"
+ U31 A15
+ J1 4
+Net 248 "" ""
+ U31 R11
+ R61 2
+Net 249 "/Control/FLASH_SCK" "FLASH_SCK"
+ R61 1
+ U34 6
+Net 273 "/Control/CLK_25MHZ" "CLK_25MHZ"
+ U31 A9
+ R67 2
+Net 274 "" ""
+ R67 1
+ U35 3
+Net 275 "/Control/FLASH_D3" "FLASH_D3"
+ R65 1
+ U34 7
+Net 276 "/Control/FLASH_D2" "FLASH_D2"
+ R64 1
+ U34 3
 Net 277 "" ""
- U4 1
- U3 1
+ C101 2
+ U35 2
+Net 278 "/Control/TEMP_ALERT_0" "TEMP_ALERT_0"
+ U31 D11
+ U32 3
+Net 279 "/Control/TEMP_ALERT_1" "TEMP_ALERT_1"
+ U33 3
+ U31 D12
+Net 288 "" ""
+ R69 2
+ D3 1
+Net 289 "/Control/FPGA_DONE" "FPGA_DONE"
+ U31 P13
+ R69 1
+Net 290 "/Control/PROG_B_N" "PROG_B_N"
+ U31 T2
+ SW1 1
+ R68 1
+Net 316 "" ""
+ R64 2
+ U31 N12
+Net 317 "/Control/FLASH_D1" "FLASH_D1"
+ R62 1
+ U34 2
+Net 318 "" ""
+ R62 2
+ U31 P10
+Net 319 "" ""
+ R63 2
+ U31 T10
+Net 320 "/Control/FLASH_D0" "FLASH_D0"
+ R63 1
+ U34 5
+Net 321 "/Control/FLASH_CS_N" "FLASH_CS_N"
+ R66 1
+ U34 1
+Net 322 "" ""
+ R66 2
+ U31 T3
+Net 323 "" ""
+ R65 2
+ U31 P12
+Net 334 "/Ethernet/A1V2_ETH" "A1V2_ETH"
+ C6 2
+ C10 2
+ U1 9
+ L2 1
+ U1 4
+Net 335 "/Ethernet/PLL1V2_ETH" "PLL1V2_ETH"
+ U1 44
+ C14 2
+ L3 1
+Net 337 "" ""
+ U1 27
+ R4 1
+Net 346 "/Ethernet/A3V3_ETH" "A3V3_ETH"
+ C5 1
+ C9 1
+ C13 1
+ U1 12
+ U1 1
+ U1 47
+ L1 1
+Net 347 "" ""
+ R11 1
+ U1 38
+Net 348 "/Ethernet/RBIAS_ETH" "RBIAS_ETH"
+ R3 2
+ U1 48
+Net 349 "" ""
+ U1 28
+ R5 1
+Net 350 "" ""
+ U1 31
+ R6 1
+Net 351 "" ""
+ R7 1
+ U1 32
+Net 352 "" ""
+ R8 1
+ U1 33
+Net 353 "" ""
+ U1 35
+ R9 1
+Net 354 "" ""
+ U1 37
+ R10 1
 }
 #End

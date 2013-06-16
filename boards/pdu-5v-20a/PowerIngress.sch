@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:50:29 AM EDT
+EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:32:49 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -222,4 +222,6 @@ Text Label 7350 6050 0    60   ~ 0
 2V5
 Wire Wire Line
 	7350 6050 7600 6050
+Text Notes 2650 6900 0    60   ~ 0
+TODO: FPGA bypass caps
 $EndSCHEMATC
