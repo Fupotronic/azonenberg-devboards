@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:32:49 PM EDT
+EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:33:41 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1241,19 +1241,19 @@ PROG_B_N
 Text Label 7250 9150 0    60   ~ 0
 3V3
 $Comp
-L R R?
+L R R68
 U 1 1 51C367A9
 P 7000 9150
-F 0 "R?" V 7080 9150 50  0000 C CNN
+F 0 "R68" V 7080 9150 50  0000 C CNN
 F 1 "10K" V 7000 9150 50  0000 C CNN
 	1    7000 9150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L SW_PUSH SW1
 U 1 1 51C367C9
 P 7050 9400
-F 0 "SW?" H 7200 9510 50  0000 C CNN
+F 0 "SW1" H 7200 9510 50  0000 C CNN
 F 1 "SW_PUSH" H 7050 9320 50  0000 C CNN
 	1    7050 9400
 	1    0    0    -1  
@@ -1267,19 +1267,19 @@ Wire Wire Line
 Text Label 6750 9750 2    60   ~ 0
 FPGA_DONE
 $Comp
-L LED D?
+L LED D3
 U 1 1 51C36CB3
 P 7450 9750
-F 0 "D?" H 7450 9850 50  0000 C CNN
+F 0 "D3" H 7450 9850 50  0000 C CNN
 F 1 "LED" H 7450 9650 50  0000 C CNN
 	1    7450 9750
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L R R69
 U 1 1 51C36CC0
 P 7000 9750
-F 0 "R?" V 7080 9750 50  0000 C CNN
+F 0 "R69" V 7080 9750 50  0000 C CNN
 F 1 "270" V 7000 9750 50  0000 C CNN
 	1    7000 9750
 	0    -1   -1   0   
