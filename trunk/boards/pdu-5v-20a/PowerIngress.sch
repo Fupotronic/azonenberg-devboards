@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 18 Jun 2013 02:17:19 AM EDT
+EESchema Schematic File Version 2  date Tue 18 Jun 2013 02:27:52 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -201,7 +201,7 @@ L LDO1117-XX U36
 U 1 1 51BE3AE3
 P 8600 4350
 F 0 "U36" H 8650 4350 60  0000 C CNN
-F 1 "LDO1117-XX" H 8650 4250 60  0000 C CNN
+F 1 "LDO1117-25" H 8650 4250 60  0000 C CNN
 	1    8600 4350
 	1    0    0    -1  
 $EndComp
