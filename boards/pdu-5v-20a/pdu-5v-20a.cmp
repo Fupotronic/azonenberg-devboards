@@ -1,17 +1,17 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 18 Jun 2013 04:57:04 AM EDT
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 18 Jun 2013 12:29:11 PM EDT
 
 BeginCmp
 TimeStamp = /515BE6C3/515BE997;
 Reference = C1;
 ValeurCmp = 4700_uF;
-IdModule  = ;
+IdModule  = CAP_ELECTROLYTIC_7.5MMPITCH;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BE6C3/515BE9AE;
 Reference = C2;
 ValeurCmp = 4700_uF;
-IdModule  = ;
+IdModule  = CAP_ELECTROLYTIC_7.5MMPITCH;
 EndCmp
 
 BeginCmp
@@ -1033,14 +1033,14 @@ BeginCmp
 TimeStamp = /516B9F26/51BFF3E5;
 Reference = J2;
 ValeurCmp = BEL_FUSE_0826-1G1T-23-F;
-IdModule  = ;
+IdModule  = BEL_FUSE_0826-1G1T-23-F;
 EndCmp
 
 BeginCmp
 TimeStamp = /515D219D/51BF51D5;
 Reference = K1;
 ValeurCmp = CONN_3;
-IdModule  = ;
+IdModule  = JUMPER_3PIN;
 EndCmp
 
 BeginCmp
@@ -1138,175 +1138,175 @@ BeginCmp
 TimeStamp = /515BE6C3/515BE74E;
 Reference = P1;
 ValeurCmp = CONN_2;
-IdModule  = ;
+IdModule  = TE_282858-2;
 EndCmp
 
 BeginCmp
 TimeStamp = /515D219D/51BF0A21;
 Reference = P2;
 ValeurCmp = CONN_12;
-IdModule  = ;
+IdModule  = HEADER_2.54_2x6;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/51BE44FA;
 Reference = P12;
 ValeurCmp = CONN_20;
-IdModule  = ;
+IdModule  = MOLEX_0393570020;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BE6C3/515BE7A5;
 Reference = Q1;
 ValeurCmp = AON6411;
-IdModule  = ;
+IdModule  = DFN5x6_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BE6C3/51BA06F9;
 Reference = Q2;
 ValeurCmp = AON6411;
-IdModule  = ;
+IdModule  = DFN5x6_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/515BF03F;
 Reference = Q3;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516BC2D6;
 Reference = Q4;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516BE2E7;
 Reference = Q5;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516BE8ED;
 Reference = Q6;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C1D7A;
 Reference = Q7;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C2117;
 Reference = Q8;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C24F0;
 Reference = Q9;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C2607;
 Reference = Q10;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C26FA;
 Reference = Q11;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C27ED;
 Reference = Q12;
 ValeurCmp = SI2304DDS-T1-GE3;
-IdModule  = ;
+IdModule  = SOT23GDS;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/515BEF7B;
 Reference = Q13;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516BC2C8;
 Reference = Q14;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516BE2D9;
 Reference = Q15;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516BE8DF;
 Reference = Q16;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C1D6C;
 Reference = Q17;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C2109;
 Reference = Q18;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C24E2;
 Reference = Q19;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C25F9;
 Reference = Q20;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C26EC;
 Reference = Q21;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
 TimeStamp = /515BECF6/516C27DF;
 Reference = Q22;
 ValeurCmp = SI4413ADY-T1-E3;
-IdModule  = ;
+IdModule  = SO8E_MOSFET;
 EndCmp
 
 BeginCmp
