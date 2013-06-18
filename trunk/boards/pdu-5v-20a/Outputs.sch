@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 16 Jun 2013 04:33:41 PM EDT
+EESchema Schematic File Version 2  date Tue 18 Jun 2013 02:04:50 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,8 +43,8 @@ EELAYER END
 $Descr A2 16535 23386 portrait
 encoding utf-8
 Sheet 4 5
-Title "5V 20A Power Distribution Unit"
-Date "16 jun 2013"
+Title "5V/12V 20A Power Distribution Unit"
+Date "18 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Output ports"
@@ -52,8 +52,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 15250 1350 2    60   ~ 0
-GND
 Text Label 15250 1150 2    60   ~ 0
 VOUT_0
 Text Label 13300 1400 2    60   ~ 0
@@ -119,15 +117,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 1050 60  0000 L CNN
 $EndComp
 Text Label 11400 1850 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L4
-U 1 1 515BF13E
-P 13800 1150
-F 0 "L4" V 13750 1150 40  0000 C CNN
-F 1 "300R 5A" V 13900 1150 40  0000 C CNN
-	1    13800 1150
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 950  0    60   ~ 0
 VOUT_0_FILTERED
 $Comp
@@ -156,15 +145,6 @@ Text Label 14200 1400 2    60   ~ 0
 VOUT_0_SENSE_HI
 Text Label 14800 1550 2    60   ~ 0
 VOUT_0_SENSE_LO
-$Comp
-L CONN_2 P2
-U 1 1 515BF852
-P 15700 1250
-F 0 "P2" V 15650 1250 40  0000 C CNN
-F 1 "CONN_2" V 15750 1250 40  0000 C CNN
-	1    15700 1250
-	1    0    0    -1  
-$EndComp
 Text Notes 550  800  0    197  ~ 39
 Channel 0
 Text Notes 11100 2300 0    60   ~ 0
@@ -371,8 +351,6 @@ Wire Wire Line
 Wire Wire Line
 	10650 2150 10750 2150
 Wire Wire Line
-	15250 1350 15350 1350
-Wire Wire Line
 	14800 1250 14800 1550
 Wire Wire Line
 	14200 1250 14200 1400
@@ -382,8 +360,6 @@ Wire Wire Line
 	15100 2200 15600 2200
 Wire Wire Line
 	15100 1800 15600 1800
-Wire Wire Line
-	14800 1150 15350 1150
 Wire Wire Line
 	14100 1150 14200 1150
 Wire Wire Line
@@ -432,8 +408,6 @@ Connection ~ 3750 21700
 Wire Wire Line
 	4050 22200 4200 22200
 Connection ~ 3750 22700
-Text Label 15250 3200 2    60   ~ 0
-GND
 Text Label 15250 3000 2    60   ~ 0
 VOUT_1
 Text Label 13300 3250 2    60   ~ 0
@@ -491,15 +465,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 2900 60  0000 L CNN
 $EndComp
 Text Label 11400 3700 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L5
-U 1 1 516BC2DD
-P 13800 3000
-F 0 "L5" V 13750 3000 40  0000 C CNN
-F 1 "300R 5A" V 13900 3000 40  0000 C CNN
-	1    13800 3000
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 2800 0    60   ~ 0
 VOUT_1_FILTERED
 $Comp
@@ -528,15 +493,6 @@ Text Label 14200 3250 2    60   ~ 0
 VOUT_1_SENSE_HI
 Text Label 14800 3400 2    60   ~ 0
 VOUT_1_SENSE_LO
-$Comp
-L CONN_2 P3
-U 1 1 516BC2F4
-P 15700 3100
-F 0 "P3" V 15650 3100 40  0000 C CNN
-F 1 "CONN_2" V 15750 3100 40  0000 C CNN
-	1    15700 3100
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 4150 0    60   ~ 0
 Output stage
 Text HLabel 11500 3200 0    60   Input ~ 0
@@ -551,8 +507,6 @@ F 1 "1K" V 11550 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 3200 15350 3200
-Wire Wire Line
 	14800 3100 14800 3400
 Wire Wire Line
 	14200 3100 14200 3250
@@ -562,8 +516,6 @@ Wire Wire Line
 	15100 4050 15600 4050
 Wire Wire Line
 	15100 3650 15600 3650
-Wire Wire Line
-	14800 3000 15350 3000
 Wire Wire Line
 	14100 3000 14200 3000
 Wire Wire Line
@@ -595,8 +547,6 @@ Wire Wire Line
 Connection ~ 11550 3700
 Wire Notes Line
 	7800 500  7800 9750
-Text Label 15250 5050 2    60   ~ 0
-GND
 Text Label 15250 4850 2    60   ~ 0
 VOUT_2
 Text Label 13300 5100 2    60   ~ 0
@@ -654,15 +604,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 4750 60  0000 L CNN
 $EndComp
 Text Label 11400 5550 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L6
-U 1 1 516BE2EE
-P 13800 4850
-F 0 "L6" V 13750 4850 40  0000 C CNN
-F 1 "300R 5A" V 13900 4850 40  0000 C CNN
-	1    13800 4850
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 4650 0    60   ~ 0
 VOUT_2_FILTERED
 $Comp
@@ -691,15 +632,6 @@ Text Label 14200 5100 2    60   ~ 0
 VOUT_2_SENSE_HI
 Text Label 14800 5250 2    60   ~ 0
 VOUT_2_SENSE_LO
-$Comp
-L CONN_2 P4
-U 1 1 516BE305
-P 15700 4950
-F 0 "P4" V 15650 4950 40  0000 C CNN
-F 1 "CONN_2" V 15750 4950 40  0000 C CNN
-	1    15700 4950
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 6000 0    60   ~ 0
 Output stage
 Text HLabel 11500 5050 0    60   Input ~ 0
@@ -714,8 +646,6 @@ F 1 "1K" V 11550 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 5050 15350 5050
-Wire Wire Line
 	14800 4950 14800 5250
 Wire Wire Line
 	14200 4950 14200 5100
@@ -725,8 +655,6 @@ Wire Wire Line
 	15100 5900 15600 5900
 Wire Wire Line
 	15100 5500 15600 5500
-Wire Wire Line
-	14800 4850 15350 4850
 Wire Wire Line
 	14100 4850 14200 4850
 Wire Wire Line
@@ -758,8 +686,6 @@ Wire Wire Line
 Connection ~ 11550 5550
 Wire Notes Line
 	11050 2350 11050 9750
-Text Label 15250 6900 2    60   ~ 0
-GND
 Text Label 15250 6700 2    60   ~ 0
 VOUT_3
 Text Label 13300 6950 2    60   ~ 0
@@ -817,15 +743,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 6600 60  0000 L CNN
 $EndComp
 Text Label 11400 7400 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L7
-U 1 1 516BE8F4
-P 13800 6700
-F 0 "L7" V 13750 6700 40  0000 C CNN
-F 1 "300R 5A" V 13900 6700 40  0000 C CNN
-	1    13800 6700
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 6500 0    60   ~ 0
 VOUT_3_FILTERED
 $Comp
@@ -854,15 +771,6 @@ Text Label 14200 6950 2    60   ~ 0
 VOUT_3_SENSE_HI
 Text Label 14800 7100 2    60   ~ 0
 VOUT_3_SENSE_LO
-$Comp
-L CONN_2 P5
-U 1 1 516BE90B
-P 15700 6800
-F 0 "P5" V 15650 6800 40  0000 C CNN
-F 1 "CONN_2" V 15750 6800 40  0000 C CNN
-	1    15700 6800
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 7850 0    60   ~ 0
 Output stage
 Text HLabel 11500 6900 0    60   Input ~ 0
@@ -877,8 +785,6 @@ F 1 "1K" V 11550 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 6900 15350 6900
-Wire Wire Line
 	14800 6800 14800 7100
 Wire Wire Line
 	14200 6800 14200 6950
@@ -888,8 +794,6 @@ Wire Wire Line
 	15100 7750 15600 7750
 Wire Wire Line
 	15100 7350 15600 7350
-Wire Wire Line
-	14800 6700 15350 6700
 Wire Wire Line
 	14100 6700 14200 6700
 Wire Wire Line
@@ -971,8 +875,6 @@ Wire Wire Line
 	10600 9150 10700 9150
 Wire Wire Line
 	10600 9550 10700 9550
-Text Label 15250 8750 2    60   ~ 0
-GND
 Text Label 15250 8550 2    60   ~ 0
 VOUT_4
 Text Label 13300 8800 2    60   ~ 0
@@ -1030,15 +932,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 8450 60  0000 L CNN
 $EndComp
 Text Label 11400 9250 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L8
-U 1 1 516C1D81
-P 13800 8550
-F 0 "L8" V 13750 8550 40  0000 C CNN
-F 1 "300R 5A" V 13900 8550 40  0000 C CNN
-	1    13800 8550
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 8350 0    60   ~ 0
 VOUT_4_FILTERED
 $Comp
@@ -1067,15 +960,6 @@ Text Label 14200 8800 2    60   ~ 0
 VOUT_4_SENSE_HI
 Text Label 14800 8950 2    60   ~ 0
 VOUT_4_SENSE_LO
-$Comp
-L CONN_2 P6
-U 1 1 516C1D98
-P 15700 8650
-F 0 "P6" V 15650 8650 40  0000 C CNN
-F 1 "CONN_2" V 15750 8650 40  0000 C CNN
-	1    15700 8650
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 9700 0    60   ~ 0
 Output stage
 Text HLabel 11500 8750 0    60   Input ~ 0
@@ -1090,8 +974,6 @@ F 1 "1K" V 11550 9000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 8750 15350 8750
-Wire Wire Line
 	14800 8650 14800 8950
 Wire Wire Line
 	14200 8650 14200 8800
@@ -1101,8 +983,6 @@ Wire Wire Line
 	15100 9600 15600 9600
 Wire Wire Line
 	15100 9200 15600 9200
-Wire Wire Line
-	14800 8550 15350 8550
 Wire Wire Line
 	14100 8550 14200 8550
 Wire Wire Line
@@ -1136,8 +1016,6 @@ Wire Notes Line
 	11050 4200 11050 19000
 Wire Notes Line
 	7800 4200 7800 19000
-Text Label 15250 10600 2    60   ~ 0
-GND
 Text Label 15250 10400 2    60   ~ 0
 VOUT_5
 Text Label 13300 10650 2    60   ~ 0
@@ -1195,15 +1073,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 10300 60  0000 L CNN
 $EndComp
 Text Label 11400 11100 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L9
-U 1 1 516C211E
-P 13800 10400
-F 0 "L9" V 13750 10400 40  0000 C CNN
-F 1 "300R 5A" V 13900 10400 40  0000 C CNN
-	1    13800 10400
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 10200 0    60   ~ 0
 VOUT_5_FILTERED
 $Comp
@@ -1232,15 +1101,6 @@ Text Label 14200 10650 2    60   ~ 0
 VOUT_5_SENSE_HI
 Text Label 14800 10800 2    60   ~ 0
 VOUT_5_SENSE_LO
-$Comp
-L CONN_2 P7
-U 1 1 516C2135
-P 15700 10500
-F 0 "P7" V 15650 10500 40  0000 C CNN
-F 1 "CONN_2" V 15750 10500 40  0000 C CNN
-	1    15700 10500
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 11550 0    60   ~ 0
 Output stage
 Text HLabel 11500 10600 0    60   Input ~ 0
@@ -1255,8 +1115,6 @@ F 1 "1K" V 11550 10850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 10600 15350 10600
-Wire Wire Line
 	14800 10500 14800 10800
 Wire Wire Line
 	14200 10500 14200 10650
@@ -1266,8 +1124,6 @@ Wire Wire Line
 	15100 11450 15600 11450
 Wire Wire Line
 	15100 11050 15600 11050
-Wire Wire Line
-	14800 10400 15350 10400
 Wire Wire Line
 	14100 10400 14200 10400
 Wire Wire Line
@@ -1297,10 +1153,8 @@ Connection ~ 11550 10600
 Wire Wire Line
 	11400 11100 12100 11100
 Connection ~ 11550 11100
-Text Label 15250 12450 2    60   ~ 0
-GND
 Text Label 15250 12250 2    60   ~ 0
-VOUT_0
+VOUT_6
 Text Label 13300 12500 2    60   ~ 0
 VOUT_6_FUSED
 $Comp
@@ -1356,15 +1210,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 12150 60  0000 L CNN
 $EndComp
 Text Label 11400 12950 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L10
-U 1 1 516C24F7
-P 13800 12250
-F 0 "L10" V 13750 12250 40  0000 C CNN
-F 1 "300R 5A" V 13900 12250 40  0000 C CNN
-	1    13800 12250
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 12050 0    60   ~ 0
 VOUT_6_FILTERED
 $Comp
@@ -1393,15 +1238,6 @@ Text Label 14200 12500 2    60   ~ 0
 VOUT_6_SENSE_HI
 Text Label 14800 12650 2    60   ~ 0
 VOUT_6_SENSE_LO
-$Comp
-L CONN_2 P8
-U 1 1 516C250E
-P 15700 12350
-F 0 "P8" V 15650 12350 40  0000 C CNN
-F 1 "CONN_2" V 15750 12350 40  0000 C CNN
-	1    15700 12350
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 13400 0    60   ~ 0
 Output stage
 $Comp
@@ -1468,8 +1304,6 @@ Wire Wire Line
 Wire Wire Line
 	10600 16950 10700 16950
 Wire Wire Line
-	15250 12450 15350 12450
-Wire Wire Line
 	14800 12350 14800 12650
 Wire Wire Line
 	14200 12350 14200 12500
@@ -1479,8 +1313,6 @@ Wire Wire Line
 	15100 13300 15600 13300
 Wire Wire Line
 	15100 12900 15600 12900
-Wire Wire Line
-	14800 12250 15350 12250
 Wire Wire Line
 	14100 12250 14200 12250
 Wire Wire Line
@@ -1510,8 +1342,6 @@ Connection ~ 11550 12450
 Wire Wire Line
 	11400 12950 12100 12950
 Connection ~ 11550 12950
-Text Label 15250 14300 2    60   ~ 0
-GND
 Text Label 15250 14100 2    60   ~ 0
 VOUT_7
 Text Label 13300 14350 2    60   ~ 0
@@ -1569,15 +1399,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 14000 60  0000 L CNN
 $EndComp
 Text Label 11400 14800 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L11
-U 1 1 516C260E
-P 13800 14100
-F 0 "L11" V 13750 14100 40  0000 C CNN
-F 1 "300R 5A" V 13900 14100 40  0000 C CNN
-	1    13800 14100
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 13900 0    60   ~ 0
 VOUT_7_FILTERED
 $Comp
@@ -1606,15 +1427,6 @@ Text Label 14200 14350 2    60   ~ 0
 VOUT_7_SENSE_HI
 Text Label 14800 14500 2    60   ~ 0
 VOUT_7_SENSE_LO
-$Comp
-L CONN_2 P9
-U 1 1 516C2625
-P 15700 14200
-F 0 "P9" V 15650 14200 40  0000 C CNN
-F 1 "CONN_2" V 15750 14200 40  0000 C CNN
-	1    15700 14200
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 15250 0    60   ~ 0
 Output stage
 Text HLabel 11500 14300 0    60   Input ~ 0
@@ -1629,8 +1441,6 @@ F 1 "1K" V 11550 14550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 14300 15350 14300
-Wire Wire Line
 	14800 14200 14800 14500
 Wire Wire Line
 	14200 14200 14200 14350
@@ -1640,8 +1450,6 @@ Wire Wire Line
 	15100 15150 15600 15150
 Wire Wire Line
 	15100 14750 15600 14750
-Wire Wire Line
-	14800 14100 15350 14100
 Wire Wire Line
 	14100 14100 14200 14100
 Wire Wire Line
@@ -1671,8 +1479,6 @@ Connection ~ 11550 14300
 Wire Wire Line
 	11400 14800 12100 14800
 Connection ~ 11550 14800
-Text Label 15250 16150 2    60   ~ 0
-GND
 Text Label 15250 15950 2    60   ~ 0
 VOUT_8
 Text Label 13300 16200 2    60   ~ 0
@@ -1730,15 +1536,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 15850 60  0000 L CNN
 $EndComp
 Text Label 11400 16650 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L12
-U 1 1 516C2701
-P 13800 15950
-F 0 "L12" V 13750 15950 40  0000 C CNN
-F 1 "300R 5A" V 13900 15950 40  0000 C CNN
-	1    13800 15950
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 15750 0    60   ~ 0
 VOUT_8_FILTERED
 $Comp
@@ -1767,15 +1564,6 @@ Text Label 14200 16200 2    60   ~ 0
 VOUT_8_SENSE_HI
 Text Label 14800 16350 2    60   ~ 0
 VOUT_8_SENSE_LO
-$Comp
-L CONN_2 P10
-U 1 1 516C2718
-P 15700 16050
-F 0 "P10" V 15650 16050 40  0000 C CNN
-F 1 "CONN_2" V 15750 16050 40  0000 C CNN
-	1    15700 16050
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 17100 0    60   ~ 0
 Output stage
 Text HLabel 11500 16150 0    60   Input ~ 0
@@ -1790,8 +1578,6 @@ F 1 "1K" V 11550 16400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 16150 15350 16150
-Wire Wire Line
 	14800 16050 14800 16350
 Wire Wire Line
 	14200 16050 14200 16200
@@ -1801,8 +1587,6 @@ Wire Wire Line
 	15100 17000 15600 17000
 Wire Wire Line
 	15100 16600 15600 16600
-Wire Wire Line
-	14800 15950 15350 15950
 Wire Wire Line
 	14100 15950 14200 15950
 Wire Wire Line
@@ -1832,8 +1616,6 @@ Connection ~ 11550 16150
 Wire Wire Line
 	11400 16650 12100 16650
 Connection ~ 11550 16650
-Text Label 15250 18000 2    60   ~ 0
-GND
 Text Label 15250 17800 2    60   ~ 0
 VOUT_9
 Text Label 13300 18050 2    60   ~ 0
@@ -1891,15 +1673,6 @@ F 1 "SI2304DDS-T1-GE3" H 12150 17700 60  0000 L CNN
 $EndComp
 Text Label 11400 18500 2    60   ~ 0
 GND
-$Comp
-L INDUCTOR L13
-U 1 1 516C27F4
-P 13800 17800
-F 0 "L13" V 13750 17800 40  0000 C CNN
-F 1 "300R 5A" V 13900 17800 40  0000 C CNN
-	1    13800 17800
-	0    -1   -1   0   
-$EndComp
 Text Label 14100 17600 0    60   ~ 0
 VOUT_9_FILTERED
 $Comp
@@ -1928,15 +1701,6 @@ Text Label 14200 18050 2    60   ~ 0
 VOUT_9_SENSE_HI
 Text Label 14800 18200 2    60   ~ 0
 VOUT_9_SENSE_LO
-$Comp
-L CONN_2 P11
-U 1 1 516C280B
-P 15700 17900
-F 0 "P11" V 15650 17900 40  0000 C CNN
-F 1 "CONN_2" V 15750 17900 40  0000 C CNN
-	1    15700 17900
-	1    0    0    -1  
-$EndComp
 Text Notes 11100 18950 0    60   ~ 0
 Output stage
 Text HLabel 11500 18000 0    60   Input ~ 0
@@ -1951,8 +1715,6 @@ F 1 "1K" V 11550 18250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 18000 15350 18000
-Wire Wire Line
 	14800 17900 14800 18200
 Wire Wire Line
 	14200 17900 14200 18050
@@ -1962,8 +1724,6 @@ Wire Wire Line
 	15100 18850 15600 18850
 Wire Wire Line
 	15100 18450 15600 18450
-Wire Wire Line
-	14800 17800 15350 17800
 Wire Wire Line
 	14100 17800 14200 17800
 Wire Wire Line
@@ -2290,7 +2050,7 @@ GND
 Text Label 4900 16200 2    60   ~ 0
 3V3
 Text Label 5250 15700 0    60   ~ 0
-VREF_0
+VREF_8
 $Comp
 L R R30
 U 1 1 51BE3863
@@ -3450,4 +3210,203 @@ Text Notes 5550 9700 0    60   ~ 0
 Address: 7'b1001101, 2'b00
 Text Notes 5550 17100 0    60   ~ 0
 Address: 7'b1001110, 2'b00
+$Comp
+L CONN_20 P12
+U 1 1 51BE44FA
+P 15700 20300
+F 0 "P12" V 15650 20300 60  0000 C CNN
+F 1 "CONN_20" V 15750 20300 60  0000 C CNN
+	1    15700 20300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15250 19350 15350 19350
+Wire Wire Line
+	15250 19450 15350 19450
+Text Label 15250 19650 2    60   ~ 0
+GND
+Text Label 15250 19550 2    60   ~ 0
+VOUT_1
+Text Label 15250 19450 2    60   ~ 0
+GND
+Text Label 15250 19350 2    60   ~ 0
+VOUT_0
+Text Label 15250 20050 2    60   ~ 0
+GND
+Text Label 15250 19950 2    60   ~ 0
+VOUT_3
+Text Label 15250 19850 2    60   ~ 0
+GND
+Text Label 15250 19750 2    60   ~ 0
+VOUT_2
+Text Label 15250 20450 2    60   ~ 0
+GND
+Text Label 15250 20350 2    60   ~ 0
+VOUT_5
+Text Label 15250 20250 2    60   ~ 0
+GND
+Text Label 15250 20150 2    60   ~ 0
+VOUT_4
+Text Label 15250 20850 2    60   ~ 0
+GND
+Text Label 15250 20750 2    60   ~ 0
+VOUT_7
+Text Label 15250 20650 2    60   ~ 0
+GND
+Text Label 15250 20550 2    60   ~ 0
+VOUT_6
+Text Label 15250 21250 2    60   ~ 0
+GND
+Text Label 15250 21150 2    60   ~ 0
+VOUT_9
+Text Label 15250 21050 2    60   ~ 0
+GND
+Text Label 15250 20950 2    60   ~ 0
+VOUT_8
+Wire Wire Line
+	15250 21150 15350 21150
+Wire Wire Line
+	15350 21250 15250 21250
+Wire Wire Line
+	15250 20950 15350 20950
+Wire Wire Line
+	15350 21050 15250 21050
+Wire Wire Line
+	15250 20750 15350 20750
+Wire Wire Line
+	15350 20850 15250 20850
+Wire Wire Line
+	15250 20550 15350 20550
+Wire Wire Line
+	15350 20650 15250 20650
+Wire Wire Line
+	15250 20350 15350 20350
+Wire Wire Line
+	15350 20450 15250 20450
+Wire Wire Line
+	15250 20150 15350 20150
+Wire Wire Line
+	15350 20250 15250 20250
+Wire Wire Line
+	15250 19950 15350 19950
+Wire Wire Line
+	15350 20050 15250 20050
+Wire Wire Line
+	15250 19550 15350 19550
+Wire Wire Line
+	15350 19650 15250 19650
+Wire Wire Line
+	15250 19750 15350 19750
+Wire Wire Line
+	15350 19850 15250 19850
+Wire Wire Line
+	14800 17800 15250 17800
+Wire Wire Line
+	14800 15950 15250 15950
+Wire Wire Line
+	14800 14100 15250 14100
+Wire Wire Line
+	14800 12250 15250 12250
+Wire Wire Line
+	15250 10400 14800 10400
+Wire Wire Line
+	14800 8550 15250 8550
+Wire Wire Line
+	14800 6700 15250 6700
+Wire Wire Line
+	15250 4850 14800 4850
+Wire Wire Line
+	14800 3000 15250 3000
+Wire Wire Line
+	14800 1150 15250 1150
+$Comp
+L INDUCTOR_PWROUT L4
+U 1 1 51C01B67
+P 13800 1150
+F 0 "L4" V 13750 1150 40  0000 C CNN
+F 1 "300R 5A" V 13900 1150 40  0000 C CNN
+	1    13800 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L7
+U 1 1 51C01B83
+P 13800 6700
+F 0 "L7" V 13750 6700 40  0000 C CNN
+F 1 "300R 5A" V 13900 6700 40  0000 C CNN
+	1    13800 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L5
+U 1 1 51C01B89
+P 13800 3000
+F 0 "L5" V 13750 3000 40  0000 C CNN
+F 1 "300R 5A" V 13900 3000 40  0000 C CNN
+	1    13800 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L6
+U 1 1 51C01B99
+P 13800 4850
+F 0 "L6" V 13750 4850 40  0000 C CNN
+F 1 "300R 5A" V 13900 4850 40  0000 C CNN
+	1    13800 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L8
+U 1 1 51C01BB3
+P 13800 8550
+F 0 "L8" V 13750 8550 40  0000 C CNN
+F 1 "300R 5A" V 13900 8550 40  0000 C CNN
+	1    13800 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L9
+U 1 1 51C01BC3
+P 13800 10400
+F 0 "L9" V 13750 10400 40  0000 C CNN
+F 1 "300R 5A" V 13900 10400 40  0000 C CNN
+	1    13800 10400
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L12
+U 1 1 51C01BC9
+P 13800 15950
+F 0 "L12" V 13750 15950 40  0000 C CNN
+F 1 "300R 5A" V 13900 15950 40  0000 C CNN
+	1    13800 15950
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L10
+U 1 1 51C01BCF
+P 13800 12250
+F 0 "L10" V 13750 12250 40  0000 C CNN
+F 1 "300R 5A" V 13900 12250 40  0000 C CNN
+	1    13800 12250
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L11
+U 1 1 51C01BDF
+P 13800 14100
+F 0 "L11" V 13750 14100 40  0000 C CNN
+F 1 "300R 5A" V 13900 14100 40  0000 C CNN
+	1    13800 14100
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR_PWROUT L13
+U 1 1 51C01BF9
+P 13800 17800
+F 0 "L13" V 13750 17800 40  0000 C CNN
+F 1 "300R 5A" V 13900 17800 40  0000 C CNN
+	1    13800 17800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
