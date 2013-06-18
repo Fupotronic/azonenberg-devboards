@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 18 Jun 2013 02:17:16 AM EDT
+# EESchema Netlist Version 1.1 created  Tue 18 Jun 2013 03:33:58 AM EDT
 (
  ( /515BE6C3/515BE74E $noname  P1 CONN_2 {Lib=CONN_2}
   (    1 /Power_Ingress/VIN )
@@ -33,7 +33,7 @@
   (    1 /Outputs/VOUT )
   (    2 /Control/GND )
  )
- ( /515BE6C3/515BEB36 $noname  F1 20A {Lib=FUSE}
+ ( /515BE6C3/515BEB36 $noname  F1 25A {Lib=FUSE}
   (    1 /Power_Ingress/VIN )
   (    2 /Power_Ingress/VIN_FUSED )
  )
@@ -50,7 +50,7 @@
   (    1 /Control/GND )
   (    2 N-000061 )
  )
- ( /515BE6C3/51BE3AE3 $noname  U36 LDO1117-XX {Lib=LDO1117-XX}
+ ( /515BE6C3/51BE3AE3 $noname  U36 LDO1117-25 {Lib=LDO1117-XX}
   (    1 /Control/GND )
   (    2 /Control/2V5 )
   (    3 /Outputs/VOUT )

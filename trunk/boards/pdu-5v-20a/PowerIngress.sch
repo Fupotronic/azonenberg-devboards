@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 18 Jun 2013 02:27:52 AM EDT
+EESchema Schematic File Version 2  date Tue 18 Jun 2013 03:14:22 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -151,7 +151,7 @@ L FUSE F1
 U 1 1 515BEB36
 P 2000 1000
 F 0 "F1" H 2100 1050 40  0000 C CNN
-F 1 "20A" H 1900 950 40  0000 C CNN
+F 1 "25A" H 1900 950 40  0000 C CNN
 	1    2000 1000
 	1    0    0    -1  
 $EndComp
