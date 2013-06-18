@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 18 Jun 2013 02:04:50 AM EDT
+EESchema Schematic File Version 2  date Tue 18 Jun 2013 02:17:19 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -198,6 +198,20 @@ F57 "ETH_CLK125" I L 1900 3150 60
 $EndSheet
 Text Label 3600 1150 0    60   ~ 0
 2V5
+Text Label 3600 1050 0    60   ~ 0
+1V2
+Text Label 3600 950  0    60   ~ 0
+GND
+Text Label 3600 850  0    60   ~ 0
+3V3
+Text Label 1650 1550 0    60   ~ 0
+2V5
+Text Label 1650 1650 0    60   ~ 0
+1V2
+Text Label 1650 1750 0    60   ~ 0
+GND
+Text Label 1650 1850 0    60   ~ 0
+3V3
 Wire Wire Line
 	3450 750  4300 750 
 Wire Wire Line
@@ -294,26 +308,12 @@ Wire Wire Line
 	3500 1550 3950 1550
 Wire Wire Line
 	3950 1550 3950 1150
-Text Label 3600 1050 0    60   ~ 0
-1V2
-Text Label 3600 950  0    60   ~ 0
-GND
-Text Label 3600 850  0    60   ~ 0
-3V3
-Text Label 1650 1550 0    60   ~ 0
-2V5
 Wire Wire Line
 	1650 1550 1600 1550
-Text Label 1650 1650 0    60   ~ 0
-1V2
 Wire Wire Line
 	1650 1650 1600 1650
-Text Label 1650 1750 0    60   ~ 0
-GND
 Wire Wire Line
 	1650 1750 1600 1750
-Text Label 1650 1850 0    60   ~ 0
-3V3
 Wire Wire Line
 	1650 1850 1600 1850
 Wire Wire Line
