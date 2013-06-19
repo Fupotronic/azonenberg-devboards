@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 18 Jun 2013 03:14:22 AM EDT
+EESchema Schematic File Version 2  date Tue 18 Jun 2013 09:19:31 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A2 16535 23386 portrait
 encoding utf-8
 Sheet 4 5
 Title "5V/12V 20A Power Distribution Unit"
-Date "18 jun 2013"
+Date "19 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Output ports"
@@ -1957,11 +1957,11 @@ GND
 $Comp
 L LM4040-X-SOT23 U22
 U 1 1 515CB07B
-P 4700 1000
-F 0 "U22" H 5250 1350 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 4950 950 60  0000 C CNN
-	1    4700 1000
-	-1   0    0    -1  
+P 4700 600
+F 0 "U22" H 5250 950 60  0000 C CNN
+F 1 "LM4040-25-SOT23" H 4950 550 60  0000 C CNN
+	1    4700 600 
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7250 15800 7250 15700
@@ -2074,11 +2074,11 @@ GND
 $Comp
 L LM4040-X-SOT23 U24
 U 1 1 51BE3871
-P 4700 15800
-F 0 "U24" H 5250 16150 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 4950 15750 60  0000 C CNN
-	1    4700 15800
-	-1   0    0    -1  
+P 4700 15400
+F 0 "U24" H 5250 15750 60  0000 C CNN
+F 1 "LM4040-25-SOT23" H 4950 15350 60  0000 C CNN
+	1    4700 15400
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7250 8400 7250 8300
@@ -2195,11 +2195,11 @@ GND
 $Comp
 L LM4040-X-SOT23 U23
 U 1 1 51BE38BB
-P 4700 8400
-F 0 "U23" H 5250 8750 60  0000 C CNN
-F 1 "LM4040-25-SOT23" H 4950 8350 60  0000 C CNN
-	1    4700 8400
-	-1   0    0    -1  
+P 4700 8000
+F 0 "U23" H 5250 8350 60  0000 C CNN
+F 1 "LM4040-25-SOT23" H 4950 7950 60  0000 C CNN
+	1    4700 8000
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5700 8600 5650 8600
