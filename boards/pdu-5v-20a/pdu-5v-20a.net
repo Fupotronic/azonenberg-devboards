@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 18 Jun 2013 03:33:58 AM EDT
+# EESchema Netlist Version 1.1 created  Tue 18 Jun 2013 09:19:40 PM EDT
 (
  ( /515BE6C3/515BE74E $noname  P1 CONN_2 {Lib=CONN_2}
   (    1 /Power_Ingress/VIN )
@@ -843,9 +843,9 @@
   (    2 /Control/GND )
  )
  ( /515BECF6/515CB07B $noname  U22 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Control/GND )
+  (    1 /Outputs/VREF_0 )
   (    2 /Control/GND )
-  (    3 /Outputs/VREF_0 )
+  (    3 /Control/GND )
  )
  ( /515BECF6/51BE3831 $noname  C56 0.1_uF {Lib=C}
   (    1 /Control/3V3 )
@@ -882,9 +882,9 @@
   (    2 /Control/GND )
  )
  ( /515BECF6/51BE3871 $noname  U24 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Control/GND )
+  (    1 /Outputs/VREF_8 )
   (    2 /Control/GND )
-  (    3 /Outputs/VREF_8 )
+  (    3 /Control/GND )
  )
  ( /515BECF6/51BE387D $noname  C55 0.1_uF {Lib=C}
   (    1 /Control/3V3 )
@@ -921,9 +921,9 @@
   (    2 /Control/GND )
  )
  ( /515BECF6/51BE38BB $noname  U23 LM4040-25-SOT23 {Lib=LM4040-X-SOT23}
-  (    1 /Control/GND )
+  (    1 /Outputs/VREF_4 )
   (    2 /Control/GND )
-  (    3 /Outputs/VREF_4 )
+  (    3 /Control/GND )
  )
  ( /515BECF6/51BE3F93 $noname  U11 INA199A2-DCK {Lib=INA199AX-DCK}
   (    1 /Control/GND )
@@ -3829,22 +3829,22 @@ Net 2 "/Control/GND" "GND"
  R39 2
  R38 2
  C19 2
+ U22 3
  U22 2
- U22 1
  C78 2
  C48 2
  U13 2
  C68 2
- U23 1
  Q10 S
  U3 1
- C55 2
  U3 2
+ C55 2
  C2 2
  C67 2
  C1 2
  C56 2
  C77 2
+ U23 3
  U23 2
  C107 2
  U27 5
@@ -3871,9 +3871,9 @@ Net 2 "/Control/GND" "GND"
  Q1 G
  U26 5
  U26 6
- U24 1
- U24 2
  C27 2
+ U24 2
+ U24 3
  U26 14
  U26 15
  C50 2
@@ -3881,42 +3881,41 @@ Net 2 "/Control/GND" "GND"
  C37 2
  U37 2
  U27 16
- U11 2
- Q2 G
- U11 1
- C52 2
  P1 2
+ Q2 G
+ U11 2
+ U11 1
  C49 2
+ C52 2
 Net 3 "/Control/3V3" "3V3"
- U31 J10
- U31 B13
- U14 5
- C34 1
- U31 F11
- U31 N2
- U31 N10
- C20 1
  U3 3
- U2 3
+ U14 5
+ U31 F11
+ C34 1
+ C20 1
+ U31 N10
  C28 1
- U34 8
+ U2 3
+ U31 N2
+ U31 J10
  U35 1
+ U34 8
  U35 4
- U8 3
  J1 2
- R29 1
+ U8 3
  U26 12
  U26 13
+ R29 1
+ U31 B13
  U13 5
- U31 D2
+ C23 1
  C32 1
  U31 L9
- U31 B9
  U32 8
  U6 3
  C29 1
- U17 5
  U33 8
+ U17 5
  U33 7
  C19 1
  U7 3
@@ -3924,22 +3923,23 @@ Net 3 "/Control/3V3" "3V3"
  U31 G4
  U31 K4
  U31 G10
- C33 1
  U16 5
  U31 R4
  U31 E5
+ C22 1
  U21 5
  U31 H6
  U31 L6
- U31 R8
- U31 D10
- C22 1
- U31 D7
- C23 1
- U31 N7
+ C33 1
  C30 1
+ U31 D7
  U31 J2
+ U31 N7
+ U31 R8
  U31 F8
+ U31 D2
+ U31 B9
+ U31 D10
  U28 14
  C58 1
  C56 1
@@ -3968,76 +3968,76 @@ Net 3 "/Control/3V3" "3V3"
  U27 4
  TP4 1
  R28 1
- C85 1
- C82 1
- U20 5
- L1 2
- U11 3
- C26 1
- C99 1
- C36 1
- C98 1
- U10 3
- C35 1
  C21 1
  C31 1
- U9 3
- C88 1
  U5 3
+ C88 1
  R12 2
+ C85 1
+ L1 2
+ C82 1
+ U11 3
+ U9 3
+ C35 1
  C25 1
- R13 2
- C90 1
- U18 5
- U4 3
- C27 1
- C54 1
- C51 1
- C97 1
- U25 4
- C37 1
- C96 1
  U19 5
- U15 5
  C24 1
+ U18 5
+ U10 3
+ C36 1
+ C26 1
+ U20 5
+ C90 1
+ C37 1
+ U25 4
+ C92 1
+ R13 2
  C94 1
  U25 12
- C92 1
+ U15 5
+ C96 1
+ C99 1
+ C54 1
+ C98 1
+ C27 1
+ C97 1
+ U4 3
+ C51 1
 Net 4 "/Outputs/VOUT" "VOUT"
  R14 1
+ R26 1
  Q21 S
  Q15 S
  R43 2
  Q16 S
  Q14 S
  R42 2
- R26 1
  TP1 1
  R49 2
  R41 2
  Q13 S
+ U36 3
+ Q2 S
+ R44 2
+ C106 1
+ C104 1
+ Q17 S
  Q22 S
  R50 2
  R48 2
  Q20 S
  Q1 S
+ U38 1
  R1 2
  C102 1
- U38 1
- Q17 S
- C104 1
- C106 1
- U36 3
- R45 2
- U37 1
  R47 2
  Q19 S
  R46 2
  Q18 S
- C1 1
- R44 2
- Q2 S
  C2 1
+ C1 1
+ R45 2
+ U37 1
 Net 5 "/Control/ADC0_CS_N" "ADC0_CS_N"
  U31 A5
  U30 8
@@ -4061,52 +4061,52 @@ Net 11 "/Control/ADC1_CS_N" "ADC1_CS_N"
  U28 8
  U31 A6
 Net 12 "/Control/ADC1_SCK" "ADC1_SCK"
- U28 11
  U31 F7
+ U28 11
 Net 13 "/Control/CH9_OVERCURRENT" "CH9_OVERCURRENT"
- R25 2
  U31 B14
+ R25 2
 Net 14 "/Control/2V5" "2V5"
- R94 1
- C84 1
  R95 1
+ C107 1
+ R94 1
+ R96 1
+ TP5 1
+ C87 1
+ U36 2
+ C84 1
  C12 2
  C8 2
- U1 40
- U36 2
- U31 J15
- C87 1
- U31 R13
- C95 1
- C4 2
- U31 D15
- C89 1
- U1 16
- U31 N15
- U31 K13
- C81 1
- C91 1
- C107 1
- TP5 1
- R96 1
- C93 1
- U1 34
  U31 G13
+ U31 K13
+ C4 2
+ C91 1
+ C95 1
+ C81 1
+ C93 1
+ U31 R13
+ U31 D15
+ U1 40
+ U31 J15
+ C89 1
+ U1 34
+ U31 N15
+ U1 16
 Net 15 "/Control/RGMII_RXD0" "RGMII_RXD0"
- U31 G16
  R7 2
+ U31 G16
 Net 16 "/Control/RGMII_RXD1" "RGMII_RXD1"
  R6 2
  U31 G12
 Net 17 "/Control/RGMII_RXC" "RGMII_RXC"
- R9 2
  U31 J11
+ R9 2
 Net 18 "/Control/RGMII_RXD2" "RGMII_RXD2"
- U31 H11
  R5 2
+ U31 H11
 Net 19 "/Control/RGMII_RXD3" "RGMII_RXD3"
- U31 H13
  R4 2
+ U31 H13
 Net 20 "/Control/RGMII_RX_CTL" "RGMII_RX_CTL"
  R8 2
  U31 H14
@@ -4120,8 +4120,8 @@ Net 23 "/Control/RGMII_TXC" "RGMII_TXC"
  U1 24
  U31 J14
 Net 24 "/Control/RGMII_TXD2" "RGMII_TXD2"
- U1 21
  U31 K14
+ U1 21
 Net 25 "/Control/RGMII_TXD0" "RGMII_TXD0"
  U31 J12
  U1 19
@@ -4129,117 +4129,117 @@ Net 26 "/Control/RGMII_TXD1" "RGMII_TXD1"
  U1 20
  U31 J13
 Net 27 "/Control/ETH_MDC" "ETH_MDC"
- U31 K16
  U1 36
+ U31 K16
 Net 28 "/Control/ETH_CLK_25MHZ" "ETH_CLK_25MHZ"
- U31 N14
  U1 46
+ U31 N14
 Net 29 "/Control/ETH_RESET_N" "ETH_RESET_N"
  U1 42
  U31 N16
 Net 30 "/Control/ETH_MDIO" "ETH_MDIO"
- U31 K15
  R10 2
+ U31 K15
 Net 31 "/Control/ETH_INT_N" "ETH_INT_N"
- R11 2
  U31 M15
+ R11 2
 Net 32 "/Control/ETH_CLK125" "ETH_CLK125"
- U31 J16
  U1 41
+ U31 J16
 Net 33 "/Control/CH8_OVERCURRENT" "CH8_OVERCURRENT"
- U31 F10
  R24 2
+ U31 F10
 Net 34 "/Control/ADC1_MISO" "ADC1_MISO"
- U31 C7
  U28 10
+ U31 C7
 Net 35 "/Control/ADC1_MOSI" "ADC1_MOSI"
- U31 E6
  U28 9
+ U31 E6
 Net 36 "/Control/ADC2_CS_N" "ADC2_CS_N"
- U31 A7
  U29 8
+ U31 A7
 Net 37 "/Control/ADC2_SCK" "ADC2_SCK"
  U29 11
  U31 D6
 Net 38 "/Control/ADC2_MISO" "ADC2_MISO"
- U29 10
  U31 B8
+ U29 10
 Net 39 "/Control/ADC2_MOSI" "ADC2_MOSI"
- U31 C6
  U29 9
+ U31 C6
 Net 40 "/Control/I2C_SCL" "I2C_SCL"
- U31 B5
- U26 10
- U33 2
- U32 2
- U27 10
  U25 10
+ U26 10
+ U32 2
  R13 1
+ U31 B5
+ U33 2
+ U27 10
 Net 41 "/Control/I2C_SDA" "I2C_SDA"
- U31 A4
- U33 1
- U32 1
  R12 1
  U26 11
- U27 11
+ U31 A4
  U25 11
+ U27 11
+ U32 1
+ U33 1
 Net 42 "/Control/CH1_OVERCURRENT" "CH1_OVERCURRENT"
  R17 2
  U31 E7
 Net 43 "/Control/CH1_OE" "CH1_OE"
- Q4 G
- U31 E8
  R32 1
+ U31 E8
+ Q4 G
 Net 44 "/Control/CH2_OVERCURRENT" "CH2_OVERCURRENT"
- U31 E10
  R18 2
+ U31 E10
 Net 45 "/Control/CH3_OVERCURRENT" "CH3_OVERCURRENT"
  R19 2
  U31 D8
 Net 46 "/Control/CH2_OE" "CH2_OE"
- U31 C10
  R33 1
+ U31 C10
  Q5 G
 Net 47 "/Control/CH3_OE" "CH3_OE"
  U31 C8
- Q6 G
  R34 1
+ Q6 G
 Net 48 "/Control/CH4_OVERCURRENT" "CH4_OVERCURRENT"
  U31 C11
  R20 2
 Net 49 "/Control/CH4_OE" "CH4_OE"
+ R35 1
  Q7 G
  U31 A11
- R35 1
 Net 50 "/Control/CH5_OE" "CH5_OE"
- U31 D9
- Q8 G
  R36 1
+ Q8 G
+ U31 D9
 Net 51 "/Control/CH5_OVERCURRENT" "CH5_OVERCURRENT"
- R21 2
  U31 F9
+ R21 2
 Net 52 "/Control/CH6_OVERCURRENT" "CH6_OVERCURRENT"
- R22 2
  U31 B12
+ R22 2
 Net 53 "/Control/CH6_OE" "CH6_OE"
  R37 1
- U31 A12
  Q9 G
+ U31 A12
 Net 54 "/Control/CH7_OVERCURRENT" "CH7_OVERCURRENT"
- R23 2
  U31 C13
+ R23 2
 Net 55 "/Control/CH7_OE" "CH7_OE"
+ U31 A13
  R38 1
  Q10 G
- U31 A13
 Net 56 "/Control/CH9_OE" "CH9_OE"
  Q12 G
- R40 1
  U31 A14
+ R40 1
 Net 57 "/Control/CH8_OE" "CH8_OE"
  R39 1
- Q11 G
  U31 E11
+ Q11 G
 Net 58 "/Power Ingress/VIN" "VIN"
  F1 1
  P1 1
@@ -4254,14 +4254,14 @@ Net 61 "" ""
  U38 4
 Net 62 "/Power Ingress/VIN_FUSED" "VIN_FUSED"
  Q1 D
- F1 2
  R2 1
  Q2 D
+ F1 2
 Net 63 "" ""
- D1 1
  R1 1
+ D1 1
 Net 66 "/Outputs/VREF_8" "VREF_8"
- U24 3
+ U24 1
  U29 13
  C50 1
  R30 2
@@ -4275,32 +4275,32 @@ Net 68 "/Outputs/VOUT_4_REF" "VOUT_4_REF"
  U16 4
  C42 2
 Net 70 "/Outputs/VREF_0" "VREF_0"
- U22 3
+ U22 1
  R28 2
  C48 1
- U30 13
  U25 3
+ U30 13
 Net 74 "/Outputs/VOUT_9_REF" "VOUT_9_REF"
- C47 2
  U21 4
  U27 2
+ C47 2
 Net 75 "/Outputs/VOUT_8_REF" "VOUT_8_REF"
  C46 2
- U20 4
  U27 1
+ U20 4
 Net 76 "" ""
  U21 1
  R25 1
 Net 77 "/Outputs/VOUT_9_SENSE_HI" "VOUT_9_SENSE_HI"
- R60 3
  U11 4
+ R60 3
 Net 78 "/Outputs/VOUT_9_SENSE_LO" "VOUT_9_SENSE_LO"
  U11 5
  R60 1
 Net 79 "/Outputs/VOUT_1_REF" "VOUT_1_REF"
  C39 2
- U13 4
  U25 2
+ U13 4
 Net 80 "" ""
  R17 1
  U13 1
@@ -4315,11 +4315,11 @@ Net 83 "/Outputs/VOUT_1_SENSE_HI" "VOUT_1_SENSE_HI"
  U3 4
  R52 3
 Net 84 "/Outputs/VREF_4" "VREF_4"
- U26 3
  U28 13
+ U26 3
+ U23 1
  C49 1
  R29 2
- U23 3
 Net 85 "/Outputs/VOUT_7_REF" "VOUT_7_REF"
  U19 4
  U26 8
@@ -4384,58 +4384,58 @@ Net 102 "/Outputs/CH7_OE_RAW" "CH7_OE_RAW"
  R48 1
  Q10 D
 Net 104 "/Outputs/VOUT_3_REF" "VOUT_3_REF"
- U25 8
  U15 4
  C41 2
+ U25 8
 Net 105 "/Outputs/VOUT_2_REF" "VOUT_2_REF"
- U14 4
  C40 2
+ U14 4
  U25 7
 Net 106 "/Outputs/VOUT_0_REF" "VOUT_0_REF"
  U12 4
  C38 2
  U25 1
 Net 107 "/Outputs/VOUT_9_FILTERED" "VOUT_9_FILTERED"
+ R60 4
  C69 1
  C79 1
- R60 4
  L13 1
 Net 108 "/Outputs/VOUT_9_RAW" "VOUT_9_RAW"
  F11 1
  Q22 D
 Net 109 "" ""
- U12 1
  R16 1
+ U12 1
 Net 110 "/Outputs/CH9_OE_RAW" "CH9_OE_RAW"
+ Q22 G
  Q12 D
  R50 1
- Q22 G
 Net 111 "" ""
- U19 1
  R23 1
+ U19 1
 Net 112 "" ""
  R24 1
  U20 1
 Net 113 "/Outputs/VOUT_8_SENSE_AMP" "VOUT_8_SENSE_AMP"
- U29 2
  U10 6
+ U29 2
  U20 3
 Net 114 "" ""
- U18 1
  R22 1
+ U18 1
 Net 115 "/Outputs/VOUT_6_SENSE_HI" "VOUT_6_SENSE_HI"
  R57 3
  U8 4
 Net 116 "/Outputs/VOUT_6_SENSE_LO" "VOUT_6_SENSE_LO"
- U8 5
  R57 1
+ U8 5
 Net 117 "/Outputs/VOUT_7_SENSE_AMP" "VOUT_7_SENSE_AMP"
- U9 6
- U19 3
  U29 1
+ U19 3
+ U9 6
 Net 118 "/Outputs/VOUT_2" "VOUT_2"
- P12 5
  R53 2
+ P12 5
 Net 119 "/Outputs/VOUT_1" "VOUT_1"
  P12 3
  R52 2
@@ -4443,49 +4443,49 @@ Net 120 "/Outputs/VOUT_3" "VOUT_3"
  P12 7
  R54 2
 Net 121 "/Outputs/VOUT_4" "VOUT_4"
- R55 2
  P12 9
+ R55 2
 Net 122 "/Outputs/VOUT_5" "VOUT_5"
  R56 2
  P12 11
 Net 123 "/Outputs/VOUT_6" "VOUT_6"
- R57 2
  P12 13
+ R57 2
 Net 124 "/Outputs/VOUT_7" "VOUT_7"
- P12 15
  R58 2
+ P12 15
 Net 125 "/Outputs/VOUT_0" "VOUT_0"
  R51 2
  P12 1
 Net 126 "/Outputs/VOUT_3_SENSE_AMP" "VOUT_3_SENSE_AMP"
- U28 1
  U5 6
+ U28 1
  U15 3
 Net 127 "/Outputs/VOUT_3_SENSE_LO" "VOUT_3_SENSE_LO"
- U5 5
  R54 1
+ U5 5
 Net 128 "/Outputs/VOUT_3_SENSE_HI" "VOUT_3_SENSE_HI"
  R54 3
  U5 4
 Net 129 "" ""
- U14 1
  R18 1
+ U14 1
 Net 130 "" ""
- R19 1
  U15 1
+ R19 1
 Net 131 "/Outputs/VOUT_2_SENSE_LO" "VOUT_2_SENSE_LO"
- U4 5
  R53 1
+ U4 5
 Net 132 "/Outputs/VOUT_2_SENSE_HI" "VOUT_2_SENSE_HI"
- U4 4
  R53 3
+ U4 4
 Net 133 "/Outputs/VOUT_2_SENSE_AMP" "VOUT_2_SENSE_AMP"
- U30 4
  U4 6
+ U30 4
  U14 3
 Net 134 "/Outputs/VOUT_5_SENSE_HI" "VOUT_5_SENSE_HI"
- R56 3
  U7 4
+ R56 3
 Net 135 "/Outputs/VOUT_5_SENSE_LO" "VOUT_5_SENSE_LO"
  R56 1
  U7 5
@@ -4493,57 +4493,57 @@ Net 136 "" ""
  U17 1
  R21 1
 Net 137 "/Outputs/VOUT_5_SENSE_AMP" "VOUT_5_SENSE_AMP"
- U28 3
- U17 3
  U7 6
+ U17 3
+ U28 3
 Net 138 "" ""
- R20 1
  U16 1
+ R20 1
 Net 139 "/Outputs/VOUT_4_SENSE_AMP" "VOUT_4_SENSE_AMP"
- U16 3
  U6 6
  U28 2
+ U16 3
 Net 140 "/Outputs/VOUT_4_SENSE_LO" "VOUT_4_SENSE_LO"
- R55 1
  U6 5
+ R55 1
 Net 141 "/Outputs/VOUT_4_SENSE_HI" "VOUT_4_SENSE_HI"
  U6 4
  R55 3
 Net 142 "/Outputs/VOUT_1_FILTERED" "VOUT_1_FILTERED"
+ C71 1
  L5 1
  C61 1
- C71 1
  R52 4
 Net 143 "/Outputs/CH1_OE_RAW" "CH1_OE_RAW"
- Q4 D
- R42 1
  Q14 G
+ R42 1
+ Q4 D
 Net 144 "/Outputs/VOUT_1_RAW" "VOUT_1_RAW"
- F3 1
  Q14 D
+ F3 1
 Net 145 "/Outputs/VOUT_1_FUSED" "VOUT_1_FUSED"
- L5 2
  F3 2
+ L5 2
 Net 146 "/Outputs/VDD_TOP_DIV" "VDD_TOP_DIV"
- R14 2
  R15 1
+ R14 2
  U30 1
 Net 147 "/Outputs/CH2_OE_RAW" "CH2_OE_RAW"
  Q15 G
  Q5 D
  R43 1
 Net 148 "/Outputs/VOUT_2_RAW" "VOUT_2_RAW"
- F4 1
  Q15 D
+ F4 1
 Net 149 "/Outputs/VOUT_2_FUSED" "VOUT_2_FUSED"
- L6 2
  F4 2
+ L6 2
 Net 150 "/Outputs/VOUT_3_RAW" "VOUT_3_RAW"
- Q16 D
  F5 1
+ Q16 D
 Net 151 "/Outputs/VOUT_3_FUSED" "VOUT_3_FUSED"
- L7 2
  F5 2
+ L7 2
 Net 152 "/Outputs/VOUT_2_FILTERED" "VOUT_2_FILTERED"
  C72 1
  C62 1
