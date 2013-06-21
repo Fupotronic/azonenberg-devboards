@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 19 Jun 2013 11:42:21 PM EDT
+EESchema Schematic File Version 2  date Thu 20 Jun 2013 07:57:17 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 5 5
 Title "5V/12V 20A Power Distribution Unit"
-Date "19 jun 2013"
+Date "20 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Control module"
@@ -161,7 +161,7 @@ Text HLabel 5950 3250 0    60   Output ~ 0
 ADC0_SCK
 Text HLabel 5950 3350 0    60   Output ~ 0
 ADC0_MOSI
-Text HLabel 5950 3450 0    60   Input ~ 0
+Text HLabel 5450 3450 0    60   Input ~ 0
 ADC0_MISO
 Text Label 1950 3350 2    60   ~ 0
 GND
@@ -179,7 +179,7 @@ Text HLabel 5950 3650 0    60   Output ~ 0
 ADC1_SCK
 Text HLabel 5950 3750 0    60   Output ~ 0
 ADC1_MOSI
-Text HLabel 5950 3850 0    60   Input ~ 0
+Text HLabel 5450 3850 0    60   Input ~ 0
 ADC1_MISO
 Text HLabel 5950 3950 0    60   Output ~ 0
 ADC2_CS_N
@@ -187,7 +187,7 @@ Text HLabel 5950 4050 0    60   Output ~ 0
 ADC2_SCK
 Text HLabel 5950 4150 0    60   Output ~ 0
 ADC2_MOSI
-Text HLabel 5950 4250 0    60   Input ~ 0
+Text HLabel 5450 4250 0    60   Input ~ 0
 ADC2_MISO
 Text HLabel 5300 2950 0    60   BiDi ~ 0
 I2C_SDA
@@ -2088,4 +2088,53 @@ Wire Wire Line
 	5450 2700 5550 2700
 Text Label 5400 2950 0    60   ~ 0
 I2C_SDA
+$Comp
+L C C113
+U 1 1 51C2B5B0
+P 5950 1300
+F 0 "C113" H 6000 1400 50  0000 L CNN
+F 1 "0.1 uF" H 6000 1200 50  0000 L CNN
+	1    5950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C112
+U 1 1 51C2B5B6
+P 5550 1300
+F 0 "C112" H 5600 1400 50  0000 L CNN
+F 1 "0.1 uF" H 5600 1200 50  0000 L CNN
+	1    5550 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 1100
+Connection ~ 5550 1100
+Connection ~ 5550 1500
+Connection ~ 5950 1500
+$Comp
+L R R?
+U 1 1 51C3A0D7
+P 5700 3450
+F 0 "R?" V 5750 3650 50  0000 C CNN
+F 1 "49.9" V 5700 3450 50  0000 C CNN
+	1    5700 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 51C3A0FC
+P 5700 3850
+F 0 "R?" V 5750 4050 50  0000 C CNN
+F 1 "49.9" V 5700 3850 50  0000 C CNN
+	1    5700 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 51C3A106
+P 5700 4250
+F 0 "R?" V 5750 4450 50  0000 C CNN
+F 1 "49.9" V 5700 4250 50  0000 C CNN
+	1    5700 4250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
