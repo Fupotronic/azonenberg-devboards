@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Tue 18 Jun 2013 12:29:11 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Thu 20 Jun 2013 07:59:06 PM EDT
 
 BeginCmp
 TimeStamp = /515BE6C3/515BE997;
@@ -774,6 +774,20 @@ BeginCmp
 TimeStamp = /516B9F26/51C0004F;
 Reference = C111;
 ValeurCmp = 10_nF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /515D219D/51C2B5B6;
+Reference = C112;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /515D219D/51C2B5B0;
+Reference = C113;
+ValeurCmp = 0.1_uF;
 IdModule  = SM0402;
 EndCmp
 
@@ -2125,6 +2139,27 @@ BeginCmp
 TimeStamp = /515D219D/51C04251;
 Reference = R117;
 ValeurCmp = 1k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /515D219D/51C3A0D7;
+Reference = R118;
+ValeurCmp = 49.9;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /515D219D/51C3A0FC;
+Reference = R119;
+ValeurCmp = 49.9;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /515D219D/51C3A106;
+Reference = R120;
+ValeurCmp = 49.9;
 IdModule  = SM0603;
 EndCmp
 
