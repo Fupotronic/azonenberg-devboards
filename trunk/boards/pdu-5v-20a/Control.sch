@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 22 Jun 2013 03:05:49 AM EDT
+EESchema Schematic File Version 2  date Sat 22 Jun 2013 05:52:20 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -244,41 +244,41 @@ Ethernet interface (2.5V)
 Text Notes 9950 2750 0    60   ~ 0
 Config and indicators (3.3V)
 NoConn ~ 6050 4450
-Text HLabel 13100 4550 0    60   Input ~ 0
+Text HLabel 13100 8150 0    60   Input ~ 0
 RGMII_RXD0
-Text HLabel 13100 4750 0    60   Input ~ 0
+Text HLabel 13100 4550 0    60   Input ~ 0
 RGMII_RXD1
-Text HLabel 13100 5150 0    60   Input ~ 0
+Text HLabel 13100 5750 0    60   Input ~ 0
 RGMII_RXC
-Text HLabel 13100 4850 0    60   Input ~ 0
+Text HLabel 13100 4350 0    60   Input ~ 0
 RGMII_RXD2
-Text HLabel 13100 4950 0    60   Input ~ 0
+Text HLabel 13100 4250 0    60   Input ~ 0
 RGMII_RXD3
-Text HLabel 13100 5050 0    60   Input ~ 0
+Text HLabel 13100 8250 0    60   Input ~ 0
 RGMII_RX_CTL
-Text HLabel 13100 5250 0    60   Output ~ 0
+Text HLabel 13100 3150 0    60   Output ~ 0
 RGMII_TXD0
-Text HLabel 13100 5350 0    60   Output ~ 0
+Text HLabel 13100 3850 0    60   Output ~ 0
 RGMII_TXD1
-Text HLabel 13100 5750 0    60   Output ~ 0
+Text HLabel 13100 4050 0    60   Output ~ 0
 RGMII_TXC
-Text HLabel 13100 5450 0    60   Output ~ 0
+Text HLabel 13100 3950 0    60   Output ~ 0
 RGMII_TXD2
-Text HLabel 13100 5550 0    60   Output ~ 0
+Text HLabel 13100 3550 0    60   Output ~ 0
 RGMII_TXD3
-Text HLabel 13100 5650 0    60   Output ~ 0
+Text HLabel 13100 4150 0    60   Output ~ 0
 RGMII_TX_CTL
-Text HLabel 13100 6050 0    60   Output ~ 0
+Text HLabel 13100 5850 0    60   Output ~ 0
 ETH_MDC
-Text HLabel 13100 6150 0    60   Output ~ 0
+Text HLabel 13100 6450 0    60   Output ~ 0
 ETH_CLK_25MHZ
-Text HLabel 13100 6250 0    60   Output ~ 0
+Text HLabel 13100 6650 0    60   Output ~ 0
 ETH_RESET_N
 Text HLabel 13100 5950 0    60   BiDi ~ 0
 ETH_MDIO
-Text HLabel 13100 6350 0    60   Input ~ 0
+Text HLabel 13100 6050 0    60   Input ~ 0
 ETH_INT_N
-Text HLabel 13100 5850 0    60   Input ~ 0
+Text HLabel 13100 5350 0    60   Input ~ 0
 ETH_CLK125
 $Comp
 L C C80
@@ -479,25 +479,15 @@ Text Label 2100 10250 2    60   ~ 0
 Text Label 2100 10650 2    60   ~ 0
 GND
 NoConn ~ 13200 4450
-NoConn ~ 13200 4350
-NoConn ~ 13200 4250
-NoConn ~ 13200 4150
-NoConn ~ 13200 4050
-NoConn ~ 13200 3950
-NoConn ~ 13200 3850
 NoConn ~ 13200 3750
 NoConn ~ 13200 3650
-NoConn ~ 13200 3550
 NoConn ~ 13200 3450
 NoConn ~ 13200 3350
 NoConn ~ 13200 3250
-NoConn ~ 13200 3150
 NoConn ~ 13200 3050
 NoConn ~ 13200 2950
 NoConn ~ 13200 2850
-NoConn ~ 13200 6450
 NoConn ~ 13200 6550
-NoConn ~ 13200 6650
 NoConn ~ 13200 6750
 NoConn ~ 13200 6850
 NoConn ~ 13200 6950
@@ -512,8 +502,6 @@ NoConn ~ 13200 7750
 NoConn ~ 13200 7850
 NoConn ~ 13200 7950
 NoConn ~ 13200 8050
-NoConn ~ 13200 8150
-NoConn ~ 13200 8250
 $Comp
 L R R61
 U 1 1 51C32D40
@@ -1802,41 +1790,13 @@ Wire Wire Line
 Wire Wire Line
 	5950 5750 6050 5750
 Wire Wire Line
-	13100 5150 13200 5150
-Wire Wire Line
 	13100 4550 13200 4550
-Wire Wire Line
-	13200 4750 13100 4750
-Wire Wire Line
-	13100 4850 13200 4850
-Wire Wire Line
-	13100 4950 13200 4950
-Wire Wire Line
-	13200 5050 13100 5050
-Wire Wire Line
-	13100 5250 13200 5250
-Wire Wire Line
-	13100 5350 13200 5350
-Wire Wire Line
-	13200 5450 13100 5450
-Wire Wire Line
-	13100 5550 13200 5550
-Wire Wire Line
-	13200 5650 13100 5650
-Wire Wire Line
-	13100 5750 13200 5750
 Wire Wire Line
 	13100 5850 13200 5850
 Wire Wire Line
 	13200 5950 13100 5950
 Wire Wire Line
 	13100 6050 13200 6050
-Wire Wire Line
-	13200 6150 13100 6150
-Wire Wire Line
-	13100 6250 13200 6250
-Wire Wire Line
-	13100 6350 13200 6350
 Wire Wire Line
 	2100 9150 2800 9150
 Connection ~ 2450 9150
@@ -2112,4 +2072,44 @@ NoConn ~ 16550 3150
 NoConn ~ 16550 3050
 NoConn ~ 16550 2950
 NoConn ~ 16550 2850
+NoConn ~ 13200 5250
+NoConn ~ 13200 5550
+Wire Wire Line
+	13100 3150 13200 3150
+Wire Wire Line
+	13200 3550 13100 3550
+Wire Wire Line
+	13100 3850 13200 3850
+Wire Wire Line
+	13200 3950 13100 3950
+Wire Wire Line
+	13100 4050 13200 4050
+NoConn ~ 13200 5650
+Wire Wire Line
+	13100 4150 13200 4150
+Wire Wire Line
+	13100 4250 13200 4250
+NoConn ~ 13200 4950
+Wire Wire Line
+	13100 4350 13200 4350
+NoConn ~ 13200 4850
+NoConn ~ 13200 4750
+Wire Wire Line
+	13100 8150 13200 8150
+NoConn ~ 13200 5050
+Wire Wire Line
+	13100 8250 13200 8250
+NoConn ~ 13200 5150
+Wire Wire Line
+	13100 5750 13200 5750
+NoConn ~ 13200 5450
+NoConn ~ 13200 6350
+Wire Wire Line
+	13100 5350 13200 5350
+NoConn ~ 13200 6250
+Wire Wire Line
+	13100 6650 13200 6650
+Wire Wire Line
+	13100 6450 13200 6450
+NoConn ~ 13200 6150
 $EndSCHEMATC
