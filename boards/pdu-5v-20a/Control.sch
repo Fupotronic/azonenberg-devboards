@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 22 Jun 2013 01:37:30 AM EDT
+EESchema Schematic File Version 2  date Sat 22 Jun 2013 03:05:49 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -146,13 +146,13 @@ Text Label 1900 3050 2    60   ~ 0
 JTAG_TDI
 Text Label 1900 3150 2    60   ~ 0
 JTAG_TCK
-Text HLabel 5950 4950 0    60   Output ~ 0
+Text HLabel 5950 5550 0    60   Output ~ 0
 ADC0_CS_N
 Text HLabel 5950 4550 0    60   Output ~ 0
 ADC0_SCK
-Text HLabel 5950 5550 0    60   Output ~ 0
+Text HLabel 5950 4750 0    60   Output ~ 0
 ADC0_MOSI
-Text HLabel 5450 3750 0    60   Input ~ 0
+Text HLabel 5450 4650 0    60   Input ~ 0
 ADC0_MISO
 Text Label 1950 3350 2    60   ~ 0
 GND
@@ -184,9 +184,9 @@ Text HLabel 5300 6450 0    60   BiDi ~ 0
 I2C_SDA
 Text HLabel 5300 6550 0    60   Output ~ 0
 I2C_SCL
-Text HLabel 5950 4750 0    60   Output ~ 0
+Text HLabel 5950 6150 0    60   Output ~ 0
 CH0_OE
-Text HLabel 5950 4650 0    60   Input ~ 0
+Text HLabel 5950 5950 0    60   Input ~ 0
 CH0_OVERCURRENT
 Text HLabel 5950 5750 0    60   Output ~ 0
 CH1_OE
@@ -648,17 +648,7 @@ NoConn ~ 16550 5650
 NoConn ~ 16550 5550
 NoConn ~ 16550 5450
 NoConn ~ 16550 5250
-NoConn ~ 16550 4850
-NoConn ~ 16550 4750
-NoConn ~ 16550 4650
-NoConn ~ 16550 4550
-NoConn ~ 16550 4450
-NoConn ~ 16550 4350
-NoConn ~ 16550 4250
-NoConn ~ 16550 4150
-NoConn ~ 16550 4050
 NoConn ~ 16550 3850
-NoConn ~ 16550 3950
 NoConn ~ 9650 6550
 NoConn ~ 9650 6450
 NoConn ~ 9650 6350
@@ -679,9 +669,9 @@ Text Label 6300 1000 2    60   ~ 0
 TEMP_ALERT_1
 Text Label 4950 1000 0    60   ~ 0
 TEMP_ALERT_0
-Text Label 5500 6650 2    60   ~ 0
+Text Label 16550 4950 2    60   ~ 0
 TEMP_ALERT_0
-Text Label 5500 6750 2    60   ~ 0
+Text Label 5950 6100 2    60   ~ 0
 TEMP_ALERT_1
 Text Label 6750 9150 2    60   ~ 0
 PROG_B_N
@@ -1329,25 +1319,25 @@ Text Label 19250 3750 2    60   ~ 0
 GPIO_8
 Text Label 19250 3850 2    60   ~ 0
 GPIO_9
-Text Label 16550 2850 2    60   ~ 0
+Text Label 16550 3950 2    60   ~ 0
 GPIO_0
-Text Label 16550 2950 2    60   ~ 0
+Text Label 16550 4050 2    60   ~ 0
 GPIO_1
-Text Label 16550 3050 2    60   ~ 0
+Text Label 16550 4150 2    60   ~ 0
 GPIO_2
-Text Label 16550 3150 2    60   ~ 0
+Text Label 16550 4250 2    60   ~ 0
 GPIO_3
-Text Label 16550 3250 2    60   ~ 0
+Text Label 16550 4350 2    60   ~ 0
 GPIO_4
-Text Label 16550 3350 2    60   ~ 0
+Text Label 16550 4450 2    60   ~ 0
 GPIO_5
-Text Label 16550 3450 2    60   ~ 0
+Text Label 16550 4550 2    60   ~ 0
 GPIO_6
-Text Label 16550 3550 2    60   ~ 0
+Text Label 16550 4650 2    60   ~ 0
 GPIO_7
-Text Label 16550 3650 2    60   ~ 0
+Text Label 16550 4750 2    60   ~ 0
 GPIO_8
-Text Label 16550 4950 2    60   ~ 0
+Text Label 16550 4850 2    60   ~ 0
 GPIO_9
 Text Notes 19750 2850 0    60   ~ 0
 GPIO header
@@ -1481,10 +1471,10 @@ $EndComp
 $Comp
 L R R118
 U 1 1 51C3A0D7
-P 5700 3750
-F 0 "R118" V 5750 3950 50  0000 C CNN
-F 1 "49.9" V 5700 3750 50  0000 C CNN
-	1    5700 3750
+P 5700 4650
+F 0 "R118" V 5750 4850 50  0000 C CNN
+F 1 "49.9" V 5700 4650 50  0000 C CNN
+	1    5700 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1517,9 +1507,6 @@ F 1 "XC6SLX25-2FTG256C" H 17500 3000 60  0000 C CNN
 	4    17700 5750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6050 6050
-NoConn ~ 6050 6150
-NoConn ~ 6050 5950
 NoConn ~ 6050 5850
 NoConn ~ 6050 3650
 NoConn ~ 6050 3850
@@ -1805,15 +1792,11 @@ Wire Wire Line
 Wire Wire Line
 	5950 3550 6050 3550
 Wire Wire Line
-	5950 3750 6050 3750
-Wire Wire Line
 	5950 4550 6050 4550
 Wire Wire Line
 	5950 4650 6050 4650
 Wire Wire Line
 	6050 4750 5950 4750
-Wire Wire Line
-	6050 4950 5950 4950
 Wire Wire Line
 	6050 5550 5950 5550
 Wire Wire Line
@@ -1939,10 +1922,6 @@ Wire Wire Line
 	6300 1000 6400 1000
 Wire Wire Line
 	4950 1000 4850 1000
-Wire Wire Line
-	5500 6650 6050 6650
-Wire Wire Line
-	6050 6750 5500 6750
 Wire Wire Line
 	6750 9150 6750 9400
 Wire Wire Line
@@ -2112,4 +2091,25 @@ Wire Wire Line
 Connection ~ 4900 9850
 Text Label 12150 1400 2    60   ~ 0
 GND
+NoConn ~ 6050 3750
+Wire Wire Line
+	5950 5950 6050 5950
+NoConn ~ 6050 4950
+Wire Wire Line
+	5950 6150 6050 6150
+Wire Wire Line
+	5950 6100 5950 6050
+Wire Wire Line
+	5950 6050 6050 6050
+NoConn ~ 6050 6750
+NoConn ~ 6050 6650
+NoConn ~ 16550 3650
+NoConn ~ 16550 3550
+NoConn ~ 16550 3450
+NoConn ~ 16550 3350
+NoConn ~ 16550 3250
+NoConn ~ 16550 3150
+NoConn ~ 16550 3050
+NoConn ~ 16550 2950
+NoConn ~ 16550 2850
 $EndSCHEMATC
