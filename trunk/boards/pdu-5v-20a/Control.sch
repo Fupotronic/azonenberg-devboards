@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 21 Jun 2013 10:24:06 PM EDT
+EESchema Schematic File Version 2  date Fri 21 Jun 2013 10:56:56 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -146,13 +146,13 @@ Text Label 1900 3050 2    60   ~ 0
 JTAG_TDI
 Text Label 1900 3150 2    60   ~ 0
 JTAG_TCK
-Text HLabel 5950 3150 0    60   Output ~ 0
+Text HLabel 5950 5750 0    60   Output ~ 0
 ADC0_CS_N
-Text HLabel 5950 3250 0    60   Output ~ 0
+Text HLabel 5950 5450 0    60   Output ~ 0
 ADC0_SCK
-Text HLabel 5950 3350 0    60   Output ~ 0
+Text HLabel 5950 5550 0    60   Output ~ 0
 ADC0_MOSI
-Text HLabel 5450 3450 0    60   Input ~ 0
+Text HLabel 5450 3750 0    60   Input ~ 0
 ADC0_MISO
 Text Label 1950 3350 2    60   ~ 0
 GND
@@ -166,11 +166,11 @@ Text Notes 6700 1750 0    60   ~ 0
 Address: 7'b1001001
 Text HLabel 5950 3550 0    60   Output ~ 0
 ADC1_CS_N
-Text HLabel 5950 3650 0    60   Output ~ 0
+Text HLabel 5950 4050 0    60   Output ~ 0
 ADC1_SCK
-Text HLabel 5950 3750 0    60   Output ~ 0
+Text HLabel 5950 3450 0    60   Output ~ 0
 ADC1_MOSI
-Text HLabel 5450 3850 0    60   Input ~ 0
+Text HLabel 5550 4150 0    60   Input ~ 0
 ADC1_MISO
 Text HLabel 16550 7350 0    60   Output ~ 0
 ADC2_CS_N
@@ -180,9 +180,9 @@ Text HLabel 16550 7250 0    60   Output ~ 0
 ADC2_MOSI
 Text HLabel 16050 6550 0    60   Input ~ 0
 ADC2_MISO
-Text HLabel 5300 2950 0    60   BiDi ~ 0
+Text HLabel 5300 6450 0    60   BiDi ~ 0
 I2C_SDA
-Text HLabel 5300 3050 0    60   Output ~ 0
+Text HLabel 5300 6550 0    60   Output ~ 0
 I2C_SCL
 Text HLabel 5950 4750 0    60   Output ~ 0
 CH0_OE
@@ -194,25 +194,25 @@ Text HLabel 5950 4850 0    60   Input ~ 0
 CH1_OVERCURRENT
 Text HLabel 5950 5150 0    60   Output ~ 0
 CH2_OE
-Text HLabel 5950 5050 0    60   Input ~ 0
+Text HLabel 5950 4250 0    60   Input ~ 0
 CH2_OVERCURRENT
-Text HLabel 5950 5350 0    60   Output ~ 0
+Text HLabel 5950 5250 0    60   Output ~ 0
 CH3_OE
-Text HLabel 5950 5250 0    60   Input ~ 0
+Text HLabel 5950 3950 0    60   Input ~ 0
 CH3_OVERCURRENT
-Text HLabel 5950 5550 0    60   Output ~ 0
+Text HLabel 5950 3350 0    60   Output ~ 0
 CH4_OE
-Text HLabel 5950 5450 0    60   Input ~ 0
+Text HLabel 5950 3250 0    60   Input ~ 0
 CH4_OVERCURRENT
-Text HLabel 5950 5750 0    60   Output ~ 0
+Text HLabel 5950 3150 0    60   Output ~ 0
 CH5_OE
-Text HLabel 5950 5650 0    60   Input ~ 0
+Text HLabel 5950 3050 0    60   Input ~ 0
 CH5_OVERCURRENT
-Text HLabel 5950 5950 0    60   Output ~ 0
+Text HLabel 5950 2950 0    60   Output ~ 0
 CH6_OE
-Text HLabel 5950 5850 0    60   Input ~ 0
+Text HLabel 16550 8150 0    60   Input ~ 0
 CH6_OVERCURRENT
-Text HLabel 5950 6150 0    60   Output ~ 0
+Text HLabel 16550 8050 0    60   Output ~ 0
 CH7_OE
 Text HLabel 16550 6150 0    60   Input ~ 0
 CH7_OVERCURRENT
@@ -780,9 +780,9 @@ Connection ~ 6300 1500
 Connection ~ 4400 3750
 Connection ~ 4400 5250
 Wire Wire Line
-	5300 2950 6050 2950
+	5300 6450 6050 6450
 Wire Wire Line
-	5300 3050 6050 3050
+	5300 6550 6050 6550
 Wire Wire Line
 	5950 3150 6050 3150
 Wire Wire Line
@@ -792,11 +792,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 3550 6050 3550
 Wire Wire Line
-	6050 3650 5950 3650
-Wire Wire Line
 	5950 3750 6050 3750
-Wire Wire Line
-	6050 3850 5950 3850
 Wire Wire Line
 	5950 4550 6050 4550
 Wire Wire Line
@@ -808,27 +804,13 @@ Wire Wire Line
 Wire Wire Line
 	6050 4950 5950 4950
 Wire Wire Line
-	5950 5050 6050 5050
-Wire Wire Line
 	6050 5150 5950 5150
-Wire Wire Line
-	5950 5250 6050 5250
-Wire Wire Line
-	6050 5350 5950 5350
 Wire Wire Line
 	5950 5450 6050 5450
 Wire Wire Line
 	6050 5550 5950 5550
 Wire Wire Line
-	5950 5650 6050 5650
-Wire Wire Line
 	5950 5750 6050 5750
-Wire Wire Line
-	6050 5850 5950 5850
-Wire Wire Line
-	5950 5950 6050 5950
-Wire Wire Line
-	6050 6150 5950 6150
 Wire Wire Line
 	13100 5150 13200 5150
 Wire Wire Line
@@ -1058,8 +1040,6 @@ Text Label 14600 1200 0    60   ~ 0
 CLK_25MHZ
 Wire Wire Line
 	14600 1200 14500 1200
-NoConn ~ 16550 8150
-NoConn ~ 16550 8050
 NoConn ~ 16550 7950
 NoConn ~ 16550 7850
 NoConn ~ 16550 7750
@@ -2032,13 +2012,13 @@ Wire Wire Line
 	19350 3050 19250 3050
 Wire Wire Line
 	19250 3150 19350 3150
-Text Label 5400 3050 0    60   ~ 0
+Text Label 5400 6550 0    60   ~ 0
 I2C_SCL
 Wire Wire Line
 	6050 2850 6050 2700
 Wire Wire Line
 	5450 2700 5550 2700
-Text Label 5400 2950 0    60   ~ 0
+Text Label 5400 6450 0    60   ~ 0
 I2C_SDA
 $Comp
 L C C113
@@ -2065,19 +2045,19 @@ Connection ~ 5950 1500
 $Comp
 L R R118
 U 1 1 51C3A0D7
-P 5700 3450
-F 0 "R118" V 5750 3650 50  0000 C CNN
-F 1 "49.9" V 5700 3450 50  0000 C CNN
-	1    5700 3450
+P 5700 3750
+F 0 "R118" V 5750 3950 50  0000 C CNN
+F 1 "49.9" V 5700 3750 50  0000 C CNN
+	1    5700 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R119
 U 1 1 51C3A0FC
-P 5700 3850
-F 0 "R119" V 5750 4050 50  0000 C CNN
-F 1 "49.9" V 5700 3850 50  0000 C CNN
-	1    5700 3850
+P 5800 4150
+F 0 "R119" V 5850 3900 50  0000 C CNN
+F 1 "49.9" V 5800 4150 50  0000 C CNN
+	1    5800 4150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2089,17 +2069,6 @@ F 1 "49.9" V 16300 6550 50  0000 C CNN
 	1    16300 6550
 	0    -1   -1   0   
 $EndComp
-$Comp
-L XC6SLX25-XFTG256-SEG U31
-U 1 1 516B6717
-P 7200 5750
-F 0 "U31" H 8000 3000 60  0000 C CNN
-F 1 "XC6SLX25-2FTG256C" H 7000 3000 60  0000 C CNN
-	1    7200 5750
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6050 6450
-NoConn ~ 6050 6550
 NoConn ~ 16550 6050
 NoConn ~ 6050 6250
 NoConn ~ 6050 6350
@@ -2115,8 +2084,33 @@ $EndComp
 NoConn ~ 6050 6050
 Wire Wire Line
 	5950 3250 6050 3250
-NoConn ~ 6050 4050
-NoConn ~ 6050 4250
-NoConn ~ 6050 4150
-NoConn ~ 6050 3950
+NoConn ~ 6050 6150
+Wire Wire Line
+	5950 2950 6050 2950
+Wire Wire Line
+	5950 3050 6050 3050
+NoConn ~ 6050 5950
+NoConn ~ 6050 5850
+NoConn ~ 6050 5650
+NoConn ~ 6050 3650
+NoConn ~ 6050 3850
+$Comp
+L XC6SLX25-XFTG256-SEG U31
+U 1 1 516B6717
+P 7200 5750
+F 0 "U31" H 8000 3000 60  0000 C CNN
+F 1 "XC6SLX25-2FTG256C" H 7000 3000 60  0000 C CNN
+	1    7200 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3950 6050 3950
+Wire Wire Line
+	5950 4050 6050 4050
+Wire Wire Line
+	5950 5250 6050 5250
+NoConn ~ 6050 5350
+Wire Wire Line
+	5950 4250 6050 4250
+NoConn ~ 6050 5050
 $EndSCHEMATC
