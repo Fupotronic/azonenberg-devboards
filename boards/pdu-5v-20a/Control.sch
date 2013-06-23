@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 22 Jun 2013 08:38:59 PM EDT
+EESchema Schematic File Version 2  date Sat 22 Jun 2013 10:17:44 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -631,7 +631,6 @@ NoConn ~ 16550 6250
 NoConn ~ 16550 5950
 NoConn ~ 16550 5850
 NoConn ~ 16550 5550
-NoConn ~ 9650 6550
 NoConn ~ 9650 6450
 NoConn ~ 9650 6350
 NoConn ~ 9650 2850
@@ -1290,25 +1289,25 @@ Text Label 19250 3750 2    60   ~ 0
 GPIO_8
 Text Label 19250 3850 2    60   ~ 0
 GPIO_9
-Text Label 9650 6150 2    60   ~ 0
+Text Label 9500 4850 2    60   ~ 0
 GPIO_0
-Text Label 9650 6250 2    60   ~ 0
+Text Label 9500 5250 2    60   ~ 0
 GPIO_1
 Text Label 9500 5150 2    60   ~ 0
 GPIO_2
-Text Label 9500 5250 2    60   ~ 0
-GPIO_3
 Text Label 9500 5350 2    60   ~ 0
-GPIO_4
+GPIO_3
 Text Label 9500 5450 2    60   ~ 0
-GPIO_5
+GPIO_4
 Text Label 9500 5550 2    60   ~ 0
+GPIO_5
+Text Label 9500 6250 2    60   ~ 0
 GPIO_6
-Text Label 9500 5650 2    60   ~ 0
-GPIO_7
 Text Label 9500 5750 2    60   ~ 0
+GPIO_7
+Text Label 9500 6150 2    60   ~ 0
 GPIO_8
-Text Label 9500 5850 2    60   ~ 0
+Text Label 9500 6550 2    60   ~ 0
 GPIO_9
 Text Notes 19750 2850 0    60   ~ 0
 GPIO header
@@ -1896,12 +1895,6 @@ Connection ~ 9250 10650
 Wire Wire Line
 	9500 5150 9650 5150
 Wire Wire Line
-	9500 5850 9650 5850
-Wire Wire Line
-	9650 5750 9500 5750
-Wire Wire Line
-	9500 5650 9650 5650
-Wire Wire Line
 	9650 5550 9500 5550
 Wire Wire Line
 	9500 5450 9650 5450
@@ -2063,7 +2056,6 @@ NoConn ~ 16550 4250
 NoConn ~ 9650 4950
 NoConn ~ 9650 5050
 NoConn ~ 9650 4750
-NoConn ~ 9650 4850
 NoConn ~ 9650 4550
 NoConn ~ 9650 4650
 NoConn ~ 9650 4150
@@ -2082,4 +2074,16 @@ F 1 "XC6SLX25-2FTG256C" H 10600 3000 60  0000 C CNN
 $EndComp
 NoConn ~ 9650 6050
 NoConn ~ 9650 5950
+Wire Wire Line
+	9650 6150 9500 6150
+Wire Wire Line
+	9650 6550 9500 6550
+Wire Wire Line
+	9500 6250 9650 6250
+NoConn ~ 9650 5650
+Wire Wire Line
+	9650 5750 9500 5750
+NoConn ~ 9650 5850
+Wire Wire Line
+	9500 4850 9650 4850
 $EndSCHEMATC
