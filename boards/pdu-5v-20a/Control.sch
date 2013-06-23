@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 22 Jun 2013 05:52:20 PM EDT
+EESchema Schematic File Version 2  date Sat 22 Jun 2013 08:38:59 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 5 5
 Title "5V/12V 20A Power Distribution Unit"
-Date "22 jun 2013"
+Date "23 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Control module"
@@ -228,7 +228,7 @@ Text HLabel 4500 4750 2    60   Input ~ 0
 2V5
 Text Label 4500 5250 0    60   ~ 0
 3V3
-Text Label 16550 5350 2    60   ~ 0
+Text Label 16550 5450 2    60   ~ 0
 CLK_25MHZ
 $Comp
 L XC6SLX25-XFTG256-SEG U31
@@ -493,7 +493,6 @@ NoConn ~ 13200 6850
 NoConn ~ 13200 6950
 NoConn ~ 13200 7050
 NoConn ~ 13200 7150
-NoConn ~ 13200 7250
 NoConn ~ 13200 7350
 NoConn ~ 13200 7450
 NoConn ~ 13200 7550
@@ -631,17 +630,10 @@ NoConn ~ 16550 6350
 NoConn ~ 16550 6250
 NoConn ~ 16550 5950
 NoConn ~ 16550 5850
-NoConn ~ 16550 5750
-NoConn ~ 16550 5650
 NoConn ~ 16550 5550
-NoConn ~ 16550 5450
-NoConn ~ 16550 5250
-NoConn ~ 16550 3850
 NoConn ~ 9650 6550
 NoConn ~ 9650 6450
 NoConn ~ 9650 6350
-NoConn ~ 9650 6250
-NoConn ~ 9650 6150
 NoConn ~ 9650 2850
 NoConn ~ 9650 3150
 NoConn ~ 9650 3250
@@ -1131,57 +1123,48 @@ F 1 "RED" H 9050 13050 50  0000 C CNN
 $EndComp
 Text Label 9250 10350 0    60   ~ 0
 GND
-Text Label 9500 3850 2    60   ~ 0
+Text Label 13200 7250 2    60   ~ 0
 FAULT
-Text Label 9500 3950 2    60   ~ 0
+Text Label 16550 3250 2    60   ~ 0
 CH0_STATUS
-Text Label 9500 4050 2    60   ~ 0
+Text Label 16550 3350 2    60   ~ 0
 CH0_FAULT
-Text Label 9500 4150 2    60   ~ 0
+Text Label 16550 3450 2    60   ~ 0
 CH1_STATUS
-Text Label 9500 4250 2    60   ~ 0
+Text Label 16550 3550 2    60   ~ 0
 CH1_FAULT
-Text Label 9500 4350 2    60   ~ 0
+Text Label 16550 3750 2    60   ~ 0
 CH2_STATUS
-Text Label 9500 4450 2    60   ~ 0
+Text Label 16550 3150 2    60   ~ 0
 CH2_FAULT
-Text Label 9500 4550 2    60   ~ 0
+Text Label 16550 2950 2    60   ~ 0
 CH3_STATUS
-Text Label 9500 4650 2    60   ~ 0
+Text Label 16550 3650 2    60   ~ 0
 CH3_FAULT
-Text Label 9500 4750 2    60   ~ 0
+Text Label 16550 3850 2    60   ~ 0
 CH4_STATUS
-Text Label 9500 4850 2    60   ~ 0
+Text Label 16550 3950 2    60   ~ 0
 CH4_FAULT
-Text Label 9500 4950 2    60   ~ 0
+Text Label 16550 5250 2    60   ~ 0
 CH5_STATUS
-Text Label 9500 5050 2    60   ~ 0
+Text Label 16550 4150 2    60   ~ 0
 CH5_FAULT
-Text Label 9500 5150 2    60   ~ 0
+Text Label 16550 5750 2    60   ~ 0
 CH6_STATUS
-Text Label 9500 5250 2    60   ~ 0
+Text Label 16550 5650 2    60   ~ 0
 CH6_FAULT
-Text Label 9500 5350 2    60   ~ 0
+Text Label 16550 4450 2    60   ~ 0
 CH7_STATUS
-Text Label 9500 5450 2    60   ~ 0
+Text Label 16550 4350 2    60   ~ 0
 CH7_FAULT
-Text Label 9500 5550 2    60   ~ 0
+Text Label 16550 4750 2    60   ~ 0
 CH8_STATUS
-Text Label 9500 5650 2    60   ~ 0
+Text Label 16550 4550 2    60   ~ 0
 CH8_FAULT
-Text Label 9500 5750 2    60   ~ 0
+Text Label 16550 4850 2    60   ~ 0
 CH9_STATUS
-Text Label 9500 5850 2    60   ~ 0
+Text Label 16550 4650 2    60   ~ 0
 CH9_FAULT
-$Comp
-L XC6SLX25-XFTG256-SEG U31
-U 3 1 516B6794
-P 10800 5750
-F 0 "U31" H 11600 3000 60  0000 C CNN
-F 1 "XC6SLX25-2FTG256C" H 10600 3000 60  0000 C CNN
-	3    10800 5750
-	1    0    0    -1  
-$EndComp
 Text Label 4500 3750 0    60   ~ 0
 3V3
 $Comp
@@ -1307,25 +1290,25 @@ Text Label 19250 3750 2    60   ~ 0
 GPIO_8
 Text Label 19250 3850 2    60   ~ 0
 GPIO_9
-Text Label 16550 3950 2    60   ~ 0
+Text Label 9650 6150 2    60   ~ 0
 GPIO_0
-Text Label 16550 4050 2    60   ~ 0
+Text Label 9650 6250 2    60   ~ 0
 GPIO_1
-Text Label 16550 4150 2    60   ~ 0
+Text Label 9500 5150 2    60   ~ 0
 GPIO_2
-Text Label 16550 4250 2    60   ~ 0
+Text Label 9500 5250 2    60   ~ 0
 GPIO_3
-Text Label 16550 4350 2    60   ~ 0
+Text Label 9500 5350 2    60   ~ 0
 GPIO_4
-Text Label 16550 4450 2    60   ~ 0
+Text Label 9500 5450 2    60   ~ 0
 GPIO_5
-Text Label 16550 4550 2    60   ~ 0
+Text Label 9500 5550 2    60   ~ 0
 GPIO_6
-Text Label 16550 4650 2    60   ~ 0
+Text Label 9500 5650 2    60   ~ 0
 GPIO_7
-Text Label 16550 4750 2    60   ~ 0
+Text Label 9500 5750 2    60   ~ 0
 GPIO_8
-Text Label 16550 4850 2    60   ~ 0
+Text Label 9500 5850 2    60   ~ 0
 GPIO_9
 Text Notes 19750 2850 0    60   ~ 0
 GPIO header
@@ -1368,9 +1351,9 @@ Text Label 16350 950  0    60   ~ 0
 VOLTAGE_MODE_5V
 Text Label 16350 1550 0    60   ~ 0
 VOLTAGE_MODE_12V
-Text Label 9500 5950 2    60   ~ 0
+Text Label 9650 4350 2    60   ~ 0
 VOLTAGE_MODE_5V
-Text Label 9500 6050 2    60   ~ 0
+Text Label 9650 4450 2    60   ~ 0
 VOLTAGE_MODE_12V
 Text Notes 9950 1750 0    60   ~ 0
 Place series terminators near flash
@@ -1433,7 +1416,6 @@ F 1 "1k" V 8850 3750 50  0000 C CNN
 	1    8850 3750
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 16550 3750
 Text Label 5400 6550 0    60   ~ 0
 I2C_SCL
 Text Label 5400 6450 0    60   ~ 0
@@ -1912,32 +1894,6 @@ Connection ~ 9250 13150
 Connection ~ 9250 11250
 Connection ~ 9250 10650
 Wire Wire Line
-	9650 3850 9500 3850
-Wire Wire Line
-	9500 3950 9650 3950
-Wire Wire Line
-	9500 4050 9650 4050
-Wire Wire Line
-	9650 4150 9500 4150
-Wire Wire Line
-	9500 4250 9650 4250
-Wire Wire Line
-	9500 4350 9650 4350
-Wire Wire Line
-	9650 4450 9500 4450
-Wire Wire Line
-	9500 4550 9650 4550
-Wire Wire Line
-	9650 4650 9500 4650
-Wire Wire Line
-	9500 4750 9650 4750
-Wire Wire Line
-	9650 4850 9500 4850
-Wire Wire Line
-	9500 4950 9650 4950
-Wire Wire Line
-	9650 5050 9500 5050
-Wire Wire Line
 	9500 5150 9650 5150
 Wire Wire Line
 	9500 5850 9650 5850
@@ -1973,10 +1929,6 @@ Wire Wire Line
 	16250 1250 16350 1250
 Connection ~ 16350 1450
 Connection ~ 16350 1050
-Wire Wire Line
-	9500 6050 9650 6050
-Wire Wire Line
-	9650 5950 9500 5950
 Wire Wire Line
 	2050 7050 1950 7050
 Connection ~ 1950 7050
@@ -2063,14 +2015,7 @@ Wire Wire Line
 	5950 6050 6050 6050
 NoConn ~ 6050 6750
 NoConn ~ 6050 6650
-NoConn ~ 16550 3650
-NoConn ~ 16550 3550
-NoConn ~ 16550 3450
-NoConn ~ 16550 3350
-NoConn ~ 16550 3250
-NoConn ~ 16550 3150
 NoConn ~ 16550 3050
-NoConn ~ 16550 2950
 NoConn ~ 16550 2850
 NoConn ~ 13200 5250
 NoConn ~ 13200 5550
@@ -2112,4 +2057,29 @@ Wire Wire Line
 Wire Wire Line
 	13100 6450 13200 6450
 NoConn ~ 13200 6150
+NoConn ~ 16550 5350
+NoConn ~ 16550 4050
+NoConn ~ 16550 4250
+NoConn ~ 9650 4950
+NoConn ~ 9650 5050
+NoConn ~ 9650 4750
+NoConn ~ 9650 4850
+NoConn ~ 9650 4550
+NoConn ~ 9650 4650
+NoConn ~ 9650 4150
+NoConn ~ 9650 4250
+NoConn ~ 9650 3950
+NoConn ~ 9650 4050
+NoConn ~ 9650 3850
+$Comp
+L XC6SLX25-XFTG256-SEG U31
+U 3 1 516B6794
+P 10800 5750
+F 0 "U31" H 11600 3000 60  0000 C CNN
+F 1 "XC6SLX25-2FTG256C" H 10600 3000 60  0000 C CNN
+	3    10800 5750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9650 6050
+NoConn ~ 9650 5950
 $EndSCHEMATC
