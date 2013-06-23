@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Thu 20 Jun 2013 07:59:06 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 23 Jun 2013 06:00:34 PM EDT
 
 BeginCmp
 TimeStamp = /515BE6C3/515BE997;
@@ -2164,8 +2164,22 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /515D219D/51C78AF0;
+Reference = R121;
+ValeurCmp = 4.7k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
 TimeStamp = /515D219D/51C367C9;
 Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = BUTTON_B3U_1000P;
+EndCmp
+
+BeginCmp
+TimeStamp = /515D219D/51C78AF6;
+Reference = SW2;
 ValeurCmp = SW_PUSH;
 IdModule  = BUTTON_B3U_1000P;
 EndCmp

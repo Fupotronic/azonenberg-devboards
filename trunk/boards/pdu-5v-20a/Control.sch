@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 22 Jun 2013 10:17:44 PM EDT
+EESchema Schematic File Version 2  date Sun 23 Jun 2013 06:01:06 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -491,7 +491,6 @@ NoConn ~ 13200 6550
 NoConn ~ 13200 6750
 NoConn ~ 13200 6850
 NoConn ~ 13200 6950
-NoConn ~ 13200 7050
 NoConn ~ 13200 7150
 NoConn ~ 13200 7350
 NoConn ~ 13200 7450
@@ -2086,4 +2085,34 @@ Wire Wire Line
 NoConn ~ 9650 5850
 Wire Wire Line
 	9500 4850 9650 4850
+Text Label 8300 9150 2    60   ~ 0
+CH0_INIT
+Text Label 8950 9400 0    60   ~ 0
+2V5
+$Comp
+L R R121
+U 1 1 51C78AF0
+P 8550 9150
+F 0 "R121" V 8630 9150 50  0000 C CNN
+F 1 "4.7k" V 8550 9150 50  0000 C CNN
+	1    8550 9150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 51C78AF6
+P 8600 9400
+F 0 "SW2" H 8750 9510 50  0000 C CNN
+F 1 "SW_PUSH" H 8600 9320 50  0000 C CNN
+	1    8600 9400
+	1    0    0    -1  
+$EndComp
+Text Label 8800 9150 0    60   ~ 0
+GND
+Wire Wire Line
+	8300 9150 8300 9400
+Wire Wire Line
+	8950 9400 8900 9400
+Text Label 13200 7050 2    60   ~ 0
+CH0_INIT
 $EndSCHEMATC
