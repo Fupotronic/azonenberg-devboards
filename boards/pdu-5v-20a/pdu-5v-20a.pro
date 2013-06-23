@@ -1,4 +1,4 @@
-update=Tue 18 Jun 2013 03:34:23 AM EDT
+update=Sat 22 Jun 2013 10:58:48 PM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,20 +58,20 @@ LibName38=xilinx-azonenberg
 [pcbnew]
 version=1
 LastNetListRead=
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=449
+PadDimH=591
+PadDimV=591
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
-VEgarde=100
-DrawLar=150
+TxtModV=180
+TxtModH=180
+TxtModW=45
+VEgarde=20
+DrawLar=100
 EdgeLar=150
 TxtLar=120
-MSegLar=150
+MSegLar=50
 [pcbnew/libraries]
 LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs
 LibName1=sockets
@@ -86,3 +86,7 @@ LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
 LibName12=smt_azonenberg
+LibName13=esd_sensitive_small
+LibName14=pb_free
+LibName15=recycle_logo
+LibName16=3rdparty/ohw-logo
