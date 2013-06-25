@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 23 Jun 2013 06:01:06 PM EDT
+EESchema Schematic File Version 2  date Mon 24 Jun 2013 12:26:55 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "5V/12V 20A Power Distribution Unit"
-Date "23 jun 2013"
+Date "24 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Top level"
