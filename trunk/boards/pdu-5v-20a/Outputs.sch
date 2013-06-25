@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 23 Jun 2013 06:01:06 PM EDT
+EESchema Schematic File Version 2  date Mon 24 Jun 2013 12:26:55 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A2 16535 23386 portrait
 encoding utf-8
 Sheet 4 5
 Title "5V/12V 20A Power Distribution Unit"
-Date "23 jun 2013"
+Date "24 jun 2013"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "Output ports"
@@ -160,9 +160,9 @@ F 1 "0.1 uF" H 10800 1850 50  0000 L CNN
 	1    10750 1950
 	1    0    0    -1  
 $EndComp
-Text Label 10650 2150 2    60   ~ 0
+Text Label 10150 2150 2    60   ~ 0
 GND
-Text Label 10650 1750 2    60   ~ 0
+Text Label 10150 1750 2    60   ~ 0
 3V3
 Text HLabel 1000 22400 0    60   Input ~ 0
 3V3
@@ -347,9 +347,9 @@ Wire Wire Line
 Wire Wire Line
 	1750 1000 1950 1000
 Wire Wire Line
-	10650 1750 10750 1750
+	10150 1750 10750 1750
 Wire Wire Line
-	10650 2150 10750 2150
+	10150 2150 10750 2150
 Wire Wire Line
 	14800 1250 14800 1550
 Wire Wire Line
@@ -832,9 +832,9 @@ F 1 "0.1 uF" H 10750 9250 50  0000 L CNN
 	1    10700 9350
 	1    0    0    -1  
 $EndComp
-Text Label 10600 9550 2    60   ~ 0
+Text Label 10300 9550 2    60   ~ 0
 GND
-Text Label 10600 9150 2    60   ~ 0
+Text Label 10300 9150 2    60   ~ 0
 3V3
 Text Notes 7850 9700 0    60   ~ 0
 Current/voltage metering
@@ -872,9 +872,9 @@ ADC1_CS_N
 Text HLabel 10400 8550 2    60   Input ~ 0
 ADC1_MOSI
 Wire Wire Line
-	10600 9150 10700 9150
+	10300 9150 10700 9150
 Wire Wire Line
-	10600 9550 10700 9550
+	10300 9550 10700 9550
 Text Label 15250 8550 2    60   ~ 0
 VOUT_4
 Text Label 13300 8800 2    60   ~ 0
@@ -1249,9 +1249,9 @@ F 1 "0.1 uF" H 10750 16650 50  0000 L CNN
 	1    10700 16750
 	1    0    0    -1  
 $EndComp
-Text Label 10600 16950 2    60   ~ 0
+Text Label 10350 16950 2    60   ~ 0
 GND
-Text Label 10600 16550 2    60   ~ 0
+Text Label 10350 16550 2    60   ~ 0
 3V3
 Text Notes 7850 17100 0    60   ~ 0
 Current/voltage metering
@@ -1300,9 +1300,9 @@ ADC2_CS_N
 Text HLabel 10400 15950 2    60   Input ~ 0
 ADC2_MOSI
 Wire Wire Line
-	10600 16550 10700 16550
+	10350 16550 10700 16550
 Wire Wire Line
-	10600 16950 10700 16950
+	10350 16950 10700 16950
 Wire Wire Line
 	14800 12350 14800 12650
 Wire Wire Line
@@ -1893,7 +1893,6 @@ Wire Wire Line
 Connection ~ 5600 1400
 Wire Wire Line
 	5600 1500 5700 1500
-NoConn ~ 5700 1900
 Wire Wire Line
 	5250 1400 5700 1400
 Wire Wire Line
@@ -2014,7 +2013,6 @@ Wire Wire Line
 Connection ~ 5600 16200
 Wire Wire Line
 	5600 16300 5700 16300
-NoConn ~ 5700 16700
 Wire Wire Line
 	5250 16200 5700 16200
 Wire Wire Line
@@ -2135,7 +2133,6 @@ Wire Wire Line
 Connection ~ 5600 8800
 Wire Wire Line
 	5600 8900 5700 8900
-NoConn ~ 5700 9300
 Wire Wire Line
 	5250 8800 5700 8800
 Wire Wire Line
@@ -3408,5 +3405,44 @@ F 0 "L13" V 13750 17800 40  0000 C CNN
 F 1 "300R 5A" V 13900 17800 40  0000 C CNN
 	1    13800 17800
 	0    1    1    0   
+$EndComp
+Text Label 5600 1900 2    60   ~ 0
+GND
+Wire Wire Line
+	5600 1900 5700 1900
+Text Label 5600 9300 2    60   ~ 0
+GND
+Wire Wire Line
+	5600 9300 5700 9300
+Text Label 5600 16700 2    60   ~ 0
+GND
+Wire Wire Line
+	5600 16700 5700 16700
+$Comp
+L C C114
+U 1 1 51C7D857
+P 10150 1950
+F 0 "C114" H 10000 1850 50  0000 L CNN
+F 1 "4.7 uF" H 9850 2050 50  0000 L CNN
+	1    10150 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C115
+U 1 1 51C7DCA9
+P 10300 9350
+F 0 "C115" H 10150 9250 50  0000 L CNN
+F 1 "4.7 uF" H 10000 9450 50  0000 L CNN
+	1    10300 9350
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C116
+U 1 1 51C7E307
+P 10350 16750
+F 0 "C116" H 10200 16650 50  0000 L CNN
+F 1 "4.7 uF" H 10050 16850 50  0000 L CNN
+	1    10350 16750
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
