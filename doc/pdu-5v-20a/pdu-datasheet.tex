@@ -1,0 +1,101 @@
+\documentclass[twocolumn]{article}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{cite}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{soul}
+\usepackage[bookmarks,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\usepackage{authblk}
+\usepackage{booktabs}
+\usepackage{placeins}
+
+\begin{document}
+
+\title{IP-Controlled Low Voltage DC Power Distribution Unit\\ADVANCE SPECIFICATION}
+\author{Andrew Zonenberg\\
+	\texttt{azonenberg@drawersteak.com}}
+\date{\today}
+\maketitle
+
+\fancyhead[L]{ADVANCE SPECIFICATION}
+\fancyfoot[L]{$Revision$ / \today}
+\pagestyle{fancy}
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\section{Introduction}
+
+\subsection{Overview}
+The PDU is an intelligent power distribution system for a large number (up to ten) of low voltage DC loads, such as 
+encountered in a development board cluster for embedded prototyping. It is intended to consolidate many ``wall wart" 
+power supplies into a single unit supplied by an external high-efficiency supply, saving outlet and workbench space 
+while providing additional management and safety capabilities.
+
+\subsection{Feature summary}
+
+\begin{itemize}
+\item All functions of the device are accessible via SNMP using the on-board 10/100/1000 Mbps Ethernet port.
+\item Each output channel is individually switched to permit remote reset of a malfunctioning board.
+\item Per-channel current metering allows real-time monitoring (up to 20 KSa/s sampling rate per channel) of current 
+consumed by downstream loads, providing instant feedback when optimizing DUT firmware for power.
+\item Board-level reverse voltage protection guards against incorrect hookup of the upstream supply.
+\item Input rail voltage is monitored internally and all outputs are disabled if the voltage deviates from nominal by 
+more than a set threshold. A jumper on the board allows 5V or 12V mode to be selected and prevents damaging downstream 
+devices if the PDU is accidentally connected to the wrong supply.
+\item Two chassis temperature monitors allow thermal shutdown in the event of overload.
+\item Programmable overcurrent shutdown for extremely rapid ($\mu s$ or less) shutdown of a shorting or malfunctioning
+DUT. This protection responds significantly faster than a fuse and can be remotely reset once the fault condition has 
+been cleared. Firmware allows flexible tailoring of overcurrent shutdown behavior including response time; a separate 
+power-on threshold prevents false triggering from inrush currents.
+\item Ten 3.3V  digital GPIO pins are provided for interfacing with external systems.
+\item The entire system design (hardware and firmware) is released under a permissive open source license (3-clause
+BSD). KiCAD design files and firmware source are available at \url{https://code.google.com/p/azonenberg-devboards/}
+under the  subproject ``pdu-5v-20a". Modified firmware may be loaded onto the system via the provided JTAG header.
+\end{itemize}
+
+\section{Legal}
+
+\subsection{Notes}
+
+This is an advance specification of a system which is still under development. Some specifications are subject to 
+change.
+
+\subsection{License and disclaimers}
+                                                                                                                   
+Copyright (c) 2012-2013 Andrew D. Zonenberg. All rights reserved.
+
+Redistribution and use in source, bitstream, or layout form, with or without modification, is permitted
+provided that the following conditions are met:
+
+\begin{itemize}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions, and the following
+disclaimer.
+
+\item Redistributions in bitstream or layout form must reproduce the above copyright notice, this list of conditions and
+the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+\item Neither the name of the author nor the names of any contributors may be used to endorse or promote products
+derived from this hardware or software without specific prior written permission.
+
+\item THIS SOFTWARE AND HARDWARE DESIGN IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE OR 
+HARDWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+\end{itemize}
+
+\end{document}
+
+
