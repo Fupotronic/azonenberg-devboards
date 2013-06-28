@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Fri 28 Jun 2013 02:49:38 AM EDT
+
+BeginCmp
+TimeStamp = /51CD3160;
+Reference = D1;
+ValeurCmp = GREEN;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51CD316D;
+Reference = D2;
+ValeurCmp = RED;
+IdModule  = LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51CD3145;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = JACK_2.1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /51CD3175;
+Reference = R1;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51CD3182;
+Reference = R2;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+EndListe

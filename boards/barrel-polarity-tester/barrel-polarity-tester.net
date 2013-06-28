@@ -1,0 +1,77 @@
+# EESchema Netlist Version 1.1 created  Fri 28 Jun 2013 02:47:38 AM EDT
+(
+ ( /51CD3145 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 /VCC )
+  (    2 /GND )
+  (    3 ? )
+ )
+ ( /51CD3160 $noname  D1 GREEN {Lib=LED}
+  (    1 N-000004 )
+  (    2 /GND )
+ )
+ ( /51CD316D $noname  D2 RED {Lib=LED}
+  (    1 /GND )
+  (    2 N-000003 )
+ )
+ ( /51CD3175 $noname  R1 470 {Lib=R}
+  (    1 /VCC )
+  (    2 N-000004 )
+ )
+ ( /51CD3182 $noname  R2 470 {Lib=R}
+  (    1 /VCC )
+  (    2 N-000003 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/VCC" "VCC"
+ K1 1
+ R1 1
+ R2 1
+Net 2 "/GND" "GND"
+ D2 1
+ D1 2
+ K1 2
+Net 3 "" ""
+ R2 2
+ D2 2
+Net 4 "" ""
+ R1 2
+ D1 1
+}
+#End
