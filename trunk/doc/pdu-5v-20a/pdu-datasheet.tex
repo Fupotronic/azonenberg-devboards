@@ -29,7 +29,7 @@
 \fancyfoot[L]{$Revision$ / \today}
 \pagestyle{fancy}
 
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \tableofcontents
 
 \pagebreak
@@ -71,7 +71,23 @@ under the  subproject ``pdu-5v-20a". Modified firmware may be loaded onto the sy
 
 \subsection{System overview}
 
-\subsection{Input protection}
+The PDU requires an external (off board) 5V / 12V DC supply which should be capable of supplying at least 20A 
+continuously. Power from the external connector is fed through a high-side PMOS based reverse voltage protection 
+circuit to the primary power rail, which has two parallel 4700 $\mu F$ capacitors on it to smooth out load transients.
+
+A tap on the primary power rail supplies power through two DC-DC converters and a linear regulator to the 3.3 / 2.5 / 
+1.2V rails used by the FPGA, Ethernet PHY, and other control logic.
+
+The primary power rail is then split off to the ten output stages (described below) which each supplies two screw 
+terminals on the output connector. Outputs are not isolated; the input supply and all outputs share the same ground 
+with high-side switching.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.25]{system-block.png}
+\caption{System block diagram}
+\label{system-block}
+\end{figure}
+\FloatBarrier
 
 \subsection{Output stage}
 
@@ -219,13 +235,15 @@ $I_{out}$ & Output current per channel & & & 4 & A\\
 \hline
 \end{longtable}
 
-\subsection{DC output levels}
+\subsection{DC performance characteristics}
 
-\begin{longtable}{|l|p{2in}|p{0.5in}|p{0.65in}|p{0.65in}|p{0.5in}|}
+\begin{longtable}{|l|p{2.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 \hline
 {\bf Symbol} & {\bf Description} & {\bf Min} & {\bf Typ} & {\bf Max} & {\bf Units}\\
 \hline
 $R_{on}$ & DC resistance from input to enabled output & & & TBD & $\Omega$\\
+\hline
+$I_{ctrl}$ & (5V mode) Control module supply current \newline (12V mode) & & & TBD \newline TBD & A\\
 \hline
 \end{longtable}
 
