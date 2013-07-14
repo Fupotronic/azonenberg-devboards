@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sun 14 Jul 2013 11:33:59 AM EDT
+PCBNEW-BOARD Version 1 date Sun 14 Jul 2013 11:44:58 AM EDT
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -60,7 +60,7 @@ PadDrill 0
 Pad2MaskClearance 20
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFE7FBF
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 284983297) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory output/))
 $EndSETUP
 
 $EQUIPOT
@@ -6586,8 +6586,9 @@ $EndTEXTPCB
 $TEXTPCB
 Te "Solder paste registration test pattern"
 nl "A. Zonenberg / 2013-07-11"
-Po 24764 29646 394 394 50 0
-De 20 0 0 Normal
+nl "$Rev$"
+Po 28740 31693 295 295 50 0
+De 20 0 0 Normal L C
 $EndTEXTPCB
 $DRAWSEGMENT
 Po 0 16929 33071 16929 17323 150
