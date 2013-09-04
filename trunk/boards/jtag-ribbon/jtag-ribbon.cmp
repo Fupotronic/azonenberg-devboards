@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPCB (2011-aug-04)-testing date = Mon 21 May 2012 01:06:28 AM EDT
+
+BeginCmp
+TimeStamp = /4FB9CCEC;
+Reference = D1;
+ValeurCmp = Green;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FB9CC53;
+Reference = J1;
+ValeurCmp = XILINX_JTAG;
+IdModule  = XILINX_JTAG_THRUHOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FB9CC8C;
+Reference = P1;
+ValeurCmp = CONN_10;
+IdModule  = HFS10CT-ND;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FB9CCF4;
+Reference = R1;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+EndListe
