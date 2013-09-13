@@ -1,4 +1,4 @@
-update=Wed 11 Sep 2013 03:44:02 AM EDT
+update=Fri 13 Sep 2013 01:10:38 AM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -57,23 +57,23 @@ LibName37=special-azonenberg
 LibName38=xilinx-azonenberg
 [pcbnew]
 version=1
-LastNetListRead=
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+LastNetListRead=ehc-s6-devboard.net
+PadDrlX=0
+PadDimH=591
+PadDimV=591
 BoardThickness=630
-TxtPcbV=800
-TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
+TxtPcbV=295
+TxtPcbH=295
+TxtModV=256
+TxtModH=256
+TxtModW=50
 VEgarde=100
-DrawLar=150
+DrawLar=60
 EdgeLar=150
-TxtLar=120
-MSegLar=150
+TxtLar=50
+MSegLar=50
 [pcbnew/libraries]
-LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs
+LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty/walter;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -91,3 +91,4 @@ LibName14=esd_sensitive_small
 LibName15=pb_free
 LibName16=recycle_logo
 LibName17=smt_azonenberg
+LibName18=3rdparty/walter/mod_smd_lqfp/w_smd_lqfp
