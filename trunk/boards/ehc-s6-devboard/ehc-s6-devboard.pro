@@ -1,4 +1,4 @@
-update=Fri 13 Sep 2013 01:10:38 AM EDT
+update=Fri 13 Sep 2013 10:19:34 AM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -92,3 +92,4 @@ LibName15=pb_free
 LibName16=recycle_logo
 LibName17=smt_azonenberg
 LibName18=3rdparty/walter/mod_smd_lqfp/w_smd_lqfp
+LibName19=ohw-logo

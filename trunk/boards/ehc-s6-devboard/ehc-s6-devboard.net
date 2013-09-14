@@ -1,11 +1,11 @@
-# EESchema Netlist Version 1.1 created  Thu 12 Sep 2013 10:55:16 AM EDT
+# EESchema Netlist Version 1.1 created  Fri 13 Sep 2013 03:25:45 PM EDT
 (
  ( /522FD82B $noname  U5 FT232H {Lib=FT232H}
   (    1 /CLK_12MHZ )
   (    2 ? )
   (    3 /FTDI_VPHY )
   (    4 /GND )
-  (    5 N-000199 )
+  (    5 N-000159 )
   (    6 /USB_D_N )
   (    7 /USB_D_P )
   (    8 /FTDI_VPLL )
@@ -17,23 +17,23 @@
   (   14 /JTAG_TDI_FTDI )
   (   15 /JTAG_TDO_FTDI )
   (   16 /JTAG_TMS_FTDI )
-  (   17 ? )
-  (   18 ? )
-  (   19 ? )
-  (   20 ? )
-  (   21 ? )
+  (   17 /GPIO_L0 )
+  (   18 /GPIO_L1 )
+  (   19 /GPIO_L2 )
+  (   20 /GPIO_L3 )
+  (   21 /GPIO_H0 )
   (   22 /GND )
   (   23 /GND )
   (   24 /3V3 )
-  (   25 ? )
-  (   26 ? )
-  (   27 ? )
-  (   28 ? )
-  (   29 ? )
-  (   30 ? )
+  (   25 /GPIO_H1 )
+  (   26 /GPIO_H2 )
+  (   27 /GPIO_H3 )
+  (   28 /GPIO_H4 )
+  (   29 /GPIO_H5 )
+  (   30 /GPIO_H6 )
   (   31 /FTDI_SUSPEND )
   (   32 /FTDI_PWREN_N )
-  (   33 ? )
+  (   33 /FTDI_CLKOUT_30MHZ )
   (   34 /3V3 )
   (   35 /GND )
   (   36 /GND )
@@ -88,10 +88,10 @@
  )
  ( /522FE310 $noname  R20 270 {Lib=R}
   (    1 /5V )
-  (    2 N-000206 )
+  (    2 N-000166 )
  )
  ( /522FE335 $noname  D1 GREEN {Lib=LED}
-  (    1 N-000206 )
+  (    1 N-000166 )
   (    2 /GND )
  )
  ( /522FE7C4 $noname  U1 OSC {Lib=OSC}
@@ -102,10 +102,10 @@
  )
  ( /522FE98E $noname  R18 12K_1% {Lib=R}
   (    1 /GND )
-  (    2 N-000199 )
+  (    2 N-000159 )
  )
  ( /522FEC4E $noname  U2 93LC56BT-OT {Lib=93LC56BT-OT}
-  (    1 N-000202 )
+  (    1 N-000162 )
   (    2 /GND )
   (    3 /FTDI_EEDATA )
   (    4 /FTDI_EECLK )
@@ -125,7 +125,7 @@
   (    2 /3V3 )
  )
  ( /522FEE34 $noname  R19 2K {Lib=R}
-  (    1 N-000202 )
+  (    1 N-000162 )
   (    2 /FTDI_EEDATA )
  )
  ( /522FEFDC $noname  C7 4.7_uF {Lib=C}
@@ -204,7 +204,7 @@
   (    1 /FTDI_PWREN_N )
   (    2 /3V3 )
  )
- ( /52300E87 $noname  U3 XC6SLX4-2TQG144C {Lib=XC6SLXN-TQG144}
+ ( /52300EC4 $noname  U3 XC6SLX4-2TQG144C {Lib=XC6SLXN-TQG144}
   (    1 ? )
   (    2 ? )
   (    3 /GND )
@@ -242,17 +242,17 @@
   (   35 ? )
   (   36 /2V5 )
   (   37 /FPGA_RESET_N )
-  (   38 N-000067 )
-  (   39 N-000066 )
+  (   38 N-000052 )
+  (   39 N-000051 )
   (   40 ? )
   (   41 ? )
   (   42 /3V3 )
   (   43 ? )
   (   44 ? )
-  (   45 ? )
-  (   46 ? )
-  (   47 ? )
-  (   48 ? )
+  (   45 N-000083 )
+  (   46 N-000056 )
+  (   47 N-000058 )
+  (   48 N-000045 )
   (   49 /GND )
   (   50 ? )
   (   51 ? )
@@ -260,53 +260,53 @@
   (   53 /2V5 )
   (   54 /GND )
   (   55 ? )
-  (   56 ? )
-  (   57 ? )
+  (   56 N-000046 )
+  (   57 N-000047 )
   (   58 ? )
   (   59 ? )
-  (   60 N-000032 )
+  (   60 N-000090 )
   (   61 /FLASH_D3_TERM )
   (   62 /FLASH_D2_TERM )
   (   63 /3V3 )
-  (   64 N-000035 )
+  (   64 N-000177 )
   (   65 /FLASH_D1_TERM )
   (   66 ? )
   (   67 ? )
   (   68 /GND )
-  (   69 N-000031 )
-  (   70 N-000036 )
+  (   69 N-000062 )
+  (   70 N-000089 )
   (   71 /FPGA_DONE )
   (   72 ? )
   (   73 /GND )
   (   74 ? )
-  (   75 ? )
+  (   75 N-000044 )
   (   76 /3V3 )
   (   77 /GND )
-  (   78 ? )
-  (   79 ? )
-  (   80 ? )
-  (   81 ? )
-  (   82 ? )
-  (   83 ? )
-  (   84 ? )
-  (   85 ? )
+  (   78 N-000043 )
+  (   79 N-000042 )
+  (   80 N-000041 )
+  (   81 N-000040 )
+  (   82 N-000039 )
+  (   83 N-000048 )
+  (   84 /GPIO_H4 )
+  (   85 /FTDI_CLKOUT_30MHZ )
   (   86 /3V3 )
-  (   87 ? )
-  (   88 ? )
+  (   87 /FTDI_PWREN_N )
+  (   88 /GPIO_H6 )
   (   89 /1V2 )
   (   90 /2V5 )
   (   91 /GND )
-  (   92 ? )
-  (   93 ? )
-  (   94 ? )
-  (   95 ? )
+  (   92 /GPIO_H5 )
+  (   93 /CLK_12MHZ )
+  (   94 /GPIO_H3 )
+  (   95 /GPIO_H2 )
   (   96 /GND )
-  (   97 ? )
-  (   98 ? )
-  (   99 ? )
-  (  100 ? )
-  (  101 ? )
-  (  102 ? )
+  (   97 /GPIO_H1 )
+  (   98 /GPIO_H0 )
+  (   99 /GPIO_L3 )
+  (  100 /GPIO_L2 )
+  (  101 /GPIO_L1 )
+  (  102 /GPIO_L0 )
   (  103 /3V3 )
   (  104 ? )
   (  105 ? )
@@ -315,40 +315,40 @@
   (  108 /GND )
   (  109 /JTAG_TCK_FPGA )
   (  110 /JTAG_TDI_FPGA )
-  (  111 ? )
-  (  112 ? )
+  (  111 N-000001 )
+  (  112 N-000003 )
   (  113 /GND )
-  (  114 ? )
-  (  115 ? )
-  (  116 ? )
-  (  117 ? )
-  (  118 ? )
-  (  119 ? )
-  (  120 ? )
-  (  121 ? )
+  (  114 N-000005 )
+  (  115 N-000007 )
+  (  116 N-000106 )
+  (  117 N-000009 )
+  (  118 N-000011 )
+  (  119 N-000103 )
+  (  120 N-000013 )
+  (  121 N-000015 )
   (  122 /3V3 )
-  (  123 ? )
+  (  123 N-000094 )
   (  124 ? )
   (  125 /3V3 )
-  (  126 ? )
+  (  126 N-000019 )
   (  127 ? )
   (  128 /1V2 )
   (  129 /2V5 )
   (  130 /GND )
   (  131 ? )
-  (  132 ? )
-  (  133 ? )
+  (  132 N-000096 )
+  (  133 N-000093 )
   (  134 ? )
   (  135 /3V3 )
   (  136 /GND )
-  (  137 ? )
-  (  138 ? )
+  (  137 N-000105 )
+  (  138 N-000104 )
   (  139 ? )
   (  140 ? )
   (  141 ? )
   (  142 ? )
   (  143 ? )
-  (  144 N-000033 )
+  (  144 N-000107 )
  )
  ( /52300F29 $noname  R23 49.9 {Lib=R}
   (    1 /JTAG_TCK_FTDI )
@@ -368,15 +368,15 @@
  )
  ( /52302874 $noname  R1 10K {Lib=R}
   (    1 /3V3 )
-  (    2 N-000033 )
+  (    2 N-000107 )
  )
  ( /523029E7 $noname  R37 10K {Lib=R}
   (    1 /GND )
-  (    2 N-000032 )
+  (    2 N-000090 )
  )
  ( /52302B26 $noname  R35 10K {Lib=R}
   (    1 /3V3 )
-  (    2 N-000031 )
+  (    2 N-000062 )
  )
  ( /52302D14 $noname  R39 10K {Lib=R}
   (    1 /3V3 )
@@ -384,19 +384,19 @@
  )
  ( /52302F00 $noname  R38 10K {Lib=R}
   (    1 /3V3 )
-  (    2 N-000067 )
+  (    2 N-000052 )
  )
  ( /5230310C $noname  R28 49.9 {Lib=R}
   (    1 /FLASH_CS_N )
-  (    2 N-000067 )
+  (    2 N-000052 )
  )
  ( /5230347A $noname  R34 49.9 {Lib=R}
   (    1 /FLASH_CLK )
-  (    2 N-000036 )
+  (    2 N-000089 )
  )
  ( /523035CD $noname  R36 49.9 {Lib=R}
   (    1 /FLASH_D0_TERM )
-  (    2 N-000035 )
+  (    2 N-000177 )
  )
  ( /523035D3 $noname  R30 49.9 {Lib=R}
   (    1 /FLASH_D0 )
@@ -430,7 +430,7 @@
  )
  ( /52304B6D $noname  R27 10K {Lib=R}
   (    1 /3V3 )
-  (    2 N-000066 )
+  (    2 N-000051 )
  )
  ( /523060BA $noname  C19 4.7_uF {Lib=C}
   (    1 /1V2 )
@@ -565,83 +565,79 @@
  )
  ( /52309880 $noname  R40 49.9 {Lib=R}
   (    1 /GPIO_A0 )
-  (    2 ? )
+  (    2 N-000001 )
  )
  ( /52309886 $noname  R41 49.9 {Lib=R}
   (    1 /GPIO_A1 )
-  (    2 ? )
+  (    2 N-000003 )
  )
  ( /5230988C $noname  R42 49.9 {Lib=R}
   (    1 /GPIO_A2 )
-  (    2 ? )
+  (    2 N-000005 )
  )
  ( /52309892 $noname  R43 49.9 {Lib=R}
   (    1 /GPIO_A3 )
-  (    2 ? )
- )
- ( /523098AC $noname  R44 49.9 {Lib=R}
-  (    1 /GPIO_A4 )
-  (    2 ? )
+  (    2 N-000007 )
  )
  ( /523098B2 $noname  R45 49.9 {Lib=R}
   (    1 /GPIO_A5 )
-  (    2 ? )
+  (    2 N-000009 )
  )
  ( /523098B8 $noname  R46 49.9 {Lib=R}
   (    1 /GPIO_A6 )
-  (    2 ? )
+  (    2 N-000011 )
  )
  ( /523098BE $noname  R47 49.9 {Lib=R}
   (    1 /GPIO_A7 )
-  (    2 ? )
+  (    2 N-000013 )
  )
  ( /523098C4 $noname  R48 49.9 {Lib=R}
   (    1 /GPIO_A8 )
-  (    2 ? )
+  (    2 N-000015 )
  )
  ( /523098CA $noname  R49 49.9 {Lib=R}
   (    1 /GPIO_A9 )
-  (    2 ? )
+  (    2 N-000019 )
  )
  ( /5230A326 $noname  R2 49.9 {Lib=R}
   (    1 /GPIO_B0 )
-  (    2 ? )
+  (    2 N-000044 )
  )
  ( /5230A32C $noname  R3 49.9 {Lib=R}
   (    1 /GPIO_B1 )
-  (    2 ? )
+  (    2 N-000043 )
  )
  ( /5230A332 $noname  R4 49.9 {Lib=R}
   (    1 /GPIO_B2 )
-  (    2 ? )
+  (    2 N-000042 )
  )
  ( /5230A338 $noname  R5 49.9 {Lib=R}
   (    1 /GPIO_B3 )
-  (    2 ? )
+  (    2 N-000041 )
  )
  ( /5230A33E $noname  R6 49.9 {Lib=R}
   (    1 /GPIO_B4 )
-  (    2 ? )
+  (    2 N-000040 )
  )
  ( /5230A344 $noname  R7 49.9 {Lib=R}
   (    1 /GPIO_B5 )
-  (    2 ? )
+  (    2 N-000039 )
  )
  ( /5230A34A $noname  R8 49.9 {Lib=R}
   (    1 /GPIO_B6 )
-  (    2 ? )
+  (    2 N-000048 )
  )
  ( /5230A350 $noname  R9 49.9 {Lib=R}
   (    1 /GPIO_B7 )
-  (    2 ? )
+  (    2 N-000047 )
  )
  ( /5230A356 $noname  R10 49.9 {Lib=R}
   (    1 /GPIO_B8 )
-  (    2 ? )
+  (    2 N-000046 )
  )
  ( /5230A35C $noname  R11 49.9 {Lib=R}
   (    1 /GPIO_B9 )
-  (    2 ? )
+  (    2 N-000045 )
  )
  ( /5230B715 $noname  P2 CONN_20 {Lib=CONN_20}
   (    1 /GND )
@@ -671,43 +667,47 @@
  )
  ( /5230D0D6 $noname  R12 49.9 {Lib=R}
   (    1 /GPIO_B10 )
-  (    2 ? )
+  (    2 N-000058 )
  )
  ( /5230D0DC $noname  R13 49.9 {Lib=R}
   (    1 /GPIO_B11 )
-  (    2 ? )
+  (    2 N-000056 )
  )
  ( /5230D0E2 $noname  R14 49.9 {Lib=R}
   (    1 /GPIO_B12 )
-  (    2 ? )
+  (    2 N-000083 )
  )
  ( /5230D7EE $noname  R50 49.9 {Lib=R}
   (    1 /GPIO_A10 )
-  (    2 ? )
+  (    2 N-000096 )
  )
  ( /5230D7F4 $noname  R51 49.9 {Lib=R}
   (    1 /GPIO_A11 )
-  (    2 ? )
+  (    2 N-000093 )
  )
  ( /5230D7FA $noname  R52 49.9 {Lib=R}
   (    1 /GPIO_A12 )
-  (    2 ? )
+  (    2 N-000105 )
  )
  ( /5230D800 $noname  R53 49.9 {Lib=R}
   (    1 /GPIO_A13 )
-  (    2 ? )
+  (    2 N-000104 )
  )
  ( /5230D806 $noname  R54 49.9 {Lib=R}
   (    1 /GPIO_A14 )
-  (    2 ? )
+  (    2 N-000103 )
  )
  ( /5230D80C $noname  R55 49.9 {Lib=R}
   (    1 /GPIO_A15 )
-  (    2 ? )
+  (    2 N-000094 )
  )
  ( /5230E501 $noname  C18 0.1_uF {Lib=C}
   (    1 /FTDI_VCCA )
   (    2 /GND )
+ )
+ ( /523098AC $noname  R44 49.9 {Lib=R}
+  (    1 /GPIO_A4 )
+  (    2 N-000106 )
  )
 )
 *
@@ -1134,13 +1134,6 @@ $component R43
  R?-*
  SM1206
 $endlist
-$component R44
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
 $component R45
  R?
  SM0603
@@ -1321,15 +1314,126 @@ $component C18
  C?
  C1-1
 $endlist
+$component R44
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/GND" "GND"
- D1 2
- U4 12
- U4 PAD
- U2 2
- U1 2
+Net 1 "" ""
+ R40 2
+ U3 111
+Net 2 "/GPIO_A1" "GPIO_A1"
+ P2 4
+ R41 1
+Net 3 "" ""
+ R41 2
+ U3 112
+Net 4 "/GPIO_A2" "GPIO_A2"
+ P2 5
+ R42 1
+Net 5 "" ""
+ R42 2
+ U3 114
+Net 6 "/GPIO_A3" "GPIO_A3"
+ P2 6
+ R43 1
+Net 7 "" ""
+ U3 115
+ R43 2
+Net 8 "/GPIO_A5" "GPIO_A5"
+ P2 8
+ R45 1
+Net 9 "" ""
+ U3 117
+ R45 2
+Net 10 "/GPIO_A6" "GPIO_A6"
+ P2 9
+ R46 1
+Net 11 "" ""
+ U3 118
+ R46 2
+Net 12 "/GPIO_A7" "GPIO_A7"
+ P2 10
+ R47 1
+Net 13 "" ""
+ U3 120
+ R47 2
+Net 14 "/GPIO_A8" "GPIO_A8"
+ P2 11
+ R48 1
+Net 15 "" ""
+ R48 2
+ U3 121
+Net 16 "/GPIO_A9" "GPIO_A9"
+ R49 1
+ P2 12
+Net 17 "/GPIO_A4" "GPIO_A4"
+ P2 7
+ R44 1
+Net 18 "/GPIO_A0" "GPIO_A0"
+ R40 1
+ P2 3
+Net 19 "" ""
+ U3 126
+ R49 2
+Net 20 "/GPIO_B1" "GPIO_B1"
+ P1 4
+ R3 1
+Net 21 "/GPIO_B0" "GPIO_B0"
+ R2 1
+ P1 3
+Net 23 "/USB_SHIELD" "USB_SHIELD"
+ J2 7
+ C5 1
+ J2 6
+Net 24 "/FPGA_RESET_N" "FPGA_RESET_N"
+ R39 2
+ U3 37
+ P1 18
+Net 25 "/5V_EXT" "5V_EXT"
+ L1 1
+ P1 16
+Net 26 "/GPIO_B12" "GPIO_B12"
+ P1 15
+ R14 1
+Net 27 "/GPIO_B11" "GPIO_B11"
+ P1 14
+ R13 1
+Net 28 "/GPIO_B10" "GPIO_B10"
+ R12 1
+ P1 13
+Net 29 "/GND" "GND"
+ C8 2
+ C3 1
+ C1 2
+ P2 20
+ C24 2
+ C27 2
+ C11 2
+ C15 2
+ C12 2
+ C7 2
+ C17 2
+ C14 2
+ C10 2
+ C21 2
+ C18 2
+ C13 2
+ C16 2
+ C6 2
+ C9 2
+ U3 49
+ U3 130
+ U3 113
+ U3 136
+ U3 108
+ R37 1
+ U6 4
  R18 1
  U5 22
  U5 42
@@ -1338,168 +1442,104 @@ Net 1 "/GND" "GND"
  U5 4
  U5 9
  U5 10
- C43 2
- C42 2
- C40 2
- C39 2
- C38 2
- C36 2
- C2 2
- C5 2
- C4 2
- C16 2
- C13 2
- P2 1
- P2 20
- C18 2
- C41 2
- C19 2
  U5 11
  U5 41
  U5 36
  U5 47
  U5 48
- U6 4
- C10 2
- C14 2
- C17 2
- C7 2
- C12 2
- C15 2
- C11 2
- C1 2
- C3 1
- C8 2
- C9 2
- C6 2
- C30 2
- U3 49
- C27 2
- U3 130
- C23 2
- R37 1
- C20 2
- C28 2
- U3 3
- C25 2
  U3 91
- C22 2
  U3 13
- U3 113
- U3 136
- U3 108
- C21 2
  U3 73
- C24 2
- C34 2
  U3 54
- C32 2
  U3 25
  U3 96
  U3 77
  U3 68
- P1 1
- J2 5
+ U3 3
+ C2 2
+ C4 2
+ D1 2
+ U4 12
+ U4 PAD
+ U2 2
+ U1 2
+ C28 2
+ C42 2
+ C41 2
+ P2 1
+ C40 2
+ C43 2
  C37 2
  C35 2
- C33 2
- C31 2
+ C39 2
  C29 2
+ C31 2
+ C33 2
  C26 2
+ C19 2
+ C23 2
+ C22 2
+ C25 2
+ C20 2
+ C30 2
+ P1 1
+ J2 5
+ C5 2
  P1 20
-Net 2 "/2V5" "2V5"
- U3 53
- U4 6
- U3 90
- U3 20
- U3 129
- U3 36
- C20 1
- C23 1
- C26 1
- C29 1
- C31 1
- C33 1
- C37 1
- C35 1
-Net 4 "/GPIO_A4" "GPIO_A4"
- P2 7
- R44 1
-Net 6 "/GPIO_A3" "GPIO_A3"
- P2 6
- R43 1
-Net 8 "/GPIO_A2" "GPIO_A2"
- R42 1
- P2 5
-Net 10 "/GPIO_A1" "GPIO_A1"
- P2 4
- R41 1
-Net 12 "/GPIO_A0" "GPIO_A0"
- P2 3
- R40 1
-Net 13 "/FPGA_RESET_N" "FPGA_RESET_N"
- P1 18
- R39 2
- U3 37
-Net 14 "/FPGA_DONE" "FPGA_DONE"
- R33 2
- P1 17
- U3 71
-Net 15 "/5V_EXT" "5V_EXT"
- L1 1
- P1 16
-Net 16 "/GPIO_B12" "GPIO_B12"
- P1 15
- R14 1
-Net 17 "/GPIO_B11" "GPIO_B11"
- R13 1
- P1 14
-Net 18 "/GPIO_B10" "GPIO_B10"
- P1 13
- R12 1
-Net 19 "/3V3" "3V3"
- R17 2
- C15 1
- P2 2
- R16 2
- L3 2
- C11 1
- C12 1
- C3 2
- C1 1
- C27 1
- C30 1
+ C32 2
+ C38 2
+ C36 2
+ C34 2
+Net 30 "/GPIO_B4" "GPIO_B4"
+ R6 1
+ P1 7
+Net 31 "/GPIO_B3" "GPIO_B3"
+ P1 6
+ R5 1
+Net 32 "/GPIO_B2" "GPIO_B2"
+ R4 1
+ P1 5
+Net 33 "/3V3" "3V3"
  U3 18
- P2 19
  U3 86
+ C41 1
  U3 76
- C32 1
+ C40 1
+ U3 63
+ C36 1
+ C38 1
+ P2 19
+ U3 42
+ C39 1
+ R22 2
+ C42 1
+ C15 1
+ R17 2
+ R16 2
+ R27 1
+ C11 1
+ C1 1
+ C3 2
+ C12 1
+ L3 2
+ L4 2
  C34 1
- C24 1
- C21 1
- U3 135
- U3 125
- U3 103
+ U3 31
+ U3 4
+ C32 1
+ U6 8
+ P2 2
  R39 1
  R35 1
- U3 122
- C38 1
- C39 1
- C40 1
- C42 1
- C43 1
- R38 1
- P1 19
  R1 1
- U3 4
- U3 31
- U3 42
- U3 63
+ R38 1
+ U3 135
+ U3 125
  P1 2
- L4 2
- R22 2
+ P1 19
+ U3 122
+ U3 103
  U5 46
- U6 8
  U4 5
  U5 34
  U5 24
@@ -1508,245 +1548,330 @@ Net 19 "/3V3" "3V3"
  U1 1
  R15 2
  U2 6
- C36 1
+ C30 1
+ C27 1
+ C24 1
+ C21 1
  R33 1
- R27 1
- C41 1
-Net 20 "/USB_SHIELD" "USB_SHIELD"
- J2 6
- C5 1
- J2 7
-Net 21 "/FLASH_D3_TERM" "FLASH_D3_TERM"
- R32 2
- U3 61
-Net 22 "/FLASH_D2_TERM" "FLASH_D2_TERM"
- U3 62
- R31 2
-Net 23 "/FLASH_D3" "FLASH_D3"
- R32 1
- U6 7
-Net 24 "/FLASH_D2" "FLASH_D2"
- R31 1
- U6 3
-Net 25 "/FLASH_D1_TERM" "FLASH_D1_TERM"
- U3 65
- R29 2
-Net 26 "/FLASH_D1" "FLASH_D1"
- R29 1
- U6 2
-Net 27 "/FLASH_D0_TERM" "FLASH_D0_TERM"
- R30 2
- R36 1
-Net 29 "/FLASH_CLK" "FLASH_CLK"
- R34 1
- U6 6
-Net 30 "/FLASH_CS_N" "FLASH_CS_N"
- U6 1
- R28 1
-Net 31 "" ""
- R35 2
- U3 69
-Net 32 "" ""
- U3 60
- R37 2
-Net 33 "" ""
- U3 144
- R1 2
-Net 34 "/FLASH_D0" "FLASH_D0"
- U6 5
- R30 1
-Net 35 "" ""
- U3 64
- R36 2
-Net 36 "" ""
- U3 70
- R34 2
-Net 54 "/1V2" "1V2"
- C25 1
- U3 52
- C19 1
- C28 1
- U3 128
+ C43 1
+Net 34 "/GPIO_B9" "GPIO_B9"
+ R11 1
+ P1 12
+Net 35 "/GPIO_B8" "GPIO_B8"
+ P1 11
+ R10 1
+Net 36 "/GPIO_B7" "GPIO_B7"
+ R9 1
+ P1 10
+Net 37 "/GPIO_B6" "GPIO_B6"
+ R8 1
+ P1 9
+Net 38 "/GPIO_B5" "GPIO_B5"
+ P1 8
+ R7 1
+Net 39 "" ""
+ R7 2
+ U3 82
+Net 40 "" ""
+ R6 2
+ U3 81
+Net 41 "" ""
+ R5 2
+ U3 80
+Net 42 "" ""
+ R4 2
+ U3 79
+Net 43 "" ""
+ R3 2
+ U3 78
+Net 44 "" ""
+ R2 2
+ U3 75
+Net 45 "" ""
+ U3 48
+ R11 2
+Net 46 "" ""
+ U3 56
+ R10 2
+Net 47 "" ""
+ U3 57
+ R9 2
+Net 48 "" ""
+ U3 83
+ R8 2
+Net 49 "/1V2" "1V2"
  U3 28
- U3 19
+ U3 52
  U4 8
+ C19 1
  C22 1
+ C25 1
+ C28 1
  U3 89
-Net 56 "/5V_EXT_FILTERED" "5V_EXT_FILTERED"
+ U3 128
+ U3 19
+Net 50 "/5V_EXT_FILTERED" "5V_EXT_FILTERED"
  L1 2
  J1 1
-Net 58 "/FTDI_PWREN_N" "FTDI_PWREN_N"
- U5 32
- R22 1
-Net 65 "/CLK_12MHZ" "CLK_12MHZ"
- U5 1
- U1 3
-Net 66 "" ""
+Net 51 "" ""
  R27 2
  U3 39
-Net 67 "" ""
+Net 52 "" ""
  U3 38
  R38 2
  R28 2
-Net 70 "/GPIO_A10" "GPIO_A10"
- P2 13
- R50 1
-Net 80 "/GPIO_A12" "GPIO_A12"
- P2 15
- R52 1
-Net 81 "/GPIO_A11" "GPIO_A11"
- R51 1
- P2 14
-Net 85 "/GPIO_A13" "GPIO_A13"
+Net 54 "/FLASH_CLK" "FLASH_CLK"
+ U6 6
+ R34 1
+Net 55 "/2V5" "2V5"
+ C26 1
+ C23 1
+ U3 53
+ U3 36
+ C20 1
+ U3 20
+ U3 129
+ C29 1
+ C31 1
+ U3 90
+ C35 1
+ C37 1
+ U4 6
+ C33 1
+Net 56 "" ""
+ U3 46
+ R13 2
+Net 58 "" ""
+ U3 47
+ R12 2
+Net 62 "" ""
+ U3 69
+ R35 2
+Net 63 "/GPIO_L2" "GPIO_L2"
+ U5 19
+ U3 100
+Net 64 "/GPIO_L3" "GPIO_L3"
+ U5 20
+ U3 99
+Net 65 "/GPIO_H0" "GPIO_H0"
+ U3 98
+ U5 21
+Net 66 "/GPIO_H6" "GPIO_H6"
+ U5 30
+ U3 88
+Net 67 "/GPIO_H1" "GPIO_H1"
+ U5 25
+ U3 97
+Net 68 "/FTDI_PWREN_N" "FTDI_PWREN_N"
+ R22 1
+ U5 32
+ U3 87
+Net 69 "/GPIO_H2" "GPIO_H2"
+ U3 95
+ U5 26
+Net 70 "/FTDI_CLKOUT_30MHZ" "FTDI_CLKOUT_30MHZ"
+ U3 85
+ U5 33
+Net 71 "/GPIO_H3" "GPIO_H3"
+ U3 94
+ U5 27
+Net 72 "/GPIO_H4" "GPIO_H4"
+ U5 28
+ U3 84
+Net 73 "/CLK_12MHZ" "CLK_12MHZ"
+ U3 93
+ U5 1
+ U1 3
+Net 74 "/GPIO_H5" "GPIO_H5"
+ U3 92
+ U5 29
+Net 76 "/FTDI_VCCA" "FTDI_VCCA"
+ U5 37
+ C18 1
+Net 81 "/FLASH_D1_TERM" "FLASH_D1_TERM"
+ U3 65
+ R29 2
+Net 83 "" ""
+ U3 45
+ R14 2
+Net 86 "/FLASH_D2_TERM" "FLASH_D2_TERM"
+ U3 62
+ R31 2
+Net 89 "" ""
+ U3 70
+ R34 2
+Net 90 "" ""
+ U3 60
+ R37 2
+Net 93 "" ""
+ U3 133
+ R51 2
+Net 94 "" ""
+ U3 123
+ R55 2
+Net 96 "" ""
+ U3 132
+ R50 2
+Net 103 "" ""
+ U3 119
+ R54 2
+Net 104 "" ""
+ U3 138
+ R53 2
+Net 105 "" ""
+ R52 2
+ U3 137
+Net 106 "" ""
+ R44 2
+ U3 116
+Net 107 "" ""
+ U3 144
+ R1 2
+Net 121 "/GPIO_L0" "GPIO_L0"
+ U5 17
+ U3 102
+Net 122 "/GPIO_L1" "GPIO_L1"
+ U3 101
+ U5 18
+Net 130 "/FPGA_DONE" "FPGA_DONE"
+ R33 2
+ P1 17
+ U3 71
+Net 131 "/GPIO_A13" "GPIO_A13"
  R53 1
  P2 16
-Net 88 "/GPIO_B1" "GPIO_B1"
- P1 4
- R3 1
-Net 89 "/GPIO_B0" "GPIO_B0"
- R2 1
- P1 3
-Net 112 "/FTDI_VCCA" "FTDI_VCCA"
- C18 1
- U5 37
-Net 117 "/GPIO_A15" "GPIO_A15"
+Net 132 "/GPIO_A12" "GPIO_A12"
+ P2 15
+ R52 1
+Net 133 "/GPIO_A11" "GPIO_A11"
+ R51 1
+ P2 14
+Net 134 "/GPIO_A10" "GPIO_A10"
+ P2 13
+ R50 1
+Net 135 "/GPIO_A15" "GPIO_A15"
  R55 1
  P2 18
-Net 118 "/GPIO_A14" "GPIO_A14"
- R54 1
+Net 136 "/GPIO_A14" "GPIO_A14"
  P2 17
-Net 137 "/GPIO_B9" "GPIO_B9"
- R11 1
- P1 12
-Net 139 "/GPIO_B8" "GPIO_B8"
- R10 1
- P1 11
-Net 141 "/GPIO_B7" "GPIO_B7"
- R9 1
- P1 10
-Net 143 "/GPIO_B6" "GPIO_B6"
- P1 9
- R8 1
-Net 145 "/GPIO_B5" "GPIO_B5"
- P1 8
- R7 1
-Net 147 "/GPIO_B4" "GPIO_B4"
- P1 7
- R6 1
-Net 149 "/GPIO_B3" "GPIO_B3"
- P1 6
- R5 1
-Net 151 "/GPIO_B2" "GPIO_B2"
- P1 5
- R4 1
-Net 154 "/GPIO_A9" "GPIO_A9"
- P2 12
- R49 1
-Net 156 "/GPIO_A8" "GPIO_A8"
- P2 11
- R48 1
-Net 158 "/GPIO_A7" "GPIO_A7"
- P2 10
- R47 1
-Net 160 "/GPIO_A6" "GPIO_A6"
- R46 1
- P2 9
-Net 162 "/GPIO_A5" "GPIO_A5"
- R45 1
- P2 8
-Net 165 "/FTDI_VCCD" "FTDI_VCCD"
- U5 39
- C9 1
+ R54 1
+Net 143 "/FTDI_VCCD" "FTDI_VCCD"
  C6 1
-Net 166 "/FTDI_VCORE" "FTDI_VCORE"
- U5 38
+ C9 1
+ U5 39
+Net 144 "/FTDI_VCORE" "FTDI_VCORE"
  C8 1
-Net 167 "/5V_USB_RAW" "5V_USB_RAW"
- L2 2
+ U5 38
+Net 145 "/5V_USB_RAW" "5V_USB_RAW"
  J2 1
-Net 168 "/5V_USB" "5V_USB"
- J1 3
+ L2 2
+Net 146 "/5V_USB" "5V_USB"
  L2 1
+ J1 3
  R21 2
-Net 169 "/5V" "5V"
- C7 1
- C2 1
- C10 1
+Net 147 "/5V" "5V"
  R20 1
- U5 40
+ U4 10
+ C7 1
  J1 2
  U4 3
- U4 10
-Net 170 "/FTDI_EEDATA" "FTDI_EEDATA"
- U5 43
+ U5 40
+ C2 1
+ C10 1
+Net 148 "/FTDI_EEDATA" "FTDI_EEDATA"
  R17 1
- R19 2
  U2 3
-Net 171 "/FTDI_VPHY" "FTDI_VPHY"
- L3 1
+ R19 2
+ U5 43
+Net 149 "/FTDI_VPHY" "FTDI_VPHY"
  C13 1
  U5 3
+ L3 1
  C16 1
-Net 172 "/FTDI_VPLL" "FTDI_VPLL"
- C17 1
- C14 1
- L4 1
+Net 150 "/FTDI_VPLL" "FTDI_VPLL"
  U5 8
-Net 191 "/FTDI_SUSPEND" "FTDI_SUSPEND"
- R21 1
+ C14 1
+ C17 1
+ L4 1
+Net 155 "/FTDI_SUSPEND" "FTDI_SUSPEND"
  U5 31
-Net 192 "/USB_D_P" "USB_D_P"
+ R21 1
+Net 156 "/USB_D_P" "USB_D_P"
  U5 7
  J2 3
-Net 193 "/USB_D_N" "USB_D_N"
- U5 6
+Net 157 "/USB_D_N" "USB_D_N"
  J2 2
-Net 195 "/JTAG_TMS_FTDI" "JTAG_TMS_FTDI"
- U5 16
- R26 1
-Net 196 "/JTAG_TDO_FTDI" "JTAG_TDO_FTDI"
- U5 15
- R24 1
-Net 197 "/JTAG_TDI_FTDI" "JTAG_TDI_FTDI"
- R25 1
- U5 14
-Net 198 "/JTAG_TCK_FTDI" "JTAG_TCK_FTDI"
- R23 1
- U5 13
-Net 199 "" ""
- U5 5
+ U5 6
+Net 159 "" ""
  R18 2
-Net 200 "/FTDI_EECS" "FTDI_EECS"
+ U5 5
+Net 160 "/FTDI_EECS" "FTDI_EECS"
+ U5 45
  U2 5
  R15 1
- U5 45
-Net 201 "/FTDI_EECLK" "FTDI_EECLK"
+Net 161 "/FTDI_EECLK" "FTDI_EECLK"
  U5 44
  U2 4
  R16 1
-Net 202 "" ""
- R19 1
+Net 162 "" ""
  U2 1
-Net 204 "/REG_VBIAS" "REG_VBIAS"
- C4 1
+ R19 1
+Net 164 "/REG_VBIAS" "REG_VBIAS"
  U4 15
- U4 1
- U4 16
  U4 2
-Net 206 "" ""
- D1 1
+ C4 1
+ U4 16
+ U4 1
+Net 166 "" ""
  R20 2
-Net 207 "/JTAG_TDI_FPGA" "JTAG_TDI_FPGA"
- R25 2
+ D1 1
+Net 167 "/JTAG_TDI_FPGA" "JTAG_TDI_FPGA"
  U3 110
-Net 208 "/JTAG_TMS_FPGA" "JTAG_TMS_FPGA"
- U3 107
+ R25 2
+Net 168 "/JTAG_TMS_FPGA" "JTAG_TMS_FPGA"
  R26 2
-Net 209 "/JTAG_TDO_FPGA" "JTAG_TDO_FPGA"
- U3 106
+ U3 107
+Net 169 "/JTAG_TDO_FPGA" "JTAG_TDO_FPGA"
  R24 2
-Net 210 "/JTAG_TCK_FPGA" "JTAG_TCK_FPGA"
- U3 109
+ U3 106
+Net 170 "/JTAG_TCK_FPGA" "JTAG_TCK_FPGA"
  R23 2
+ U3 109
+Net 171 "/FLASH_D1" "FLASH_D1"
+ R29 1
+ U6 2
+Net 172 "/FLASH_CS_N" "FLASH_CS_N"
+ U6 1
+ R28 1
+Net 173 "/FLASH_D3" "FLASH_D3"
+ R32 1
+ U6 7
+Net 174 "/FLASH_D2" "FLASH_D2"
+ U6 3
+ R31 1
+Net 175 "/FLASH_D3_TERM" "FLASH_D3_TERM"
+ U3 61
+ R32 2
+Net 176 "/FLASH_D0" "FLASH_D0"
+ U6 5
+ R30 1
+Net 177 "" ""
+ R36 2
+ U3 64
+Net 178 "/FLASH_D0_TERM" "FLASH_D0_TERM"
+ R36 1
+ R30 2
+Net 179 "/JTAG_TMS_FTDI" "JTAG_TMS_FTDI"
+ R26 1
+ U5 16
+Net 180 "/JTAG_TDO_FTDI" "JTAG_TDO_FTDI"
+ R24 1
+ U5 15
+Net 181 "/JTAG_TDI_FTDI" "JTAG_TDI_FTDI"
+ U5 14
+ R25 1
+Net 182 "/JTAG_TCK_FTDI" "JTAG_TCK_FTDI"
+ U5 13
+ R23 1
 }
 #End
