@@ -17,6 +17,19 @@
 \usepackage{placeins}
 \usepackage{longtable}
 
+\definecolor{commentgreen}{RGB}{0,127,0}
+\lstdefinelanguage[]{asn.1}%
+  {keywords=%
+    {DEFINITIONS,SEQUENCE,OCTET,INTEGER,BEGIN,END,OPTIONAL,STRING,IMPORTS,FROM,MODULE-IDENTITY,OBJECT IDENTIFIER},
+    sensitive=true,
+    comment=[l]{--}
+  }[keywords]%
+\lstset{
+	commentstyle=\color{commentgreen}\textit,
+	breaklines,
+	numbers=left
+}
+
 \begin{document}
 
 \title{IP-Controlled Low Voltage DC\\Power Distribution Unit\\ADVANCE DATASHEET}
@@ -47,7 +60,7 @@ change. Data marked as ``TBD" is dependent on characterization of prototype hard
 \subsection{Feature summary}
 
 \begin{itemize}
-\item All functions of the device are accessible via SNMP using the on-board 10/100/1000 Mbps Ethernet port.
+\item All functions of the device are accessible via SNMP using the on-board Gigabit Ethernet port.
 \item Each output channel is individually switched to permit remote reset of a malfunctioning device under test (DUT).
 \item Per-channel current metering allows real-time monitoring of current consumed by downstream loads, providing
 instant feedback when optimizing DUT firmware for power.
@@ -56,7 +69,7 @@ instant feedback when optimizing DUT firmware for power.
 more than a set threshold. A jumper on the board allows 5V or 12V mode to be selected and prevents damaging downstream 
 devices if the PDU is accidentally connected to the wrong supply.
 \item Two chassis temperature monitors allow thermal shutdown in the event of overload.
-\item Programmable overcurrent shutdown for extremely rapid ($\mu s$ or less) shutdown of a shorting or malfunctioning
+\item Programmable overcurrent shutdown for extremely rapid (several $\mu s$) shutdown of a shorting or malfunctioning
 DUT. This protection responds significantly faster than a fuse and can be remotely reset once the fault condition has 
 been cleared. Firmware allows flexible tailoring of overcurrent shutdown behavior including response time; a separate 
 power-on threshold prevents false triggering from inrush currents.
@@ -65,6 +78,217 @@ power-on threshold prevents false triggering from inrush currents.
 BSD). KiCAD design files and firmware source are available at \url{https://code.google.com/p/azonenberg-devboards/}
 under the  subproject ``pdu-5v-20a". Modified firmware may be loaded onto the system via the provided JTAG header.
 \end{itemize}
+
+\pagebreak
+\section{Physical Description}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.15]{board-overview.jpg}
+\caption{PCB overview}
+\label{board-overview}
+\end{figure}
+\FloatBarrier
+
+TODO: Update image with nicer no-rework board once respin arrives.
+
+The PDU is supplied as a printed circuit board with standoffs near each corner. There is no enclosure; the PDU is 
+intended to be mounted inside a customer-supplied case as part of a larger system.
+
+The board has the following connectors, controls, and indicators. For the remainder of this document, all references 
+to ``left", ``right", ``top", and ``bottom" refer to the canonical board orientation in Fig. \ref{board-overview}.
+
+\begin{longtable}{|l|p{4in}|}
+\hline
+{\bf Number} & {\bf Description}\\
+\hline
+1 & GPIO connector\\
+\hline
+2 & JTAG connector\\
+\hline
+3 & Voltage select jumper\\
+\hline
+4 & Ethernet RJ45 connector \\
+\hline
+5 & Board fault LED\\
+\hline
+6 & Ready LED\\
+\hline
+7 & Channel status LEDs\\
+\hline
+8 & Power LED\\
+\hline
+9 & Reverse voltage LED\\
+\hline
+10 & Power output terminals\\
+\hline
+11 & Power input terminals\\
+\hline
+12 & Reset button\\
+\hline
+\end{longtable}
+
+\pagebreak
+\section{Usage}
+
+\subsection{Client System Requirements}
+
+The PDU can communicate with any network management system implementing the industry standard Simple Network 
+Management Protocol (SNMP). The MIB for the PDU is described in section \ref{sec:snmp}.
+
+The official control GUI has only been tested on Debian 7 amd64 but should run on any recent Linux distribution. 
+There are no plans to produce ports for other operating systems at this time however the software is open source and 
+uses the cross-platform gtkmm UI toolkit so porting by end users is possible. Any patches or results of testing on 
+other platforms will be appreciated.
+
+No device drivers are required for clients. Any system capable of sending SNMP traffic over an Ethernet interface can 
+communicate with the PDU.
+
+\subsection{Firmware Updates}
+
+The current firmware does not support remote firmware updates over the Ethernet interface. The provided JTAG header 
+may be used with any standard Xilinx FPGA programming cable to load new firmware.
+
+\subsection{Client Software}
+
+TODO
+
+\subsection{Status Indicators}
+
+The board has several status indicator LEDs which provide visual feedback of system status. Most of this information 
+may also be read remotely via the SNMP interface.
+
+\begin{longtable}{|l|p{1.25in}|p{2.25in}|}
+\hline
+{\bf LED} & {\bf State} & {\bf Meaning}\\
+\hline
+Ethernet &
+	Both off \newline
+		Top green, bottom off \newline
+		Other &
+	No Ethernet link \newline
+		Link up, normal operation \newline
+		Ethernet link problem \\
+\hline
+Board fault &
+	Off \newline
+		Blinking red \newline
+		Solid red &
+	Normal operation \newline
+		Thermal shutdown \newline
+		Under/overvoltage shutdown \\
+\hline
+Ready & 
+	Off \newline
+		Green &
+	FPGA still booting, or boot failure \newline
+	Normal operation \\
+\hline
+Channel status & 
+	Off \newline
+		Green \newline
+		Red &
+	Output switched off \newline
+		Output turned on \newline
+		Overcurrent shutdown \\
+\hline
+Power &
+	Off \newline
+		Green &
+	Board not powered, or input fuse blown \newline
+		Normal operation \\
+\hline
+Reverse voltage &
+	Off \newline
+		Red &
+	Normal operation \newline
+		Board power connected backwards \\
+\hline
+\end{longtable}
+
+\subsection{External connections}
+
+\begin{itemize}
+
+\item Connect an Ethernet cable from the RJ45 jack to the facility's LAN. 
+
+\item Connect the green power-input terminals (11) to an external power supply capable of supplying 5V or 12V at a
+minimum of 20 amps continuous duty. It is recommended that 14 gauge or larger stranded copper cabling be used. The input 
+jack is labeled with a ``+" sign on the positive side (to the right, as seen in the photo).
+
+\item Set the 5V / 12V jumper (3) to the appropriate position for the system operating voltage.
+
+\item Connect the black power-output terminals (10) to the loads.
+
+\item The GPIO header (1) is not used by the stock firmware and should be left unconnected. Custom firmware may use 
+it for arbitrary digital I/O at LVCMOS33 levels.
+
+\item The JTAG header (2) may be left disconnected during normal operation. A standard Xilinx JTAG cable may be connected 
+for debug/test or firmware upgrade operations.
+
+\end{itemize}
+
+\subsection{Network configuration}
+
+The board computes its MAC address by concatenating a locally administered prefix (02:), with a suffix chosen from the
+last 24 bits of the FPGA's factory-programmed serial number (Device DNA). The resulting MAC address is printed on a
+pressure-sensitive adhesive label on the underside of the board for easy identification.
+
+The stock firmware does not support static IP addresses. As soon as the layer-2 link comes up the PDU will issue a 
+DHCPDISCOVER request to the broadcast IP address. If a static IP is required, it should be assigned by the DHCP 
+server based on the board's MAC address.
+
+\subsection{Overcurrent protection}
+
+All channels are protected against overcurrent. The limit may be set over the SNMP interface for each channel 
+separately. When the limit is exceeded, the channel is switched off and the associated red LED is illuminated. The 
+time from when the current first exceeds the limit until the output MOSFET is completely turned off is specified as 
+$T_{ocs}$.
+
+To clear the fault condition, simply switch the channel off and on again.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.8]{Tocs.eps}
+\caption{Overcurrent shutdown timing}
+\label{tocs}
+\end{figure}
+\FloatBarrier
+
+Each channel also has an inrush timer, which disables the soft overcurrent protection for a programmable number of 
+milliseconds $T_{inrush}$ after power is switched on to prevent false triggering. Note that the passive fusing on 
+output channels cannot be disabled. If the inrush limit is set too high it is possible to blow the fuse on the board 
+before the soft protection trips. Such a fault will require a replacement fuse to be soldered on before the channel 
+may be used again.
+
+In the example below, the first power-on surge is shorter than $T_{inrush}$ so the output remains enabled until 
+switched off. The second surge is longer than $T_{inrush}$ so overcurrent shutdown is triggered and the output turns 
+off after $T_{ocs}$.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.8]{Tinrush.eps}
+\caption{Inrush timing}
+\label{tinrush}
+\end{figure}
+\FloatBarrier
+
+\subsection{Input reverse voltage protection}
+
+The board is fully protected against reverse voltage up to the limits specified in section \ref{sec:dcchar}. 
+Connecting input power backwards without exceeding these limits will result in the ``REVERSE VOLTAGE" LED 
+illuminating and the board failing to boot, however no hardware damage will occur.
+
+To clear the fault condition, remove input power and reconnect with the correct polarity.
+
+\subsection{Board fault protection}
+
+The board contains two thermal sensors which may be read at any time via the SNMP interface. If either of these 
+sensors detect a reading outside of the recommended operating limits, firmware will shut down all outputs and blink 
+the red ``BOARD FAULT" LED.
+
+The board contains two voltage sensors which may be read at any time via the SNMP interface. If either of these 
+sensors detect a reading outside of the recommended operating limits, firmware will shut down all outputs and 
+steadily illuminate the red ``BOARD FAULT" LED.
+
+A board fault condition may be cleared by pressing the soft reset button or power cycling the PDU.
 
 \pagebreak
 \section{Theory of operation}
@@ -126,33 +350,24 @@ FPGA has sufficient flash memory and block RAM to store per-board calibration va
 Three Microchip MCP3204 12-bit 4-channel ADCs are connected to the amplified shunt voltage of each channel for metering
 purposes, controlled by the FPGA over an SPI bus. A dedicated SPI bus is used for each of the three ADCs permitting
 simultaneous sampling of of three values. The two remaining ADC channels are used to read the output rail voltage
-(divided by four with 0.1\% tolerance $30K\Omega$ / $10K\Omega$ resistors to stay within the ADC's input range) at each
-end of the power plane. One ADC code value corresponds to 1.22 mA at the load, or 2.44 mV of rail voltage.
+(divided by six with 0.1\% tolerance $50K\Omega$ / $10K\Omega$ resistors to stay within the ADC's input range) at each
+end of the power plane. 
 
-\pagebreak
-\section{Usage}
-
-\subsection{External connections}
-
-\subsection{Setup}
-
-\subsection{Overcurrent protection}
-
-The stock firmware includes delays to prevent high-frequency load transients from triggering an overcurrent 
-shutdown. A 32-bit timer for each channel begins counting up at 100 MHz on the rising edge of the overcurrent alert 
-signal and is reset on the falling edge. If the timer ever reaches the value of the CHx\_OVRCOUNT register, the 
-output is disabled and the ``CHANNEL FAULT" LED is illuminated until the channel is manually turned off and then on 
-again.
-
-Optionally, a higher value for the overcurrent timer may be used immediately after the channel is turned on, to 
-prevent inrush currents from triggering a shutdown. If the CHx\_STARTTIME register is nonzero, the overcurrent timer 
-is compared against CHx\_INRUSHCOUNT rather than CHx\_OVRCOUNT for the first CHx\_STARTTIME cycles of the 100 MHz system
-clock.
+One ADC code value corresponds to 1.22 mA at the load, or 2.44 mV of rail voltage in the first board revision. TODO: 
+Update for next rev
 
 \pagebreak
 \section{SNMP interface}
+\label{sec:snmp}
 
-TODO: warn about setting OC limits $\geq$ 25A combined
+\section{Description}
+TODO
+
+\subsection{DRAWERSTEAK-MIB.my}
+\lstinputlisting[language=asn.1]{/nfs/home/azonenberg/Documents/local/programming/achd-soc/trunk/src/PDUFirmware/DRAWERSTEAK-MIB.my}
+
+\subsection{PDU-MIB.my}
+\lstinputlisting[language=asn.1]{/nfs/home/azonenberg/Documents/local/programming/achd-soc/trunk/src/PDUFirmware/PDU-MIB.my}
 
 \pagebreak
 \section{Mechanical characteristics}
@@ -193,11 +408,12 @@ $Hole4_{y}$ & Mounting hole 4 Y coordinate & 67.0 & mm\\
 \end{longtable}
 
 \pagebreak
-\section{DC characteristics}
+\section{Operational characteristics}
+\label{sec:dcchar}
 
 \subsection{Absolute maximum ratings}
 
-Stresses above these conditions may cause permanent damage to the board. This is a stress rating only and functional
+Stresses above these limits may cause permanent damage to the board. This is a stress rating only and functional
 operation at these conditions, or any conditions outside of the specified operational characteristics, is not implied.
 
 \begin{longtable}{|l|p{2in}|p{0.5in}|p{0.65in}|p{0.5in}|}
@@ -206,50 +422,67 @@ operation at these conditions, or any conditions outside of the specified operat
 \hline
 $V_{in}$ & Supply voltage & -20 & 15.6 & V\\
 \hline
-$V_{outrev}$ & DC voltage applied to power output & -0.25 & Vin + 0.5 & V\\
+$V_{outrev}$ & DC voltage applied to power output & -0.25 & $V_{in} + 0.5$ & V\\
 \hline
 $I_{in}$ & Input current (sum of control logic and all active outputs) & & 25 \footnote{Input fuse rating} & A\\
 \hline
 $I_{out}$ & Output current per channel & & 5 \footnote{Output fuse rating} & A\\
 \hline
-$T_{amb}$ & Ambient temperature & 0 & 65 & $^{\circ}$C\\
+$T_{pcb}$ & Board temperature & 0 & 65 & $^{\circ}$C\\
 \hline
 \end{longtable}
 
 \subsection{Recommended operating conditions}
 
-\begin{longtable}{|l|p{2in}|p{0.5in}|p{0.65in}|p{0.65in}|p{0.5in}|}
+The board is specified to operate normally within these limits. Exceeding these limits may result in firmware 
+triggering a panic shutdown to protect downstream devices.
+
+Since the board may operate in either 5V mode or 12V mode some voltage measurements are referenced to $V_{nom}$, the 
+nominal supply voltage.
+
+\begin{longtable}{|l|p{2in}|p{0.75in}|p{0.5in}|p{0.75in}|p{0.4in}|}
 \hline
 {\bf Symbol} & {\bf Description} & {\bf Min} & {\bf Typ} & {\bf Max} & {\bf Units}\\
 \hline
-$V_{in}$ &
-	(5V mode) Supply voltage
-	\footnote{Exceeding these limits will result in all outputs being disabled the next time the supply voltage is polled}
+$V_{nom}$ &
+	(5V mode) Nominal supply voltage
 	\newline (12V mode) &
-	4.75 \newline 11.75 &
+	&
 	5.00 \newline 12.00 &
-	5.25 \newline 12.25 &
+	&
+	V\\
+\hline
+$V_{in}$ &
+	Supply voltage \footnote{Firmware shutdown limits} &
+	$V_{nom} - 0.25$ &
+	$V_{nom}$ &
+	$V_{nom} + 0.25$ &
 	V\\
 \hline
 $I_{in}$ & Input current & & & 20 & A\\
 \hline
 $I_{out}$ & Output current per channel & & & 4 & A\\
 \hline
+$T_{pcb}$ & Board temperature \footnote{Firmware shutdown limits} & 5 & & 60 & $^{\circ}$C\\
+\hline
 \end{longtable}
 
 \subsection{DC performance characteristics}
+
+Typical values are measured by characterization and not guaranteed.
 
 \begin{longtable}{|l|p{2.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 \hline
 {\bf Symbol} & {\bf Description} & {\bf Min} & {\bf Typ} & {\bf Max} & {\bf Units}\\
 \hline
-$R_{on}$ & DC resistance from input to enabled output & & & TBD & $\Omega$\\
+$R_{s(on)}$ & DC resistance from input to enabled output & & 50 & & $m\Omega$\\
 \hline
-$I_{ctrl}$ & (5V mode) Control module supply current \newline (12V mode) & & & TBD \newline TBD & A\\
+$R_{s(off)}$ & DC resistance from input to disabled output & 0.5 & & & $M\Omega$\\
+\hline
+$I_{pdu}$ & (5V mode) PDU logic supply current \newline (12V mode) & & 0.3 \newline TBD &  & A\\
 \hline
 \end{longtable}
 
-\pagebreak
 \section{AC / timing characteristics}
 
 \subsection{Timing data}
@@ -258,17 +491,19 @@ $I_{ctrl}$ & (5V mode) Control module supply current \newline (12V mode) & & & T
 \hline
 {\bf Symbol} & {\bf Description} & {\bf Min} & {\bf Typ} & {\bf Max} & {\bf Units}\\
 \hline
-$T_{pu}$ & Power-up time & & & TBD & sec\\
+$T_{pu}$ & Power-up time & & TBD & & sec\\
 \hline
-$T_{en}$ & Output enable time & & & TBD & $\mu s$\\
-\hline
-$T_{dis}$ & Output disable time & & & TBD & $\mu s$\\
-\hline
-$T_{ocs}$ & Overcurrent shutdown time & & & TBD & $\mu s$\\
+$T_{ocs}$ & Overcurrent shutdown time & & 15 & & $\mu s$\\
 \hline
 \end{longtable}
 
-\subsection{Measurement conditions}
+\pagebreak
+\section{Errata}
+
+\subsection{Ethernet speeds}
+
+The current firmware version supports full duplex 1000 Mbps mode only. 10/100 mode and half duplex are not 
+supported.
 
 \pagebreak
 \section{Legal}
