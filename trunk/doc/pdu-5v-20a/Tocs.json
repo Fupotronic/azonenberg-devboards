@@ -1,0 +1,4 @@
+{signal: [
+  {name: 'Iout', wave:'z|1..', node:'..a'},
+  {name: 'Vout', wave:'1|.0.', node:'...b'},
+], edge:['a~b Tocs']}
