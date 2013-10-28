@@ -43,43 +43,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
-Title "8-Port JTAG ICE Cape for BBB"
+Title ""
 Date "10 sep 2013"
-Rev "$Rev$"
-Comp "Andrew D. Zonenberg"
+Rev ""
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2300 700  1450 2200
-U 522EB977
-F0 "4-Port USB Hub" 60
-F1 "USB_Hub.sch" 60
-$EndSheet
-$Sheet
-S 4300 700  1300 2200
-U 522EBCFE
-F0 "USB-JTAG" 60
-F1 "USB_JTAG.sch" 60
-$EndSheet
-$Sheet
-S 750  700  700  2200
-U 522EBD2B
-F0 "Power Supply" 60
-F1 "Power_Supply.sch" 60
-$EndSheet
-$Sheet
-S 6100 700  1450 2200
-U 522EBD9C
-F0 "FPGA" 60
-F1 "FPGA.sch" 60
-$EndSheet
-$Sheet
-S 8250 700  1450 2200
-U 522EBED4
-F0 "Level Shifters" 60
-F1 "Level_Shifters.sch" 60
-$EndSheet
 $EndSCHEMATC
