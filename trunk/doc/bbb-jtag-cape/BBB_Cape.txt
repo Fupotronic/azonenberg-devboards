@@ -1,0 +1,4 @@
+1) Get BBB to boot of SD card flashed with Debian, test basic funcationality
+
+2) Disconnect eMMC from pins and so that they can be used as GPIOs
+	->Figure out how Device Tree ties with GPIOs and eMMC
