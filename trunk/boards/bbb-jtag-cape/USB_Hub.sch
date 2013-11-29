@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Nov 2013 12:36:09 PM EST
+EESchema Schematic File Version 2  date Fri 29 Nov 2013 02:39:53 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -152,33 +152,24 @@ Text Label 7000 4300 2    60   ~ 0
 SPI_SCK
 Text Label 7000 4400 2    60   ~ 0
 SPI_CS_N
-$Comp
-L HIROSE_UX60SX-MB-5ST_(MINI_USB) J4
-U 1 1 5276E90D
-P 1700 5950
-F 0 "J4" H 2200 6950 60  0000 C CNN
-F 1 "HIROSE_UX60SX-MB-5ST" H 2200 6100 60  0000 C CNN
-	1    1700 5950
-	-1   0    0    -1  
-$EndComp
 Text Label 7000 4500 2    60   ~ 0
 VBUS
-Text Label 2000 5100 0    60   ~ 0
+Text Label 2100 5100 0    60   ~ 0
 VBUS
-Text Label 2000 5200 0    60   ~ 0
+Text Label 2100 5200 0    60   ~ 0
 USB_D_N
-Text Label 2000 5300 0    60   ~ 0
+Text Label 2100 5300 0    60   ~ 0
 USB_D_P
-Text Label 2000 5400 0    60   ~ 0
+Text Label 2100 5400 0    60   ~ 0
 GND
-NoConn ~ 1650 5500
+NoConn ~ 1750 5500
 $Comp
 L R R12
 U 1 1 5276E9DC
-P 1900 5650
-F 0 "R12" V 1980 5650 50  0000 C CNN
-F 1 "1M" V 1900 5650 50  0000 C CNN
-	1    1900 5650
+P 2000 5650
+F 0 "R12" V 2080 5650 50  0000 C CNN
+F 1 "1M" V 2000 5650 50  0000 C CNN
+	1    2000 5650
 	0    -1   -1   0   
 $EndComp
 Text Label 7000 4650 2    60   ~ 0
@@ -234,7 +225,7 @@ Text Label 5850 2600 0    60   ~ 0
 USB_CLK_24MHZ
 Text Label 7000 5800 2    60   ~ 0
 USB_CLK_24MHZ
-Text Notes 1050 5950 0    60   ~ 0
+Text Notes 1150 5950 0    60   ~ 0
 USB port to host SBC
 Text Notes 3800 6850 0    60   ~ 0
 USB descriptor EEPROM
@@ -797,17 +788,17 @@ Connection ~ 8200 3550
 Connection ~ 8300 3550
 Connection ~ 8400 3550
 Wire Wire Line
-	2000 5100 1650 5100
+	2100 5100 1750 5100
 Wire Wire Line
-	2000 5200 1650 5200
+	2100 5200 1750 5200
 Wire Wire Line
-	2000 5300 1650 5300
+	2100 5300 1750 5300
 Wire Wire Line
-	1650 5400 2150 5400
+	1750 5400 2250 5400
 Wire Wire Line
-	1650 5600 1650 5700
+	1750 5600 1750 5700
 Wire Wire Line
-	2150 5400 2150 5650
+	2250 5400 2250 5650
 Wire Wire Line
 	9250 4500 9100 4500
 Wire Wire Line
@@ -940,9 +931,18 @@ Connection ~ 3450 7650
 Connection ~ 3800 7650
 Connection ~ 4150 7650
 Connection ~ 6450 4500
-Connection ~ 1650 5650
+Connection ~ 1750 5650
 Wire Wire Line
 	6600 4900 7000 4900
 Wire Wire Line
 	6600 5000 7000 5000
+$Comp
+L HIROSE_UX60SX-MB-5ST_PSVGND J4
+U 1 1 5299AC98
+P 1800 5950
+F 0 "J4" H 2300 6950 60  0000 C CNN
+F 1 "HIROSE_UX60SX-MB-5ST_PSVGND" H 2300 6100 60  0000 C CNN
+	1    1800 5950
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
