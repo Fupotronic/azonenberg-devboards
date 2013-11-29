@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Nov 2013 12:36:10 PM EST
+EESchema Schematic File Version 2  date Fri 29 Nov 2013 02:39:54 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -60,21 +60,21 @@ Text HLabel 8800 8800 0    60   Input ~ 0
 FPGA_TMS
 Text HLabel 8800 8700 0    60   Input ~ 0
 FPGA_TCK
-Text HLabel 9500 850  0    60   BiDi ~ 0
+Text HLabel 9500 1850 0    60   BiDi ~ 0
 FPGA_CBUS0
-Text HLabel 9500 950  0    60   BiDi ~ 0
+Text HLabel 9500 1950 0    60   BiDi ~ 0
 FPGA_CBUS1
-Text HLabel 9500 1050 0    60   BiDi ~ 0
+Text HLabel 9500 2050 0    60   BiDi ~ 0
 FPGA_CBUS2
-Text HLabel 9500 1150 0    60   BiDi ~ 0
+Text HLabel 9500 2150 0    60   BiDi ~ 0
 FPGA_CBUS3
-Text HLabel 9500 1250 0    60   BiDi ~ 0
+Text HLabel 9500 2250 0    60   BiDi ~ 0
 FPGA_CBUS4
-Text HLabel 9500 1350 0    60   BiDi ~ 0
+Text HLabel 9500 2350 0    60   BiDi ~ 0
 FPGA_CBUS5
-Text HLabel 9500 1450 0    60   BiDi ~ 0
+Text HLabel 9500 2450 0    60   BiDi ~ 0
 FPGA_CBUS6
-Text HLabel 9500 1550 0    60   BiDi ~ 0
+Text HLabel 9500 2550 0    60   BiDi ~ 0
 FPGA_CBUS7
 $Comp
 L BBB_CAPE_HEADER J6
@@ -103,24 +103,10 @@ F 1 "XC7A100T-1FTG256C" H 11600 10950 60  0000 R CNN
 	1    9800 11000
 	1    0    0    -1  
 $EndComp
-Text Label 9300 9700 2    60   ~ 0
+Text Label 9300 9600 2    60   ~ 0
 3V3
-Wire Wire Line
-	9300 9700 9500 9700
-Text Label 9300 9800 2    60   ~ 0
-GND
-Wire Wire Line
-	9300 9800 9500 9800
-Text Label 9300 9900 2    60   ~ 0
-3V3
-Wire Wire Line
-	9300 9900 9500 9900
-Wire Wire Line
-	9500 9600 9300 9600
-Wire Wire Line
-	9300 9600 9300 9700
 Text Notes 9050 9750 2    60   ~ 0
-Config pins in 3.3V mode\nBoot from JTAG only
+Config pins in 3.3V mode\nDefault to slave SPI boot\n(can also JTAG)
 $Comp
 L R R26
 U 1 1 529833F9
@@ -130,65 +116,20 @@ F 1 "49.9" V 9050 9000 50  0000 C CNN
 	1    9050 9000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9300 9000 9500 9000
-Wire Wire Line
-	8800 8700 9500 8700
-Wire Wire Line
-	9500 8800 8800 8800
-Wire Wire Line
-	8800 8900 9500 8900
 Text Label 13150 900  2    60   ~ 0
 GND
-Wire Wire Line
-	13150 900  13250 900 
-Wire Wire Line
-	13250 900  13250 1000
 Text Label 13150 5650 2    60   ~ 0
 GND
-Wire Wire Line
-	13150 5650 13250 5650
-Wire Wire Line
-	13250 5650 13250 5750
 Text HLabel 13150 5850 0    60   Output ~ 0
 3V3
-Wire Wire Line
-	13150 5850 13250 5850
-Wire Wire Line
-	13200 5850 13200 5950
-Wire Wire Line
-	13200 5950 13250 5950
-Connection ~ 13200 5850
 Text HLabel 13150 6050 0    60   Output ~ 0
 5V
-Wire Wire Line
-	13150 6050 13250 6050
-Wire Wire Line
-	13200 6050 13200 6150
-Wire Wire Line
-	13200 6150 13250 6150
-Connection ~ 13200 6050
 NoConn ~ 13250 6250
 NoConn ~ 13250 6350
 Text Label 13150 9850 2    60   ~ 0
 GND
-Wire Wire Line
-	13150 9850 13250 9850
-Wire Wire Line
-	13200 9850 13200 10150
-Wire Wire Line
-	13200 9950 13250 9950
-Connection ~ 13200 9850
-Wire Wire Line
-	13200 10050 13250 10050
-Connection ~ 13200 9950
-Wire Wire Line
-	13200 10150 13250 10150
-Connection ~ 13200 10050
 Text Label 13150 8950 2    60   ~ 0
 GND
-Wire Wire Line
-	13150 8950 13250 8950
 NoConn ~ 13250 8850
 NoConn ~ 13250 9050
 NoConn ~ 13250 9150
@@ -199,199 +140,105 @@ NoConn ~ 13250 9550
 NoConn ~ 13250 8750
 Text Label 13150 1100 2    60   ~ 0
 GPMC_D6
-Wire Wire Line
-	13150 1100 13250 1100
 Text Label 13150 1200 2    60   ~ 0
 GPMC_D7
-Wire Wire Line
-	13150 1200 13250 1200
 Text Label 13150 1300 2    60   ~ 0
 GPMC_D2
-Wire Wire Line
-	13150 1300 13250 1300
 Text Label 13150 1400 2    60   ~ 0
 GPMC_D3
-Wire Wire Line
-	13150 1400 13250 1400
 Text Label 13150 1900 2    60   ~ 0
 GPMC_D13
-Wire Wire Line
-	13150 1900 13250 1900
 Text Label 13150 2000 2    60   ~ 0
 GPMC_D12
-Wire Wire Line
-	13150 2000 13250 2000
 Text Label 13150 2100 2    60   ~ 0
 GPMC_D9
-Wire Wire Line
-	13150 2100 13250 2100
 Text Label 13150 2200 2    60   ~ 0
 GPMC_D10
-Wire Wire Line
-	13150 2200 13250 2200
 Text Label 13150 2300 2    60   ~ 0
 GPMC_D15
-Wire Wire Line
-	13150 2300 13250 2300
 Text Label 13150 2400 2    60   ~ 0
 GPMC_D14
-Wire Wire Line
-	13150 2400 13250 2400
 Text Label 13150 2500 2    60   ~ 0
 GPMC_D11
-Wire Wire Line
-	13150 2500 13250 2500
 Text Label 13150 3000 2    60   ~ 0
 GPMC_D5
-Wire Wire Line
-	13150 3000 13250 3000
 Text Label 13150 3100 2    60   ~ 0
 GPMC_D4
-Wire Wire Line
-	13150 3100 13250 3100
 Text Label 13150 3200 2    60   ~ 0
 GPMC_D1
-Wire Wire Line
-	13150 3200 13250 3200
 Text Label 13150 3300 2    60   ~ 0
 GPMC_D0
-Wire Wire Line
-	13150 3300 13250 3300
 Text Label 13150 2700 2    60   ~ 0
 GPMC_D8
-Wire Wire Line
-	13150 2700 13250 2700
 Text Label 13150 3500 2    60   ~ 0
 GPMC_A8
-Wire Wire Line
-	13150 3500 13250 3500
 Text Label 13150 3600 2    60   ~ 0
 GPMC_A10
-Wire Wire Line
-	13150 3600 13250 3600
 Text Label 13150 3700 2    60   ~ 0
 GPMC_A9
-Wire Wire Line
-	13150 3700 13250 3700
 Text Label 13150 3800 2    60   ~ 0
 GPMC_A11
-Wire Wire Line
-	13150 3800 13250 3800
 Text Label 13150 3900 2    60   ~ 0
 GPMC_A18
-Wire Wire Line
-	13150 3900 13250 3900
 Text Label 13150 4000 2    60   ~ 0
 GPMC_A19
-Wire Wire Line
-	13150 4000 13250 4000
 Text Label 13150 4100 2    60   ~ 0
 GPMC_A17
-Wire Wire Line
-	13150 4100 13250 4100
 Text Label 13150 4200 2    60   ~ 0
 GPMC_A15
-Wire Wire Line
-	13150 4200 13250 4200
 Text Label 13150 4300 2    60   ~ 0
 GPMC_A16
-Wire Wire Line
-	13150 4300 13250 4300
 Text Label 13150 4400 2    60   ~ 0
 GPMC_A14
-Wire Wire Line
-	13150 4400 13250 4400
 Text Label 13150 4500 2    60   ~ 0
 GPMC_A12
-Wire Wire Line
-	13150 4500 13250 4500
 Text Label 13150 4600 2    60   ~ 0
 GPMC_A13
-Wire Wire Line
-	13150 4600 13250 4600
 Text Label 13150 4700 2    60   ~ 0
 GPMC_A6
-Wire Wire Line
-	13150 4700 13250 4700
 Text Label 13150 4800 2    60   ~ 0
 GPMC_A7
-Wire Wire Line
-	13150 4800 13250 4800
 Text Label 13150 4900 2    60   ~ 0
 GPMC_A4
-Wire Wire Line
-	13150 4900 13250 4900
 Text Label 13150 5000 2    60   ~ 0
 GPMC_A5
-Wire Wire Line
-	13150 5000 13250 5000
 Text Label 13150 5100 2    60   ~ 0
 GPMC_A2
-Wire Wire Line
-	13150 5100 13250 5100
 Text Label 13150 5200 2    60   ~ 0
 GPMC_A3
-Wire Wire Line
-	13150 5200 13250 5200
 Text Label 13150 5300 2    60   ~ 0
 GPMC_A0
-Wire Wire Line
-	13150 5300 13250 5300
 Text Label 13150 5400 2    60   ~ 0
 GPMC_A1
-Wire Wire Line
-	13150 5400 13250 5400
 Text Notes 13550 800  0    60   ~ 0
 20 bits address + 16 bits data
 Text Label 13150 1800 2    60   ~ 0
 GPMC_WE_N
-Wire Wire Line
-	13150 1800 13250 1800
 Text Label 13150 2900 2    60   ~ 0
 GPMC_CLK
-Wire Wire Line
-	13150 2900 13250 2900
 Text Label 13150 3400 2    60   ~ 0
 GPMC_CS_N
-Wire Wire Line
-	13150 3400 13250 3400
 NoConn ~ 13250 2800
 NoConn ~ 13250 2600
 Text Label 13150 1600 2    60   ~ 0
 GPMC_RE_N
-Wire Wire Line
-	13150 1600 13250 1600
 NoConn ~ 13250 1500
 NoConn ~ 13250 1700
 Text Label 13150 6550 2    60   ~ 0
 SYS_RESET_N
-Wire Wire Line
-	13150 6550 13250 6550
 NoConn ~ 13250 6450
 Text Label 13150 7550 2    60   ~ 0
 I2C_SDA
 Text Label 13150 7450 2    60   ~ 0
 I2C_SCL
-Wire Wire Line
-	13150 7550 13250 7550
-Wire Wire Line
-	13250 7450 13150 7450
 Text Label 9300 9400 2    60   ~ 0
-SYS_RESET_N
-Wire Wire Line
-	9300 9400 9500 9400
+PROG_B_N
 Text Label 9300 9200 2    60   ~ 0
 FPGA_DONE
-Wire Wire Line
-	9300 9200 9500 9200
 Text Label 9300 9300 2    60   ~ 0
 FPGA_INIT_B
-Wire Wire Line
-	9300 9300 9500 9300
 Text Label 13150 7250 2    60   ~ 0
 FPGA_GTS_N
-Wire Wire Line
-	13150 7250 13250 7250
 $Comp
 L XC7AXXXT-XFTG256X U8
 U 3 1 5298E17D
@@ -508,11 +355,11 @@ Text Label 2200 6400 2    60   ~ 0
 GPMC_CS_N
 Text Label 2200 6200 2    60   ~ 0
 GPMC_RE_N
-Text Notes 1100 1950 0    60   ~ 0
-TODO: EEPROM (and required pullups/jumpers) for board ID
-Text Label 1700 2450 2    60   ~ 0
+Text Notes 950  1050 0    60   ~ 0
+TODO: board ID EEPROM
+Text Label 1050 1650 2    60   ~ 0
 I2C_SDA
-Text Label 1700 2350 2    60   ~ 0
+Text Label 1050 1450 2    60   ~ 0
 I2C_SCL
 Text Label 2200 11000 2    60   ~ 0
 FPGA_GTS_N
@@ -525,8 +372,6 @@ F 1 "50 MHz" H 2900 5300 60  0000 C CNN
 	1    2900 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 5200 2200 5500
 $Comp
 L C C88
 U 1 1 5298AA03
@@ -536,11 +381,6 @@ F 1 "0.01 uF" H 1850 5300 50  0000 L CNN
 	1    1800 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 5200 2200 5200
-Connection ~ 2200 5400
-Wire Wire Line
-	1800 5600 2200 5600
 $Comp
 L R R27
 U 1 1 5298AB6E
@@ -554,8 +394,6 @@ Text Label 4050 5400 0    60   ~ 0
 CLK_50MHZ
 Text Label 5450 8400 2    60   ~ 0
 CLK_50MHZ
-Wire Wire Line
-	5450 8400 5600 8400
 Text Label 1800 5200 2    60   ~ 0
 3V3
 Text Label 1800 5600 2    60   ~ 0
@@ -626,6 +464,382 @@ Text HLabel 9500 5750 0    60   Input ~ 0
 JTAG7_TDO_IN
 Text HLabel 13150 5750 0    60   Output ~ 0
 GND
+Text Label 13150 8350 2    60   ~ 0
+FPGA_SPI_CS_N
+Text Label 13150 8450 2    60   ~ 0
+FPGA_SPI_MOSI
+Text Label 13150 8550 2    60   ~ 0
+FPGA_SPI_MISO
+Text Label 13150 8650 2    60   ~ 0
+FPGA_SPI_SCK
+Text Label 9500 1250 2    60   ~ 0
+FPGA_SPI_CS_N
+Text Label 9500 1050 2    60   ~ 0
+FPGA_SPI_MOSI
+Text Label 9500 1150 2    60   ~ 0
+FPGA_SPI_MISO
+Text Label 9300 11000 2    60   ~ 0
+FPGA_SPI_SCK
+Text Label 3200 4250 2    60   ~ 0
+FPGA_INIT_B
+$Comp
+L R R79
+U 1 1 529A1B2E
+P 3450 4250
+F 0 "R79" V 3530 4250 50  0000 C CNN
+F 1 "4.7K" V 3450 4250 50  0000 C CNN
+	1    3450 4250
+	0    -1   -1   0   
+$EndComp
+Text Label 3700 4450 0    60   ~ 0
+3V3
+Text Label 13150 8250 2    60   ~ 0
+FPGA_INIT_B
+Text Label 3200 4500 2    60   ~ 0
+PROG_B_N
+$Comp
+L R R80
+U 1 1 529A1BB7
+P 3450 4500
+F 0 "R80" V 3530 4500 50  0000 C CNN
+F 1 "4.7K" V 3450 4500 50  0000 C CNN
+	1    3450 4500
+	0    -1   -1   0   
+$EndComp
+Text Label 13150 8150 2    60   ~ 0
+PROG_B_N
+$Comp
+L R R78
+U 1 1 529A1F82
+P 3450 4000
+F 0 "R78" V 3530 4000 50  0000 C CNN
+F 1 "4.7K" V 3450 4000 50  0000 C CNN
+	1    3450 4000
+	0    -1   -1   0   
+$EndComp
+Text Label 3200 4000 2    60   ~ 0
+FPGA_DONE
+Text Label 13150 7950 2    60   ~ 0
+FPGA_DONE
+NoConn ~ 13250 8050
+Text Label 3200 3700 2    60   ~ 0
+FPGA_SPI_SCK
+$Comp
+L R R77
+U 1 1 529A2663
+P 3450 3700
+F 0 "R77" V 3530 3700 50  0000 C CNN
+F 1 "4.7K" V 3450 3700 50  0000 C CNN
+	1    3450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 529A26CD
+P 2500 4500
+F 0 "SW1" H 2650 4610 50  0000 C CNN
+F 1 "SW_PUSH" H 2500 4420 50  0000 C CNN
+	1    2500 4500
+	1    0    0    -1  
+$EndComp
+Text Label 1300 4450 2    60   ~ 0
+GND
+$Comp
+L R R72
+U 1 1 529A273D
+P 1950 4000
+F 0 "R72" V 2030 4000 50  0000 C CNN
+F 1 "470" V 1950 4000 50  0000 C CNN
+	1    1950 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D18
+U 1 1 529A27BD
+P 1500 4000
+F 0 "D18" H 1500 4100 50  0000 C CNN
+F 1 "GREEN" H 1500 3900 50  0000 C CNN
+	1    1500 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D19
+U 1 1 529A283E
+P 1500 4700
+F 0 "D19" H 1500 4800 50  0000 C CNN
+F 1 "GREEN" H 1500 4600 50  0000 C CNN
+	1    1500 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R73
+U 1 1 529A2844
+P 1950 4700
+F 0 "R73" V 2030 4700 50  0000 C CNN
+F 1 "470" V 1950 4700 50  0000 C CNN
+	1    1950 4700
+	0    1    1    0   
+$EndComp
+Text Notes 950  2550 0    60   ~ 0
+Solder jumpers for setting\ncape I2C address (shown as 2'b00)
+Text Label 2350 1900 2    60   ~ 0
+I2C_A0
+Text Label 2250 2150 2    60   ~ 0
+GND
+Text Label 2950 1900 2    60   ~ 0
+I2C_A1
+Text Label 2450 1450 0    60   ~ 0
+3V3
+$Comp
+L R R69
+U 1 1 529A2CCE
+P 1300 1650
+F 0 "R69" V 1380 1650 50  0000 C CNN
+F 1 "5.6K" V 1300 1650 50  0000 C CNN
+	1    1300 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R68
+U 1 1 529A2E1C
+P 1300 1450
+F 0 "R68" V 1380 1450 50  0000 C CNN
+F 1 "5.6K" V 1300 1450 50  0000 C CNN
+	1    1300 1450
+	0    -1   -1   0   
+$EndComp
+Text Label 3200 3450 2    60   ~ 0
+FPGA_SPI_CS_N
+$Comp
+L R R76
+U 1 1 529A34DF
+P 3450 3450
+F 0 "R76" V 3530 3450 50  0000 C CNN
+F 1 "10K" V 3450 3450 50  0000 C CNN
+	1    3450 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L JUMPER3 JP1
+U 1 1 529A3CCD
+P 2450 1900
+F 0 "JP1" H 2500 1800 40  0000 L CNN
+F 1 "JUMPER3" H 2450 2000 40  0000 C CNN
+	1    2450 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER3 JP2
+U 1 1 529A3D54
+P 3050 1900
+F 0 "JP2" H 3100 1800 40  0000 L CNN
+F 1 "JUMPER3" H 3050 2000 40  0000 C CNN
+	1    3050 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 9700 9500 9700
+Wire Wire Line
+	9300 9800 9500 9800
+Wire Wire Line
+	9300 9900 9500 9900
+Wire Wire Line
+	9500 9600 9300 9600
+Wire Wire Line
+	9300 9600 9300 9900
+Wire Wire Line
+	9300 9000 9500 9000
+Wire Wire Line
+	8800 8700 9500 8700
+Wire Wire Line
+	9500 8800 8800 8800
+Wire Wire Line
+	8800 8900 9500 8900
+Wire Wire Line
+	13150 900  13250 900 
+Wire Wire Line
+	13250 900  13250 1000
+Wire Wire Line
+	13150 5650 13250 5650
+Wire Wire Line
+	13250 5650 13250 5750
+Wire Wire Line
+	13150 5850 13250 5850
+Wire Wire Line
+	13200 5850 13200 5950
+Wire Wire Line
+	13200 5950 13250 5950
+Connection ~ 13200 5850
+Wire Wire Line
+	13150 6050 13250 6050
+Wire Wire Line
+	13200 6050 13200 6150
+Wire Wire Line
+	13200 6150 13250 6150
+Connection ~ 13200 6050
+Wire Wire Line
+	13150 9850 13250 9850
+Wire Wire Line
+	13200 9850 13200 10150
+Wire Wire Line
+	13200 9950 13250 9950
+Connection ~ 13200 9850
+Wire Wire Line
+	13200 10050 13250 10050
+Connection ~ 13200 9950
+Wire Wire Line
+	13200 10150 13250 10150
+Connection ~ 13200 10050
+Wire Wire Line
+	13150 8950 13250 8950
+Wire Wire Line
+	13150 1100 13250 1100
+Wire Wire Line
+	13150 1200 13250 1200
+Wire Wire Line
+	13150 1300 13250 1300
+Wire Wire Line
+	13150 1400 13250 1400
+Wire Wire Line
+	13150 1900 13250 1900
+Wire Wire Line
+	13150 2000 13250 2000
+Wire Wire Line
+	13150 2100 13250 2100
+Wire Wire Line
+	13150 2200 13250 2200
+Wire Wire Line
+	13150 2300 13250 2300
+Wire Wire Line
+	13150 2400 13250 2400
+Wire Wire Line
+	13150 2500 13250 2500
+Wire Wire Line
+	13150 3000 13250 3000
+Wire Wire Line
+	13150 3100 13250 3100
+Wire Wire Line
+	13150 3200 13250 3200
+Wire Wire Line
+	13150 3300 13250 3300
+Wire Wire Line
+	13150 2700 13250 2700
+Wire Wire Line
+	13150 3500 13250 3500
+Wire Wire Line
+	13150 3600 13250 3600
+Wire Wire Line
+	13150 3700 13250 3700
+Wire Wire Line
+	13150 3800 13250 3800
+Wire Wire Line
+	13150 3900 13250 3900
+Wire Wire Line
+	13150 4000 13250 4000
+Wire Wire Line
+	13150 4100 13250 4100
+Wire Wire Line
+	13150 4200 13250 4200
+Wire Wire Line
+	13150 4300 13250 4300
+Wire Wire Line
+	13150 4400 13250 4400
+Wire Wire Line
+	13150 4500 13250 4500
+Wire Wire Line
+	13150 4600 13250 4600
+Wire Wire Line
+	13150 4700 13250 4700
+Wire Wire Line
+	13150 4800 13250 4800
+Wire Wire Line
+	13150 4900 13250 4900
+Wire Wire Line
+	13150 5000 13250 5000
+Wire Wire Line
+	13150 5100 13250 5100
+Wire Wire Line
+	13150 5200 13250 5200
+Wire Wire Line
+	13150 5300 13250 5300
+Wire Wire Line
+	13150 5400 13250 5400
+Wire Wire Line
+	13150 1800 13250 1800
+Wire Wire Line
+	13150 2900 13250 2900
+Wire Wire Line
+	13150 3400 13250 3400
+Wire Wire Line
+	13150 1600 13250 1600
+Wire Wire Line
+	13150 6550 13250 6550
+Wire Wire Line
+	13150 7550 13250 7550
+Wire Wire Line
+	13250 7450 13150 7450
+Wire Wire Line
+	9300 9400 9500 9400
+Wire Wire Line
+	9300 9200 9500 9200
+Wire Wire Line
+	9300 9300 9500 9300
+Wire Wire Line
+	13150 7250 13250 7250
+Wire Wire Line
+	2200 5200 2200 5500
+Wire Wire Line
+	1800 5200 2200 5200
+Connection ~ 2200 5400
+Wire Wire Line
+	1800 5600 2200 5600
+Wire Wire Line
+	5450 8400 5600 8400
 Wire Wire Line
 	13250 5750 13150 5750
+Wire Wire Line
+	13150 8350 13250 8350
+Wire Wire Line
+	13150 8650 13250 8650
+Wire Wire Line
+	13150 8450 13250 8450
+Wire Wire Line
+	13150 8550 13250 8550
+Connection ~ 9300 9700
+Connection ~ 9300 9800
+Wire Wire Line
+	9300 11000 9500 11000
+Wire Wire Line
+	13150 8250 13250 8250
+Wire Wire Line
+	3700 3450 3700 4700
+Wire Wire Line
+	13150 8150 13250 8150
+Connection ~ 3700 4250
+Wire Wire Line
+	13150 7950 13250 7950
+Connection ~ 3700 4000
+Wire Wire Line
+	3200 4500 2800 4500
+Wire Wire Line
+	2200 4000 3200 4000
+Wire Wire Line
+	1300 4000 1300 4700
+Wire Wire Line
+	1300 4500 2200 4500
+Connection ~ 1300 4500
+Wire Wire Line
+	3700 4700 2200 4700
+Connection ~ 3700 4500
+Wire Wire Line
+	1550 1650 3050 1650
+Wire Wire Line
+	1550 1450 2450 1450
+Connection ~ 2450 1650
+Connection ~ 3700 3700
+Wire Wire Line
+	2450 1450 2450 1650
+Wire Wire Line
+	2250 2150 3050 2150
+Connection ~ 2450 2150
 $EndSCHEMATC
