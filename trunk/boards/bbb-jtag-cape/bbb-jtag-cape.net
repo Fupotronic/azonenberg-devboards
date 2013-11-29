@@ -1,0 +1,2604 @@
+# EESchema Netlist Version 1.1 created  Fri 29 Nov 2013 12:30:31 PM EST
+(
+ ( /522EB977/5276E279 $noname  U4 CY7C65631 {Lib=CY7C65631}
+  (    1 /4-Port_USB_Hub/FTDI_USB_N )
+  (    2 /4-Port_USB_Hub/FTDI_USB_P )
+  (    3 /4-Port_USB_Hub/3V3 )
+  (    4 /4-Port_USB_Hub/GND )
+  (    5 /4-Port_USB_Hub/USB_3_N )
+  (    6 /4-Port_USB_Hub/USB_3_P )
+  (    7 /4-Port_USB_Hub/3V3 )
+  (    8 /4-Port_USB_Hub/GND )
+  (    9 /4-Port_USB_Hub/USB_2_N )
+  (   10 /4-Port_USB_Hub/USB_2_P )
+  (   11 /4-Port_USB_Hub/3V3 )
+  (   12 /4-Port_USB_Hub/GND )
+  (   13 /4-Port_USB_Hub/USB_1_N )
+  (   14 /4-Port_USB_Hub/USB_1_P )
+  (   15 /4-Port_USB_Hub/3V3 )
+  (   16 /4-Port_USB_Hub/GND )
+  (   17 /4-Port_USB_Hub/USB_D_N )
+  (   18 /4-Port_USB_Hub/USB_D_P )
+  (   19 /4-Port_USB_Hub/3V3 )
+  (   20 /4-Port_USB_Hub/GND )
+  (   21 /4-Port_USB_Hub/USB_CLK_24MHZ )
+  (   22 ? )
+  (   23 /4-Port_USB_Hub/3V3 )
+  (   24 /4-Port_USB_Hub/GND )
+  (   25 /4-Port_USB_Hub/SPI_CS_N )
+  (   26 /4-Port_USB_Hub/VBUS )
+  (   27 /4-Port_USB_Hub/3V3 )
+  (   28 /4-Port_USB_Hub/GND )
+  (   29 /4-Port_USB_Hub/PWR_1_N )
+  (   30 /4-Port_USB_Hub/OVR_1_N )
+  (   31 /4-Port_USB_Hub/PWR_2_N )
+  (   32 /4-Port_USB_Hub/OVR_2_N )
+  (   33 /4-Port_USB_Hub/3V3 )
+  (   34 /4-Port_USB_Hub/GND )
+  (   35 /4-Port_USB_Hub/GREEN_1_N )
+  (   36 /4-Port_USB_Hub/AMBER_1_N )
+  (   37 /4-Port_USB_Hub/GREEN_2_N )
+  (   38 /4-Port_USB_Hub/AMBER_2_N )
+  (   39 /4-Port_USB_Hub/3V3 )
+  (   40 /4-Port_USB_Hub/GND )
+  (   41 /4-Port_USB_Hub/GREEN_3_N )
+  (   42 /4-Port_USB_Hub/AMBER_3_N )
+  (   43 /4-Port_USB_Hub/GREEN_4_N )
+  (   44 /4-Port_USB_Hub/AMBER_4_N )
+  (   45 /4-Port_USB_Hub/3V3 )
+  (   46 /4-Port_USB_Hub/HUB_RESET_N )
+  (   47 /4-Port_USB_Hub/GND )
+  (   48 /4-Port_USB_Hub/SPI_SCK )
+  (   49 /4-Port_USB_Hub/SPI_DATA )
+  (   50 /4-Port_USB_Hub/GND )
+  (   51 /4-Port_USB_Hub/OVR_4_N )
+  (   52 /4-Port_USB_Hub/PWR_4_N )
+  (   53 /4-Port_USB_Hub/OVR_3_N )
+  (   54 /4-Port_USB_Hub/PWR_3_N )
+  (   55 /4-Port_USB_Hub/3V3 )
+  (   56 /4-Port_USB_Hub/GND )
+  (  PAD /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276E289 $noname  U2 25LC080 {Lib=25LC080}
+  (    1 /4-Port_USB_Hub/SPI_CS_N )
+  (    2 N-000076 )
+  (    3 /4-Port_USB_Hub/3V3 )
+  (    4 /4-Port_USB_Hub/GND )
+  (    5 /4-Port_USB_Hub/SPI_DATA )
+  (    6 /4-Port_USB_Hub/SPI_SCK )
+  (    7 /4-Port_USB_Hub/3V3 )
+  (    8 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EB977/5276E298 $noname  U1 24_MHz {Lib=OSC}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+  (    3 N-000074 )
+  (    4 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EB977/5276E2A7 $noname  U3 TPS2044BD {Lib=TPS2044BD}
+  (    1 /4-Port_USB_Hub/GND )
+  (    2 /4-Port_USB_Hub/5V )
+  (    3 /4-Port_USB_Hub/PWR_1_N )
+  (    4 /4-Port_USB_Hub/PWR_2_N )
+  (    5 /4-Port_USB_Hub/GND )
+  (    6 /4-Port_USB_Hub/5V )
+  (    7 /4-Port_USB_Hub/PWR_3_N )
+  (    8 /4-Port_USB_Hub/PWR_4_N )
+  (    9 /4-Port_USB_Hub/OVR_4_N )
+  (   10 ? )
+  (   11 /4-Port_USB_Hub/VBUS_3 )
+  (   12 /4-Port_USB_Hub/OVR_3_N )
+  (   13 /4-Port_USB_Hub/OVR_2_N )
+  (   14 /4-Port_USB_Hub/VBUS_2 )
+  (   15 /4-Port_USB_Hub/VBUS_1 )
+  (   16 /4-Port_USB_Hub/OVR_1_N )
+ )
+ ( /522EB977/5276E583 $noname  R9 49.9 {Lib=R}
+  (    1 N-000074 )
+  (    2 /4-Port_USB_Hub/USB_CLK_24MHZ )
+ )
+ ( /522EB977/5276E6E8 $noname  R14 100K {Lib=R}
+  (    1 /4-Port_USB_Hub/HUB_RESET_N )
+  (    2 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EB977/5276E717 $noname  C12 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/HUB_RESET_N )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276E90D $noname  J4 HIROSE_UX60SX-MB-5ST {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
+  (    1 /4-Port_USB_Hub/VBUS )
+  (    2 /4-Port_USB_Hub/USB_D_N )
+  (    3 /4-Port_USB_Hub/USB_D_P )
+  (    4 ? )
+  (    5 /4-Port_USB_Hub/GND )
+  (    6 N-000097 )
+  (    7 N-000097 )
+ )
+ ( /522EB977/5276E9DC $noname  R12 1M {Lib=R}
+  (    1 N-000097 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276EE0B $noname  C1 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276EF38 $noname  C8 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/GND )
+  (    2 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EB977/5276F038 $noname  R2 1K {Lib=R}
+  (    1 /4-Port_USB_Hub/SPI_DATA )
+  (    2 N-000076 )
+ )
+ ( /522EB977/5276F105 $noname  R1 15K {Lib=R}
+  (    1 /4-Port_USB_Hub/SPI_DATA )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276F693 $noname  J1 USB_2 {Lib=USB_2}
+  (    1 /4-Port_USB_Hub/VBUS_1 )
+  (    2 /4-Port_USB_Hub/USB_1_N )
+  (    3 /4-Port_USB_Hub/USB_1_P )
+  (    4 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276F749 $noname  C11 2.2_uF_10V {Lib=C}
+  (    1 /4-Port_USB_Hub/VBUS )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276F757 $noname  R13 100K {Lib=R}
+  (    1 /4-Port_USB_Hub/GND )
+  (    2 /4-Port_USB_Hub/VBUS )
+ )
+ ( /522EB977/5276F951 $noname  C5 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/VBUS_1 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276F9FD $noname  C2 150_uF_10V {Lib=CP1}
+  (    1 /4-Port_USB_Hub/VBUS_1 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FA27 $noname  R3 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000095 )
+ )
+ ( /522EB977/5276FA41 $noname  D1 RED {Lib=LED}
+  (    1 N-000095 )
+  (    2 /4-Port_USB_Hub/AMBER_1_N )
+ )
+ ( /522EB977/5276FA5E $noname  R4 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000093 )
+ )
+ ( /522EB977/5276FA65 $noname  D2 GREEN {Lib=LED}
+  (    1 N-000093 )
+  (    2 /4-Port_USB_Hub/GREEN_1_N )
+ )
+ ( /522EB977/5276FBB9 $noname  J2 USB_2 {Lib=USB_2}
+  (    1 /4-Port_USB_Hub/VBUS_2 )
+  (    2 /4-Port_USB_Hub/USB_2_N )
+  (    3 /4-Port_USB_Hub/USB_2_P )
+  (    4 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FBC6 $noname  C6 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/VBUS_2 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FBCE $noname  C3 150_uF_10V {Lib=CP1}
+  (    1 /4-Port_USB_Hub/VBUS_2 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FBD4 $noname  R5 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000060 )
+ )
+ ( /522EB977/5276FBDB $noname  D3 RED {Lib=LED}
+  (    1 N-000060 )
+  (    2 /4-Port_USB_Hub/AMBER_2_N )
+ )
+ ( /522EB977/5276FBE2 $noname  R6 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000058 )
+ )
+ ( /522EB977/5276FBE8 $noname  D4 GREEN {Lib=LED}
+  (    1 N-000058 )
+  (    2 /4-Port_USB_Hub/GREEN_2_N )
+ )
+ ( /522EB977/5276FBF9 $noname  J3 USB_2 {Lib=USB_2}
+  (    1 /4-Port_USB_Hub/VBUS_3 )
+  (    2 /4-Port_USB_Hub/USB_3_N )
+  (    3 /4-Port_USB_Hub/USB_3_P )
+  (    4 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FC06 $noname  C7 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/VBUS_3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FC0E $noname  C4 150_uF_10V {Lib=CP1}
+  (    1 /4-Port_USB_Hub/VBUS_3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FC14 $noname  R7 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000068 )
+ )
+ ( /522EB977/5276FC1B $noname  D5 RED {Lib=LED}
+  (    1 N-000068 )
+  (    2 /4-Port_USB_Hub/AMBER_3_N )
+ )
+ ( /522EB977/5276FC22 $noname  R8 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000066 )
+ )
+ ( /522EB977/5276FC28 $noname  D6 GREEN {Lib=LED}
+  (    1 N-000066 )
+  (    2 /4-Port_USB_Hub/GREEN_3_N )
+ )
+ ( /522EB977/5276FC35 $noname  R10 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000064 )
+ )
+ ( /522EB977/5276FC3C $noname  D7 RED {Lib=LED}
+  (    1 N-000064 )
+  (    2 /4-Port_USB_Hub/AMBER_4_N )
+ )
+ ( /522EB977/5276FC43 $noname  R11 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 N-000062 )
+ )
+ ( /522EB977/5276FC49 $noname  D8 GREEN {Lib=LED}
+  (    1 N-000062 )
+  (    2 /4-Port_USB_Hub/GREEN_4_N )
+ )
+ ( /522EB977/5276FC53 $noname  C10 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/VBUS_4 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FC5B $noname  C9 150_uF_10V {Lib=CP1}
+  (    1 /4-Port_USB_Hub/VBUS_4 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5276FE12 $noname  R15 470 {Lib=R}
+  (    1 /4-Port_USB_Hub/VBUS )
+  (    2 N-000051 )
+ )
+ ( /522EB977/5276FE18 $noname  D9 GREEN {Lib=LED}
+  (    1 N-000051 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/52770008 $noname  C13 0.001_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/52770026 $noname  C14 0.001_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5277002C $noname  C15 0.001_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/527701BC $noname  C16 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/527701CE $noname  C17 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/527701D4 $noname  C18 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/52770512 $noname  C19 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/5277051D $noname  C20 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/52770523 $noname  C21 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EB977/52770529 $noname  C22 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52771A04 $noname  U5 93LC56BT-OT {Lib=93LC56BT-OT}
+  (    1 /USB-JTAG/FTDI_EEDO )
+  (    2 /4-Port_USB_Hub/GND )
+  (    3 /USB-JTAG/FTDI_EEDATA )
+  (    4 /USB-JTAG/FTDI_EECLK )
+  (    5 /USB-JTAG/FTDI_EECS )
+  (    6 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EBCFE/52771A13 $noname  U7 FT232H {Lib=FT232H}
+  (    1 /USB-JTAG/FTDI_CLK_12MHZ )
+  (    2 ? )
+  (    3 /USB-JTAG/FTDI_VPHY )
+  (    4 /4-Port_USB_Hub/GND )
+  (    5 /USB-JTAG/FTDI_VREF )
+  (    6 /4-Port_USB_Hub/FTDI_USB_N )
+  (    7 /4-Port_USB_Hub/FTDI_USB_P )
+  (    8 /USB-JTAG/FTDI_VPLL )
+  (    9 /4-Port_USB_Hub/GND )
+  (   10 /4-Port_USB_Hub/GND )
+  (   11 /4-Port_USB_Hub/GND )
+  (   12 /4-Port_USB_Hub/3V3 )
+  (   13 N-000107 )
+  (   14 N-000110 )
+  (   15 /FPGA/FPGA_TDO )
+  (   16 N-000111 )
+  (   17 ? )
+  (   18 ? )
+  (   19 ? )
+  (   20 ? )
+  (   21 /FPGA/FPGA_CBUS0 )
+  (   22 /4-Port_USB_Hub/GND )
+  (   23 /4-Port_USB_Hub/GND )
+  (   24 /4-Port_USB_Hub/3V3 )
+  (   25 /FPGA/FPGA_CBUS1 )
+  (   26 /FPGA/FPGA_CBUS2 )
+  (   27 /FPGA/FPGA_CBUS3 )
+  (   28 /FPGA/FPGA_CBUS4 )
+  (   29 /FPGA/FPGA_CBUS5 )
+  (   30 /FPGA/FPGA_CBUS6 )
+  (   31 /FPGA/FPGA_CBUS7 )
+  (   32 ? )
+  (   33 ? )
+  (   34 /USB-JTAG/FTDI_RESET_N )
+  (   35 /4-Port_USB_Hub/GND )
+  (   36 /4-Port_USB_Hub/GND )
+  (   37 /USB-JTAG/FTDI_VCC_A )
+  (   38 /USB-JTAG/FTDI_VCC_C )
+  (   39 /4-Port_USB_Hub/3V3 )
+  (   40 /4-Port_USB_Hub/3V3 )
+  (   41 /4-Port_USB_Hub/GND )
+  (   42 /4-Port_USB_Hub/GND )
+  (   43 /USB-JTAG/FTDI_EEDATA )
+  (   44 /USB-JTAG/FTDI_EECLK )
+  (   45 /USB-JTAG/FTDI_EECS )
+  (   46 /4-Port_USB_Hub/3V3 )
+  (   47 /4-Port_USB_Hub/GND )
+  (   48 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52771B6D $noname  R22 12K_1% {Lib=R}
+  (    1 /4-Port_USB_Hub/GND )
+  (    2 /USB-JTAG/FTDI_VREF )
+ )
+ ( /522EBCFE/52771CF5 $noname  U6 12_MHz {Lib=OSC}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+  (    3 N-000100 )
+  (    4 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EBCFE/52771FE6 $noname  R21 10K {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /USB-JTAG/FTDI_RESET_N )
+ )
+ ( /522EBCFE/52771FF5 $noname  C36 10_nF {Lib=C}
+  (    1 /USB-JTAG/FTDI_RESET_N )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772379 $noname  C37 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/GND )
+  (    2 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EBCFE/5277238B $noname  R16 10K {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /USB-JTAG/FTDI_EECS )
+ )
+ ( /522EBCFE/527723A3 $noname  R17 10K {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /USB-JTAG/FTDI_EECLK )
+ )
+ ( /522EBCFE/527723A9 $noname  R18 10K {Lib=R}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /USB-JTAG/FTDI_EEDATA )
+ )
+ ( /522EBCFE/5277253D $noname  C24 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772621 $noname  R20 2K {Lib=R}
+  (    1 /USB-JTAG/FTDI_EEDATA )
+  (    2 /USB-JTAG/FTDI_EEDO )
+ )
+ ( /522EBCFE/527726C6 $noname  R19 49.9 {Lib=R}
+  (    1 N-000100 )
+  (    2 /USB-JTAG/FTDI_CLK_12MHZ )
+ )
+ ( /522EBCFE/527726D1 $noname  C23 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/527728B6 $noname  L1 300R {Lib=INDUCTOR_PWROUT}
+  (    1 /USB-JTAG/FTDI_VPHY )
+  (    2 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EBCFE/52772A10 $noname  C25 4.7_uF {Lib=C}
+  (    1 /USB-JTAG/FTDI_VPHY )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772A87 $noname  C27 0.1_uF {Lib=C}
+  (    1 /USB-JTAG/FTDI_VPHY )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772B74 $noname  L2 300R {Lib=INDUCTOR_PWROUT}
+  (    1 /USB-JTAG/FTDI_VPLL )
+  (    2 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EBCFE/52772B7B $noname  C26 4.7_uF {Lib=C}
+  (    1 /USB-JTAG/FTDI_VPLL )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772B82 $noname  C28 0.1_uF {Lib=C}
+  (    1 /USB-JTAG/FTDI_VPLL )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772B91 $noname  C29 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772B97 $noname  C30 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772B9D $noname  C32 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772BA3 $noname  C33 0.1_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772BA9 $noname  C35 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772D8B $noname  C31 0.1_uF {Lib=C}
+  (    1 /USB-JTAG/FTDI_VCC_A )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/52772D92 $noname  C34 0.1_uF {Lib=C}
+  (    1 /USB-JTAG/FTDI_VCC_C )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBCFE/529837C2 $noname  R23 49.9 {Lib=R}
+  (    1 N-000107 )
+  (    2 /FPGA/FPGA_TCK )
+ )
+ ( /522EBCFE/529837E4 $noname  R24 49.9 {Lib=R}
+  (    1 N-000110 )
+  (    2 /FPGA/FPGA_TDI )
+ )
+ ( /522EBCFE/529837EA $noname  R25 49.9 {Lib=R}
+  (    1 N-000111 )
+  (    2 /FPGA/FPGA_TMS )
+ )
+ ( /522EBD2B/52982792 $noname  U8 XC7A100T-1FTG256C {Lib=XC7AXXXT-XFTG256X}
+  (   A1 /4-Port_USB_Hub/GND )
+  (   A2 /FPGA/GPMC_D12 )
+  (   A3 /FPGA/GPMC_D4 )
+  (   A4 /FPGA/GPMC_D2 )
+  (   A5 /FPGA/GPMC_D1 )
+  (   A6 /4-Port_USB_Hub/3V3 )
+  (   A7 /FPGA/GPMC_WE_N )
+  (   A8 ? )
+  (   A9 ? )
+  (  A10 ? )
+  (  A11 /4-Port_USB_Hub/GND )
+  (  A12 ? )
+  (  A13 ? )
+  (  A14 ? )
+  (  A15 ? )
+  (  A16 /4-Port_USB_Hub/3V3 )
+  (   B1 /FPGA/GPMC_D14 )
+  (   B2 /FPGA/GPMC_D11 )
+  (   B3 /4-Port_USB_Hub/3V3 )
+  (   B4 /FPGA/GPMC_D3 )
+  (   B5 /FPGA/GPMC_D0 )
+  (   B6 /FPGA/GPMC_CS_N )
+  (   B7 /FPGA/GPMC_RE_N )
+  (   B8 /4-Port_USB_Hub/GND )
+  (   B9 ? )
+  (  B10 ? )
+  (  B11 ? )
+  (  B12 ? )
+  (  B13 /4-Port_USB_Hub/3V3 )
+  (  B14 ? )
+  (  B15 ? )
+  (  B16 ? )
+  (   C1 /FPGA/GPMC_D13 )
+  (   C2 /FPGA/GPMC_D10 )
+  (   C3 /FPGA/GPMC_D9 )
+  (   C4 ? )
+  (   C5 /4-Port_USB_Hub/GND )
+  (   C6 /FPGA/GPMC_D6 )
+  (   C7 /FPGA/GPMC_D5 )
+  (   C8 ? )
+  (   C9 ? )
+  (  C10 /4-Port_USB_Hub/3V3 )
+  (  C11 ? )
+  (  C12 ? )
+  (  C13 ? )
+  (  C14 ? )
+  (  C15 /4-Port_USB_Hub/GND )
+  (  C16 ? )
+  (   D1 ? )
+  (   D2 /4-Port_USB_Hub/GND )
+  (   D3 ? )
+  (   D4 /FPGA/GPMC_CLK )
+  (   D5 /FPGA/GPMC_D8 )
+  (   D6 /FPGA/GPMC_D7 )
+  (   D7 /4-Port_USB_Hub/3V3 )
+  (   D8 ? )
+  (   D9 ? )
+  (  D10 ? )
+  (  D11 ? )
+  (  D12 /4-Port_USB_Hub/GND )
+  (  D13 /FPGA/CLK_50MHZ )
+  (  D14 ? )
+  (  D15 ? )
+  (  D16 ? )
+  (   E1 /FPGA/GPMC_A4 )
+  (   E2 /FPGA/GPMC_D15 )
+  (   E3 ? )
+  (   E4 /4-Port_USB_Hub/3V3 )
+  (   E5 /FPGA/GPMC_A0 )
+  (   E6 ? )
+  (   E7 /4-Port_USB_Hub/3V3 )
+  (   E8 ? )
+  (   E9 /4-Port_USB_Hub/GND )
+  (  E10 /Power_Supply/1V0 )
+  (  E11 ? )
+  (  E12 ? )
+  (  E13 ? )
+  (  E14 /4-Port_USB_Hub/3V3 )
+  (  E15 ? )
+  (  E16 ? )
+  (   F1 /4-Port_USB_Hub/3V3 )
+  (   F2 /FPGA/GPMC_A3 )
+  (   F3 /FPGA/GPMC_A2 )
+  (   F4 /FPGA/GPMC_A1 )
+  (   F5 ? )
+  (   F6 /4-Port_USB_Hub/GND )
+  (   F7 /Power_Supply/1V0 )
+  (   F8 /Power_Supply/1V8 )
+  (   F9 /Power_Supply/1V0 )
+  (  F10 /4-Port_USB_Hub/GND )
+  (  F11 /Power_Supply/1V0 )
+  (  F12 ? )
+  (  F13 ? )
+  (  F14 ? )
+  (  F15 ? )
+  (  F16 /4-Port_USB_Hub/GND )
+  (   G1 /FPGA/GPMC_A8 )
+  (   G2 /FPGA/GPMC_A7 )
+  (   G3 /4-Port_USB_Hub/GND )
+  (   G4 /FPGA/GPMC_A6 )
+  (   G5 /FPGA/GPMC_A5 )
+  (   G6 /Power_Supply/1V0 )
+  (   G7 /4-Port_USB_Hub/GND )
+  (   G8 /Power_Supply/1V8 )
+  (   G9 /4-Port_USB_Hub/GND )
+  (  G10 /Power_Supply/1V8 )
+  (  G11 ? )
+  (  G12 ? )
+  (  G13 /4-Port_USB_Hub/GND )
+  (  G14 ? )
+  (  G15 ? )
+  (  G16 ? )
+  (   H1 /FPGA/GPMC_A14 )
+  (   H2 /FPGA/GPMC_A13 )
+  (   H3 /FPGA/GPMC_A16 )
+  (   H4 /FPGA/GPMC_A10 )
+  (   H5 /FPGA/GPMC_A9 )
+  (   H6 /4-Port_USB_Hub/GND )
+  (   H7 ? )
+  (   H8 ? )
+  (   H9 /Power_Supply/1V0 )
+  (  H10 ? )
+  (  H11 ? )
+  (  H12 ? )
+  (  H13 ? )
+  (  H14 ? )
+  (  H15 /4-Port_USB_Hub/3V3 )
+  (  H16 ? )
+  (   J1 /FPGA/GPMC_A18 )
+  (   J2 /4-Port_USB_Hub/3V3 )
+  (   J3 /FPGA/GPMC_A15 )
+  (   J4 /FPGA/GPMC_A12 )
+  (   J5 /FPGA/GPMC_A11 )
+  (   J6 /Power_Supply/1V0 )
+  (   J7 ? )
+  (   J8 ? )
+  (   J9 /4-Port_USB_Hub/GND )
+  (  J10 /Power_Supply/1V8 )
+  (  J11 /4-Port_USB_Hub/GND )
+  (  J12 /4-Port_USB_Hub/3V3 )
+  (  J13 /FPGA/FPGA_CBUS1 )
+  (  J14 /FPGA/FPGA_CBUS2 )
+  (  J15 ? )
+  (  J16 ? )
+  (   K1 /FPGA/GPMC_A17 )
+  (   K2 ? )
+  (   K3 ? )
+  (   K4 /4-Port_USB_Hub/GND )
+  (   K5 /FPGA/FPGA_GTS_N )
+  (   K6 /4-Port_USB_Hub/GND )
+  (   K7 ? )
+  (   K8 ? )
+  (   K9 /Power_Supply/1V0 )
+  (  K10 ? )
+  (  K11 /Power_Supply/1V8 )
+  (  K12 /FPGA/FPGA_CBUS0 )
+  (  K13 ? )
+  (  K14 /4-Port_USB_Hub/GND )
+  (  K15 /FPGA/FPGA_CBUS3 )
+  (  K16 /FPGA/FPGA_CBUS4 )
+  (   L1 /4-Port_USB_Hub/GND )
+  (   L2 ? )
+  (   L3 /FPGA/GPMC_A19 )
+  (   L4 ? )
+  (   L5 ? )
+  (   L6 /4-Port_USB_Hub/3V3 )
+  (   L7 /FPGA/FPGA_TCK )
+  (   L8 /Power_Supply/1V0 )
+  (   L9 /FPGA/SYS_RESET_N )
+  (  L10 /Power_Supply/1V8 )
+  (  L11 /4-Port_USB_Hub/GND )
+  (  L12 ? )
+  (  L13 ? )
+  (  L14 /FPGA/FPGA_CBUS7 )
+  (  L15 /FPGA/FPGA_CBUS5 )
+  (  L16 /4-Port_USB_Hub/3V3 )
+  (   M1 ? )
+  (   M2 ? )
+  (   M3 /4-Port_USB_Hub/3V3 )
+  (   M4 ? )
+  (   M5 ? )
+  (   M6 ? )
+  (   M7 /FPGA/FPGA_TMS )
+  (   M8 /4-Port_USB_Hub/GND )
+  (   M9 /4-Port_USB_Hub/3V3 )
+  (  M10 /4-Port_USB_Hub/GND )
+  (  M11 /4-Port_USB_Hub/3V3 )
+  (  M12 ? )
+  (  M13 /4-Port_USB_Hub/3V3 )
+  (  M14 ? )
+  (  M15 /FPGA/FPGA_CBUS6 )
+  (  M16 ? )
+  (   N1 ? )
+  (   N2 ? )
+  (   N3 ? )
+  (   N4 ? )
+  (   N5 /4-Port_USB_Hub/GND )
+  (   N6 ? )
+  (   N7 /FPGA/FPGA_TDI )
+  (   N8 N-000284 )
+  (   N9 ? )
+  (  N10 /4-Port_USB_Hub/3V3 )
+  (  N11 ? )
+  (  N12 ? )
+  (  N13 ? )
+  (  N14 ? )
+  (  N15 /4-Port_USB_Hub/GND )
+  (  N16 ? )
+  (   P1 ? )
+  (   P2 /4-Port_USB_Hub/GND )
+  (   P3 ? )
+  (   P4 ? )
+  (   P5 ? )
+  (   P6 ? )
+  (   P7 /4-Port_USB_Hub/3V3 )
+  (   P8 ? )
+  (   P9 ? )
+  (  P10 ? )
+  (  P11 ? )
+  (  P12 /4-Port_USB_Hub/GND )
+  (  P13 ? )
+  (  P14 ? )
+  (  P15 ? )
+  (  P16 ? )
+  (   R1 ? )
+  (   R2 ? )
+  (   R3 ? )
+  (   R4 /4-Port_USB_Hub/3V3 )
+  (   R5 ? )
+  (   R6 ? )
+  (   R7 ? )
+  (   R8 ? )
+  (   R9 /4-Port_USB_Hub/GND )
+  (  R10 ? )
+  (  R11 ? )
+  (  R12 ? )
+  (  R13 ? )
+  (  R14 /4-Port_USB_Hub/3V3 )
+  (  R15 ? )
+  (  R16 ? )
+  (   T1 /4-Port_USB_Hub/3V3 )
+  (   T2 ? )
+  (   T3 ? )
+  (   T4 ? )
+  (   T5 ? )
+  (   T6 /4-Port_USB_Hub/GND )
+  (   T7 ? )
+  (   T8 ? )
+  (   T9 ? )
+  (  T10 ? )
+  (  T11 /4-Port_USB_Hub/3V3 )
+  (  T12 ? )
+  (  T13 ? )
+  (  T14 ? )
+  (  T15 ? )
+  (  T16 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A24 $noname  C38 330_uF {Lib=CP1}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A42 $noname  C42 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A54 $noname  C44 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A5A $noname  C48 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A60 $noname  C52 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A66 $noname  C56 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A6C $noname  C60 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A72 $noname  C63 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A7D $noname  C66 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A83 $noname  C67 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A89 $noname  C70 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A8F $noname  C73 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A95 $noname  C76 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991A9B $noname  C79 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52991AA1 $noname  C82 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52992A38 $noname  C85 100_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52992AA7 $noname  C86 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52992AAD $noname  C87 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V0 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/5299304C $noname  C39 47_uF {Lib=C}
+  (    1 /Power_Supply/1V8 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/5299305C $noname  C43 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V8 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993062 $noname  C45 4.7_uF {Lib=C}
+  (    1 /Power_Supply/1V8 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993068 $noname  C49 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V8 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993078 $noname  C53 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V8 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993088 $noname  C57 0.47_uF {Lib=C}
+  (    1 /Power_Supply/1V8 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529938B2 $noname  C40 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939AE $noname  C41 100_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939B4 $noname  C46 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939BA $noname  C50 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939DE $noname  C54 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939E4 $noname  C58 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939EA $noname  C61 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939F0 $noname  C64 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939F6 $noname  C47 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/529939FC $noname  C51 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A02 $noname  C55 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A08 $noname  C59 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A0E $noname  C62 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A14 $noname  C65 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A2B $noname  C68 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A31 $noname  C71 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A37 $noname  C74 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A3D $noname  C77 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A43 $noname  C80 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A49 $noname  C83 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A4F $noname  C69 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A55 $noname  C72 4.7_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A5B $noname  C75 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A61 $noname  C78 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A67 $noname  C81 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD2B/52993A6D $noname  C84 0.47_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBED4/522EBEF2 $noname  J5 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DCD8 $noname  J13 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DCEA $noname  J11 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DCFC $noname  J12 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DD0E $noname  J9 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DD20 $noname  J10 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DD32 $noname  J7 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBED4/5296DD44 $noname  J8 XILINX_JTAG {Lib=XILINX_JTAG}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+ )
+ ( /522EBD9C/5296D8C5 $noname  J6 BBB_CAPE_HEADER {Lib=BBB_CAPE_HEADER}
+  (   A1 /4-Port_USB_Hub/GND )
+  (   A2 /4-Port_USB_Hub/GND )
+  (   A3 /FPGA/GPMC_D6 )
+  (   A4 /FPGA/GPMC_D7 )
+  (   A5 /FPGA/GPMC_D2 )
+  (   A6 /FPGA/GPMC_D3 )
+  (   A7 ? )
+  (   A8 /FPGA/GPMC_RE_N )
+  (   A9 ? )
+  (  A10 /FPGA/GPMC_WE_N )
+  (  A11 /FPGA/GPMC_D13 )
+  (  A12 /FPGA/GPMC_D12 )
+  (  A13 /FPGA/GPMC_D9 )
+  (  A14 /FPGA/GPMC_D10 )
+  (  A15 /FPGA/GPMC_D15 )
+  (  A16 /FPGA/GPMC_D14 )
+  (  A17 /FPGA/GPMC_D11 )
+  (  A18 ? )
+  (  A19 /FPGA/GPMC_D8 )
+  (  A20 ? )
+  (  A21 /FPGA/GPMC_CLK )
+  (  A22 /FPGA/GPMC_D5 )
+  (  A23 /FPGA/GPMC_D4 )
+  (  A24 /FPGA/GPMC_D1 )
+  (  A25 /FPGA/GPMC_D0 )
+  (  A26 /FPGA/GPMC_CS_N )
+  (  A27 /FPGA/GPMC_A8 )
+  (  A28 /FPGA/GPMC_A10 )
+  (  A29 /FPGA/GPMC_A9 )
+  (  A30 /FPGA/GPMC_A11 )
+  (  A31 /FPGA/GPMC_A18 )
+  (  A32 /FPGA/GPMC_A19 )
+  (  A33 /FPGA/GPMC_A17 )
+  (  A34 /FPGA/GPMC_A15 )
+  (  A35 /FPGA/GPMC_A16 )
+  (  A36 /FPGA/GPMC_A14 )
+  (  A37 /FPGA/GPMC_A12 )
+  (  A38 /FPGA/GPMC_A13 )
+  (  A39 /FPGA/GPMC_A6 )
+  (  A40 /FPGA/GPMC_A7 )
+  (  A41 /FPGA/GPMC_A4 )
+  (  A42 /FPGA/GPMC_A5 )
+  (  A43 /FPGA/GPMC_A2 )
+  (  A44 /FPGA/GPMC_A3 )
+  (  A45 /FPGA/GPMC_A0 )
+  (  A46 /FPGA/GPMC_A1 )
+  (   B1 /4-Port_USB_Hub/GND )
+  (   B2 /4-Port_USB_Hub/GND )
+  (   B3 /4-Port_USB_Hub/3V3 )
+  (   B4 /4-Port_USB_Hub/3V3 )
+  (   B5 /4-Port_USB_Hub/5V )
+  (   B6 /4-Port_USB_Hub/5V )
+  (   B7 ? )
+  (   B8 ? )
+  (   B9 ? )
+  (  B10 /FPGA/SYS_RESET_N )
+  (  B11 ? )
+  (  B12 ? )
+  (  B13 ? )
+  (  B14 ? )
+  (  B15 ? )
+  (  B16 ? )
+  (  B17 /FPGA/FPGA_GTS_N )
+  (  B18 ? )
+  (  B19 ? )
+  (  B20 ? )
+  (  B21 ? )
+  (  B22 ? )
+  (  B23 ? )
+  (  B24 ? )
+  (  B25 ? )
+  (  B26 ? )
+  (  B27 ? )
+  (  B28 ? )
+  (  B29 ? )
+  (  B30 ? )
+  (  B31 ? )
+  (  B32 ? )
+  (  B33 ? )
+  (  B34 /4-Port_USB_Hub/GND )
+  (  B35 ? )
+  (  B36 ? )
+  (  B37 ? )
+  (  B38 ? )
+  (  B39 ? )
+  (  B40 ? )
+  (  B41 ? )
+  (  B42 ? )
+  (  B43 /4-Port_USB_Hub/GND )
+  (  B44 /4-Port_USB_Hub/GND )
+  (  B45 /4-Port_USB_Hub/GND )
+  (  B46 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD9C/529833F9 $noname  R26 49.9 {Lib=R}
+  (    1 /FPGA/FPGA_TDO )
+  (    2 N-000284 )
+ )
+ ( /522EBD9C/5298A9A1 $noname  U9 50_MHz {Lib=OSC}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+  (    3 N-000219 )
+  (    4 /4-Port_USB_Hub/3V3 )
+ )
+ ( /522EBD9C/5298AA03 $noname  C88 0.01_uF {Lib=C}
+  (    1 /4-Port_USB_Hub/3V3 )
+  (    2 /4-Port_USB_Hub/GND )
+ )
+ ( /522EBD9C/5298AB6E $noname  R27 49.9 {Lib=R}
+  (    1 N-000219 )
+  (    2 /FPGA/CLK_50MHZ )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C12
+ SM*
+ C?
+ C1-1
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ CP*
+ SM*
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ CP*
+ SM*
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D5
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D7
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D8
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ CP*
+ SM*
+$endlist
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D9
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component C15
+ SM*
+ C?
+ C1-1
+$endlist
+$component C16
+ SM*
+ C?
+ C1-1
+$endlist
+$component C17
+ SM*
+ C?
+ C1-1
+$endlist
+$component C18
+ SM*
+ C?
+ C1-1
+$endlist
+$component C19
+ SM*
+ C?
+ C1-1
+$endlist
+$component C20
+ SM*
+ C?
+ C1-1
+$endlist
+$component C21
+ SM*
+ C?
+ C1-1
+$endlist
+$component C22
+ SM*
+ C?
+ C1-1
+$endlist
+$component R22
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R21
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C36
+ SM*
+ C?
+ C1-1
+$endlist
+$component C37
+ SM*
+ C?
+ C1-1
+$endlist
+$component R16
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C24
+ SM*
+ C?
+ C1-1
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C23
+ SM*
+ C?
+ C1-1
+$endlist
+$component C25
+ SM*
+ C?
+ C1-1
+$endlist
+$component C27
+ SM*
+ C?
+ C1-1
+$endlist
+$component C26
+ SM*
+ C?
+ C1-1
+$endlist
+$component C28
+ SM*
+ C?
+ C1-1
+$endlist
+$component C29
+ SM*
+ C?
+ C1-1
+$endlist
+$component C30
+ SM*
+ C?
+ C1-1
+$endlist
+$component C32
+ SM*
+ C?
+ C1-1
+$endlist
+$component C33
+ SM*
+ C?
+ C1-1
+$endlist
+$component C35
+ SM*
+ C?
+ C1-1
+$endlist
+$component C31
+ SM*
+ C?
+ C1-1
+$endlist
+$component C34
+ SM*
+ C?
+ C1-1
+$endlist
+$component R23
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R24
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R25
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C38
+ CP*
+ SM*
+$endlist
+$component C42
+ SM*
+ C?
+ C1-1
+$endlist
+$component C44
+ SM*
+ C?
+ C1-1
+$endlist
+$component C48
+ SM*
+ C?
+ C1-1
+$endlist
+$component C52
+ SM*
+ C?
+ C1-1
+$endlist
+$component C56
+ SM*
+ C?
+ C1-1
+$endlist
+$component C60
+ SM*
+ C?
+ C1-1
+$endlist
+$component C63
+ SM*
+ C?
+ C1-1
+$endlist
+$component C66
+ SM*
+ C?
+ C1-1
+$endlist
+$component C67
+ SM*
+ C?
+ C1-1
+$endlist
+$component C70
+ SM*
+ C?
+ C1-1
+$endlist
+$component C73
+ SM*
+ C?
+ C1-1
+$endlist
+$component C76
+ SM*
+ C?
+ C1-1
+$endlist
+$component C79
+ SM*
+ C?
+ C1-1
+$endlist
+$component C82
+ SM*
+ C?
+ C1-1
+$endlist
+$component C85
+ SM*
+ C?
+ C1-1
+$endlist
+$component C86
+ SM*
+ C?
+ C1-1
+$endlist
+$component C87
+ SM*
+ C?
+ C1-1
+$endlist
+$component C39
+ SM*
+ C?
+ C1-1
+$endlist
+$component C43
+ SM*
+ C?
+ C1-1
+$endlist
+$component C45
+ SM*
+ C?
+ C1-1
+$endlist
+$component C49
+ SM*
+ C?
+ C1-1
+$endlist
+$component C53
+ SM*
+ C?
+ C1-1
+$endlist
+$component C57
+ SM*
+ C?
+ C1-1
+$endlist
+$component C40
+ SM*
+ C?
+ C1-1
+$endlist
+$component C41
+ SM*
+ C?
+ C1-1
+$endlist
+$component C46
+ SM*
+ C?
+ C1-1
+$endlist
+$component C50
+ SM*
+ C?
+ C1-1
+$endlist
+$component C54
+ SM*
+ C?
+ C1-1
+$endlist
+$component C58
+ SM*
+ C?
+ C1-1
+$endlist
+$component C61
+ SM*
+ C?
+ C1-1
+$endlist
+$component C64
+ SM*
+ C?
+ C1-1
+$endlist
+$component C47
+ SM*
+ C?
+ C1-1
+$endlist
+$component C51
+ SM*
+ C?
+ C1-1
+$endlist
+$component C55
+ SM*
+ C?
+ C1-1
+$endlist
+$component C59
+ SM*
+ C?
+ C1-1
+$endlist
+$component C62
+ SM*
+ C?
+ C1-1
+$endlist
+$component C65
+ SM*
+ C?
+ C1-1
+$endlist
+$component C68
+ SM*
+ C?
+ C1-1
+$endlist
+$component C71
+ SM*
+ C?
+ C1-1
+$endlist
+$component C74
+ SM*
+ C?
+ C1-1
+$endlist
+$component C77
+ SM*
+ C?
+ C1-1
+$endlist
+$component C80
+ SM*
+ C?
+ C1-1
+$endlist
+$component C83
+ SM*
+ C?
+ C1-1
+$endlist
+$component C69
+ SM*
+ C?
+ C1-1
+$endlist
+$component C72
+ SM*
+ C?
+ C1-1
+$endlist
+$component C75
+ SM*
+ C?
+ C1-1
+$endlist
+$component C78
+ SM*
+ C?
+ C1-1
+$endlist
+$component C81
+ SM*
+ C?
+ C1-1
+$endlist
+$component C84
+ SM*
+ C?
+ C1-1
+$endlist
+$component R26
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C88
+ SM*
+ C?
+ C1-1
+$endlist
+$component R27
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 12 "/4-Port USB Hub/3V3" "3V3"
+ U2 3
+ U2 7
+ U2 8
+ U1 1
+ C84 1
+ U1 4
+ C78 1
+ C81 1
+ C77 1
+ C74 1
+ C71 1
+ C68 1
+ C65 1
+ C62 1
+ C59 1
+ C55 1
+ C51 1
+ R14 2
+ C47 1
+ U4 19
+ C64 1
+ U4 39
+ U8 N10
+ U8 L16
+ U8 A16
+ U8 A6
+ U8 R4
+ U8 E4
+ U8 M3
+ U8 B3
+ U8 J2
+ U8 T1
+ U8 F1
+ U8 C10
+ C75 1
+ C72 1
+ C69 1
+ C83 1
+ C80 1
+ U8 H15
+ U8 R14
+ U8 E14
+ U8 M13
+ U8 B13
+ U8 J12
+ U8 T11
+ C23 1
+ C29 1
+ C30 1
+ C32 1
+ U7 24
+ U7 46
+ U7 39
+ U5 6
+ U7 40
+ U7 12
+ C1 1
+ U6 4
+ C8 2
+ C33 1
+ C24 1
+ C35 1
+ R18 1
+ R17 1
+ R16 1
+ C37 2
+ L2 2
+ L1 2
+ U4 33
+ U4 15
+ U4 45
+ U4 55
+ U4 27
+ U4 3
+ U4 7
+ U4 11
+ R21 1
+ U6 1
+ C61 1
+ C58 1
+ R3 1
+ C54 1
+ C50 1
+ R4 1
+ C46 1
+ C41 1
+ C40 1
+ U4 23
+ C13 1
+ U9 1
+ R5 1
+ U9 4
+ C88 1
+ R11 1
+ J6 B3
+ R10 1
+ C18 1
+ C19 1
+ C20 1
+ C21 1
+ C22 1
+ C17 1
+ R6 1
+ C16 1
+ C15 1
+ C14 1
+ U8 L6
+ U8 D7
+ U8 M11
+ U8 M9
+ U8 E7
+ U8 P7
+ R8 1
+ J6 B4
+ R7 1
+Net 13 "/4-Port USB Hub/5V" "5V"
+ J6 B6
+ J6 B5
+ U3 2
+ U3 6
+Net 14 "/4-Port USB Hub/GND" "GND"
+ U8 N5
+ U7 9
+ U7 10
+ C42 2
+ U7 11
+ U7 41
+ U8 G3
+ U7 22
+ U7 42
+ U7 23
+ U6 2
+ C38 2
+ U8 K4
+ U8 C5
+ U8 A11
+ J6 B2
+ C54 2
+ J6 B1
+ C58 2
+ U8 T16
+ C61 2
+ C39 2
+ C43 2
+ C45 2
+ C49 2
+ C53 2
+ C57 2
+ U8 F16
+ U8 H6
+ R22 1
+ J6 A2
+ J6 A1
+ U8 F6
+ C36 2
+ U8 A1
+ C27 2
+ C25 2
+ C34 2
+ C31 2
+ U8 F10
+ U8 R9
+ J6 B46
+ J6 B45
+ J6 B44
+ J6 B34
+ J6 B43
+ U8 J9
+ C35 2
+ U8 G9
+ U8 M10
+ C33 2
+ U8 E9
+ U8 G7
+ U8 M8
+ U8 B8
+ U7 4
+ U5 2
+ U7 48
+ U7 47
+ U8 P2
+ U7 36
+ U7 35
+ C32 2
+ C30 2
+ C29 2
+ C44 2
+ C28 2
+ C26 2
+ U8 D2
+ U8 K6
+ U8 L1
+ U8 T6
+ C71 2
+ C74 2
+ C77 2
+ U8 C15
+ U8 K14
+ C81 2
+ C84 2
+ C78 2
+ C75 2
+ C72 2
+ C68 2
+ U8 N15
+ C65 2
+ C62 2
+ C80 2
+ C59 2
+ C55 2
+ C83 2
+ C51 2
+ C69 2
+ C47 2
+ C64 2
+ C85 2
+ C86 2
+ C87 2
+ C66 2
+ C82 2
+ C50 2
+ U8 J11
+ C46 2
+ C79 2
+ C76 2
+ C41 2
+ C73 2
+ C70 2
+ C40 2
+ C67 2
+ U8 G13
+ U9 2
+ U8 P12
+ C48 2
+ C52 2
+ U8 L11
+ C63 2
+ C60 2
+ C88 2
+ U8 D12
+ C56 2
+ J2 4
+ C4 2
+ C7 2
+ C1 2
+ C8 1
+ C12 2
+ C22 2
+ C21 2
+ C20 2
+ C19 2
+ C18 2
+ C17 2
+ J3 4
+ C3 2
+ C6 2
+ U4 50
+ U4 40
+ U4 20
+ U4 8
+ U4 4
+ U4 28
+ U4 47
+ U4 56
+ U4 16
+ U4 34
+ U4 24
+ J1 4
+ R1 2
+ C2 2
+ C5 2
+ R13 1
+ C11 2
+ R12 2
+ J4 5
+ U3 5
+ U3 1
+ U1 2
+ U2 4
+ U4 PAD
+ U4 12
+ C15 2
+ C14 2
+ C13 2
+ C23 2
+ C37 1
+ C24 2
+ C10 2
+ C9 2
+ C16 2
+ D9 2
+Net 36 "/FPGA/FPGA_CBUS7" "FPGA_CBUS7"
+ U8 L14
+ U7 31
+Net 37 "/FPGA/FPGA_CBUS6" "FPGA_CBUS6"
+ U8 M15
+ U7 30
+Net 38 "/FPGA/FPGA_CBUS5" "FPGA_CBUS5"
+ U7 29
+ U8 L15
+Net 39 "/FPGA/FPGA_CBUS4" "FPGA_CBUS4"
+ U7 28
+ U8 K16
+Net 40 "/FPGA/FPGA_CBUS3" "FPGA_CBUS3"
+ U8 K15
+ U7 27
+Net 41 "/FPGA/FPGA_CBUS2" "FPGA_CBUS2"
+ U8 J14
+ U7 26
+Net 42 "/FPGA/FPGA_CBUS1" "FPGA_CBUS1"
+ U8 J13
+ U7 25
+Net 43 "/FPGA/FPGA_TMS" "FPGA_TMS"
+ U8 M7
+ R25 2
+Net 44 "/FPGA/FPGA_TDO" "FPGA_TDO"
+ R26 1
+ U7 15
+Net 45 "/FPGA/FPGA_TDI" "FPGA_TDI"
+ U8 N7
+ R24 2
+Net 46 "/FPGA/FPGA_TCK" "FPGA_TCK"
+ R23 2
+ U8 L7
+Net 47 "/FPGA/FPGA_CBUS0" "FPGA_CBUS0"
+ U7 21
+ U8 K12
+Net 49 "/4-Port USB Hub/FTDI_USB_P" "FTDI_USB_P"
+ U4 2
+ U7 7
+Net 50 "/4-Port USB Hub/FTDI_USB_N" "FTDI_USB_N"
+ U7 6
+ U4 1
+Net 51 "" ""
+ D9 1
+ R15 2
+Net 52 "/4-Port USB Hub/VBUS" "VBUS"
+ R15 1
+ U4 26
+ J4 1
+ R13 2
+ C11 1
+Net 53 "/4-Port USB Hub/VBUS_4" "VBUS_4"
+ C9 1
+ C10 1
+Net 54 "/4-Port USB Hub/GREEN_4_N" "GREEN_4_N"
+ U4 43
+ D8 2
+Net 55 "/4-Port USB Hub/USB_3_P" "USB_3_P"
+ J3 3
+ U4 6
+Net 56 "/4-Port USB Hub/USB_3_N" "USB_3_N"
+ J3 2
+ U4 5
+Net 57 "/4-Port USB Hub/GREEN_2_N" "GREEN_2_N"
+ U4 37
+ D4 2
+Net 58 "" ""
+ R6 2
+ D4 1
+Net 59 "/4-Port USB Hub/AMBER_2_N" "AMBER_2_N"
+ U4 38
+ D3 2
+Net 60 "" ""
+ D3 1
+ R5 2
+Net 61 "/4-Port USB Hub/VBUS_2" "VBUS_2"
+ C6 1
+ J2 1
+ C3 1
+ U3 14
+Net 62 "" ""
+ D8 1
+ R11 2
+Net 63 "/4-Port USB Hub/AMBER_4_N" "AMBER_4_N"
+ U4 44
+ D7 2
+Net 64 "" ""
+ R10 2
+ D7 1
+Net 65 "/4-Port USB Hub/GREEN_3_N" "GREEN_3_N"
+ D6 2
+ U4 41
+Net 66 "" ""
+ R8 2
+ D6 1
+Net 67 "/4-Port USB Hub/AMBER_3_N" "AMBER_3_N"
+ D5 2
+ U4 42
+Net 68 "" ""
+ R7 2
+ D5 1
+Net 69 "/4-Port USB Hub/VBUS_3" "VBUS_3"
+ C7 1
+ C4 1
+ J3 1
+ U3 11
+Net 70 "/4-Port USB Hub/SPI_DATA" "SPI_DATA"
+ U4 49
+ U2 5
+ R1 1
+ R2 1
+Net 71 "/4-Port USB Hub/PWR_3_N" "PWR_3_N"
+ U4 54
+ U3 7
+Net 72 "/4-Port USB Hub/PWR_2_N" "PWR_2_N"
+ U4 31
+ U3 4
+Net 73 "/4-Port USB Hub/PWR_1_N" "PWR_1_N"
+ U4 29
+ U3 3
+Net 74 "" ""
+ R9 1
+ U1 3
+Net 75 "/4-Port USB Hub/SPI_SCK" "SPI_SCK"
+ U4 48
+ U2 6
+Net 76 "" ""
+ U2 2
+ R2 2
+Net 77 "/4-Port USB Hub/HUB_RESET_N" "HUB_RESET_N"
+ C12 1
+ R14 1
+ U4 46
+Net 79 "/4-Port USB Hub/OVR_1_N" "OVR_1_N"
+ U4 30
+ U3 16
+Net 80 "/4-Port USB Hub/OVR_2_N" "OVR_2_N"
+ U3 13
+ U4 32
+Net 81 "/4-Port USB Hub/OVR_3_N" "OVR_3_N"
+ U4 53
+ U3 12
+Net 82 "/4-Port USB Hub/OVR_4_N" "OVR_4_N"
+ U4 51
+ U3 9
+Net 83 "/4-Port USB Hub/PWR_4_N" "PWR_4_N"
+ U3 8
+ U4 52
+Net 84 "/4-Port USB Hub/USB_1_N" "USB_1_N"
+ U4 13
+ J1 2
+Net 85 "/4-Port USB Hub/USB_CLK_24MHZ" "USB_CLK_24MHZ"
+ U4 21
+ R9 2
+Net 86 "/4-Port USB Hub/USB_D_P" "USB_D_P"
+ U4 18
+ J4 3
+Net 87 "/4-Port USB Hub/USB_D_N" "USB_D_N"
+ U4 17
+ J4 2
+Net 88 "/4-Port USB Hub/SPI_CS_N" "SPI_CS_N"
+ U4 25
+ U2 1
+Net 89 "/4-Port USB Hub/USB_1_P" "USB_1_P"
+ U4 14
+ J1 3
+Net 90 "/4-Port USB Hub/USB_2_P" "USB_2_P"
+ J2 3
+ U4 10
+Net 91 "/4-Port USB Hub/USB_2_N" "USB_2_N"
+ J2 2
+ U4 9
+Net 92 "/4-Port USB Hub/GREEN_1_N" "GREEN_1_N"
+ D2 2
+ U4 35
+Net 93 "" ""
+ R4 2
+ D2 1
+Net 94 "/4-Port USB Hub/AMBER_1_N" "AMBER_1_N"
+ D1 2
+ U4 36
+Net 95 "" ""
+ R3 2
+ D1 1
+Net 96 "/4-Port USB Hub/VBUS_1" "VBUS_1"
+ C5 1
+ C2 1
+ J1 1
+ U3 15
+Net 97 "" ""
+ R12 1
+ J4 7
+ J4 6
+Net 99 "/USB-JTAG/FTDI_CLK_12MHZ" "FTDI_CLK_12MHZ"
+ R19 2
+ U7 1
+Net 100 "" ""
+ R19 1
+ U6 3
+Net 101 "/USB-JTAG/FTDI_EEDO" "FTDI_EEDO"
+ U5 1
+ R20 2
+Net 102 "/USB-JTAG/FTDI_EEDATA" "FTDI_EEDATA"
+ R20 1
+ U7 43
+ R18 2
+ U5 3
+Net 103 "/USB-JTAG/FTDI_EECLK" "FTDI_EECLK"
+ U7 44
+ U5 4
+ R17 2
+Net 104 "/USB-JTAG/FTDI_EECS" "FTDI_EECS"
+ U7 45
+ R16 2
+ U5 5
+Net 105 "/USB-JTAG/FTDI_VCC_A" "FTDI_VCC_A"
+ C31 1
+ U7 37
+Net 106 "/USB-JTAG/FTDI_VCC_C" "FTDI_VCC_C"
+ U7 38
+ C34 1
+Net 107 "" ""
+ R23 1
+ U7 13
+Net 108 "/USB-JTAG/FTDI_VPHY" "FTDI_VPHY"
+ U7 3
+ C27 1
+ C25 1
+ L1 1
+Net 109 "/USB-JTAG/FTDI_VPLL" "FTDI_VPLL"
+ C28 1
+ C26 1
+ L2 1
+ U7 8
+Net 110 "" ""
+ R24 1
+ U7 14
+Net 111 "" ""
+ U7 16
+ R25 1
+Net 119 "/USB-JTAG/FTDI_VREF" "FTDI_VREF"
+ U7 5
+ R22 2
+Net 120 "/USB-JTAG/FTDI_RESET_N" "FTDI_RESET_N"
+ C36 1
+ R21 2
+ U7 34
+Net 121 "/Power Supply/1V8" "1V8"
+ U8 L10
+ U8 J10
+ U8 G10
+ C45 1
+ C49 1
+ U8 G8
+ U8 F8
+ C43 1
+ U8 K11
+ C53 1
+ C57 1
+ C39 1
+Net 122 "/Power Supply/1V0" "1V0"
+ U8 F11
+ C87 1
+ C60 1
+ C56 1
+ C52 1
+ C85 1
+ C86 1
+ U8 H9
+ U8 F9
+ U8 L8
+ C73 1
+ U8 F7
+ U8 J6
+ C44 1
+ C42 1
+ C38 1
+ C82 1
+ C79 1
+ C48 1
+ C76 1
+ C63 1
+ C66 1
+ C67 1
+ C70 1
+ U8 G6
+ U8 E10
+ U8 K9
+Net 127 "/FPGA/SYS_RESET_N" "SYS_RESET_N"
+ J6 B10
+ U8 L9
+Net 133 "/FPGA/FPGA_GTS_N" "FPGA_GTS_N"
+ J6 B17
+ U8 K5
+Net 167 "/FPGA/GPMC_D10" "GPMC_D10"
+ J6 A14
+ U8 C2
+Net 168 "/FPGA/GPMC_D15" "GPMC_D15"
+ U8 E2
+ J6 A15
+Net 169 "/FPGA/GPMC_D14" "GPMC_D14"
+ U8 B1
+ J6 A16
+Net 170 "/FPGA/GPMC_D11" "GPMC_D11"
+ J6 A17
+ U8 B2
+Net 171 "/FPGA/GPMC_D5" "GPMC_D5"
+ J6 A22
+ U8 C7
+Net 172 "/FPGA/GPMC_D4" "GPMC_D4"
+ U8 A3
+ J6 A23
+Net 173 "/FPGA/GPMC_D1" "GPMC_D1"
+ J6 A24
+ U8 A5
+Net 174 "/FPGA/GPMC_D0" "GPMC_D0"
+ U8 B5
+ J6 A25
+Net 175 "/FPGA/GPMC_D8" "GPMC_D8"
+ U8 D5
+ J6 A19
+Net 176 "/FPGA/GPMC_A8" "GPMC_A8"
+ J6 A27
+ U8 G1
+Net 177 "/FPGA/GPMC_A10" "GPMC_A10"
+ U8 H4
+ J6 A28
+Net 178 "/FPGA/GPMC_A9" "GPMC_A9"
+ U8 H5
+ J6 A29
+Net 187 "/FPGA/GPMC_D6" "GPMC_D6"
+ U8 C6
+ J6 A3
+Net 188 "/FPGA/GPMC_D7" "GPMC_D7"
+ J6 A4
+ U8 D6
+Net 189 "/FPGA/GPMC_D2" "GPMC_D2"
+ U8 A4
+ J6 A5
+Net 190 "/FPGA/GPMC_D3" "GPMC_D3"
+ U8 B4
+ J6 A6
+Net 191 "/FPGA/GPMC_D13" "GPMC_D13"
+ J6 A11
+ U8 C1
+Net 192 "/FPGA/GPMC_D12" "GPMC_D12"
+ J6 A12
+ U8 A2
+Net 193 "/FPGA/GPMC_D9" "GPMC_D9"
+ U8 C3
+ J6 A13
+Net 194 "/FPGA/GPMC_A4" "GPMC_A4"
+ U8 E1
+ J6 A41
+Net 195 "/FPGA/GPMC_A5" "GPMC_A5"
+ U8 G5
+ J6 A42
+Net 196 "/FPGA/GPMC_A2" "GPMC_A2"
+ J6 A43
+ U8 F3
+Net 197 "/FPGA/GPMC_A3" "GPMC_A3"
+ J6 A44
+ U8 F2
+Net 198 "/FPGA/GPMC_A0" "GPMC_A0"
+ U8 E5
+ J6 A45
+Net 199 "/FPGA/GPMC_A1" "GPMC_A1"
+ J6 A46
+ U8 F4
+Net 200 "/FPGA/GPMC_WE_N" "GPMC_WE_N"
+ U8 A7
+ J6 A10
+Net 201 "/FPGA/GPMC_CLK" "GPMC_CLK"
+ U8 D4
+ J6 A21
+Net 202 "/FPGA/GPMC_CS_N" "GPMC_CS_N"
+ J6 A26
+ U8 B6
+Net 205 "/FPGA/GPMC_RE_N" "GPMC_RE_N"
+ U8 B7
+ J6 A8
+Net 208 "/FPGA/GPMC_A11" "GPMC_A11"
+ U8 J5
+ J6 A30
+Net 209 "/FPGA/GPMC_A18" "GPMC_A18"
+ J6 A31
+ U8 J1
+Net 210 "/FPGA/GPMC_A19" "GPMC_A19"
+ U8 L3
+ J6 A32
+Net 211 "/FPGA/GPMC_A17" "GPMC_A17"
+ J6 A33
+ U8 K1
+Net 212 "/FPGA/GPMC_A15" "GPMC_A15"
+ J6 A34
+ U8 J3
+Net 213 "/FPGA/GPMC_A16" "GPMC_A16"
+ U8 H3
+ J6 A35
+Net 214 "/FPGA/GPMC_A14" "GPMC_A14"
+ J6 A36
+ U8 H1
+Net 215 "/FPGA/GPMC_A12" "GPMC_A12"
+ U8 J4
+ J6 A37
+Net 216 "/FPGA/GPMC_A13" "GPMC_A13"
+ U8 H2
+ J6 A38
+Net 217 "/FPGA/GPMC_A6" "GPMC_A6"
+ U8 G4
+ J6 A39
+Net 218 "/FPGA/GPMC_A7" "GPMC_A7"
+ U8 G2
+ J6 A40
+Net 219 "" ""
+ R27 1
+ U9 3
+Net 220 "/FPGA/CLK_50MHZ" "CLK_50MHZ"
+ R27 2
+ U8 D13
+Net 284 "" ""
+ U8 N8
+ R26 2
+}
+#End

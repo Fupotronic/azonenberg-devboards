@@ -1,4 +1,4 @@
-update=Sun 01 Sep 2013 10:29:33 PM EDT
+update=Wed 27 Nov 2013 05:42:25 PM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -57,7 +57,7 @@ LibName37=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/special-az
 LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azonenberg
 [pcbnew]
 version=1
-LastNetListRead=
+LastNetListRead=bbb-jtag-cape.net
 PadDrlX=320
 PadDimH=600
 PadDimV=600
@@ -91,3 +91,4 @@ LibName14=esd_sensitive_small
 LibName15=pb_free
 LibName16=recycle_logo
 LibName17=smt_azonenberg
+LibName18=3rdparty/walter/mod_smd_lqfp/w_smd_lqfp

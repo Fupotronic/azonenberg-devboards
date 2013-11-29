@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 03 Nov 2013 08:37:54 PM EST
+EESchema Schematic File Version 2  date Fri 29 Nov 2013 12:36:09 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,8 +44,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "4 nov 2013"
-Rev "$Rev: 173 $"
+Date "29 nov 2013"
+Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "USB-JTAG circuit for FPGA"
 Comment2 ""
@@ -79,7 +79,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 1500 9550 1500
 Wire Wire Line
-	9750 1600 9550 1600
+	9550 1600 10350 1600
 Wire Wire Line
 	9750 1700 9550 1700
 NoConn ~ 9550 1800
@@ -212,13 +212,13 @@ Text Label 7300 2900 2    60   ~ 0
 FTDI_EEDATA
 Text HLabel 9750 2300 2    60   BiDi ~ 0
 FPGA_CBUS0
-Text HLabel 9750 1400 2    60   Output ~ 0
+Text HLabel 10350 1400 2    60   Output ~ 0
 FPGA_TCK
-Text HLabel 9750 1500 2    60   Output ~ 0
+Text HLabel 10350 1500 2    60   Output ~ 0
 FPGA_TDI
-Text HLabel 9750 1600 2    60   Input ~ 0
+Text HLabel 10350 1600 2    60   Input ~ 0
 FPGA_TDO
-Text HLabel 9750 1700 2    60   Output ~ 0
+Text HLabel 10350 1700 2    60   Output ~ 0
 FPGA_TMS
 Text HLabel 9750 2400 2    60   BiDi ~ 0
 FPGA_CBUS1
@@ -369,7 +369,7 @@ L INDUCTOR_PWROUT L1
 U 1 1 527728B6
 P 1050 3600
 F 0 "L1" V 1000 3600 40  0000 C CNN
-F 1 "INDUCTOR_PWROUT" V 1150 3600 40  0000 C CNN
+F 1 "300R" V 1150 3600 40  0000 C CNN
 	1    1050 3600
 	0    1    1    0   
 $EndComp
@@ -414,7 +414,7 @@ L INDUCTOR_PWROUT L2
 U 1 1 52772B74
 P 1050 4200
 F 0 "L2" V 1000 4200 40  0000 C CNN
-F 1 "INDUCTOR_PWROUT" V 1150 4200 40  0000 C CNN
+F 1 "300R" V 1150 4200 40  0000 C CNN
 	1    1050 4200
 	0    1    1    0   
 $EndComp
@@ -537,4 +537,37 @@ Text Label 4300 4600 2    60   ~ 0
 GND
 Connection ~ 4150 4000
 Connection ~ 6900 1400
+$Comp
+L R R23
+U 1 1 529837C2
+P 10000 1400
+F 0 "R23" V 10050 1600 50  0000 C CNN
+F 1 "49.9" V 10000 1400 50  0000 C CNN
+	1    10000 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R24
+U 1 1 529837E4
+P 10000 1500
+F 0 "R24" V 10050 1700 50  0000 C CNN
+F 1 "49.9" V 10000 1500 50  0000 C CNN
+	1    10000 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R25
+U 1 1 529837EA
+P 10000 1700
+F 0 "R25" V 10050 1900 50  0000 C CNN
+F 1 "49.9" V 10000 1700 50  0000 C CNN
+	1    10000 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10350 1400 10250 1400
+Wire Wire Line
+	10250 1500 10350 1500
+Wire Wire Line
+	10350 1700 10250 1700
 $EndSCHEMATC
