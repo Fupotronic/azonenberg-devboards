@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Nov 2013 02:39:54 PM EST
+EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "29 nov 2013"
+Date "2 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -76,24 +76,6 @@ Text HLabel 9500 2450 0    60   BiDi ~ 0
 FPGA_CBUS6
 Text HLabel 9500 2550 0    60   BiDi ~ 0
 FPGA_CBUS7
-$Comp
-L BBB_CAPE_HEADER J6
-U 1 1 5296D8C5
-P 13550 5400
-F 0 "J6" H 14500 5600 60  0000 L CNN
-F 1 "BBB_CAPE_HEADER" H 14500 5500 60  0000 L CNN
-	1    13550 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L BBB_CAPE_HEADER J6
-U 2 1 5296D8D4
-P 13550 10150
-F 0 "J6" H 14500 10350 60  0000 L CNN
-F 1 "BBB_CAPE_HEADER" H 14500 10250 60  0000 L CNN
-	2    13550 10150
-	1    0    0    -1  
-$EndComp
 $Comp
 L XC7AXXXT-XFTG256X U8
 U 1 1 52983107
@@ -127,8 +109,6 @@ Text HLabel 13150 6050 0    60   Output ~ 0
 NoConn ~ 13250 6250
 NoConn ~ 13250 6350
 Text Label 13150 9850 2    60   ~ 0
-GND
-Text Label 13150 8950 2    60   ~ 0
 GND
 NoConn ~ 13250 8850
 NoConn ~ 13250 9050
@@ -224,8 +204,6 @@ Text Label 13150 1600 2    60   ~ 0
 GPMC_RE_N
 NoConn ~ 13250 1500
 NoConn ~ 13250 1700
-Text Label 13150 6550 2    60   ~ 0
-SYS_RESET_N
 NoConn ~ 13250 6450
 Text Label 13150 7550 2    60   ~ 0
 I2C_SDA
@@ -355,11 +333,9 @@ Text Label 2200 6400 2    60   ~ 0
 GPMC_CS_N
 Text Label 2200 6200 2    60   ~ 0
 GPMC_RE_N
-Text Notes 950  1050 0    60   ~ 0
-TODO: board ID EEPROM
-Text Label 1050 1650 2    60   ~ 0
+Text Label 950  900  2    60   ~ 0
 I2C_SDA
-Text Label 1050 1450 2    60   ~ 0
+Text Label 950  700  2    60   ~ 0
 I2C_SCL
 Text Label 2200 11000 2    60   ~ 0
 FPGA_GTS_N
@@ -580,32 +556,30 @@ F 1 "470" V 1950 4700 50  0000 C CNN
 	1    1950 4700
 	0    1    1    0   
 $EndComp
-Text Notes 950  2550 0    60   ~ 0
-Solder jumpers for setting\ncape I2C address (shown as 2'b00)
-Text Label 2350 1900 2    60   ~ 0
+Text Label 2250 1150 2    60   ~ 0
 I2C_A0
-Text Label 2250 2150 2    60   ~ 0
+Text Label 2150 1400 2    60   ~ 0
 GND
-Text Label 2950 1900 2    60   ~ 0
+Text Label 2850 1150 2    60   ~ 0
 I2C_A1
-Text Label 2450 1450 0    60   ~ 0
+Text Label 2350 700  0    60   ~ 0
 3V3
 $Comp
 L R R69
 U 1 1 529A2CCE
-P 1300 1650
-F 0 "R69" V 1380 1650 50  0000 C CNN
-F 1 "5.6K" V 1300 1650 50  0000 C CNN
-	1    1300 1650
+P 1200 900
+F 0 "R69" V 1280 900 50  0000 C CNN
+F 1 "5.6K" V 1200 900 50  0000 C CNN
+	1    1200 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R68
 U 1 1 529A2E1C
-P 1300 1450
-F 0 "R68" V 1380 1450 50  0000 C CNN
-F 1 "5.6K" V 1300 1450 50  0000 C CNN
-	1    1300 1450
+P 1200 700
+F 0 "R68" V 1280 700 50  0000 C CNN
+F 1 "5.6K" V 1200 700 50  0000 C CNN
+	1    1200 700 
 	0    -1   -1   0   
 $EndComp
 Text Label 3200 3450 2    60   ~ 0
@@ -622,19 +596,19 @@ $EndComp
 $Comp
 L JUMPER3 JP1
 U 1 1 529A3CCD
-P 2450 1900
-F 0 "JP1" H 2500 1800 40  0000 L CNN
-F 1 "JUMPER3" H 2450 2000 40  0000 C CNN
-	1    2450 1900
+P 2350 1150
+F 0 "JP1" H 2400 1050 40  0000 L CNN
+F 1 "JUMPER3" H 2350 1250 40  0000 C CNN
+	1    2350 1150
 	0    1    1    0   
 $EndComp
 $Comp
 L JUMPER3 JP2
 U 1 1 529A3D54
-P 3050 1900
-F 0 "JP2" H 3100 1800 40  0000 L CNN
-F 1 "JUMPER3" H 3050 2000 40  0000 C CNN
-	1    3050 1900
+P 2950 1150
+F 0 "JP2" H 3000 1050 40  0000 L CNN
+F 1 "JUMPER3" H 2950 1250 40  0000 C CNN
+	1    2950 1150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -690,8 +664,6 @@ Connection ~ 13200 9950
 Wire Wire Line
 	13200 10150 13250 10150
 Connection ~ 13200 10050
-Wire Wire Line
-	13150 8950 13250 8950
 Wire Wire Line
 	13150 1100 13250 1100
 Wire Wire Line
@@ -832,14 +804,216 @@ Wire Wire Line
 	3700 4700 2200 4700
 Connection ~ 3700 4500
 Wire Wire Line
-	1550 1650 3050 1650
+	1450 900  2950 900 
 Wire Wire Line
-	1550 1450 2450 1450
-Connection ~ 2450 1650
+	1450 700  4300 700 
+Connection ~ 2350 900 
 Connection ~ 3700 3700
 Wire Wire Line
-	2450 1450 2450 1650
+	2350 700  2350 900 
 Wire Wire Line
-	2250 2150 3050 2150
-Connection ~ 2450 2150
+	2150 1400 2950 1400
+Connection ~ 2350 1400
+NoConn ~ 9500 850 
+NoConn ~ 9500 950 
+NoConn ~ 9500 1350
+NoConn ~ 9500 1450
+NoConn ~ 9500 1550
+NoConn ~ 9500 1650
+NoConn ~ 9500 1750
+NoConn ~ 5600 850 
+NoConn ~ 5600 950 
+NoConn ~ 5600 1050
+NoConn ~ 5600 1150
+NoConn ~ 5600 1250
+NoConn ~ 5600 1350
+NoConn ~ 5600 1450
+NoConn ~ 5600 1550
+NoConn ~ 5600 1650
+NoConn ~ 5600 1750
+NoConn ~ 5600 1850
+NoConn ~ 5600 1950
+NoConn ~ 5600 2050
+NoConn ~ 5600 2150
+NoConn ~ 5600 2250
+NoConn ~ 5600 2350
+NoConn ~ 5600 2450
+NoConn ~ 5600 2550
+NoConn ~ 5600 2650
+NoConn ~ 5600 2750
+NoConn ~ 13250 6650
+NoConn ~ 13250 6750
+NoConn ~ 13250 6850
+NoConn ~ 13250 6950
+NoConn ~ 13250 7050
+NoConn ~ 13250 7150
+NoConn ~ 13250 7350
+NoConn ~ 13250 7650
+NoConn ~ 13250 7750
+NoConn ~ 13250 7850
+NoConn ~ 9500 10800
+NoConn ~ 9500 10700
+NoConn ~ 5600 11000
+NoConn ~ 5600 10900
+NoConn ~ 5600 10800
+NoConn ~ 5600 10700
+NoConn ~ 5600 10600
+NoConn ~ 5600 10500
+NoConn ~ 5600 10400
+NoConn ~ 5600 10300
+NoConn ~ 5600 10200
+NoConn ~ 5600 10100
+NoConn ~ 5600 10000
+NoConn ~ 5600 9900
+NoConn ~ 5600 9800
+NoConn ~ 5600 9700
+NoConn ~ 2200 8100
+NoConn ~ 2200 8200
+NoConn ~ 2200 8300
+NoConn ~ 2200 8500
+NoConn ~ 2200 8600
+NoConn ~ 2200 10700
+NoConn ~ 2200 10800
+NoConn ~ 2200 10900
+NoConn ~ 2200 6100
+NoConn ~ 5600 6100
+NoConn ~ 5600 6200
+NoConn ~ 5600 6300
+NoConn ~ 5600 6400
+NoConn ~ 5600 6500
+NoConn ~ 5600 6600
+NoConn ~ 5600 6700
+NoConn ~ 5600 6800
+NoConn ~ 5600 6900
+NoConn ~ 5600 7000
+NoConn ~ 5600 7100
+NoConn ~ 5600 7200
+NoConn ~ 5600 7300
+NoConn ~ 5600 7400
+NoConn ~ 5600 7500
+NoConn ~ 5600 7600
+NoConn ~ 5600 7700
+NoConn ~ 5600 7800
+NoConn ~ 5600 7900
+NoConn ~ 5600 8000
+NoConn ~ 5600 8100
+NoConn ~ 5600 8200
+NoConn ~ 5600 8300
+NoConn ~ 5600 8500
+NoConn ~ 5600 8600
+NoConn ~ 5600 8700
+NoConn ~ 5600 8800
+NoConn ~ 5600 8900
+NoConn ~ 5600 9000
+NoConn ~ 5600 9100
+NoConn ~ 5600 9200
+NoConn ~ 5600 9300
+NoConn ~ 5600 9400
+NoConn ~ 5600 9500
+NoConn ~ 5600 9600
+$Comp
+L BBB_CAPE_HEADER J6
+U 1 1 529981E4
+P 13550 5400
+F 0 "J6" H 14500 5600 60  0000 L CNN
+F 1 "BBB_CAPE_HEADER" H 14500 5500 60  0000 L CNN
+	1    13550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBB_CAPE_HEADER J6
+U 2 1 529981F6
+P 13550 10150
+F 0 "J6" H 14500 10350 60  0000 L CNN
+F 1 "BBB_CAPE_HEADER" H 14500 10250 60  0000 L CNN
+	2    13550 10150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13250 8950
+NoConn ~ 13250 9650
+NoConn ~ 13250 9750
+Text Label 13150 6550 2    60   ~ 0
+SYS_RESET_N
+Text Label 9300 10100 2    60   ~ 0
+GND
+Wire Wire Line
+	9300 10100 9500 10100
+Wire Wire Line
+	9500 10100 9500 10200
+Text Label 9300 10500 2    60   ~ 0
+GND
+Wire Wire Line
+	9300 10500 9500 10500
+Wire Wire Line
+	9100 10400 9500 10400
+Text HLabel 9100 10400 0    60   Input ~ 0
+1V8
+$Comp
+L 24C512 U20
+U 1 1 529CA911
+P 4300 1200
+F 0 "U20" H 4450 1550 60  0000 C CNN
+F 1 "24C256" H 4500 850 60  0000 C CNN
+	1    4300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C109
+U 1 1 529CA91E
+P 3250 1500
+F 0 "C109" H 3300 1600 50  0000 L CNN
+F 1 "0.1 uF" H 3300 1400 50  0000 L CNN
+	1    3250 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 700 
+Wire Wire Line
+	2950 1400 2950 1700
+Text Label 5000 1300 0    60   ~ 0
+I2C_SCL
+Text Label 5000 1400 0    60   ~ 0
+I2C_SDA
+Wire Wire Line
+	3250 1300 3250 700 
+Connection ~ 3250 700 
+Text Label 3600 1000 2    60   ~ 0
+I2C_A0
+Text Label 3600 1100 2    60   ~ 0
+I2C_A1
+Wire Wire Line
+	3600 1200 3250 1200
+Connection ~ 3250 1200
+Text Label 5000 1100 0    60   ~ 0
+I2C_WP
+Text Label 1050 2150 0    60   ~ 0
+I2C_WP
+$Comp
+L CONN_2 P2
+U 1 1 529CABB5
+P 700 2250
+F 0 "P2" V 650 2250 40  0000 C CNN
+F 1 "CONN_2" V 750 2250 40  0000 C CNN
+	1    700  2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R71
+U 1 1 529CABC2
+P 1650 2150
+F 0 "R71" V 1730 2150 50  0000 C CNN
+F 1 "10K" V 1650 2150 50  0000 C CNN
+	1    1650 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 2150 1400 2150
+Text Label 1900 2150 0    60   ~ 0
+3V3
+Text Label 1050 2350 0    60   ~ 0
+GND
+Text Notes 600  1550 0    60   ~ 0
+Solder jumpers for cape I2C address
+Wire Wire Line
+	2950 1700 4300 1700
+Connection ~ 3250 1700
 $EndSCHEMATC

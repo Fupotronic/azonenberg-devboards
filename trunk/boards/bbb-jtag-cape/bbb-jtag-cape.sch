@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Nov 2013 02:39:53 PM EST
+EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "29 nov 2013"
+Date "2 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "Top Level"
@@ -58,7 +58,7 @@ U 522EB977
 F0 "4-Port USB Hub" 60
 F1 "USB_Hub.sch" 60
 F2 "3V3" I L 2300 900 60 
-F3 "GND" I L 2300 1000 60 
+F3 "GND" I L 2300 1100 60 
 F4 "FTDI_USB_N" B R 3750 900 60 
 F5 "FTDI_USB_P" B R 3750 1000 60 
 F6 "5V" I L 2300 800 60 
@@ -93,8 +93,9 @@ U 522EBD2B
 F0 "Power Supply" 60
 F1 "Power_Supply.sch" 60
 F2 "5V" I R 1450 800 60 
-F3 "GND" I R 1450 1000 60 
+F3 "GND" I R 1450 1100 60 
 F4 "3V3" I R 1450 900 60 
+F5 "1V8" O R 1450 1000 60 
 $EndSheet
 $Sheet
 S 8250 700  1300 4350
@@ -133,16 +134,18 @@ F30 "JTAG7_TDI_OUT" I L 8250 4300 60
 F31 "JTAG7_TMS_OUT" I L 8250 4400 60 
 F32 "JTAG7_TCK_OUT" I L 8250 4500 60 
 F33 "JTAG7_TDO_IN" O L 8250 4600 60 
+F34 "3V3" I L 8250 4850 60 
+F35 "GND" I L 8250 4950 60 
 $EndSheet
-Text Label 2050 900  2    60   ~ 0
+Text Label 1850 900  0    60   ~ 0
 3V3
-Text Label 2050 1000 2    60   ~ 0
+Text Label 1850 1100 0    60   ~ 0
 GND
 Text Label 4150 1200 2    60   ~ 0
 3V3
 Text Label 4150 1300 2    60   ~ 0
 GND
-Text Label 1750 800  0    60   ~ 0
+Text Label 1850 800  0    60   ~ 0
 5V
 Text Label 5950 2300 2    60   ~ 0
 3V3
@@ -199,9 +202,10 @@ F44 "JTAG7_TDI_OUT" O R 7650 4300 60
 F45 "JTAG7_TMS_OUT" O R 7650 4400 60 
 F46 "JTAG7_TCK_OUT" O R 7650 4500 60 
 F47 "JTAG7_TDO_IN" I R 7650 4600 60 
-F48 "GND" O L 6100 2400 60 
+F48 "GND" O L 6100 2500 60 
+F49 "1V8" I L 6100 2400 60 
 $EndSheet
-Text Label 5950 2400 2    60   ~ 0
+Text Label 5950 2500 2    60   ~ 0
 GND
 Wire Wire Line
 	3750 800  4300 800 
@@ -211,8 +215,6 @@ Wire Wire Line
 	3750 1000 4300 1000
 Wire Wire Line
 	1450 900  2300 900 
-Wire Wire Line
-	1450 1000 2300 1000
 Wire Wire Line
 	4150 1200 4300 1200
 Wire Wire Line
@@ -324,4 +326,22 @@ F 1 "CONN_1" H 1350 5955 30  0001 C CNN
 	1    1350 5900
 	1    0    0    -1  
 $EndComp
+Text Label 8050 4850 2    60   ~ 0
+3V3
+Text Label 8050 4950 2    60   ~ 0
+GND
+Wire Wire Line
+	8050 4850 8250 4850
+Wire Wire Line
+	8050 4950 8250 4950
+Wire Wire Line
+	5950 2500 6100 2500
+Text Label 5950 2400 2    60   ~ 0
+1V8
+Text Label 1850 1000 0    60   ~ 0
+1V8
+Wire Wire Line
+	1450 1000 1850 1000
+Wire Wire Line
+	1450 1100 2300 1100
 $EndSCHEMATC
