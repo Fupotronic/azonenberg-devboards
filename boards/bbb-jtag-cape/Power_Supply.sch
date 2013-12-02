@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Nov 2013 02:39:54 PM EST
+EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "29 nov 2013"
+Date "2 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -52,7 +52,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 800  650  0    60   Input ~ 0
+Text HLabel 1100 4850 0    60   Input ~ 0
 5V
 Text HLabel 1150 7600 0    60   Input ~ 0
 GND
@@ -177,17 +177,6 @@ Connection ~ 3600 8700
 Connection ~ 3600 8800
 Text Notes 650  1000 0    60   ~ 0
 Worst-case FPGA power estimates from XPE 14.4.1:\n\n1V0     544 mA\n1V8      19 mA\n3V3      14 mA
-Text Notes 3000 3650 0    60   ~ 0
-TODO: Regulators for 1V0, 1V8 (3V3 comes from headers)
-$Comp
-L CP1 C38
-U 1 1 52991A24
-P 5900 6750
-F 0 "C38" H 5950 6850 50  0000 L CNN
-F 1 "330 uF" H 5950 6650 50  0000 L CNN
-	1    5900 6750
-	1    0    0    -1  
-$EndComp
 $Comp
 L C C42
 U 1 1 52991A42
@@ -316,11 +305,11 @@ F 1 "0.47 uF" H 10550 6650 50  0000 L CNN
 $EndComp
 Text Notes 5900 6550 0    60   ~ 0
 VCCINT
-Text Label 5800 6550 2    60   ~ 0
+Text Label 5200 6550 2    60   ~ 0
 1V0
 Wire Wire Line
-	5800 6550 11700 6550
-Text Label 5800 6950 2    60   ~ 0
+	5200 6550 11700 6550
+Text Label 5200 6950 2    60   ~ 0
 GND
 Connection ~ 5900 6550
 Connection ~ 6250 6550
@@ -385,7 +374,7 @@ Connection ~ 11350 6950
 Connection ~ 11000 6950
 Connection ~ 10500 6950
 Wire Wire Line
-	5800 6950 11700 6950
+	5200 6950 11700 6950
 Connection ~ 10150 6950
 Text Label 5800 7300 2    60   ~ 0
 1V8
@@ -771,4 +760,129 @@ Connection ~ 9650 8650
 Connection ~ 10000 8650
 Connection ~ 10350 8650
 Connection ~ 10350 9050
+$Comp
+L LXDC2HL10A-080 U18
+U 1 1 529BD414
+P 2700 5050
+F 0 "U18" H 2400 5400 60  0000 L CNN
+F 1 "LXDC2HL10A-080" H 2750 4950 60  0000 L CNN
+	1    2700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C105
+U 1 1 529BD423
+P 1450 5050
+F 0 "C105" H 1500 5150 50  0000 L CNN
+F 1 "4.7 uF" H 1500 4950 50  0000 L CNN
+	1    1450 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4850 2100 4850
+Wire Wire Line
+	2100 4850 2100 5050
+Wire Wire Line
+	1100 5250 3800 5250
+Wire Wire Line
+	2700 5250 2700 5200
+$Comp
+L C C106
+U 1 1 529BD970
+P 3800 5050
+F 0 "C106" H 3850 5150 50  0000 L CNN
+F 1 "10 uF" H 3850 4950 50  0000 L CNN
+	1    3800 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5050 3350 4850
+Wire Wire Line
+	3350 4850 4100 4850
+Connection ~ 2700 5250
+Text Label 4100 4850 0    60   ~ 0
+1V0
+Connection ~ 3800 4850
+Text Label 1100 5250 2    60   ~ 0
+GND
+Connection ~ 1450 5250
+Connection ~ 1450 4850
+$Comp
+L LDO1117-XX U19
+U 1 1 529BE6C2
+P 2400 3500
+F 0 "U19" H 2450 3500 60  0000 C CNN
+F 1 "LDO1117-18" H 2450 3400 60  0000 C CNN
+	1    2400 3500
+	1    0    0    -1  
+$EndComp
+Text Label 1100 4150 2    60   ~ 0
+GND
+$Comp
+L C C108
+U 1 1 529BE78A
+P 3300 3950
+F 0 "C108" H 3350 4050 50  0000 L CNN
+F 1 "4.7 uF" H 3350 3850 50  0000 L CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 4150
+Wire Wire Line
+	3300 3750 3300 3600
+$Comp
+L C C107
+U 1 1 529BE8FD
+P 1650 3950
+F 0 "C107" H 1700 4050 50  0000 L CNN
+F 1 "4.7 uF" H 1700 3850 50  0000 L CNN
+	1    1650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3750 1650 3600
+Text Label 1100 3600 2    60   ~ 0
+5V
+Wire Wire Line
+	1650 3600 1100 3600
+Text Label 3300 3750 0    60   ~ 0
+1V8
+Wire Wire Line
+	1100 4150 3300 4150
+Connection ~ 1650 4150
+Text HLabel 3300 3600 2    60   Output ~ 0
+1V8
+$Comp
+L C C111
+U 1 1 529CBDCE
+P 5900 6750
+F 0 "C111" H 5950 6850 50  0000 L CNN
+F 1 "100 uF" H 5950 6650 50  0000 L CNN
+	1    5900 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C110
+U 1 1 529CBDDE
+P 5550 6750
+F 0 "C110" H 5600 6850 50  0000 L CNN
+F 1 "100 uF" H 5600 6650 50  0000 L CNN
+	1    5550 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C38
+U 1 1 529CBDE4
+P 5200 6750
+F 0 "C38" H 5250 6850 50  0000 L CNN
+F 1 "100 uF" H 5250 6650 50  0000 L CNN
+	1    5200 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 6550
+Connection ~ 5550 6950
+Text Notes 2700 5400 0    60   ~ 0
+Switching regulator for FPGA VCCINT/VCCBRAM
+Text Notes 2700 4250 0    60   ~ 0
+LDO for FPGA VCCAUX
 $EndSCHEMATC
