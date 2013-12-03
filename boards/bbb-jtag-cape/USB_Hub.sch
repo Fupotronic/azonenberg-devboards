@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
+EESchema Schematic File Version 2  date Mon 02 Dec 2013 07:18:51 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "2 dec 2013"
+Date "3 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "On-board USB hub"
@@ -298,8 +298,6 @@ Text Label 8900 1250 0    60   ~ 0
 VBUS_2
 Text Label 8900 1350 0    60   ~ 0
 VBUS_3
-Text HLabel 8900 1450 2    60   Output ~ 0
-VBUS_FTDI
 $Comp
 L USB_2 J1
 U 1 1 5276F693
@@ -608,28 +606,6 @@ GREEN_4_N
 Text Notes 3350 650  0    60   ~ 0
 FTDI USB port lacks connector but still needs caps\nand indicators
 $Comp
-L C C10
-U 1 1 5276FC53
-P 3900 1800
-F 0 "C10" H 3950 1900 50  0000 L CNN
-F 1 "0.01 uF" H 3950 1700 50  0000 L CNN
-	1    3900 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C9
-U 1 1 5276FC5B
-P 3350 1800
-F 0 "C9" H 3400 1900 50  0000 L CNN
-F 1 "150 uF 10V" H 3400 1700 50  0000 L CNN
-	1    3350 1800
-	1    0    0    -1  
-$EndComp
-Text Label 3350 1600 2    60   ~ 0
-VBUS_4
-Text Label 3350 2000 2    60   ~ 0
-GND
-$Comp
 L R R15
 U 1 1 5276FE12
 P 1500 4600
@@ -907,10 +883,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 1000 3350 1300
 Wire Wire Line
-	3350 1600 3900 1600
-Wire Wire Line
-	3900 2000 3350 2000
-Wire Wire Line
 	900  7250 4500 7250
 Connection ~ 1350 7250
 Wire Wire Line
@@ -945,4 +917,5 @@ F 1 "HIROSE_UX60SX-MB-5ST_PSVGND" H 2300 6100 60  0000 C CNN
 	1    1800 5950
 	-1   0    0    -1  
 $EndComp
+NoConn ~ 8900 1450
 $EndSCHEMATC

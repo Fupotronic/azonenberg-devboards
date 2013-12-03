@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
+EESchema Schematic File Version 2  date Mon 02 Dec 2013 07:18:50 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "2 dec 2013"
+Date "3 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "Top Level"
@@ -62,7 +62,6 @@ F3 "GND" I L 2300 1100 60
 F4 "FTDI_USB_N" B R 3750 900 60 
 F5 "FTDI_USB_P" B R 3750 1000 60 
 F6 "5V" I L 2300 800 60 
-F7 "VBUS_FTDI" O R 3750 800 60 
 $EndSheet
 $Sheet
 S 4300 700  1300 2200
@@ -71,7 +70,6 @@ F0 "USB-JTAG" 60
 F1 "USB_JTAG.sch" 60
 F2 "FTDI_USB_P" B L 4300 1000 60 
 F3 "FTDI_USB_N" B L 4300 900 60 
-F4 "VBUS_FTDI" I L 4300 800 60 
 F5 "3V3" I L 4300 1200 60 
 F6 "GND" I L 4300 1300 60 
 F7 "FPGA_CBUS0" B R 5600 1300 60 
@@ -207,8 +205,6 @@ F49 "1V8" I L 6100 2400 60
 $EndSheet
 Text Label 5950 2500 2    60   ~ 0
 GND
-Wire Wire Line
-	3750 800  4300 800 
 Wire Wire Line
 	4300 900  3750 900 
 Wire Wire Line

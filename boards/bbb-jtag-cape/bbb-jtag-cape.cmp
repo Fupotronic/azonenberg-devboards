@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 01 Dec 2013 07:19:16 PM EST
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 01 Dec 2013 10:57:09 PM EST
 
 BeginCmp
 TimeStamp = /522EB977/5276EE0B;
@@ -54,13 +54,6 @@ TimeStamp = /522EB977/5276EF38;
 Reference = C8;
 ValeurCmp = 0.1_uF;
 IdModule  = SM0402;
-EndCmp
-
-BeginCmp
-TimeStamp = /522EB977/5276FC5B;
-Reference = C9;
-ValeurCmp = 150_uF_10V;
-IdModule  = CAP_AL_6.3MM;
 EndCmp
 
 BeginCmp
@@ -1037,13 +1030,6 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /522EBED4/5299FF8D;
-Reference = P1;
-ValeurCmp = CONN_10;
-IdModule  = HEADER_2.54_2x6;
-EndCmp
-
-BeginCmp
 TimeStamp = /522EBD9C/529CABB5;
 Reference = P2;
 ValeurCmp = CONN_2;
@@ -1607,7 +1593,28 @@ BeginCmp
 TimeStamp = /5299DE23;
 Reference = TP1;
 ValeurCmp = CONN_1;
-IdModule  = TEST_PIN;
+IdModule  = SMT_TEST_CLIP;
+EndCmp
+
+BeginCmp
+TimeStamp = /522EBED4/529C1836;
+Reference = TP2;
+ValeurCmp = CONN_1;
+IdModule  = SMT_TEST_CLIP;
+EndCmp
+
+BeginCmp
+TimeStamp = /522EBED4/529C1830;
+Reference = TP3;
+ValeurCmp = CONN_1;
+IdModule  = SMT_TEST_CLIP;
+EndCmp
+
+BeginCmp
+TimeStamp = /522EBED4/529C182A;
+Reference = TP4;
+ValeurCmp = CONN_1;
+IdModule  = SMT_TEST_CLIP;
 EndCmp
 
 BeginCmp
