@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
+EESchema Schematic File Version 2  date Mon 02 Dec 2013 07:18:51 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 5 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "2 dec 2013"
+Date "3 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -146,7 +146,7 @@ Wire Wire Line
 Text Label 5300 2550 0    60   ~ 0
 CH0_TDI
 Text Label 4800 2950 0    60   ~ 0
-VJTAG_CH0
+CH0_VJTAG
 Wire Wire Line
 	4800 2950 4700 2950
 Text Label 5300 1950 0    60   ~ 0
@@ -295,7 +295,7 @@ Wire Wire Line
 Text Label 5300 4250 0    60   ~ 0
 CH1_TDI
 Text Label 4800 4650 0    60   ~ 0
-VJTAG_CH1
+CH1_VJTAG
 Wire Wire Line
 	4800 4650 4700 4650
 Text Label 5300 3650 0    60   ~ 0
@@ -444,7 +444,7 @@ Wire Wire Line
 Text Label 5300 6050 0    60   ~ 0
 CH2_TDI
 Text Label 4800 6450 0    60   ~ 0
-VJTAG_CH2
+CH2_VJTAG
 Wire Wire Line
 	4800 6450 4700 6450
 Text Label 5300 5450 0    60   ~ 0
@@ -593,7 +593,7 @@ Wire Wire Line
 Text Label 5300 7900 0    60   ~ 0
 CH3_TDI
 Text Label 4800 8300 0    60   ~ 0
-VJTAG_CH3
+CH3_VJTAG
 Wire Wire Line
 	4800 8300 4700 8300
 Text Label 5300 7300 0    60   ~ 0
@@ -742,7 +742,7 @@ Wire Wire Line
 Text Label 11200 2550 0    60   ~ 0
 CH4_TDI
 Text Label 10700 2950 0    60   ~ 0
-VJTAG_CH4
+CH4_VJTAG
 Wire Wire Line
 	10700 2950 10600 2950
 Text Label 11200 1950 0    60   ~ 0
@@ -891,7 +891,7 @@ Wire Wire Line
 Text Label 11200 4250 0    60   ~ 0
 CH5_TDI
 Text Label 10700 4650 0    60   ~ 0
-VJTAG_CH5
+CH5_VJTAG
 Wire Wire Line
 	10700 4650 10600 4650
 Text Label 11200 3650 0    60   ~ 0
@@ -1040,7 +1040,7 @@ Wire Wire Line
 Text Label 11200 6050 0    60   ~ 0
 CH6_TDI
 Text Label 10700 6450 0    60   ~ 0
-VJTAG_CH6
+CH6_VJTAG
 Wire Wire Line
 	10700 6450 10600 6450
 Text Label 11200 5450 0    60   ~ 0
@@ -1189,7 +1189,7 @@ Wire Wire Line
 Text Label 11200 7900 0    60   ~ 0
 CH7_TDI
 Text Label 10700 8300 0    60   ~ 0
-VJTAG_CH7
+CH7_VJTAG
 Wire Wire Line
 	10700 8300 10600 8300
 Text Label 11200 7300 0    60   ~ 0
@@ -1254,7 +1254,7 @@ F 1 "470" V 2200 9450 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1950 9450 2    60   ~ 0
-VJTAG_CH0
+CH0_VJTAG
 $Comp
 L LED D10
 U 1 1 5298FCF1
@@ -1276,7 +1276,7 @@ F 1 "470" V 2200 9750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1950 9750 2    60   ~ 0
-VJTAG_CH1
+CH1_VJTAG
 $Comp
 L LED D11
 U 1 1 5298FD05
@@ -1298,7 +1298,7 @@ F 1 "470" V 2200 10050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1950 10050 2    60   ~ 0
-VJTAG_CH2
+CH2_VJTAG
 $Comp
 L LED D12
 U 1 1 5298FD13
@@ -1320,7 +1320,7 @@ F 1 "470" V 2200 10350 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1950 10350 2    60   ~ 0
-VJTAG_CH3
+CH3_VJTAG
 $Comp
 L LED D13
 U 1 1 5298FD21
@@ -1342,7 +1342,7 @@ F 1 "470" V 4550 9450 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 4300 9450 2    60   ~ 0
-VJTAG_CH4
+CH4_VJTAG
 $Comp
 L LED D14
 U 1 1 5298FD2F
@@ -1364,7 +1364,7 @@ F 1 "470" V 4550 9750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 4300 9750 2    60   ~ 0
-VJTAG_CH5
+CH5_VJTAG
 $Comp
 L LED D15
 U 1 1 5298FD3D
@@ -1386,7 +1386,7 @@ F 1 "470" V 4550 10050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 4300 10050 2    60   ~ 0
-VJTAG_CH6
+CH6_VJTAG
 $Comp
 L LED D16
 U 1 1 5298FD4B
@@ -1408,7 +1408,7 @@ F 1 "470" V 4550 10350 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 4300 10350 2    60   ~ 0
-VJTAG_CH7
+CH7_VJTAG
 $Comp
 L LED D17
 U 1 1 5298FD59
@@ -1420,35 +1420,10 @@ F 1 "GREEN" H 5000 10250 50  0000 C CNN
 $EndComp
 Text Label 5200 10350 0    60   ~ 0
 CH7_GND
-Text Label 8750 9350 2    60   ~ 0
-VJTAG_CH0
-Text Label 8750 9450 2    60   ~ 0
-CH0_GND
-Text Label 8750 9550 2    60   ~ 0
-CH0_TDI
-Text Label 8750 9650 2    60   ~ 0
-CH0_TMS
-Text Label 8750 9750 2    60   ~ 0
-CH0_TCK
-Text Label 8750 9850 2    60   ~ 0
-CH0_TDO
-Text Label 8750 9950 2    60   ~ 0
-JTAG0_TDI_OUT
-Text Label 8750 10050 2    60   ~ 0
-JTAG0_TMS_OUT
 Text Label 8750 10150 2    60   ~ 0
-JTAG0_TCK_OUT
+CH0_VJTAG
 Text Label 8750 10250 2    60   ~ 0
-JTAG0_TDO_IN
-$Comp
-L CONN_10 P1
-U 1 1 5299FF8D
-P 9100 9800
-F 0 "P1" V 9050 9800 60  0000 C CNN
-F 1 "CONN_10" V 9150 9800 60  0000 C CNN
-	1    9100 9800
-	1    0    0    -1  
-$EndComp
+CH0_GND
 Text HLabel 2400 1900 0    60   Input ~ 0
 3V3
 Wire Wire Line
@@ -1525,6 +1500,35 @@ P 11900 8400
 F 0 "J13" H 12400 9950 60  0000 C CNN
 F 1 "XILINX_JTAG_VCCOUT" H 12400 9850 60  0000 C CNN
 	1    11900 8400
+	1    0    0    -1  
+$EndComp
+Text Label 8750 10350 2    60   ~ 0
+GND
+$Comp
+L CONN_1 TP4
+U 1 1 529C182A
+P 8900 10350
+F 0 "TP4" H 8980 10350 40  0000 L CNN
+F 1 "CONN_1" H 8900 10405 30  0001 C CNN
+	1    8900 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 TP3
+U 1 1 529C1830
+P 8900 10250
+F 0 "TP3" H 8980 10250 40  0000 L CNN
+F 1 "CONN_1" H 8900 10305 30  0001 C CNN
+	1    8900 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 TP2
+U 1 1 529C1836
+P 8900 10150
+F 0 "TP2" H 8980 10150 40  0000 L CNN
+F 1 "CONN_1" H 8900 10205 30  0001 C CNN
+	1    8900 10150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

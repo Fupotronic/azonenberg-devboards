@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 01 Dec 2013 07:23:55 PM EST
+EESchema Schematic File Version 2  date Mon 02 Dec 2013 07:18:51 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "2 dec 2013"
+Date "3 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -253,91 +253,91 @@ F 1 "XC7A100T-1FTG256C" H 4300 10950 60  0000 R CNN
 	6    2500 11000
 	1    0    0    -1  
 $EndComp
-Text Label 2200 7100 2    60   ~ 0
+Text Label 5600 6200 2    60   ~ 0
 GPMC_D6
-Text Label 2200 7200 2    60   ~ 0
+Text Label 5600 7200 2    60   ~ 0
 GPMC_D7
-Text Label 2200 6700 2    60   ~ 0
+Text Label 5600 7300 2    60   ~ 0
 GPMC_D2
-Text Label 2200 6800 2    60   ~ 0
+Text Label 5600 6400 2    60   ~ 0
 GPMC_D3
-Text Label 2200 7800 2    60   ~ 0
+Text Label 5600 6100 2    60   ~ 0
 GPMC_D13
-Text Label 2200 7700 2    60   ~ 0
+Text Label 5600 6600 2    60   ~ 0
 GPMC_D12
-Text Label 2200 7400 2    60   ~ 0
+Text Label 5600 6800 2    60   ~ 0
 GPMC_D9
-Text Label 2200 7500 2    60   ~ 0
+Text Label 5600 6700 2    60   ~ 0
 GPMC_D10
-Text Label 2200 8000 2    60   ~ 0
+Text Label 5600 8200 2    60   ~ 0
 GPMC_D15
-Text Label 2200 7900 2    60   ~ 0
+Text Label 5600 8900 2    60   ~ 0
 GPMC_D14
-Text Label 2200 7600 2    60   ~ 0
+Text Label 5600 6900 2    60   ~ 0
 GPMC_D11
-Text Label 2200 7000 2    60   ~ 0
+Text Label 5600 7000 2    60   ~ 0
 GPMC_D5
-Text Label 2200 6900 2    60   ~ 0
+Text Label 5600 8500 2    60   ~ 0
 GPMC_D4
-Text Label 2200 6600 2    60   ~ 0
+Text Label 5600 8300 2    60   ~ 0
 GPMC_D1
-Text Label 2200 6500 2    60   ~ 0
+Text Label 5600 9000 2    60   ~ 0
 GPMC_D0
-Text Label 2200 7300 2    60   ~ 0
+Text Label 5600 7100 2    60   ~ 0
 GPMC_D8
-Text Label 2200 9500 2    60   ~ 0
+Text Label 5600 7500 2    60   ~ 0
 GPMC_A8
-Text Label 2200 9700 2    60   ~ 0
+Text Label 5600 7600 2    60   ~ 0
 GPMC_A10
-Text Label 2200 9600 2    60   ~ 0
+Text Label 5600 7900 2    60   ~ 0
 GPMC_A9
-Text Label 2200 9800 2    60   ~ 0
+Text Label 5600 7700 2    60   ~ 0
 GPMC_A11
-Text Label 2200 10500 2    60   ~ 0
+Text Label 5600 8100 2    60   ~ 0
 GPMC_A18
-Text Label 2200 10600 2    60   ~ 0
+Text Label 5600 7800 2    60   ~ 0
 GPMC_A19
-Text Label 2200 10400 2    60   ~ 0
+Text Label 5600 9100 2    60   ~ 0
 GPMC_A17
-Text Label 2200 10200 2    60   ~ 0
+Text Label 5600 8000 2    60   ~ 0
 GPMC_A15
-Text Label 2200 10300 2    60   ~ 0
+Text Label 5600 8600 2    60   ~ 0
 GPMC_A16
-Text Label 2200 10100 2    60   ~ 0
+Text Label 5600 9500 2    60   ~ 0
 GPMC_A14
-Text Label 2200 9900 2    60   ~ 0
+Text Label 5600 9700 2    60   ~ 0
 GPMC_A12
-Text Label 2200 10000 2    60   ~ 0
+Text Label 5600 8700 2    60   ~ 0
 GPMC_A13
-Text Label 2200 9300 2    60   ~ 0
+Text Label 5600 10300 2    60   ~ 0
 GPMC_A6
-Text Label 2200 9400 2    60   ~ 0
+Text Label 5600 9400 2    60   ~ 0
 GPMC_A7
-Text Label 2200 9100 2    60   ~ 0
+Text Label 5600 9900 2    60   ~ 0
 GPMC_A4
-Text Label 2200 9200 2    60   ~ 0
+Text Label 5600 9600 2    60   ~ 0
 GPMC_A5
-Text Label 2200 8900 2    60   ~ 0
+Text Label 5600 10900 2    60   ~ 0
 GPMC_A2
-Text Label 2200 9000 2    60   ~ 0
+Text Label 5600 10200 2    60   ~ 0
 GPMC_A3
-Text Label 2200 8700 2    60   ~ 0
+Text Label 5600 10400 2    60   ~ 0
 GPMC_A0
-Text Label 2200 8800 2    60   ~ 0
+Text Label 5600 10500 2    60   ~ 0
 GPMC_A1
-Text Label 2200 6300 2    60   ~ 0
+Text Label 5600 6500 2    60   ~ 0
 GPMC_WE_N
-Text Label 2200 8400 2    60   ~ 0
+Text Label 5600 8400 2    60   ~ 0
 GPMC_CLK
-Text Label 2200 6400 2    60   ~ 0
+Text Label 5600 7400 2    60   ~ 0
 GPMC_CS_N
-Text Label 2200 6200 2    60   ~ 0
+Text Label 5600 6300 2    60   ~ 0
 GPMC_RE_N
 Text Label 950  900  2    60   ~ 0
 I2C_SDA
 Text Label 950  700  2    60   ~ 0
 I2C_SCL
-Text Label 2200 11000 2    60   ~ 0
+Text Label 4950 10050 2    60   ~ 0
 FPGA_GTS_N
 $Comp
 L OSC U9
@@ -368,7 +368,7 @@ F 1 "49.9" V 3800 5400 50  0000 C CNN
 $EndComp
 Text Label 4050 5400 0    60   ~ 0
 CLK_50MHZ
-Text Label 5450 8400 2    60   ~ 0
+Text Label 2050 8400 2    60   ~ 0
 CLK_50MHZ
 Text Label 1800 5200 2    60   ~ 0
 3V3
@@ -766,8 +766,6 @@ Connection ~ 2200 5400
 Wire Wire Line
 	1800 5600 2200 5600
 Wire Wire Line
-	5450 8400 5600 8400
-Wire Wire Line
 	13250 5750 13150 5750
 Wire Wire Line
 	13150 8350 13250 8350
@@ -854,19 +852,12 @@ NoConn ~ 13250 7850
 NoConn ~ 9500 10800
 NoConn ~ 9500 10700
 NoConn ~ 5600 11000
-NoConn ~ 5600 10900
 NoConn ~ 5600 10800
 NoConn ~ 5600 10700
 NoConn ~ 5600 10600
-NoConn ~ 5600 10500
-NoConn ~ 5600 10400
-NoConn ~ 5600 10300
-NoConn ~ 5600 10200
 NoConn ~ 5600 10100
 NoConn ~ 5600 10000
-NoConn ~ 5600 9900
 NoConn ~ 5600 9800
-NoConn ~ 5600 9700
 NoConn ~ 2200 8100
 NoConn ~ 2200 8200
 NoConn ~ 2200 8300
@@ -876,41 +867,9 @@ NoConn ~ 2200 10700
 NoConn ~ 2200 10800
 NoConn ~ 2200 10900
 NoConn ~ 2200 6100
-NoConn ~ 5600 6100
-NoConn ~ 5600 6200
-NoConn ~ 5600 6300
-NoConn ~ 5600 6400
-NoConn ~ 5600 6500
-NoConn ~ 5600 6600
-NoConn ~ 5600 6700
-NoConn ~ 5600 6800
-NoConn ~ 5600 6900
-NoConn ~ 5600 7000
-NoConn ~ 5600 7100
-NoConn ~ 5600 7200
-NoConn ~ 5600 7300
-NoConn ~ 5600 7400
-NoConn ~ 5600 7500
-NoConn ~ 5600 7600
-NoConn ~ 5600 7700
-NoConn ~ 5600 7800
-NoConn ~ 5600 7900
-NoConn ~ 5600 8000
-NoConn ~ 5600 8100
-NoConn ~ 5600 8200
-NoConn ~ 5600 8300
-NoConn ~ 5600 8500
-NoConn ~ 5600 8600
-NoConn ~ 5600 8700
 NoConn ~ 5600 8800
-NoConn ~ 5600 8900
-NoConn ~ 5600 9000
-NoConn ~ 5600 9100
 NoConn ~ 5600 9200
 NoConn ~ 5600 9300
-NoConn ~ 5600 9400
-NoConn ~ 5600 9500
-NoConn ~ 5600 9600
 $Comp
 L BBB_CAPE_HEADER J6
 U 1 1 529981E4
@@ -1016,4 +975,46 @@ Solder jumpers for cape I2C address
 Wire Wire Line
 	2950 1700 4300 1700
 Connection ~ 3250 1700
+NoConn ~ 13250 6550
+NoConn ~ 2200 6200
+NoConn ~ 2200 6300
+NoConn ~ 2200 6400
+NoConn ~ 2200 6500
+NoConn ~ 2200 6600
+NoConn ~ 2200 6700
+NoConn ~ 2200 6800
+NoConn ~ 2200 6900
+NoConn ~ 2200 7000
+NoConn ~ 2200 7100
+NoConn ~ 2200 7200
+NoConn ~ 2200 7300
+NoConn ~ 2200 7400
+NoConn ~ 2200 7500
+NoConn ~ 2200 7600
+NoConn ~ 2200 7700
+NoConn ~ 2200 7800
+NoConn ~ 2200 7900
+NoConn ~ 2200 8000
+NoConn ~ 2200 8700
+NoConn ~ 2200 8800
+NoConn ~ 2200 8900
+NoConn ~ 2200 9000
+NoConn ~ 2200 9100
+NoConn ~ 2200 9200
+NoConn ~ 2200 9300
+NoConn ~ 2200 9400
+NoConn ~ 2200 9500
+NoConn ~ 2200 9600
+NoConn ~ 2200 9700
+NoConn ~ 2200 9800
+NoConn ~ 2200 9900
+NoConn ~ 2200 10000
+NoConn ~ 2200 10100
+NoConn ~ 2200 10200
+NoConn ~ 2200 10300
+NoConn ~ 2200 10400
+NoConn ~ 2200 10500
+NoConn ~ 2200 10600
+Wire Wire Line
+	2050 8400 2200 8400
 $EndSCHEMATC

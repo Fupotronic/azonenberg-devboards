@@ -1,4 +1,4 @@
-update=Wed 27 Nov 2013 05:42:25 PM EST
+update=Mon 02 Dec 2013 01:52:05 AM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,22 +58,22 @@ LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azo
 [pcbnew]
 version=1
 LastNetListRead=bbb-jtag-cape.net
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=390
+PadDimH=610
+PadDimV=610
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
+TxtModV=295
+TxtModH=295
+TxtModW=50
 VEgarde=100
-DrawLar=150
+DrawLar=50
 EdgeLar=150
 TxtLar=120
-MSegLar=150
+MSegLar=50
 [pcbnew/libraries]
-LibDir=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules
+LibDir=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -92,3 +92,4 @@ LibName15=pb_free
 LibName16=recycle_logo
 LibName17=smt_azonenberg
 LibName18=3rdparty/walter/mod_smd_lqfp/w_smd_lqfp
+LibName19=3rdparty/ohw-logo
