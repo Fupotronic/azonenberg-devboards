@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 02 Dec 2013 07:18:51 PM EST
+EESchema Schematic File Version 2  date Thu 05 Dec 2013 04:25:21 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "3 dec 2013"
+Date "5 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -422,21 +422,21 @@ Text HLabel 9500 4850 0    60   Output ~ 0
 JTAG5_TCK_OUT
 Text HLabel 9500 4950 0    60   Input ~ 0
 JTAG5_TDO_IN
-Text HLabel 9500 5050 0    60   Output ~ 0
+Text HLabel 2200 7100 0    60   Output ~ 0
 JTAG6_TDI_OUT
-Text HLabel 9500 5150 0    60   Output ~ 0
+Text HLabel 2200 7000 0    60   Output ~ 0
 JTAG6_TMS_OUT
-Text HLabel 9500 5250 0    60   Output ~ 0
+Text HLabel 2200 6200 0    60   Output ~ 0
 JTAG6_TCK_OUT
-Text HLabel 9500 5350 0    60   Input ~ 0
+Text HLabel 2200 6300 0    60   Input ~ 0
 JTAG6_TDO_IN
-Text HLabel 9500 5450 0    60   Output ~ 0
+Text HLabel 2200 6800 0    60   Output ~ 0
 JTAG7_TDI_OUT
-Text HLabel 9500 5550 0    60   Output ~ 0
+Text HLabel 2200 6700 0    60   Output ~ 0
 JTAG7_TMS_OUT
-Text HLabel 9500 5650 0    60   Output ~ 0
+Text HLabel 2200 6600 0    60   Output ~ 0
 JTAG7_TCK_OUT
-Text HLabel 9500 5750 0    60   Input ~ 0
+Text HLabel 2200 6500 0    60   Input ~ 0
 JTAG7_TDO_IN
 Text HLabel 13150 5750 0    60   Output ~ 0
 GND
@@ -976,16 +976,8 @@ Wire Wire Line
 	2950 1700 4300 1700
 Connection ~ 3250 1700
 NoConn ~ 13250 6550
-NoConn ~ 2200 6200
-NoConn ~ 2200 6300
 NoConn ~ 2200 6400
-NoConn ~ 2200 6500
-NoConn ~ 2200 6600
-NoConn ~ 2200 6700
-NoConn ~ 2200 6800
 NoConn ~ 2200 6900
-NoConn ~ 2200 7000
-NoConn ~ 2200 7100
 NoConn ~ 2200 7200
 NoConn ~ 2200 7300
 NoConn ~ 2200 7400
@@ -1017,4 +1009,13 @@ NoConn ~ 2200 10500
 NoConn ~ 2200 10600
 Wire Wire Line
 	2050 8400 2200 8400
+NoConn ~ 2200 11000
+NoConn ~ 9500 5050
+NoConn ~ 9500 5150
+NoConn ~ 9500 5250
+NoConn ~ 9500 5350
+NoConn ~ 9500 5450
+NoConn ~ 9500 5550
+NoConn ~ 9500 5650
+NoConn ~ 9500 5750
 $EndSCHEMATC
