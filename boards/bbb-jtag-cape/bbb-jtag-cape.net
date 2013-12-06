@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Thu 05 Dec 2013 04:25:24 AM EST
+# EESchema Netlist Version 1.1 created  Thu 05 Dec 2013 09:47:36 PM EST
 (
  ( /5299DE23 $noname  TP1 CONN_1 {Lib=CONN_1}
   (    1 /4-Port_USB_Hub/GND )
@@ -481,12 +481,12 @@
  )
  ( /522EBD2B/52982792 $noname  U8 XC7A100T-1FTG256C {Lib=XC7AXXXT-XFTG256X}
   (   A1 /4-Port_USB_Hub/GND )
-  (   A2 ? )
-  (   A3 ? )
-  (   A4 /FPGA/JTAG7_TMS_OUT )
-  (   A5 /FPGA/JTAG7_TCK_OUT )
+  (   A2 /FPGA/JTAG5_TDI_OUT )
+  (   A3 /FPGA/JTAG5_TMS_OUT )
+  (   A4 /FPGA/JTAG4_TDI_OUT )
+  (   A5 /FPGA/JTAG4_TCK_OUT )
   (   A6 /4-Port_USB_Hub/3V3 )
-  (   A7 /FPGA/JTAG6_TDO_IN )
+  (   A7 ? )
   (   A8 /FPGA/GPMC_D3 )
   (   A9 /FPGA/GPMC_WE_N )
   (  A10 /FPGA/GPMC_D10 )
@@ -496,13 +496,13 @@
   (  A14 /FPGA/GPMC_A8 )
   (  A15 /FPGA/GPMC_A9 )
   (  A16 /4-Port_USB_Hub/3V3 )
-  (   B1 ? )
-  (   B2 ? )
+  (   B1 /FPGA/JTAG6_TCK_OUT )
+  (   B2 /FPGA/JTAG6_TDO_IN )
   (   B3 /4-Port_USB_Hub/3V3 )
-  (   B4 /FPGA/JTAG7_TDI_OUT )
-  (   B5 /FPGA/JTAG7_TDO_IN )
-  (   B6 ? )
-  (   B7 /FPGA/JTAG6_TCK_OUT )
+  (   B4 /FPGA/JTAG5_TDO_IN )
+  (   B5 /FPGA/JTAG4_TMS_OUT )
+  (   B6 /FPGA/JTAG4_TDO_IN )
+  (   B7 ? )
   (   B8 /4-Port_USB_Hub/GND )
   (   B9 /FPGA/GPMC_D12 )
   (  B10 /FPGA/GPMC_D9 )
@@ -512,13 +512,13 @@
   (  B14 /FPGA/GPMC_A11 )
   (  B15 /FPGA/GPMC_A19 )
   (  B16 /FPGA/GPMC_A18 )
-  (   C1 ? )
-  (   C2 ? )
+  (   C1 /FPGA/JTAG6_TDI_OUT )
+  (   C2 /FPGA/JTAG6_TMS_OUT )
   (   C3 ? )
-  (   C4 ? )
+  (   C4 /FPGA/JTAG5_TCK_OUT )
   (   C5 /4-Port_USB_Hub/GND )
-  (   C6 /FPGA/JTAG6_TDI_OUT )
-  (   C7 /FPGA/JTAG6_TMS_OUT )
+  (   C6 ? )
+  (   C7 ? )
   (   C8 /FPGA/GPMC_D6 )
   (   C9 /FPGA/GPMC_RE_N )
   (  C10 /4-Port_USB_Hub/3V3 )
@@ -528,9 +528,9 @@
   (  C14 /FPGA/GPMC_A10 )
   (  C15 /4-Port_USB_Hub/GND )
   (  C16 /FPGA/GPMC_A15 )
-  (   D1 ? )
+  (   D1 /FPGA/JTAG7_TDO_IN )
   (   D2 /4-Port_USB_Hub/GND )
-  (   D3 ? )
+  (   D3 /FPGA/JTAG7_TCK_OUT )
   (   D4 /FPGA/CLK_50MHZ )
   (   D5 ? )
   (   D6 ? )
@@ -545,8 +545,8 @@
   (  D15 /FPGA/GPMC_A17 )
   (  D16 /FPGA/GPMC_A14 )
   (   E1 ? )
-  (   E2 ? )
-  (   E3 ? )
+  (   E2 /FPGA/JTAG7_TMS_OUT )
+  (   E3 /FPGA/JTAG7_TDI_OUT )
   (   E4 /4-Port_USB_Hub/3V3 )
   (   E5 ? )
   (   E6 ? )
@@ -628,7 +628,7 @@
   (   K2 ? )
   (   K3 ? )
   (   K4 /4-Port_USB_Hub/GND )
-  (   K5 ? )
+  (   K5 /FPGA/FPGA_GTS_N )
   (   K6 /4-Port_USB_Hub/GND )
   (   K7 ? )
   (   K8 ? )
@@ -661,7 +661,7 @@
   (   M3 /4-Port_USB_Hub/3V3 )
   (   M4 ? )
   (   M5 ? )
-  (   M6 /FPGA/JTAG4_TDO_IN )
+  (   M6 ? )
   (   M7 /FPGA/FPGA_TMS )
   (   M8 /4-Port_USB_Hub/GND )
   (   M9 /4-Port_USB_Hub/3V3 )
@@ -677,10 +677,10 @@
   (   N3 ? )
   (   N4 ? )
   (   N5 /4-Port_USB_Hub/GND )
-  (   N6 /FPGA/JTAG5_TDI_OUT )
+  (   N6 ? )
   (   N7 /FPGA/FPGA_TDI )
-  (   N8 N-000216 )
-  (   N9 /FPGA/JTAG4_TMS_OUT )
+  (   N8 N-000207 )
+  (   N9 ? )
   (  N10 /4-Port_USB_Hub/3V3 )
   (  N11 /FPGA/JTAG1_TDO_IN )
   (  N12 /FPGA/JTAG2_TDI_OUT )
@@ -695,8 +695,8 @@
   (   P5 ? )
   (   P6 ? )
   (   P7 /4-Port_USB_Hub/3V3 )
-  (   P8 /FPGA/JTAG5_TMS_OUT )
-  (   P9 /FPGA/JTAG4_TCK_OUT )
+  (   P8 ? )
+  (   P9 ? )
   (  P10 /FPGA/JTAG2_TMS_OUT )
   (  P11 /FPGA/JTAG2_TCK_OUT )
   (  P12 /4-Port_USB_Hub/GND )
@@ -711,10 +711,10 @@
   (   R5 ? )
   (   R6 ? )
   (   R7 ? )
-  (   R8 /FPGA/JTAG5_TCK_OUT )
+  (   R8 ? )
   (   R9 /4-Port_USB_Hub/GND )
   (  R10 /FPGA/JTAG3_TDO_IN )
-  (  R11 /FPGA/JTAG4_TDI_OUT )
+  (  R11 ? )
   (  R12 /FPGA/JTAG2_TDO_IN )
   (  R13 /FPGA/JTAG3_TMS_OUT )
   (  R14 /4-Port_USB_Hub/3V3 )
@@ -726,7 +726,7 @@
   (   T4 ? )
   (   T5 ? )
   (   T6 /4-Port_USB_Hub/GND )
-  (   T7 /FPGA/JTAG5_TDO_IN )
+  (   T7 ? )
   (   T8 ? )
   (   T9 ? )
   (  T10 ? )
@@ -974,18 +974,18 @@
  )
  ( /522EBED4/5298E395 $noname  R32 49.9 {Lib=R}
   (    1 /FPGA/JTAG0_TDO_IN )
-  (    2 N-000333 )
+  (    2 N-000332 )
  )
  ( /522EBED4/5298E4CC $noname  R40 49.9 {Lib=R}
-  (    1 N-000330 )
+  (    1 N-000329 )
   (    2 /Level_Shifters/CH0_TDI )
  )
  ( /522EBED4/5298E4D2 $noname  R41 49.9 {Lib=R}
-  (    1 N-000331 )
+  (    1 N-000330 )
   (    2 /Level_Shifters/CH0_TMS )
  )
  ( /522EBED4/5298E4D8 $noname  R42 49.9 {Lib=R}
-  (    1 N-000332 )
+  (    1 N-000331 )
   (    2 /Level_Shifters/CH0_TCK )
  )
  ( /522EBED4/5298E37C $noname  U10 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -994,15 +994,15 @@
   (    3 /FPGA/JTAG0_TDI_OUT )
   (    4 /FPGA/JTAG0_TMS_OUT )
   (    5 /FPGA/JTAG0_TCK_OUT )
-  (    6 N-000333 )
+  (    6 N-000332 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH0_GND )
   (   10 /Level_Shifters/CH0_VJTAG )
   (   11 /Level_Shifters/CH0_TDO )
-  (   12 N-000332 )
-  (   13 N-000331 )
-  (   14 N-000330 )
+  (   12 N-000331 )
+  (   13 N-000330 )
+  (   14 N-000329 )
   (   15 /Level_Shifters/CH0_GND )
   (   16 /Level_Shifters/CH0_VJTAG )
  )
@@ -1016,18 +1016,18 @@
  )
  ( /522EBED4/5298F12A $noname  R33 49.9 {Lib=R}
   (    1 /FPGA/JTAG1_TDO_IN )
-  (    2 N-000337 )
+  (    2 N-000336 )
  )
  ( /522EBED4/5298F138 $noname  R43 49.9 {Lib=R}
-  (    1 N-000336 )
+  (    1 N-000335 )
   (    2 /Level_Shifters/CH1_TDI )
  )
  ( /522EBED4/5298F13E $noname  R44 49.9 {Lib=R}
-  (    1 N-000335 )
+  (    1 N-000334 )
   (    2 /Level_Shifters/CH1_TMS )
  )
  ( /522EBED4/5298F144 $noname  R45 49.9 {Lib=R}
-  (    1 N-000334 )
+  (    1 N-000333 )
   (    2 /Level_Shifters/CH1_TCK )
  )
  ( /522EBED4/5298F165 $noname  U11 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1036,15 +1036,15 @@
   (    3 /FPGA/JTAG1_TDI_OUT )
   (    4 /FPGA/JTAG1_TMS_OUT )
   (    5 /FPGA/JTAG1_TCK_OUT )
-  (    6 N-000337 )
+  (    6 N-000336 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH1_GND )
   (   10 /Level_Shifters/CH1_VJTAG )
   (   11 /Level_Shifters/CH1_TDO )
-  (   12 N-000334 )
-  (   13 N-000335 )
-  (   14 N-000336 )
+  (   12 N-000333 )
+  (   13 N-000334 )
+  (   14 N-000335 )
   (   15 /Level_Shifters/CH1_GND )
   (   16 /Level_Shifters/CH1_VJTAG )
  )
@@ -1058,18 +1058,18 @@
  )
  ( /522EBED4/5298F195 $noname  R34 49.9 {Lib=R}
   (    1 /FPGA/JTAG2_TDO_IN )
-  (    2 N-000310 )
+  (    2 N-000309 )
  )
  ( /522EBED4/5298F1A3 $noname  R46 49.9 {Lib=R}
-  (    1 N-000307 )
+  (    1 N-000306 )
   (    2 /Level_Shifters/CH2_TDI )
  )
  ( /522EBED4/5298F1A9 $noname  R47 49.9 {Lib=R}
-  (    1 N-000308 )
+  (    1 N-000307 )
   (    2 /Level_Shifters/CH2_TMS )
  )
  ( /522EBED4/5298F1AF $noname  R48 49.9 {Lib=R}
-  (    1 N-000309 )
+  (    1 N-000308 )
   (    2 /Level_Shifters/CH2_TCK )
  )
  ( /522EBED4/5298F1D0 $noname  U12 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1078,15 +1078,15 @@
   (    3 /FPGA/JTAG2_TDI_OUT )
   (    4 /FPGA/JTAG2_TMS_OUT )
   (    5 /FPGA/JTAG2_TCK_OUT )
-  (    6 N-000310 )
+  (    6 N-000309 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH2_GND )
   (   10 /Level_Shifters/CH2_VJTAG )
   (   11 /Level_Shifters/CH2_TDO )
-  (   12 N-000309 )
-  (   13 N-000308 )
-  (   14 N-000307 )
+  (   12 N-000308 )
+  (   13 N-000307 )
+  (   14 N-000306 )
   (   15 /Level_Shifters/CH2_GND )
   (   16 /Level_Shifters/CH2_VJTAG )
  )
@@ -1100,18 +1100,18 @@
  )
  ( /522EBED4/5298F1FF $noname  R35 49.9 {Lib=R}
   (    1 /FPGA/JTAG3_TDO_IN )
-  (    2 N-000306 )
+  (    2 N-000305 )
  )
  ( /522EBED4/5298F20D $noname  R49 49.9 {Lib=R}
-  (    1 N-000303 )
+  (    1 N-000302 )
   (    2 /Level_Shifters/CH3_TDI )
  )
  ( /522EBED4/5298F213 $noname  R50 49.9 {Lib=R}
-  (    1 N-000304 )
+  (    1 N-000303 )
   (    2 /Level_Shifters/CH3_TMS )
  )
  ( /522EBED4/5298F219 $noname  R51 49.9 {Lib=R}
-  (    1 N-000305 )
+  (    1 N-000304 )
   (    2 /Level_Shifters/CH3_TCK )
  )
  ( /522EBED4/5298F23A $noname  U13 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1120,15 +1120,15 @@
   (    3 /FPGA/JTAG3_TDI_OUT )
   (    4 /FPGA/JTAG3_TMS_OUT )
   (    5 /FPGA/JTAG3_TCK_OUT )
-  (    6 N-000306 )
+  (    6 N-000305 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH3_GND )
   (   10 /Level_Shifters/CH3_VJTAG )
   (   11 /Level_Shifters/CH3_TDO )
-  (   12 N-000305 )
-  (   13 N-000304 )
-  (   14 N-000303 )
+  (   12 N-000304 )
+  (   13 N-000303 )
+  (   14 N-000302 )
   (   15 /Level_Shifters/CH3_GND )
   (   16 /Level_Shifters/CH3_VJTAG )
  )
@@ -1142,18 +1142,18 @@
  )
  ( /522EBED4/5298F554 $noname  R52 49.9 {Lib=R}
   (    1 /FPGA/JTAG4_TDO_IN )
-  (    2 N-000316 )
+  (    2 N-000315 )
  )
  ( /522EBED4/5298F562 $noname  R56 49.9 {Lib=R}
-  (    1 N-000313 )
+  (    1 N-000312 )
   (    2 /Level_Shifters/CH4_TDI )
  )
  ( /522EBED4/5298F568 $noname  R57 49.9 {Lib=R}
-  (    1 N-000314 )
+  (    1 N-000313 )
   (    2 /Level_Shifters/CH4_TMS )
  )
  ( /522EBED4/5298F56E $noname  R58 49.9 {Lib=R}
-  (    1 N-000315 )
+  (    1 N-000314 )
   (    2 /Level_Shifters/CH4_TCK )
  )
  ( /522EBED4/5298F58F $noname  U14 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1162,15 +1162,15 @@
   (    3 /FPGA/JTAG4_TDI_OUT )
   (    4 /FPGA/JTAG4_TMS_OUT )
   (    5 /FPGA/JTAG4_TCK_OUT )
-  (    6 N-000316 )
+  (    6 N-000315 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH4_GND )
   (   10 /Level_Shifters/CH4_VJTAG )
   (   11 /Level_Shifters/CH4_TDO )
-  (   12 N-000315 )
-  (   13 N-000314 )
-  (   14 N-000313 )
+  (   12 N-000314 )
+  (   13 N-000313 )
+  (   14 N-000312 )
   (   15 /Level_Shifters/CH4_GND )
   (   16 /Level_Shifters/CH4_VJTAG )
  )
@@ -1184,18 +1184,18 @@
  )
  ( /522EBED4/5298F5B3 $noname  R53 49.9 {Lib=R}
   (    1 /FPGA/JTAG5_TDO_IN )
-  (    2 N-000317 )
+  (    2 N-000316 )
  )
  ( /522EBED4/5298F5C1 $noname  R59 49.9 {Lib=R}
-  (    1 N-000410 )
+  (    1 N-000409 )
   (    2 /Level_Shifters/CH5_TDI )
  )
  ( /522EBED4/5298F5C7 $noname  R60 49.9 {Lib=R}
-  (    1 N-000409 )
+  (    1 N-000408 )
   (    2 /Level_Shifters/CH5_TMS )
  )
  ( /522EBED4/5298F5CD $noname  R61 49.9 {Lib=R}
-  (    1 N-000408 )
+  (    1 N-000407 )
   (    2 /Level_Shifters/CH5_TCK )
  )
  ( /522EBED4/5298F5EE $noname  U15 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1204,15 +1204,15 @@
   (    3 /FPGA/JTAG5_TDI_OUT )
   (    4 /FPGA/JTAG5_TMS_OUT )
   (    5 /FPGA/JTAG5_TCK_OUT )
-  (    6 N-000317 )
+  (    6 N-000316 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH5_GND )
   (   10 /Level_Shifters/CH5_VJTAG )
   (   11 /Level_Shifters/CH5_TDO )
-  (   12 N-000408 )
-  (   13 N-000409 )
-  (   14 N-000410 )
+  (   12 N-000407 )
+  (   13 N-000408 )
+  (   14 N-000409 )
   (   15 /Level_Shifters/CH5_GND )
   (   16 /Level_Shifters/CH5_VJTAG )
  )
@@ -1226,18 +1226,18 @@
  )
  ( /522EBED4/5298F612 $noname  R54 49.9 {Lib=R}
   (    1 /FPGA/JTAG6_TDO_IN )
-  (    2 N-000405 )
+  (    2 N-000404 )
  )
  ( /522EBED4/5298F620 $noname  R62 49.9 {Lib=R}
-  (    1 N-000404 )
+  (    1 N-000403 )
   (    2 /Level_Shifters/CH6_TDI )
  )
  ( /522EBED4/5298F626 $noname  R63 49.9 {Lib=R}
-  (    1 N-000403 )
+  (    1 N-000402 )
   (    2 /Level_Shifters/CH6_TMS )
  )
  ( /522EBED4/5298F62C $noname  R64 49.9 {Lib=R}
-  (    1 N-000402 )
+  (    1 N-000401 )
   (    2 /Level_Shifters/CH6_TCK )
  )
  ( /522EBED4/5298F64D $noname  U16 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1246,15 +1246,15 @@
   (    3 /FPGA/JTAG6_TDI_OUT )
   (    4 /FPGA/JTAG6_TMS_OUT )
   (    5 /FPGA/JTAG6_TCK_OUT )
-  (    6 N-000405 )
+  (    6 N-000404 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH6_GND )
   (   10 /Level_Shifters/CH6_VJTAG )
   (   11 /Level_Shifters/CH6_TDO )
-  (   12 N-000402 )
-  (   13 N-000403 )
-  (   14 N-000404 )
+  (   12 N-000401 )
+  (   13 N-000402 )
+  (   14 N-000403 )
   (   15 /Level_Shifters/CH6_GND )
   (   16 /Level_Shifters/CH6_VJTAG )
  )
@@ -1268,18 +1268,18 @@
  )
  ( /522EBED4/5298F671 $noname  R55 49.9 {Lib=R}
   (    1 /FPGA/JTAG7_TDO_IN )
-  (    2 N-000412 )
+  (    2 N-000411 )
  )
  ( /522EBED4/5298F67F $noname  R65 49.9 {Lib=R}
-  (    1 N-000375 )
+  (    1 N-000374 )
   (    2 /Level_Shifters/CH7_TDI )
  )
  ( /522EBED4/5298F685 $noname  R66 49.9 {Lib=R}
-  (    1 N-000376 )
+  (    1 N-000375 )
   (    2 /Level_Shifters/CH7_TMS )
  )
  ( /522EBED4/5298F68B $noname  R67 49.9 {Lib=R}
-  (    1 N-000377 )
+  (    1 N-000376 )
   (    2 /Level_Shifters/CH7_TCK )
  )
  ( /522EBED4/5298F6AC $noname  U17 SI8641BC-B-IS1 {Lib=SI8641BC-B-IS1}
@@ -1288,15 +1288,15 @@
   (    3 /FPGA/JTAG7_TDI_OUT )
   (    4 /FPGA/JTAG7_TMS_OUT )
   (    5 /FPGA/JTAG7_TCK_OUT )
-  (    6 N-000412 )
+  (    6 N-000411 )
   (    7 /4-Port_USB_Hub/3V3 )
   (    8 /4-Port_USB_Hub/GND )
   (    9 /Level_Shifters/CH7_GND )
   (   10 /Level_Shifters/CH7_VJTAG )
   (   11 /Level_Shifters/CH7_TDO )
-  (   12 N-000377 )
-  (   13 N-000376 )
-  (   14 N-000375 )
+  (   12 N-000376 )
+  (   13 N-000375 )
+  (   14 N-000374 )
   (   15 /Level_Shifters/CH7_GND )
   (   16 /Level_Shifters/CH7_VJTAG )
  )
@@ -1310,66 +1310,66 @@
  )
  ( /522EBED4/5298FCD3 $noname  R28 470 {Lib=R}
   (    1 /Level_Shifters/CH0_VJTAG )
-  (    2 N-000381 )
+  (    2 N-000380 )
  )
  ( /522EBED4/5298FCF1 $noname  D10 GREEN {Lib=LED}
-  (    1 N-000381 )
+  (    1 N-000380 )
   (    2 /Level_Shifters/CH0_GND )
  )
  ( /522EBED4/5298FCFE $noname  R29 470 {Lib=R}
   (    1 /Level_Shifters/CH1_VJTAG )
-  (    2 N-000380 )
+  (    2 N-000379 )
  )
  ( /522EBED4/5298FD05 $noname  D11 GREEN {Lib=LED}
-  (    1 N-000380 )
+  (    1 N-000379 )
   (    2 /Level_Shifters/CH1_GND )
  )
  ( /522EBED4/5298FD0C $noname  R30 470 {Lib=R}
   (    1 /Level_Shifters/CH2_VJTAG )
-  (    2 N-000379 )
+  (    2 N-000378 )
  )
  ( /522EBED4/5298FD13 $noname  D12 GREEN {Lib=LED}
-  (    1 N-000379 )
+  (    1 N-000378 )
   (    2 /Level_Shifters/CH2_GND )
  )
  ( /522EBED4/5298FD1A $noname  R31 470 {Lib=R}
   (    1 /Level_Shifters/CH3_VJTAG )
-  (    2 N-000378 )
+  (    2 N-000377 )
  )
  ( /522EBED4/5298FD21 $noname  D13 GREEN {Lib=LED}
-  (    1 N-000378 )
+  (    1 N-000377 )
   (    2 /Level_Shifters/CH3_GND )
  )
  ( /522EBED4/5298FD28 $noname  R36 470 {Lib=R}
   (    1 /Level_Shifters/CH4_VJTAG )
-  (    2 N-000371 )
+  (    2 N-000370 )
  )
  ( /522EBED4/5298FD2F $noname  D14 GREEN {Lib=LED}
-  (    1 N-000371 )
+  (    1 N-000370 )
   (    2 /Level_Shifters/CH4_GND )
  )
  ( /522EBED4/5298FD36 $noname  R37 470 {Lib=R}
   (    1 /Level_Shifters/CH5_VJTAG )
-  (    2 N-000369 )
+  (    2 N-000368 )
  )
  ( /522EBED4/5298FD3D $noname  D15 GREEN {Lib=LED}
-  (    1 N-000369 )
+  (    1 N-000368 )
   (    2 /Level_Shifters/CH5_GND )
  )
  ( /522EBED4/5298FD44 $noname  R38 470 {Lib=R}
   (    1 /Level_Shifters/CH6_VJTAG )
-  (    2 N-000366 )
+  (    2 N-000365 )
  )
  ( /522EBED4/5298FD4B $noname  D16 GREEN {Lib=LED}
-  (    1 N-000366 )
+  (    1 N-000365 )
   (    2 /Level_Shifters/CH6_GND )
  )
  ( /522EBED4/5298FD52 $noname  R39 470 {Lib=R}
   (    1 /Level_Shifters/CH7_VJTAG )
-  (    2 N-000363 )
+  (    2 N-000362 )
  )
  ( /522EBED4/5298FD59 $noname  D17 GREEN {Lib=LED}
-  (    1 N-000363 )
+  (    1 N-000362 )
   (    2 /Level_Shifters/CH7_GND )
  )
  ( /522EBED4/529C3C60 $noname  J5 XILINX_JTAG_VCCOUT {Lib=XILINX_JTAG_VCCOUT}
@@ -1511,12 +1511,12 @@
  )
  ( /522EBD9C/529833F9 $noname  R26 49.9 {Lib=R}
   (    1 /FPGA/FPGA_TDO )
-  (    2 N-000216 )
+  (    2 N-000207 )
  )
  ( /522EBD9C/5298A9A1 $noname  U9 50_MHz {Lib=OSC}
   (    1 /4-Port_USB_Hub/3V3 )
   (    2 /4-Port_USB_Hub/GND )
-  (    3 N-000196 )
+  (    3 N-000188 )
   (    4 /4-Port_USB_Hub/3V3 )
  )
  ( /522EBD9C/5298AA03 $noname  C88 0.01_uF {Lib=C}
@@ -1524,7 +1524,7 @@
   (    2 /4-Port_USB_Hub/GND )
  )
  ( /522EBD9C/5298AB6E $noname  R27 49.9 {Lib=R}
-  (    1 N-000196 )
+  (    1 N-000188 )
   (    2 /FPGA/CLK_50MHZ )
  )
  ( /522EBD9C/529A1B2E $noname  R79 4.7K {Lib=R}
@@ -1549,19 +1549,19 @@
  )
  ( /522EBD9C/529A273D $noname  R72 470 {Lib=R}
   (    1 /FPGA/FPGA_DONE )
-  (    2 N-000297 )
+  (    2 N-000296 )
  )
  ( /522EBD9C/529A27BD $noname  D18 GREEN {Lib=LED}
-  (    1 N-000297 )
+  (    1 N-000296 )
   (    2 /4-Port_USB_Hub/GND )
  )
  ( /522EBD9C/529A283E $noname  D19 GREEN {Lib=LED}
-  (    1 N-000296 )
+  (    1 N-000295 )
   (    2 /4-Port_USB_Hub/GND )
  )
  ( /522EBD9C/529A2844 $noname  R73 470 {Lib=R}
   (    1 /4-Port_USB_Hub/3V3 )
-  (    2 N-000296 )
+  (    2 N-000295 )
  )
  ( /522EBD9C/529A2CCE $noname  R69 5.6K {Lib=R}
   (    1 /FPGA/I2C_SDA )
@@ -1648,7 +1648,7 @@
   (  B14 ? )
   (  B15 ? )
   (  B16 ? )
-  (  B17 ? )
+  (  B17 /FPGA/FPGA_GTS_N )
   (  B18 ? )
   (  B19 /FPGA/I2C_SCL )
   (  B20 /FPGA/I2C_SDA )
@@ -2976,13 +2976,95 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "/4-Port USB Hub/GND" "GND"
- U8 E9
- U8 G9
- U8 J9
- U8 R9
- U8 F10
+ C81 2
+ C84 2
+ C12 2
+ J6 B2
+ J6 B1
+ J6 B46
+ J6 B45
+ J6 B44
+ J6 B43
+ J6 A2
+ J4 5
+ J6 A1
+ C5 2
+ R13 1
+ R12 2
+ D19 2
+ D18 2
+ SW1 1
+ U19 1
+ C8 1
+ JP2 3
+ JP1 3
+ C6 2
+ C3 2
+ C108 2
+ U20 4
+ P2 2
+ C109 2
+ C7 2
+ C4 2
+ R1 2
+ U4 28
  U8 A11
+ U4 4
+ U4 8
+ C82 2
+ U4 20
+ U4 40
+ U4 50
+ U4 12
+ U8 F10
+ U8 R9
+ U8 J9
+ C11 2
+ U8 G9
+ U8 E9
+ U8 M8
+ U8 B8
+ U8 G7
+ U8 T6
+ U4 24
+ U4 34
+ C79 2
+ C76 2
+ C73 2
+ C70 2
+ C67 2
+ C66 2
+ C63 2
+ U4 16
+ C60 2
+ C56 2
+ C52 2
+ U4 56
+ C48 2
+ C44 2
+ C42 2
+ U4 47
  J2 4
+ U1 2
+ U3 1
+ U8 J11
+ U8 L11
+ U8 D12
+ U3 5
+ U8 P12
+ U8 G13
+ U8 K14
+ U8 C15
+ C88 2
+ U9 2
+ U8 H8
+ U8 N15
+ U8 F16
+ C2 2
+ U8 J7
+ U8 H7
+ U8 T16
+ J1 4
  U8 A1
  U8 L1
  U8 D2
@@ -2993,210 +3075,128 @@ Net 1 "/4-Port USB Hub/GND" "GND"
  U8 N5
  U8 F6
  U8 H6
- C42 2
- C44 2
- C48 2
- C11 2
- C52 2
- C56 2
- C60 2
- C63 2
- J1 4
- C66 2
- C67 2
- C70 2
- C73 2
- C76 2
- C79 2
- U8 T6
- U8 G7
- U8 B8
- U8 M8
- U8 G13
- U8 K14
- U8 C15
- U8 N15
- U8 F16
- U8 T16
- C12 2
- R1 2
  U8 K6
- C2 2
- C5 2
- R13 1
- U8 J11
- U8 L11
- U8 D12
- U8 P12
- R12 2
- U3 5
- U3 1
- U1 2
- U8 H7
- U8 J7
- U2 4
  U4 PAD
- U8 H8
- U9 2
- C88 2
- U4 12
- U20 4
- J6 A1
- J6 A2
- J6 B43
- J6 B44
- J6 B45
- J6 B1
- J6 B2
- U4 56
- U4 16
- C82 2
- U4 34
- U4 24
- U4 50
- U4 40
- U4 20
- U4 8
- U4 4
- U4 28
- U4 47
- C26 2
- C80 2
- C83 2
- C28 2
- C69 2
- C72 2
- C75 2
- C78 2
- C35 2
+ U2 4
+ C100 2
+ TP4 1
+ D20 2
  C41 2
- C33 2
  C46 2
- C32 2
  C50 2
- C30 2
  C54 2
  C58 2
- C86 2
- C87 2
- D20 2
- C39 2
- C62 2
+ C59 2
+ C55 2
+ C98 2
+ C51 2
+ C26 2
+ C47 2
+ C64 2
+ C28 2
  C65 2
  C68 2
  C71 2
  C74 2
+ C31 2
  C77 2
- U7 4
- U7 9
- U7 10
- U7 11
- U7 41
- U7 22
- U7 42
- U7 23
- C29 2
- C59 2
- C55 2
- C51 2
- C47 2
- C64 2
- C61 2
- U7 35
- R22 1
- U7 36
- U6 2
+ C80 2
+ C34 2
+ C83 2
+ C69 2
+ C72 2
+ C75 2
+ C78 2
+ U11 2
+ C90 2
+ U11 8
  U7 47
  U7 48
+ U7 23
+ U7 42
  U5 2
- C36 2
- C1 2
- U19 1
- C23 2
- C108 2
- C107 2
- C111 2
- C110 2
- C38 2
- U18 4
- C105 2
- C25 2
- C8 1
- C81 2
- C84 2
- C40 2
- C31 2
- C34 2
- C85 2
- C27 2
- C106 2
- C37 1
- C43 2
- C45 2
- C49 2
- C53 2
- C57 2
- C24 2
- U14 2
- C22 2
- C97 2
- D9 2
- C13 2
- C14 2
- C92 2
- C7 2
- C4 2
- SW1 1
- JP2 3
- JP1 3
- U13 8
- C6 2
- U13 2
- C3 2
- C91 2
- U12 8
- U12 2
- U14 8
- J3 4
- TP4 1
- C98 2
+ U7 22
+ U7 41
+ U7 11
+ U7 10
+ U7 4
+ U7 9
+ C99 2
+ C61 2
  U15 8
+ TP1 1
+ R22 1
  U15 2
  U17 8
  U17 2
+ U6 2
+ C35 2
+ C33 2
+ C32 2
+ C30 2
+ C29 2
  U16 8
- TP1 1
  U16 2
- C99 2
+ U7 35
+ C36 2
+ U7 36
+ C1 2
+ U14 8
+ C23 2
+ U18 4
+ C105 2
+ U14 2
+ D9 2
+ C13 2
+ C106 2
+ C14 2
  C15 2
  C21 2
  C20 2
  C19 2
+ C97 2
  C18 2
  C17 2
+ U13 8
+ C107 2
+ U13 2
+ C91 2
+ J3 4
+ U12 8
+ C111 2
+ U12 2
+ C110 2
+ C38 2
+ C22 2
  C89 2
- C16 2
  U10 8
  U10 2
- U11 2
- C90 2
- U11 8
- C100 2
- C109 2
- J4 5
- P2 2
- J6 B46
- D18 2
- D19 2
+ C85 2
+ C86 2
+ C87 2
+ C24 2
+ C39 2
+ C62 2
+ C43 2
+ C16 2
+ C45 2
+ C49 2
+ C92 2
+ C53 2
+ C37 1
+ C40 2
+ C27 2
+ C25 2
+ C57 2
 Net 2 "/4-Port USB Hub/FTDI_USB_N" "FTDI_USB_N"
- U4 1
  U7 6
+ U4 1
 Net 3 "/4-Port USB Hub/FTDI_USB_P" "FTDI_USB_P"
  U7 7
  U4 2
 Net 4 "/FPGA/FPGA_TDI" "FPGA_TDI"
- R24 2
  U8 N7
+ R24 2
 Net 5 "/FPGA/FPGA_TDO" "FPGA_TDO"
  U7 15
  R26 1
@@ -3204,8 +3204,8 @@ Net 6 "/FPGA/FPGA_TMS" "FPGA_TMS"
  R25 2
  U8 M7
 Net 7 "/FPGA/FPGA_TCK" "FPGA_TCK"
- R23 2
  U8 L7
+ R23 2
 Net 8 "/FPGA/FPGA_CBUS0" "FPGA_CBUS0"
  U8 L13
  U7 21
@@ -3213,14 +3213,14 @@ Net 9 "/FPGA/FPGA_CBUS1" "FPGA_CBUS1"
  U8 L12
  U7 25
 Net 10 "/FPGA/FPGA_CBUS2" "FPGA_CBUS2"
- U7 26
  U8 M12
+ U7 26
 Net 11 "/FPGA/FPGA_CBUS3" "FPGA_CBUS3"
- U7 27
  U8 M16
+ U7 27
 Net 12 "/FPGA/FPGA_CBUS4" "FPGA_CBUS4"
- U8 N16
  U7 28
+ U8 N16
 Net 13 "/FPGA/FPGA_CBUS5" "FPGA_CBUS5"
  U7 29
  U8 P15
@@ -3231,18 +3231,18 @@ Net 15 "/FPGA/FPGA_CBUS7" "FPGA_CBUS7"
  U8 R15
  U7 31
 Net 16 "/4-Port USB Hub/5V" "5V"
- J6 B5
- U18 2
- C105 1
- J6 B6
- U3 6
- U3 2
- U18 1
  C107 1
+ U3 6
  U19 3
+ C105 1
+ J6 B5
+ J6 B6
+ U18 2
+ U18 1
+ U3 2
 Net 17 "/FPGA/JTAG2_TCK_OUT" "JTAG2_TCK_OUT"
- U12 5
  U8 P11
+ U12 5
 Net 18 "/FPGA/JTAG2_TDO_IN" "JTAG2_TDO_IN"
  R34 1
  U8 R12
@@ -3253,230 +3253,230 @@ Net 20 "/FPGA/JTAG3_TMS_OUT" "JTAG3_TMS_OUT"
  U8 R13
  U13 4
 Net 21 "/FPGA/JTAG3_TCK_OUT" "JTAG3_TCK_OUT"
- U13 5
  U8 T13
+ U13 5
 Net 22 "/FPGA/JTAG3_TDO_IN" "JTAG3_TDO_IN"
- U8 R10
  R35 1
+ U8 R10
 Net 23 "/FPGA/JTAG4_TDI_OUT" "JTAG4_TDI_OUT"
- U8 R11
+ U8 A4
  U14 3
 Net 24 "/FPGA/JTAG4_TMS_OUT" "JTAG4_TMS_OUT"
- U8 N9
+ U8 B5
  U14 4
 Net 25 "/FPGA/JTAG4_TCK_OUT" "JTAG4_TCK_OUT"
- U8 P9
+ U8 A5
  U14 5
 Net 26 "/FPGA/JTAG4_TDO_IN" "JTAG4_TDO_IN"
  R52 1
- U8 M6
+ U8 B6
 Net 27 "/FPGA/JTAG5_TDI_OUT" "JTAG5_TDI_OUT"
- U8 N6
  U15 3
+ U8 A2
 Net 28 "/FPGA/JTAG5_TMS_OUT" "JTAG5_TMS_OUT"
  U15 4
- U8 P8
+ U8 A3
 Net 29 "/FPGA/JTAG5_TCK_OUT" "JTAG5_TCK_OUT"
+ U8 C4
  U15 5
- U8 R8
 Net 30 "/FPGA/JTAG5_TDO_IN" "JTAG5_TDO_IN"
+ U8 B4
  R53 1
- U8 T7
 Net 31 "/FPGA/JTAG6_TDI_OUT" "JTAG6_TDI_OUT"
- U8 C6
+ U8 C1
  U16 3
 Net 32 "/FPGA/JTAG6_TMS_OUT" "JTAG6_TMS_OUT"
- U8 C7
+ U8 C2
  U16 4
 Net 33 "/FPGA/JTAG6_TCK_OUT" "JTAG6_TCK_OUT"
- U8 B7
+ U8 B1
  U16 5
 Net 34 "/FPGA/JTAG6_TDO_IN" "JTAG6_TDO_IN"
+ U8 B2
  R54 1
- U8 A7
 Net 35 "/FPGA/JTAG7_TDI_OUT" "JTAG7_TDI_OUT"
+ U8 E3
  U17 3
- U8 B4
 Net 36 "/FPGA/JTAG7_TMS_OUT" "JTAG7_TMS_OUT"
  U17 4
- U8 A4
+ U8 E2
 Net 37 "/FPGA/JTAG7_TCK_OUT" "JTAG7_TCK_OUT"
  U17 5
- U8 A5
+ U8 D3
 Net 38 "/FPGA/JTAG7_TDO_IN" "JTAG7_TDO_IN"
+ U8 D1
  R55 1
- U8 B5
 Net 39 "/4-Port USB Hub/3V3" "3V3"
- U12 1
- C100 1
- R11 1
- C92 1
- U11 7
- C90 1
- U11 1
- U13 7
- U13 1
- R5 1
- C91 1
- U10 1
- U12 7
- U8 F1
- U8 T1
- U8 J2
+ R76 2
  U8 B3
- U8 M3
- U8 E4
- U8 R4
- R4 1
- U8 A6
- U14 7
- C16 1
- U8 L6
- U14 1
- C89 1
- C17 1
- C18 1
- R3 1
- C19 1
+ JP1 1
+ U8 J2
  U8 T11
+ R4 1
  U8 J12
+ JP2 1
  U8 B13
+ U8 A6
  U8 M13
+ U8 T1
+ U15 1
+ U14 1
+ U8 R4
+ U14 7
+ R79 2
+ R69 2
+ U8 L6
+ U8 E4
+ U8 M3
+ R68 2
+ U9 1
+ R10 1
+ C99 1
+ C84 1
+ R73 1
  U8 E14
  U8 R14
  U8 H15
  U8 A16
+ R3 1
  U8 L16
- C20 1
+ R11 1
+ R78 2
+ R77 2
+ C88 1
+ U9 4
+ C92 1
+ R6 1
+ C98 1
  U4 11
- U4 7
- U4 3
- U4 27
+ U12 1
+ C91 1
+ U11 7
+ C90 1
+ U12 7
+ U13 1
+ C100 1
+ U13 7
  U4 55
  U4 45
- R6 1
  U4 15
+ R5 1
+ U4 39
+ U2 3
+ U2 7
+ U8 D7
+ U10 1
+ U2 8
+ U8 P7
+ U1 1
  U4 33
  U4 23
- U8 D7
- U8 P7
- U10 7
+ U1 4
  U8 C10
  U8 N10
- U17 7
- U1 4
- U1 1
- U2 8
- U2 7
- U8 E7
- U2 3
- R71 2
- U15 1
- C109 1
- U20 3
- U15 7
- U16 1
- J6 B4
- J6 B3
- U16 7
- U17 1
- U20 8
- U8 M9
- U8 M10
- U8 M11
- R76 2
- R68 2
- R14 2
- C98 1
- R10 1
- R79 2
- C99 1
  R80 2
- R78 2
- R69 2
- R73 1
- U9 1
- U4 39
- U9 4
- C88 1
- R7 1
- R77 2
- U4 19
- R8 1
- JP2 1
- JP1 1
- R16 1
- R17 1
- R18 1
- C24 1
- C40 1
- C14 1
- C62 1
- C65 1
- C68 1
- C71 1
- L2 2
- C74 1
- C23 1
- C21 1
- L1 2
+ U8 F1
+ U11 1
  C22 1
- C15 1
- C37 2
- C51 1
- C47 1
- U7 24
- C64 1
- C61 1
- C13 1
- U6 1
- U7 46
- U7 39
- C97 1
- R21 1
- U5 6
- U7 40
- U7 12
- U6 4
+ U4 7
+ R14 2
+ U15 7
+ U4 3
+ U4 27
+ U4 19
+ C68 1
+ U8 E7
+ C71 1
+ C74 1
  C77 1
  C80 1
  C83 1
  C69 1
+ U6 1
+ U20 3
  C72 1
- C75 1
- C78 1
- C81 1
- C41 1
- C35 1
- C46 1
- C33 1
- C50 1
- C32 1
- C54 1
- C30 1
+ U7 39
+ U8 M11
+ C21 1
+ U6 4
+ C24 1
+ C62 1
+ C65 1
  C58 1
- C29 1
+ R21 1
+ L2 2
  C59 1
  C55 1
+ C51 1
+ C97 1
+ C47 1
+ C20 1
+ C64 1
+ C61 1
+ U20 8
+ C19 1
+ C89 1
+ C75 1
+ C78 1
+ U7 46
+ C81 1
+ C41 1
+ C46 1
+ C50 1
+ C54 1
+ U7 40
+ C23 1
+ C109 1
+ C13 1
+ C14 1
+ C15 1
+ U17 1
+ C17 1
+ U5 6
+ R8 1
+ R7 1
+ C16 1
+ U8 M10
+ U17 7
  C1 1
+ U8 M9
+ U7 24
+ C35 1
+ C40 1
+ C37 2
+ R16 1
+ U16 1
+ R17 1
+ R18 1
+ J6 B4
  C8 2
- C84 1
+ U7 12
+ C18 1
+ C29 1
+ C30 1
+ U10 7
+ U16 7
+ J6 B3
+ L1 2
+ R71 2
+ C32 1
+ C33 1
 Net 40 "/FPGA/1V8" "1V8"
- C43 1
- U8 G8
- C39 1
- U8 L10
- U8 J10
- U8 G10
- U8 J8
- U19 2
- C45 1
- C49 1
- C53 1
- C108 1
- U8 F8
  U8 K11
  C57 1
+ C53 1
+ C49 1
+ C45 1
+ C108 1
+ U19 2
+ U8 F8
+ U8 G8
+ U8 G10
+ U8 J10
+ U8 L10
+ C43 1
+ C39 1
+ U8 J8
 Net 41 "/FPGA/JTAG0_TDI_OUT" "JTAG0_TDI_OUT"
  U10 3
  U8 R16
@@ -3484,11 +3484,11 @@ Net 42 "/FPGA/JTAG0_TMS_OUT" "JTAG0_TMS_OUT"
  U8 T14
  U10 4
 Net 43 "/FPGA/JTAG0_TCK_OUT" "JTAG0_TCK_OUT"
- U10 5
  U8 T15
+ U10 5
 Net 44 "/FPGA/JTAG0_TDO_IN" "JTAG0_TDO_IN"
- U8 N13
  R32 1
+ U8 N13
 Net 45 "/FPGA/JTAG1_TDI_OUT" "JTAG1_TDI_OUT"
  U11 3
  U8 P13
@@ -3496,11 +3496,11 @@ Net 46 "/FPGA/JTAG1_TMS_OUT" "JTAG1_TMS_OUT"
  U11 4
  U8 N14
 Net 47 "/FPGA/JTAG1_TCK_OUT" "JTAG1_TCK_OUT"
- U11 5
  U8 P14
+ U11 5
 Net 48 "/FPGA/JTAG1_TDO_IN" "JTAG1_TDO_IN"
- R33 1
  U8 N11
+ R33 1
 Net 49 "/FPGA/JTAG2_TDI_OUT" "JTAG2_TDI_OUT"
  U8 N12
  U12 3
@@ -3514,24 +3514,24 @@ Net 52 "/4-Port USB Hub/USB_3_P" "USB_3_P"
  J3 3
  U4 6
 Net 53 "/4-Port USB Hub/USB_3_N" "USB_3_N"
- J3 2
  U4 5
+ J3 2
 Net 54 "/4-Port USB Hub/GREEN_2_N" "GREEN_2_N"
  D4 2
  U4 37
 Net 55 "" ""
- R6 2
  D4 1
+ R6 2
 Net 56 "/4-Port USB Hub/AMBER_2_N" "AMBER_2_N"
- U4 38
  D3 2
+ U4 38
 Net 57 "" ""
  D3 1
  R5 2
 Net 58 "/4-Port USB Hub/VBUS" "VBUS"
  U4 26
- R13 2
  C11 1
+ R13 2
  R15 1
  J4 1
 Net 59 "/4-Port USB Hub/GREEN_4_N" "GREEN_4_N"
@@ -3550,8 +3550,8 @@ Net 63 "/4-Port USB Hub/GREEN_3_N" "GREEN_3_N"
  D6 2
  U4 41
 Net 64 "" ""
- R8 2
  D6 1
+ R8 2
 Net 65 "/4-Port USB Hub/AMBER_3_N" "AMBER_3_N"
  D5 2
  U4 42
@@ -3559,65 +3559,65 @@ Net 66 "" ""
  R7 2
  D5 1
 Net 67 "/4-Port USB Hub/VBUS_3" "VBUS_3"
- C4 1
- U3 11
  C7 1
+ U3 11
+ C4 1
  J3 1
 Net 70 "/4-Port USB Hub/SPI_DATA" "SPI_DATA"
+ R1 1
  R2 1
  U4 49
- R1 1
  U2 5
 Net 71 "/4-Port USB Hub/PWR_2_N" "PWR_2_N"
  U4 31
  U3 4
 Net 72 "/4-Port USB Hub/PWR_1_N" "PWR_1_N"
- U4 29
  U3 3
+ U4 29
 Net 73 "" ""
- U1 3
  R9 1
+ U1 3
 Net 74 "" ""
- R2 2
  U2 2
+ R2 2
 Net 75 "/4-Port USB Hub/SPI_SCK" "SPI_SCK"
- U4 48
  U2 6
+ U4 48
 Net 77 "/4-Port USB Hub/OVR_1_N" "OVR_1_N"
- U4 30
  U3 16
+ U4 30
 Net 78 "/4-Port USB Hub/VBUS_2" "VBUS_2"
- C3 1
- C6 1
  J2 1
  U3 14
+ C6 1
+ C3 1
 Net 79 "/4-Port USB Hub/OVR_2_N" "OVR_2_N"
- U3 13
  U4 32
+ U3 13
 Net 80 "/4-Port USB Hub/OVR_3_N" "OVR_3_N"
- U4 53
  U3 12
+ U4 53
 Net 81 "/4-Port USB Hub/OVR_4_N" "OVR_4_N"
- U3 9
  U4 51
+ U3 9
 Net 82 "/4-Port USB Hub/PWR_4_N" "PWR_4_N"
  U4 52
  U3 8
 Net 83 "/4-Port USB Hub/PWR_3_N" "PWR_3_N"
- U4 54
  U3 7
+ U4 54
 Net 84 "/4-Port USB Hub/USB_CLK_24MHZ" "USB_CLK_24MHZ"
- R9 2
  U4 21
+ R9 2
 Net 85 "/4-Port USB Hub/USB_2_N" "USB_2_N"
  J2 2
  U4 9
 Net 86 "/4-Port USB Hub/USB_D_P" "USB_D_P"
- J4 3
  U4 18
+ J4 3
 Net 87 "/4-Port USB Hub/USB_D_N" "USB_D_N"
- U4 17
  J4 2
+ U4 17
 Net 88 "/4-Port USB Hub/SPI_CS_N" "SPI_CS_N"
  U2 1
  U4 25
@@ -3625,17 +3625,17 @@ Net 89 "/4-Port USB Hub/USB_1_P" "USB_1_P"
  U4 14
  J1 3
 Net 90 "/4-Port USB Hub/USB_1_N" "USB_1_N"
- U4 13
  J1 2
+ U4 13
 Net 91 "/4-Port USB Hub/USB_2_P" "USB_2_P"
- U4 10
  J2 3
+ U4 10
 Net 92 "/4-Port USB Hub/GREEN_1_N" "GREEN_1_N"
  U4 35
  D2 2
 Net 93 "" ""
- D2 1
  R4 2
+ D2 1
 Net 94 "/4-Port USB Hub/AMBER_1_N" "AMBER_1_N"
  D1 2
  U4 36
@@ -3643,21 +3643,21 @@ Net 95 "" ""
  D1 1
  R3 2
 Net 96 "/4-Port USB Hub/VBUS_1" "VBUS_1"
- C5 1
+ J1 1
  C2 1
  U3 15
- J1 1
+ C5 1
 Net 97 "" ""
  J4 7
- R12 1
  J4 6
+ R12 1
 Net 98 "/4-Port USB Hub/HUB_RESET_N" "HUB_RESET_N"
+ C12 1
  U4 46
  R14 1
- C12 1
 Net 99 "/USB-JTAG/FTDI_CLK_12MHZ" "FTDI_CLK_12MHZ"
- U7 1
  R19 2
+ U7 1
 Net 100 "" ""
  R19 1
  U6 3
@@ -3665,614 +3665,617 @@ Net 101 "/USB-JTAG/FTDI_EEDO" "FTDI_EEDO"
  U5 1
  R20 2
 Net 102 "/USB-JTAG/FTDI_EEDATA" "FTDI_EEDATA"
- R20 1
- U7 43
- R18 2
  U5 3
+ R20 1
+ R18 2
+ U7 43
 Net 103 "/USB-JTAG/FTDI_EECLK" "FTDI_EECLK"
- U5 4
  R17 2
  U7 44
+ U5 4
 Net 104 "/USB-JTAG/FTDI_VPHY" "FTDI_VPHY"
  C27 1
+ C25 1
  L1 1
  U7 3
- C25 1
 Net 105 "/USB-JTAG/FTDI_EECS" "FTDI_EECS"
- U7 45
- U5 5
  R16 2
+ U5 5
+ U7 45
 Net 106 "/USB-JTAG/FTDI_VCC_A" "FTDI_VCC_A"
- C31 1
  U7 37
+ C31 1
 Net 107 "/USB-JTAG/FTDI_VCC_C" "FTDI_VCC_C"
- U7 38
  C34 1
+ U7 38
 Net 108 "" ""
- R23 1
  U7 13
+ R23 1
 Net 109 "/USB-JTAG/FTDI_JTAG_ACTIVE" "FTDI_JTAG_ACTIVE"
  U7 20
  R70 1
 Net 110 "" ""
- D20 1
  R70 2
+ D20 1
 Net 111 "/USB-JTAG/FTDI_VPLL" "FTDI_VPLL"
- U7 8
- C28 1
- C26 1
  L2 1
+ C26 1
+ C28 1
+ U7 8
 Net 112 "" ""
- U7 14
  R24 1
+ U7 14
 Net 113 "" ""
  U7 16
  R25 1
 Net 120 "/USB-JTAG/FTDI_VREF" "FTDI_VREF"
- U7 5
  R22 2
+ U7 5
 Net 121 "/USB-JTAG/FTDI_RESET_N" "FTDI_RESET_N"
- U7 34
- C36 1
  R21 2
+ C36 1
+ U7 34
 Net 122 "/Power Supply/1V0" "1V0"
- U8 H9
- U8 F9
- U8 K9
- U8 E10
- U8 L8
- U8 F7
- U8 G6
- C79 1
- C76 1
- C73 1
- U8 J6
- C70 1
- C67 1
- C66 1
- C63 1
- C60 1
- C56 1
- C52 1
- C48 1
  C44 1
- C38 1
- C110 1
- U18 3
- C111 1
- C106 1
- C85 1
- C86 1
- C87 1
- U8 F11
+ C48 1
+ C52 1
+ C56 1
+ C60 1
+ C63 1
+ C66 1
+ C67 1
+ C70 1
+ C73 1
+ C76 1
+ C79 1
+ U8 F7
+ U8 L8
  C82 1
  C42 1
-Net 161 "/FPGA/GPMC_A0" "GPMC_A0"
+ C87 1
+ C86 1
+ C85 1
+ C106 1
+ U18 3
+ C38 1
+ C110 1
+ C111 1
+ U8 F9
+ U8 H9
+ U8 K9
+ U8 E10
+ U8 G6
+ U8 J6
+ U8 F11
+Net 143 "/FPGA/FPGA_GTS_N" "FPGA_GTS_N"
+ U8 K5
+ J6 B17
+Net 160 "/FPGA/GPMC_A0" "GPMC_A0"
  U8 H16
  J6 A45
-Net 162 "/FPGA/GPMC_A1" "GPMC_A1"
+Net 161 "/FPGA/GPMC_A1" "GPMC_A1"
  U8 G16
  J6 A46
-Net 163 "/FPGA/GPMC_A7" "GPMC_A7"
+Net 162 "/FPGA/GPMC_A7" "GPMC_A7"
  J6 A40
  U8 E16
-Net 164 "/FPGA/GPMC_A14" "GPMC_A14"
- J6 A36
+Net 163 "/FPGA/GPMC_A14" "GPMC_A14"
  U8 D16
-Net 165 "/FPGA/GPMC_A15" "GPMC_A15"
+ J6 A36
+Net 164 "/FPGA/GPMC_A15" "GPMC_A15"
  J6 A34
  U8 C16
-Net 166 "/FPGA/GPMC_A18" "GPMC_A18"
- U8 B16
+Net 165 "/FPGA/GPMC_A18" "GPMC_A18"
  J6 A31
-Net 168 "/FPGA/GPMC_A2" "GPMC_A2"
+ U8 B16
+Net 167 "/FPGA/GPMC_A2" "GPMC_A2"
  U8 G15
  J6 A43
-Net 169 "/FPGA/GPMC_A5" "GPMC_A5"
- J6 A42
+Net 168 "/FPGA/GPMC_A5" "GPMC_A5"
  U8 F15
-Net 170 "/FPGA/GPMC_A12" "GPMC_A12"
- J6 A37
+ J6 A42
+Net 169 "/FPGA/GPMC_A12" "GPMC_A12"
  U8 E15
-Net 195 "/FPGA/CLK_50MHZ" "CLK_50MHZ"
- U8 D4
+ J6 A37
+Net 187 "/FPGA/CLK_50MHZ" "CLK_50MHZ"
  R27 2
-Net 196 "" ""
+ U8 D4
+Net 188 "" ""
  R27 1
  U9 3
-Net 205 "/FPGA/FPGA_SPI_SCK" "FPGA_SPI_SCK"
+Net 196 "/FPGA/FPGA_SPI_SCK" "FPGA_SPI_SCK"
  J6 B31
  R77 1
  U8 E8
-Net 216 "" ""
+Net 207 "" ""
  U8 N8
  R26 2
-Net 219 "/FPGA/GPMC_D14" "GPMC_D14"
- U8 D11
+Net 210 "/FPGA/GPMC_D14" "GPMC_D14"
  J6 A16
-Net 220 "/FPGA/GPMC_D15" "GPMC_D15"
+ U8 D11
+Net 211 "/FPGA/GPMC_D15" "GPMC_D15"
  J6 A15
  U8 C11
-Net 221 "/FPGA/GPMC_D11" "GPMC_D11"
+Net 212 "/FPGA/GPMC_D11" "GPMC_D11"
  J6 A17
  U8 B11
-Net 222 "/FPGA/GPMC_D13" "GPMC_D13"
- J6 A11
+Net 213 "/FPGA/GPMC_D13" "GPMC_D13"
  U8 D10
-Net 223 "/FPGA/GPMC_D9" "GPMC_D9"
- J6 A13
+ J6 A11
+Net 214 "/FPGA/GPMC_D9" "GPMC_D9"
  U8 B10
-Net 224 "/FPGA/GPMC_D10" "GPMC_D10"
+ J6 A13
+Net 215 "/FPGA/GPMC_D10" "GPMC_D10"
  J6 A14
  U8 A10
-Net 225 "/FPGA/GPMC_D2" "GPMC_D2"
+Net 216 "/FPGA/GPMC_D2" "GPMC_D2"
  U8 D9
  J6 A5
-Net 226 "/FPGA/GPMC_RE_N" "GPMC_RE_N"
- U8 C9
+Net 217 "/FPGA/GPMC_RE_N" "GPMC_RE_N"
  J6 A8
-Net 227 "/FPGA/GPMC_D12" "GPMC_D12"
+ U8 C9
+Net 218 "/FPGA/GPMC_D12" "GPMC_D12"
  U8 B9
  J6 A12
-Net 228 "/FPGA/GPMC_WE_N" "GPMC_WE_N"
+Net 219 "/FPGA/GPMC_WE_N" "GPMC_WE_N"
  J6 A10
  U8 A9
-Net 229 "/FPGA/GPMC_D7" "GPMC_D7"
- J6 A4
+Net 220 "/FPGA/GPMC_D7" "GPMC_D7"
  U8 D8
-Net 230 "/FPGA/GPMC_D6" "GPMC_D6"
- U8 C8
+ J6 A4
+Net 221 "/FPGA/GPMC_D6" "GPMC_D6"
  J6 A3
-Net 231 "/FPGA/GPMC_D3" "GPMC_D3"
+ U8 C8
+Net 222 "/FPGA/GPMC_D3" "GPMC_D3"
  U8 A8
  J6 A6
-Net 232 "/FPGA/FPGA_SPI_CS_N" "FPGA_SPI_CS_N"
+Net 223 "/FPGA/FPGA_SPI_CS_N" "FPGA_SPI_CS_N"
  U8 K16
- R76 1
  J6 B28
-Net 233 "/FPGA/GPMC_A17" "GPMC_A17"
- J6 A33
+ R76 1
+Net 224 "/FPGA/GPMC_A17" "GPMC_A17"
  U8 D15
-Net 234 "/FPGA/GPMC_A19" "GPMC_A19"
- J6 A32
+ J6 A33
+Net 225 "/FPGA/GPMC_A19" "GPMC_A19"
  U8 B15
-Net 235 "/FPGA/GPMC_A9" "GPMC_A9"
+ J6 A32
+Net 226 "/FPGA/GPMC_A9" "GPMC_A9"
  J6 A29
  U8 A15
-Net 237 "/FPGA/GPMC_A3" "GPMC_A3"
+Net 228 "/FPGA/GPMC_A3" "GPMC_A3"
  J6 A44
  U8 G14
-Net 238 "/FPGA/GPMC_A6" "GPMC_A6"
- U8 F14
+Net 229 "/FPGA/GPMC_A6" "GPMC_A6"
  J6 A39
-Net 239 "/FPGA/GPMC_D0" "GPMC_D0"
- U8 D14
+ U8 F14
+Net 230 "/FPGA/GPMC_D0" "GPMC_D0"
  J6 A25
-Net 240 "/FPGA/GPMC_A10" "GPMC_A10"
- U8 C14
+ U8 D14
+Net 231 "/FPGA/GPMC_A10" "GPMC_A10"
  J6 A28
-Net 241 "/FPGA/GPMC_A11" "GPMC_A11"
- J6 A30
+ U8 C14
+Net 232 "/FPGA/GPMC_A11" "GPMC_A11"
  U8 B14
-Net 242 "/FPGA/GPMC_A8" "GPMC_A8"
+ J6 A30
+Net 233 "/FPGA/GPMC_A8" "GPMC_A8"
  U8 A14
  J6 A27
-Net 245 "/FPGA/GPMC_A13" "GPMC_A13"
+Net 236 "/FPGA/GPMC_A13" "GPMC_A13"
  J6 A38
  U8 E13
-Net 246 "/FPGA/GPMC_CLK" "GPMC_CLK"
+Net 237 "/FPGA/GPMC_CLK" "GPMC_CLK"
  U8 D13
  J6 A21
-Net 247 "/FPGA/GPMC_D4" "GPMC_D4"
+Net 238 "/FPGA/GPMC_D4" "GPMC_D4"
  U8 C13
  J6 A23
-Net 248 "/FPGA/GPMC_CS_N" "GPMC_CS_N"
+Net 239 "/FPGA/GPMC_CS_N" "GPMC_CS_N"
  J6 A26
  U8 A13
-Net 250 "/FPGA/GPMC_A4" "GPMC_A4"
+Net 241 "/FPGA/GPMC_A4" "GPMC_A4"
  J6 A41
  U8 G12
-Net 252 "/FPGA/GPMC_A16" "GPMC_A16"
- U8 E12
+Net 243 "/FPGA/GPMC_A16" "GPMC_A16"
  J6 A35
-Net 253 "/FPGA/GPMC_D1" "GPMC_D1"
+ U8 E12
+Net 244 "/FPGA/GPMC_D1" "GPMC_D1"
  U8 C12
  J6 A24
-Net 254 "/FPGA/GPMC_D5" "GPMC_D5"
+Net 245 "/FPGA/GPMC_D5" "GPMC_D5"
  J6 A22
  U8 B12
-Net 255 "/FPGA/GPMC_D8" "GPMC_D8"
- J6 A19
+Net 246 "/FPGA/GPMC_D8" "GPMC_D8"
  U8 A12
-Net 265 "/FPGA/FPGA_DONE" "FPGA_DONE"
- J6 B24
+ J6 A19
+Net 263 "/FPGA/FPGA_DONE" "FPGA_DONE"
  U8 H10
- R78 1
+ J6 B24
  R72 1
-Net 268 "/FPGA/FPGA_SPI_MISO" "FPGA_SPI_MISO"
+ R78 1
+Net 266 "/FPGA/FPGA_SPI_MISO" "FPGA_SPI_MISO"
  J6 B30
  U8 K15
-Net 271 "/FPGA/FPGA_SPI_MOSI" "FPGA_SPI_MOSI"
+Net 269 "/FPGA/FPGA_SPI_MOSI" "FPGA_SPI_MOSI"
  U8 J14
  J6 B29
-Net 275 "/FPGA/PROG_B_N" "PROG_B_N"
- R80 1
- SW1 2
- J6 B26
- U8 L9
-Net 289 "/FPGA/I2C_WP" "I2C_WP"
- R71 1
- P2 1
- U20 7
-Net 292 "/FPGA/FPGA_INIT_B" "FPGA_INIT_B"
+Net 276 "/FPGA/FPGA_INIT_B" "FPGA_INIT_B"
+ R79 1
  U8 K10
  J6 B27
- R79 1
-Net 293 "/FPGA/I2C_A1" "I2C_A1"
- U20 2
+Net 277 "/FPGA/PROG_B_N" "PROG_B_N"
+ J6 B26
+ R80 1
+ U8 L9
+ SW1 2
+Net 289 "/FPGA/I2C_A1" "I2C_A1"
  JP2 2
-Net 294 "/FPGA/I2C_A0" "I2C_A0"
- U20 1
+ U20 2
+Net 290 "/FPGA/I2C_A0" "I2C_A0"
  JP1 2
-Net 295 "/FPGA/I2C_SDA" "I2C_SDA"
- U20 5
+ U20 1
+Net 293 "/FPGA/I2C_WP" "I2C_WP"
+ U20 7
+ P2 1
+ R71 1
+Net 294 "/FPGA/I2C_SDA" "I2C_SDA"
  R69 1
+ U20 5
  J6 B20
-Net 296 "" ""
- D19 1
+Net 295 "" ""
  R73 2
-Net 297 "" ""
- R72 2
+ D19 1
+Net 296 "" ""
  D18 1
-Net 298 "/FPGA/I2C_SCL" "I2C_SCL"
+ R72 2
+Net 297 "/FPGA/I2C_SCL" "I2C_SCL"
  U20 6
- J6 B19
  R68 1
-Net 299 "/Level Shifters/CH3_TDI" "CH3_TDI"
- R49 2
+ J6 B19
+Net 298 "/Level Shifters/CH3_TDI" "CH3_TDI"
  J9 10
-Net 300 "/Level Shifters/CH3_TMS" "CH3_TMS"
- R50 2
+ R49 2
+Net 299 "/Level Shifters/CH3_TMS" "CH3_TMS"
  J9 4
-Net 301 "/Level Shifters/CH3_TCK" "CH3_TCK"
+ R50 2
+Net 300 "/Level Shifters/CH3_TCK" "CH3_TCK"
  R51 2
  J9 6
-Net 302 "/Level Shifters/CH3_TDO" "CH3_TDO"
- J9 8
+Net 301 "/Level Shifters/CH3_TDO" "CH3_TDO"
  U13 11
-Net 303 "" ""
+ J9 8
+Net 302 "" ""
  R49 1
  U13 14
-Net 304 "" ""
- U13 13
+Net 303 "" ""
  R50 1
-Net 305 "" ""
+ U13 13
+Net 304 "" ""
  U13 12
  R51 1
-Net 306 "" ""
+Net 305 "" ""
  R35 2
  U13 6
-Net 307 "" ""
+Net 306 "" ""
  U12 14
  R46 1
-Net 308 "" ""
+Net 307 "" ""
  U12 13
  R47 1
-Net 309 "" ""
- R48 1
+Net 308 "" ""
  U12 12
-Net 310 "" ""
+ R48 1
+Net 309 "" ""
  U12 6
  R34 2
-Net 313 "" ""
+Net 312 "" ""
  R56 1
  U14 14
-Net 314 "" ""
- U14 13
+Net 313 "" ""
  R57 1
-Net 315 "" ""
- U14 12
+ U14 13
+Net 314 "" ""
  R58 1
-Net 316 "" ""
- R52 2
+ U14 12
+Net 315 "" ""
  U14 6
-Net 317 "" ""
- U15 6
+ R52 2
+Net 316 "" ""
  R53 2
-Net 320 "/Level Shifters/CH4_VJTAG" "CH4_VJTAG"
- R36 1
+ U15 6
+Net 319 "/Level Shifters/CH4_VJTAG" "CH4_VJTAG"
  J10 2
  U14 16
- C101 1
+ R36 1
  U14 10
-Net 321 "/Level Shifters/CH4_TDI" "CH4_TDI"
- R56 2
+ C101 1
+Net 320 "/Level Shifters/CH4_TDI" "CH4_TDI"
  J10 10
-Net 324 "/Level Shifters/CH3_GND" "CH3_GND"
- U13 15
- U13 9
- D13 2
- C96 2
- J9 3
- J9 5
- J9 7
- J9 9
+ R56 2
+Net 323 "/Level Shifters/CH3_GND" "CH3_GND"
  J9 11
-Net 325 "/Level Shifters/CH3_VJTAG" "CH3_VJTAG"
- U13 10
- U13 16
- C96 1
- J9 2
+ J9 9
+ D13 2
+ U13 9
+ J9 7
+ J9 5
+ J9 3
+ U13 15
+ C96 2
+Net 324 "/Level Shifters/CH3_VJTAG" "CH3_VJTAG"
  R31 1
-Net 326 "/Level Shifters/CH4_TMS" "CH4_TMS"
+ C96 1
+ U13 16
+ J9 2
+ U13 10
+Net 325 "/Level Shifters/CH4_TMS" "CH4_TMS"
  R57 2
  J10 4
-Net 327 "/Level Shifters/CH4_TCK" "CH4_TCK"
+Net 326 "/Level Shifters/CH4_TCK" "CH4_TCK"
  R58 2
  J10 6
-Net 328 "/Level Shifters/CH4_TDO" "CH4_TDO"
+Net 327 "/Level Shifters/CH4_TDO" "CH4_TDO"
  J10 8
  U14 11
-Net 329 "/Level Shifters/CH4_GND" "CH4_GND"
+Net 328 "/Level Shifters/CH4_GND" "CH4_GND"
+ C101 2
  D14 2
+ U14 9
+ U14 15
+ J10 3
  J10 5
  J10 7
  J10 9
- J10 3
  J10 11
- U14 15
- C101 2
- U14 9
-Net 330 "" ""
+Net 329 "" ""
  R40 1
  U10 14
-Net 331 "" ""
- R41 1
+Net 330 "" ""
  U10 13
-Net 332 "" ""
- R42 1
+ R41 1
+Net 331 "" ""
  U10 12
-Net 333 "" ""
- R32 2
+ R42 1
+Net 332 "" ""
  U10 6
-Net 334 "" ""
+ R32 2
+Net 333 "" ""
  U11 12
  R45 1
-Net 335 "" ""
+Net 334 "" ""
  U11 13
  R44 1
-Net 336 "" ""
+Net 335 "" ""
  U11 14
  R43 1
-Net 337 "" ""
- R33 2
+Net 336 "" ""
  U11 6
-Net 340 "/Level Shifters/CH0_GND" "CH0_GND"
+ R33 2
+Net 339 "/Level Shifters/CH0_GND" "CH0_GND"
+ C93 2
  U10 9
- TP3 1
  J5 11
  J5 9
  J5 7
  J5 5
  J5 3
- D10 2
  U10 15
- C93 2
-Net 343 "/Level Shifters/CH0_VJTAG" "CH0_VJTAG"
- C93 1
- J5 2
+ D10 2
+ TP3 1
+Net 342 "/Level Shifters/CH0_VJTAG" "CH0_VJTAG"
  R28 1
- TP2 1
- U10 10
+ J5 2
  U10 16
-Net 344 "/Level Shifters/CH0_TDI" "CH0_TDI"
- J5 10
+ TP2 1
+ C93 1
+ U10 10
+Net 343 "/Level Shifters/CH0_TDI" "CH0_TDI"
  R40 2
-Net 345 "/Level Shifters/CH0_TMS" "CH0_TMS"
- R41 2
+ J5 10
+Net 344 "/Level Shifters/CH0_TMS" "CH0_TMS"
  J5 4
-Net 346 "/Level Shifters/CH0_TCK" "CH0_TCK"
+ R41 2
+Net 345 "/Level Shifters/CH0_TCK" "CH0_TCK"
  J5 6
  R42 2
-Net 347 "/Level Shifters/CH0_TDO" "CH0_TDO"
- U10 11
+Net 346 "/Level Shifters/CH0_TDO" "CH0_TDO"
  J5 8
-Net 350 "/Level Shifters/CH2_VJTAG" "CH2_VJTAG"
- U12 16
+ U10 11
+Net 349 "/Level Shifters/CH2_VJTAG" "CH2_VJTAG"
  R30 1
- U12 10
  C95 1
+ U12 10
  J8 2
-Net 351 "/Level Shifters/CH2_TDI" "CH2_TDI"
- J8 10
+ U12 16
+Net 350 "/Level Shifters/CH2_TDI" "CH2_TDI"
  R46 2
-Net 352 "/Level Shifters/CH2_TMS" "CH2_TMS"
+ J8 10
+Net 351 "/Level Shifters/CH2_TMS" "CH2_TMS"
  R47 2
  J8 4
-Net 353 "/Level Shifters/CH2_TCK" "CH2_TCK"
- J8 6
+Net 352 "/Level Shifters/CH2_TCK" "CH2_TCK"
  R48 2
-Net 354 "/Level Shifters/CH2_TDO" "CH2_TDO"
+ J8 6
+Net 353 "/Level Shifters/CH2_TDO" "CH2_TDO"
  U12 11
  J8 8
-Net 355 "/Level Shifters/CH2_GND" "CH2_GND"
+Net 354 "/Level Shifters/CH2_GND" "CH2_GND"
+ C95 2
  J8 3
  J8 5
  J8 7
  J8 9
- U12 15
  J8 11
- C95 2
  U12 9
+ U12 15
  D12 2
-Net 356 "/Level Shifters/CH1_TDI" "CH1_TDI"
+Net 355 "/Level Shifters/CH1_TDI" "CH1_TDI"
  J7 10
  R43 2
-Net 357 "/Level Shifters/CH1_TMS" "CH1_TMS"
+Net 356 "/Level Shifters/CH1_TMS" "CH1_TMS"
  R44 2
  J7 4
-Net 358 "/Level Shifters/CH1_TCK" "CH1_TCK"
+Net 357 "/Level Shifters/CH1_TCK" "CH1_TCK"
  J7 6
  R45 2
-Net 359 "/Level Shifters/CH1_TDO" "CH1_TDO"
- J7 8
+Net 358 "/Level Shifters/CH1_TDO" "CH1_TDO"
  U11 11
-Net 360 "/Level Shifters/CH1_GND" "CH1_GND"
- J7 7
+ J7 8
+Net 359 "/Level Shifters/CH1_GND" "CH1_GND"
  J7 9
+ J7 7
  J7 11
- D11 2
- J7 3
- J7 5
- U11 15
  C94 2
+ U11 15
  U11 9
-Net 361 "/Level Shifters/CH1_VJTAG" "CH1_VJTAG"
- U11 16
- J7 2
- U11 10
+ D11 2
+ J7 5
+ J7 3
+Net 360 "/Level Shifters/CH1_VJTAG" "CH1_VJTAG"
  C94 1
+ J7 2
+ U11 16
  R29 1
-Net 362 "/Level Shifters/CH7_GND" "CH7_GND"
- U17 15
- C104 2
- U17 9
+ U11 10
+Net 361 "/Level Shifters/CH7_GND" "CH7_GND"
  D17 2
+ U17 9
+ C104 2
+ U17 15
+ J13 5
  J13 11
  J13 9
- J13 7
  J13 3
- J13 5
-Net 363 "" ""
+ J13 7
+Net 362 "" ""
  D17 1
  R39 2
-Net 364 "/Level Shifters/CH7_VJTAG" "CH7_VJTAG"
+Net 363 "/Level Shifters/CH7_VJTAG" "CH7_VJTAG"
  C104 1
- J13 2
- R39 1
  U17 16
+ R39 1
  U17 10
-Net 365 "/Level Shifters/CH6_GND" "CH6_GND"
- U16 9
+ J13 2
+Net 364 "/Level Shifters/CH6_GND" "CH6_GND"
  C103 2
- J12 11
- D16 2
  J12 9
+ J12 11
+ U16 9
  U16 15
+ D16 2
  J12 7
- J12 5
  J12 3
-Net 366 "" ""
+ J12 5
+Net 365 "" ""
  D16 1
  R38 2
-Net 367 "/Level Shifters/CH6_VJTAG" "CH6_VJTAG"
- U16 10
- U16 16
+Net 366 "/Level Shifters/CH6_VJTAG" "CH6_VJTAG"
  R38 1
+ U16 16
  J12 2
+ U16 10
  C103 1
-Net 368 "/Level Shifters/CH5_GND" "CH5_GND"
- J11 3
- U15 15
+Net 367 "/Level Shifters/CH5_GND" "CH5_GND"
  D15 2
  U15 9
  J11 11
- J11 5
- J11 7
- C102 2
  J11 9
-Net 369 "" ""
- D15 1
+ J11 7
+ J11 5
+ J11 3
+ C102 2
+ U15 15
+Net 368 "" ""
  R37 2
-Net 370 "/Level Shifters/CH5_VJTAG" "CH5_VJTAG"
+ D15 1
+Net 369 "/Level Shifters/CH5_VJTAG" "CH5_VJTAG"
  U15 16
+ C102 1
+ R37 1
  U15 10
  J11 2
- R37 1
- C102 1
-Net 371 "" ""
- R36 2
+Net 370 "" ""
  D14 1
-Net 375 "" ""
+ R36 2
+Net 374 "" ""
  R65 1
  U17 14
-Net 376 "" ""
+Net 375 "" ""
  R66 1
  U17 13
-Net 377 "" ""
+Net 376 "" ""
  R67 1
  U17 12
-Net 378 "" ""
+Net 377 "" ""
  R31 2
  D13 1
-Net 379 "" ""
+Net 378 "" ""
  R30 2
  D12 1
-Net 380 "" ""
+Net 379 "" ""
  R29 2
  D11 1
-Net 381 "" ""
- D10 1
+Net 380 "" ""
  R28 2
-Net 384 "/Level Shifters/CH5_TDI" "CH5_TDI"
+ D10 1
+Net 383 "/Level Shifters/CH5_TDI" "CH5_TDI"
  J11 10
  R59 2
 Net 386 "/Level Shifters/CH7_TDI" "CH7_TDI"
- J13 10
  R65 2
-Net 394 "/Level Shifters/CH6_TDI" "CH6_TDI"
- R62 2
+ J13 10
+Net 393 "/Level Shifters/CH6_TDI" "CH6_TDI"
  J12 10
-Net 402 "" ""
- U16 12
+ R62 2
+Net 401 "" ""
  R64 1
-Net 403 "" ""
- U16 13
+ U16 12
+Net 402 "" ""
  R63 1
-Net 404 "" ""
- U16 14
+ U16 13
+Net 403 "" ""
  R62 1
-Net 405 "" ""
- R54 2
+ U16 14
+Net 404 "" ""
  U16 6
-Net 406 "/Level Shifters/CH5_TCK" "CH5_TCK"
+ R54 2
+Net 405 "/Level Shifters/CH5_TCK" "CH5_TCK"
  J11 6
  R61 2
-Net 407 "/Level Shifters/CH5_TDO" "CH5_TDO"
+Net 406 "/Level Shifters/CH5_TDO" "CH5_TDO"
  U15 11
  J11 8
-Net 408 "" ""
+Net 407 "" ""
  R61 1
  U15 12
-Net 409 "" ""
- U15 13
+Net 408 "" ""
  R60 1
-Net 410 "" ""
+ U15 13
+Net 409 "" ""
  R59 1
  U15 14
-Net 411 "/Level Shifters/CH5_TMS" "CH5_TMS"
+Net 410 "/Level Shifters/CH5_TMS" "CH5_TMS"
  R60 2
  J11 4
-Net 412 "" ""
+Net 411 "" ""
  U17 6
  R55 2
-Net 413 "/Level Shifters/CH7_TMS" "CH7_TMS"
- R66 2
+Net 412 "/Level Shifters/CH7_TMS" "CH7_TMS"
  J13 4
-Net 414 "/Level Shifters/CH7_TCK" "CH7_TCK"
+ R66 2
+Net 413 "/Level Shifters/CH7_TCK" "CH7_TCK"
  R67 2
  J13 6
-Net 415 "/Level Shifters/CH7_TDO" "CH7_TDO"
- U17 11
+Net 414 "/Level Shifters/CH7_TDO" "CH7_TDO"
  J13 8
-Net 416 "/Level Shifters/CH6_TMS" "CH6_TMS"
- R63 2
+ U17 11
+Net 415 "/Level Shifters/CH6_TMS" "CH6_TMS"
  J12 4
-Net 417 "/Level Shifters/CH6_TCK" "CH6_TCK"
- R64 2
+ R63 2
+Net 416 "/Level Shifters/CH6_TCK" "CH6_TCK"
  J12 6
-Net 418 "/Level Shifters/CH6_TDO" "CH6_TDO"
- J12 8
+ R64 2
+Net 417 "/Level Shifters/CH6_TDO" "CH6_TDO"
  U16 11
+ J12 8
 }
 #End

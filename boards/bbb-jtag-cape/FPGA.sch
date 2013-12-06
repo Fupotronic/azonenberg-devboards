@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 05 Dec 2013 04:25:21 AM EST
+EESchema Schematic File Version 2  date Thu 05 Dec 2013 09:47:32 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "5 dec 2013"
+Date "6 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -337,7 +337,7 @@ Text Label 950  900  2    60   ~ 0
 I2C_SDA
 Text Label 950  700  2    60   ~ 0
 I2C_SCL
-Text Label 4950 10050 2    60   ~ 0
+Text Label 2200 11000 2    60   ~ 0
 FPGA_GTS_N
 $Comp
 L OSC U9
@@ -368,7 +368,7 @@ F 1 "49.9" V 3800 5400 50  0000 C CNN
 $EndComp
 Text Label 4050 5400 0    60   ~ 0
 CLK_50MHZ
-Text Label 2050 8400 2    60   ~ 0
+Text Label 1150 8400 2    60   ~ 0
 CLK_50MHZ
 Text Label 1800 5200 2    60   ~ 0
 3V3
@@ -406,37 +406,37 @@ Text HLabel 9500 4050 0    60   Output ~ 0
 JTAG3_TCK_OUT
 Text HLabel 9500 4150 0    60   Input ~ 0
 JTAG3_TDO_IN
-Text HLabel 9500 4250 0    60   Output ~ 0
-JTAG4_TDI_OUT
-Text HLabel 9500 4350 0    60   Output ~ 0
-JTAG4_TMS_OUT
-Text HLabel 9500 4450 0    60   Output ~ 0
-JTAG4_TCK_OUT
-Text HLabel 9500 4550 0    60   Input ~ 0
-JTAG4_TDO_IN
-Text HLabel 9500 4650 0    60   Output ~ 0
-JTAG5_TDI_OUT
-Text HLabel 9500 4750 0    60   Output ~ 0
-JTAG5_TMS_OUT
-Text HLabel 9500 4850 0    60   Output ~ 0
-JTAG5_TCK_OUT
-Text HLabel 9500 4950 0    60   Input ~ 0
-JTAG5_TDO_IN
-Text HLabel 2200 7100 0    60   Output ~ 0
-JTAG6_TDI_OUT
-Text HLabel 2200 7000 0    60   Output ~ 0
-JTAG6_TMS_OUT
-Text HLabel 2200 6200 0    60   Output ~ 0
-JTAG6_TCK_OUT
-Text HLabel 2200 6300 0    60   Input ~ 0
-JTAG6_TDO_IN
-Text HLabel 2200 6800 0    60   Output ~ 0
-JTAG7_TDI_OUT
 Text HLabel 2200 6700 0    60   Output ~ 0
-JTAG7_TMS_OUT
+JTAG4_TDI_OUT
+Text HLabel 2200 6500 0    60   Output ~ 0
+JTAG4_TMS_OUT
 Text HLabel 2200 6600 0    60   Output ~ 0
+JTAG4_TCK_OUT
+Text HLabel 2200 6400 0    60   Input ~ 0
+JTAG4_TDO_IN
+Text HLabel 2200 7700 0    60   Output ~ 0
+JTAG5_TDI_OUT
+Text HLabel 2200 6900 0    60   Output ~ 0
+JTAG5_TMS_OUT
+Text HLabel 2200 8500 0    60   Output ~ 0
+JTAG5_TCK_OUT
+Text HLabel 2200 6800 0    60   Input ~ 0
+JTAG5_TDO_IN
+Text HLabel 2200 7800 0    60   Output ~ 0
+JTAG6_TDI_OUT
+Text HLabel 2200 7500 0    60   Output ~ 0
+JTAG6_TMS_OUT
+Text HLabel 2200 7900 0    60   Output ~ 0
+JTAG6_TCK_OUT
+Text HLabel 2200 7600 0    60   Input ~ 0
+JTAG6_TDO_IN
+Text HLabel 2200 8200 0    60   Output ~ 0
+JTAG7_TDI_OUT
+Text HLabel 2200 8000 0    60   Output ~ 0
+JTAG7_TMS_OUT
+Text HLabel 2200 8300 0    60   Output ~ 0
 JTAG7_TCK_OUT
-Text HLabel 2200 6500 0    60   Input ~ 0
+Text HLabel 2200 8100 0    60   Input ~ 0
 JTAG7_TDO_IN
 Text HLabel 13150 5750 0    60   Output ~ 0
 GND
@@ -858,10 +858,6 @@ NoConn ~ 5600 10600
 NoConn ~ 5600 10100
 NoConn ~ 5600 10000
 NoConn ~ 5600 9800
-NoConn ~ 2200 8100
-NoConn ~ 2200 8200
-NoConn ~ 2200 8300
-NoConn ~ 2200 8500
 NoConn ~ 2200 8600
 NoConn ~ 2200 10700
 NoConn ~ 2200 10800
@@ -976,17 +972,8 @@ Wire Wire Line
 	2950 1700 4300 1700
 Connection ~ 3250 1700
 NoConn ~ 13250 6550
-NoConn ~ 2200 6400
-NoConn ~ 2200 6900
 NoConn ~ 2200 7200
 NoConn ~ 2200 7300
-NoConn ~ 2200 7400
-NoConn ~ 2200 7500
-NoConn ~ 2200 7600
-NoConn ~ 2200 7700
-NoConn ~ 2200 7800
-NoConn ~ 2200 7900
-NoConn ~ 2200 8000
 NoConn ~ 2200 8700
 NoConn ~ 2200 8800
 NoConn ~ 2200 8900
@@ -1008,8 +995,7 @@ NoConn ~ 2200 10400
 NoConn ~ 2200 10500
 NoConn ~ 2200 10600
 Wire Wire Line
-	2050 8400 2200 8400
-NoConn ~ 2200 11000
+	1150 8400 2200 8400
 NoConn ~ 9500 5050
 NoConn ~ 9500 5150
 NoConn ~ 9500 5250
@@ -1018,4 +1004,17 @@ NoConn ~ 9500 5450
 NoConn ~ 9500 5550
 NoConn ~ 9500 5650
 NoConn ~ 9500 5750
+NoConn ~ 2200 6200
+NoConn ~ 2200 6300
+NoConn ~ 2200 7000
+NoConn ~ 2200 7100
+NoConn ~ 9500 4650
+NoConn ~ 9500 4750
+NoConn ~ 9500 4850
+NoConn ~ 9500 4950
+NoConn ~ 2200 7400
+NoConn ~ 9500 4250
+NoConn ~ 9500 4350
+NoConn ~ 9500 4450
+NoConn ~ 9500 4550
 $EndSCHEMATC
