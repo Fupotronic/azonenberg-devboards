@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 05 Dec 2013 09:47:31 PM EST
+EESchema Schematic File Version 2  date Sat 07 Dec 2013 05:06:34 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "6 dec 2013"
+Date "7 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "On-board USB hub"
