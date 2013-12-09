@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 07 Dec 2013 05:06:34 AM EST
+EESchema Schematic File Version 2  date Sun 08 Dec 2013 11:35:31 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "7 dec 2013"
+Date "9 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -103,7 +103,7 @@ GND
 Text Label 13150 5650 2    60   ~ 0
 GND
 Text HLabel 13150 5850 0    60   Output ~ 0
-3V3
+3V3_RAW
 Text HLabel 13150 6050 0    60   Output ~ 0
 5V
 NoConn ~ 13250 6250
@@ -373,29 +373,29 @@ Text HLabel 5600 1550 0    60   Output ~ 0
 JTAG0_TCK_OUT
 Text HLabel 5600 1250 0    60   Input ~ 0
 JTAG0_TDO_IN
-Text HLabel 9500 4650 0    60   Output ~ 0
-JTAG1_TDI_OUT
-Text HLabel 9500 4750 0    60   Output ~ 0
-JTAG1_TMS_OUT
-Text HLabel 9500 4850 0    60   Output ~ 0
-JTAG1_TCK_OUT
-Text HLabel 9500 4950 0    60   Input ~ 0
-JTAG1_TDO_IN
 Text HLabel 9500 5050 0    60   Output ~ 0
+JTAG1_TDI_OUT
+Text HLabel 9500 4850 0    60   Output ~ 0
+JTAG1_TMS_OUT
+Text HLabel 9500 4950 0    60   Output ~ 0
+JTAG1_TCK_OUT
+Text HLabel 9500 5650 0    60   Input ~ 0
+JTAG1_TDO_IN
+Text HLabel 9500 3550 0    60   Output ~ 0
 JTAG2_TDI_OUT
-Text HLabel 9500 5150 0    60   Output ~ 0
+Text HLabel 9500 3650 0    60   Output ~ 0
 JTAG2_TMS_OUT
-Text HLabel 9500 5250 0    60   Output ~ 0
+Text HLabel 9500 3750 0    60   Output ~ 0
 JTAG2_TCK_OUT
-Text HLabel 9500 5350 0    60   Input ~ 0
+Text HLabel 9500 3850 0    60   Input ~ 0
 JTAG2_TDO_IN
-Text HLabel 9500 5450 0    60   Output ~ 0
+Text HLabel 9500 3950 0    60   Output ~ 0
 JTAG3_TDI_OUT
-Text HLabel 9500 5550 0    60   Output ~ 0
+Text HLabel 9500 4050 0    60   Output ~ 0
 JTAG3_TMS_OUT
-Text HLabel 9500 5650 0    60   Output ~ 0
+Text HLabel 9500 4150 0    60   Output ~ 0
 JTAG3_TCK_OUT
-Text HLabel 9500 5750 0    60   Input ~ 0
+Text HLabel 9500 4250 0    60   Input ~ 0
 JTAG3_TDO_IN
 Text HLabel 2200 6700 0    60   Output ~ 0
 JTAG4_TDI_OUT
@@ -462,19 +462,19 @@ Text Label 3250 3200 0    60   ~ 0
 3V3
 Text Label 13150 8250 2    60   ~ 0
 FPGA_INIT_B
-Text Label 2750 3250 2    60   ~ 0
+Text Label 1950 1900 2    60   ~ 0
 PROG_B_N
 $Comp
 L R R80
 U 1 1 529A1BB7
-P 3000 3250
-F 0 "R80" V 3080 3250 50  0000 C CNN
-F 1 "4.7K" V 3000 3250 50  0000 C CNN
-	1    3000 3250
+P 2200 1900
+F 0 "R80" V 2280 1900 50  0000 C CNN
+F 1 "4.7K" V 2200 1900 50  0000 C CNN
+	1    2200 1900
 	0    -1   -1   0   
 $EndComp
 Text Label 13150 8150 2    60   ~ 0
-PROG_B_N
+FPGA_RESET_IN
 $Comp
 L R R78
 U 1 1 529A1F82
@@ -503,10 +503,10 @@ $EndComp
 $Comp
 L SW_PUSH SW1
 U 1 1 529A26CD
-P 2050 3250
-F 0 "SW1" H 2200 3360 50  0000 C CNN
-F 1 "SW_PUSH" H 2050 3170 50  0000 C CNN
-	1    2050 3250
+P 1150 1900
+F 0 "SW1" H 1300 2010 50  0000 C CNN
+F 1 "SW_PUSH" H 1150 1820 50  0000 C CNN
+	1    1150 1900
 	1    0    0    -1  
 $EndComp
 Text Label 850  3200 2    60   ~ 0
@@ -532,19 +532,19 @@ $EndComp
 $Comp
 L LED D19
 U 1 1 529A283E
-P 1050 3450
-F 0 "D19" H 1050 3550 50  0000 C CNN
-F 1 "GREEN" H 1050 3350 50  0000 C CNN
-	1    1050 3450
+P 1050 3250
+F 0 "D19" H 1050 3350 50  0000 C CNN
+F 1 "GREEN" H 1050 3150 50  0000 C CNN
+	1    1050 3250
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R73
 U 1 1 529A2844
-P 1500 3450
-F 0 "R73" V 1580 3450 50  0000 C CNN
-F 1 "470" V 1500 3450 50  0000 C CNN
-	1    1500 3450
+P 1500 3250
+F 0 "R73" V 1580 3250 50  0000 C CNN
+F 1 "470" V 1500 3250 50  0000 C CNN
+	1    1500 3250
 	0    1    1    0   
 $EndComp
 Text Label 2250 4500 2    60   ~ 0
@@ -773,7 +773,7 @@ Wire Wire Line
 Wire Wire Line
 	13150 8250 13250 8250
 Wire Wire Line
-	3250 2200 3250 3450
+	3250 1900 3250 3250
 Wire Wire Line
 	13150 8150 13250 8150
 Connection ~ 3250 3000
@@ -781,17 +781,7 @@ Wire Wire Line
 	13150 7950 13250 7950
 Connection ~ 3250 2750
 Wire Wire Line
-	2750 3250 2350 3250
-Wire Wire Line
 	1750 2750 2750 2750
-Wire Wire Line
-	850  2750 850  3450
-Wire Wire Line
-	850  3250 1750 3250
-Connection ~ 850  3250
-Wire Wire Line
-	3250 3450 1750 3450
-Connection ~ 3250 3250
 Wire Wire Line
 	1450 4250 2950 4250
 Wire Wire Line
@@ -873,8 +863,6 @@ $EndComp
 NoConn ~ 13250 8950
 NoConn ~ 13250 9650
 NoConn ~ 13250 9750
-Text Label 13150 6550 2    60   ~ 0
-SYS_RESET_N
 Text Label 9300 10100 2    60   ~ 0
 GND
 Wire Wire Line
@@ -915,7 +903,7 @@ I2C_SCL
 Text Label 5000 4750 0    60   ~ 0
 I2C_SDA
 Wire Wire Line
-	3250 4650 3250 4050
+	3250 4050 3250 4650
 Connection ~ 3250 4050
 Text Label 3600 4350 2    60   ~ 0
 I2C_A0
@@ -926,38 +914,37 @@ Wire Wire Line
 Connection ~ 3250 4550
 Text Label 5000 4450 0    60   ~ 0
 I2C_WP
-Text Label 1050 750  0    60   ~ 0
+Text Label 3500 3500 0    60   ~ 0
 I2C_WP
 $Comp
 L CONN_2 P2
 U 1 1 529CABB5
-P 700 850
-F 0 "P2" V 650 850 40  0000 C CNN
-F 1 "CONN_2" V 750 850 40  0000 C CNN
-	1    700  850 
+P 3150 3600
+F 0 "P2" V 3100 3600 40  0000 C CNN
+F 1 "CONN_2" V 3200 3600 40  0000 C CNN
+	1    3150 3600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L R R71
 U 1 1 529CABC2
-P 1650 750
-F 0 "R71" V 1730 750 50  0000 C CNN
-F 1 "10K" V 1650 750 50  0000 C CNN
-	1    1650 750 
+P 4100 3500
+F 0 "R71" V 4180 3500 50  0000 C CNN
+F 1 "10K" V 4100 3500 50  0000 C CNN
+	1    4100 3500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1050 750  1400 750 
-Text Label 1900 750  0    60   ~ 0
+	3500 3500 3850 3500
+Text Label 4350 3500 0    60   ~ 0
 3V3
-Text Label 1050 950  0    60   ~ 0
+Text Label 3500 3700 0    60   ~ 0
 GND
 Text Notes 600  4900 0    60   ~ 0
 Solder jumpers for cape I2C address
 Wire Wire Line
 	2950 5050 4300 5050
 Connection ~ 3250 5050
-NoConn ~ 13250 6550
 NoConn ~ 2200 7200
 NoConn ~ 2200 7300
 NoConn ~ 2200 8700
@@ -996,13 +983,6 @@ NoConn ~ 9500 2950
 NoConn ~ 9500 3150
 NoConn ~ 9500 3350
 NoConn ~ 9500 3450
-NoConn ~ 9500 3550
-NoConn ~ 9500 3650
-NoConn ~ 9500 3750
-NoConn ~ 9500 3850
-NoConn ~ 9500 3950
-NoConn ~ 9500 4050
-NoConn ~ 9500 4150
 NoConn ~ 9500 2450
 $Comp
 L XC7AXXXT-XFTG256X U8
@@ -1016,5 +996,57 @@ $EndComp
 NoConn ~ 9500 4550
 NoConn ~ 9500 4450
 NoConn ~ 9500 4350
-NoConn ~ 9500 4250
+NoConn ~ 9500 4650
+NoConn ~ 9500 4750
+NoConn ~ 9500 5150
+NoConn ~ 9500 5250
+NoConn ~ 9500 5350
+NoConn ~ 9500 5450
+NoConn ~ 9500 5550
+NoConn ~ 9500 5750
+Text HLabel 13150 6550 0    60   Output ~ 0
+SYS_RESET_N
+Text HLabel 1450 1650 2    60   Input ~ 0
+PWRGD
+Connection ~ 850  2750
+Wire Wire Line
+	1450 1900 1950 1900
+Wire Wire Line
+	2450 1900 3250 1900
+Wire Wire Line
+	3250 3250 1750 3250
+Wire Wire Line
+	850  1500 850  3250
+Connection ~ 850  1900
+Wire Wire Line
+	1450 1500 1450 1900
+Connection ~ 3250 2200
+Text HLabel 4350 3600 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	4350 3600 4350 3500
+Text Label 1750 1100 0    60   ~ 0
+FPGA_RESET_IN
+$Comp
+L MOS_N Q3
+U 1 1 52A63219
+P 1250 1400
+F 0 "Q3" V 1200 1650 60  0000 L CNN
+F 1 "SI2304DDS-T1-GE3" V 1300 1650 60  0000 L CNN
+	1    1250 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 1500 850  1500
+$Comp
+L R R90
+U 1 1 52A6334A
+P 1500 1100
+F 0 "R90" V 1580 1100 50  0000 C CNN
+F 1 "49.9" V 1500 1100 50  0000 C CNN
+	1    1500 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 1100 1250 1200
 $EndSCHEMATC
