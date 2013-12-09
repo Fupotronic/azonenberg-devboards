@@ -1,4 +1,4 @@
-update=Mon 02 Dec 2013 01:52:05 AM EST
+update=Sun 08 Dec 2013 05:35:31 AM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -58,9 +58,9 @@ LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azo
 [pcbnew]
 version=1
 LastNetListRead=bbb-jtag-cape.net
-PadDrlX=390
-PadDimH=610
-PadDimV=610
+PadDrlX=531
+PadDimH=689
+PadDimV=689
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600

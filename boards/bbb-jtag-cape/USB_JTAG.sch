@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 07 Dec 2013 05:06:34 AM EST
+EESchema Schematic File Version 2  date Sun 08 Dec 2013 11:35:31 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "7 dec 2013"
+Date "9 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "USB-JTAG circuit for FPGA"

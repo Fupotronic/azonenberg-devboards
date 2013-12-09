@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 07 Dec 2013 05:06:34 AM EST
+EESchema Schematic File Version 2  date Sun 08 Dec 2013 11:35:30 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +44,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "8-Port JTAG ICE Cape for BBB"
-Date "7 dec 2013"
+Date "9 dec 2013"
 Rev "$Rev$"
 Comp "Andrew D. Zonenberg"
 Comment1 "Top Level"
@@ -92,8 +92,11 @@ F0 "Power Supply" 60
 F1 "Power_Supply.sch" 60
 F2 "5V" I R 1450 800 60 
 F3 "GND" I R 1450 1100 60 
-F4 "3V3" I R 1450 900 60 
-F5 "1V8" O R 1450 1000 60 
+F4 "1V8" O R 1450 1000 60 
+F5 "SYS_RESET_N" I R 1450 2700 60 
+F6 "PWRGD" O R 1450 2800 60 
+F7 "3V3" O R 1450 900 60 
+F8 "3V3_RAW" I R 1450 1200 60 
 $EndSheet
 $Sheet
 S 8250 700  1300 4350
@@ -202,6 +205,9 @@ F46 "JTAG7_TCK_OUT" O R 7650 4500 60
 F47 "JTAG7_TDO_IN" I R 7650 4600 60 
 F48 "GND" O L 6100 2500 60 
 F49 "1V8" I L 6100 2400 60 
+F50 "SYS_RESET_N" O L 6100 3100 60 
+F51 "PWRGD" I L 6100 3200 60 
+F52 "3V3_RAW" O L 6100 2600 60 
 $EndSheet
 Text Label 5950 2500 2    60   ~ 0
 GND
@@ -340,4 +346,24 @@ Wire Wire Line
 	1450 1000 1850 1000
 Wire Wire Line
 	1450 1100 2300 1100
+Wire Wire Line
+	1450 2800 1950 2800
+Wire Wire Line
+	1950 2800 1950 3200
+Wire Wire Line
+	1950 3200 6100 3200
+Wire Wire Line
+	6100 3100 2050 3100
+Wire Wire Line
+	2050 3100 2050 2700
+Wire Wire Line
+	2050 2700 1450 2700
+Text Label 6000 2600 2    60   ~ 0
+3V3_RAW
+Wire Wire Line
+	6000 2600 6100 2600
+Text Label 1850 1200 0    60   ~ 0
+3V3_RAW
+Wire Wire Line
+	1850 1200 1450 1200
 $EndSCHEMATC
