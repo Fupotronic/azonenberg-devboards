@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 08 Dec 2013 11:35:31 PM EST
+EESchema Schematic File Version 2  date Mon 09 Dec 2013 07:16:26 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -52,7 +52,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1100 4850 0    60   Input ~ 0
+Text HLabel 1100 4800 0    60   Input ~ 0
 5V
 Text HLabel 1150 7600 0    60   Input ~ 0
 GND
@@ -79,102 +79,16 @@ Text Notes 4050 6200 0    60   ~ 0
 bbRAM not supported, tying VCCBATT to VCCAUX as per DS181
 Text Label 1050 7500 2    60   ~ 0
 GND
-Wire Wire Line
-	3750 9600 3600 9600
-Wire Wire Line
-	3600 9600 3600 10500
-Connection ~ 3600 9700
-Connection ~ 3600 9800
-Connection ~ 3600 9900
-Connection ~ 3600 10000
-Connection ~ 3600 10100
-Connection ~ 3600 10200
-Connection ~ 3600 10400
-Wire Wire Line
-	3750 9100 3600 9100
-Wire Wire Line
-	3600 9100 3600 9400
-Connection ~ 3600 9200
-Connection ~ 3600 9300
-Wire Wire Line
-	3600 6000 3750 6000
-Wire Wire Line
-	3750 6200 3600 6200
-Wire Wire Line
-	1050 7500 1150 7500
-Wire Wire Line
-	1150 7500 1150 10500
-Connection ~ 1150 7600
-Connection ~ 1150 7700
-Connection ~ 1150 7800
-Connection ~ 1150 7900
-Connection ~ 1150 8000
-Connection ~ 1150 8100
-Connection ~ 1150 8200
-Connection ~ 1150 8300
-Connection ~ 1150 8500
-Connection ~ 1150 8400
-Connection ~ 1150 10400
-Connection ~ 1150 10300
-Connection ~ 1150 10200
-Connection ~ 1150 10100
-Connection ~ 1150 10000
-Connection ~ 1150 9900
-Connection ~ 1150 8600
-Connection ~ 1150 8700
-Connection ~ 1150 8800
-Connection ~ 1150 8900
-Connection ~ 1150 9000
-Connection ~ 1150 9100
-Connection ~ 1150 9200
-Connection ~ 1150 9300
-Connection ~ 1150 9400
-Connection ~ 1150 9500
-Connection ~ 1150 9600
-Connection ~ 1150 9800
-Connection ~ 1150 9700
 Text Label 3750 6600 0    60   ~ 0
 3V3
-Wire Wire Line
-	3750 6600 3600 6600
-Wire Wire Line
-	3600 6400 3600 7000
-Connection ~ 3600 6600
-Connection ~ 3600 6700
-Connection ~ 3600 6800
-Connection ~ 3600 6900
-Wire Wire Line
-	3600 7100 3600 6900
-Connection ~ 3600 7000
-Wire Wire Line
-	3750 7300 3600 7300
-Wire Wire Line
-	3600 7300 3600 7800
-Connection ~ 3600 7400
 Text Label 3750 7300 0    60   ~ 0
 3V3
-Connection ~ 3600 7500
-Connection ~ 3600 7600
-Connection ~ 3600 7700
 Text Label 3750 8000 0    60   ~ 0
 3V3
-Wire Wire Line
-	3750 8000 3600 8000
-Wire Wire Line
-	3600 8000 3600 8200
-Connection ~ 3600 8100
 Text Label 3750 8400 0    60   ~ 0
 3V3
-Wire Wire Line
-	3750 8400 3600 8400
-Wire Wire Line
-	3600 8400 3600 8900
-Connection ~ 3600 8500
-Connection ~ 3600 8600
-Connection ~ 3600 8700
-Connection ~ 3600 8800
 Text Notes 650  1000 0    60   ~ 0
-Worst-case FPGA power estimates from XPE 14.4.1:\n\n1V0     544 mA\n1V8      19 mA\n3V3      14 mA\n\nRamp order:\n1V0 -> 1V8 -> 3V3
+Worst-case FPGA power estimates from XPE 14.4.1:\n\n1V0     544 mA\n1V8      19 mA\n3V3      14 mA\n\nRamp order:\n1V0 -> 1V8 -> 3V3\n\nVmin for 3V3 is 3.0V so we need to /5 to get 0.6.\nVmin for 1V8 is 1.68V so we need to /2.8 to get 0.6.\nVmin for 1V0 is 0.9V so we need to /1.5 to get 0.6.
 $Comp
 L C C42
 U 1 1 52991A42
@@ -305,37 +219,8 @@ Text Notes 5900 6550 0    60   ~ 0
 VCCINT
 Text Label 5200 6550 2    60   ~ 0
 1V0
-Wire Wire Line
-	5200 6550 11700 6550
 Text Label 5200 6950 2    60   ~ 0
 GND
-Connection ~ 5900 6550
-Connection ~ 6250 6550
-Connection ~ 6550 6550
-Connection ~ 6850 6550
-Connection ~ 7150 6550
-Connection ~ 7450 6550
-Connection ~ 7750 6550
-Connection ~ 8050 6550
-Connection ~ 10150 6550
-Connection ~ 9800 6550
-Connection ~ 9450 6550
-Connection ~ 9100 6550
-Connection ~ 8750 6550
-Connection ~ 8400 6550
-Connection ~ 9800 6950
-Connection ~ 9450 6950
-Connection ~ 5900 6950
-Connection ~ 6250 6950
-Connection ~ 6550 6950
-Connection ~ 6850 6950
-Connection ~ 7150 6950
-Connection ~ 7450 6950
-Connection ~ 7750 6950
-Connection ~ 8050 6950
-Connection ~ 9100 6950
-Connection ~ 8400 6950
-Connection ~ 8750 6950
 Text Notes 11000 6550 0    60   ~ 0
 VCCBRAM
 $Comp
@@ -365,15 +250,6 @@ F 1 "0.47 uF" H 11750 6650 50  0000 L CNN
 	1    11700 6750
 	1    0    0    -1  
 $EndComp
-Connection ~ 10500 6550
-Connection ~ 11000 6550
-Connection ~ 11350 6550
-Connection ~ 11350 6950
-Connection ~ 11000 6950
-Connection ~ 10500 6950
-Wire Wire Line
-	5200 6950 11700 6950
-Connection ~ 10150 6950
 Text Label 5800 7300 2    60   ~ 0
 1V8
 $Comp
@@ -430,22 +306,8 @@ F 1 "0.47 uF" H 7600 7400 50  0000 L CNN
 	1    7550 7500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 7300 7550 7300
 Text Label 5800 7700 2    60   ~ 0
 GND
-Wire Wire Line
-	5800 7700 7550 7700
-Connection ~ 5900 7700
-Connection ~ 6250 7700
-Connection ~ 6550 7700
-Connection ~ 6850 7700
-Connection ~ 7200 7700
-Connection ~ 7200 7300
-Connection ~ 6850 7300
-Connection ~ 6550 7300
-Connection ~ 6250 7300
-Connection ~ 5900 7300
 Text Label 5800 7950 2    60   ~ 0
 3V3
 $Comp
@@ -457,12 +319,8 @@ F 1 "4.7 uF" H 5950 8050 50  0000 L CNN
 	1    5900 8150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 7950 10700 7950
 Text Label 5800 8350 2    60   ~ 0
 GND
-Wire Wire Line
-	5800 8350 10700 8350
 Text Notes 5900 7300 0    60   ~ 0
 VCCAUX
 Text Notes 5900 7950 0    60   ~ 0
@@ -704,10 +562,488 @@ Text Notes 8950 8650 0    60   ~ 0
 VCCO_35
 Text Label 5800 8650 2    60   ~ 0
 3V3
-Wire Wire Line
-	5800 8650 10700 8650
 Text Label 5800 9050 2    60   ~ 0
 GND
+$Comp
+L C C105
+U 1 1 529BD423
+P 1100 5050
+F 0 "C105" H 1150 5150 50  0000 L CNN
+F 1 "47 uF" H 1150 4950 50  0000 L CNN
+	1    1100 5050
+	1    0    0    -1  
+$EndComp
+Text Label 4050 4800 0    60   ~ 0
+1V0
+Text Label 1100 5250 2    60   ~ 0
+GND
+Text Label 1100 4150 2    60   ~ 0
+GND
+$Comp
+L C C108
+U 1 1 529BE78A
+P 3700 3950
+F 0 "C108" H 3750 4050 50  0000 L CNN
+F 1 "4.7 uF" H 3750 3850 50  0000 L CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C107
+U 1 1 529BE8FD
+P 1100 3950
+F 0 "C107" H 1150 4050 50  0000 L CNN
+F 1 "4.7 uF" H 1150 3850 50  0000 L CNN
+	1    1100 3950
+	1    0    0    -1  
+$EndComp
+Text Label 1100 3600 2    60   ~ 0
+3V3
+Text Label 3700 3750 0    60   ~ 0
+1V8
+Text HLabel 3700 3600 2    60   Output ~ 0
+1V8
+$Comp
+L C C111
+U 1 1 529CBDCE
+P 5900 6750
+F 0 "C111" H 5950 6850 50  0000 L CNN
+F 1 "100 uF" H 5950 6650 50  0000 L CNN
+	1    5900 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C110
+U 1 1 529CBDDE
+P 5550 6750
+F 0 "C110" H 5600 6850 50  0000 L CNN
+F 1 "100 uF" H 5600 6650 50  0000 L CNN
+	1    5550 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C38
+U 1 1 529CBDE4
+P 5200 6750
+F 0 "C38" H 5250 6850 50  0000 L CNN
+F 1 "100 uF" H 5250 6650 50  0000 L CNN
+	1    5200 6750
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 5400 0    60   ~ 0
+Switching regulator for FPGA VCCINT/VCCBRAM
+Text Notes 2700 4250 0    60   ~ 0
+LDO for FPGA VCCAUX
+$Comp
+L ADM1185 U19
+U 1 1 52A52C52
+P 7900 1850
+F 0 "U19" H 7900 2100 60  0000 C CNN
+F 1 "ADM1185" H 7900 2000 60  0000 C CNN
+	1    7900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 52A52C5F
+P 7850 1050
+F 0 "C10" H 7900 1150 50  0000 L CNN
+F 1 "0.1 uF" H 7900 950 50  0000 L CNN
+	1    7850 1050
+	0    -1   -1   0   
+$EndComp
+Text Label 8800 1450 0    60   ~ 0
+5V
+Text Label 6950 1450 2    60   ~ 0
+GND
+$Comp
+L R R84
+U 1 1 52A5336B
+P 5450 1400
+F 0 "R84" V 5530 1400 50  0000 C CNN
+F 1 "4.99K 1%" V 5600 1400 50  0000 C CNN
+	1    5450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R83
+U 1 1 52A53378
+P 5250 1400
+F 0 "R83" V 5330 1400 50  0000 C CNN
+F 1 "10K 1%" V 5250 1400 50  0000 C CNN
+	1    5250 1400
+	1    0    0    -1  
+$EndComp
+Text HLabel 6300 1550 0    60   Input ~ 0
+SYS_RESET_N
+$Comp
+L R R85
+U 1 1 52A55D82
+P 6300 1300
+F 0 "R85" V 6380 1300 50  0000 C CNN
+F 1 "10K" V 6300 1300 50  0000 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+Text HLabel 9350 1850 2    60   Output ~ 0
+PWRGD
+Text HLabel 7300 2450 0    60   Input ~ 0
+3V3_RAW
+Text Label 8500 3150 0    60   ~ 0
+3V3
+Text Label 9050 1550 0    60   ~ 0
+1V0_EN
+Text Label 6950 1650 2    60   ~ 0
+1V0_SENSE
+Text Label 5450 1150 0    60   ~ 0
+1V0
+Text Label 5250 1150 2    60   ~ 0
+GND
+Text Label 9050 1650 0    60   ~ 0
+1V8_EN
+Text Label 6950 1750 2    60   ~ 0
+1V8_SENSE
+$Comp
+L R R82
+U 1 1 52A610EA
+P 4900 1500
+F 0 "R82" V 4980 1500 50  0000 C CNN
+F 1 "18K 1%" V 4900 1500 50  0000 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R81
+U 1 1 52A610F0
+P 4700 1500
+F 0 "R81" V 4780 1500 50  0000 C CNN
+F 1 "10K 1%" V 4700 1500 50  0000 C CNN
+	1    4700 1500
+	1    0    0    -1  
+$EndComp
+Text Label 4700 1250 2    60   ~ 0
+GND
+Text Label 4900 1250 0    60   ~ 0
+1V8
+Text Label 9050 1750 0    60   ~ 0
+3V3_EN
+Text Label 6950 1850 2    60   ~ 0
+3V3_SENSE
+$Comp
+L R R75
+U 1 1 52A6134C
+P 4400 1600
+F 0 "R75" V 4480 1600 50  0000 C CNN
+F 1 "40.2K 1%" V 4550 1600 50  0000 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R74
+U 1 1 52A61352
+P 4200 1600
+F 0 "R74" V 4280 1600 50  0000 C CNN
+F 1 "10K 1%" V 4100 1600 50  0000 C CNN
+	1    4200 1600
+	1    0    0    -1  
+$EndComp
+Text Label 4400 1350 0    60   ~ 0
+3V3
+Text Label 4200 1350 2    60   ~ 0
+GND
+$Comp
+L MOS_N Q1
+U 1 1 52A61EC6
+P 7500 3150
+F 0 "Q1" H 7510 3320 60  0000 R CNN
+F 1 "SI2304DDS-T1-GE3" H 7250 3350 60  0000 R CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOS_P Q2
+U 1 1 52A61ED5
+P 8200 2950
+F 0 "Q2" H 8200 3140 60  0000 R CNN
+F 1 "AO3415" H 8200 2770 60  0000 R CNN
+	1    8200 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L R R87
+U 1 1 52A61EE2
+P 9050 1300
+F 0 "R87" V 9130 1300 50  0000 C CNN
+F 1 "10K" V 9050 1300 50  0000 C CNN
+	1    9050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R88
+U 1 1 52A62221
+P 9500 1400
+F 0 "R88" V 9580 1400 50  0000 C CNN
+F 1 "10K" V 9500 1400 50  0000 C CNN
+	1    9500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R89
+U 1 1 52A623BF
+P 9750 1500
+F 0 "R89" V 9830 1500 50  0000 C CNN
+F 1 "10K" V 9750 1500 50  0000 C CNN
+	1    9750 1500
+	1    0    0    -1  
+$EndComp
+Text Label 7100 3150 2    60   ~ 0
+3V3_EN
+Text Label 7100 3350 2    60   ~ 0
+GND
+$Comp
+L R R86
+U 1 1 52A6461A
+P 7600 2700
+F 0 "R86" V 7680 2700 50  0000 C CNN
+F 1 "1K" V 7600 2700 50  0000 C CNN
+	1    7600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TC1185 U18
+U 1 1 52A55B65
+P 2450 3850
+F 0 "U18" H 2600 3800 60  0000 C CNN
+F 1 "TC1185-1.8VCT713" H 2500 4250 60  0000 C CNN
+	1    2450 3850
+	1    0    0    -1  
+$EndComp
+Text Label 1800 3700 2    60   ~ 0
+1V8_EN
+$Comp
+L C C9
+U 1 1 52A56335
+P 3150 3950
+F 0 "C9" H 3200 4050 50  0000 L CNN
+F 1 "470 pF" H 3200 3850 50  0000 L CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LMZ10503 U21
+U 1 1 52A5709B
+P 2750 5200
+F 0 "U21" H 2750 5100 60  0000 C CNN
+F 1 "LMZ10503" H 2750 5000 60  0000 C CNN
+	1    2750 5200
+	1    0    0    -1  
+$EndComp
+Text Label 2050 4900 2    60   ~ 0
+1V0_EN
+$Comp
+L C C106
+U 1 1 52A579FD
+P 1450 5050
+F 0 "C106" H 1500 5150 50  0000 L CNN
+F 1 "10 nF" H 1500 4950 50  0000 L CNN
+	1    1450 5050
+	1    0    0    -1  
+$EndComp
+Text Label 2050 5000 2    60   ~ 0
+1V0_SS
+Text Label 3450 5000 0    60   ~ 0
+LMZ_FEEDBACK
+$Comp
+L C C112
+U 1 1 52A594EE
+P 4300 5000
+F 0 "C112" H 4350 5100 50  0000 L CNN
+F 1 "47 uF" H 4350 4900 50  0000 L CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+Text Label 4300 5200 2    60   ~ 0
+GND
+$Comp
+L R R92
+U 1 1 52A59964
+P 4800 4450
+F 0 "R92" V 4880 4450 50  0000 C CNN
+F 1 "100K 1%" V 4700 4450 50  0000 C CNN
+	1    4800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R93
+U 1 1 52A59A51
+P 4800 4950
+F 0 "R93" V 4880 4950 50  0000 C CNN
+F 1 "402K 1%" V 4700 4950 50  0000 C CNN
+	1    4800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R94
+U 1 1 52A59D1B
+P 5650 4700
+F 0 "R94" V 5730 4700 50  0000 C CNN
+F 1 "8.25K 1%" V 5550 4700 50  0000 C CNN
+	1    5650 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C113
+U 1 1 52A59E0D
+P 5900 4500
+F 0 "C113" H 5950 4600 50  0000 L CNN
+F 1 "100 pF" H 5950 4400 50  0000 L CNN
+	1    5900 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 9600 3600 9600
+Wire Wire Line
+	3600 9600 3600 10500
+Connection ~ 3600 9700
+Connection ~ 3600 9800
+Connection ~ 3600 9900
+Connection ~ 3600 10000
+Connection ~ 3600 10100
+Connection ~ 3600 10200
+Connection ~ 3600 10400
+Wire Wire Line
+	3750 9100 3600 9100
+Wire Wire Line
+	3600 9100 3600 9400
+Connection ~ 3600 9200
+Connection ~ 3600 9300
+Wire Wire Line
+	3600 6000 3750 6000
+Wire Wire Line
+	3750 6200 3600 6200
+Wire Wire Line
+	1050 7500 1150 7500
+Wire Wire Line
+	1150 7500 1150 10500
+Connection ~ 1150 7600
+Connection ~ 1150 7700
+Connection ~ 1150 7800
+Connection ~ 1150 7900
+Connection ~ 1150 8000
+Connection ~ 1150 8100
+Connection ~ 1150 8200
+Connection ~ 1150 8300
+Connection ~ 1150 8500
+Connection ~ 1150 8400
+Connection ~ 1150 10400
+Connection ~ 1150 10300
+Connection ~ 1150 10200
+Connection ~ 1150 10100
+Connection ~ 1150 10000
+Connection ~ 1150 9900
+Connection ~ 1150 8600
+Connection ~ 1150 8700
+Connection ~ 1150 8800
+Connection ~ 1150 8900
+Connection ~ 1150 9000
+Connection ~ 1150 9100
+Connection ~ 1150 9200
+Connection ~ 1150 9300
+Connection ~ 1150 9400
+Connection ~ 1150 9500
+Connection ~ 1150 9600
+Connection ~ 1150 9800
+Connection ~ 1150 9700
+Wire Wire Line
+	3750 6600 3600 6600
+Wire Wire Line
+	3600 6400 3600 7000
+Connection ~ 3600 6600
+Connection ~ 3600 6700
+Connection ~ 3600 6800
+Connection ~ 3600 6900
+Wire Wire Line
+	3600 7100 3600 6900
+Connection ~ 3600 7000
+Wire Wire Line
+	3750 7300 3600 7300
+Wire Wire Line
+	3600 7300 3600 7800
+Connection ~ 3600 7400
+Connection ~ 3600 7500
+Connection ~ 3600 7600
+Connection ~ 3600 7700
+Wire Wire Line
+	3750 8000 3600 8000
+Wire Wire Line
+	3600 8000 3600 8200
+Connection ~ 3600 8100
+Wire Wire Line
+	3750 8400 3600 8400
+Wire Wire Line
+	3600 8400 3600 8900
+Connection ~ 3600 8500
+Connection ~ 3600 8600
+Connection ~ 3600 8700
+Connection ~ 3600 8800
+Wire Wire Line
+	5200 6550 11700 6550
+Connection ~ 5900 6550
+Connection ~ 6250 6550
+Connection ~ 6550 6550
+Connection ~ 6850 6550
+Connection ~ 7150 6550
+Connection ~ 7450 6550
+Connection ~ 7750 6550
+Connection ~ 8050 6550
+Connection ~ 10150 6550
+Connection ~ 9800 6550
+Connection ~ 9450 6550
+Connection ~ 9100 6550
+Connection ~ 8750 6550
+Connection ~ 8400 6550
+Connection ~ 9800 6950
+Connection ~ 9450 6950
+Connection ~ 5900 6950
+Connection ~ 6250 6950
+Connection ~ 6550 6950
+Connection ~ 6850 6950
+Connection ~ 7150 6950
+Connection ~ 7450 6950
+Connection ~ 7750 6950
+Connection ~ 8050 6950
+Connection ~ 9100 6950
+Connection ~ 8400 6950
+Connection ~ 8750 6950
+Connection ~ 10500 6550
+Connection ~ 11000 6550
+Connection ~ 11350 6550
+Connection ~ 11350 6950
+Connection ~ 11000 6950
+Connection ~ 10500 6950
+Wire Wire Line
+	5200 6950 11700 6950
+Connection ~ 10150 6950
+Wire Wire Line
+	5800 7300 7550 7300
+Wire Wire Line
+	5800 7700 7550 7700
+Connection ~ 5900 7700
+Connection ~ 6250 7700
+Connection ~ 6550 7700
+Connection ~ 6850 7700
+Connection ~ 7200 7700
+Connection ~ 7200 7300
+Connection ~ 6850 7300
+Connection ~ 6550 7300
+Connection ~ 6250 7300
+Connection ~ 5900 7300
+Wire Wire Line
+	5800 7950 10700 7950
+Wire Wire Line
+	5800 8350 10700 8350
+Wire Wire Line
+	5800 8650 10700 8650
 Wire Wire Line
 	5800 9050 10700 9050
 Connection ~ 5900 7950
@@ -758,166 +1094,24 @@ Connection ~ 9650 8650
 Connection ~ 10000 8650
 Connection ~ 10350 8650
 Connection ~ 10350 9050
-$Comp
-L C C105
-U 1 1 529BD423
-P 1450 5050
-F 0 "C105" H 1500 5150 50  0000 L CNN
-F 1 "4.7 uF" H 1500 4950 50  0000 L CNN
-	1    1450 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 5250 3800 5250
-$Comp
-L C C106
-U 1 1 529BD970
-P 3800 5050
-F 0 "C106" H 3850 5150 50  0000 L CNN
-F 1 "10 uF" H 3850 4950 50  0000 L CNN
-	1    3800 5050
-	1    0    0    -1  
-$EndComp
-Text Label 4050 4800 0    60   ~ 0
-1V0
-Connection ~ 3800 4850
-Text Label 1100 5250 2    60   ~ 0
-GND
 Connection ~ 1450 5250
-Connection ~ 1450 4850
-Text Label 1100 4150 2    60   ~ 0
-GND
-$Comp
-L C C108
-U 1 1 529BE78A
-P 3700 3950
-F 0 "C108" H 3750 4050 50  0000 L CNN
-F 1 "4.7 uF" H 3750 3850 50  0000 L CNN
-	1    3700 3950
-	1    0    0    -1  
-$EndComp
 Connection ~ 2450 4150
 Wire Wire Line
 	3700 3750 3700 3600
-$Comp
-L C C107
-U 1 1 529BE8FD
-P 1100 3950
-F 0 "C107" H 1150 4050 50  0000 L CNN
-F 1 "4.7 uF" H 1150 3850 50  0000 L CNN
-	1    1100 3950
-	1    0    0    -1  
-$EndComp
-Text Label 1100 3600 2    60   ~ 0
-5V
 Wire Wire Line
 	1100 3600 1800 3600
-Text Label 3700 3750 0    60   ~ 0
-1V8
 Wire Wire Line
 	1100 4150 3700 4150
-Text HLabel 3700 3600 2    60   Output ~ 0
-1V8
-$Comp
-L C C111
-U 1 1 529CBDCE
-P 5900 6750
-F 0 "C111" H 5950 6850 50  0000 L CNN
-F 1 "100 uF" H 5950 6650 50  0000 L CNN
-	1    5900 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C110
-U 1 1 529CBDDE
-P 5550 6750
-F 0 "C110" H 5600 6850 50  0000 L CNN
-F 1 "100 uF" H 5600 6650 50  0000 L CNN
-	1    5550 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C38
-U 1 1 529CBDE4
-P 5200 6750
-F 0 "C38" H 5250 6850 50  0000 L CNN
-F 1 "100 uF" H 5250 6650 50  0000 L CNN
-	1    5200 6750
-	1    0    0    -1  
-$EndComp
 Connection ~ 5550 6550
 Connection ~ 5550 6950
-Text Notes 3450 5400 0    60   ~ 0
-Switching regulator for FPGA VCCINT/VCCBRAM
-Text Notes 2700 4250 0    60   ~ 0
-LDO for FPGA VCCAUX
-$Comp
-L ADM1185 U19
-U 1 1 52A52C52
-P 7900 1850
-F 0 "U19" H 7900 2100 60  0000 C CNN
-F 1 "ADM1185" H 7900 2000 60  0000 C CNN
-	1    7900 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C10
-U 1 1 52A52C5F
-P 7850 1050
-F 0 "C10" H 7900 1150 50  0000 L CNN
-F 1 "0.1 uF" H 7900 950 50  0000 L CNN
-	1    7850 1050
-	0    -1   -1   0   
-$EndComp
-Text Label 8800 1450 0    60   ~ 0
-5V
-Text Label 6950 1450 2    60   ~ 0
-GND
 Wire Wire Line
 	6950 1050 6950 1450
 Wire Wire Line
 	8800 1050 8800 1450
-$Comp
-L R R84
-U 1 1 52A5336B
-P 5450 1400
-F 0 "R84" V 5530 1400 50  0000 C CNN
-F 1 "R" V 5450 1400 50  0000 C CNN
-	1    5450 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R83
-U 1 1 52A53378
-P 5250 1400
-F 0 "R83" V 5330 1400 50  0000 C CNN
-F 1 "R" V 5250 1400 50  0000 C CNN
-	1    5250 1400
-	1    0    0    -1  
-$EndComp
-Text HLabel 6300 1550 0    60   Input ~ 0
-SYS_RESET_N
-$Comp
-L R R85
-U 1 1 52A55D82
-P 6300 1300
-F 0 "R85" V 6380 1300 50  0000 C CNN
-F 1 "10K" V 6300 1300 50  0000 C CNN
-	1    6300 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 1050 7650 1050
 Wire Wire Line
 	9350 1850 8800 1850
-Text HLabel 9350 1850 2    60   Output ~ 0
-PWRGD
-Text HLabel 7300 2450 0    60   Input ~ 0
-3V3_RAW
-Text Label 8500 3150 0    60   ~ 0
-3V3
-Text Label 9050 1550 0    60   ~ 0
-1V0_EN
 Wire Wire Line
 	9050 1550 8800 1550
 Wire Wire Line
@@ -925,148 +1119,32 @@ Wire Wire Line
 Wire Wire Line
 	5250 1650 6950 1650
 Connection ~ 5450 1650
-Text Label 6950 1650 2    60   ~ 0
-1V0_SENSE
-Text Label 5450 1150 0    60   ~ 0
-1V0
-Text Label 5250 1150 2    60   ~ 0
-GND
-Text Label 9050 1650 0    60   ~ 0
-1V8_EN
 Wire Wire Line
 	8800 1650 9500 1650
-Text Label 6950 1750 2    60   ~ 0
-1V8_SENSE
-$Comp
-L R R82
-U 1 1 52A610EA
-P 4900 1500
-F 0 "R82" V 4980 1500 50  0000 C CNN
-F 1 "R" V 4900 1500 50  0000 C CNN
-	1    4900 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R81
-U 1 1 52A610F0
-P 4700 1500
-F 0 "R81" V 4780 1500 50  0000 C CNN
-F 1 "R" V 4700 1500 50  0000 C CNN
-	1    4700 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 1750 6950 1750
 Connection ~ 4900 1750
-Text Label 4700 1250 2    60   ~ 0
-GND
-Text Label 4900 1250 0    60   ~ 0
-1V8
-Text Label 9050 1750 0    60   ~ 0
-3V3_EN
 Wire Wire Line
 	8800 1750 9750 1750
-Text Label 6950 1850 2    60   ~ 0
-3V3_SENSE
-$Comp
-L R R75
-U 1 1 52A6134C
-P 4400 1600
-F 0 "R75" V 4480 1600 50  0000 C CNN
-F 1 "R" V 4400 1600 50  0000 C CNN
-	1    4400 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R74
-U 1 1 52A61352
-P 4200 1600
-F 0 "R74" V 4280 1600 50  0000 C CNN
-F 1 "R" V 4200 1600 50  0000 C CNN
-	1    4200 1600
-	1    0    0    -1  
-$EndComp
-Text Label 4400 1350 0    60   ~ 0
-3V3
-Text Label 4200 1350 2    60   ~ 0
-GND
 Wire Wire Line
 	4200 1850 6950 1850
 Connection ~ 4400 1850
-$Comp
-L MOS_N Q1
-U 1 1 52A61EC6
-P 7500 3150
-F 0 "Q1" H 7510 3320 60  0000 R CNN
-F 1 "SI2304DDS-T1-GE3" H 7250 3350 60  0000 R CNN
-	1    7500 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L MOS_P Q2
-U 1 1 52A61ED5
-P 8200 2950
-F 0 "Q2" H 8200 3140 60  0000 R CNN
-F 1 "AO3415" H 8200 2770 60  0000 R CNN
-	1    8200 2950
-	1    0    0    1   
-$EndComp
-$Comp
-L R R87
-U 1 1 52A61EE2
-P 9050 1300
-F 0 "R87" V 9130 1300 50  0000 C CNN
-F 1 "10K" V 9050 1300 50  0000 C CNN
-	1    9050 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 1050 9750 1050
 Connection ~ 6950 1050
 Connection ~ 8800 1050
-$Comp
-L R R88
-U 1 1 52A62221
-P 9500 1400
-F 0 "R88" V 9580 1400 50  0000 C CNN
-F 1 "10K" V 9500 1400 50  0000 C CNN
-	1    9500 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 1050 9500 1150
 Connection ~ 9050 1050
-$Comp
-L R R89
-U 1 1 52A623BF
-P 9750 1500
-F 0 "R89" V 9830 1500 50  0000 C CNN
-F 1 "10K" V 9750 1500 50  0000 C CNN
-	1    9750 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9750 1050 9750 1250
 Connection ~ 9500 1050
-Text Label 7100 3150 2    60   ~ 0
-3V3_EN
-Text Label 7100 3350 2    60   ~ 0
-GND
 Wire Wire Line
 	7100 3350 7600 3350
 Wire Wire Line
 	7100 3150 7300 3150
 Wire Wire Line
 	7600 2950 8000 2950
-$Comp
-L R R86
-U 1 1 52A6461A
-P 7600 2700
-F 0 "R86" V 7680 2700 50  0000 C CNN
-F 1 "1K" V 7600 2700 50  0000 C CNN
-	1    7600 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7300 2450 8300 2450
 Wire Wire Line
@@ -1076,62 +1154,48 @@ Wire Wire Line
 	8300 3150 8500 3150
 Wire Wire Line
 	8500 3150 8500 3000
-$Comp
-L TC1185 U18
-U 1 1 52A55B65
-P 2450 3850
-F 0 "U18" H 2600 3800 60  0000 C CNN
-F 1 "TC1185" H 2700 3700 60  0000 C CNN
-	1    2450 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 3600 3150 3600
 Wire Wire Line
 	1100 3600 1100 3750
-Text Label 1800 3700 2    60   ~ 0
-1V8_EN
-$Comp
-L C C9
-U 1 1 52A56335
-P 3150 3950
-F 0 "C9" H 3200 4050 50  0000 L CNN
-F 1 "470 pF" H 3200 3850 50  0000 L CNN
-	1    3150 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 3700 3150 3750
-$Comp
-L LMZ10503 U21
-U 1 1 52A5709B
-P 2750 5200
-F 0 "U21" H 2750 5100 60  0000 C CNN
-F 1 "LMZ10503" H 2750 5000 60  0000 C CNN
-	1    2750 5200
-	1    0    0    -1  
-$EndComp
 Connection ~ 3150 4150
 Wire Wire Line
-	3350 4800 4050 4800
-Wire Wire Line
-	3800 4800 3800 4850
-Connection ~ 3800 4800
+	3350 4800 4300 4800
 Wire Wire Line
 	3350 4900 3450 4900
 Wire Wire Line
 	3450 4900 3450 4800
 Connection ~ 3450 4800
 Wire Wire Line
-	2050 4800 1450 4800
+	1100 4800 2050 4800
 Wire Wire Line
-	1450 4800 1450 4850
-Wire Wire Line
-	2050 5100 2050 5250
-Connection ~ 2050 5250
+	2050 5250 2050 5100
 Connection ~ 2050 5200
-Text Label 2050 4900 2    60   ~ 0
-1V0_EN
-Text Notes 4950 4950 0    60   ~ 0
-TODO: LMZ10503 caps
+Wire Wire Line
+	1100 5250 2050 5250
+Wire Wire Line
+	1100 4850 1100 4800
+Wire Wire Line
+	1450 4850 1650 4850
+Wire Wire Line
+	1650 4850 1650 5000
+Wire Wire Line
+	1650 5000 2050 5000
+Wire Wire Line
+	3450 5000 3350 5000
+Wire Wire Line
+	4300 5200 4800 5200
+Wire Wire Line
+	4300 4800 4300 4200
+Wire Wire Line
+	4300 4200 5900 4200
+Text Label 4800 4700 0    60   ~ 0
+LMZ_FEEDBACK
+Wire Wire Line
+	5400 4700 4800 4700
+Wire Wire Line
+	5900 4200 5900 4300
+Connection ~ 4800 4200
 $EndSCHEMATC
