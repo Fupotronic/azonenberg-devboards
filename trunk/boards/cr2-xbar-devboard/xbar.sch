@@ -41,11 +41,11 @@ LIBS:xilinx-azonenberg
 LIBS:cr2-xbar-devboard-cache
 EELAYER 27 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CoolRunner-II X-Bar Dev Board"
-Date "6 apr 2014"
+Date ""
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 ""
@@ -53,10 +53,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 6450 1850 1700 2250
-U 53418DCC
-F0 "X-bar" 60
-F1 "xbar.sch" 60
-$EndSheet
 $EndSCHEMATC
