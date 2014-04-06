@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 08 Dec 2013 11:35:31 PM EST
+EESchema Schematic File Version 2  date Mon 09 Dec 2013 07:16:27 AM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -773,7 +773,7 @@ Wire Wire Line
 Wire Wire Line
 	13150 8250 13250 8250
 Wire Wire Line
-	3250 1900 3250 3250
+	3250 800  3250 3250
 Wire Wire Line
 	13150 8150 13250 8150
 Connection ~ 3250 3000
@@ -1048,5 +1048,18 @@ F 1 "49.9" V 1500 1100 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1250 1100 1250 1200
+	1250 800  1250 1200
+$Comp
+L R R91
+U 1 1 52A58939
+P 1500 800
+F 0 "R91" V 1580 800 50  0000 C CNN
+F 1 "10K" V 1500 800 50  0000 C CNN
+	1    1500 800 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1250 1100
+Wire Wire Line
+	1750 800  3250 800 
+Connection ~ 3250 1900
 $EndSCHEMATC
