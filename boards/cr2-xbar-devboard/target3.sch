@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 01:51:09 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -156,21 +156,12 @@ NoConn ~ 3950 4100
 NoConn ~ 3950 4200
 NoConn ~ 3950 4300
 NoConn ~ 3950 4400
-NoConn ~ 3950 4500
 NoConn ~ 3950 4600
 NoConn ~ 3950 1600
 NoConn ~ 3950 1800
 NoConn ~ 3950 1900
 NoConn ~ 3950 2000
 NoConn ~ 3950 2100
-NoConn ~ 3950 2200
-NoConn ~ 3950 2300
-NoConn ~ 3950 2400
-NoConn ~ 3950 2500
-NoConn ~ 3950 2600
-NoConn ~ 3950 2700
-NoConn ~ 3950 2800
-NoConn ~ 3950 2900
 NoConn ~ 3950 3000
 NoConn ~ 3950 3100
 NoConn ~ 3950 3200
@@ -335,21 +326,21 @@ Text Label 8100 1800 2    60   ~ 0
 TARGET3_PMOD6
 Text Label 8100 1900 2    60   ~ 0
 TARGET3_PMOD7
-Text Label 5900 1900 2    60   ~ 0
+Text Label 3850 2200 2    60   ~ 0
 TARGET3_PMOD0
-Text Label 5900 2000 2    60   ~ 0
+Text Label 3850 2400 2    60   ~ 0
 TARGET3_PMOD1
-Text Label 5900 2100 2    60   ~ 0
+Text Label 3850 2600 2    60   ~ 0
 TARGET3_PMOD2
-Text Label 5900 2200 2    60   ~ 0
+Text Label 3850 2900 2    60   ~ 0
 TARGET3_PMOD3
-Text Label 5900 2300 2    60   ~ 0
+Text Label 3850 2300 2    60   ~ 0
 TARGET3_PMOD4
-Text Label 5900 2400 2    60   ~ 0
+Text Label 3850 2500 2    60   ~ 0
 TARGET3_PMOD5
-Text Label 5900 2500 2    60   ~ 0
+Text Label 3850 2700 2    60   ~ 0
 TARGET3_PMOD6
-Text Label 5900 2600 2    60   ~ 0
+Text Label 3850 2800 2    60   ~ 0
 TARGET3_PMOD7
 $Comp
 L XC2CYYY-VQG100 U10
@@ -360,22 +351,6 @@ F 1 "XC2C256-7VQG100C" H 6750 750 60  0000 C CNN
 	2    6300 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 1900 6000 1900
-Wire Wire Line
-	6000 2000 5900 2000
-Wire Wire Line
-	5900 2100 6000 2100
-Wire Wire Line
-	6000 2200 5900 2200
-Wire Wire Line
-	5900 2300 6000 2300
-Wire Wire Line
-	6000 2400 5900 2400
-Wire Wire Line
-	5900 2500 6000 2500
-Wire Wire Line
-	6000 2600 5900 2600
 $Comp
 L R R36
 U 1 1 53425D6F
@@ -462,10 +437,8 @@ Wire Wire Line
 	9150 2350 9150 3250
 Connection ~ 9150 2650
 Connection ~ 9150 2950
-Text Label 3800 4700 2    60   ~ 0
+Text Label 3800 4500 2    60   ~ 0
 TARGET3_LED0
-Wire Wire Line
-	3800 4700 3950 4700
 Text Label 3800 4800 2    60   ~ 0
 TARGET3_LED1
 Text Label 3800 4900 2    60   ~ 0
@@ -482,4 +455,31 @@ Text HLabel 3800 1700 0    60   Input ~ 0
 TARGET3_GPIO_SW
 Wire Wire Line
 	3800 1700 3950 1700
+NoConn ~ 6000 2600
+NoConn ~ 6000 2500
+NoConn ~ 6000 2400
+NoConn ~ 6000 2300
+NoConn ~ 6000 2200
+NoConn ~ 6000 2100
+NoConn ~ 6000 2000
+NoConn ~ 6000 1900
+Wire Wire Line
+	3850 2900 3950 2900
+Wire Wire Line
+	3950 2800 3850 2800
+Wire Wire Line
+	3850 2700 3950 2700
+Wire Wire Line
+	3950 2600 3850 2600
+Wire Wire Line
+	3850 2500 3950 2500
+Wire Wire Line
+	3950 2400 3850 2400
+Wire Wire Line
+	3850 2300 3950 2300
+Wire Wire Line
+	3950 2200 3850 2200
+NoConn ~ 3950 4700
+Wire Wire Line
+	3800 4500 3950 4500
 $EndSCHEMATC

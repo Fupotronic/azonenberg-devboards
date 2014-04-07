@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:38 PM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 01:51:09 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -73,15 +73,7 @@ NoConn ~ 4800 2350
 NoConn ~ 4800 2450
 NoConn ~ 4800 2550
 NoConn ~ 4800 2650
-NoConn ~ 4800 2850
-NoConn ~ 4800 3750
-NoConn ~ 4800 3850
 NoConn ~ 2800 2950
-NoConn ~ 2800 3150
-NoConn ~ 2800 3250
-NoConn ~ 2800 3350
-NoConn ~ 2800 3450
-NoConn ~ 2800 3950
 $Comp
 L C C33
 U 1 1 5343DD52
@@ -157,30 +149,18 @@ Wire Wire Line
 	5150 1450 6200 1450
 Connection ~ 5850 1450
 Connection ~ 5550 1450
-Text HLabel 2650 2350 0    60   BiDi ~ 0
+Text HLabel 4900 2850 2    60   BiDi ~ 0
 TARGET0_GPIO0
-Text HLabel 2650 2450 0    60   BiDi ~ 0
+Text HLabel 4900 2950 2    60   BiDi ~ 0
 TARGET0_GPIO1
-Text HLabel 2650 2550 0    60   BiDi ~ 0
+Text HLabel 4900 3050 2    60   BiDi ~ 0
 TARGET0_GPIO2
-Text HLabel 2650 2650 0    60   BiDi ~ 0
+Text HLabel 4900 3150 2    60   BiDi ~ 0
 TARGET0_GPIO3
-Text HLabel 2650 2750 0    60   BiDi ~ 0
+Text HLabel 4900 3250 2    60   BiDi ~ 0
 TARGET0_GPIO4
-Text HLabel 2650 2850 0    60   BiDi ~ 0
+Text HLabel 4900 3350 2    60   BiDi ~ 0
 TARGET0_GPIO5
-Wire Wire Line
-	2650 2850 2800 2850
-Wire Wire Line
-	2800 2750 2650 2750
-Wire Wire Line
-	2650 2650 2800 2650
-Wire Wire Line
-	2800 2550 2650 2550
-Wire Wire Line
-	2650 2450 2800 2450
-Wire Wire Line
-	2800 2350 2650 2350
 $Comp
 L CONN_12 P1
 U 1 1 53422788
@@ -214,38 +194,26 @@ Text Label 6950 3200 2    60   ~ 0
 TARGET0_PMOD6
 Text Label 6950 3300 2    60   ~ 0
 TARGET0_PMOD7
-Text Label 4900 2950 0    60   ~ 0
+Text Label 2650 3550 2    60   ~ 0
 TARGET0_PMOD0
-Text Label 4900 3050 0    60   ~ 0
+Text Label 2650 3750 2    60   ~ 0
 TARGET0_PMOD1
-Text Label 4900 3150 0    60   ~ 0
+Text Label 4900 3850 0    60   ~ 0
 TARGET0_PMOD2
-Text Label 4900 3250 0    60   ~ 0
-TARGET0_PMOD3
-Text Label 4900 3350 0    60   ~ 0
-TARGET0_PMOD4
-Text Label 4900 3450 0    60   ~ 0
-TARGET0_PMOD5
-Text Label 4900 3550 0    60   ~ 0
-TARGET0_PMOD6
 Text Label 4900 3650 0    60   ~ 0
+TARGET0_PMOD3
+Text Label 2650 3650 2    60   ~ 0
+TARGET0_PMOD4
+Text Label 2650 3850 2    60   ~ 0
+TARGET0_PMOD5
+Text Label 4900 3750 0    60   ~ 0
+TARGET0_PMOD6
+Text Label 4900 3550 0    60   ~ 0
 TARGET0_PMOD7
 Wire Wire Line
 	4900 3650 4800 3650
 Wire Wire Line
 	4800 3550 4900 3550
-Wire Wire Line
-	4900 3450 4800 3450
-Wire Wire Line
-	4800 3350 4900 3350
-Wire Wire Line
-	4900 3250 4800 3250
-Wire Wire Line
-	4800 3150 4900 3150
-Wire Wire Line
-	4900 3050 4800 3050
-Wire Wire Line
-	4800 2950 4900 2950
 $Comp
 L R R24
 U 1 1 534247EB
@@ -332,6 +300,29 @@ Wire Wire Line
 	7450 4250 7450 5150
 Connection ~ 7450 4550
 Connection ~ 7450 4850
+Text Label 2650 3150 2    60   ~ 0
+TARGET0_LED0
+Wire Wire Line
+	2650 3550 2800 3550
+Text Label 2650 3250 2    60   ~ 0
+TARGET0_LED1
+Text Label 2650 3350 2    60   ~ 0
+TARGET0_LED2
+Text Label 2650 3450 2    60   ~ 0
+TARGET0_LED3
+Wire Wire Line
+	2650 3850 2800 3850
+Wire Wire Line
+	2800 3750 2650 3750
+Wire Wire Line
+	2650 3650 2800 3650
+Text HLabel 2650 3950 0    60   Input ~ 0
+TARGET0_GPIO_SW
+Wire Wire Line
+	4800 3750 4900 3750
+Wire Wire Line
+	4900 3850 4800 3850
+NoConn ~ 4800 3450
 $Comp
 L XC2CXXA-VQG44 U7
 U 1 1 5343DB25
@@ -341,24 +332,33 @@ F 1 "XC2C32A-6VQG44C" H 3800 2050 60  0000 C CNN
 	1    3750 2850
 	1    0    0    -1  
 $EndComp
-Text Label 2650 3550 2    60   ~ 0
-TARGET0_LED0
 Wire Wire Line
-	2650 3550 2800 3550
-Text Label 2650 3650 2    60   ~ 0
-TARGET0_LED1
-Text Label 2650 3750 2    60   ~ 0
-TARGET0_LED2
-Text Label 2650 3850 2    60   ~ 0
-TARGET0_LED3
+	2650 3150 2800 3150
 Wire Wire Line
-	2650 3850 2800 3850
+	2800 3250 2650 3250
 Wire Wire Line
-	2800 3750 2650 3750
+	2650 3350 2800 3350
 Wire Wire Line
-	2650 3650 2800 3650
-Text HLabel 2650 3050 0    60   Input ~ 0
-TARGET0_GPIO_SW
+	2800 3450 2650 3450
 Wire Wire Line
-	2650 3050 2800 3050
+	2650 3950 2800 3950
+NoConn ~ 2800 3050
+Wire Wire Line
+	4900 2850 4800 2850
+Wire Wire Line
+	4900 2950 4800 2950
+Wire Wire Line
+	4900 3050 4800 3050
+Wire Wire Line
+	4900 3150 4800 3150
+Wire Wire Line
+	4900 3250 4800 3250
+Wire Wire Line
+	4900 3350 4800 3350
+NoConn ~ 2800 2850
+NoConn ~ 2800 2750
+NoConn ~ 2800 2650
+NoConn ~ 2800 2550
+NoConn ~ 2800 2450
+NoConn ~ 2800 2350
 $EndSCHEMATC
