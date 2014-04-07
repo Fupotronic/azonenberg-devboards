@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 01:51:09 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -269,14 +269,6 @@ NoConn ~ 3950 1700
 NoConn ~ 3950 1800
 NoConn ~ 3950 1900
 NoConn ~ 3950 2000
-NoConn ~ 3950 2100
-NoConn ~ 3950 2200
-NoConn ~ 3950 2300
-NoConn ~ 3950 2400
-NoConn ~ 3950 2500
-NoConn ~ 3950 2600
-NoConn ~ 3950 2700
-NoConn ~ 3950 2800
 NoConn ~ 3950 2900
 Text HLabel 3850 900  0    60   BiDi ~ 0
 TARGET2_GPIO0
@@ -335,38 +327,22 @@ Text Label 8650 2250 2    60   ~ 0
 TARGET2_PMOD6
 Text Label 8650 2350 2    60   ~ 0
 TARGET2_PMOD7
-Text Label 6000 1800 2    60   ~ 0
+Text Label 3850 2100 2    60   ~ 0
 TARGET2_PMOD0
-Text Label 6000 1900 2    60   ~ 0
+Text Label 3850 2300 2    60   ~ 0
 TARGET2_PMOD1
-Text Label 6000 2000 2    60   ~ 0
+Text Label 3850 2500 2    60   ~ 0
 TARGET2_PMOD2
-Text Label 6000 2100 2    60   ~ 0
+Text Label 3850 2700 2    60   ~ 0
 TARGET2_PMOD3
-Text Label 6000 2200 2    60   ~ 0
+Text Label 3850 2200 2    60   ~ 0
 TARGET2_PMOD4
-Text Label 6000 2300 2    60   ~ 0
+Text Label 3850 2400 2    60   ~ 0
 TARGET2_PMOD5
-Text Label 6000 2400 2    60   ~ 0
+Text Label 3850 2600 2    60   ~ 0
 TARGET2_PMOD6
-Text Label 6000 2500 2    60   ~ 0
+Text Label 3850 2800 2    60   ~ 0
 TARGET2_PMOD7
-Wire Wire Line
-	6000 2500 6100 2500
-Wire Wire Line
-	6100 2400 6000 2400
-Wire Wire Line
-	6000 2300 6100 2300
-Wire Wire Line
-	6100 2200 6000 2200
-Wire Wire Line
-	6000 2100 6100 2100
-Wire Wire Line
-	6100 2000 6000 2000
-Wire Wire Line
-	6000 1900 6100 1900
-Wire Wire Line
-	6100 1800 6000 1800
 $Comp
 L R R32
 U 1 1 5342561F
@@ -469,6 +445,22 @@ Wire Wire Line
 	3950 4800 3800 4800
 Wire Wire Line
 	3800 4700 3950 4700
+Text HLabel 3850 1600 0    60   Input ~ 0
+TARGET2_GPIO_SW
+Wire Wire Line
+	3850 1600 3950 1600
+Wire Wire Line
+	3850 2100 3950 2100
+NoConn ~ 6100 2500
+NoConn ~ 6100 2400
+NoConn ~ 6100 2300
+NoConn ~ 6100 2200
+NoConn ~ 6100 2100
+NoConn ~ 6100 2000
+NoConn ~ 6100 1900
+NoConn ~ 6100 1800
+Wire Wire Line
+	3850 2200 3950 2200
 $Comp
 L XC2CYYY-VQG100 U9
 U 1 1 5341E72B
@@ -478,8 +470,16 @@ F 1 "XC2C128-7VQG100C" H 4700 650 60  0000 C CNN
 	1    4250 2900
 	1    0    0    -1  
 $EndComp
-Text HLabel 3850 1600 0    60   Input ~ 0
-TARGET2_GPIO_SW
 Wire Wire Line
-	3850 1600 3950 1600
+	3850 2300 3950 2300
+Wire Wire Line
+	3950 2400 3850 2400
+Wire Wire Line
+	3850 2500 3950 2500
+Wire Wire Line
+	3950 2600 3850 2600
+Wire Wire Line
+	3950 2700 3850 2700
+Wire Wire Line
+	3850 2800 3950 2800
 $EndSCHEMATC

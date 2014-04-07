@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 01:51:09 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -276,7 +276,7 @@ Text Label 1900 3350 2    60   ~ 0
 TARGET1_LED2
 Text Label 1900 3450 2    60   ~ 0
 TARGET1_LED3
-Text HLabel 1950 2650 0    60   Input ~ 0
+Text HLabel 4200 3050 2    60   Input ~ 0
 TARGET1_GPIO_SW
 Wire Wire Line
 	1950 1350 2050 1350
@@ -334,8 +334,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 3250 2050 3250
 Wire Wire Line
-	1950 2650 2050 2650
-Wire Wire Line
 	4050 2450 4200 2450
 Wire Wire Line
 	4200 2250 4050 2250
@@ -356,7 +354,9 @@ NoConn ~ 4050 2650
 NoConn ~ 4050 2750
 NoConn ~ 4050 2850
 NoConn ~ 4050 2950
-NoConn ~ 4050 3050
 NoConn ~ 4050 3150
 NoConn ~ 4050 3250
+Wire Wire Line
+	4200 3050 4050 3050
+NoConn ~ 2050 2650
 $EndSCHEMATC
