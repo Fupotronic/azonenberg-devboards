@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 06:22:20 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 08:57:47 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,9 +43,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "6 apr 2014"
+Date "7 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "TARGET1: XC2C64A"
@@ -99,12 +99,6 @@ Connection ~ 3050 700
 Wire Wire Line
 	2700 4150 3100 4150
 Connection ~ 3000 4150
-NoConn ~ 2050 1950
-NoConn ~ 2050 2050
-NoConn ~ 2050 2150
-NoConn ~ 2050 2250
-NoConn ~ 2050 2350
-NoConn ~ 2050 2450
 NoConn ~ 2050 2550
 NoConn ~ 2050 2650
 NoConn ~ 2050 2750
@@ -183,4 +177,28 @@ Connection ~ 4450 1150
 Connection ~ 2900 4150
 Wire Wire Line
 	3150 700  3150 800 
+Text HLabel 1950 1950 0    60   BiDi ~ 0
+TARGET1_GPIO0
+Text HLabel 1950 2050 0    60   BiDi ~ 0
+TARGET1_GPIO1
+Text HLabel 1950 2150 0    60   BiDi ~ 0
+TARGET1_GPIO2
+Text HLabel 1950 2250 0    60   BiDi ~ 0
+TARGET1_GPIO3
+Text HLabel 1950 2350 0    60   BiDi ~ 0
+TARGET1_GPIO4
+Text HLabel 1950 2450 0    60   BiDi ~ 0
+TARGET1_GPIO5
+Wire Wire Line
+	1950 2450 2050 2450
+Wire Wire Line
+	2050 2350 1950 2350
+Wire Wire Line
+	1950 2250 2050 2250
+Wire Wire Line
+	2050 2150 1950 2150
+Wire Wire Line
+	1950 2050 2050 2050
+Wire Wire Line
+	2050 1950 1950 1950
 $EndSCHEMATC

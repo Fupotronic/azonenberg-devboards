@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 06:22:19 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 08:57:48 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,9 +43,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 7 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "6 apr 2014"
+Date "7 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "JTAG crossbar"
@@ -67,63 +67,54 @@ Text HLabel 1300 800  0    60   Input ~ 0
 XBAR_TCK
 Text HLabel 1300 1100 0    60   Input ~ 0
 XBAR_TMS
-Text HLabel 5800 1100 0    60   Input ~ 0
+Text HLabel 3650 4000 0    60   Input ~ 0
 JTAG0_TDI
-Text HLabel 5800 1200 0    60   Output ~ 0
+Text HLabel 3650 4100 0    60   Output ~ 0
 JTAG0_TDO
-Text HLabel 5800 1000 0    60   Input ~ 0
+Text HLabel 3650 3900 0    60   Input ~ 0
 JTAG0_TMS
 Text HLabel 5800 1400 0    60   Input ~ 0
 JTAG0_TCK
-Text HLabel 5800 1900 0    60   Input ~ 0
+Text HLabel 3650 3700 0    60   Input ~ 0
 JTAG1_TDI
-Text HLabel 5800 2000 0    60   Output ~ 0
+Text HLabel 3650 3800 0    60   Output ~ 0
 JTAG1_TDO
-Text HLabel 5800 1800 0    60   Input ~ 0
+Text HLabel 3650 3600 0    60   Input ~ 0
 JTAG1_TMS
 Text HLabel 5800 1500 0    60   Input ~ 0
 JTAG1_TCK
-Text HLabel 3650 2600 0    60   Output ~ 0
+Text HLabel 3650 1400 0    60   Output ~ 0
 TARGET0_TDI
-Text HLabel 3650 2700 0    60   Input ~ 0
+Text HLabel 3650 1500 0    60   Input ~ 0
 TARGET0_TDO
-Text HLabel 3650 2100 0    60   Output ~ 0
+Text HLabel 3650 1200 0    60   Output ~ 0
 TARGET0_TMS
-Text HLabel 3650 2400 0    60   Output ~ 0
+Text HLabel 3650 1300 0    60   Output ~ 0
 TARGET0_TCK
-Text HLabel 3650 3200 0    60   Output ~ 0
+Text HLabel 3650 1800 0    60   Output ~ 0
 TARGET1_TDI
-Text HLabel 3650 3300 0    60   Input ~ 0
+Text HLabel 3650 1900 0    60   Input ~ 0
 TARGET1_TDO
-Text HLabel 3650 2800 0    60   Output ~ 0
+Text HLabel 3650 1600 0    60   Output ~ 0
 TARGET1_TMS
-Text HLabel 3650 3100 0    60   Output ~ 0
+Text HLabel 3650 1700 0    60   Output ~ 0
 TARGET1_TCK
-Text HLabel 3650 3700 0    60   Output ~ 0
+Text HLabel 3650 2200 0    60   Output ~ 0
 TARGET2_TDI
-Text HLabel 3650 3800 0    60   Input ~ 0
+Text HLabel 3650 2300 0    60   Input ~ 0
 TARGET2_TDO
-Text HLabel 3650 3400 0    60   Output ~ 0
+Text HLabel 3650 2000 0    60   Output ~ 0
 TARGET2_TMS
-Text HLabel 3650 3500 0    60   Output ~ 0
+Text HLabel 3650 2100 0    60   Output ~ 0
 TARGET2_TCK
-Text HLabel 3650 4100 0    60   Output ~ 0
+Text HLabel 3650 2600 0    60   Output ~ 0
 TARGET3_TDI
-Text HLabel 3650 4300 0    60   Input ~ 0
+Text HLabel 3650 2700 0    60   Input ~ 0
 TARGET3_TDO
-Text HLabel 3650 3900 0    60   Output ~ 0
+Text HLabel 3650 2400 0    60   Output ~ 0
 TARGET3_TMS
-Text HLabel 3650 4000 0    60   Output ~ 0
+Text HLabel 3650 2500 0    60   Output ~ 0
 TARGET3_TCK
-$Comp
-L XC2CYYY-VQG100 U1
-U 1 1 53419048
-P 4100 2800
-F 0 "U1" H 4500 650 60  0000 C CNN
-F 1 "XC2C128-7VQG100" H 4550 550 60  0000 C CNN
-	1    4100 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L XC2CYYY-VQG100 U1
 U 3 1 534190E5
@@ -137,29 +128,6 @@ Text Label 1300 1800 2    60   ~ 0
 VCCIO
 Text HLabel 5800 1700 0    60   Output ~ 0
 CLK_2048KHZ
-NoConn ~ 5900 1600
-NoConn ~ 5900 1300
-NoConn ~ 5900 900 
-NoConn ~ 5900 800 
-NoConn ~ 5900 2100
-NoConn ~ 3800 4800
-NoConn ~ 3800 4700
-NoConn ~ 3800 4600
-NoConn ~ 3800 4500
-NoConn ~ 3800 4400
-NoConn ~ 3800 4200
-NoConn ~ 3800 1200
-NoConn ~ 3800 1300
-NoConn ~ 3800 1400
-NoConn ~ 3800 1500
-NoConn ~ 3800 1600
-NoConn ~ 3800 1700
-NoConn ~ 3800 1800
-NoConn ~ 3800 1900
-NoConn ~ 3800 2000
-NoConn ~ 5900 3700
-NoConn ~ 5900 4200
-NoConn ~ 5900 4300
 Text HLabel 3650 800  0    60   Input ~ 0
 XBAR_CS_N
 Text HLabel 3650 1000 0    60   Input ~ 0
@@ -240,43 +208,43 @@ TARGET3_SRC_2
 NoConn ~ 9750 3350
 NoConn ~ 9750 2500
 NoConn ~ 9750 3450
-Text Label 5800 2400 2    60   ~ 0
+Text Label 3650 4400 2    60   ~ 0
 JTAG0_SRC_0
-Text Label 5800 2300 2    60   ~ 0
+Text Label 3650 4300 2    60   ~ 0
 JTAG0_SRC_1
-Text Label 5800 2200 2    60   ~ 0
+Text Label 3650 4200 2    60   ~ 0
 JTAG0_SRC_2
-Text Label 5800 2700 2    60   ~ 0
+Text Label 3650 4700 2    60   ~ 0
 JTAG1_SRC_0
-Text Label 5800 2600 2    60   ~ 0
+Text Label 3650 4600 2    60   ~ 0
 JTAG1_SRC_1
-Text Label 5800 2500 2    60   ~ 0
+Text Label 3650 4500 2    60   ~ 0
 JTAG1_SRC_2
-Text Label 5800 2800 2    60   ~ 0
+Text Label 3650 4800 2    60   ~ 0
 SPI_MODE_EN
-Text Label 5800 3400 2    60   ~ 0
+Text Label 5800 1000 2    60   ~ 0
 TARGET0_SRC_0
-Text Label 5800 3200 2    60   ~ 0
+Text Label 5800 900  2    60   ~ 0
 TARGET0_SRC_1
-Text Label 5800 3100 2    60   ~ 0
+Text Label 5800 800  2    60   ~ 0
 TARGET0_SRC_2
-Text Label 5800 3900 2    60   ~ 0
+Text Label 5800 1600 2    60   ~ 0
 TARGET1_SRC_0
-Text Label 5800 3600 2    60   ~ 0
+Text Label 5800 1200 2    60   ~ 0
 TARGET1_SRC_1
-Text Label 5800 3500 2    60   ~ 0
+Text Label 5800 1100 2    60   ~ 0
 TARGET1_SRC_2
-Text Label 5800 4100 2    60   ~ 0
+Text Label 5800 1900 2    60   ~ 0
 TARGET2_SRC_0
-Text Label 5800 4000 2    60   ~ 0
+Text Label 5800 1800 2    60   ~ 0
 TARGET2_SRC_1
-Text Label 5800 3800 2    60   ~ 0
+Text Label 5800 1300 2    60   ~ 0
 TARGET2_SRC_2
-Text Label 5800 4600 2    60   ~ 0
+Text Label 5800 2200 2    60   ~ 0
 TARGET3_SRC_0
-Text Label 5800 4500 2    60   ~ 0
+Text Label 5800 2100 2    60   ~ 0
 TARGET3_SRC_1
-Text Label 5800 4400 2    60   ~ 0
+Text Label 5800 2000 2    60   ~ 0
 TARGET3_SRC_2
 Wire Wire Line
 	1300 800  1450 800 
@@ -442,17 +410,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 4500 5900 4500
 Wire Wire Line
-	5900 4600 5800 4600
-$Comp
-L XC2CYYY-VQG100 U1
-U 2 1 534190CE
-P 6200 2800
-F 0 "U1" H 6600 650 60  0000 C CNN
-F 1 "XC2C128-7VQG100" H 6650 550 60  0000 C CNN
-	2    6200 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	5800 4100 5900 4100
 Wire Wire Line
 	5900 4000 5800 4000
@@ -460,21 +417,12 @@ Wire Wire Line
 	5800 3900 5900 3900
 Wire Wire Line
 	5900 3800 5800 3800
-NoConn ~ 5900 3300
 Wire Wire Line
 	5800 3500 5900 3500
 Wire Wire Line
 	5900 3600 5800 3600
-NoConn ~ 5900 3000
-NoConn ~ 5900 2900
-NoConn ~ 3800 3600
 Wire Wire Line
 	3650 3800 3800 3800
-NoConn ~ 3800 2200
-NoConn ~ 3800 2300
-NoConn ~ 3800 2500
-NoConn ~ 3800 2900
-NoConn ~ 3800 3000
 Wire Wire Line
 	3650 3700 3800 3700
 Wire Wire Line
@@ -488,138 +436,752 @@ Wire Wire Line
 $Comp
 L OSC U6
 U 1 1 5343447A
-P 9500 6350
-F 0 "U6" H 9500 6350 60  0000 C CNN
-F 1 "2.048 MHz" H 9500 6500 60  0000 C CNN
-	1    9500 6350
+P 10150 4300
+F 0 "U6" H 10150 4300 60  0000 C CNN
+F 1 "2.048 MHz" H 10150 4450 60  0000 C CNN
+	1    10150 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C24
 U 1 1 53434498
-P 8450 6350
-F 0 "C24" H 8500 6450 50  0000 L CNN
-F 1 "0.1 uF" H 8500 6250 50  0000 L CNN
-	1    8450 6350
+P 9100 4300
+F 0 "C24" H 9150 4400 50  0000 L CNN
+F 1 "0.1 uF" H 9150 4200 50  0000 L CNN
+	1    9100 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R8
 U 1 1 534344B6
-P 10150 6100
-F 0 "R8" V 10230 6100 50  0000 C CNN
-F 1 "49.9" V 10150 6100 50  0000 C CNN
-	1    10150 6100
+P 10800 4050
+F 0 "R8" V 10880 4050 50  0000 C CNN
+F 1 "49.9" V 10800 4050 50  0000 C CNN
+	1    10800 4050
 	1    0    0    -1  
 $EndComp
-Text Label 10150 5850 0    60   ~ 0
+Text Label 10800 3800 2    60   ~ 0
 CLK_2048KHZ
 Wire Wire Line
-	8450 6150 8800 6150
+	9100 4100 9450 4100
 Wire Wire Line
-	8800 6150 8800 6450
-Connection ~ 8800 6350
+	9450 4100 9450 4400
+Connection ~ 9450 4300
 Wire Wire Line
-	8300 6550 8800 6550
-Text Label 8800 6150 0    60   ~ 0
+	8950 4500 9450 4500
+Text Label 9450 4100 0    60   ~ 0
 VCCIO
-Text Label 8300 6550 2    60   ~ 0
+Text Label 8950 4500 2    60   ~ 0
 GND
-Connection ~ 8450 6550
+Connection ~ 9100 4500
 $Comp
 L C C25
 U 1 1 5343844C
-P 1650 6050
-F 0 "C25" H 1700 6150 50  0000 L CNN
-F 1 "0.1 uF" H 1700 5950 50  0000 L CNN
-	1    1650 6050
+P 8600 6550
+F 0 "C25" H 8650 6650 50  0000 L CNN
+F 1 "0.1 uF" H 8650 6450 50  0000 L CNN
+	1    8600 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C26
 U 1 1 53438452
-P 1950 6050
-F 0 "C26" H 2000 6150 50  0000 L CNN
-F 1 "0.1 uF" H 2000 5950 50  0000 L CNN
-	1    1950 6050
+P 8900 6550
+F 0 "C26" H 8950 6650 50  0000 L CNN
+F 1 "0.1 uF" H 8950 6450 50  0000 L CNN
+	1    8900 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C27
 U 1 1 53438458
-P 2250 6050
-F 0 "C27" H 2300 6150 50  0000 L CNN
-F 1 "0.1 uF" H 2300 5950 50  0000 L CNN
-	1    2250 6050
+P 9200 6550
+F 0 "C27" H 9250 6650 50  0000 L CNN
+F 1 "0.1 uF" H 9250 6450 50  0000 L CNN
+	1    9200 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C28
 U 1 1 5343845E
-P 2550 6050
-F 0 "C28" H 2600 6150 50  0000 L CNN
-F 1 "0.1 uF" H 2600 5950 50  0000 L CNN
-	1    2550 6050
+P 9500 6550
+F 0 "C28" H 9550 6650 50  0000 L CNN
+F 1 "0.1 uF" H 9550 6450 50  0000 L CNN
+	1    9500 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C29
 U 1 1 53438464
-P 2850 6050
-F 0 "C29" H 2900 6150 50  0000 L CNN
-F 1 "0.1 uF" H 2900 5950 50  0000 L CNN
-	1    2850 6050
+P 9800 6550
+F 0 "C29" H 9850 6650 50  0000 L CNN
+F 1 "0.1 uF" H 9850 6450 50  0000 L CNN
+	1    9800 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C30
 U 1 1 5343846A
-P 3150 6050
-F 0 "C30" H 3200 6150 50  0000 L CNN
-F 1 "0.1 uF" H 3200 5950 50  0000 L CNN
-	1    3150 6050
+P 10100 6550
+F 0 "C30" H 10150 6650 50  0000 L CNN
+F 1 "0.1 uF" H 10150 6450 50  0000 L CNN
+	1    10100 6550
 	1    0    0    -1  
 $EndComp
-Text Label 1650 5850 2    60   ~ 0
+Text Label 8600 6350 2    60   ~ 0
 VCCIO
-Text Label 1650 6250 2    60   ~ 0
+Text Label 8600 6750 2    60   ~ 0
 GND
 Wire Wire Line
-	1650 5850 3150 5850
-Connection ~ 1950 5850
-Connection ~ 2250 5850
-Connection ~ 2550 5850
-Connection ~ 2850 5850
+	8600 6350 10100 6350
+Connection ~ 8900 6350
+Connection ~ 9200 6350
+Connection ~ 9500 6350
+Connection ~ 9800 6350
 Wire Wire Line
-	1650 6250 3950 6250
-Connection ~ 2850 6250
-Connection ~ 2550 6250
-Connection ~ 2250 6250
-Connection ~ 1950 6250
-Text Label 3650 5850 2    60   ~ 0
+	8600 6750 10900 6750
+Connection ~ 9800 6750
+Connection ~ 9500 6750
+Connection ~ 9200 6750
+Connection ~ 8900 6750
+Text Label 10600 6350 2    60   ~ 0
 VCCINT
 $Comp
 L C C31
 U 1 1 53438925
-P 3650 6050
-F 0 "C31" H 3700 6150 50  0000 L CNN
-F 1 "0.1 uF" H 3700 5950 50  0000 L CNN
-	1    3650 6050
+P 10600 6550
+F 0 "C31" H 10650 6650 50  0000 L CNN
+F 1 "0.1 uF" H 10650 6450 50  0000 L CNN
+	1    10600 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C32
 U 1 1 5343892B
-P 3950 6050
-F 0 "C32" H 4000 6150 50  0000 L CNN
-F 1 "0.1 uF" H 4000 5950 50  0000 L CNN
-	1    3950 6050
+P 10900 6550
+F 0 "C32" H 10950 6650 50  0000 L CNN
+F 1 "0.1 uF" H 10950 6450 50  0000 L CNN
+	1    10900 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 5850 3950 5850
-Connection ~ 3650 6250
-Connection ~ 3150 6250
+	10600 6350 10900 6350
+Connection ~ 10600 6750
+Connection ~ 10100 6750
 Text Notes 9100 650  0    60   ~ 0
 Use on-die pullups for all switched signals
+Wire Wire Line
+	3650 1200 3800 1200
+Wire Wire Line
+	3800 1300 3650 1300
+Wire Wire Line
+	3650 1400 3800 1400
+Wire Wire Line
+	3800 1500 3650 1500
+Wire Wire Line
+	3650 1600 3800 1600
+Wire Wire Line
+	3650 1700 3800 1700
+Wire Wire Line
+	3800 1800 3650 1800
+Wire Wire Line
+	3650 1900 3800 1900
+Wire Wire Line
+	3650 2000 3800 2000
+Wire Wire Line
+	3800 2200 3650 2200
+Wire Wire Line
+	3650 2300 3800 2300
+Wire Wire Line
+	3650 2500 3800 2500
+Text HLabel 3650 2800 0    60   BiDi ~ 0
+FTDI_GPIO0
+$Comp
+L XC2CYYY-VQG100 U1
+U 1 1 53419048
+P 4100 2800
+F 0 "U1" H 4500 650 60  0000 C CNN
+F 1 "XC2C128-7VQG100" H 4550 550 60  0000 C CNN
+	1    4100 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 3650 2900 0    60   BiDi ~ 0
+FTDI_GPIO1
+Text HLabel 3650 3000 0    60   BiDi ~ 0
+FTDI_GPIO2
+Text HLabel 3650 3100 0    60   BiDi ~ 0
+FTDI_GPIO3
+Wire Wire Line
+	3650 2900 3800 2900
+Wire Wire Line
+	3800 3000 3650 3000
+Text HLabel 3650 3200 0    60   BiDi ~ 0
+FTDI_GPIO4
+Text HLabel 3650 3300 0    60   BiDi ~ 0
+FTDI_GPIO5
+Text HLabel 3650 3400 0    60   BiDi ~ 0
+FTDI_GPIO6
+Text HLabel 3650 3500 0    60   BiDi ~ 0
+FTDI_GPIO7
+Wire Wire Line
+	3800 3600 3650 3600
+Wire Wire Line
+	3650 4200 3800 4200
+Wire Wire Line
+	3650 4400 3800 4400
+Wire Wire Line
+	3800 4500 3650 4500
+Wire Wire Line
+	3650 4600 3800 4600
+Wire Wire Line
+	3800 4700 3650 4700
+Wire Wire Line
+	3650 4800 3800 4800
+Wire Wire Line
+	5800 800  5900 800 
+Wire Wire Line
+	5900 900  5800 900 
+Wire Wire Line
+	5800 1300 5900 1300
+Wire Wire Line
+	5900 1600 5800 1600
+Wire Wire Line
+	5800 2100 5900 2100
+$Comp
+L XC2CYYY-VQG100 U1
+U 2 1 534190CE
+P 6200 2800
+F 0 "U1" H 6600 650 60  0000 C CNN
+F 1 "XC2C128-7VQG100" H 6650 550 60  0000 C CNN
+	2    6200 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 7950 2550 0    60   BiDi ~ 0
+TARGET0_GPIO0
+Text HLabel 7950 2650 0    60   BiDi ~ 0
+TARGET0_GPIO1
+Text HLabel 7950 2750 0    60   BiDi ~ 0
+TARGET0_GPIO2
+Text HLabel 7950 2850 0    60   BiDi ~ 0
+TARGET0_GPIO3
+Text HLabel 7950 2950 0    60   BiDi ~ 0
+TARGET0_GPIO4
+Text HLabel 7950 3050 0    60   BiDi ~ 0
+TARGET0_GPIO5
+Text HLabel 7950 3150 0    60   BiDi ~ 0
+TARGET1_GPIO0
+Text HLabel 7950 3250 0    60   BiDi ~ 0
+TARGET1_GPIO1
+Text HLabel 7950 3350 0    60   BiDi ~ 0
+TARGET1_GPIO2
+Text HLabel 7950 3450 0    60   BiDi ~ 0
+TARGET1_GPIO3
+Text HLabel 7950 3550 0    60   BiDi ~ 0
+TARGET1_GPIO4
+Text HLabel 7950 3650 0    60   BiDi ~ 0
+TARGET1_GPIO5
+Wire Wire Line
+	5800 2900 5900 2900
+Wire Wire Line
+	5900 3000 5800 3000
+Wire Wire Line
+	5900 3300 5800 3300
+Text HLabel 7950 3750 0    60   BiDi ~ 0
+TARGET2_GPIO0
+Text HLabel 7950 3850 0    60   BiDi ~ 0
+TARGET2_GPIO1
+Text HLabel 7950 3950 0    60   BiDi ~ 0
+TARGET2_GPIO2
+Text HLabel 7950 4050 0    60   BiDi ~ 0
+TARGET2_GPIO3
+Text HLabel 7950 4150 0    60   BiDi ~ 0
+TARGET2_GPIO4
+Text HLabel 7950 4250 0    60   BiDi ~ 0
+TARGET2_GPIO5
+Wire Wire Line
+	5800 3700 5900 3700
+Text HLabel 7950 4350 0    60   BiDi ~ 0
+TARGET3_GPIO0
+Text HLabel 7950 4450 0    60   BiDi ~ 0
+TARGET3_GPIO1
+Text HLabel 7950 4550 0    60   BiDi ~ 0
+TARGET3_GPIO2
+Text HLabel 7950 4650 0    60   BiDi ~ 0
+TARGET3_GPIO3
+Text HLabel 7950 4750 0    60   BiDi ~ 0
+TARGET3_GPIO4
+Text HLabel 7950 4850 0    60   BiDi ~ 0
+TARGET3_GPIO5
+Wire Wire Line
+	5800 4200 5900 4200
+Wire Wire Line
+	5900 4300 5800 4300
+Text Label 5800 2300 2    60   ~ 0
+GPIO0
+Text Label 5800 2400 2    60   ~ 0
+GPIO1
+Text Label 5800 2500 2    60   ~ 0
+GPIO2
+Text Label 5800 2600 2    60   ~ 0
+GPIO3
+Text Label 5800 2700 2    60   ~ 0
+GPIO4
+Text Label 5800 2800 2    60   ~ 0
+TARGET0_CS_N
+Text Label 8050 2550 0    60   ~ 0
+GPIO0
+Text Label 8050 2650 0    60   ~ 0
+GPIO1
+Text Label 8050 2750 0    60   ~ 0
+GPIO2
+Text Label 8050 2850 0    60   ~ 0
+GPIO3
+Text Label 8050 2950 0    60   ~ 0
+GPIO4
+Text Label 8050 3050 0    60   ~ 0
+TARGET0_CS_N
+Text Label 5800 2900 2    60   ~ 0
+TARGET1_CS_N
+Text Label 5800 3000 2    60   ~ 0
+TARGET2_CS_N
+Text Label 5800 3100 2    60   ~ 0
+TARGET3_CS_N
+Text Label 8050 3150 0    60   ~ 0
+GPIO0
+Text Label 8050 3250 0    60   ~ 0
+GPIO1
+Text Label 8050 3350 0    60   ~ 0
+GPIO2
+Text Label 8050 3450 0    60   ~ 0
+GPIO3
+Text Label 8050 3550 0    60   ~ 0
+GPIO4
+Text Label 8050 3650 0    60   ~ 0
+TARGET1_CS_N
+Text Label 8050 3750 0    60   ~ 0
+GPIO0
+Text Label 8050 3850 0    60   ~ 0
+GPIO1
+Text Label 8050 3950 0    60   ~ 0
+GPIO2
+Text Label 8050 4050 0    60   ~ 0
+GPIO3
+Text Label 8050 4150 0    60   ~ 0
+GPIO4
+Text Label 8050 4250 0    60   ~ 0
+TARGET2_CS_N
+Text Label 8050 4350 0    60   ~ 0
+GPIO0
+Text Label 8050 4450 0    60   ~ 0
+GPIO1
+Text Label 8050 4550 0    60   ~ 0
+GPIO2
+Text Label 8050 4650 0    60   ~ 0
+GPIO3
+Text Label 8050 4750 0    60   ~ 0
+GPIO4
+Text Label 8050 4850 0    60   ~ 0
+TARGET3_CS_N
+Wire Wire Line
+	7950 2550 8050 2550
+Wire Wire Line
+	7950 2650 8050 2650
+Wire Wire Line
+	8050 2750 7950 2750
+Wire Wire Line
+	7950 2850 8050 2850
+Wire Wire Line
+	7950 2950 8050 2950
+Wire Wire Line
+	8050 3050 7950 3050
+Wire Wire Line
+	7950 3150 8050 3150
+Wire Wire Line
+	8050 3250 7950 3250
+Wire Wire Line
+	7950 3350 8050 3350
+Wire Wire Line
+	8050 3450 7950 3450
+Wire Wire Line
+	7950 3550 8050 3550
+Wire Wire Line
+	8050 3650 7950 3650
+Wire Wire Line
+	7950 3750 8050 3750
+Wire Wire Line
+	8050 3850 7950 3850
+Wire Wire Line
+	8050 3950 7950 3950
+Wire Wire Line
+	7950 4050 8050 4050
+Wire Wire Line
+	8050 4150 7950 4150
+Wire Wire Line
+	7950 4250 8050 4250
+Wire Wire Line
+	8050 4350 7950 4350
+Wire Wire Line
+	7950 4450 8050 4450
+Wire Wire Line
+	8050 4550 7950 4550
+Wire Wire Line
+	7950 4650 8050 4650
+Wire Wire Line
+	8050 4750 7950 4750
+Wire Wire Line
+	7950 4850 8050 4850
+$Comp
+L R R9
+U 1 1 534841A9
+P 1500 5350
+F 0 "R9" V 1580 5350 50  0000 C CNN
+F 1 "470" V 1500 5350 50  0000 C CNN
+	1    1500 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 534841C7
+P 1950 5350
+F 0 "D1" H 1950 5450 50  0000 C CNN
+F 1 "GREEN" H 1950 5250 50  0000 C CNN
+	1    1950 5350
+	1    0    0    -1  
+$EndComp
+Text Label 2150 5350 0    60   ~ 0
+GND
+Text Label 1250 5350 2    60   ~ 0
+VCCIO
+Text Label 5800 3200 2    60   ~ 0
+JTAG0_ACTIVE
+Text Label 5800 3300 2    60   ~ 0
+JTAG1_ACTIVE
+Text Label 1250 5650 2    60   ~ 0
+JTAG0_ACTIVE
+Text Label 1250 5950 2    60   ~ 0
+JTAG1_ACTIVE
+$Comp
+L R R10
+U 1 1 534841D8
+P 1500 5650
+F 0 "R10" V 1580 5650 50  0000 C CNN
+F 1 "470" V 1500 5650 50  0000 C CNN
+	1    1500 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 534841DE
+P 1950 5650
+F 0 "D2" H 1950 5750 50  0000 C CNN
+F 1 "GREEN" H 1950 5550 50  0000 C CNN
+	1    1950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5348429E
+P 1500 5950
+F 0 "R11" V 1580 5950 50  0000 C CNN
+F 1 "470" V 1500 5950 50  0000 C CNN
+	1    1500 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 534842A4
+P 1950 5950
+F 0 "D3" H 1950 6050 50  0000 C CNN
+F 1 "GREEN" H 1950 5850 50  0000 C CNN
+	1    1950 5950
+	1    0    0    -1  
+$EndComp
+Text Label 5800 3400 2    60   ~ 0
+TARGET0_CHAIN0
+Text Label 5800 3500 2    60   ~ 0
+TARGET0_CHAIN1
+Text Label 5800 3700 2    60   ~ 0
+TARGET1_CHAIN0
+Text Label 5800 3800 2    60   ~ 0
+TARGET1_CHAIN1
+Text Label 5800 4000 2    60   ~ 0
+TARGET2_CHAIN0
+Text Label 5800 4100 2    60   ~ 0
+TARGET2_CHAIN1
+Text Label 5800 3600 2    60   ~ 0
+TARGET0_UNUSED
+Text Label 5800 3900 2    60   ~ 0
+TARGET1_UNUSED
+Text Label 5800 4200 2    60   ~ 0
+TARGET2_UNUSED
+Text Label 5800 4300 2    60   ~ 0
+TARGET3_CHAIN0
+Text Label 5800 4400 2    60   ~ 0
+TARGET3_CHAIN1
+Text Label 5800 4500 2    60   ~ 0
+TARGET3_UNUSED
+NoConn ~ 5900 4600
+Text Label 3450 5350 2    60   ~ 0
+TARGET0_CHAIN0
+Text Label 3450 5650 2    60   ~ 0
+TARGET0_CHAIN1
+Text Label 3450 5950 2    60   ~ 0
+TARGET0_UNUSED
+$Comp
+L R R12
+U 1 1 53484634
+P 3700 5350
+F 0 "R12" V 3780 5350 50  0000 C CNN
+F 1 "470" V 3700 5350 50  0000 C CNN
+	1    3700 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 5348463A
+P 4150 5350
+F 0 "D4" H 4150 5450 50  0000 C CNN
+F 1 "GREEN" H 4150 5250 50  0000 C CNN
+	1    4150 5350
+	1    0    0    -1  
+$EndComp
+Text Label 4350 5350 0    60   ~ 0
+GND
+$Comp
+L R R13
+U 1 1 53484642
+P 3700 5650
+F 0 "R13" V 3780 5650 50  0000 C CNN
+F 1 "470" V 3700 5650 50  0000 C CNN
+	1    3700 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 53484648
+P 4150 5650
+F 0 "D5" H 4150 5750 50  0000 C CNN
+F 1 "YELLOW" H 4150 5550 50  0000 C CNN
+	1    4150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 53484650
+P 3700 5950
+F 0 "R14" V 3780 5950 50  0000 C CNN
+F 1 "470" V 3700 5950 50  0000 C CNN
+	1    3700 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 53484656
+P 4150 5950
+F 0 "D6" H 4150 6050 50  0000 C CNN
+F 1 "RED" H 4150 5850 50  0000 C CNN
+	1    4150 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5350 4350 5950
+Connection ~ 4350 5650
+Text Label 3450 6450 2    60   ~ 0
+TARGET1_CHAIN0
+Text Label 3450 6750 2    60   ~ 0
+TARGET1_CHAIN1
+Text Label 3450 7050 2    60   ~ 0
+TARGET1_UNUSED
+$Comp
+L R R15
+U 1 1 534847D7
+P 3700 6450
+F 0 "R15" V 3780 6450 50  0000 C CNN
+F 1 "470" V 3700 6450 50  0000 C CNN
+	1    3700 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D7
+U 1 1 534847DD
+P 4150 6450
+F 0 "D7" H 4150 6550 50  0000 C CNN
+F 1 "GREEN" H 4150 6350 50  0000 C CNN
+	1    4150 6450
+	1    0    0    -1  
+$EndComp
+Text Label 4350 6450 0    60   ~ 0
+GND
+$Comp
+L R R16
+U 1 1 534847E4
+P 3700 6750
+F 0 "R16" V 3780 6750 50  0000 C CNN
+F 1 "470" V 3700 6750 50  0000 C CNN
+	1    3700 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D8
+U 1 1 534847EA
+P 4150 6750
+F 0 "D8" H 4150 6850 50  0000 C CNN
+F 1 "YELLOW" H 4150 6650 50  0000 C CNN
+	1    4150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 534847F0
+P 3700 7050
+F 0 "R17" V 3780 7050 50  0000 C CNN
+F 1 "470" V 3700 7050 50  0000 C CNN
+	1    3700 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D9
+U 1 1 534847F6
+P 4150 7050
+F 0 "D9" H 4150 7150 50  0000 C CNN
+F 1 "RED" H 4150 6950 50  0000 C CNN
+	1    4150 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6450 4350 7050
+Connection ~ 4350 6750
+Text Label 5550 5350 2    60   ~ 0
+TARGET2_CHAIN0
+Text Label 5550 5650 2    60   ~ 0
+TARGET2_CHAIN1
+Text Label 5550 5950 2    60   ~ 0
+TARGET2_UNUSED
+$Comp
+L R R18
+U 1 1 53484804
+P 5800 5350
+F 0 "R18" V 5880 5350 50  0000 C CNN
+F 1 "470" V 5800 5350 50  0000 C CNN
+	1    5800 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D10
+U 1 1 5348480A
+P 6250 5350
+F 0 "D10" H 6250 5450 50  0000 C CNN
+F 1 "GREEN" H 6250 5250 50  0000 C CNN
+	1    6250 5350
+	1    0    0    -1  
+$EndComp
+Text Label 6450 5350 0    60   ~ 0
+GND
+$Comp
+L R R19
+U 1 1 53484811
+P 5800 5650
+F 0 "R19" V 5880 5650 50  0000 C CNN
+F 1 "470" V 5800 5650 50  0000 C CNN
+	1    5800 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D11
+U 1 1 53484817
+P 6250 5650
+F 0 "D11" H 6250 5750 50  0000 C CNN
+F 1 "YELLOW" H 6250 5550 50  0000 C CNN
+	1    6250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 5348481D
+P 5800 5950
+F 0 "R20" V 5880 5950 50  0000 C CNN
+F 1 "470" V 5800 5950 50  0000 C CNN
+	1    5800 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D12
+U 1 1 53484823
+P 6250 5950
+F 0 "D12" H 6250 6050 50  0000 C CNN
+F 1 "RED" H 6250 5850 50  0000 C CNN
+	1    6250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5350 6450 5950
+Connection ~ 6450 5650
+Text Label 5550 6450 2    60   ~ 0
+TARGET3_CHAIN0
+Text Label 5550 6750 2    60   ~ 0
+TARGET3_CHAIN1
+Text Label 5550 7050 2    60   ~ 0
+TARGET3_UNUSED
+$Comp
+L R R21
+U 1 1 5348482E
+P 5800 6450
+F 0 "R21" V 5880 6450 50  0000 C CNN
+F 1 "470" V 5800 6450 50  0000 C CNN
+	1    5800 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D13
+U 1 1 53484834
+P 6250 6450
+F 0 "D13" H 6250 6550 50  0000 C CNN
+F 1 "GREEN" H 6250 6350 50  0000 C CNN
+	1    6250 6450
+	1    0    0    -1  
+$EndComp
+Text Label 6450 6450 0    60   ~ 0
+GND
+$Comp
+L R R22
+U 1 1 5348483B
+P 5800 6750
+F 0 "R22" V 5880 6750 50  0000 C CNN
+F 1 "470" V 5800 6750 50  0000 C CNN
+	1    5800 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D14
+U 1 1 53484841
+P 6250 6750
+F 0 "D14" H 6250 6850 50  0000 C CNN
+F 1 "YELLOW" H 6250 6650 50  0000 C CNN
+	1    6250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 53484847
+P 5800 7050
+F 0 "R23" V 5880 7050 50  0000 C CNN
+F 1 "470" V 5800 7050 50  0000 C CNN
+	1    5800 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D15
+U 1 1 5348484D
+P 6250 7050
+F 0 "D15" H 6250 7150 50  0000 C CNN
+F 1 "RED" H 6250 6950 50  0000 C CNN
+	1    6250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6450 6450 7050
+Connection ~ 6450 6750
+Wire Wire Line
+	2150 5350 2150 5950
+Connection ~ 2150 5650
 $EndSCHEMATC

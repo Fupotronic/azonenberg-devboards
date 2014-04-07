@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 06:22:19 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 08:57:48 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,9 +43,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 6 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "6 apr 2014"
+Date "7 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "USB-JTAG and headers"
@@ -199,28 +199,6 @@ Text Label 5050 850  2    60   ~ 0
 FTDI_VPLL
 Text Label 5150 750  2    60   ~ 0
 VCCIO
-$Comp
-L R R7
-U 1 1 5342A8CF
-P 6700 2900
-F 0 "R7" V 6780 2900 50  0000 C CNN
-F 1 "39K" V 6700 2900 50  0000 C CNN
-	1    6700 2900
-	0    -1   -1   0   
-$EndComp
-Text Label 6450 3050 0    60   ~ 0
-FTDI_PWRSAV_N
-Text Label 7100 2900 0    60   ~ 0
-5V_USB
-NoConn ~ 6300 3000
-NoConn ~ 6300 3100
-NoConn ~ 6300 2800
-NoConn ~ 6300 2700
-NoConn ~ 6300 2600
-NoConn ~ 6300 2500
-NoConn ~ 6300 2400
-NoConn ~ 6300 2300
-NoConn ~ 6300 2200
 $Comp
 L C C3
 U 1 1 5342AAFE
@@ -654,14 +632,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 1900 6300 1900
 Wire Wire Line
-	6450 2000 6300 2000
-Wire Wire Line
-	6450 3050 6450 2900
-Wire Wire Line
-	6450 2900 6300 2900
-Wire Wire Line
-	7100 2900 6950 2900
-Wire Wire Line
 	900  1850 1800 1850
 Connection ~ 1200 1850
 Connection ~ 1500 1850
@@ -852,8 +822,60 @@ Wire Wire Line
 	6300 1700 6450 1700
 Text HLabel 6450 1800 2    60   Output ~ 0
 XBAR_MOSI
-Text HLabel 6450 2000 2    60   Output ~ 0
+Text HLabel 6450 3100 2    60   Output ~ 0
 XBAR_SCK
 Text HLabel 6450 1900 2    60   Input ~ 0
 XBAR_MISO
+Text HLabel 6450 2200 2    60   BiDi ~ 0
+FTDI_GPIO0
+Text HLabel 6450 2300 2    60   BiDi ~ 0
+FTDI_GPIO1
+Text HLabel 6450 2400 2    60   BiDi ~ 0
+FTDI_GPIO2
+Text HLabel 6450 2500 2    60   BiDi ~ 0
+FTDI_GPIO3
+Text HLabel 6450 2600 2    60   BiDi ~ 0
+FTDI_GPIO4
+Text HLabel 6450 2700 2    60   BiDi ~ 0
+FTDI_GPIO5
+Text HLabel 6450 2800 2    60   BiDi ~ 0
+FTDI_GPIO6
+Text HLabel 6450 3000 2    60   BiDi ~ 0
+FTDI_GPIO7
+Wire Wire Line
+	6300 2900 7100 2900
+Wire Wire Line
+	6450 2800 6300 2800
+Wire Wire Line
+	6300 2700 6450 2700
+Wire Wire Line
+	6450 2600 6300 2600
+Wire Wire Line
+	6300 2500 6450 2500
+Wire Wire Line
+	6450 2400 6300 2400
+Wire Wire Line
+	6300 2300 6450 2300
+Wire Wire Line
+	6450 2200 6300 2200
+Wire Wire Line
+	6300 3000 6450 3000
+Text Label 7100 2900 0    60   ~ 0
+FTDI_PWRSAV_N
+$Comp
+L R R7
+U 1 1 53445160
+P 7100 3150
+F 0 "R7" V 7180 3150 50  0000 C CNN
+F 1 "39K" V 7100 3150 50  0000 C CNN
+	1    7100 3150
+	1    0    0    -1  
+$EndComp
+Text Label 7100 3400 2    60   ~ 0
+5V_USB
+Wire Wire Line
+	6300 3100 6450 3100
+NoConn ~ 6300 2000
+Text Notes 6450 2050 0    60   ~ 0
+JTAG-active pin by default, ignore it
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Sun 06 Apr 2014 06:02:11 PM EDT
+update=Sun 06 Apr 2014 08:38:16 PM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -11,7 +11,7 @@ version=1
 [eeschema]
 version=1
 LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/library;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs
-NetFmtName=
+NetFmtName=Pcbnew
 RptD_X=0
 RptD_Y=100
 RptLab=1
@@ -58,7 +58,7 @@ LibName38=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/special-az
 LibName39=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azonenberg
 [pcbnew]
 version=1
-LastNetListRead=
+LastNetListRead=cr2-xbar-devboard.net
 PadDrlX=320
 PadDimH=600
 PadDimV=600
@@ -74,7 +74,7 @@ EdgeLar=150
 TxtLar=120
 MSegLar=150
 [pcbnew/libraries]
-LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules
+LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -90,3 +90,4 @@ LibName12=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/esd_sensit
 LibName13=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/pb_free
 LibName14=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/recycle_logo
 LibName15=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/smt_azonenberg
+LibName16=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty/walter/mod_smd_lqfp/w_smd_lqfp
