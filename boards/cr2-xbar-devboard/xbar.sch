@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 10:03:00 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -67,11 +67,11 @@ Text HLabel 1300 800  0    60   Input ~ 0
 XBAR_TCK
 Text HLabel 1300 1100 0    60   Input ~ 0
 XBAR_TMS
-Text HLabel 3650 4000 0    60   Input ~ 0
+Text HLabel 5800 1300 0    60   Input ~ 0
 JTAG0_TDI
-Text HLabel 3650 4100 0    60   Output ~ 0
+Text HLabel 5800 1200 0    60   Output ~ 0
 JTAG0_TDO
-Text HLabel 3650 3900 0    60   Input ~ 0
+Text HLabel 5800 1100 0    60   Input ~ 0
 JTAG0_TMS
 Text HLabel 5800 1400 0    60   Input ~ 0
 JTAG0_TCK
@@ -83,13 +83,13 @@ Text HLabel 3650 3600 0    60   Input ~ 0
 JTAG1_TMS
 Text HLabel 5800 1500 0    60   Input ~ 0
 JTAG1_TCK
-Text HLabel 3650 1400 0    60   Output ~ 0
+Text HLabel 3650 3200 0    60   Output ~ 0
 TARGET0_TDI
-Text HLabel 3650 1500 0    60   Input ~ 0
+Text HLabel 3650 2900 0    60   Input ~ 0
 TARGET0_TDO
-Text HLabel 3650 1200 0    60   Output ~ 0
+Text HLabel 3650 3000 0    60   Output ~ 0
 TARGET0_TMS
-Text HLabel 3650 1300 0    60   Output ~ 0
+Text HLabel 3650 3100 0    60   Output ~ 0
 TARGET0_TCK
 Text HLabel 3650 1800 0    60   Output ~ 0
 TARGET1_TDI
@@ -128,13 +128,13 @@ Text Label 1300 1800 2    60   ~ 0
 VCCIO
 Text HLabel 5800 1700 0    60   Output ~ 0
 CLK_2048KHZ
-Text HLabel 3650 800  0    60   Input ~ 0
+Text HLabel 5800 900  0    60   Input ~ 0
 XBAR_CS_N
-Text HLabel 3650 1000 0    60   Input ~ 0
+Text HLabel 3650 3500 0    60   Input ~ 0
 XBAR_SCK
-Text HLabel 3650 900  0    60   Input ~ 0
+Text HLabel 5800 1000 0    60   Input ~ 0
 XBAR_MOSI
-Text HLabel 3650 1100 0    60   Output ~ 0
+Text HLabel 5800 800  0    60   Output ~ 0
 XBAR_MISO
 $Comp
 L DIL16 SW1
@@ -159,29 +159,18 @@ Text Label 9650 1150 2    60   ~ 0
 JTAG1_SRC_2
 Text Label 9650 1550 2    60   ~ 0
 SPI_MODE_EN
-NoConn ~ 9750 1450
-$Comp
-L DIL16 SW2
-U 1 1 534332C7
-P 10100 2150
-F 0 "SW2" H 10100 2600 60  0000 C CNN
-F 1 "DIPSWITCH" V 10100 2150 50  0000 C CNN
-	1    10100 2150
-	1    0    0    -1  
-$EndComp
 Text Label 9650 2000 2    60   ~ 0
 TARGET0_SRC_0
 Text Label 9650 1900 2    60   ~ 0
 TARGET0_SRC_1
 Text Label 9650 1800 2    60   ~ 0
 TARGET0_SRC_2
-Text Label 9650 2300 2    60   ~ 0
+Text Label 9650 2400 2    60   ~ 0
 TARGET1_SRC_0
-Text Label 9650 2200 2    60   ~ 0
+Text Label 9650 2300 2    60   ~ 0
 TARGET1_SRC_1
-Text Label 9650 2100 2    60   ~ 0
+Text Label 9650 2200 2    60   ~ 0
 TARGET1_SRC_2
-NoConn ~ 9750 2400
 Text Label 10450 850  0    60   ~ 0
 GND
 $Comp
@@ -199,52 +188,49 @@ Text Label 9650 2850 2    60   ~ 0
 TARGET2_SRC_1
 Text Label 9650 2750 2    60   ~ 0
 TARGET2_SRC_2
+Text Label 9650 3350 2    60   ~ 0
+TARGET3_SRC_0
 Text Label 9650 3250 2    60   ~ 0
-TARGET3_SRC_0
+TARGET3_SRC_1
 Text Label 9650 3150 2    60   ~ 0
-TARGET3_SRC_1
-Text Label 9650 3050 2    60   ~ 0
 TARGET3_SRC_2
-NoConn ~ 9750 3350
-NoConn ~ 9750 2500
-NoConn ~ 9750 3450
-Text Label 3650 4400 2    60   ~ 0
-JTAG0_SRC_0
-Text Label 3650 4300 2    60   ~ 0
-JTAG0_SRC_1
-Text Label 3650 4200 2    60   ~ 0
-JTAG0_SRC_2
-Text Label 3650 4700 2    60   ~ 0
-JTAG1_SRC_0
-Text Label 3650 4600 2    60   ~ 0
-JTAG1_SRC_1
-Text Label 3650 4500 2    60   ~ 0
-JTAG1_SRC_2
-Text Label 3650 4800 2    60   ~ 0
-SPI_MODE_EN
-Text Label 5800 1000 2    60   ~ 0
-TARGET0_SRC_0
-Text Label 5800 900  2    60   ~ 0
-TARGET0_SRC_1
-Text Label 5800 800  2    60   ~ 0
-TARGET0_SRC_2
-Text Label 5800 1600 2    60   ~ 0
-TARGET1_SRC_0
-Text Label 5800 1200 2    60   ~ 0
-TARGET1_SRC_1
-Text Label 5800 1100 2    60   ~ 0
-TARGET1_SRC_2
-Text Label 5800 1900 2    60   ~ 0
-TARGET2_SRC_0
-Text Label 5800 1800 2    60   ~ 0
-TARGET2_SRC_1
-Text Label 5800 1300 2    60   ~ 0
-TARGET2_SRC_2
 Text Label 5800 2200 2    60   ~ 0
-TARGET3_SRC_0
-Text Label 5800 2100 2    60   ~ 0
-TARGET3_SRC_1
+JTAG0_SRC_0
+Text Label 5800 2300 2    60   ~ 0
+JTAG0_SRC_1
+Text Label 5800 2400 2    60   ~ 0
+JTAG0_SRC_2
+Text Label 5800 1900 2    60   ~ 0
+JTAG1_SRC_0
 Text Label 5800 2000 2    60   ~ 0
+JTAG1_SRC_1
+Text Label 5800 2100 2    60   ~ 0
+JTAG1_SRC_2
+Text Label 5800 1600 2    60   ~ 0
+SPI_MODE_EN
+Text Label 3650 2800 2    60   ~ 0
+TARGET0_SRC_0
+Text Label 3650 3400 2    60   ~ 0
+TARGET0_SRC_1
+Text Label 3650 3300 2    60   ~ 0
+TARGET0_SRC_2
+Text Label 5800 2500 2    60   ~ 0
+TARGET1_SRC_0
+Text Label 5800 2600 2    60   ~ 0
+TARGET1_SRC_1
+Text Label 5800 2700 2    60   ~ 0
+TARGET1_SRC_2
+Text Label 3650 4600 2    60   ~ 0
+TARGET2_SRC_0
+Text Label 3650 4500 2    60   ~ 0
+TARGET2_SRC_1
+Text Label 3650 4200 2    60   ~ 0
+TARGET2_SRC_2
+Text Label 5800 4600 2    60   ~ 0
+TARGET3_SRC_0
+Text Label 3650 4800 2    60   ~ 0
+TARGET3_SRC_1
+Text Label 3650 4700 2    60   ~ 0
 TARGET3_SRC_2
 Wire Wire Line
 	1300 800  1450 800 
@@ -357,8 +343,6 @@ Wire Wire Line
 	9650 1900 9750 1900
 Wire Wire Line
 	9750 2000 9650 2000
-Wire Wire Line
-	9650 2100 9750 2100
 Wire Wire Line
 	9750 2200 9650 2200
 Wire Wire Line
@@ -594,7 +578,7 @@ Wire Wire Line
 	3650 2300 3800 2300
 Wire Wire Line
 	3650 2500 3800 2500
-Text HLabel 3650 2800 0    60   BiDi ~ 0
+Text HLabel 3650 800  0    60   BiDi ~ 0
 FTDI_GPIO0
 $Comp
 L XC2CYYY-VQG100 U1
@@ -605,23 +589,23 @@ F 1 "XC2C128-7VQG100" H 4550 550 60  0000 C CNN
 	1    4100 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 3650 2900 0    60   BiDi ~ 0
+Text HLabel 3650 900  0    60   BiDi ~ 0
 FTDI_GPIO1
-Text HLabel 3650 3000 0    60   BiDi ~ 0
+Text HLabel 3650 1000 0    60   BiDi ~ 0
 FTDI_GPIO2
-Text HLabel 3650 3100 0    60   BiDi ~ 0
+Text HLabel 3650 1100 0    60   BiDi ~ 0
 FTDI_GPIO3
 Wire Wire Line
 	3650 2900 3800 2900
 Wire Wire Line
 	3800 3000 3650 3000
-Text HLabel 3650 3200 0    60   BiDi ~ 0
+Text HLabel 3650 1200 0    60   BiDi ~ 0
 FTDI_GPIO4
-Text HLabel 3650 3300 0    60   BiDi ~ 0
+Text HLabel 3650 1300 0    60   BiDi ~ 0
 FTDI_GPIO5
-Text HLabel 3650 3400 0    60   BiDi ~ 0
+Text HLabel 3650 1400 0    60   BiDi ~ 0
 FTDI_GPIO6
-Text HLabel 3650 3500 0    60   BiDi ~ 0
+Text HLabel 3650 1500 0    60   BiDi ~ 0
 FTDI_GPIO7
 Wire Wire Line
 	3800 3600 3650 3600
@@ -647,15 +631,6 @@ Wire Wire Line
 	5900 1600 5800 1600
 Wire Wire Line
 	5800 2100 5900 2100
-$Comp
-L XC2CYYY-VQG100 U1
-U 2 1 534190CE
-P 6200 2800
-F 0 "U1" H 6600 650 60  0000 C CNN
-F 1 "XC2C128-7VQG100" H 6650 550 60  0000 C CNN
-	2    6200 2800
-	1    0    0    -1  
-$EndComp
 Text HLabel 7950 2550 0    60   BiDi ~ 0
 TARGET0_GPIO0
 Text HLabel 7950 2650 0    60   BiDi ~ 0
@@ -716,15 +691,15 @@ Wire Wire Line
 	5800 4200 5900 4200
 Wire Wire Line
 	5900 4300 5800 4300
-Text Label 5800 2300 2    60   ~ 0
+Text Label 3650 4300 2    60   ~ 0
 GPIO0
-Text Label 5800 2400 2    60   ~ 0
+Text Label 3650 4400 2    60   ~ 0
 GPIO1
-Text Label 5800 2500 2    60   ~ 0
+Text Label 3650 3900 2    60   ~ 0
 GPIO2
-Text Label 5800 2600 2    60   ~ 0
+Text Label 3650 4000 2    60   ~ 0
 GPIO3
-Text Label 5800 2700 2    60   ~ 0
+Text Label 3650 4100 2    60   ~ 0
 GPIO4
 Text Label 5800 2800 2    60   ~ 0
 TARGET0_CS_N
@@ -920,7 +895,6 @@ Text Label 5800 4400 2    60   ~ 0
 TARGET3_CHAIN1
 Text Label 5800 4500 2    60   ~ 0
 TARGET3_UNUSED
-NoConn ~ 5900 4600
 Text Label 3450 5350 2    60   ~ 0
 TARGET0_CHAIN0
 Text Label 3450 5650 2    60   ~ 0
@@ -1184,4 +1158,48 @@ Connection ~ 6450 6750
 Wire Wire Line
 	2150 5350 2150 5950
 Connection ~ 2150 5650
+$Comp
+L XC2CYYY-VQG100 U1
+U 2 1 534190CE
+P 6200 2800
+F 0 "U1" H 6600 650 60  0000 C CNN
+F 1 "XC2C128-7VQG100" H 6650 550 60  0000 C CNN
+	2    6200 2800
+	1    0    0    -1  
+$EndComp
+Text Label 5800 1800 2    60   ~ 0
+XBAR_GPIO_SW
+Wire Wire Line
+	5800 4600 5900 4600
+Text Label 9650 1450 2    60   ~ 0
+XBAR_GPIO_SW
+Wire Wire Line
+	9650 1450 9750 1450
+$Comp
+L DIL16 SW2
+U 1 1 534332C7
+P 10100 2150
+F 0 "SW2" H 10100 2600 60  0000 C CNN
+F 1 "DIPSWITCH" V 10100 2150 50  0000 C CNN
+	1    10100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2400 9750 2400
+Wire Wire Line
+	9650 2500 9750 2500
+Text HLabel 9650 2500 0    60   Output ~ 0
+TARGET1_GPIO_SW
+Text HLabel 9650 2100 0    60   Output ~ 0
+TARGET0_GPIO_SW
+Text HLabel 9650 3050 0    60   Output ~ 0
+TARGET2_GPIO_SW
+Wire Wire Line
+	9650 2100 9750 2100
+Text HLabel 9650 3450 0    60   Output ~ 0
+TARGET3_GPIO_SW
+Wire Wire Line
+	9650 3350 9750 3350
+Wire Wire Line
+	9750 3450 9650 3450
 $EndSCHEMATC

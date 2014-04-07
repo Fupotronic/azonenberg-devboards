@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 10:02:59 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -217,7 +217,7 @@ L C C4
 U 1 1 5342AB6C
 P 1200 2050
 F 0 "C4" H 1250 2150 50  0000 L CNN
-F 1 "47 uF" H 1250 1950 50  0000 L CNN
+F 1 "10 uF" H 1250 1950 50  0000 L CNN
 	1    1200 2050
 	1    0    0    -1  
 $EndComp

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 06 Apr 2014 10:00:51 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 06 Apr 2014 11:11:19 PM EDT
 
 BeginCmp
 TimeStamp = /53427A7D/5342B16D;
@@ -25,7 +25,7 @@ BeginCmp
 TimeStamp = /53427A7D/5342AB6C;
 Reference = C4;
 ValeurCmp = 47_uF;
-IdModule  = CAP_2312_6032;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -39,7 +39,7 @@ BeginCmp
 TimeStamp = /53427A7D/5342AB77;
 Reference = C6;
 ValeurCmp = 4.7_uF;
-IdModule  = SM0402;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
@@ -53,21 +53,21 @@ BeginCmp
 TimeStamp = /53427A7D/5342CF73;
 Reference = C8;
 ValeurCmp = 4.7_uF;
-IdModule  = SM0402;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53427A7D/5342D0B1;
 Reference = C9;
 ValeurCmp = 4.7_uF;
-IdModule  = SM0402;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53427A7D/5342D0C4;
 Reference = C10;
 ValeurCmp = 4.7_uF;
-IdModule  = SM0402;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
@@ -648,28 +648,28 @@ BeginCmp
 TimeStamp = /53427A7D/5342CF67;
 Reference = L1;
 ValeurCmp = 600R;
-IdModule  = SM0805;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53427A7D/5342D0A5;
 Reference = L2;
 ValeurCmp = 600R;
-IdModule  = SM0805;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53427A7D/53428A12;
 Reference = L3;
 ValeurCmp = 600R;
-IdModule  = SM0805;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /53427A7D/5342E563;
 Reference = L4;
 ValeurCmp = 600R;
-IdModule  = SM0805;
+IdModule  = SM0603;
 EndCmp
 
 BeginCmp
@@ -1068,7 +1068,7 @@ BeginCmp
 TimeStamp = /53427A7D/5342B187;
 Reference = X1;
 ValeurCmp = 12_MHz;
-IdModule  = HC-49-SM;
+IdModule  = CRYSTAL_ONLY_2.5X3.2;
 EndCmp
 
 EndListe

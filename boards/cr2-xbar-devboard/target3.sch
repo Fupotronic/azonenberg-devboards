@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 10:02:59 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -159,7 +159,6 @@ NoConn ~ 3950 4400
 NoConn ~ 3950 4500
 NoConn ~ 3950 4600
 NoConn ~ 3950 1600
-NoConn ~ 3950 1700
 NoConn ~ 3950 1800
 NoConn ~ 3950 1900
 NoConn ~ 3950 2000
@@ -479,4 +478,8 @@ Wire Wire Line
 	3950 4900 3800 4900
 Wire Wire Line
 	3800 4800 3950 4800
+Text HLabel 3800 1700 0    60   Input ~ 0
+TARGET3_GPIO_SW
+Wire Wire Line
+	3800 1700 3950 1700
 $EndSCHEMATC
