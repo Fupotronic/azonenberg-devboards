@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 06:22:20 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 08:57:47 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,9 +43,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 2 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "6 apr 2014"
+Date "7 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "TARGET0: XC2C32A"
@@ -69,15 +69,6 @@ Text HLabel 2800 4550 0    60   Input ~ 0
 GND
 Text HLabel 4900 2750 2    60   Input ~ 0
 CLK_2048KHZ
-$Comp
-L XC2CXXA-VQG44 U7
-U 1 1 5343DB25
-P 3750 2850
-F 0 "U7" H 3750 2150 60  0000 C CNN
-F 1 "XC2C32A-6VQG44C" H 3800 2050 60  0000 C CNN
-	1    3750 2850
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4800 2350
 NoConn ~ 4800 2450
 NoConn ~ 4800 2550
@@ -93,12 +84,6 @@ NoConn ~ 4800 3550
 NoConn ~ 4800 3650
 NoConn ~ 4800 3750
 NoConn ~ 4800 3850
-NoConn ~ 2800 2350
-NoConn ~ 2800 2450
-NoConn ~ 2800 2550
-NoConn ~ 2800 2650
-NoConn ~ 2800 2750
-NoConn ~ 2800 2850
 NoConn ~ 2800 2950
 NoConn ~ 2800 3050
 NoConn ~ 2800 3150
@@ -185,4 +170,37 @@ Wire Wire Line
 	5150 1450 6200 1450
 Connection ~ 5850 1450
 Connection ~ 5550 1450
+Text HLabel 2650 2350 0    60   BiDi ~ 0
+TARGET0_GPIO0
+Text HLabel 2650 2450 0    60   BiDi ~ 0
+TARGET0_GPIO1
+Text HLabel 2650 2550 0    60   BiDi ~ 0
+TARGET0_GPIO2
+Text HLabel 2650 2650 0    60   BiDi ~ 0
+TARGET0_GPIO3
+Text HLabel 2650 2750 0    60   BiDi ~ 0
+TARGET0_GPIO4
+Text HLabel 2650 2850 0    60   BiDi ~ 0
+TARGET0_GPIO5
+$Comp
+L XC2CXXA-VQG44 U7
+U 1 1 5343DB25
+P 3750 2850
+F 0 "U7" H 3750 2150 60  0000 C CNN
+F 1 "XC2C32A-6VQG44C" H 3800 2050 60  0000 C CNN
+	1    3750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2850 2800 2850
+Wire Wire Line
+	2800 2750 2650 2750
+Wire Wire Line
+	2650 2650 2800 2650
+Wire Wire Line
+	2800 2550 2650 2550
+Wire Wire Line
+	2650 2450 2800 2450
+Wire Wire Line
+	2800 2350 2650 2350
 $EndSCHEMATC

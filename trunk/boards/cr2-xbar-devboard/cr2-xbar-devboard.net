@@ -1,6 +1,148 @@
-# EESchema Netlist Version 1.1 created  Sun 06 Apr 2014 06:19:38 PM EDT
+# EESchema Netlist Version 1.1 created  Sun 06 Apr 2014 08:56:50 PM EDT
 (
- ( /53418DCC/53419048 $noname  U1 XC2C128-7VQG100 {Lib=XC2CYYY-VQG100}
+ ( /5347CA93 $noname  P1 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /5347D379 $noname  P2 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /5347D37F $noname  P3 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /5347D385 $noname  P4 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /5347F33C $noname  P5 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /5347F342 $noname  P6 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /53439A43/5343DD52 $noname  C33 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /53439A43/5343DD7E $noname  C34 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53439A43/5343DD84 $noname  C35 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53439A43/5343DD8A $noname  C36 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53439A43/5343DB25 $noname  U7 XC2C32A-6VQG44C {Lib=XC2CXXA-VQG44}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 /JTAG/GND )
+  (    5 ? )
+  (    6 ? )
+  (    7 /JTAG/VCCIO )
+  (    8 ? )
+  (    9 /TARGET0/TARGET0_TDI )
+  (   10 /TARGET0/TARGET0_TMS )
+  (   11 /TARGET0/TARGET0_TCK )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+  (   15 /JTAG/VCCINT )
+  (   16 ? )
+  (   17 /JTAG/GND )
+  (   18 ? )
+  (   19 ? )
+  (   20 ? )
+  (   21 ? )
+  (   22 ? )
+  (   23 ? )
+  (   24 /TARGET0/TARGET0_TDO )
+  (   25 /JTAG/GND )
+  (   26 /JTAG/VCCIO )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 ? )
+  (   31 ? )
+  (   32 /TARGET0/TARGET0_GPIO5 )
+  (   33 /TARGET0/TARGET0_GPIO4 )
+  (   34 /TARGET0/TARGET0_GPIO3 )
+  (   35 /JTAG/VCCIO )
+  (   36 /TARGET0/TARGET0_GPIO2 )
+  (   37 /TARGET0/TARGET0_GPIO1 )
+  (   38 /TARGET0/TARGET0_GPIO0 )
+  (   39 ? )
+  (   40 ? )
+  (   41 ? )
+  (   42 ? )
+  (   43 /TARGET0/CLK_2048KHZ )
+  (   44 ? )
+ )
+ ( /5343ECD1/53441090 $noname  U8 XC2C64A-7VQG44C {Lib=XC2CXXA-VQG44}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 /JTAG/GND )
+  (    5 ? )
+  (    6 ? )
+  (    7 /JTAG/VCCIO )
+  (    8 ? )
+  (    9 /TARGET1/TARGET1_TDI )
+  (   10 /TARGET1/TARGET1_TMS )
+  (   11 /TARGET1/TARGET1_TCK )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+  (   15 /JTAG/VCCINT )
+  (   16 ? )
+  (   17 /JTAG/GND )
+  (   18 ? )
+  (   19 ? )
+  (   20 ? )
+  (   21 ? )
+  (   22 ? )
+  (   23 ? )
+  (   24 /TARGET1/TARGET1_TDO )
+  (   25 /JTAG/GND )
+  (   26 /JTAG/VCCIO )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 ? )
+  (   31 ? )
+  (   32 /TARGET1/TARGET1_GPIO5 )
+  (   33 /TARGET0/TARGET0_GPIO4 )
+  (   34 /TARGET0/TARGET0_GPIO3 )
+  (   35 /JTAG/VCCIO )
+  (   36 /TARGET0/TARGET0_GPIO2 )
+  (   37 /TARGET0/TARGET0_GPIO1 )
+  (   38 /TARGET0/TARGET0_GPIO0 )
+  (   39 ? )
+  (   40 ? )
+  (   41 ? )
+  (   42 ? )
+  (   43 /TARGET0/CLK_2048KHZ )
+  (   44 ? )
+ )
+ ( /5343ECD1/5344110D $noname  C37 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /5343ECD1/5344114A $noname  C38 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5343ECD1/53441150 $noname  C39 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5343ECD1/53441156 $noname  C40 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53443604/5341E72B $noname  U9 XC2C128-7VQG100C {Lib=XC2CYYY-VQG100}
   (    1 ? )
   (    2 ? )
   (    3 ? )
@@ -8,69 +150,69 @@
   (    5 /JTAG/VCCIO )
   (    6 ? )
   (    7 ? )
-  (    8 ? )
-  (    9 ? )
-  (   10 /JTAG/XBAR_MISO )
-  (   11 /JTAG/XBAR_SCK )
-  (   12 /JTAG/XBAR_MOSI )
-  (   13 /JTAG/XBAR_CS_N )
+  (    8 /TARGET2/TARGET2_GPIO5 )
+  (    9 /TARGET0/TARGET0_GPIO4 )
+  (   10 /TARGET0/TARGET0_GPIO3 )
+  (   11 /TARGET0/TARGET0_GPIO2 )
+  (   12 /TARGET0/TARGET0_GPIO1 )
+  (   13 /TARGET0/TARGET0_GPIO0 )
   (   14 ? )
   (   15 ? )
-  (   16 /JTAG/JTAG0_TMS )
-  (   17 /JTAG/JTAG0_TDI )
-  (   18 /JTAG/JTAG0_TDO )
+  (   16 ? )
+  (   17 ? )
+  (   18 ? )
   (   19 ? )
   (   20 /JTAG/VCCIO )
   (   21 /JTAG/GND )
-  (   22 /JTAG/JTAG0_TCK )
-  (   23 /JTAG/JTAG1_TCK )
+  (   22 /TARGET0/CLK_2048KHZ )
+  (   23 ? )
   (   24 ? )
   (   25 /JTAG/GND )
   (   26 /JTAG/VCCINT )
-  (   27 /TARGET0/CLK_2048KHZ )
-  (   28 /JTAG/JTAG1_TMS )
-  (   29 /JTAG/JTAG1_TDI )
-  (   30 /JTAG/JTAG1_TDO )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 ? )
   (   31 /JTAG/GND )
   (   32 ? )
-  (   33 /X-bar/JTAG0_SRC_2 )
-  (   34 /X-bar/JTAG0_SRC_1 )
-  (   35 /X-bar/JTAG0_SRC_0 )
-  (   36 /X-bar/JTAG1_SRC_2 )
-  (   37 /X-bar/JTAG1_SRC_1 )
+  (   33 ? )
+  (   34 ? )
+  (   35 ? )
+  (   36 ? )
+  (   37 ? )
   (   38 /JTAG/VCCIO )
-  (   39 /X-bar/JTAG1_SRC_0 )
-  (   40 /X-bar/SPI_MODE_EN )
-  (   41 /X-bar/TARGET3_SRC_0 )
-  (   42 /X-bar/TARGET3_SRC_1 )
-  (   43 /X-bar/TARGET3_SRC_2 )
+  (   39 ? )
+  (   40 ? )
+  (   41 ? )
+  (   42 ? )
+  (   43 ? )
   (   44 ? )
-  (   45 /JTAG/XBAR_TDI )
+  (   45 /TARGET2/TARGET2_TDI )
   (   46 ? )
-  (   47 /JTAG/XBAR_TMS )
-  (   48 /JTAG/XBAR_TCK )
-  (   49 /X-bar/TARGET2_SRC_0 )
-  (   50 /X-bar/TARGET2_SRC_1 )
+  (   47 /TARGET2/TARGET2_TMS )
+  (   48 /TARGET2/TARGET2_TCK )
+  (   49 ? )
+  (   50 ? )
   (   51 /JTAG/VCCIO )
-  (   52 /X-bar/TARGET1_SRC_0 )
-  (   53 /X-bar/TARGET2_SRC_2 )
+  (   52 ? )
+  (   53 ? )
   (   54 ? )
-  (   55 /X-bar/TARGET1_SRC_1 )
-  (   56 /X-bar/TARGET1_SRC_2 )
+  (   55 ? )
+  (   56 ? )
   (   57 /JTAG/VCCINT )
-  (   58 /X-bar/TARGET0_SRC_0 )
+  (   58 ? )
   (   59 ? )
-  (   60 /X-bar/TARGET0_SRC_1 )
-  (   61 /X-bar/TARGET0_SRC_2 )
+  (   60 ? )
+  (   61 ? )
   (   62 /JTAG/GND )
   (   63 ? )
   (   64 ? )
   (   65 ? )
   (   66 ? )
-  (   67 /TARGET1/TARGET1_TCK )
-  (   68 /TARGET1/TARGET1_TDI )
+  (   67 ? )
+  (   68 ? )
   (   69 /JTAG/GND )
-  (   70 /TARGET1/TARGET1_TDO )
+  (   70 ? )
   (   71 ? )
   (   72 ? )
   (   73 ? )
@@ -83,123 +225,189 @@
   (   80 ? )
   (   81 ? )
   (   82 ? )
-  (   83 /JTAG/XBAR_TDO )
+  (   83 /TARGET2/TARGET2_TDO )
   (   84 /JTAG/GND )
   (   85 ? )
   (   86 ? )
   (   87 ? )
   (   88 /JTAG/VCCIO )
   (   89 ? )
-  (   90 /TARGET1/TARGET1_TMS )
-  (   91 /TARGET0/TARGET0_TDO )
-  (   92 /TARGET0/TARGET0_TDI )
+  (   90 ? )
+  (   91 ? )
+  (   92 ? )
   (   93 ? )
-  (   94 /TARGET0/TARGET0_TCK )
+  (   94 ? )
   (   95 ? )
   (   96 ? )
-  (   97 /TARGET0/TARGET0_TMS )
+  (   97 ? )
   (   98 /JTAG/VCCIO )
   (   99 ? )
   (  100 /JTAG/GND )
  )
- ( /53418DCC/53432F96 $noname  SW1 DIPSWITCH {Lib=DIL16}
-  (    1 /X-bar/JTAG0_SRC_2 )
-  (    2 /X-bar/JTAG0_SRC_1 )
-  (    3 /X-bar/JTAG0_SRC_0 )
-  (    4 /X-bar/JTAG1_SRC_2 )
-  (    5 /X-bar/JTAG1_SRC_1 )
-  (    6 /X-bar/JTAG1_SRC_0 )
-  (    7 ? )
-  (    8 /X-bar/SPI_MODE_EN )
-  (    9 /JTAG/GND )
-  (   10 /JTAG/GND )
-  (   11 /JTAG/GND )
-  (   12 /JTAG/GND )
-  (   13 /JTAG/GND )
-  (   14 /JTAG/GND )
-  (   15 /JTAG/GND )
-  (   16 /JTAG/GND )
- )
- ( /53418DCC/534332C7 $noname  SW2 DIPSWITCH {Lib=DIL16}
-  (    1 /X-bar/TARGET0_SRC_2 )
-  (    2 /X-bar/TARGET0_SRC_1 )
-  (    3 /X-bar/TARGET0_SRC_0 )
-  (    4 /X-bar/TARGET1_SRC_2 )
-  (    5 /X-bar/TARGET1_SRC_1 )
-  (    6 /X-bar/TARGET1_SRC_0 )
-  (    7 ? )
-  (    8 ? )
-  (    9 /JTAG/GND )
-  (   10 /JTAG/GND )
-  (   11 /JTAG/GND )
-  (   12 /JTAG/GND )
-  (   13 /JTAG/GND )
-  (   14 /JTAG/GND )
-  (   15 /JTAG/GND )
-  (   16 /JTAG/GND )
- )
- ( /53418DCC/534333A4 $noname  SW3 DIPSWITCH {Lib=DIL16}
-  (    1 /X-bar/TARGET2_SRC_2 )
-  (    2 /X-bar/TARGET2_SRC_1 )
-  (    3 /X-bar/TARGET2_SRC_0 )
-  (    4 /X-bar/TARGET3_SRC_2 )
-  (    5 /X-bar/TARGET3_SRC_1 )
-  (    6 /X-bar/TARGET3_SRC_0 )
-  (    7 ? )
-  (    8 ? )
-  (    9 /JTAG/GND )
-  (   10 /JTAG/GND )
-  (   11 /JTAG/GND )
-  (   12 /JTAG/GND )
-  (   13 /JTAG/GND )
-  (   14 /JTAG/GND )
-  (   15 /JTAG/GND )
-  (   16 /JTAG/GND )
- )
- ( /53418DCC/5343447A $noname  U6 2.048_MHz {Lib=OSC}
-  (    1 /JTAG/VCCIO )
-  (    2 /JTAG/GND )
-  (    3 N-000054 )
-  (    4 /JTAG/VCCIO )
- )
- ( /53418DCC/53434498 $noname  C24 0.1_uF {Lib=C}
+ ( /53443604/5341E87D $noname  C41 0.1_uF {Lib=C}
   (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/534344B6 $noname  R8 49.9 {Lib=R}
-  (    1 /TARGET0/CLK_2048KHZ )
-  (    2 N-000054 )
- )
- ( /53418DCC/5343844C $noname  C25 0.1_uF {Lib=C}
+ ( /53443604/5341E89A $noname  C43 0.1_uF {Lib=C}
   (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/53438452 $noname  C26 0.1_uF {Lib=C}
+ ( /53443604/5341E8A0 $noname  C45 0.1_uF {Lib=C}
   (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/53438458 $noname  C27 0.1_uF {Lib=C}
+ ( /53443604/5341E8A6 $noname  C46 0.1_uF {Lib=C}
   (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/5343845E $noname  C28 0.1_uF {Lib=C}
+ ( /53443604/5341E8AC $noname  C47 0.1_uF {Lib=C}
   (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/53438464 $noname  C29 0.1_uF {Lib=C}
+ ( /53443604/5341E8B2 $noname  C48 0.1_uF {Lib=C}
   (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/5343846A $noname  C30 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
-  (    2 /JTAG/GND )
- )
- ( /53418DCC/53438925 $noname  C31 0.1_uF {Lib=C}
+ ( /53443604/5341E8B8 $noname  C42 0.1_uF {Lib=C}
   (    1 /JTAG/VCCINT )
   (    2 /JTAG/GND )
  )
- ( /53418DCC/5343892B $noname  C32 0.1_uF {Lib=C}
+ ( /53443604/5341E8BE $noname  C44 0.1_uF {Lib=C}
   (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/5342223A $noname  U10 XC2C256-7VQG100C {Lib=XC2CYYY-VQG100}
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 /JTAG/VCCIO )
+  (    6 ? )
+  (    7 ? )
+  (    8 /TARGET3/TARGET3_GPIO5 )
+  (    9 /TARGET0/TARGET0_GPIO4 )
+  (   10 /TARGET0/TARGET0_GPIO3 )
+  (   11 /TARGET0/TARGET0_GPIO2 )
+  (   12 /TARGET0/TARGET0_GPIO1 )
+  (   13 /TARGET0/TARGET0_GPIO0 )
+  (   14 ? )
+  (   15 ? )
+  (   16 ? )
+  (   17 ? )
+  (   18 ? )
+  (   19 ? )
+  (   20 /JTAG/VCCIO )
+  (   21 /JTAG/GND )
+  (   22 /TARGET0/CLK_2048KHZ )
+  (   23 ? )
+  (   24 ? )
+  (   25 /JTAG/GND )
+  (   26 /JTAG/VCCINT )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 ? )
+  (   31 /JTAG/GND )
+  (   32 ? )
+  (   33 ? )
+  (   34 ? )
+  (   35 ? )
+  (   36 ? )
+  (   37 ? )
+  (   38 /JTAG/VCCIO )
+  (   39 ? )
+  (   40 ? )
+  (   41 ? )
+  (   42 ? )
+  (   43 ? )
+  (   44 ? )
+  (   45 /TARGET3/TARGET3_TDI )
+  (   46 ? )
+  (   47 /TARGET3/TARGET3_TMS )
+  (   48 /TARGET3/TARGET3_TCK )
+  (   49 ? )
+  (   50 ? )
+  (   51 /JTAG/VCCIO )
+  (   52 ? )
+  (   53 ? )
+  (   54 ? )
+  (   55 ? )
+  (   56 ? )
+  (   57 /JTAG/VCCINT )
+  (   58 ? )
+  (   59 ? )
+  (   60 ? )
+  (   61 ? )
+  (   62 /JTAG/GND )
+  (   63 ? )
+  (   64 ? )
+  (   65 ? )
+  (   66 ? )
+  (   67 ? )
+  (   68 ? )
+  (   69 /JTAG/GND )
+  (   70 ? )
+  (   71 ? )
+  (   72 ? )
+  (   73 ? )
+  (   74 ? )
+  (   75 /JTAG/GND )
+  (   76 ? )
+  (   77 ? )
+  (   78 ? )
+  (   79 ? )
+  (   80 ? )
+  (   81 ? )
+  (   82 ? )
+  (   83 /TARGET3/TARGET3_TDO )
+  (   84 /JTAG/GND )
+  (   85 ? )
+  (   86 ? )
+  (   87 ? )
+  (   88 /JTAG/VCCIO )
+  (   89 ? )
+  (   90 ? )
+  (   91 ? )
+  (   92 ? )
+  (   93 ? )
+  (   94 ? )
+  (   95 ? )
+  (   96 ? )
+  (   97 ? )
+  (   98 /JTAG/VCCIO )
+  (   99 ? )
+  (  100 /JTAG/GND )
+ )
+ ( /5341FC93/53424A26 $noname  C49 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424A85 $noname  C51 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424ACE $noname  C50 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424AD8 $noname  C52 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424ADE $noname  C53 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424AE4 $noname  C54 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424AEA $noname  C55 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /5341FC93/53424AF0 $noname  C56 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
   (    2 /JTAG/GND )
  )
  ( /53427A7D/53428A03 $noname  J1 HIROSE_UX60SX-MB-5ST_(MINI_USB) {Lib=HIROSE_UX60SX-MB-5ST_(MINI_USB)}
@@ -271,20 +479,20 @@
   (   17 /JTAG/XBAR_CS_N )
   (   18 /JTAG/XBAR_MOSI )
   (   19 /JTAG/XBAR_MISO )
-  (   20 /JTAG/XBAR_SCK )
-  (   21 ? )
+  (   20 ? )
+  (   21 /JTAG/FTDI_GPIO0 )
   (   22 /JTAG/GND )
   (   23 /JTAG/GND )
   (   24 /JTAG/VCCIO )
-  (   25 ? )
-  (   26 ? )
-  (   27 ? )
-  (   28 ? )
-  (   29 ? )
-  (   30 ? )
+  (   25 /JTAG/FTDI_GPIO1 )
+  (   26 /JTAG/FTDI_GPIO2 )
+  (   27 /JTAG/FTDI_GPIO3 )
+  (   28 /JTAG/FTDI_GPIO4 )
+  (   29 /JTAG/FTDI_GPIO5 )
+  (   30 /JTAG/FTDI_GPIO6 )
   (   31 /JTAG/FTDI_PWRSAV_N )
-  (   32 ? )
-  (   33 ? )
+  (   32 /JTAG/FTDI_GPIO7 )
+  (   33 /JTAG/XBAR_SCK )
   (   34 /JTAG/FTDI_RESET_N )
   (   35 /JTAG/GND )
   (   36 /JTAG/GND )
@@ -304,10 +512,6 @@
  ( /53427A7D/5342A19F $noname  R6 12K_1% {Lib=R}
   (    1 /JTAG/GND )
   (    2 /JTAG/FTDI_VREF )
- )
- ( /53427A7D/5342A8CF $noname  R7 39K {Lib=R}
-  (    1 /JTAG/FTDI_PWRSAV_N )
-  (    2 /JTAG/5V_USB )
  )
  ( /53427A7D/5342AAFE $noname  C3 10_nF {Lib=C}
   (    1 /JTAG/5V_USB )
@@ -334,7 +538,7 @@
   (    2 /JTAG/VCCIO )
  )
  ( /53427A7D/5342ADD0 $noname  U2 93LC56BT-OT {Lib=93LC56BT-OT}
-  (    1 N-000108 )
+  (    1 N-000188 )
   (    2 /JTAG/GND )
   (    3 /JTAG/FTDI_EEPROM_DATA )
   (    4 /JTAG/FTDI_EEPROM_CLK )
@@ -350,7 +554,7 @@
   (    2 /JTAG/GND )
  )
  ( /53427A7D/5342B104 $noname  R5 2K {Lib=R}
-  (    1 N-000108 )
+  (    1 N-000188 )
   (    2 /JTAG/FTDI_EEPROM_DATA )
  )
  ( /53427A7D/5342B16D $noname  C1 20_pF {Lib=C}
@@ -449,7 +653,7 @@
  )
  ( /53427A7D/5342E31F $noname  J5 CONN_3 {Lib=CONN_3}
   (    1 /JTAG/5V_USB )
-  (    2 N-000105 )
+  (    2 N-000198 )
   (    3 /JTAG/5V_JACK )
  )
  ( /53427A7D/5342E42A $noname  J4 CONN_3 {Lib=CONN_3}
@@ -459,183 +663,453 @@
  )
  ( /53427A7D/5342E563 $noname  L4 600R {Lib=INDUCTOR_PWROUT}
   (    1 /JTAG/5V )
+  (    2 N-000198 )
+ )
+ ( /53427A7D/53445160 $noname  R7 39K {Lib=R}
+  (    1 /JTAG/FTDI_PWRSAV_N )
+  (    2 /JTAG/5V_USB )
+ )
+ ( /53418DCC/534190E5 $noname  U1 XC2C128-7VQG100 {Lib=XC2CYYY-VQG100}
+  (    1 /TARGET1/TARGET1_TDO )
+  (    2 /TARGET1/TARGET1_TDI )
+  (    3 /TARGET1/TARGET1_TCK )
+  (    4 /TARGET1/TARGET1_TMS )
+  (    5 /JTAG/VCCIO )
+  (    6 /TARGET0/TARGET0_TDO )
+  (    7 /TARGET0/TARGET0_TDI )
+  (    8 /TARGET0/TARGET0_TCK )
+  (    9 /TARGET0/TARGET0_TMS )
+  (   10 /JTAG/XBAR_MISO )
+  (   11 /JTAG/XBAR_SCK )
+  (   12 /JTAG/XBAR_MOSI )
+  (   13 /JTAG/XBAR_CS_N )
+  (   14 /X-bar/TARGET0_SRC_2 )
+  (   15 /X-bar/TARGET0_SRC_1 )
+  (   16 /X-bar/TARGET0_SRC_0 )
+  (   17 /X-bar/TARGET1_SRC_2 )
+  (   18 /X-bar/TARGET1_SRC_1 )
+  (   19 /X-bar/TARGET2_SRC_2 )
+  (   20 /JTAG/VCCIO )
+  (   21 /JTAG/GND )
+  (   22 /JTAG/JTAG0_TCK )
+  (   23 /JTAG/JTAG1_TCK )
+  (   24 /X-bar/TARGET1_SRC_0 )
+  (   25 /JTAG/GND )
+  (   26 /JTAG/VCCINT )
+  (   27 /TARGET0/CLK_2048KHZ )
+  (   28 /X-bar/TARGET2_SRC_1 )
+  (   29 /X-bar/TARGET2_SRC_0 )
+  (   30 /X-bar/TARGET3_SRC_2 )
+  (   31 /JTAG/GND )
+  (   32 /X-bar/TARGET3_SRC_1 )
+  (   33 /X-bar/TARGET3_SRC_0 )
+  (   34 /TARGET0/TARGET0_GPIO0 )
+  (   35 /TARGET0/TARGET0_GPIO1 )
+  (   36 /TARGET0/TARGET0_GPIO2 )
+  (   37 /TARGET0/TARGET0_GPIO3 )
+  (   38 /JTAG/VCCIO )
+  (   39 /TARGET0/TARGET0_GPIO4 )
+  (   40 /TARGET0/TARGET0_GPIO5 )
+  (   41 ? )
+  (   42 /X-bar/TARGET3_UNUSED )
+  (   43 /X-bar/TARGET3_CHAIN1 )
+  (   44 /X-bar/TARGET3_CHAIN0 )
+  (   45 /JTAG/XBAR_TDI )
+  (   46 /X-bar/TARGET2_UNUSED )
+  (   47 /JTAG/XBAR_TMS )
+  (   48 /JTAG/XBAR_TCK )
+  (   49 /X-bar/TARGET2_CHAIN1 )
+  (   50 /X-bar/TARGET2_CHAIN0 )
+  (   51 /JTAG/VCCIO )
+  (   52 /X-bar/TARGET1_UNUSED )
+  (   53 /X-bar/TARGET1_CHAIN1 )
+  (   54 /X-bar/TARGET1_CHAIN0 )
+  (   55 /X-bar/TARGET0_UNUSED )
+  (   56 /X-bar/TARGET0_CHAIN1 )
+  (   57 /JTAG/VCCINT )
+  (   58 /X-bar/TARGET0_CHAIN0 )
+  (   59 /X-bar/JTAG1_ACTIVE )
+  (   60 /X-bar/JTAG0_ACTIVE )
+  (   61 /TARGET3/TARGET3_GPIO5 )
+  (   62 /JTAG/GND )
+  (   63 /TARGET2/TARGET2_GPIO5 )
+  (   64 /TARGET1/TARGET1_GPIO5 )
+  (   65 /JTAG/FTDI_GPIO1 )
+  (   66 /JTAG/FTDI_GPIO2 )
+  (   67 /JTAG/FTDI_GPIO3 )
+  (   68 /JTAG/FTDI_GPIO4 )
+  (   69 /JTAG/GND )
+  (   70 /JTAG/FTDI_GPIO5 )
+  (   71 /JTAG/FTDI_GPIO6 )
+  (   72 /JTAG/FTDI_GPIO7 )
+  (   73 /JTAG/JTAG1_TMS )
+  (   74 /JTAG/JTAG1_TDI )
+  (   75 /JTAG/GND )
+  (   76 /JTAG/JTAG1_TDO )
+  (   77 /JTAG/JTAG0_TMS )
+  (   78 /JTAG/JTAG0_TDI )
+  (   79 /JTAG/JTAG0_TDO )
+  (   80 /X-bar/JTAG0_SRC_2 )
+  (   81 /X-bar/JTAG0_SRC_1 )
+  (   82 /X-bar/JTAG0_SRC_0 )
+  (   83 /JTAG/XBAR_TDO )
+  (   84 /JTAG/GND )
+  (   85 /X-bar/JTAG1_SRC_2 )
+  (   86 /X-bar/JTAG1_SRC_1 )
+  (   87 /X-bar/JTAG1_SRC_0 )
+  (   88 /JTAG/VCCIO )
+  (   89 /X-bar/SPI_MODE_EN )
+  (   90 /JTAG/FTDI_GPIO0 )
+  (   91 /TARGET3/TARGET3_TDO )
+  (   92 /TARGET3/TARGET3_TDI )
+  (   93 /TARGET3/TARGET3_TCK )
+  (   94 /TARGET3/TARGET3_TMS )
+  (   95 /TARGET2/TARGET2_TDO )
+  (   96 /TARGET2/TARGET2_TDI )
+  (   97 /TARGET2/TARGET2_TCK )
+  (   98 /JTAG/VCCIO )
+  (   99 /TARGET2/TARGET2_TMS )
+  (  100 /JTAG/GND )
+ )
+ ( /53418DCC/53432F96 $noname  SW1 DIPSWITCH {Lib=DIL16}
+  (    1 /X-bar/JTAG0_SRC_2 )
+  (    2 /X-bar/JTAG0_SRC_1 )
+  (    3 /X-bar/JTAG0_SRC_0 )
+  (    4 /X-bar/JTAG1_SRC_2 )
+  (    5 /X-bar/JTAG1_SRC_1 )
+  (    6 /X-bar/JTAG1_SRC_0 )
+  (    7 ? )
+  (    8 /X-bar/SPI_MODE_EN )
+  (    9 /JTAG/GND )
+  (   10 /JTAG/GND )
+  (   11 /JTAG/GND )
+  (   12 /JTAG/GND )
+  (   13 /JTAG/GND )
+  (   14 /JTAG/GND )
+  (   15 /JTAG/GND )
+  (   16 /JTAG/GND )
+ )
+ ( /53418DCC/534332C7 $noname  SW2 DIPSWITCH {Lib=DIL16}
+  (    1 /X-bar/TARGET0_SRC_2 )
+  (    2 /X-bar/TARGET0_SRC_1 )
+  (    3 /X-bar/TARGET0_SRC_0 )
+  (    4 /X-bar/TARGET1_SRC_2 )
+  (    5 /X-bar/TARGET1_SRC_1 )
+  (    6 /X-bar/TARGET1_SRC_0 )
+  (    7 ? )
+  (    8 ? )
+  (    9 /JTAG/GND )
+  (   10 /JTAG/GND )
+  (   11 /JTAG/GND )
+  (   12 /JTAG/GND )
+  (   13 /JTAG/GND )
+  (   14 /JTAG/GND )
+  (   15 /JTAG/GND )
+  (   16 /JTAG/GND )
+ )
+ ( /53418DCC/534333A4 $noname  SW3 DIPSWITCH {Lib=DIL16}
+  (    1 /X-bar/TARGET2_SRC_2 )
+  (    2 /X-bar/TARGET2_SRC_1 )
+  (    3 /X-bar/TARGET2_SRC_0 )
+  (    4 /X-bar/TARGET3_SRC_2 )
+  (    5 /X-bar/TARGET3_SRC_1 )
+  (    6 /X-bar/TARGET3_SRC_0 )
+  (    7 ? )
+  (    8 ? )
+  (    9 /JTAG/GND )
+  (   10 /JTAG/GND )
+  (   11 /JTAG/GND )
+  (   12 /JTAG/GND )
+  (   13 /JTAG/GND )
+  (   14 /JTAG/GND )
+  (   15 /JTAG/GND )
+  (   16 /JTAG/GND )
+ )
+ ( /53418DCC/5343447A $noname  U6 2.048_MHz {Lib=OSC}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+  (    3 N-000075 )
+  (    4 /JTAG/VCCIO )
+ )
+ ( /53418DCC/53434498 $noname  C24 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/534344B6 $noname  R8 49.9 {Lib=R}
+  (    1 /TARGET0/CLK_2048KHZ )
+  (    2 N-000075 )
+ )
+ ( /53418DCC/5343844C $noname  C25 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53438452 $noname  C26 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53438458 $noname  C27 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/5343845E $noname  C28 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53438464 $noname  C29 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/5343846A $noname  C30 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCIO )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53438925 $noname  C31 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/5343892B $noname  C32 0.1_uF {Lib=C}
+  (    1 /JTAG/VCCINT )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/534841A9 $noname  R9 470 {Lib=R}
+  (    1 /JTAG/VCCIO )
+  (    2 N-000089 )
+ )
+ ( /53418DCC/534841C7 $noname  D1 GREEN {Lib=LED}
+  (    1 N-000089 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/534841D8 $noname  R10 470 {Lib=R}
+  (    1 /X-bar/JTAG0_ACTIVE )
+  (    2 N-000094 )
+ )
+ ( /53418DCC/534841DE $noname  D2 GREEN {Lib=LED}
+  (    1 N-000094 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/5348429E $noname  R11 470 {Lib=R}
+  (    1 /X-bar/JTAG1_ACTIVE )
+  (    2 N-000093 )
+ )
+ ( /53418DCC/534842A4 $noname  D3 GREEN {Lib=LED}
+  (    1 N-000093 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53484634 $noname  R12 470 {Lib=R}
+  (    1 /X-bar/TARGET0_CHAIN0 )
+  (    2 N-000106 )
+ )
+ ( /53418DCC/5348463A $noname  D4 GREEN {Lib=LED}
+  (    1 N-000106 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53484642 $noname  R13 470 {Lib=R}
+  (    1 /X-bar/TARGET0_CHAIN1 )
   (    2 N-000105 )
  )
- ( /53439A43/5343DB25 $noname  U7 XC2C32A-6VQG44C {Lib=XC2CXXA-VQG44}
-  (    1 ? )
-  (    2 ? )
-  (    3 ? )
-  (    4 /JTAG/GND )
-  (    5 ? )
-  (    6 ? )
-  (    7 /JTAG/VCCIO )
-  (    8 ? )
-  (    9 /TARGET0/TARGET0_TDI )
-  (   10 /TARGET0/TARGET0_TMS )
-  (   11 /TARGET0/TARGET0_TCK )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
-  (   15 /JTAG/VCCINT )
-  (   16 ? )
-  (   17 /JTAG/GND )
-  (   18 ? )
-  (   19 ? )
-  (   20 ? )
-  (   21 ? )
-  (   22 ? )
-  (   23 ? )
-  (   24 /TARGET0/TARGET0_TDO )
-  (   25 /JTAG/GND )
-  (   26 /JTAG/VCCIO )
-  (   27 ? )
-  (   28 ? )
-  (   29 ? )
-  (   30 ? )
-  (   31 ? )
-  (   32 ? )
-  (   33 ? )
-  (   34 ? )
-  (   35 /JTAG/VCCIO )
-  (   36 ? )
-  (   37 ? )
-  (   38 ? )
-  (   39 ? )
-  (   40 ? )
-  (   41 ? )
-  (   42 ? )
-  (   43 /TARGET0/CLK_2048KHZ )
-  (   44 ? )
- )
- ( /53439A43/5343DD52 $noname  C33 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCINT )
+ ( /53418DCC/53484648 $noname  D5 YELLOW {Lib=LED}
+  (    1 N-000105 )
   (    2 /JTAG/GND )
  )
- ( /53439A43/5343DD7E $noname  C34 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
+ ( /53418DCC/53484650 $noname  R14 470 {Lib=R}
+  (    1 /X-bar/TARGET0_UNUSED )
+  (    2 N-000104 )
+ )
+ ( /53418DCC/53484656 $noname  D6 RED {Lib=LED}
+  (    1 N-000104 )
   (    2 /JTAG/GND )
  )
- ( /53439A43/5343DD84 $noname  C35 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
+ ( /53418DCC/534847D7 $noname  R15 470 {Lib=R}
+  (    1 /X-bar/TARGET1_CHAIN0 )
+  (    2 N-000110 )
+ )
+ ( /53418DCC/534847DD $noname  D7 GREEN {Lib=LED}
+  (    1 N-000110 )
   (    2 /JTAG/GND )
  )
- ( /53439A43/5343DD8A $noname  C36 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
+ ( /53418DCC/534847E4 $noname  R16 470 {Lib=R}
+  (    1 /X-bar/TARGET1_CHAIN1 )
+  (    2 N-000109 )
+ )
+ ( /53418DCC/534847EA $noname  D8 YELLOW {Lib=LED}
+  (    1 N-000109 )
   (    2 /JTAG/GND )
  )
- ( /5343ECD1/53441090 $noname  U8 XC2C64A-7VQG44C {Lib=XC2CXXA-VQG44}
-  (    1 ? )
-  (    2 ? )
-  (    3 ? )
-  (    4 /JTAG/GND )
-  (    5 ? )
-  (    6 ? )
-  (    7 /JTAG/VCCIO )
-  (    8 ? )
-  (    9 /TARGET1/TARGET1_TDI )
-  (   10 /TARGET1/TARGET1_TMS )
-  (   11 /TARGET1/TARGET1_TCK )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
-  (   15 /JTAG/VCCINT )
-  (   16 ? )
-  (   17 /JTAG/GND )
-  (   18 ? )
-  (   19 ? )
-  (   20 ? )
-  (   21 ? )
-  (   22 ? )
-  (   23 ? )
-  (   24 /TARGET1/TARGET1_TDO )
-  (   25 /JTAG/GND )
-  (   26 /JTAG/VCCIO )
-  (   27 ? )
-  (   28 ? )
-  (   29 ? )
-  (   30 ? )
-  (   31 ? )
-  (   32 ? )
-  (   33 ? )
-  (   34 ? )
-  (   35 /JTAG/VCCIO )
-  (   36 ? )
-  (   37 ? )
-  (   38 ? )
-  (   39 ? )
-  (   40 ? )
-  (   41 ? )
-  (   42 ? )
-  (   43 /TARGET0/CLK_2048KHZ )
-  (   44 ? )
+ ( /53418DCC/534847F0 $noname  R17 470 {Lib=R}
+  (    1 /X-bar/TARGET1_UNUSED )
+  (    2 N-000108 )
  )
- ( /5343ECD1/5344110D $noname  C37 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCINT )
+ ( /53418DCC/534847F6 $noname  D9 RED {Lib=LED}
+  (    1 N-000108 )
   (    2 /JTAG/GND )
  )
- ( /5343ECD1/5344114A $noname  C38 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
+ ( /53418DCC/53484804 $noname  R18 470 {Lib=R}
+  (    1 /X-bar/TARGET2_CHAIN0 )
+  (    2 N-000098 )
+ )
+ ( /53418DCC/5348480A $noname  D10 GREEN {Lib=LED}
+  (    1 N-000098 )
   (    2 /JTAG/GND )
  )
- ( /5343ECD1/53441150 $noname  C39 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
+ ( /53418DCC/53484811 $noname  R19 470 {Lib=R}
+  (    1 /X-bar/TARGET2_CHAIN1 )
+  (    2 N-000097 )
+ )
+ ( /53418DCC/53484817 $noname  D11 YELLOW {Lib=LED}
+  (    1 N-000097 )
   (    2 /JTAG/GND )
  )
- ( /5343ECD1/53441156 $noname  C40 0.1_uF {Lib=C}
-  (    1 /JTAG/VCCIO )
+ ( /53418DCC/5348481D $noname  R20 470 {Lib=R}
+  (    1 /X-bar/TARGET2_UNUSED )
+  (    2 N-000096 )
+ )
+ ( /53418DCC/53484823 $noname  D12 RED {Lib=LED}
+  (    1 N-000096 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/5348482E $noname  R21 470 {Lib=R}
+  (    1 /X-bar/TARGET3_CHAIN0 )
+  (    2 N-000103 )
+ )
+ ( /53418DCC/53484834 $noname  D13 GREEN {Lib=LED}
+  (    1 N-000103 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/5348483B $noname  R22 470 {Lib=R}
+  (    1 /X-bar/TARGET3_CHAIN1 )
+  (    2 N-000101 )
+ )
+ ( /53418DCC/53484841 $noname  D14 YELLOW {Lib=LED}
+  (    1 N-000101 )
+  (    2 /JTAG/GND )
+ )
+ ( /53418DCC/53484847 $noname  R23 470 {Lib=R}
+  (    1 /X-bar/TARGET3_UNUSED )
+  (    2 N-000099 )
+ )
+ ( /53418DCC/5348484D $noname  D15 RED {Lib=LED}
+  (    1 N-000099 )
   (    2 /JTAG/GND )
  )
 )
 *
 { Allowed footprints by component:
-$component C24
+$component C33
  SM*
  C?
  C1-1
 $endlist
-$component R8
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component C25
+$component C34
  SM*
  C?
  C1-1
 $endlist
-$component C26
+$component C35
  SM*
  C?
  C1-1
 $endlist
-$component C27
+$component C36
  SM*
  C?
  C1-1
 $endlist
-$component C28
+$component C37
  SM*
  C?
  C1-1
 $endlist
-$component C29
+$component C38
  SM*
  C?
  C1-1
 $endlist
-$component C30
+$component C39
  SM*
  C?
  C1-1
 $endlist
-$component C31
+$component C40
  SM*
  C?
  C1-1
 $endlist
-$component C32
+$component C41
+ SM*
+ C?
+ C1-1
+$endlist
+$component C43
+ SM*
+ C?
+ C1-1
+$endlist
+$component C45
+ SM*
+ C?
+ C1-1
+$endlist
+$component C46
+ SM*
+ C?
+ C1-1
+$endlist
+$component C47
+ SM*
+ C?
+ C1-1
+$endlist
+$component C48
+ SM*
+ C?
+ C1-1
+$endlist
+$component C42
+ SM*
+ C?
+ C1-1
+$endlist
+$component C44
+ SM*
+ C?
+ C1-1
+$endlist
+$component C49
+ SM*
+ C?
+ C1-1
+$endlist
+$component C51
+ SM*
+ C?
+ C1-1
+$endlist
+$component C50
+ SM*
+ C?
+ C1-1
+$endlist
+$component C52
+ SM*
+ C?
+ C1-1
+$endlist
+$component C53
+ SM*
+ C?
+ C1-1
+$endlist
+$component C54
+ SM*
+ C?
+ C1-1
+$endlist
+$component C55
+ SM*
+ C?
+ C1-1
+$endlist
+$component C56
  SM*
  C?
  C1-1
@@ -646,13 +1120,6 @@ $component C12
  C1-1
 $endlist
 $component R6
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R7
  R?
  SM0603
  SM0805
@@ -804,437 +1271,955 @@ $component C21
  C?
  C1-1
 $endlist
-$component C33
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C24
  SM*
  C?
  C1-1
 $endlist
-$component C34
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C25
  SM*
  C?
  C1-1
 $endlist
-$component C35
+$component C26
  SM*
  C?
  C1-1
 $endlist
-$component C36
+$component C27
  SM*
  C?
  C1-1
 $endlist
-$component C37
+$component C28
  SM*
  C?
  C1-1
 $endlist
-$component C38
+$component C29
  SM*
  C?
  C1-1
 $endlist
-$component C39
+$component C30
  SM*
  C?
  C1-1
 $endlist
-$component C40
+$component C31
  SM*
  C?
  C1-1
+$endlist
+$component C32
+ SM*
+ C?
+ C1-1
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D5
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D7
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R16
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D8
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D9
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D10
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D11
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D12
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R21
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D13
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R22
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D14
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R23
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D15
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
 $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/JTAG/GND" "GND"
+Net 1 "/TARGET2/TARGET2_TMS" "TARGET2_TMS"
+ U1 99
+ U9 47
+Net 2 "/TARGET2/TARGET2_TCK" "TARGET2_TCK"
+ U1 97
+ U9 48
+Net 3 "/TARGET3/TARGET3_TDI" "TARGET3_TDI"
+ U1 92
+ U10 45
+Net 4 "/TARGET3/TARGET3_TDO" "TARGET3_TDO"
+ U1 91
+ U10 83
+Net 5 "/TARGET3/TARGET3_TMS" "TARGET3_TMS"
+ U1 94
+ U10 47
+Net 6 "/TARGET3/TARGET3_TCK" "TARGET3_TCK"
+ U1 93
+ U10 48
+Net 7 "/JTAG/FTDI_GPIO0" "FTDI_GPIO0"
+ U3 21
+ U1 90
+Net 8 "/JTAG/FTDI_GPIO1" "FTDI_GPIO1"
+ U3 25
+ U1 65
+Net 9 "/JTAG/FTDI_GPIO2" "FTDI_GPIO2"
+ U3 26
+ U1 66
+Net 10 "/JTAG/FTDI_GPIO3" "FTDI_GPIO3"
+ U3 27
+ U1 67
+Net 11 "/TARGET2/TARGET2_GPIO5" "TARGET2_GPIO5"
+ U9 8
+ U1 63
+Net 12 "/TARGET1/TARGET1_GPIO5" "TARGET1_GPIO5"
+ U8 32
+ U1 64
+Net 13 "/TARGET0/TARGET0_GPIO5" "TARGET0_GPIO5"
+ U7 32
+ U1 40
+Net 14 "/JTAG/FTDI_GPIO4" "FTDI_GPIO4"
+ U1 68
+ U3 28
+Net 15 "/JTAG/FTDI_GPIO5" "FTDI_GPIO5"
+ U3 29
+ U1 70
+Net 16 "/JTAG/FTDI_GPIO6" "FTDI_GPIO6"
+ U1 71
+ U3 30
+Net 17 "/JTAG/FTDI_GPIO7" "FTDI_GPIO7"
+ U3 32
+ U1 72
+Net 18 "/JTAG/XBAR_TDI" "XBAR_TDI"
+ U1 45
+ J3 10
+Net 19 "/JTAG/XBAR_TDO" "XBAR_TDO"
+ U1 83
+ J3 8
+Net 20 "/JTAG/XBAR_TCK" "XBAR_TCK"
+ U1 48
+ J3 6
+Net 21 "/JTAG/XBAR_TMS" "XBAR_TMS"
+ J3 4
+ U1 47
+Net 22 "/JTAG/JTAG0_TDI" "JTAG0_TDI"
+ U3 14
+ U1 78
+Net 23 "/JTAG/JTAG0_TDO" "JTAG0_TDO"
+ U1 79
+ U3 15
+Net 24 "/JTAG/JTAG0_TMS" "JTAG0_TMS"
+ U1 77
+ U3 16
+Net 25 "/JTAG/JTAG0_TCK" "JTAG0_TCK"
+ U1 22
+ U3 13
+Net 26 "/JTAG/JTAG1_TDI" "JTAG1_TDI"
+ J2 10
+ U1 74
+Net 27 "/TARGET2/TARGET2_TDO" "TARGET2_TDO"
+ U9 83
+ U1 95
+Net 28 "/TARGET2/TARGET2_TDI" "TARGET2_TDI"
+ U9 45
+ U1 96
+Net 29 "/TARGET1/TARGET1_TCK" "TARGET1_TCK"
+ U8 11
+ U1 3
+Net 30 "/TARGET1/TARGET1_TMS" "TARGET1_TMS"
+ U8 10
+ U1 4
+Net 31 "/TARGET1/TARGET1_TDO" "TARGET1_TDO"
+ U8 24
+ U1 1
+Net 32 "/TARGET1/TARGET1_TDI" "TARGET1_TDI"
+ U8 9
+ U1 2
+Net 33 "/JTAG/XBAR_MISO" "XBAR_MISO"
+ U1 10
+ U3 19
+Net 34 "/JTAG/XBAR_MOSI" "XBAR_MOSI"
+ U1 12
+ U3 18
+Net 35 "/JTAG/XBAR_SCK" "XBAR_SCK"
+ U3 33
+ U1 11
+Net 36 "/JTAG/XBAR_CS_N" "XBAR_CS_N"
+ U1 13
+ U3 17
+Net 37 "/TARGET0/TARGET0_TCK" "TARGET0_TCK"
+ U7 11
+ U1 8
+Net 38 "/TARGET0/TARGET0_TMS" "TARGET0_TMS"
+ U1 9
+ U7 10
+Net 39 "/TARGET0/TARGET0_TDO" "TARGET0_TDO"
+ U7 24
+ U1 6
+Net 40 "/TARGET0/TARGET0_TDI" "TARGET0_TDI"
+ U1 7
+ U7 9
+Net 41 "/JTAG/JTAG1_TCK" "JTAG1_TCK"
+ J2 6
+ U1 23
+Net 42 "/JTAG/JTAG1_TMS" "JTAG1_TMS"
+ U1 73
+ J2 4
+Net 43 "/JTAG/JTAG1_TDO" "JTAG1_TDO"
+ J2 8
+ U1 76
+Net 44 "/TARGET0/TARGET0_GPIO0" "TARGET0_GPIO0"
+ U1 34
+ U7 38
+ U10 13
+ U8 38
+ U9 13
+Net 51 "/TARGET3/TARGET3_GPIO5" "TARGET3_GPIO5"
+ U1 61
+ U10 8
+Net 52 "/TARGET0/TARGET0_GPIO4" "TARGET0_GPIO4"
+ U1 39
+ U10 9
+ U7 33
+ U9 9
+ U8 33
+Net 53 "/TARGET0/TARGET0_GPIO3" "TARGET0_GPIO3"
+ U1 37
+ U9 10
+ U8 34
+ U7 34
+ U10 10
+Net 54 "/TARGET0/TARGET0_GPIO2" "TARGET0_GPIO2"
+ U8 36
+ U7 36
+ U9 11
+ U1 36
+ U10 11
+Net 55 "/TARGET0/TARGET0_GPIO1" "TARGET0_GPIO1"
+ U8 37
+ U7 37
+ U9 12
+ U1 35
+ U10 12
+Net 56 "/JTAG/VCCINT" "VCCINT"
+ C44 1
+ C42 1
+ U5 2
+ U9 26
+ U8 15
+ U9 57
+ C23 1
+ C51 1
+ C49 1
+ U10 26
+ U10 57
+ U1 57
+ C33 1
+ U1 26
+ C37 1
+ U7 15
+ C31 1
+ C32 1
+Net 57 "/TARGET0/CLK_2048KHZ" "CLK_2048KHZ"
+ R8 1
+ U7 43
+ U8 43
+ U1 27
+ U10 22
+ U9 22
+Net 58 "/JTAG/GND" "GND"
+ C45 2
+ C53 2
+ C52 2
+ U10 100
+ C54 2
+ U9 84
+ C55 2
+ C50 2
+ U9 25
+ C51 2
+ C49 2
+ C56 2
+ U9 75
+ U10 62
+ U10 84
+ U10 25
+ U9 69
+ U9 100
+ C41 2
+ U10 75
+ U10 69
+ C43 2
+ J3 3
+ J3 5
+ J3 7
+ J3 9
+ C34 2
+ J3 11
+ C35 2
+ C36 2
+ C20 2
+ C19 2
+ C17 2
+ C15 2
+ C9 2
+ C16 2
+ U3 4
+ R6 1
+ U3 36
+ U3 47
+ U3 48
+ J2 11
+ C37 2
+ J2 9
+ J2 7
+ J2 5
+ J2 3
+ J1 5
+ C12 2
+ C33 2
+ C3 2
+ C4 2
+ C6 2
+ C7 2
+ C18 2
+ U2 2
+ C8 2
+ C14 2
+ U7 25
+ U7 17
+ C1 2
+ C5 2
+ U7 4
+ C10 2
+ C11 2
+ C13 2
+ C2 2
+ U9 21
+ U9 31
+ U9 62
+ C44 2
+ C46 2
+ C47 2
+ C48 2
+ C42 2
+ U3 23
+ U8 25
+ U3 42
+ U3 22
+ U8 17
+ U8 4
+ C38 2
+ C39 2
+ C40 2
+ U3 41
+ U3 11
+ U3 10
+ U3 9
+ C21 2
+ C22 2
+ C23 2
+ U4 1
+ J4 2
+ U5 1
+ U3 35
+ SW3 10
+ D7 2
+ SW3 9
+ D8 2
+ D9 2
+ U1 31
+ U1 21
+ C25 2
+ C26 2
+ C27 2
+ C28 2
+ C29 2
+ SW3 16
+ SW3 15
+ SW3 14
+ C30 2
+ SW3 13
+ SW3 12
+ SW3 11
+ SW2 14
+ SW2 13
+ SW2 12
+ SW2 11
+ SW2 10
+ SW2 9
+ D1 2
+ D10 2
+ D11 2
+ D12 2
+ D2 2
+ D3 2
+ D4 2
+ D5 2
+ SW2 16
+ D6 2
+ D13 2
+ SW2 15
+ D14 2
+ D15 2
+ C24 2
+ U1 69
+ U1 75
+ U1 62
+ C32 2
+ C31 2
+ U1 25
+ U1 100
+ U1 84
+ U10 21
+ U10 31
  SW1 16
  SW1 15
  SW1 14
  SW1 13
  SW1 12
  SW1 11
- SW2 9
- C11 2
- C17 2
- C19 2
- C20 2
- U8 17
- C14 2
- C8 2
- C15 2
- C9 2
- C16 2
- C10 2
- U8 25
- U1 31
- U1 62
- C28 2
- C29 2
- C30 2
- C31 2
- C32 2
- U6 2
- C24 2
- C25 2
- C26 2
- C27 2
- SW2 10
- SW2 11
- SW2 12
- SW2 13
- SW1 9
  SW1 10
- SW3 16
- SW2 14
- SW2 15
- SW2 16
- SW3 9
- SW3 10
- SW3 11
- SW3 12
- SW3 13
- SW3 14
- SW3 15
- U1 84
- U1 25
- U1 75
- U1 69
- U1 100
- U1 21
- C7 2
- U7 25
- C18 2
- U2 2
- U7 17
- C2 2
- C13 2
- J2 7
- J2 9
- J2 11
- J3 3
- J3 5
- J3 7
- J3 9
- J3 11
- J1 5
- C40 2
- C33 2
- C36 2
- C35 2
- C34 2
- C3 2
- U3 36
- U3 47
- U3 48
- R6 1
- U7 4
- C1 2
- C5 2
- C4 2
- C6 2
- J4 2
- U4 1
- C23 2
- C22 2
- C21 2
- U5 1
- C39 2
- C12 2
- J2 3
- J2 5
- C38 2
- U3 11
- U3 41
- U3 22
- U3 42
- U3 23
- C37 2
- U3 35
- U8 4
- U3 4
- U3 9
- U3 10
-Net 2 "/JTAG/VCCIO" "VCCIO"
- C22 1
- U4 2
- U8 7
- U3 24
- U3 12
- C38 1
- J2 2
- C25 1
- U1 20
- U1 5
- U1 98
- U1 88
- U1 38
- C26 1
- C27 1
- U8 35
- U8 26
- C20 1
- C19 1
- C17 1
- U5 3
- R3 2
- R2 2
- R1 2
- U7 7
- C34 1
- U3 46
- C35 1
- C36 1
- C39 1
- C40 1
+ SW1 9
+ U6 2
+Net 59 "/JTAG/VCCIO" "VCCIO"
+ U10 38
  J3 2
- C2 1
- U2 6
- R4 2
+ U10 20
+ U10 5
+ C38 1
+ C46 1
+ U3 24
+ C19 1
+ C20 1
+ C47 1
+ U6 4
+ U9 5
+ U10 98
+ U10 88
+ C24 1
+ U10 51
+ R9 1
+ U5 3
+ U1 98
+ C34 1
+ U4 2
+ C35 1
+ U3 12
+ C36 1
+ U6 1
+ C22 1
+ J2 2
  U7 26
+ C45 1
  U7 35
+ C43 1
+ C48 1
+ C41 1
+ U1 38
+ U1 88
+ U9 38
+ U9 88
+ U9 98
+ C56 1
+ C55 1
+ C54 1
+ C53 1
+ C27 1
+ C50 1
  C28 1
  C29 1
- C30 1
- U6 1
- U6 4
- C24 1
+ C52 1
+ U8 7
+ U2 6
  U1 51
-Net 3 "/JTAG/VCCINT" "VCCINT"
- U8 15
- U5 2
- C23 1
- C37 1
- U7 15
- C31 1
- C32 1
- C33 1
- U1 57
- U1 26
-Net 4 "/TARGET0/CLK_2048KHZ" "CLK_2048KHZ"
- U1 27
- R8 1
- U7 43
- U8 43
-Net 5 "/TARGET0/TARGET0_TDO" "TARGET0_TDO"
- U1 91
- U7 24
-Net 6 "/TARGET0/TARGET0_TDI" "TARGET0_TDI"
- U7 9
- U1 92
-Net 7 "/TARGET0/TARGET0_TCK" "TARGET0_TCK"
- U7 11
- U1 94
-Net 8 "/TARGET0/TARGET0_TMS" "TARGET0_TMS"
- U7 10
- U1 97
-Net 9 "/JTAG/XBAR_SCK" "XBAR_SCK"
- U1 11
- U3 20
-Net 10 "/JTAG/XBAR_MOSI" "XBAR_MOSI"
- U1 12
- U3 18
-Net 11 "/JTAG/XBAR_MISO" "XBAR_MISO"
- U3 19
- U1 10
-Net 12 "/JTAG/XBAR_CS_N" "XBAR_CS_N"
- U1 13
- U3 17
-Net 13 "/JTAG/JTAG0_TDO" "JTAG0_TDO"
- U3 15
- U1 18
-Net 14 "/JTAG/JTAG0_TDI" "JTAG0_TDI"
- U1 17
- U3 14
-Net 15 "/JTAG/JTAG0_TCK" "JTAG0_TCK"
- U3 13
- U1 22
-Net 16 "/JTAG/JTAG0_TMS" "JTAG0_TMS"
- U1 16
- U3 16
-Net 17 "/JTAG/JTAG1_TDO" "JTAG1_TDO"
- U1 30
- J2 8
-Net 18 "/JTAG/JTAG1_TDI" "JTAG1_TDI"
- J2 10
- U1 29
-Net 19 "/JTAG/JTAG1_TCK" "JTAG1_TCK"
- J2 6
- U1 23
-Net 20 "/TARGET1/TARGET1_TDO" "TARGET1_TDO"
- U8 24
- U1 70
-Net 21 "/TARGET1/TARGET1_TDI" "TARGET1_TDI"
- U8 9
- U1 68
-Net 22 "/TARGET1/TARGET1_TCK" "TARGET1_TCK"
- U1 67
- U8 11
-Net 23 "/TARGET1/TARGET1_TMS" "TARGET1_TMS"
- U8 10
- U1 90
-Net 31 "/JTAG/JTAG1_TMS" "JTAG1_TMS"
- U1 28
- J2 4
-Net 32 "/JTAG/XBAR_TMS" "XBAR_TMS"
- J3 4
- U1 47
-Net 33 "/JTAG/XBAR_TCK" "XBAR_TCK"
- J3 6
- U1 48
-Net 34 "/JTAG/XBAR_TDO" "XBAR_TDO"
- J3 8
- U1 83
-Net 35 "/JTAG/XBAR_TDI" "XBAR_TDI"
- U1 45
- J3 10
-Net 37 "/X-bar/TARGET0_SRC_2" "TARGET0_SRC_2"
- SW2 1
- U1 61
-Net 38 "/X-bar/TARGET0_SRC_1" "TARGET0_SRC_1"
- SW2 2
- U1 60
-Net 39 "/X-bar/TARGET0_SRC_0" "TARGET0_SRC_0"
- SW2 3
- U1 58
-Net 40 "/X-bar/TARGET1_SRC_2" "TARGET1_SRC_2"
- SW2 4
- U1 56
-Net 41 "/X-bar/TARGET1_SRC_1" "TARGET1_SRC_1"
- SW2 5
- U1 55
-Net 42 "/X-bar/TARGET1_SRC_0" "TARGET1_SRC_0"
- SW2 6
- U1 52
-Net 43 "/X-bar/TARGET2_SRC_1" "TARGET2_SRC_1"
- SW3 2
- U1 50
-Net 44 "/X-bar/SPI_MODE_EN" "SPI_MODE_EN"
- U1 40
- SW1 8
-Net 45 "/X-bar/TARGET3_SRC_0" "TARGET3_SRC_0"
- SW3 6
- U1 41
-Net 46 "/X-bar/TARGET3_SRC_1" "TARGET3_SRC_1"
- U1 42
- SW3 5
-Net 47 "/X-bar/TARGET3_SRC_2" "TARGET3_SRC_2"
- SW3 4
- U1 43
-Net 48 "/X-bar/JTAG0_SRC_2" "JTAG0_SRC_2"
- SW1 1
- U1 33
-Net 49 "/X-bar/JTAG0_SRC_1" "JTAG0_SRC_1"
- SW1 2
- U1 34
-Net 50 "/X-bar/JTAG0_SRC_0" "JTAG0_SRC_0"
+ C2 1
+ C30 1
+ U9 51
+ U3 46
+ R2 2
+ R1 2
+ U1 20
+ R3 2
+ U1 5
+ C25 1
+ C40 1
+ C39 1
+ R4 2
+ C26 1
+ U7 7
+ U8 26
+ U8 35
+ U9 20
+ C17 1
+Net 60 "/X-bar/JTAG0_SRC_0" "JTAG0_SRC_0"
+ U1 82
  SW1 3
- U1 35
-Net 51 "/X-bar/JTAG1_SRC_2" "JTAG1_SRC_2"
- SW1 4
- U1 36
-Net 52 "/X-bar/JTAG1_SRC_1" "JTAG1_SRC_1"
- SW1 5
- U1 37
-Net 53 "/X-bar/JTAG1_SRC_0" "JTAG1_SRC_0"
- U1 39
- SW1 6
-Net 54 "" ""
- R8 2
- U6 3
-Net 63 "/X-bar/TARGET2_SRC_2" "TARGET2_SRC_2"
- SW3 1
- U1 53
-Net 72 "/X-bar/TARGET2_SRC_0" "TARGET2_SRC_0"
+Net 61 "/X-bar/JTAG0_SRC_1" "JTAG0_SRC_1"
+ SW1 2
+ U1 81
+Net 62 "/X-bar/JTAG0_SRC_2" "JTAG0_SRC_2"
+ SW1 1
+ U1 80
+Net 63 "/X-bar/TARGET2_SRC_0" "TARGET2_SRC_0"
+ U1 29
  SW3 3
+Net 64 "/X-bar/TARGET2_SRC_1" "TARGET2_SRC_1"
+ U1 28
+ SW3 2
+Net 65 "/X-bar/TARGET2_SRC_2" "TARGET2_SRC_2"
+ U1 19
+ SW3 1
+Net 66 "/X-bar/TARGET1_SRC_1" "TARGET1_SRC_1"
+ SW2 5
+ U1 18
+Net 67 "/X-bar/TARGET1_SRC_2" "TARGET1_SRC_2"
+ U1 17
+ SW2 4
+Net 68 "/X-bar/TARGET0_SRC_0" "TARGET0_SRC_0"
+ U1 16
+ SW2 3
+Net 69 "/X-bar/TARGET2_CHAIN0" "TARGET2_CHAIN0"
+ R18 1
+ U1 50
+Net 70 "/X-bar/TARGET2_CHAIN1" "TARGET2_CHAIN1"
  U1 49
-Net 94 "/JTAG/FTDI_VREF" "FTDI_VREF"
- U3 5
- R6 2
-Net 95 "/JTAG/FTDI_VCC_D" "FTDI_VCC_D"
- U3 39
- C10 1
- C16 1
- L2 2
- L1 2
-Net 96 "/JTAG/FTDI_VPLL" "FTDI_VPLL"
+ R19 1
+Net 71 "/X-bar/TARGET0_CHAIN0" "TARGET0_CHAIN0"
+ R12 1
+ U1 58
+Net 72 "/X-bar/TARGET3_SRC_0" "TARGET3_SRC_0"
+ SW3 6
+ U1 33
+Net 73 "/X-bar/TARGET3_SRC_1" "TARGET3_SRC_1"
+ U1 32
+ SW3 5
+Net 74 "/X-bar/TARGET3_SRC_2" "TARGET3_SRC_2"
+ U1 30
+ SW3 4
+Net 75 "" ""
+ U6 3
+ R8 2
+Net 76 "/X-bar/TARGET0_UNUSED" "TARGET0_UNUSED"
+ R14 1
+ U1 55
+Net 77 "/X-bar/TARGET0_CHAIN1" "TARGET0_CHAIN1"
+ U1 56
+ R13 1
+Net 78 "/X-bar/TARGET1_CHAIN1" "TARGET1_CHAIN1"
+ R16 1
+ U1 53
+Net 79 "/X-bar/TARGET1_UNUSED" "TARGET1_UNUSED"
+ R17 1
+ U1 52
+Net 84 "/X-bar/TARGET1_SRC_0" "TARGET1_SRC_0"
+ U1 24
+ SW2 6
+Net 85 "/X-bar/TARGET0_SRC_2" "TARGET0_SRC_2"
+ SW2 1
+ U1 14
+Net 86 "/X-bar/TARGET0_SRC_1" "TARGET0_SRC_1"
+ SW2 2
+ U1 15
+Net 88 "/X-bar/JTAG1_ACTIVE" "JTAG1_ACTIVE"
+ U1 59
+ R11 1
+Net 89 "" ""
+ R9 2
+ D1 1
+Net 90 "/X-bar/TARGET3_CHAIN0" "TARGET3_CHAIN0"
+ U1 44
+ R21 1
+Net 91 "/X-bar/TARGET2_UNUSED" "TARGET2_UNUSED"
+ R20 1
+ U1 46
+Net 92 "/X-bar/TARGET1_CHAIN0" "TARGET1_CHAIN0"
+ R15 1
+ U1 54
+Net 93 "" ""
+ D3 1
+ R11 2
+Net 94 "" ""
+ R10 2
+ D2 1
+Net 95 "/X-bar/JTAG0_ACTIVE" "JTAG0_ACTIVE"
+ R10 1
+ U1 60
+Net 96 "" ""
+ R20 2
+ D12 1
+Net 97 "" ""
+ D11 1
+ R19 2
+Net 98 "" ""
+ D10 1
+ R18 2
+Net 99 "" ""
+ R23 2
+ D15 1
+Net 100 "/X-bar/TARGET3_UNUSED" "TARGET3_UNUSED"
+ R23 1
+ U1 42
+Net 101 "" ""
+ D14 1
+ R22 2
+Net 102 "/X-bar/TARGET3_CHAIN1" "TARGET3_CHAIN1"
+ R22 1
+ U1 43
+Net 103 "" ""
+ D13 1
+ R21 2
+Net 104 "" ""
+ D6 1
+ R14 2
+Net 105 "" ""
+ D5 1
+ R13 2
+Net 106 "" ""
+ R12 2
+ D4 1
+Net 108 "" ""
+ D9 1
+ R17 2
+Net 109 "" ""
+ R16 2
+ D8 1
+Net 110 "" ""
+ D7 1
+ R15 2
+Net 111 "/X-bar/SPI_MODE_EN" "SPI_MODE_EN"
+ SW1 8
+ U1 89
+Net 112 "/X-bar/JTAG1_SRC_0" "JTAG1_SRC_0"
+ U1 87
+ SW1 6
+Net 113 "/X-bar/JTAG1_SRC_1" "JTAG1_SRC_1"
+ U1 86
+ SW1 5
+Net 114 "/X-bar/JTAG1_SRC_2" "JTAG1_SRC_2"
+ U1 85
+ SW1 4
+Net 188 "" ""
+ R5 1
+ U2 1
+Net 189 "/JTAG/5V" "5V"
+ U4 3
+ C21 1
+ L4 1
+Net 190 "/JTAG/FTDI_XTAL_OUT" "FTDI_XTAL_OUT"
+ U3 2
+ C1 1
+ X1 1
+Net 191 "/JTAG/FTDI_XTAL_IN" "FTDI_XTAL_IN"
+ U3 1
+ C5 1
+ X1 2
+Net 192 "/JTAG/FTDI_EEPROM_DATA" "FTDI_EEPROM_DATA"
+ U2 3
+ R3 1
+ R5 2
+ U3 43
+Net 193 "/JTAG/FTDI_EEPROM_CLK" "FTDI_EEPROM_CLK"
+ R2 1
+ U2 4
+ U3 44
+Net 194 "/JTAG/FTDI_EEPROM_CS" "FTDI_EEPROM_CS"
+ U2 5
+ U3 45
+ R1 1
+Net 195 "/JTAG/FTDI_VPLL" "FTDI_VPLL"
+ U3 8
  L2 1
  C15 1
  C9 1
- U3 8
-Net 97 "/JTAG/FTDI_VPHY" "FTDI_VPHY"
- C14 1
- L1 1
- C8 1
- U3 3
-Net 98 "/JTAG/USB_P" "USB_P"
- J1 3
- U3 7
-Net 99 "/JTAG/USB_N" "USB_N"
- J1 2
- U3 6
-Net 100 "/JTAG/5V_USB_RAW" "5V_USB_RAW"
- L3 2
- J1 1
-Net 101 "/JTAG/FTDI_VCC_CORE" "FTDI_VCC_CORE"
- C11 1
- U3 38
-Net 102 "/JTAG/5V" "5V"
- L4 1
- U4 3
- C21 1
-Net 103 "/JTAG/5V_JACK" "5V_JACK"
+Net 196 "/JTAG/5V_JACK" "5V_JACK"
  J4 1
  J5 3
-Net 105 "" ""
+Net 198 "" ""
  J5 2
  L4 2
-Net 106 "/JTAG/5V_USB" "5V_USB"
- R7 2
+Net 200 "/JTAG/5V_USB" "5V_USB"
  L3 1
+ C3 1
+ R7 2
  U3 40
+ J5 1
+ C4 1
  C6 1
  C7 1
- C4 1
- J5 1
- C3 1
-Net 107 "/JTAG/FTDI_XTAL_OUT" "FTDI_XTAL_OUT"
- C1 1
- X1 1
- U3 2
-Net 108 "" ""
- R5 1
- U2 1
-Net 109 "/JTAG/FTDI_EEPROM_CS" "FTDI_EEPROM_CS"
- R1 1
- U2 5
- U3 45
-Net 110 "/JTAG/FTDI_PWRSAV_N" "FTDI_PWRSAV_N"
+Net 201 "/JTAG/FTDI_PWRSAV_N" "FTDI_PWRSAV_N"
  U3 31
  R7 1
-Net 111 "/JTAG/FTDI_RESET_N" "FTDI_RESET_N"
+Net 202 "/JTAG/FTDI_VREF" "FTDI_VREF"
+ R6 2
+ U3 5
+Net 203 "/JTAG/FTDI_RESET_N" "FTDI_RESET_N"
  C18 1
  R4 1
  U3 34
-Net 112 "/JTAG/FTDI_XTAL_IN" "FTDI_XTAL_IN"
- X1 2
- C5 1
- U3 1
-Net 124 "/JTAG/USB_SHIELD" "USB_SHIELD"
- C12 1
- J1 7
- J1 6
-Net 129 "/JTAG/FTDI_VCC_A" "FTDI_VCC_A"
+Net 204 "/JTAG/USB_P" "USB_P"
+ J1 3
+ U3 7
+Net 205 "/JTAG/USB_N" "USB_N"
+ U3 6
+ J1 2
+Net 206 "/JTAG/FTDI_VCC_D" "FTDI_VCC_D"
+ U3 39
+ C16 1
+ L2 2
+ C10 1
+ L1 2
+Net 207 "/JTAG/FTDI_VCC_CORE" "FTDI_VCC_CORE"
+ C11 1
+ U3 38
+Net 208 "/JTAG/FTDI_VCC_A" "FTDI_VCC_A"
  C13 1
  U3 37
-Net 130 "/JTAG/FTDI_EEPROM_DATA" "FTDI_EEPROM_DATA"
- U2 3
- R3 1
- U3 43
- R5 2
-Net 131 "/JTAG/FTDI_EEPROM_CLK" "FTDI_EEPROM_CLK"
- U3 44
- U2 4
- R2 1
+Net 215 "/JTAG/USB_SHIELD" "USB_SHIELD"
+ J1 6
+ J1 7
+ C12 1
+Net 216 "/JTAG/FTDI_VPHY" "FTDI_VPHY"
+ U3 3
+ C8 1
+ C14 1
+ L1 1
+Net 220 "/JTAG/5V_USB_RAW" "5V_USB_RAW"
+ L3 2
+ J1 1
 }
 #End
