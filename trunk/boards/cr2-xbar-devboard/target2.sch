@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 10:02:59 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -265,7 +265,6 @@ NoConn ~ 3950 4300
 NoConn ~ 3950 4400
 NoConn ~ 3950 4500
 NoConn ~ 3950 1500
-NoConn ~ 3950 1600
 NoConn ~ 3950 1700
 NoConn ~ 3950 1800
 NoConn ~ 3950 1900
@@ -479,4 +478,8 @@ F 1 "XC2C128-7VQG100C" H 4700 650 60  0000 C CNN
 	1    4250 2900
 	1    0    0    -1  
 $EndComp
+Text HLabel 3850 1600 0    60   Input ~ 0
+TARGET2_GPIO_SW
+Wire Wire Line
+	3850 1600 3950 1600
 $EndSCHEMATC

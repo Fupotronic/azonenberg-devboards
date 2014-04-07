@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 10:02:59 PM EDT
+EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -91,7 +91,6 @@ Wire Wire Line
 	2700 4150 3100 4150
 Connection ~ 3000 4150
 NoConn ~ 2050 2550
-NoConn ~ 2050 2650
 NoConn ~ 2050 2750
 NoConn ~ 2050 2850
 NoConn ~ 2050 2950
@@ -356,4 +355,8 @@ Wire Wire Line
 	2050 3350 1900 3350
 Wire Wire Line
 	1900 3250 2050 3250
+Text HLabel 1950 2650 0    60   Input ~ 0
+TARGET1_GPIO_SW
+Wire Wire Line
+	1950 2650 2050 2650
 $EndSCHEMATC
