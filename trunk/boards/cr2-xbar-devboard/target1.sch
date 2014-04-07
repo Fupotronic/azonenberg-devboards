@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 01:51:09 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -69,38 +69,9 @@ Text HLabel 2850 700  0    60   Input ~ 0
 VCCIO
 Text HLabel 4200 2350 2    60   Input ~ 0
 CLK_2048KHZ
-Wire Wire Line
-	1950 1350 2050 1350
-Wire Wire Line
-	2050 1450 1950 1450
-Wire Wire Line
-	1950 1550 2050 1550
-Wire Wire Line
-	2050 1650 1950 1650
-Wire Wire Line
-	4200 2350 4050 2350
-Wire Wire Line
-	2850 700  3150 700 
-Wire Wire Line
-	2950 700  2950 800 
-Wire Wire Line
-	3050 700  3050 800 
-Connection ~ 2950 700 
-Connection ~ 3050 700 
-Wire Wire Line
-	2700 4150 3100 4150
-Connection ~ 3000 4150
 NoConn ~ 2050 2550
-NoConn ~ 2050 2750
-NoConn ~ 2050 2850
-NoConn ~ 2050 2950
 NoConn ~ 2050 3050
 NoConn ~ 2050 3550
-NoConn ~ 4050 1950
-NoConn ~ 4050 2050
-NoConn ~ 4050 2150
-NoConn ~ 4050 2250
-NoConn ~ 4050 2450
 NoConn ~ 4050 3350
 NoConn ~ 4050 3450
 $Comp
@@ -145,21 +116,11 @@ F 1 "0.1 uF" H 5100 850 50  0000 L CNN
 	1    5050 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 750  5050 750 
-Connection ~ 4750 750 
-Wire Wire Line
-	4100 1150 5050 1150
-Connection ~ 4750 1150
-Connection ~ 4450 1150
-Connection ~ 2900 4150
-Wire Wire Line
-	3150 700  3150 800 
-Text HLabel 1950 1950 0    60   BiDi ~ 0
+Text HLabel 1950 2750 0    60   BiDi ~ 0
 TARGET1_GPIO0
-Text HLabel 1950 2050 0    60   BiDi ~ 0
+Text HLabel 1950 2850 0    60   BiDi ~ 0
 TARGET1_GPIO1
-Text HLabel 1950 2150 0    60   BiDi ~ 0
+Text HLabel 1950 2950 0    60   BiDi ~ 0
 TARGET1_GPIO2
 Text HLabel 1950 2250 0    60   BiDi ~ 0
 TARGET1_GPIO3
@@ -167,18 +128,6 @@ Text HLabel 1950 2350 0    60   BiDi ~ 0
 TARGET1_GPIO4
 Text HLabel 1950 2450 0    60   BiDi ~ 0
 TARGET1_GPIO5
-Wire Wire Line
-	1950 2450 2050 2450
-Wire Wire Line
-	2050 2350 1950 2350
-Wire Wire Line
-	1950 2250 2050 2250
-Wire Wire Line
-	2050 2150 1950 2150
-Wire Wire Line
-	1950 2050 2050 2050
-Wire Wire Line
-	2050 1950 1950 1950
 $Comp
 L CONN_12 P2
 U 1 1 53422E28
@@ -212,21 +161,21 @@ Text Label 6250 2700 2    60   ~ 0
 TARGET1_PMOD6
 Text Label 6250 2800 2    60   ~ 0
 TARGET1_PMOD7
-Text Label 4200 2550 0    60   ~ 0
+Text Label 4200 2250 0    60   ~ 0
 TARGET1_PMOD0
-Text Label 4200 2650 0    60   ~ 0
+Text Label 4200 2050 0    60   ~ 0
 TARGET1_PMOD1
-Text Label 4200 2750 0    60   ~ 0
+Text Label 1950 1950 2    60   ~ 0
 TARGET1_PMOD2
-Text Label 4200 2850 0    60   ~ 0
+Text Label 1950 2150 2    60   ~ 0
 TARGET1_PMOD3
-Text Label 4200 2950 0    60   ~ 0
+Text Label 4200 2450 0    60   ~ 0
 TARGET1_PMOD4
-Text Label 4200 3050 0    60   ~ 0
+Text Label 4200 2150 0    60   ~ 0
 TARGET1_PMOD5
-Text Label 4200 3150 0    60   ~ 0
+Text Label 4200 1950 0    60   ~ 0
 TARGET1_PMOD6
-Text Label 4200 3250 0    60   ~ 0
+Text Label 1950 2050 2    60   ~ 0
 TARGET1_PMOD7
 $Comp
 L XC2CXXA-VQG44 U8
@@ -237,22 +186,6 @@ F 1 "XC2C64A-7VQG44C" H 3050 1650 60  0000 C CNN
 	1    3000 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 3250 4200 3250
-Wire Wire Line
-	4200 3150 4050 3150
-Wire Wire Line
-	4050 3050 4200 3050
-Wire Wire Line
-	4200 2950 4050 2950
-Wire Wire Line
-	4050 2850 4200 2850
-Wire Wire Line
-	4200 2750 4050 2750
-Wire Wire Line
-	4050 2650 4200 2650
-Wire Wire Line
-	4050 2550 4200 2550
 $Comp
 L R R28
 U 1 1 53425259
@@ -335,28 +268,95 @@ F 1 "GREEN" H 7350 4550 50  0000 C CNN
 	1    7350 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 3750 7550 4650
-Connection ~ 7550 4050
-Connection ~ 7550 4350
 Text Label 1900 3150 2    60   ~ 0
 TARGET1_LED0
-Wire Wire Line
-	1900 3150 2050 3150
 Text Label 1900 3250 2    60   ~ 0
 TARGET1_LED1
 Text Label 1900 3350 2    60   ~ 0
 TARGET1_LED2
 Text Label 1900 3450 2    60   ~ 0
 TARGET1_LED3
+Text HLabel 1950 2650 0    60   Input ~ 0
+TARGET1_GPIO_SW
+Wire Wire Line
+	1950 1350 2050 1350
+Wire Wire Line
+	2050 1450 1950 1450
+Wire Wire Line
+	1950 1550 2050 1550
+Wire Wire Line
+	2050 1650 1950 1650
+Wire Wire Line
+	4200 2350 4050 2350
+Wire Wire Line
+	2850 700  3150 700 
+Wire Wire Line
+	2950 700  2950 800 
+Wire Wire Line
+	3050 700  3050 800 
+Connection ~ 2950 700 
+Connection ~ 3050 700 
+Wire Wire Line
+	2700 4150 3100 4150
+Connection ~ 3000 4150
+Wire Wire Line
+	4450 750  5050 750 
+Connection ~ 4750 750 
+Wire Wire Line
+	4100 1150 5050 1150
+Connection ~ 4750 1150
+Connection ~ 4450 1150
+Connection ~ 2900 4150
+Wire Wire Line
+	3150 700  3150 800 
+Wire Wire Line
+	1950 2450 2050 2450
+Wire Wire Line
+	2050 2350 1950 2350
+Wire Wire Line
+	1950 2250 2050 2250
+Wire Wire Line
+	2050 2150 1950 2150
+Wire Wire Line
+	1950 2050 2050 2050
+Wire Wire Line
+	2050 1950 1950 1950
+Wire Wire Line
+	7550 3750 7550 4650
+Connection ~ 7550 4050
+Connection ~ 7550 4350
+Wire Wire Line
+	1900 3150 2050 3150
 Wire Wire Line
 	1900 3450 2050 3450
 Wire Wire Line
 	2050 3350 1900 3350
 Wire Wire Line
 	1900 3250 2050 3250
-Text HLabel 1950 2650 0    60   Input ~ 0
-TARGET1_GPIO_SW
 Wire Wire Line
 	1950 2650 2050 2650
+Wire Wire Line
+	4050 2450 4200 2450
+Wire Wire Line
+	4200 2250 4050 2250
+Wire Wire Line
+	4050 1950 4200 1950
+Wire Wire Line
+	4200 2050 4050 2050
+Wire Wire Line
+	4050 2150 4200 2150
+Wire Wire Line
+	1950 2750 2050 2750
+Wire Wire Line
+	2050 2850 1950 2850
+Wire Wire Line
+	1950 2950 2050 2950
+NoConn ~ 4050 2550
+NoConn ~ 4050 2650
+NoConn ~ 4050 2750
+NoConn ~ 4050 2850
+NoConn ~ 4050 2950
+NoConn ~ 4050 3050
+NoConn ~ 4050 3150
+NoConn ~ 4050 3250
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 06 Apr 2014 11:51:39 PM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 01:51:09 AM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -75,45 +75,45 @@ Text HLabel 5800 1100 0    60   Input ~ 0
 JTAG0_TMS
 Text HLabel 5800 1400 0    60   Input ~ 0
 JTAG0_TCK
-Text HLabel 3650 3700 0    60   Input ~ 0
+Text HLabel 3650 1600 0    60   Input ~ 0
 JTAG1_TDI
-Text HLabel 3650 3800 0    60   Output ~ 0
+Text HLabel 3650 1700 0    60   Output ~ 0
 JTAG1_TDO
-Text HLabel 3650 3600 0    60   Input ~ 0
+Text HLabel 3650 1800 0    60   Input ~ 0
 JTAG1_TMS
 Text HLabel 5800 1500 0    60   Input ~ 0
 JTAG1_TCK
-Text HLabel 3650 3200 0    60   Output ~ 0
+Text HLabel 3650 4000 0    60   Output ~ 0
 TARGET0_TDI
-Text HLabel 3650 2900 0    60   Input ~ 0
+Text HLabel 5800 3600 0    60   Input ~ 0
 TARGET0_TDO
-Text HLabel 3650 3000 0    60   Output ~ 0
+Text HLabel 3650 3900 0    60   Output ~ 0
 TARGET0_TMS
-Text HLabel 3650 3100 0    60   Output ~ 0
+Text HLabel 3650 3800 0    60   Output ~ 0
 TARGET0_TCK
-Text HLabel 3650 1800 0    60   Output ~ 0
+Text HLabel 3650 1900 0    60   Output ~ 0
 TARGET1_TDI
-Text HLabel 3650 1900 0    60   Input ~ 0
+Text HLabel 3650 2200 0    60   Input ~ 0
 TARGET1_TDO
-Text HLabel 3650 1600 0    60   Output ~ 0
-TARGET1_TMS
-Text HLabel 3650 1700 0    60   Output ~ 0
-TARGET1_TCK
-Text HLabel 3650 2200 0    60   Output ~ 0
-TARGET2_TDI
-Text HLabel 3650 2300 0    60   Input ~ 0
-TARGET2_TDO
 Text HLabel 3650 2000 0    60   Output ~ 0
-TARGET2_TMS
+TARGET1_TMS
 Text HLabel 3650 2100 0    60   Output ~ 0
+TARGET1_TCK
+Text HLabel 3650 3000 0    60   Output ~ 0
+TARGET2_TDI
+Text HLabel 3650 3200 0    60   Input ~ 0
+TARGET2_TDO
+Text HLabel 3650 3600 0    60   Output ~ 0
+TARGET2_TMS
+Text HLabel 3650 3700 0    60   Output ~ 0
 TARGET2_TCK
-Text HLabel 3650 2600 0    60   Output ~ 0
+Text HLabel 5800 3300 0    60   Output ~ 0
 TARGET3_TDI
-Text HLabel 3650 2700 0    60   Input ~ 0
+Text HLabel 5800 3200 0    60   Input ~ 0
 TARGET3_TDO
-Text HLabel 3650 2400 0    60   Output ~ 0
+Text HLabel 5800 3400 0    60   Output ~ 0
 TARGET3_TMS
-Text HLabel 3650 2500 0    60   Output ~ 0
+Text HLabel 5800 3500 0    60   Output ~ 0
 TARGET3_TCK
 $Comp
 L XC2CYYY-VQG100 U1
@@ -208,11 +208,11 @@ Text Label 5800 2100 2    60   ~ 0
 JTAG1_SRC_2
 Text Label 5800 1600 2    60   ~ 0
 SPI_MODE_EN
-Text Label 3650 2800 2    60   ~ 0
+Text Label 5800 4500 2    60   ~ 0
 TARGET0_SRC_0
-Text Label 3650 3400 2    60   ~ 0
+Text Label 5800 4600 2    60   ~ 0
 TARGET0_SRC_1
-Text Label 3650 3300 2    60   ~ 0
+Text Label 5800 2800 2    60   ~ 0
 TARGET0_SRC_2
 Text Label 5800 2500 2    60   ~ 0
 TARGET1_SRC_0
@@ -220,17 +220,17 @@ Text Label 5800 2600 2    60   ~ 0
 TARGET1_SRC_1
 Text Label 5800 2700 2    60   ~ 0
 TARGET1_SRC_2
-Text Label 3650 4600 2    60   ~ 0
+Text Label 5800 4100 2    60   ~ 0
 TARGET2_SRC_0
-Text Label 3650 4500 2    60   ~ 0
+Text Label 5800 4000 2    60   ~ 0
 TARGET2_SRC_1
-Text Label 3650 4200 2    60   ~ 0
+Text Label 5800 3100 2    60   ~ 0
 TARGET2_SRC_2
-Text Label 5800 4600 2    60   ~ 0
+Text Label 5800 4400 2    60   ~ 0
 TARGET3_SRC_0
-Text Label 3650 4800 2    60   ~ 0
+Text Label 5800 4300 2    60   ~ 0
 TARGET3_SRC_1
-Text Label 3650 4700 2    60   ~ 0
+Text Label 5800 4200 2    60   ~ 0
 TARGET3_SRC_2
 Wire Wire Line
 	1300 800  1450 800 
@@ -691,17 +691,17 @@ Wire Wire Line
 	5800 4200 5900 4200
 Wire Wire Line
 	5900 4300 5800 4300
-Text Label 3650 4300 2    60   ~ 0
+Text Label 3650 2300 2    60   ~ 0
 GPIO0
-Text Label 3650 4400 2    60   ~ 0
+Text Label 3650 2400 2    60   ~ 0
 GPIO1
-Text Label 3650 3900 2    60   ~ 0
+Text Label 3650 2500 2    60   ~ 0
 GPIO2
-Text Label 3650 4000 2    60   ~ 0
+Text Label 3650 2600 2    60   ~ 0
 GPIO3
-Text Label 3650 4100 2    60   ~ 0
+Text Label 3650 2700 2    60   ~ 0
 GPIO4
-Text Label 5800 2800 2    60   ~ 0
+Text Label 3650 2800 2    60   ~ 0
 TARGET0_CS_N
 Text Label 8050 2550 0    60   ~ 0
 GPIO0
@@ -719,7 +719,7 @@ Text Label 5800 2900 2    60   ~ 0
 TARGET1_CS_N
 Text Label 5800 3000 2    60   ~ 0
 TARGET2_CS_N
-Text Label 5800 3100 2    60   ~ 0
+Text Label 3650 4200 2    60   ~ 0
 TARGET3_CS_N
 Text Label 8050 3150 0    60   ~ 0
 GPIO0
@@ -827,9 +827,9 @@ Text Label 2150 5350 0    60   ~ 0
 GND
 Text Label 1250 5350 2    60   ~ 0
 VCCIO
-Text Label 5800 3200 2    60   ~ 0
+Text Label 3650 3100 2    60   ~ 0
 JTAG0_ACTIVE
-Text Label 5800 3300 2    60   ~ 0
+Text Label 3650 4400 2    60   ~ 0
 JTAG1_ACTIVE
 Text Label 1250 5650 2    60   ~ 0
 JTAG0_ACTIVE
@@ -871,29 +871,29 @@ F 1 "GREEN" H 1950 5850 50  0000 C CNN
 	1    1950 5950
 	1    0    0    -1  
 $EndComp
-Text Label 5800 3400 2    60   ~ 0
-TARGET0_CHAIN0
-Text Label 5800 3500 2    60   ~ 0
-TARGET0_CHAIN1
-Text Label 5800 3700 2    60   ~ 0
-TARGET1_CHAIN0
-Text Label 5800 3800 2    60   ~ 0
-TARGET1_CHAIN1
-Text Label 5800 4000 2    60   ~ 0
-TARGET2_CHAIN0
-Text Label 5800 4100 2    60   ~ 0
-TARGET2_CHAIN1
-Text Label 5800 3600 2    60   ~ 0
-TARGET0_UNUSED
 Text Label 5800 3900 2    60   ~ 0
+TARGET0_CHAIN0
+Text Label 5800 3800 2    60   ~ 0
+TARGET0_CHAIN1
+Text Label 3650 4100 2    60   ~ 0
+TARGET1_CHAIN0
+Text Label 3650 4300 2    60   ~ 0
+TARGET1_CHAIN1
+Text Label 3650 4500 2    60   ~ 0
+TARGET2_CHAIN0
+Text Label 3650 4600 2    60   ~ 0
+TARGET2_CHAIN1
+Text Label 5800 3700 2    60   ~ 0
+TARGET0_UNUSED
+Text Label 3650 2900 2    60   ~ 0
 TARGET1_UNUSED
-Text Label 5800 4200 2    60   ~ 0
+Text Label 3650 4700 2    60   ~ 0
 TARGET2_UNUSED
-Text Label 5800 4300 2    60   ~ 0
+Text Label 3650 3400 2    60   ~ 0
 TARGET3_CHAIN0
-Text Label 5800 4400 2    60   ~ 0
+Text Label 3650 4800 2    60   ~ 0
 TARGET3_CHAIN1
-Text Label 5800 4500 2    60   ~ 0
+Text Label 3650 3300 2    60   ~ 0
 TARGET3_UNUSED
 Text Label 3450 5350 2    60   ~ 0
 TARGET0_CHAIN0
