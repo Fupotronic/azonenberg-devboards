@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 08:57:43 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "7 apr 2014"
+Date "8 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "TARGET0: XC2C32A"

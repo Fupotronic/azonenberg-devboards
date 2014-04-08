@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 08:57:43 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "7 apr 2014"
+Date "8 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "TARGET2: XC2C128"
@@ -69,15 +69,6 @@ Text HLabel 1650 2600 0    60   Input ~ 0
 GND
 Text HLabel 6000 1500 0    60   Input ~ 0
 CLK_2048KHZ
-$Comp
-L XC2CYYY-VQG100 U9
-U 2 1 5341E73D
-P 6400 2900
-F 0 "U9" H 6800 750 60  0000 C CNN
-F 1 "XC2C128-7VQG100C" H 6850 650 60  0000 C CNN
-	2    6400 2900
-	1    0    0    -1  
-$EndComp
 $Comp
 L XC2CYYY-VQG100 U9
 U 3 1 5341E74F
@@ -234,13 +225,6 @@ NoConn ~ 6100 3000
 NoConn ~ 6100 3100
 NoConn ~ 6100 3200
 NoConn ~ 6100 3300
-NoConn ~ 6100 3400
-NoConn ~ 6100 3500
-NoConn ~ 6100 3600
-NoConn ~ 6100 3700
-NoConn ~ 6100 3800
-NoConn ~ 6100 3900
-NoConn ~ 6100 4000
 NoConn ~ 6100 4100
 NoConn ~ 6100 4200
 NoConn ~ 6100 4300
@@ -264,36 +248,26 @@ NoConn ~ 3950 4200
 NoConn ~ 3950 4300
 NoConn ~ 3950 4400
 NoConn ~ 3950 4500
-NoConn ~ 3950 1500
-NoConn ~ 3950 1700
 NoConn ~ 3950 1800
 NoConn ~ 3950 1900
 NoConn ~ 3950 2000
 NoConn ~ 3950 2900
-Text HLabel 3850 900  0    60   BiDi ~ 0
+Text HLabel 6050 3900 0    60   BiDi ~ 0
 TARGET2_GPIO0
-Text HLabel 3850 1000 0    60   BiDi ~ 0
+Text HLabel 6050 3800 0    60   BiDi ~ 0
 TARGET2_GPIO1
-Text HLabel 3850 1100 0    60   BiDi ~ 0
+Text HLabel 6050 3700 0    60   BiDi ~ 0
 TARGET2_GPIO2
-Text HLabel 3850 1200 0    60   BiDi ~ 0
+Text HLabel 6050 3600 0    60   BiDi ~ 0
 TARGET2_GPIO3
-Text HLabel 3850 1300 0    60   BiDi ~ 0
+Text HLabel 6050 3500 0    60   BiDi ~ 0
 TARGET2_GPIO4
-Text HLabel 3850 1400 0    60   BiDi ~ 0
+Text HLabel 6050 3400 0    60   BiDi ~ 0
 TARGET2_GPIO5
 Wire Wire Line
 	3850 900  3950 900 
 Wire Wire Line
-	3950 1000 3850 1000
-Wire Wire Line
-	3850 1100 3950 1100
-Wire Wire Line
 	3950 1200 3850 1200
-Wire Wire Line
-	3850 1300 3950 1300
-Wire Wire Line
-	3950 1400 3850 1400
 $Comp
 L CONN_12 P3
 U 1 1 534231CC
@@ -429,26 +403,16 @@ Wire Wire Line
 	9350 2900 9350 3800
 Connection ~ 9350 3200
 Connection ~ 9350 3500
-Text Label 3800 4600 2    60   ~ 0
+Text Label 3850 900  2    60   ~ 0
 TARGET2_LED0
-Wire Wire Line
-	3800 4600 3950 4600
-Text Label 3800 4700 2    60   ~ 0
+Text Label 3850 1200 2    60   ~ 0
 TARGET2_LED1
-Text Label 3800 4800 2    60   ~ 0
+Text Label 3850 1500 2    60   ~ 0
 TARGET2_LED2
-Text Label 3800 4900 2    60   ~ 0
+Text Label 3850 1700 2    60   ~ 0
 TARGET2_LED3
-Wire Wire Line
-	3800 4900 3950 4900
-Wire Wire Line
-	3950 4800 3800 4800
-Wire Wire Line
-	3800 4700 3950 4700
-Text HLabel 3850 1600 0    60   Input ~ 0
+Text HLabel 6050 4000 0    60   Input ~ 0
 TARGET2_GPIO_SW
-Wire Wire Line
-	3850 1600 3950 1600
 Wire Wire Line
 	3850 2100 3950 2100
 NoConn ~ 6100 2500
@@ -482,4 +446,40 @@ Wire Wire Line
 	3950 2700 3850 2700
 Wire Wire Line
 	3850 2800 3950 2800
+Wire Wire Line
+	3850 1700 3950 1700
+Wire Wire Line
+	3850 1500 3950 1500
+NoConn ~ 3950 4900
+NoConn ~ 3950 4800
+Wire Wire Line
+	6100 4000 6050 4000
+NoConn ~ 3950 1600
+NoConn ~ 3950 4700
+NoConn ~ 3950 4600
+NoConn ~ 3950 1400
+NoConn ~ 3950 1300
+NoConn ~ 3950 1000
+NoConn ~ 3950 1100
+Wire Wire Line
+	6050 3900 6100 3900
+$Comp
+L XC2CYYY-VQG100 U9
+U 2 1 5341E73D
+P 6400 2900
+F 0 "U9" H 6800 750 60  0000 C CNN
+F 1 "XC2C128-7VQG100C" H 6850 650 60  0000 C CNN
+	2    6400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3400 6100 3400
+Wire Wire Line
+	6100 3500 6050 3500
+Wire Wire Line
+	6050 3600 6100 3600
+Wire Wire Line
+	6050 3700 6100 3700
+Wire Wire Line
+	6100 3800 6050 3800
 $EndSCHEMATC

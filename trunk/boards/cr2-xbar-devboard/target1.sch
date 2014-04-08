@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 08:57:43 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "7 apr 2014"
+Date "8 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "TARGET1: XC2C64A"
@@ -69,11 +69,8 @@ Text HLabel 2850 700  0    60   Input ~ 0
 VCCIO
 Text HLabel 4200 2350 2    60   Input ~ 0
 CLK_2048KHZ
-NoConn ~ 2050 2550
 NoConn ~ 2050 3050
 NoConn ~ 2050 3550
-NoConn ~ 4050 3350
-NoConn ~ 4050 3450
 $Comp
 L C C37
 U 1 1 5344110D
@@ -116,17 +113,17 @@ F 1 "0.1 uF" H 5100 850 50  0000 L CNN
 	1    5050 950 
 	1    0    0    -1  
 $EndComp
-Text HLabel 1950 2750 0    60   BiDi ~ 0
+Text HLabel 4200 3150 2    60   BiDi ~ 0
 TARGET1_GPIO0
-Text HLabel 1950 2850 0    60   BiDi ~ 0
+Text HLabel 4200 3250 2    60   BiDi ~ 0
 TARGET1_GPIO1
-Text HLabel 1950 2950 0    60   BiDi ~ 0
+Text HLabel 4200 3350 2    60   BiDi ~ 0
 TARGET1_GPIO2
-Text HLabel 1950 2250 0    60   BiDi ~ 0
+Text HLabel 4200 3450 2    60   BiDi ~ 0
 TARGET1_GPIO3
-Text HLabel 1950 2350 0    60   BiDi ~ 0
+Text HLabel 1900 3450 0    60   BiDi ~ 0
 TARGET1_GPIO4
-Text HLabel 1950 2450 0    60   BiDi ~ 0
+Text HLabel 1900 3350 0    60   BiDi ~ 0
 TARGET1_GPIO5
 $Comp
 L CONN_12 P2
@@ -195,7 +192,7 @@ F 1 "470" V 6900 3750 50  0000 C CNN
 	1    6900 3750
 	0    -1   -1   0   
 $EndComp
-Text Label 6650 3750 2    60   ~ 0
+Text Label 6650 4050 2    60   ~ 0
 TARGET1_LED0
 $Comp
 L LED D20
@@ -217,7 +214,7 @@ F 1 "470" V 6900 4050 50  0000 C CNN
 	1    6900 4050
 	0    -1   -1   0   
 $EndComp
-Text Label 6650 4050 2    60   ~ 0
+Text Label 6650 3750 2    60   ~ 0
 TARGET1_LED1
 $Comp
 L LED D21
@@ -268,13 +265,13 @@ F 1 "GREEN" H 7350 4550 50  0000 C CNN
 	1    7350 4650
 	1    0    0    -1  
 $EndComp
-Text Label 1900 3150 2    60   ~ 0
+Text Label 1950 2550 2    60   ~ 0
 TARGET1_LED0
-Text Label 1900 3250 2    60   ~ 0
+Text Label 1950 2450 2    60   ~ 0
 TARGET1_LED1
-Text Label 1900 3350 2    60   ~ 0
+Text Label 1950 2350 2    60   ~ 0
 TARGET1_LED2
-Text Label 1900 3450 2    60   ~ 0
+Text Label 1900 2850 2    60   ~ 0
 TARGET1_LED3
 Text HLabel 4200 3050 2    60   Input ~ 0
 TARGET1_GPIO_SW
@@ -310,12 +307,6 @@ Connection ~ 2900 4150
 Wire Wire Line
 	3150 700  3150 800 
 Wire Wire Line
-	1950 2450 2050 2450
-Wire Wire Line
-	2050 2350 1950 2350
-Wire Wire Line
-	1950 2250 2050 2250
-Wire Wire Line
 	2050 2150 1950 2150
 Wire Wire Line
 	1950 2050 2050 2050
@@ -326,13 +317,9 @@ Wire Wire Line
 Connection ~ 7550 4050
 Connection ~ 7550 4350
 Wire Wire Line
-	1900 3150 2050 3150
-Wire Wire Line
 	1900 3450 2050 3450
 Wire Wire Line
 	2050 3350 1900 3350
-Wire Wire Line
-	1900 3250 2050 3250
 Wire Wire Line
 	4050 2450 4200 2450
 Wire Wire Line
@@ -344,19 +331,32 @@ Wire Wire Line
 Wire Wire Line
 	4050 2150 4200 2150
 Wire Wire Line
-	1950 2750 2050 2750
-Wire Wire Line
-	2050 2850 1950 2850
-Wire Wire Line
-	1950 2950 2050 2950
+	1900 2850 2050 2850
 NoConn ~ 4050 2550
 NoConn ~ 4050 2650
 NoConn ~ 4050 2750
 NoConn ~ 4050 2850
 NoConn ~ 4050 2950
-NoConn ~ 4050 3150
-NoConn ~ 4050 3250
 Wire Wire Line
 	4200 3050 4050 3050
 NoConn ~ 2050 2650
+Wire Wire Line
+	4200 3150 4050 3150
+Wire Wire Line
+	4050 3250 4200 3250
+Wire Wire Line
+	4200 3350 4050 3350
+Wire Wire Line
+	4050 3450 4200 3450
+NoConn ~ 2050 2750
+Wire Wire Line
+	1950 2350 2050 2350
+Wire Wire Line
+	1950 2450 2050 2450
+Wire Wire Line
+	1950 2550 2050 2550
+NoConn ~ 2050 3250
+NoConn ~ 2050 3150
+NoConn ~ 2050 2950
+NoConn ~ 2050 2250
 $EndSCHEMATC

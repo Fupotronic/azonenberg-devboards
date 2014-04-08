@@ -1,4 +1,4 @@
-update=Sun 06 Apr 2014 08:38:16 PM EDT
+update=Tue 08 Apr 2014 12:08:38 AM EDT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -59,20 +59,20 @@ LibName39=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/xilinx-azo
 [pcbnew]
 version=1
 LastNetListRead=cr2-xbar-devboard.net
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=0
+PadDimH=512
+PadDimV=512
 BoardThickness=630
-TxtPcbV=800
-TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
-VEgarde=100
-DrawLar=150
-EdgeLar=150
-TxtLar=120
-MSegLar=150
+TxtPcbV=200
+TxtPcbH=180
+TxtModV=200
+TxtModH=180
+TxtModW=45
+VEgarde=20
+DrawLar=50
+EdgeLar=50
+TxtLar=39
+MSegLar=50
 [pcbnew/libraries]
 LibDir=/home/azonenberg/Documents/local/programming/kicad-stock-library/modules;/home/azonenberg/Documents/local/programming/kicad-stock-library/modules/packages3d;/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty
 LibName1=sockets
@@ -91,3 +91,4 @@ LibName13=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/pb_free
 LibName14=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/recycle_logo
 LibName15=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/smt_azonenberg
 LibName16=/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty/walter/mod_smd_lqfp/w_smd_lqfp
+LibName17=ohw-logo
