@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 08:57:44 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "7 apr 2014"
+Date "8 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 ""
@@ -61,7 +61,7 @@ Text HLabel 1550 1300 0    60   Input ~ 0
 TARGET3_TMS
 Text HLabel 1550 1000 0    60   Input ~ 0
 TARGET3_TCK
-Text HLabel 5900 1600 0    60   Input ~ 0
+Text HLabel 6000 1600 0    60   Input ~ 0
 CLK_2048KHZ
 Text HLabel 1550 1700 0    60   Input ~ 0
 VCCINT
@@ -121,37 +121,32 @@ Connection ~ 1750 3100
 Connection ~ 1750 3200
 Connection ~ 1750 3300
 Wire Wire Line
-	5900 1600 6000 1600
-NoConn ~ 6000 1500
-NoConn ~ 6000 1400
-NoConn ~ 6000 1300
-NoConn ~ 6000 1200
-NoConn ~ 6000 1100
-NoConn ~ 6000 1000
-NoConn ~ 6000 1700
-NoConn ~ 6000 1800
-NoConn ~ 6000 2700
-NoConn ~ 6000 2800
-NoConn ~ 6000 2900
-NoConn ~ 6000 3000
-NoConn ~ 6000 3100
-NoConn ~ 6000 3200
-NoConn ~ 6000 3300
-NoConn ~ 6000 3400
-NoConn ~ 6000 3500
-NoConn ~ 6000 3600
-NoConn ~ 6000 3700
-NoConn ~ 6000 3800
-NoConn ~ 6000 3900
-NoConn ~ 6000 4000
-NoConn ~ 6000 4100
-NoConn ~ 6000 4200
-NoConn ~ 6000 4300
-NoConn ~ 6000 4400
-NoConn ~ 6000 4500
-NoConn ~ 6000 4600
-NoConn ~ 6000 4700
-NoConn ~ 6000 4800
+	6000 1600 6100 1600
+NoConn ~ 6100 1200
+NoConn ~ 6100 1100
+NoConn ~ 6100 1000
+NoConn ~ 6100 2700
+NoConn ~ 6100 2800
+NoConn ~ 6100 2900
+NoConn ~ 6100 3000
+NoConn ~ 6100 3100
+NoConn ~ 6100 3200
+NoConn ~ 6100 3300
+NoConn ~ 6100 3400
+NoConn ~ 6100 3500
+NoConn ~ 6100 3600
+NoConn ~ 6100 3700
+NoConn ~ 6100 3800
+NoConn ~ 6100 3900
+NoConn ~ 6100 4000
+NoConn ~ 6100 4100
+NoConn ~ 6100 4200
+NoConn ~ 6100 4300
+NoConn ~ 6100 4400
+NoConn ~ 6100 4500
+NoConn ~ 6100 4600
+NoConn ~ 6100 4700
+NoConn ~ 6100 4800
 NoConn ~ 3950 4100
 NoConn ~ 3950 4200
 NoConn ~ 3950 4300
@@ -269,30 +264,18 @@ Connection ~ 2400 6600
 Connection ~ 2100 6600
 Connection ~ 1800 6600
 Connection ~ 1500 6600
-Text HLabel 3800 1000 0    60   BiDi ~ 0
+Text HLabel 6000 1800 0    60   BiDi ~ 0
 TARGET3_GPIO0
-Text HLabel 3800 1100 0    60   BiDi ~ 0
+Text HLabel 6000 1700 0    60   BiDi ~ 0
 TARGET3_GPIO1
-Text HLabel 3800 1200 0    60   BiDi ~ 0
+Text HLabel 6000 1500 0    60   BiDi ~ 0
 TARGET3_GPIO2
-Text HLabel 3800 1300 0    60   BiDi ~ 0
+Text HLabel 6000 1400 0    60   BiDi ~ 0
 TARGET3_GPIO3
-Text HLabel 3800 1400 0    60   BiDi ~ 0
+Text HLabel 6000 1300 0    60   BiDi ~ 0
 TARGET3_GPIO4
-Text HLabel 3800 1500 0    60   BiDi ~ 0
+Text HLabel 6000 1900 0    60   BiDi ~ 0
 TARGET3_GPIO5
-Wire Wire Line
-	3800 1000 3950 1000
-Wire Wire Line
-	3950 1100 3800 1100
-Wire Wire Line
-	3800 1200 3950 1200
-Wire Wire Line
-	3950 1300 3800 1300
-Wire Wire Line
-	3800 1400 3950 1400
-Wire Wire Line
-	3950 1500 3800 1500
 $Comp
 L CONN_12 P4
 U 1 1 53423571
@@ -342,15 +325,6 @@ Text Label 3850 2700 2    60   ~ 0
 TARGET3_PMOD6
 Text Label 3850 2800 2    60   ~ 0
 TARGET3_PMOD7
-$Comp
-L XC2CYYY-VQG100 U10
-U 2 1 53422258
-P 6300 3000
-F 0 "U10" H 6700 850 60  0000 C CNN
-F 1 "XC2C256-7VQG100C" H 6750 750 60  0000 C CNN
-	2    6300 3000
-	1    0    0    -1  
-$EndComp
 $Comp
 L R R36
 U 1 1 53425D6F
@@ -455,14 +429,13 @@ Text HLabel 3800 1700 0    60   Input ~ 0
 TARGET3_GPIO_SW
 Wire Wire Line
 	3800 1700 3950 1700
-NoConn ~ 6000 2600
-NoConn ~ 6000 2500
-NoConn ~ 6000 2400
-NoConn ~ 6000 2300
-NoConn ~ 6000 2200
-NoConn ~ 6000 2100
-NoConn ~ 6000 2000
-NoConn ~ 6000 1900
+NoConn ~ 6100 2600
+NoConn ~ 6100 2500
+NoConn ~ 6100 2400
+NoConn ~ 6100 2300
+NoConn ~ 6100 2200
+NoConn ~ 6100 2100
+NoConn ~ 6100 2000
 Wire Wire Line
 	3850 2900 3950 2900
 Wire Wire Line
@@ -482,4 +455,31 @@ Wire Wire Line
 NoConn ~ 3950 4700
 Wire Wire Line
 	3800 4500 3950 4500
+$Comp
+L XC2CYYY-VQG100 U10
+U 2 1 53422258
+P 6400 3000
+F 0 "U10" H 6800 850 60  0000 C CNN
+F 1 "XC2C256-7VQG100C" H 6850 750 60  0000 C CNN
+	2    6400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1300 6100 1300
+Wire Wire Line
+	6100 1400 6000 1400
+Wire Wire Line
+	6000 1500 6100 1500
+Wire Wire Line
+	6000 1700 6100 1700
+Wire Wire Line
+	6000 1800 6100 1800
+Wire Wire Line
+	6100 1900 6000 1900
+NoConn ~ 3950 1500
+NoConn ~ 3950 1400
+NoConn ~ 3950 1300
+NoConn ~ 3950 1200
+NoConn ~ 3950 1100
+NoConn ~ 3950 1000
 $EndSCHEMATC

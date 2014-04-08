@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 07 Apr 2014 02:04:05 AM EDT
+EESchema Schematic File Version 2  date Mon 07 Apr 2014 08:57:44 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
 Title "CoolRunner-II X-Bar Dev Board"
-Date "7 apr 2014"
+Date "8 apr 2014"
 Rev "$Rev$"
 Comp "Andrew Zonenberg"
 Comment1 "JTAG crossbar"
@@ -83,13 +83,13 @@ Text HLabel 3650 1800 0    60   Input ~ 0
 JTAG1_TMS
 Text HLabel 5800 1500 0    60   Input ~ 0
 JTAG1_TCK
-Text HLabel 3650 4000 0    60   Output ~ 0
+Text HLabel 3650 4200 0    60   Output ~ 0
 TARGET0_TDI
 Text HLabel 5800 3600 0    60   Input ~ 0
 TARGET0_TDO
-Text HLabel 3650 3900 0    60   Output ~ 0
+Text HLabel 3650 4100 0    60   Output ~ 0
 TARGET0_TMS
-Text HLabel 3650 3800 0    60   Output ~ 0
+Text HLabel 3650 4000 0    60   Output ~ 0
 TARGET0_TCK
 Text HLabel 3650 1900 0    60   Output ~ 0
 TARGET1_TDI
@@ -99,13 +99,13 @@ Text HLabel 3650 2000 0    60   Output ~ 0
 TARGET1_TMS
 Text HLabel 3650 2100 0    60   Output ~ 0
 TARGET1_TCK
-Text HLabel 3650 3000 0    60   Output ~ 0
+Text HLabel 3650 2900 0    60   Output ~ 0
 TARGET2_TDI
 Text HLabel 3650 3200 0    60   Input ~ 0
 TARGET2_TDO
-Text HLabel 3650 3600 0    60   Output ~ 0
+Text HLabel 3650 3000 0    60   Output ~ 0
 TARGET2_TMS
-Text HLabel 3650 3700 0    60   Output ~ 0
+Text HLabel 3650 3100 0    60   Output ~ 0
 TARGET2_TCK
 Text HLabel 5800 3300 0    60   Output ~ 0
 TARGET3_TDI
@@ -715,11 +715,11 @@ Text Label 8050 2950 0    60   ~ 0
 GPIO4
 Text Label 8050 3050 0    60   ~ 0
 TARGET0_CS_N
-Text Label 5800 2900 2    60   ~ 0
+Text Label 3650 4800 2    60   ~ 0
 TARGET1_CS_N
-Text Label 5800 3000 2    60   ~ 0
+Text Label 3650 4300 2    60   ~ 0
 TARGET2_CS_N
-Text Label 3650 4200 2    60   ~ 0
+Text Label 3650 4700 2    60   ~ 0
 TARGET3_CS_N
 Text Label 8050 3150 0    60   ~ 0
 GPIO0
@@ -827,9 +827,9 @@ Text Label 2150 5350 0    60   ~ 0
 GND
 Text Label 1250 5350 2    60   ~ 0
 VCCIO
-Text Label 3650 3100 2    60   ~ 0
+Text Label 5800 2900 2    60   ~ 0
 JTAG0_ACTIVE
-Text Label 3650 4400 2    60   ~ 0
+Text Label 5800 3000 2    60   ~ 0
 JTAG1_ACTIVE
 Text Label 1250 5650 2    60   ~ 0
 JTAG0_ACTIVE
@@ -875,23 +875,23 @@ Text Label 5800 3900 2    60   ~ 0
 TARGET0_CHAIN0
 Text Label 5800 3800 2    60   ~ 0
 TARGET0_CHAIN1
-Text Label 3650 4100 2    60   ~ 0
+Text Label 3650 4400 2    60   ~ 0
 TARGET1_CHAIN0
-Text Label 3650 4300 2    60   ~ 0
-TARGET1_CHAIN1
 Text Label 3650 4500 2    60   ~ 0
+TARGET1_CHAIN1
+Text Label 3650 3900 2    60   ~ 0
 TARGET2_CHAIN0
-Text Label 3650 4600 2    60   ~ 0
+Text Label 3650 3800 2    60   ~ 0
 TARGET2_CHAIN1
 Text Label 5800 3700 2    60   ~ 0
 TARGET0_UNUSED
-Text Label 3650 2900 2    60   ~ 0
+Text Label 3650 4600 2    60   ~ 0
 TARGET1_UNUSED
-Text Label 3650 4700 2    60   ~ 0
+Text Label 3650 3700 2    60   ~ 0
 TARGET2_UNUSED
-Text Label 3650 3400 2    60   ~ 0
+Text Label 3650 3600 2    60   ~ 0
 TARGET3_CHAIN0
-Text Label 3650 4800 2    60   ~ 0
+Text Label 3650 3400 2    60   ~ 0
 TARGET3_CHAIN1
 Text Label 3650 3300 2    60   ~ 0
 TARGET3_UNUSED
