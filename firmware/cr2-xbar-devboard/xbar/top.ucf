@@ -1,0 +1,151 @@
+########################################################################################################################
+#                                                                                                                      #
+# CoolRunner-II Crossbar Dev Board v0.1                                                                                #
+#                                                                                                                      #
+# Copyright (c) 2014 Andrew D. Zonenberg                                                                               #
+# All rights reserved.                                                                                                 #
+#                                                                                                                      #
+# Redistribution and use in source and binary forms, with or without modification, are permitted provided that the     #
+# following conditions are met:                                                                                        #
+#                                                                                                                      #
+#    * Redistributions of source code must retain the above copyright notice, this list of conditions, and the         #
+#      following disclaimer.                                                                                           #
+#                                                                                                                      #
+#    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the       #
+#      following disclaimer in the documentation and/or other materials provided with the distribution.                #
+#                                                                                                                      #
+#    * Neither the name of the author nor the names of any contributors may be used to endorse or promote products     #
+#      derived from this software without specific prior written permission.                                           #
+#                                                                                                                      #
+# THIS SOFTWARE IS PROVIDED BY THE AUTHORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   #
+# TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL #
+# THE AUTHORS BE HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES        #
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR       #
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT #
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE       #
+# POSSIBILITY OF SUCH DAMAGE.                                                                                          #
+#                                                                                                                      #
+########################################################################################################################
+
+## @file
+## @author Andrew D. Zonenberg
+## @brief Pinout constraints
+
+# 2.048 MHz board clock
+NET "clk_2048khz"		IOSTANDARD = LVCMOS33 | LOC = P27;
+
+# FTDI USB-JTAG
+NET "jtag_tck[0]"		IOSTANDARD = LVCMOS33 | LOC = P22;
+NET "jtag_tms[0]"		IOSTANDARD = LVCMOS33 | LOC = P17;
+NET "jtag_tdi[0]"		IOSTANDARD = LVCMOS33 | LOC = P19;
+NET "jtag_tdo[0]"		IOSTANDARD = LVCMOS33 | LOC = P18;
+
+# External JTAG connector
+NET "jtag_tck[1]"		IOSTANDARD = LVCMOS33 | LOC = P23;
+NET "jtag_tms[1]"		IOSTANDARD = LVCMOS33 | LOC = P2;
+NET "jtag_tdi[1]"		IOSTANDARD = LVCMOS33 | LOC = P4;
+NET "jtag_tdo[1]"		IOSTANDARD = LVCMOS33 | LOC = P3;
+
+# Target 0: XC2C32A
+NET "target_tck[0]"		IOSTANDARD = LVCMOS33 | LOC = P78;
+NET "target_tms[0]"		IOSTANDARD = LVCMOS33 | LOC = P79;
+NET "target_tdi[0]"		IOSTANDARD = LVCMOS33 | LOC = P80;
+NET "target_tdo[0]"		IOSTANDARD = LVCMOS33 | LOC = P55;
+
+# Target 1: XC2C64A
+NET "target_tck[1]"		IOSTANDARD = LVCMOS33 | LOC = P97;
+NET "target_tms[1]"		IOSTANDARD = LVCMOS33 | LOC = P99;
+NET "target_tdi[1]"		IOSTANDARD = LVCMOS33 | LOC = P1;
+NET "target_tdo[1]"		IOSTANDARD = LVCMOS33 | LOC = P96;
+
+# Target 2: XC2C128
+NET "target_tck[2]"		IOSTANDARD = LVCMOS33 | LOC = P67;
+NET "target_tms[2]"		IOSTANDARD = LVCMOS33 | LOC = P66;
+NET "target_tdi[2]"		IOSTANDARD = LVCMOS33 | LOC = P65;
+NET "target_tdo[2]"		IOSTANDARD = LVCMOS33 | LOC = P68;
+
+# Target 3: XC2C256
+NET "target_tck[3]"		IOSTANDARD = LVCMOS33 | LOC = P56;
+NET "target_tms[3]"		IOSTANDARD = LVCMOS33 | LOC = P58;
+NET "target_tdi[3]"		IOSTANDARD = LVCMOS33 | LOC = P59;
+NET "target_tdo[3]"		IOSTANDARD = LVCMOS33 | LOC = P60;
+
+# GPIO connection to FTDI
+NET "ftdi_gpio[0]"		IOSTANDARD = LVCMOS33 | LOC = P13;
+NET "ftdi_gpio[1]"		IOSTANDARD = LVCMOS33 | LOC = P12;
+NET "ftdi_gpio[2]"		IOSTANDARD = LVCMOS33 | LOC = P11;
+NET "ftdi_gpio[3]"		IOSTANDARD = LVCMOS33 | LOC = P10;
+NET "ftdi_gpio[4]"		IOSTANDARD = LVCMOS33 | LOC = P9;
+NET "ftdi_gpio[5]"		IOSTANDARD = LVCMOS33 | LOC = P8;
+NET "ftdi_gpio[6]"		IOSTANDARD = LVCMOS33 | LOC = P7;
+NET "ftdi_gpio[7]"		IOSTANDARD = LVCMOS33 | LOC = P6;
+
+# GPIO connection to targets
+NET "gpio[0]"			IOSTANDARD = LVCMOS33 | LOC = P95;
+NET "gpio[1]"			IOSTANDARD = LVCMOS33 | LOC = P94;
+NET "gpio[2]"			IOSTANDARD = LVCMOS33 | LOC = P93;
+NET "gpio[3]"			IOSTANDARD = LVCMOS33 | LOC = P92;
+NET "gpio[4]"			IOSTANDARD = LVCMOS33 | LOC = P91;
+
+# Chip selects for targets
+NET "target_cs_n[0]"	IOSTANDARD = LVCMOS33 | LOC = P90;
+NET "target_cs_n[1]"	IOSTANDARD = LVCMOS33 | LOC = P89;
+NET "target_cs_n[2]"	IOSTANDARD = LVCMOS33 | LOC = P81;
+NET "target_cs_n[3]"	IOSTANDARD = LVCMOS33 | LOC = P87;
+
+# Bitbanged SPI bus to FTDI
+NET "xbar_sck"			IOSTANDARD = LVCMOS33 | LOC = P72;
+NET "xbar_mosi"			IOSTANDARD = LVCMOS33 | LOC = P16;
+NET "xbar_miso"			IOSTANDARD = LVCMOS33 | LOC = P14;
+NET "xbar_cs_n"			IOSTANDARD = LVCMOS33 | LOC = P15;
+
+# GPIO switch on xbar
+NET "xbar_gpio_sw"		IOSTANDARD = LVCMOS33 | LOC = P28;
+
+# Device chain position LEDs
+NET "target_chain0[0]"	IOSTANDARD = LVCMOS33 | LOC = P52;
+NET "target_chain0[1]"	IOSTANDARD = LVCMOS33 | LOC = P82;
+NET "target_chain0[2]"	IOSTANDARD = LVCMOS33 | LOC = P77;
+NET "target_chain0[3]"	IOSTANDARD = LVCMOS33 | LOC = P73;
+
+NET "target_chain1[0]"	IOSTANDARD = LVCMOS33 | LOC = P53;
+NET "target_chain1[1]"	IOSTANDARD = LVCMOS33 | LOC = P85;
+NET "target_chain1[2]"	IOSTANDARD = LVCMOS33 | LOC = P76;
+NET "target_chain1[3]"	IOSTANDARD = LVCMOS33 | LOC = P71;
+
+NET "target_unused[0]"	IOSTANDARD = LVCMOS33 | LOC = P54;
+NET "target_unused[1]"	IOSTANDARD = LVCMOS33 | LOC = P86;
+NET "target_unused[2]"	IOSTANDARD = LVCMOS33 | LOC = P74;
+NET "target_unused[3]"	IOSTANDARD = LVCMOS33 | LOC = P70;
+
+# Chain status LEDs
+NET "jtag0_active"		IOSTANDARD = LVCMOS33 | LOC = P64;
+NET "jtag1_active"		IOSTANDARD = LVCMOS33 | LOC = P63;
+
+# Global mode switches
+NET "spi_mode_en"		IOSTANDARD = LVCMOS33 | LOC = P24;
+
+# Chain mux switches
+NET "jtag0_src[0]"		IOSTANDARD = LVCMOS33 | LOC = P33;
+NET "jtag0_src[1]"		IOSTANDARD = LVCMOS33 | LOC = P34;
+NET "jtag0_src[2]"		IOSTANDARD = LVCMOS33 | LOC = P35;
+
+NET "jtag1_src[0]"		IOSTANDARD = LVCMOS33 | LOC = P29;
+NET "jtag1_src[1]"		IOSTANDARD = LVCMOS33 | LOC = P30;
+NET "jtag1_src[2]"		IOSTANDARD = LVCMOS33 | LOC = P32;
+
+NET "target0_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P42;
+NET "target0_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P41;
+NET "target0_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P40;
+
+NET "target1_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P36;
+NET "target1_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P37;
+NET "target1_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P39;
+
+NET "target2_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P49;
+NET "target2_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P50;
+NET "target2_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P61;
+
+NET "target3_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P43;
+NET "target3_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P44;
+NET "target3_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P46;
