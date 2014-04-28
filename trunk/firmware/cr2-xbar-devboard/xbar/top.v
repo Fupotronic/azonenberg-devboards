@@ -27,6 +27,8 @@
 *                                                                                                                      *
 ***********************************************************************************************************************/
 
+`default_nettype none
+
 /**
 	@file
 	@author Andrew D. Zonenberg
@@ -49,6 +51,7 @@ module top(
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Main clock
+	
 	input wire			clk_2048khz;
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,14 +60,14 @@ module top(
 	input wire[1:0]		jtag_tck;
 	input wire[1:0]		jtag_tms;
 	input wire[1:0]		jtag_tdi;
-	output wire[1:0]	jtag_tdo;
+	output reg[1:0]		jtag_tdo = 0;
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// JTAG links to targets
 	
-	output wire[3:0]	target_tck;
-	output wire[3:0]	target_tms;
-	output wire[3:0]	target_tdi;
+	output reg[3:0]		target_tck = 0;
+	output reg[3:0]		target_tms = 0;
+	output reg[3:0]		target_tdi = 0;
 	input wire[3:0]		target_tdo;
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -84,9 +87,9 @@ module top(
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Indicator LEDs
 	
-	output wire[3:0]	target_chain0;
-	output wire[3:0]	target_chain1;
-	output wire[3:0]	target_unused;
+	output reg[3:0]		target_chain0 = 0;
+	output reg[3:0]		target_chain1 = 0;
+	output reg[3:0]		target_unused = 0;
 	
 	output wire			jtag0_active;
 	output wire 		jtag1_active;
@@ -103,15 +106,140 @@ module top(
 	input wire[2:0]		target2_src;
 	input wire[2:0]		target3_src;
 	
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Bring-up code to exercise various parts of the board
+	//Merge ports into one 2D array and invert active-low signals
+	wire[2:0] target_src[3:0];
+	assign target_src[0] = ~target0_src;
+	assign target_src[1] = ~target1_src;
+	assign target_src[2] = ~target2_src;
+	assign target_src[3] = ~target3_src;
 	
-	//Turn on all LEDs
-	assign jtag0_active		= 1;
-	assign jtag1_active		= 1;
-	assign target_chain0	= 4'hf;
-	assign target_chain1	= 4'hf;
-	assign target_unused	= 4'hf;
+	wire[2:0] jtag_src[1:0];
+	assign jtag_src[0] = ~jtag0_src;
+	assign jtag_src[1] = ~jtag1_src;
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Slow clock for LED blinking etc
+	
+	// Input clock is 2.048 MHz
+	// Divide by 2^19 to get ~3.9 Hz
+	reg[18:0] clk_slow_count = 0;
+	always @(posedge clk_2048khz)
+		clk_slow_count <= clk_slow_count + 1;
+	
+	wire clk_slow;
+	assign clk_slow = clk_slow_count[18];
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Pulse stretching for indicator LEDs
+	
+	//Turn on all LEDs (TODO proper pulse stretching)
+	assign jtag0_active		= clk_slow;
+	assign jtag1_active		= clk_slow;
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Chain management
+	
+	localparam SOURCE_TARGET0 = 3'b000;
+	localparam SOURCE_TARGET1 = 3'b001;
+	localparam SOURCE_TARGET2 = 3'b010;
+	localparam SOURCE_TARGET3 = 3'b011;
+	localparam SOURCE_JTAG0   = 3'b100;
+	localparam SOURCE_JTAG1   = 3'b101;
+	localparam SOURCE_UNUSED1 = 3'b110;
+	localparam SOURCE_UNUSED2 = 3'b111;
+	
+	//Figure out which TMS/TCK each channel goes from/to
+	//2 = unused/unknown, 0/1 = jtag0/1
+	reg[1:0] global_sources[3:0];
+	reg[1:0] global_dests[3:0];
+	integer i;
+	integer j;
+	always @(posedge clk_2048khz) begin
+	
+		for(i=0; i<4; i=i+1) begin
+		
+			//Start from the JTAG adapter and propagate source info down the chain
+			case(target_src[i])
+				SOURCE_JTAG0:	global_sources[i] <= 0;
+				SOURCE_JTAG1:	global_sources[i] <= 1;
+				SOURCE_TARGET0:	global_sources[i] <= global_sources[0];
+				SOURCE_TARGET1:	global_sources[i] <= global_sources[1];
+				SOURCE_TARGET2:	global_sources[i] <= global_sources[2];
+				SOURCE_TARGET3:	global_sources[i] <= global_sources[3];
+				SOURCE_UNUSED1: global_sources[i] <= 2;
+				SOURCE_UNUSED2: global_sources[i] <= 2;
+			endcase
+			
+			//Start from the JTAG adapter and propagate dest info backwards
+			//If JTAG adapter takes input from us, they're our dest
+			//If anyone else takes input from us, their dest is our dest
+			global_dests[i] <= 2;
+			if( (jtag_src[0][2] == 0) && (jtag_src[0][1:0] == i) )
+				global_dests[i] <= 0;
+			if( (jtag_src[1][2] == 0) && (jtag_src[1][1:0] == i) )
+				global_dests[i] <= 1;
+			for(j=0; j<4; j=j+1) begin
+				if( (target_src[j][2] == 0) && (target_src[j][1:0] == i) && (i != j) )
+					global_dests[i] <= global_dests[j];
+			end
+			
+			//If we chose ourself as the source, disable us to avoid looping
+			if( (target_src[i][2] == 0) && (target_src[i][1:0] == i) )
+				global_sources[i] <= 2;
+				
+			//If nobody is using our output, disable us to avoid undefined inputs
+			if(global_dests[i] == 2)
+				global_sources[i] <= 2;
+				
+			//TODO: Can we detect "crossing the streams" and alert somehow?
+
+		end	
+		
+	end
+	
+	//Input for TDI mux - inputs from all six sources plus two unused values tied to zero.
+	//TMS/TCK can only come from one place
+	wire[7:0] muxin_tda = { 2'b0, jtag_tdi[1:0], target_tdo[3:0] };
+	wire[3:0] muxin_tms = { 2'b0, jtag_tms[1:0] };
+	wire[3:0] muxin_tck = { 2'b0, jtag_tck[1:0] };
+	
+	//The actual muxes
+	//Note that we cannot use "always @(*)" here due to an XST bug
+	//(see http://www.xilinx.com/support/answers/20391.htm)
+	always @(
+		target_src[0], target_src[1], target_src[2], target_src[3],
+		jtag_src[0], jtag_src[1],
+		global_sources[0], global_sources[1], global_sources[2], global_sources[3],
+		muxin_tda, muxin_tms, muxin_tck, target_tdo, jtag_tms, jtag_tck) begin
+	
+		//TDI/TDO
+		for(i=0; i<4; i = i+1)
+			target_tdi[i] <= muxin_tda[target_src[i]];
+		for(i=0; i<2; i = i+1)
+			jtag_tdo[i] <= muxin_tda[jtag_src[i]];
+		
+		//TMS/TCK
+		for(i=0; i<4; i = i+1) begin
+			target_tms[i] <= muxin_tms[global_sources[i]];
+			target_tck[i] <= muxin_tck[global_sources[i]];
+		end
+
+	end
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Chip status LEDs
+	
+	always @(posedge clk_2048khz) begin
+		
+		for(i=0; i<4; i = i+1) begin
+			target_chain0[i] <= (global_sources[i] == 0);
+			target_chain1[i] <= (global_sources[i] == 1);
+			target_unused[i] <= (global_sources[i] == 2);
+		end
+	end
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Unimplemented stuff
 	
 	//Pull chip selects high (off)
 	assign target_cs_n		= 4'hf;
@@ -119,29 +247,6 @@ module top(
 	//Tristate everything else
 	assign ftdi_gpio		= 8'bzzzzzzzz;
 	assign gpio				= 5'bzzzzz;
-	assign jtag0_tdo		= 1'bz;
 	assign xbar_miso		= 1'bz;
-	
-	//Loop jtag1 to the rest of the chain.
-	
-	//Replicate TCK
-	assign target_tck[0]	= jtag_tck[1];
-	assign target_tck[1]	= jtag_tck[1];
-	assign target_tck[2]	= jtag_tck[1];
-	assign target_tck[3]	= jtag_tck[1];
-	
-	//Replicate TMS
-	assign target_tms[0]	= jtag_tms[1];
-	assign target_tms[1]	= jtag_tms[1];
-	assign target_tms[2]	= jtag_tms[1];
-	assign target_tms[3]	= jtag_tms[1];
-	
-	//Chain TDI/TDO
-	assign target_tdi[0]	= jtag_tdi[1];
-	assign target_tdi[1]	= target_tdo[0];
-	assign target_tdi[2]	= target_tdo[1];
-	assign target_tdi[3]	= target_tdo[2];
-	assign jtag_tdo[1]		= target_tdo[3];
-	
 	
 endmodule

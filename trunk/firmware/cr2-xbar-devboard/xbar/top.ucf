@@ -126,26 +126,27 @@ NET "jtag1_active"		IOSTANDARD = LVCMOS33 | LOC = P63;
 NET "spi_mode_en"		IOSTANDARD = LVCMOS33 | LOC = P24;
 
 # Chain mux switches
-NET "jtag0_src[0]"		IOSTANDARD = LVCMOS33 | LOC = P33;
+# Switch 2 and 0 so we get sane L-R ordering on PCB
+NET "jtag0_src[2]"		IOSTANDARD = LVCMOS33 | LOC = P33;
 NET "jtag0_src[1]"		IOSTANDARD = LVCMOS33 | LOC = P34;
-NET "jtag0_src[2]"		IOSTANDARD = LVCMOS33 | LOC = P35;
+NET "jtag0_src[0]"		IOSTANDARD = LVCMOS33 | LOC = P35;
 
-NET "jtag1_src[0]"		IOSTANDARD = LVCMOS33 | LOC = P29;
+NET "jtag1_src[2]"		IOSTANDARD = LVCMOS33 | LOC = P29;
 NET "jtag1_src[1]"		IOSTANDARD = LVCMOS33 | LOC = P30;
-NET "jtag1_src[2]"		IOSTANDARD = LVCMOS33 | LOC = P32;
+NET "jtag1_src[0]"		IOSTANDARD = LVCMOS33 | LOC = P32;
 
-NET "target0_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P42;
+NET "target0_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P42;
 NET "target0_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P41;
-NET "target0_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P40;
+NET "target0_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P40;
 
-NET "target1_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P36;
+NET "target1_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P36;
 NET "target1_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P37;
-NET "target1_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P39;
+NET "target1_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P39;
 
-NET "target2_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P49;
+NET "target2_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P49;
 NET "target2_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P50;
-NET "target2_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P61;
+NET "target2_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P61;
 
-NET "target3_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P43;
+NET "target3_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P43;
 NET "target3_src[1]"	IOSTANDARD = LVCMOS33 | LOC = P44;
-NET "target3_src[2]"	IOSTANDARD = LVCMOS33 | LOC = P46;
+NET "target3_src[0]"	IOSTANDARD = LVCMOS33 | LOC = P46;
