@@ -1,0 +1,626 @@
+# EESchema Netlist Version 1.1 created  Fri 02 May 2014 11:59:04 PM EDT
+(
+ ( /5361E29E $noname  U2 MRF49XA {Lib=MRF49XA}
+  (    1 /SPI_MOSI )
+  (    2 /SPI_SCK )
+  (    3 /SPI_CS_N )
+  (    4 /SPI_MISO )
+  (    5 /INT_N )
+  (    6 /FSEL_N )
+  (    7 ? )
+  (    8 ? )
+  (    9 N-000031 )
+  (   10 ? )
+  (   11 /GND )
+  (   12 /RF_P )
+  (   13 /RF_N )
+  (   14 /VDD )
+  (   15 /RSSI )
+  (   16 ? )
+ )
+ ( /5361E4D9 $noname  U1 FT232RQ {Lib=FT232RQ}
+  (    1 /VDD )
+  (    2 /UART_MISO )
+  (    3 ? )
+  (    4 /GND )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 /USB_D_P )
+  (   15 /USB_D_N )
+  (   16 /3V3_USB )
+  (   17 /GND )
+  (   18 ? )
+  (   19 /5V_USB )
+  (   20 /GND )
+  (   21 ? )
+  (   22 ? )
+  (   23 ? )
+  (   24 /GND )
+  (   25 ? )
+  (   26 /GND )
+  (   27 ? )
+  (   28 ? )
+  (   29 ? )
+  (   30 /UART_MOSI )
+  (   31 ? )
+  (   32 ? )
+  (   33 /GND )
+ )
+ ( /5361F5B9 $noname  J1 HIROSE_UX60SX-MB-5ST_PSVGND {Lib=HIROSE_UX60SX-MB-5ST_PSVGND}
+  (    1 /5V_USB_UNFILTERED )
+  (    2 /USB_D_N )
+  (    3 /USB_D_P )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /USB_SHIELD )
+  (    7 /USB_SHIELD )
+ )
+ ( /5361F733 $noname  J2 POWER_MUX {Lib=POWER_MUX}
+  (    1 /3V3_USB )
+  (    2 /VDD )
+  (    3 /VBATT )
+ )
+ ( /53645A40 $noname  L1 600R {Lib=INDUCTOR_PWROUT}
+  (    1 /5V_USB )
+  (    2 /5V_USB_UNFILTERED )
+ )
+ ( /53645A6E $noname  C7 0.1_uF {Lib=C}
+  (    1 /USB_SHIELD )
+  (    2 /GND )
+ )
+ ( /53645B74 $noname  C10 10_nF {Lib=C}
+  (    1 /5V_USB_UNFILTERED )
+  (    2 /GND )
+ )
+ ( /53645B82 $noname  C1 0.1_uF {Lib=C}
+  (    1 /3V3_USB )
+  (    2 /GND )
+ )
+ ( /53645B8D $noname  C3 0.1_uF {Lib=C}
+  (    1 /5V_USB )
+  (    2 /GND )
+ )
+ ( /53645B99 $noname  C4 4.7_uF {Lib=C}
+  (    1 /5V_USB )
+  (    2 /GND )
+ )
+ ( /53645C78 $noname  J3 ICSP_HDR {Lib=ICSP_HDR}
+  (    1 /MCLR )
+  (    2 /VDD )
+  (    3 /GND )
+  (    4 /PGD )
+  (    5 /PGC )
+  (    6 ? )
+ )
+ ( /53645C9B $noname  BT1 BATTERY {Lib=BATTERY}
+  (    1 /VBATT )
+  (    2 /GND )
+ )
+ ( /53645D10 $noname  C5 0.1_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53645E1F $noname  C6 4.7_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53645E5A $noname  C8 4.7_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /5364612E $noname  P1 CONN_10 {Lib=CONN_10}
+  (    1 /VDD )
+  (    2 /GND )
+  (    3 /JTAG_TMS )
+  (    4 /GND )
+  (    5 /JTAG_TCK )
+  (    6 /GND )
+  (    7 /JTAG_TDO )
+  (    8 /GND )
+  (    9 /JTAG_TDI )
+  (   10 /GND )
+ )
+ ( /536462D2 $noname  R2 10K {Lib=R}
+  (    1 /VDD )
+  (    2 N-000019 )
+ )
+ ( /53646440 $noname  C17 0.1_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53646446 $noname  C18 0.1_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /5364644C $noname  C19 0.1_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53646557 $noname  C16 10_uF {Lib=C}
+  (    1 /VCCINT )
+  (    2 /GND )
+ )
+ ( /5364667F $noname  C20 0.01_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /5364668A $noname  C21 0.01_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53646690 $noname  C22 0.01_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /5364680F $noname  C9 0.01_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53646815 $noname  C12 0.01_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53646932 $noname  C23 4.7_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53646B1B $noname  C24 0.1_uF {Lib=C}
+  (    1 N-000019 )
+  (    2 /GND )
+ )
+ ( /53646B4D $noname  R3 1K {Lib=R}
+  (    1 N-000019 )
+  (    2 /MCLR )
+ )
+ ( /5361F13D $noname  U4 PIC32MX250F128B {Lib=PIC32MX250F128B}
+  (    1 /PGD )
+  (    2 /PGC )
+  (    3 ? )
+  (    4 ? )
+  (    5 /GND )
+  (    6 /UART_MOSI )
+  (    7 /SPI_CS_N )
+  (    8 /UART_MISO )
+  (    9 /FSEL_N )
+  (   10 /VDD )
+  (   11 /JTAG_TMS )
+  (   12 ? )
+  (   13 /JTAG_TDI )
+  (   14 /JTAG_TCK )
+  (   15 /JTAG_TDO )
+  (   16 /GND )
+  (   17 /VCCINT )
+  (   18 ? )
+  (   19 ? )
+  (   20 /VDD )
+  (   21 /SPI_MOSI )
+  (   22 /SPI_SCK )
+  (   23 /INT_N )
+  (   24 /GND )
+  (   25 /VDD )
+  (   26 /MCLR )
+  (   27 /RSSI )
+  (   28 /SPI_MISO )
+  (  PAD /GND )
+ )
+ ( /5364721D $noname  U3 OSC {Lib=OSC}
+  (    1 /VDD )
+  (    2 /GND )
+  (    3 N-000035 )
+  (    4 /VDD )
+ )
+ ( /5364727A $noname  C11 0.1_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53647326 $noname  R1 49.9 {Lib=R}
+  (    1 N-000035 )
+  (    2 /CLK_10MHZ )
+ )
+ ( /53647344 $noname  C2 0.01_uF {Lib=C}
+  (    1 /RSSI )
+  (    2 /GND )
+ )
+ ( /536474FF $noname  C13 2.2_uF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /5364750A $noname  C14 10_nF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53647515 $noname  C15 33_pF {Lib=C}
+  (    1 /VDD )
+  (    2 /GND )
+ )
+ ( /53647A9D $noname  C25 0.01_uF {Lib=C}
+  (    1 /CLK_10MHZ )
+  (    2 N-000031 )
+ )
+ ( /53647AB0 $noname  L3 8.2_nH {Lib=INDUCTOR}
+  (    1 /RF_N )
+  (    2 /RF_P )
+ )
+ ( /53647AC5 $noname  L2 100_nH {Lib=INDUCTOR}
+  (    1 /VDD )
+  (    2 /RF_N )
+ )
+ ( /53647AD0 $noname  C26 1.2_pF {Lib=C}
+  (    1 /RF_N )
+  (    2 N-000030 )
+ )
+ ( /53647B45 $noname  L4 22_nH {Lib=INDUCTOR}
+  (    1 N-000030 )
+  (    2 /RF_P )
+ )
+ ( /53647BB1 $noname  C27 2.7_pF {Lib=C}
+  (    1 /RF_P )
+  (    2 /GND )
+ )
+ ( /53647BBC $noname  C28 27_pF {Lib=C}
+  (    1 N-000030 )
+  (    2 /ANTENNA )
+ )
+ ( /53647D34 $noname  P2 CONN_1 {Lib=CONN_1}
+  (    1 /ANTENNA )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C17
+ SM*
+ C?
+ C1-1
+$endlist
+$component C18
+ SM*
+ C?
+ C1-1
+$endlist
+$component C19
+ SM*
+ C?
+ C1-1
+$endlist
+$component C16
+ SM*
+ C?
+ C1-1
+$endlist
+$component C20
+ SM*
+ C?
+ C1-1
+$endlist
+$component C21
+ SM*
+ C?
+ C1-1
+$endlist
+$component C22
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C12
+ SM*
+ C?
+ C1-1
+$endlist
+$component C23
+ SM*
+ C?
+ C1-1
+$endlist
+$component C24
+ SM*
+ C?
+ C1-1
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C13
+ SM*
+ C?
+ C1-1
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component C15
+ SM*
+ C?
+ C1-1
+$endlist
+$component C25
+ SM*
+ C?
+ C1-1
+$endlist
+$component C26
+ SM*
+ C?
+ C1-1
+$endlist
+$component C27
+ SM*
+ C?
+ C1-1
+$endlist
+$component C28
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/VBATT" "VBATT"
+ J2 3
+ BT1 1
+Net 2 "/5V_USB_UNFILTERED" "5V_USB_UNFILTERED"
+ C10 1
+ J1 1
+ L1 2
+Net 3 "/USB_D_P" "USB_D_P"
+ J1 3
+ U1 14
+Net 4 "/USB_D_N" "USB_D_N"
+ U1 15
+ J1 2
+Net 5 "/JTAG_TDI" "JTAG_TDI"
+ U4 13
+ P1 9
+Net 6 "/JTAG_TDO" "JTAG_TDO"
+ U4 15
+ P1 7
+Net 7 "/JTAG_TCK" "JTAG_TCK"
+ U4 14
+ P1 5
+Net 8 "/JTAG_TMS" "JTAG_TMS"
+ U4 11
+ P1 3
+Net 9 "/UART_MOSI" "UART_MOSI"
+ U4 6
+ U1 30
+Net 13 "/SPI_MOSI" "SPI_MOSI"
+ U2 1
+ U4 21
+Net 14 "/SPI_MISO" "SPI_MISO"
+ U4 28
+ U2 4
+Net 15 "/SPI_CS_N" "SPI_CS_N"
+ U4 7
+ U2 3
+Net 16 "/SPI_SCK" "SPI_SCK"
+ U4 22
+ U2 2
+Net 17 "/INT_N" "INT_N"
+ U4 23
+ U2 5
+Net 18 "/MCLR" "MCLR"
+ J3 1
+ U4 26
+ R3 2
+Net 19 "" ""
+ C24 1
+ R3 1
+ R2 2
+Net 23 "/FSEL_N" "FSEL_N"
+ U2 6
+ U4 9
+Net 24 "/UART_MISO" "UART_MISO"
+ U4 8
+ U1 2
+Net 25 "/RF_P" "RF_P"
+ L4 2
+ C27 1
+ U2 12
+ L3 2
+Net 26 "/RF_N" "RF_N"
+ L3 1
+ L2 2
+ C26 1
+ U2 13
+Net 27 "/VDD" "VDD"
+ U3 1
+ U3 4
+ C11 1
+ C6 1
+ C8 1
+ P1 1
+ J3 2
+ C5 1
+ C17 1
+ C18 1
+ C19 1
+ C20 1
+ C21 1
+ C22 1
+ C9 1
+ C12 1
+ C23 1
+ R2 1
+ U2 14
+ U1 1
+ J2 2
+ L2 1
+ C13 1
+ C15 1
+ U4 10
+ U4 20
+ C14 1
+ U4 25
+Net 28 "/RSSI" "RSSI"
+ U2 15
+ U4 27
+ C2 1
+Net 29 "/ANTENNA" "ANTENNA"
+ C28 2
+ P2 1
+Net 30 "" ""
+ C28 1
+ C26 2
+ L4 1
+Net 31 "" ""
+ U2 9
+ C25 2
+Net 32 "/CLK_10MHZ" "CLK_10MHZ"
+ R1 2
+ C25 1
+Net 35 "" ""
+ R1 1
+ U3 3
+Net 37 "/USB_SHIELD" "USB_SHIELD"
+ C7 1
+ J1 7
+ J1 6
+Net 39 "/5V_USB" "5V_USB"
+ U1 19
+ C3 1
+ C4 1
+ L1 1
+Net 47 "/3V3_USB" "3V3_USB"
+ C1 1
+ U1 16
+ J2 1
+Net 61 "/VCCINT" "VCCINT"
+ U4 17
+ C16 1
+Net 62 "/GND" "GND"
+ C8 2
+ C19 2
+ C16 2
+ C6 2
+ C20 2
+ C21 2
+ C22 2
+ C9 2
+ C12 2
+ C5 2
+ BT1 2
+ J3 3
+ P1 10
+ P1 8
+ P1 6
+ C17 2
+ P1 4
+ P1 2
+ C18 2
+ U3 2
+ C27 2
+ C7 2
+ J1 5
+ C2 2
+ C4 2
+ C3 2
+ C1 2
+ C10 2
+ U1 4
+ C11 2
+ C23 2
+ U4 5
+ C24 2
+ U4 PAD
+ U4 16
+ U4 24
+ U1 20
+ C13 2
+ U2 11
+ C14 2
+ C15 2
+ U1 33
+ U1 24
+ U1 26
+ U1 17
+Net 64 "/PGC" "PGC"
+ U4 2
+ J3 5
+Net 65 "/PGD" "PGD"
+ U4 1
+ J3 4
+}
+#End
