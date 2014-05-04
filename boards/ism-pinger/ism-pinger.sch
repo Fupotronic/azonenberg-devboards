@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 02 May 2014 11:55:09 PM EDT
+EESchema Schematic File Version 2  date Sat 03 May 2014 05:14:57 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -271,7 +271,7 @@ L CONN_10 P1
 U 1 1 5364612E
 P 3900 2000
 F 0 "P1" V 3850 2000 60  0000 C CNN
-F 1 "CONN_10" V 3950 2000 60  0000 C CNN
+F 1 "RIBBON" V 3950 2000 60  0000 C CNN
 	1    3900 2000
 	-1   0    0    -1  
 $EndComp
@@ -565,7 +565,7 @@ Connection ~ 5500 2550
 Wire Wire Line
 	5400 2750 5500 2750
 Wire Wire Line
-	6700 3950 8900 3950
+	6700 3950 9650 3950
 Connection ~ 7050 3950
 Connection ~ 7050 4350
 Connection ~ 6700 4350
@@ -579,7 +579,7 @@ Connection ~ 8150 3950
 Connection ~ 7400 3950
 Connection ~ 7750 3950
 Wire Wire Line
-	7350 4350 8900 4350
+	7350 4350 9650 4350
 Connection ~ 7350 4350
 Connection ~ 7750 4350
 Connection ~ 8150 4350
@@ -611,7 +611,7 @@ L OSC U3
 U 1 1 5364721D
 P 4550 5000
 F 0 "U3" H 4550 5000 60  0000 C CNN
-F 1 "OSC" H 4550 4900 60  0000 C CNN
+F 1 "10 MHz" H 4550 4900 60  0000 C CNN
 	1    4550 5000
 	1    0    0    -1  
 $EndComp
@@ -796,17 +796,41 @@ F 1 "27 pF" H 8550 5300 50  0000 L CNN
 $EndComp
 Wire Wire Line
 	8050 5400 8300 5400
+Text Label 8800 5400 0    60   ~ 0
+ANTENNA
 $Comp
-L CONN_1 P2
-U 1 1 53647D34
-P 8850 5400
-F 0 "P2" H 8930 5400 40  0000 L CNN
-F 1 "CONN_1" H 8850 5455 30  0001 C CNN
-	1    8850 5400
+L CONN_2 P2
+U 1 1 536480DB
+P 9600 5500
+F 0 "P2" V 9550 5500 40  0000 C CNN
+F 1 "ANTENNA" V 9650 5500 40  0000 C CNN
+	1    9600 5500
 	1    0    0    -1  
 $EndComp
-Text Label 8700 5700 0    60   ~ 0
-ANTENNA
 Wire Wire Line
-	8700 5700 8700 5400
+	8700 5400 9250 5400
+Text Label 9250 5600 2    60   ~ 0
+GND
+$Comp
+L C C29
+U 1 1 53655C20
+P 9300 4150
+F 0 "C29" H 9350 4250 50  0000 L CNN
+F 1 "0.01 uF" H 9350 4050 50  0000 L CNN
+	1    9300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C30
+U 1 1 53655C26
+P 9650 4150
+F 0 "C30" H 9700 4250 50  0000 L CNN
+F 1 "0.01 uF" H 9700 4050 50  0000 L CNN
+	1    9650 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8900 3950
+Connection ~ 9300 3950
+Connection ~ 8900 4350
+Connection ~ 9300 4350
 $EndSCHEMATC
