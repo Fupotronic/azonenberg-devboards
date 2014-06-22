@@ -1,0 +1,333 @@
+# EESchema Netlist Version 1.1 created  Sun 22 Jun 2014 03:04:34 PM EDT
+(
+ ( /53A71913 $noname  U2 XC2C32A-VQG44 {Lib=XC2CXXA-VQG44}
+  (    1 /TARGET_TCK )
+  (    2 /TARGET_TDI )
+  (    3 /TARGET_TDO )
+  (    4 /GND )
+  (    5 /TARGET_TMS )
+  (    6 ? )
+  (    7 /3V3 )
+  (    8 ? )
+  (    9 /CPLD_TDI )
+  (   10 /CPLD_TMS )
+  (   11 /CPLD_TCK )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+  (   15 /1V8 )
+  (   16 ? )
+  (   17 /GND )
+  (   18 ? )
+  (   19 ? )
+  (   20 ? )
+  (   21 ? )
+  (   22 ? )
+  (   23 /T_TMS )
+  (   24 /CPLD_TDO )
+  (   25 /GND )
+  (   26 /VTARGET )
+  (   27 /T_TCK )
+  (   28 /T_TDO )
+  (   29 /T_TDI )
+  (   30 /T_PGND )
+  (   31 ? )
+  (   32 ? )
+  (   33 ? )
+  (   34 ? )
+  (   35 /3V3 )
+  (   36 ? )
+  (   37 ? )
+  (   38 ? )
+  (   39 /ACTIVE )
+  (   40 ? )
+  (   41 ? )
+  (   42 ? )
+  (   43 ? )
+  (   44 ? )
+ )
+ ( /53A71927 $noname  U1 LDO1117-18 {Lib=LDO1117-XX}
+  (    1 /GND )
+  (    2 /1V8 )
+  (    3 /3V3 )
+ )
+ ( /53A71993 $noname  P1 CONN_12 {Lib=CONN_12}
+  (    1 /CPLD_TDO )
+  (    2 /CPLD_TMS )
+  (    3 /TARGET_TMS )
+  (    4 /TARGET_TDI )
+  (    5 /GND )
+  (    6 /3V3 )
+  (    7 /CPLD_TCK )
+  (    8 /CPLD_TDI )
+  (    9 /TARGET_TDO )
+  (   10 /TARGET_TCK )
+  (   11 /GND )
+  (   12 /3V3 )
+ )
+ ( /53A71A06 $noname  C1 4.7_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /53A71A48 $noname  C2 4.7_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /53A71F6C $noname  C3 4.7_uF {Lib=C}
+  (    1 /1V8 )
+  (    2 /GND )
+ )
+ ( /53A71F86 $noname  C4 0.1_uF {Lib=C}
+  (    1 /1V8 )
+  (    2 /GND )
+ )
+ ( /53A72015 $noname  C5 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /53A7201B $noname  C6 0.1_uF {Lib=C}
+  (    1 /3V3 )
+  (    2 /GND )
+ )
+ ( /53A72165 $noname  J1 XILINX_JTAG_VCCOUT {Lib=XILINX_JTAG_VCCOUT}
+  (    1 ? )
+  (    2 /VTARGET )
+  (    3 /GND )
+  (    4 /T_TMS )
+  (    5 /GND )
+  (    6 /T_TCK )
+  (    7 /GND )
+  (    8 /T_TDO )
+  (    9 /GND )
+  (   10 /T_TDI )
+  (   11 /GND )
+  (   12 ? )
+  (   13 /T_PGND )
+  (   14 ? )
+ )
+ ( /53A721D6 $noname  C7 0.1_uF {Lib=C}
+  (    1 /VTARGET )
+  (    2 /GND )
+ )
+ ( /53A721DE $noname  R4 10K {Lib=R}
+  (    1 /VTARGET )
+  (    2 /GND )
+ )
+ ( /53A725F9 $noname  R1 470 {Lib=R}
+  (    1 N-000036 )
+  (    2 /VTARGET )
+ )
+ ( /53A72606 $noname  D1 GREEN {Lib=LED}
+  (    1 N-000036 )
+  (    2 /GND )
+ )
+ ( /53A7261C $noname  R2 470 {Lib=R}
+  (    1 N-000037 )
+  (    2 /3V3 )
+ )
+ ( /53A72622 $noname  D2 GREEN {Lib=LED}
+  (    1 N-000037 )
+  (    2 /GND )
+ )
+ ( /53A72629 $noname  R3 470 {Lib=R}
+  (    1 N-000039 )
+  (    2 /ACTIVE )
+ )
+ ( /53A7262F $noname  D3 GREEN {Lib=LED}
+  (    1 N-000039 )
+  (    2 /GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/GND" "GND"
+ J1 7
+ J1 5
+ J1 3
+ U2 4
+ P1 11
+ P1 5
+ U1 1
+ U2 17
+ U2 25
+ D3 2
+ D2 2
+ D1 2
+ R4 2
+ C7 2
+ C6 2
+ C5 2
+ C4 2
+ J1 9
+ J1 11
+ C1 2
+ C2 2
+ C3 2
+Net 2 "/VTARGET" "VTARGET"
+ U2 26
+ J1 2
+ R1 2
+ R4 1
+ C7 1
+Net 3 "/T_PGND" "T_PGND"
+ J1 13
+ U2 30
+Net 4 "/T_TMS" "T_TMS"
+ J1 4
+ U2 23
+Net 5 "/T_TCK" "T_TCK"
+ U2 27
+ J1 6
+Net 6 "/T_TDO" "T_TDO"
+ U2 28
+ J1 8
+Net 7 "/T_TDI" "T_TDI"
+ U2 29
+ J1 10
+Net 16 "/1V8" "1V8"
+ C3 1
+ C4 1
+ U1 2
+ U2 15
+Net 17 "/CPLD_TCK" "CPLD_TCK"
+ U2 11
+ P1 7
+Net 18 "/CPLD_TDI" "CPLD_TDI"
+ P1 8
+ U2 9
+Net 19 "/CPLD_TDO" "CPLD_TDO"
+ P1 1
+ U2 24
+Net 20 "/CPLD_TMS" "CPLD_TMS"
+ P1 2
+ U2 10
+Net 30 "/ACTIVE" "ACTIVE"
+ R3 2
+ U2 39
+Net 36 "" ""
+ D1 1
+ R1 1
+Net 37 "" ""
+ D2 1
+ R2 1
+Net 38 "/3V3" "3V3"
+ C6 1
+ C5 1
+ C2 1
+ C1 1
+ R2 2
+ U2 35
+ U1 3
+ P1 6
+ P1 12
+ U2 7
+Net 39 "" ""
+ D3 1
+ R3 1
+Net 40 "/TARGET_TCK" "TARGET_TCK"
+ P1 10
+ U2 1
+Net 41 "/TARGET_TDI" "TARGET_TDI"
+ P1 4
+ U2 2
+Net 42 "/TARGET_TDO" "TARGET_TDO"
+ U2 3
+ P1 9
+Net 43 "/TARGET_TMS" "TARGET_TMS"
+ U2 5
+ P1 3
+}
+#End

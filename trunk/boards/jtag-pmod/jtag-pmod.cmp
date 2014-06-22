@@ -1,0 +1,129 @@
+Cmp-Mod V01 Created by CvPcb (2012-10-01 BZR 3747)-testing date = Sun 22 Jun 2014 02:41:51 PM EDT
+
+BeginCmp
+TimeStamp = /53A71A06;
+Reference = C1;
+ValeurCmp = 4.7_uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A71A48;
+Reference = C2;
+ValeurCmp = 4.7_uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A71F6C;
+Reference = C3;
+ValeurCmp = 4.7_uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A71F86;
+Reference = C4;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A72015;
+Reference = C5;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A7201B;
+Reference = C6;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A721D6;
+Reference = C7;
+ValeurCmp = 0.1_uF;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A72606;
+Reference = D1;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A72622;
+Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A7262F;
+Reference = D3;
+ValeurCmp = GREEN;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A72165;
+Reference = J1;
+ValeurCmp = XILINX_JTAG_VCCOUT;
+IdModule  = XILINX_JTAG_THRUHOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A71993;
+Reference = P1;
+ValeurCmp = CONN_12;
+IdModule  = PMOD;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A725F9;
+Reference = R1;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A7261C;
+Reference = R2;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A72629;
+Reference = R3;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A721DE;
+Reference = R4;
+ValeurCmp = 10K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A71927;
+Reference = U1;
+ValeurCmp = LDO1117-18;
+IdModule  = SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A71913;
+Reference = U2;
+ValeurCmp = XC2C32A-VQG44;
+IdModule  = TQFP44;
+EndCmp
+
+EndListe
