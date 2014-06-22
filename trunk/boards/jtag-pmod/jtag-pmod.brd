@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sun 22 Jun 2014 03:12:13 PM EDT
+PCBNEW-BOARD Version 1 date Sun 22 Jun 2014 03:15:53 PM EDT
 
 # Created by Pcbnew(2012-10-01 BZR 3747)-testing
 
@@ -7,7 +7,6 @@ encoding utf-8
 Units deci-mils
 LayerCount 2
 EnabledLayers 1FFF8001
-VisibleLayers 1FFFFFFF
 Links 54
 NoConn 0
 Di 4226 6906 18415 15441
@@ -64,7 +63,7 @@ Pad2MaskClearance 20
 Pad2PasteClearanceRatio -0.1
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFF7FBF
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 284983297) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory /nfs/home/azonenberg/Documents/local/programming/azonenberg-devboards/trunk/boards/jtag-pmod/output/))
 $EndSETUP
 
 $EQUIPOT
@@ -624,7 +623,7 @@ Po -2250 -1575
 $EndPAD
 $EndMODULE TQFP44
 $MODULE SOT223
-Po 9055 11024 -0 0 00200000 53A72313 ~~
+Po 9055 11024 0 0 00200000 53A72313 ~~
 Li SOT223
 Cd module CMS SOT223 4 pins
 Kw CMS SOT
@@ -632,8 +631,8 @@ Sc 53A72313
 AR /53A71927
 Op 0 0 0
 At SMD
-T0 0 300 200 180 -0 43 M V 20 N "U1"
-T1 0 -300 200 180 -0 43 M V 20 N "LDO1117-18"
+T0 0 300 200 180 0 43 M V 20 N "U1"
+T1 0 -300 200 180 0 43 M V 20 N "LDO1117-18"
 DS -1400 -600 -1400 -1800 80 20
 DS -1400 -1800 1400 -1800 80 20
 DS 1400 -1800 1400 -600 80 20
@@ -814,14 +813,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SM0603
 $MODULE SM0603
-Po 8169 14075 -0 0 4E43A3D1 53A72345 ~~
+Po 8169 14075 0 0 4E43A3D1 53A72345 ~~
 Li SM0603
 Sc 53A72345
 AR /53A725F9
 Op 0 0 0
 At SMD
-T0 0 0 200 180 -0 43 M V 20 N "R1"
-T1 0 0 200 180 -0 43 M I 20 N "470"
+T0 0 0 200 180 0 43 M V 20 N "R1"
+T1 0 0 200 180 0 43 M I 20 N "470"
 DS -450 250 450 250 50 20
 DS 450 250 450 -250 50 20
 DS 450 -250 -450 -250 50 20
@@ -882,14 +881,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SM0603
 $MODULE SM0603
-Po 8169 13386 -0 0 4E43A3D1 53A72359 ~~
+Po 8169 13386 0 0 4E43A3D1 53A72359 ~~
 Li SM0603
 Sc 53A72359
 AR /53A7261C
 Op 0 0 0
 At SMD
-T0 0 0 200 180 -0 43 M V 20 N "R2"
-T1 0 0 200 180 -0 43 M I 20 N "470"
+T0 0 0 200 180 0 43 M V 20 N "R2"
+T1 0 0 200 180 0 43 M I 20 N "470"
 DS -450 250 450 250 50 20
 DS 450 250 450 -250 50 20
 DS 450 -250 -450 -250 50 20
@@ -950,14 +949,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SM0603
 $MODULE SM0603
-Po 11909 8051 -0 0 53A727EC 53A7236D ~~
+Po 11909 8051 0 0 53A727EC 53A7236D ~~
 Li SM0603
 Sc 53A7236D
 AR /53A72629
 Op 0 0 0
 At SMD
 T0 847 20 200 180 0 43 M V 20 N "R3"
-T1 0 0 200 180 -0 43 M I 20 N "470"
+T1 0 0 200 180 0 43 M I 20 N "470"
 DS -450 250 450 250 50 20
 DS 450 250 450 -250 50 20
 DS 450 -250 -450 -250 50 20
@@ -1018,14 +1017,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SM0603
 $MODULE SM0402
-Po 11909 12598 -0 0 4E43A43D 53A72383 ~~
+Po 11909 12598 0 0 4E43A43D 53A72383 ~~
 Li SM0402
 Sc 53A72383
 AR /53A71F86
 Op 0 0 0
 At SMD
-T0 0 -300 200 180 -0 43 M V 20 N "C4"
-T1 0 250 200 180 -0 43 M I 20 N "0.1_uF"
+T0 0 -300 200 180 0 43 M V 20 N "C4"
+T1 0 250 200 180 0 43 M I 20 N "0.1_uF"
 DS -100 150 -300 150 50 20
 DS -300 150 -300 -150 50 20
 DS -300 -150 -100 -150 50 20
