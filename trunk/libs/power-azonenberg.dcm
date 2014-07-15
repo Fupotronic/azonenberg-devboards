@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: Mon 09 Dec 2013 04:24:06 AM EST
+EESchema-DOCLIB  Version 2.0
 #
 $CMP 78L05
 D Linear Regulator +5V
@@ -9,10 +9,6 @@ $ENDCMP
 $CMP CONN_3_PWROUT
 D Symbole general de connecteur
 K CONN
-$ENDCMP
-#
-$CMP FT531XA
-D FT531x linear regulator (SOT23-5, -A pinout variant)
 $ENDCMP
 #
 $CMP LM7805
