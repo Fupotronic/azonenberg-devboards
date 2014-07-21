@@ -29,4 +29,8 @@ K POWER REGUL
 F regulator\lm78xx.pdf
 $ENDCMP
 #
+$CMP MOS_P_PWROUT
+F transistors/mos/*.*
+$ENDCMP
+#
 #End Doc Library
