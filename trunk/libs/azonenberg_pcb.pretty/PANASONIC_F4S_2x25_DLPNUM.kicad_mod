@@ -77,7 +77,12 @@
   (pad "" smd rect (at 5.7 -1.55) (size 0.7 1.2) (layers F.Cu F.Paste F.Mask))
   (model "/nfs/home/azonenberg/Documents/local/Electronics/kicad-libs/3rdparty/walter/conn_df12/df12a(3.0)-50ds-0.5v.wrl"
     (at (xyz 0 0 0))
-    (scale (xyz 0.8 0.8 0.8))
+    (scale (xyz 0.800000011920929 0.800000011920929 0.800000011920929))
     (rotate (xyz 0 0 0))
+  )
+  (model /nfs/home/azonenberg/Documents/local/programming/mote/datasheets/dlp3000.x3d
+    (at (xyz 0 0 0.5))
+    (scale (xyz 10 10 10))
+    (rotate (xyz 0 0 180))
   )
 )
